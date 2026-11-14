@@ -39,6 +39,7 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
 ]
 
 _HEADING_SHAPE = re.compile(r"^\s*(?:\d[\d.]*\s*[-–.)]?\s*)?[^\n]{3,180}$")
+_NUMBERED_HEADING = re.compile(r"^\s*\d+(?:\.\d+)*\.\s+\S")
 
 
 def _strip_accents(text: str) -> str:
@@ -56,6 +57,11 @@ def _looks_like_heading(line: str) -> bool:
     if stripped.startswith(("-", "•", "*")):
         return False
     return bool(_HEADING_SHAPE.match(stripped))
+
+
+def _is_numbered_heading(line: str) -> bool:
+    """Recognize numbered RCP headings without mistaking table rows for headings."""
+    return _looks_like_heading(line) and bool(_NUMBERED_HEADING.match(line))
 
 
 def classify_heading(line: str) -> str | None:
@@ -114,9 +120,7 @@ def split_sections(text: str) -> SectionSplit:
                 flush()
                 current_key, current_bucket, buffer = section, split.sections, []
                 continue
-            if current_key is not None and re.match(
-                r"^\s*\d+(?:\.\d+)*[.)]?\s*[-–]?\s+\S", line
-            ):
+            if current_key is not None and _is_numbered_heading(line):
                 flush()
                 current_key, current_bucket, buffer = line.strip(), split.unmapped, []
                 continue
