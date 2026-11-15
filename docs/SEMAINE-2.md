@@ -5,6 +5,10 @@
 > Découper les documents, calculer les embeddings, monter la base vectorielle,
 > comparer mots-clés et recherche sémantique.
 
+**À lire d'abord :** [le retour de l'enseignant du 15/11/2026](RETOUR-ENSEIGNANT-2026-11-15.md).
+Il fixe l'ordre de la semaine — le jeu de questions **avant** les embeddings — et
+ajoute une exigence : garder des questions sans réponse dans le corpus.
+
 C'est la **3ᵉ et la 4ᵉ difficulté** du chapitre 01 : les mots de la question ne
 sont pas ceux des documents, et il faut donc représenter le *sens* plutôt que
 les mots.
@@ -53,9 +57,14 @@ des RCP de l'ANPP, ou faut-il s'en tenir au corpus de dépannage qu'il a prévu 
 |---|---|---|
 | Paracétamol | RCP ANPP + notice Pharm'Net | ✅ 2 |
 | Amoxicilline | RCP Pharm'Net + notice ANSM | ✅ 2 |
-| **Amlodipine** | — | ❌ **aucun** |
+| **Amlodipine** | — | ❌ **aucun — objectif : 1** |
 
 Sans document sur l'amlodipine, une classe thérapeutique sur trois reste muette.
+
+**Objectif revu à la baisse par l'enseignant** (15/11/2026) : *« un seul document
+officiel est acceptable. Notez-le comme limite connue plutôt que de chercher à
+tout prix un second document. »* Un RCP suffit donc, et la source unique est
+déclarée comme limite assumée.
 
 ### 3. Le modèle d'embeddings
 
@@ -80,19 +89,27 @@ pip install -e ".[dense]"
 |---|---|---|
 | 1 | `retrieve/chunking.py` : document → `Passage`, avec provenance et rubrique conservées | un RCP produit des passages portant chacun sa source et sa rubrique |
 | 2 | Choisir la taille de passage et le recouvrement, **après mesure** | un tableau compare 2 ou 3 tailles sur le même jeu de questions |
-| 3 | Écrire 15 questions avec leur passage de référence | `eval/questions.yaml` passe de 8 à 23 entrées annotées |
+| 3 | Écrire 15 questions avec leur passage de référence, **dont des questions sans réponse dans le corpus** | `eval/questions.yaml` passe de 8 à 23 entrées annotées, et au moins 3 attendent un refus |
 
-La tâche 3 est la plus importante : **sans questions annotées, la comparaison
-entre BM25 et les vecteurs n'est pas mesurable.** C'est elle qui transforme
-« les vecteurs ont l'air meilleurs » en un chiffre.
+La tâche 3 est la plus importante, et elle passe **avant** les embeddings :
+sans questions annotées, la comparaison entre BM25 et les vecteurs n'est pas
+mesurable. C'est elle qui transforme « les vecteurs ont l'air meilleurs » en un
+chiffre. Et elle avance en même temps l'exigence des 30 questions du jeu de test.
 
-Et elle avance en même temps l'exigence des 30 questions du jeu de test.
+**Les questions sans réponse ne sont pas un remplissage.** Elles mesurent le
+refus : un système qui répond toujours obtient un score parfait sur un jeu qui ne
+contient que des questions répondables. C'est la règle d'or prise par l'autre
+bout — pas d'information sans source, donc pas de source, pas de réponse.
+
+C'est aussi la tâche 3 qui **détermine quelles molécules collecter ensuite**
+(3 sur 40 aujourd'hui) : on étend le corpus vers ce que les questions exigent,
+pas au hasard.
 
 ### Ryma — documents et extraction
 
 | # | Tâche |
 |---|---|
-| 1 | Collecter au moins un RCP d'amlodipine |
+| 1 | Collecter **un** RCP d'amlodipine — un seul suffit, cf. retour du 15/11 |
 | 2 | Extraire le texte des documents restants |
 | 3 | Mesurer la couverture des rubriques sur l'ensemble |
 | 4 | Compléter le relevé de conformité pour les sources ajoutées |
@@ -152,4 +169,12 @@ ci-dessus touchent des fichiers différents — `chunking.py`, `embeddings.py`,
 `vectorstore.py` — donc aucun conflit n'est possible si chacun s'en tient au
 sien.
 
-Et un seul dépôt : **`github.com/KettabAya/pharmeazor.`**, avec le point.
+Et un seul dépôt. **À renommer cette semaine** : le nom actuel se termine par un
+point, ce qui donne `…/pharmeazor..git` en URL de clonage — l'enseignant l'a
+relevé le 15/11. Après renommage en `pharmeazor`, GitHub redirige l'ancien nom,
+donc les clones existants continuent de fonctionner ; chacune met tout de même
+son `remote` à jour :
+
+```bash
+git remote set-url origin https://github.com/KettabAya/pharmeazor.git
+```
