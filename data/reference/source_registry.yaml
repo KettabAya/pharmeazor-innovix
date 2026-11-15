@@ -21,10 +21,18 @@ sources:
 
   - source_id: nomenclature
     name: "Nomenclature nationale - Ministere de l'Industrie pharmaceutique"
-    base_url: "https://www.mip.gov.dz/"
+    # Corrige le 15/11/2026 : www.mip.gov.dz ne resout pas. Le ministere de
+    # l'Industrie PHarmaceutique est sur miph.gov.dz, avec un H.
+    base_url: "https://miph.gov.dz/"
     authority: NOMENCLATURE
     access: manual
-    robots_checked_on: null
+    robots_checked_on: "2026-11-15"
+    robots_note: >-
+      robots.txt du 15/11/2026 : "User-agent: * / Disallow:" (vide), donc rien
+      n'est interdit ; un sitemap_index.xml est publie. Publication officielle
+      du ministere. Les classeurs sont neanmoins telecharges a la main, un par
+      version datee, pour garder une trace de ce qui a ete recu et quand.
+      Copie : docs/conformite/robots-miph.gov.dz-2026-11-15.txt
     robots_note: "La page de la liste interdit l'acces automatique (robots.txt)."
     terms_note: "Telechargement manuel uniquement. Ni posologie ni indications."
     country: DZ
@@ -34,7 +42,12 @@ sources:
     base_url: "https://ansm.sante.fr/"
     authority: INSTITUTIONAL
     access: manual
-    robots_checked_on: null
+    robots_checked_on: "2026-11-15"
+    robots_note: >-
+      robots.txt du 15/11/2026 : "User-agent: * / Allow: /", aucun crawler d'IA
+      bloque. Source institutionnelle a privilegier pour les interactions,
+      en direct plutot que par un relais.
+      Copie : docs/conformite/robots-ansm.sante.fr-2026-11-15.txt
     robots_note: "A verifier."
     terms_note: "Quatre niveaux d'interaction. Source etrangere : complement, jamais substitut."
     country: FR
@@ -55,7 +68,12 @@ sources:
     base_url: "https://www.ema.europa.eu/"
     authority: INSTITUTIONAL
     access: manual
-    robots_checked_on: null
+    robots_checked_on: "2026-11-15"
+    robots_note: >-
+      robots.txt du 15/11/2026 : acces autorise hors chemins techniques et de
+      compte (/core/, /profiles/, /admin/, /search/, /user/login...). Aucun
+      crawler d'IA bloque. Notice europeenne : peut differer de l'algerienne.
+      Copie : docs/conformite/robots-www.ema.europa.eu-2026-11-15.txt
     terms_note: "Une meme substance peut avoir une notice differente d'un pays a l'autre."
     country: EU
 
@@ -73,7 +91,12 @@ sources:
     base_url: "https://base-donnees-publique.medicaments.gouv.fr/"
     authority: OFFICIAL
     access: manual
-    robots_checked_on: null
+    robots_checked_on: "2026-11-15"
+    robots_note: >-
+      robots.txt du 15/11/2026 : "User-agent: * / Allow: /", aucun crawler d'IA
+      bloque. Notice francaise : complement, jamais substitut a une source
+      algerienne (ConflictPolicy.prefer_algerian).
+      Copie : docs/conformite/robots-base-donnees-publique.medicaments.gouv.fr-2026-11-15.txt
     robots_note: "robots.txt non verifie. Consultation et collecte manuelles uniquement."
     terms_note: "Les donnees brutes telechargeables sont reutilisables sous conditions: attribution de la source et de la date de mise a jour, sans alteration. La licence des donnees brutes ne doit pas etre presumee applicable aux notices/RCP complets; verifier les droits documentaires avant redistribution."
     country: FR
@@ -93,18 +116,32 @@ sources:
     name: "MEDAlgerie"
     base_url: "https://www.medalgerie.com/"
     authority: PROFESSIONAL
-    access: manual
+    access: forbidden   # conformite non etablie, cf. robots_note
     robots_checked_on: null
+    robots_note: >-
+      robots.txt non verifiable le 15/11/2026 : le certificat TLS de medalgerie.com
+      ne correspond pas au nom de l'hote (SEC_E_WRONG_PRINCIPAL), et
+      www.medalgerie.com ne repond pas. Conformite non etablie, donc source
+      inutilisee tant que ce point n'est pas leve.
     terms_note: "Redige par un comite de professionnels. Pas d'API mentionnee."
     country: DZ
 
   - source_id: dzair_pharma
-    name: "dzair-pharma.net"
-    base_url: "https://dzair-pharma.net/"
+    name: "dzair-pharma.net (DwaDZ)"
+    # L'apex repond 308 : le robots.txt qui fait foi est celui de www.
+    base_url: "https://www.dzair-pharma.net/"
     authority: PROFESSIONAL
     access: manual
-    robots_checked_on: null
-    terms_note: "Non officiel, donnees a titre informatif. Pas de notice complete."
+    robots_checked_on: "2026-11-15"
+    terms_note: >-
+      Recoupement manuel uniquement, aucune collecte automatique.
+      robots.txt du 15/11/2026 : /api/, /admin et /diff interdits a tous ;
+      23 crawlers d'IA et de SEO bloques sur /. Notre user-agent releve de *,
+      donc les pages publiques sont autorisees. Aucune CGU ni clause de
+      reutilisation (/a-propos et /privacy lues le 15/11/2026) : conditions
+      non confirmees. Le site declare republier la nomenclature du MIPH,
+      nos donnees viennent donc de miph.gov.dz.
+      Releve : docs/conformite/dzair-pharma-2026-11-15.md
     country: DZ
 
   - source_id: forums
