@@ -9,11 +9,11 @@ semaine 2 (vendredi 20 novembre).
 
 | # | Point | État |
 |---|---|---|
-| 1 | Conformité dzair-pharma | ✅ vérifié et tranché le 15/11 — reste une question à l'auteur des exports |
+| 1 | Conformité dzair-pharma | ✅ **tranché** le 15/11 par lecture du code de collecte |
 | 2 | Couverture : 3 molécules sur 40 | ⬜ plan à écrire |
 | 3 | Amlodipine : un document suffit | ✅ consigné comme limite connue |
 | 4 | Jeu de questions annoté avant les embeddings | ⬜ à produire — **bloque la semaine 2** |
-| 5 | Lien du dépôt en `..git` | ⬜ à vérifier et à corriger |
+| 5 | Lien du dépôt en `..git` | ⚠️ le lien marche, mais **deux dépôts coexistent** — à régler en priorité |
 | 6 | Modèle de langage | ✅ revenu sur `openai/gpt-oss-120b` |
 
 ---
@@ -41,14 +41,55 @@ En résumé :
 - les 2 077 URL présentes dans nos exports pointent toutes sur `/medicament/…`,
   chemin autorisé. **Aucune URL `/api/`.**
 
-**Mais le doute subsiste**, et il faut le dire franchement : l'URL stockée dans
-une fiche est celle de la page lisible, pas celle du chemin de récupération.
-Aucune fiche ne porte de trace de collecte — ni user-agent, ni date, ni point
-d'accès. La structure des fiches (`interactions` et `generiques` en tableaux
-imbriqués) ressemble à celle d'un point d'accès JSON.
+### Le code de collecte a été retrouvé et relu
 
-➜ **Question ouverte, à poser à l'auteur des exports :** quel chemin, quel
-user-agent, quel outil, quelle date. La réponse ira au § 3 du relevé.
+Le script est publié sur la branche `gh-pages`, dans
+`evidence/code/Dzair_Farma.py`. Il répond aux trois questions sans ambiguïté :
+
+| Question | Réponse |
+|---|---|
+| Quels chemins ? | `/recherche`, puis les pages `/medicament/…`. **La chaîne `api` n'apparaît pas une seule fois dans le script.** |
+| Quel user-agent ? | `MedicationResearchBot/1.0` — et **`Mozilla/5.0`** pour la fonction des interactions |
+| Quel délai ? | `time.sleep(2)`, conforme à notre étiquette |
+
+**Sur `/api/`, l'inquiétude était sans objet pour nous** : le script ne l'appelle
+jamais.
+
+**Sur le user-agent, il y a une vraie entorse, et nous ne la défendons pas.**
+`MedicationResearchBot/1.0` ne correspond à aucun des 23 jetons bloqués, donc
+`robots.txt` n'a pas été enfreint. Mais la fonction des interactions se présente
+comme **`Mozilla/5.0`**, c'est-à-dire comme un navigateur. Cela ne contourne
+aucune règle du site, mais cela masque l'identité du programme et contredit la
+règle que nous écrivons nous-mêmes : *« `User-Agent` identifiant le projet »*.
+
+➜ Les données déjà collectées restent valides — chemins autorisés, délai
+respecté. Mais aucune collecte automatique nouvelle n'aura lieu, et si elle
+reprenait, elle utiliserait `settings.user_agent`, sans exception.
+
+### Deux chiffres pour la même chose
+
+L'enseignant cite « 1 650 fiches ». Le chiffre vient de
+`evidence/collection_summary.json` sur le site de preuves : 45 fichiers,
+1 650 fiches, 1 367 URL distinctes, 283 doublons.
+
+Or le [rapport de semaine 1](RAPPORT-SEMAINE-1.md) annonce « 11 exports JSON,
+497 produits ». **Les deux ne se contredisent pas forcément** — 497 produits
+distincts après dédoublonnage n'est pas 1 650 fiches brutes — **mais il faut
+l'écrire**, sinon un lecteur attentif y verra une incohérence.
+
+➜ À réconcilier avant la remise de la semaine 2.
+
+### L'audit du 11/11 et son angle mort
+
+`evidence/robots_audit.json` montre qu'un audit automatique de 8 sources existait
+déjà, horodaté, avant le retour de l'enseignant. C'était une bonne pratique.
+
+Mais pour dzair-pharma il conclut `"url_allowed": true` — **exact pour l'URL
+testée, la racine `/`, et seulement pour elle.** `/api/` n'a jamais été testé.
+C'est exactement l'écart relevé : un audit qui répond « autorisé » sans dire quel
+chemin il a testé peut rassurer à tort.
+
+➜ `check_robots.py` doit tester les chemins réellement appelés.
 
 Côté conditions d'utilisation : **il n'y en a aucune.** Les deux seules pages
 existantes, `/a-propos` et `/privacy`, ont été lues. `/privacy` traite des
@@ -177,14 +218,51 @@ référence attendu — ou **explicitement aucun** — et la source.
 
 > *« Le lien se termine par « ..git » : vérifiez qu'il fonctionne. »*
 
-Le nom du dépôt contient un point final : `pharmeazor.`, ce qui donne
-`…/pharmeazor..git` en URL de clonage. Le lien fonctionne, mais il attire l'œil
-et l'enseignant l'a relevé.
+Vérification faite : **le lien fonctionne.** Le clonage anonyme de
+`https://github.com/KettabAya/pharmeazor..git` réussit et rapporte les
+101 fichiers attendus.
 
-➜ Renommer le dépôt en `pharmeazor`, sans le point. GitHub redirige l'ancien nom,
-donc les clones existants des coéquipières continuent de fonctionner. Puis
-mettre à jour le lien dans [`SEMAINE-2.md`](SEMAINE-2.md) et le `remote` local de
-chacune.
+**Mais la vérification a révélé bien pire que le point en trop.**
+
+Les deux adresses répondent `HTTP 200` :
+
+| Dépôt | Fichiers | `docs/` | Dernier commit |
+|---|---:|---:|---|
+| `KettabAya/pharmeazor.` (avec le point) | **101** | 20 | **15/11/2026** |
+| `KettabAya/pharmeazor` (sans le point) | 62 | 9 | **12/11/2026** |
+
+**Les deux dépôts existent, et celui sans le point est figé au 12 novembre.**
+
+Un point final ressemble à une ponctuation de fin de phrase. Si l'enseignant le
+retire en recopiant le lien — le geste le plus naturel du monde — il arrive sur
+un dépôt qui s'arrête trois jours plus tôt, **sans le rapport de semaine 1, sans
+le journal de traitement, sans le dossier de preuves.** Il en conclura que le
+travail n'a pas été fait.
+
+Ce n'est pas une hypothèse : c'est ce que la vérification qu'il a demandée vient
+de montrer.
+
+### Et le site de preuves est publié depuis l'ancien dépôt
+
+`https://kettabaya.github.io/pharmeazor/` répond `200` — c'est le lien donné à
+l'enseignant. Il est servi par la branche `gh-pages` du dépôt **sans** le point.
+`https://kettabaya.github.io/pharmeazor./` répond `404`.
+
+Autrement dit : le code vit dans un dépôt, le site de preuves dans l'autre. Les
+deux liens fonctionnent, mais ils ne pointent pas sur le même projet.
+
+➜ **À régler avant toute autre chose cette semaine.** Deux options :
+
+1. **renommer** `pharmeazor.` en `pharmeazor` — impossible tant que l'ancien
+   occupe le nom : il faut d'abord renommer ou supprimer l'ancien ;
+2. **tout regrouper** sur un seul dépôt, y compris `gh-pages`, et faire du second
+   une redirection.
+
+Dans les deux cas, chacune met son `remote` à jour :
+
+```bash
+git remote set-url origin https://github.com/KettabAya/<nom-retenu>.git
+```
 
 ---
 
@@ -206,8 +284,10 @@ annonce passera par `.env`, sans toucher au code.
 
 ## Ordre de travail qui en découle
 
-1. **§ 4 — le jeu de questions.** Il bloque les embeddings *et* le § 2. À faire
-   en premier, avant toute installation de `sentence-transformers`.
-2. **§ 2 — le plan d'extension**, déduit des molécules que les questions citent.
-3. **§ 5 — renommer le dépôt**, cinq minutes.
-4. **§ 1 — la question à l'auteur des exports**, puis compléter le relevé.
+1. **§ 5 — les deux dépôts.** Ce n'est plus un détail cosmétique : l'enseignant
+   peut déjà être tombé sur le dépôt figé au 12 novembre. À traiter en premier.
+2. **§ 4 — le jeu de questions.** Il bloque les embeddings *et* le § 2. Avant
+   toute installation de `sentence-transformers`.
+3. **§ 2 — le plan d'extension**, déduit des molécules que les questions citent.
+4. **Réconcilier 497 et 1 650** dans le rapport, et corriger `check_robots.py`
+   pour qu'il teste les chemins appelés.

@@ -79,25 +79,88 @@ Relevé automatique sur les trois exports versés dans `data/raw/dzair/`
 
 ➜ **Aucune URL `/api/`** dans les fichiers.
 
-### La limite de cette preuve — à ne pas surévaluer
+Une URL stockée dans une fiche est l'adresse de la page lisible du médicament :
+elle ne prouve pas le chemin de **récupération**. Il a donc fallu lire le code de
+collecte lui-même.
 
-Une URL stockée dans une fiche est l'adresse de la **page lisible** du médicament.
-Elle ne prouve pas le chemin par lequel la fiche a été **récupérée** : un programme
-peut très bien avoir appelé `/api/…` et enregistré l'URL publique correspondante.
+### Le code de collecte — réponse définitive
 
-Aucune fiche ne porte de trace de collecte — ni user-agent, ni date de
-récupération, ni point d'accès. Les seuls champs de date sont
-`Date d'enregistrement`, `Date de fin de validité` et `Version source`, qui
-décrivent le médicament, pas la collecte.
+Le script est publié sur la branche `gh-pages` du dépôt, dans
+`evidence/code/Dzair_Farma.py`. Il a été relu ligne à ligne le 15/11/2026.
 
-Par ailleurs, la structure des fiches (tableaux imbriqués `interactions`,
-`generiques`, `related_presentations`) est celle d'un point d'accès JSON plus que
-celle d'une page HTML analysée. **Ce n'est pas une preuve, c'est une raison de
-poser la question.**
+```python
+BASE_URL   = "https://www.dzair-pharma.net"
+SEARCH_URL = f"{BASE_URL}/recherche"
+HEADERS    = {"User-Agent": "MedicationResearchBot/1.0", ...}
+...
+time.sleep(2)
+```
 
-➜ **Seule la personne qui a produit ces exports peut dire quel chemin et quel
-user-agent ont été utilisés.** La question lui est posée, et la réponse sera
-consignée ici.
+| Question de l'enseignant | Réponse établie par lecture du code |
+|---|---|
+| **Quels chemins ?** | `/recherche`, puis les pages `/medicament/…` atteintes par `urljoin` sur les liens trouvés dans les résultats. **La chaîne `api` n'apparaît pas une seule fois dans le script.** |
+| **Quel user-agent ?** | `MedicationResearchBot/1.0` pour la recherche et les fiches ; **`Mozilla/5.0` pour la fonction qui récupère les interactions.** |
+| **Quel délai ?** | `time.sleep(2)` entre deux requêtes, conforme à `settings.request_delay_seconds`. |
+
+**Sur `/api/` : le doute est levé, et l'inquiétude était sans objet pour nous.**
+Le script ne l'appelle jamais. Il parcourt les pages publiques, comme un
+navigateur.
+
+**Sur le user-agent : il y a un vrai problème, et il faut le dire.**
+
+- `MedicationResearchBot/1.0` ne correspond à aucun des 23 jetons bloqués : la
+  collecte relevait donc de `User-Agent: *`, qui autorise `/recherche` et
+  `/medicament/…`. **`robots.txt` n'a pas été enfreint.**
+- Mais ce n'est pas le user-agent que le projet déclare dans
+  [`config.py`](../../src/pharmeazor/config.py), et la fonction des interactions
+  se présente comme **`Mozilla/5.0`**, c'est-à-dire comme un navigateur.
+
+Se faire passer pour un navigateur ne viole pas `robots.txt` — aucun jeton n'est
+contourné — mais cela masque l'identité du programme, et contredit la règle que
+nous écrivons nous-mêmes dans [`DATA_SOURCES.md`](../DATA_SOURCES.md) :
+*« `User-Agent` identifiant le projet »*. **Nous ne le défendons pas.** C'est une
+entorse à notre propre étiquette, pas au fichier du site.
+
+➜ Rien n'est à refaire sur les données déjà collectées : les chemins étaient
+autorisés et le délai respecté. Mais **aucune collecte automatique nouvelle**
+n'aura lieu sur ce site, et si elle reprenait un jour, elle utiliserait
+`settings.user_agent`, une seule fois, sans exception pour une fonction
+particulière.
+
+### D'où vient le chiffre de 1 650 fiches
+
+L'enseignant cite « 1 650 fiches ». Le chiffre vient de
+`evidence/collection_summary.json`, publié sur le site de preuves :
+
+| | |
+|---|---:|
+| Fichiers JSON | **45** |
+| Fiches | **1 650** |
+| URL distinctes | 1 367 |
+| URL en doublon | 283 |
+| Champs par fiche | 29 |
+
+⚠️ **Deux chiffres différents circulent pour la même chose.** Le
+[rapport de semaine 1](../RAPPORT-SEMAINE-1.md) annonce « 11 exports JSON,
+497 produits » ; le site de preuves annonce 45 fichiers et 1 650 fiches. Les deux
+ne se contredisent pas nécessairement — 497 produits distincts après
+dédoublonnage n'est pas 1 650 fiches brutes — mais **cela doit être écrit
+explicitement**, sinon un lecteur attentif y verra une incohérence. À
+réconcilier avant la remise de la semaine 2.
+
+### Ce que l'audit du 11/11 avait établi — et ce qu'il avait manqué
+
+`evidence/robots_audit.json` montre qu'un audit automatique avait déjà été fait
+le 11/11/2026, sur 8 sources, avec horodatage. C'est une bonne pratique, et elle
+était en place avant le retour de l'enseignant.
+
+Mais pour dzair-pharma il conclut `"url_allowed": true` — **et c'est exact pour
+l'URL testée, `/`, seulement.** L'audit n'a pas testé `/api/`, et une
+autorisation sur `/` n'en dit rien. C'est précisément l'écart que l'enseignant a
+relevé : un audit qui répond « autorisé » sans dire *quel chemin* a été testé
+peut rassurer à tort.
+
+➜ `check_robots.py` doit tester **les chemins réellement appelés**, pas la racine.
 
 ---
 
@@ -157,8 +220,13 @@ déjà. Le relais n'apportait que du confort.
 
 ## 6. À refaire
 
-- [ ] **Obtenir de l'auteur des exports** : chemin appelé, user-agent employé,
-      date de collecte, outil utilisé. À consigner au § 3.
+- [x] ~~Obtenir de l'auteur des exports : chemin appelé, user-agent employé.~~
+      **Fait le 15/11/2026 par lecture du code** publié sur `gh-pages`
+      (`evidence/code/Dzair_Farma.py`). Voir § 3.
+- [ ] **Réconcilier les deux décomptes** : 497 produits (rapport) contre
+      1 650 fiches (site de preuves). Dire lequel compte quoi.
+- [ ] **Corriger `check_robots.py`** pour qu'il teste les chemins réellement
+      appelés, et non la seule racine.
 - [ ] Reprendre les interactions depuis l'ANSM en direct, et compléter la ligne
       ANSM du [registre](../DATA_SOURCES.md) (aujourd'hui *à remplir*).
 - [ ] Refaire ce relevé si la collecte reprend un jour : un `robots.txt` change.
