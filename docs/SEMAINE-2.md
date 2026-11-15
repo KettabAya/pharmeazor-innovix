@@ -32,12 +32,83 @@ de comparer au moins deux approches.
 
 ---
 
+## La collecte n'est pas le goulot d'étranglement
+
+**Rien n'attend la fin de la collecte.** C'est le point le plus important de
+cette semaine, et il est contre-intuitif.
+
+Deux raisons :
+
+1. **L'enseignant a inversé l'ordre.** Il demande le jeu de questions *avant* les
+   embeddings, et l'extension de la couverture *en priorité sur les molécules du
+   jeu de questions*. Donc ce sont les questions qui décident quoi collecter —
+   pas la collecte qui décide quelles questions sont possibles.
+
+2. **Un corpus existe déjà**, versionné dans le dépôt et reproductible par tout
+   le monde : les tables de la semaine 1.
+
+```bash
+python scripts/construire_corpus.py
+```
+
+**417 passages**, chacun avec sa provenance et son autorité :
+
+| | | Questions auxquelles il répond |
+|---|---:|---|
+| produits | 284 | dosage, forme, conditionnement, laboratoire, DCI d'une marque |
+| interactions | 87 | « peut-on associer X et Y ? », avec le niveau ANSM |
+| équivalents | 46 | « par quoi remplacer X en rupture ? » |
+
+Ce n'est pas un pis-aller. La nomenclature est une source **officielle de
+rang 3**, et ces questions sont de vraies questions de pharmacien. Les RCP
+viendront s'ajouter : ils apporteront la posologie et les contre-indications,
+que la nomenclature n'a pas. Les deux corpus coexisteront.
+
+### Ce que la première mesure a déjà montré
+
+La référence BM25 tourne sur ces 417 passages. Un résultat oriente toute la
+semaine :
+
+| Question | Score BM25 |
+|---|---:|
+| « quel est le dosage de DOLIPRANE » — légitime, trouvable | **4,15** |
+| « quel médicament prendre pour ma migraine » — hors périmètre | **4,09** |
+| « posologie de l'amoxicilline chez l'insuffisant rénal » — absente du corpus | **4,00** |
+
+**Un seuil de score ne distingue pas une bonne réponse d'une mauvaise.** Les
+trois sont à quatre centièmes près, et les deux dernières ramènent des
+interactions au paracétamol qui n'ont rien à voir avec la question.
+
+C'est exactement ce que l'enseignant voulait faire mesurer en demandant des
+questions sans réponse dans le corpus. Sans elles, on aurait livré un refus par
+seuil — et il aurait échoué en silence.
+
+➜ **Le refus ne peut donc pas reposer sur le score de recherche.** Il faudra
+une vérification en aval : le passage rapporté contient-il réellement de quoi
+répondre ? C'est le rôle du `number_guard` et de `Citation`, déjà écrits.
+
+### Qui peut démarrer, et sur quoi
+
+| Personne | Démarre maintenant sur | Dépend de la collecte ? |
+|---|---|---|
+| **Vous** | le jeu de questions, sur les 417 passages | non |
+| **Aya** | embeddings E5/BGE-M3 sur ces mêmes passages | non |
+| **Ryma** | extraction et partage des documents déjà obtenus | c'est elle, la collecte |
+
+Les trois lots touchent des fichiers différents. Aucun conflit possible.
+
+---
+
 ## À régler dès lundi — sinon rien ne démarre
 
 ### 1. Partager les documents
 
 `data/raw/notices/` est ignoré par git. Les documents de Ryma n'existent que sur
-sa machine : personne d'autre ne peut découper, indexer ni comparer.
+sa machine : personne d'autre ne peut les découper ni les indexer.
+
+**Ce n'est plus bloquant** depuis que le corpus de la semaine 1 existe (voir
+ci-dessus) — mais cela le redeviendra dès qu'il faudra répondre à une question
+de posologie, que seuls les RCP couvrent.
 
 **Deux options, à trancher ensemble :**
 
