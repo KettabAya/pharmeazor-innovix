@@ -87,3 +87,62 @@ questions:
       couvre. Le systeme doit dire qu'il n'a pas la source, et surtout ne pas
       repondre depuis les connaissances du modele. C'est la regle d'or prise
       par l'autre bout : pas de source, pas de reponse.
+
+# ---------------------------------------------------------------------------
+# Exemples ecrits le 15/11/2026 sur le corpus de la semaine 1 (417 passages).
+# Methode : afficher un passage, puis ecrire la question qu'un pharmacien
+# poserait pour le trouver.
+#     python scripts/voir_passages.py
+# ---------------------------------------------------------------------------
+
+  - id: Q010
+    level: 1
+    question: "Quel est le dosage de PLANADIX CONFORT + et releve-t-il d'une liste ?"
+    expected_answer: "Son dosage est 500MG/30MG et il releve de la LISTE I."
+    reference_passage: nom-produit-DZ-0033
+    reference_source: nomenclature
+    note: >-
+      Question directe : tout est dans un seul passage. Les deux nombres,
+      500MG et 30MG, figurent tels quels dans le passage cite, donc
+      number_guard peut les verifier.
+
+  - id: Q011
+    level: 2
+    question: "BIOPAMOX est en rupture de stock, par quoi puis-je le remplacer ?"
+    expected_answer: >-
+      Six autres medicaments partagent la meme substance active et le meme
+      dosage : AMODEX-Ge, AMOXICILLINE EG, AMOXIMEX, AMOXYPEN, CLAMOXYL,
+      HIMOXYL. L'equivalence ne vaut pas interchangeabilite clinique.
+    reference_passage: nom-equiv-EQ-0009
+    reference_source: nomenclature
+    note: >-
+      Les mots de la question -- "rupture", "remplacer" -- n'apparaissent PAS
+      dans le passage, qui dit "equivalents". C'est la 3e difficulte du
+      chapitre 01, et BM25 echoue dessus. A garder pour la comparaison.
+
+  - id: Q012
+    level: 2
+    question: "DOLIRHUME peut-il etre associe a un autre sympathomimetique indirect ?"
+    expected_answer: >-
+      Non : l'association est une contre-indication, avec un risque de
+      vasoconstriction et/ou de crises hypertensives.
+    expected_interaction_level: CONTRAINDICATED
+    reference_passage: interaction-0072
+    reference_source: dzair_pharma
+    note: >-
+      Le passage vient d'un relais secondaire, pas de l'ANSM en direct. La
+      reponse doit le dire et inviter a confirmer dans le thesaurus.
+
+  - id: Q013
+    level: absent
+    question: "Quelle est la posologie maximale journaliere de paracetamol chez l'adulte ?"
+    expected_behaviour: declare_missing
+    reference_passage: null
+    reference_source: null
+    note: >-
+      Question parfaitement legitime, et c'est ce qui la rend utile. La
+      nomenclature dit ce qui est enregistre, pas la posologie : aucun des
+      417 passages ne porte cette information. Le systeme doit repondre
+      qu'il n'a pas la source, et surtout ne pas repondre de memoire. Elle
+      deviendra repondable quand un RCP sera verse.
+
