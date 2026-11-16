@@ -67,6 +67,63 @@ class TestSplitting:
         split = split_sections(text)
         assert any("conservation" in k.lower() for k in split.unmapped)
 
+    def test_numbered_unknown_rcp_heading_stops_previous_section(self):
+        text = (
+            "4.2. Posologie et mode d'administration\n"
+            "Dose adaptée au patient.\n"
+            "4.4. Mises en garde spéciales et précautions d'emploi\n"
+            "Prendre des précautions particulières.\n"
+        )
+        split = split_sections(text)
+
+        assert any("4.4." in key for key in split.unmapped)
+        assert "Prendre des précautions particulières." in next(
+            value for key, value in split.unmapped.items() if "4.4." in key
+        )
+        assert "Prendre des précautions particulières." not in split.sections[Section.POSOLOGY]
+
+    def test_dosage_table_rows_are_not_misclassified_as_headings(self):
+        text = (
+            "4.2. Posologie et mode d'administration\n"
+            "3 - 6 mois   5 - 6 kg\n"
+            "240 mg de paracétamol\n"
+            "4.4. Mises en garde spéciales\n"
+            "Précautions particulières.\n"
+        )
+        split = split_sections(text)
+
+        posology = split.sections[Section.POSOLOGY]
+        assert "3 - 6 mois" in posology
+        assert "240 mg de paracétamol" in posology
+        assert not any("3 - 6 mois" in key for key in split.unmapped)
+        assert not any("240 mg" in key for key in split.unmapped)
+
+    def test_numbered_unmapped_heading_closes_previous_section(self):
+        text = RCP_STYLE + (
+            "\n4.4. Mises en garde spéciales et précautions d'emploi\n"
+            "Surveiller les patients concernés.\n"
+        )
+        split = split_sections(text)
+
+        assert any("4.4." in key for key in split.unmapped)
+        assert "Surveiller les patients concernés." in next(
+            value for key, value in split.unmapped.items() if "4.4." in key
+        )
+
+    def test_dosage_table_rows_stay_inside_posology(self):
+        text = (
+            "4.2. Posologie et mode d'administration\n"
+            "3 - 6 mois 5 - 6 kg\n"
+            "240 mg de paracétamol\n"
+            "4.5. Interactions avec d'autres médicaments\n"
+            "Aucune interaction signalée.\n"
+        )
+        split = split_sections(text)
+
+        assert "3 - 6 mois 5 - 6 kg" in split.sections[Section.POSOLOGY]
+        assert "240 mg de paracétamol" in split.sections[Section.POSOLOGY]
+        assert not any("3 - 6 mois" in key for key in split.unmapped)
+
     def test_missing_section_is_reported(self):
         split = split_sections("4.1. Indications thérapeutiques\nDouleur légère.\n")
         assert Section.POSOLOGY in split.missing()
