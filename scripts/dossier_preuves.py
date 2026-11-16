@@ -62,6 +62,47 @@ def empreinte(chemin: Path) -> str:
     return h.hexdigest()[:16]
 
 
+def parcourir_historique() -> dict[str, dict]:
+    """Relever, par personne, ses commits, ses lignes et ses fichiers.
+
+    ``%aN`` applique ``.mailmap`` : quelqu'un qui a poussé sous plusieurs noms
+    ou adresses est compté une seule fois, sous le nom retenu. Les commits de
+    fusion sont ignorés pour les lignes, sinon le travail fusionné serait
+    attribué à celle qui a fusionné.
+    """
+    # Separateur : US (unite), absent de tout nom d'auteur et de tout chemin.
+    # NUL serait plus sur encore, mais Windows l'interdit dans un argument.
+    sep = "\x1f"
+    brut = git("log", "--no-merges", "--date=short",
+               f"--format={sep}%aN{sep}%ad", "--numstat")
+    stats: dict[str, dict] = {}
+    courant = None
+    for ligne in brut.splitlines():
+        if ligne.startswith(sep):
+            _, auteur, date = ligne.split(sep)
+            if not auteur:
+                courant = None
+                continue
+            courant = stats.setdefault(auteur, {
+                "commits": 0, "ajouts": 0, "retraits": 0,
+                "fichiers": set(), "dates": [],
+            })
+            courant["commits"] += 1
+            courant["dates"].append(date)
+            continue
+        if courant is None or not ligne.strip():
+            continue
+        morceaux = ligne.split("\t")
+        if len(morceaux) >= 3:
+            # "-" au lieu d'un nombre signale un fichier binaire.
+            if morceaux[0].isdigit():
+                courant["ajouts"] += int(morceaux[0])
+            if morceaux[1].isdigit():
+                courant["retraits"] += int(morceaux[1])
+            courant["fichiers"].add(morceaux[2])
+    return stats
+
+
 def lignes_csv(chemin: Path) -> int:
     with open(chemin, encoding="utf-8", newline="") as fh:
         return max(0, sum(1 for _ in csv.reader(fh)) - 1)
@@ -96,30 +137,25 @@ def main() -> int:
         "|---|---:|---:|---:|---|---|",
     ]
 
-    auteurs = sorted(set(git("log", "--format=%an").splitlines()))
+    # Un seul parcours de l'historique, attribue au nom retenu par .mailmap.
+    #
+    # La version precedente listait les auteurs avec %an, qui ignore le
+    # mailmap, puis comptait avec `--author=`, dont la correspondance est
+    # approximative. Resultat : une personne ayant pousse sous deux noms
+    # apparaissait deux fois, avec des chiffres identiques -- elle comptait
+    # donc double dans un document remis a l'enseignant. %aN applique le
+    # mailmap, et le comptage se fait ici plutot que par filtres successifs.
+    stats = parcourir_historique()
+
+    auteurs = sorted(stats, key=lambda a: -stats[a]["commits"])
     for auteur in auteurs:
-        if not auteur:
-            continue
-        n = len(git("log", f"--author={auteur}", "--format=%h").splitlines())
-        stats = git("log", f"--author={auteur}", "--pretty=tformat:", "--numstat")
-        add = dele = 0
-        for ligne in stats.splitlines():
-            morceaux = ligne.split("\t")
-            if len(morceaux) >= 2:
-                add += int(morceaux[0]) if morceaux[0].isdigit() else 0
-                dele += int(morceaux[1]) if morceaux[1].isdigit() else 0
-        dates = git("log", f"--author={auteur}", "--format=%ad", "--date=short").splitlines()
-        out.append(f"| **{auteur}** | {n} | +{add:,} | −{dele:,} | "
-                   f"{dates[-1] if dates else '—'} | {dates[0] if dates else '—'} |")
+        s = stats[auteur]
+        out.append(f"| **{auteur}** | {s['commits']} | +{s['ajouts']:,} | "
+                   f"−{s['retraits']:,} | {min(s['dates'])} | {max(s['dates'])} |")
 
     out += ["", "### Fichiers touchés par chaque personne", ""]
     for auteur in auteurs:
-        if not auteur:
-            continue
-        fichiers = sorted(set(
-            f for f in git("log", f"--author={auteur}", "--pretty=tformat:",
-                           "--name-only").splitlines() if f.strip()
-        ))
+        fichiers = sorted(stats[auteur]["fichiers"])
         out.append(f"**{auteur}** — {len(fichiers)} fichiers")
         out.append("")
         for f in fichiers[:14]:
