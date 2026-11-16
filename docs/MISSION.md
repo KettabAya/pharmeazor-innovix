@@ -70,7 +70,7 @@ répondre de mémoire — et c'est exactement ce qu'on veut démontrer.
 ## Le test du modèle seul
 
 ```bash
-python scripts/tester_llm_seul.py
+python scripts/run_baseline.py
 ```
 
 Le modèle reçoit la question **sans corpus, sans recherche, sans aucun

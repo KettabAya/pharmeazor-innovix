@@ -466,7 +466,7 @@ date, et la plus récente l'emporte.
 
 | # | Tâche | Pour qui | Durée |
 |---|---|---|---|
-| 1 | Clé Groq dans `.env`, lancer `tester_llm_seul.py` | Aya | 5 min |
+| 1 | Clé Groq dans `.env`, lancer `run_baseline.py` | Aya | 5 min |
 | 2 | Remplir la grille d'annotation des erreurs du modèle | Aya | 45 min |
 | 3 | Télécharger les RCP de l'ANPP et noter leur provenance | binôme | — |
 
@@ -507,7 +507,7 @@ redistribution n'ont pas été vérifiées. Les placer dans
 python scripts/build_week1.py          # table, dictionnaire, équivalents, interactions
 python scripts/comparer_versions.py    # les 13 désaccords datables
 python scripts/verifier_echantillon.py # échantillon à vérifier à la main
-python scripts/tester_llm_seul.py      # le modèle seul sur la question-test
+python scripts/run_baseline.py         # le modèle seul, sans corpus
 pytest                                 # 159 tests
 ```
 
