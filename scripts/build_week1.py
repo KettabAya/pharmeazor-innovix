@@ -56,6 +56,33 @@ EQUIVALENTS = REFERENCE / "equivalents_semaine1.csv"
 INTERACTIONS = REFERENCE / "interactions_semaine1.csv"
 CONFLICTS = REFERENCE / "conflits_semaine1.csv"
 
+
+def rediriger_sorties(suffixe: str) -> None:
+    """Ecrire les livrables sous un autre nom, au lieu des fichiers par defaut.
+
+    Les livrables de la semaine 1 ont ete remis a l'enseignant avec des
+    chiffres precis : 284 produits, 1 136 alias, 242 equivalents. Elargir le
+    filtre des DCI sans rediriger les sorties les remplacerait en silence, et
+    le rapport ne correspondrait plus aux fichiers.
+
+    Avec ``--suffixe _40molecules``, la version elargie s'ecrit a cote :
+    ``drugs_40molecules.csv``, ``name_index_40molecules.csv``, etc. Les deux
+    jeux coexistent, et on peut les comparer.
+    """
+    global PRODUCTS, NAME_INDEX, EQUIVALENTS, INTERACTIONS, CONFLICTS
+    if not suffixe:
+        return
+    # Le suffixe remplace "_semaine1" quand il est present, sinon il s'ajoute.
+    def nommer(base: str) -> Path:
+        tronc = base.removesuffix("_semaine1")
+        return REFERENCE / f"{tronc}{suffixe}.csv"
+
+    PRODUCTS = nommer("drugs_semaine1")
+    NAME_INDEX = nommer("name_index")
+    EQUIVALENTS = nommer("equivalents_semaine1")
+    INTERACTIONS = nommer("interactions_semaine1")
+    CONFLICTS = nommer("conflits_semaine1")
+
 PRODUCT_FIELDS = [
     "drug_id", "therapeutic_class", "inn", "brand_name", "code",
     "registration_no", "form", "strength_raw", "packaging_raw", "list_class",
@@ -261,7 +288,13 @@ def main() -> int:
         "--inn", nargs="+", default=list(TARGET_INN),
         help="DCI à retenir (par défaut : une par classe thérapeutique).",
     )
+    parser.add_argument(
+        "--suffixe", default="",
+        help="Écrire les livrables sous ce suffixe au lieu d'écraser ceux de "
+             "la semaine 1. Exemple : --suffixe _40molecules",
+    )
     args = parser.parse_args()
+    rediriger_sorties(args.suffixe)
     targets = tuple(x.upper() for x in args.inn)
 
     print(f"Molécules retenues : {', '.join(targets)}\n")
