@@ -28,7 +28,10 @@ def _load_api_key() -> str:
         if key:
             print(f"[llm_client] key loaded (ends ...{key[-4:]})")
             return key
-    except ImportError:
+    except Exception:
+        # Correctif d'Aya (PR #1) : dans un sous-processus Colab, userdata.get()
+        # leve AttributeError et non ImportError -- un except trop etroit fait
+        # planter le chargement de la cle au lieu de passer au secours suivant.
         pass
 
     try:
