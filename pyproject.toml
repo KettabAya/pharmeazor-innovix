@@ -38,7 +38,7 @@ llm = []  # le client du modele impose utilise openai (dependance principale)
 dev = ["pytest>=8.2", "pytest-cov>=5.0", "ruff>=0.5"]
 
 [project.urls]
-Repository = "https://github.com/KettabAya/pharmeazor"
+Repository = "https://github.com/KettabAya/pharmeazor-innovix"
 
 [tool.setuptools.packages.find]
 where = ["src"]

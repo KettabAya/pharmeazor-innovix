@@ -247,5 +247,5 @@ donc les clones existants continuent de fonctionner ; chacune met tout de même
 son `remote` à jour :
 
 ```bash
-git remote set-url origin https://github.com/KettabAya/pharmeazor.git
+git remote set-url origin https://github.com/KettabAya/pharmeazor-innovix.git
 ```

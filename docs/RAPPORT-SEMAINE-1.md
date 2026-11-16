@@ -492,7 +492,7 @@ date, et la plus récente l'emporte.
 ### Tout reconstruire
 
 ```bash
-git clone https://github.com/KettabAya/pharmeazor.git
+git clone https://github.com/KettabAya/pharmeazor-innovix.git
 cd pharmeazor
 python -m venv .venv && .venv\Scripts\activate
 pip install -r requirements.lock.txt

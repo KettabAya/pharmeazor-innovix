@@ -251,17 +251,39 @@ l'enseignant. Il est servi par la branche `gh-pages` du dépôt **sans** le poin
 Autrement dit : le code vit dans un dépôt, le site de preuves dans l'autre. Les
 deux liens fonctionnent, mais ils ne pointent pas sur le même projet.
 
-➜ **À régler avant toute autre chose cette semaine.** Deux options :
+### Ce qui a été décidé et fait, le 16/11/2026
 
-1. **renommer** `pharmeazor.` en `pharmeazor` — impossible tant que l'ancien
-   occupe le nom : il faut d'abord renommer ou supprimer l'ancien ;
-2. **tout regrouper** sur un seul dépôt, y compris `gh-pages`, et faire du second
-   une redirection.
+Le dépôt prend le nom du groupe : **`pharmeazor-innovix`**. Le point parasite
+disparaît, et le nom dit enfin qui a fait le travail.
 
-Dans les deux cas, chacune met son `remote` à jour :
+Étapes exécutées :
+
+1. vérification que l'ancien `main` est un **ancêtre complet** du nouveau —
+   ses 62 fichiers sont tous parmi les 111 du dépôt courant, historique
+   compris. Rien n'est perdu ;
+2. la branche `gh-pages`, qui porte le site de preuves, a été **poussée sur le
+   bon dépôt**. Elle n'y était pas : le site vivait uniquement sur l'ancien ;
+3. les 11 références au dépôt dans le code et la documentation ont été
+   réécrites, y compris l'insigne CI du README et `pyproject.toml`, qui
+   pointaient encore sur l'ancien ;
+4. l'ancien dépôt est archivé puis supprimé — **après** vérification que le
+   site répond à sa nouvelle adresse.
+
+**Conséquence assumée : l'adresse du site de preuves change.**
+
+| | |
+|---|---|
+| Lien donné à l'enseignant le 14/11 | `kettabaya.github.io/pharmeazor/` |
+| Nouveau lien | `kettabaya.github.io/pharmeazor-innovix/` |
+
+Une adresse GitHub Pages ne suit pas un renommage. Le nouveau lien est donc
+communiqué à l'enseignant explicitement, plutôt que de le laisser tomber sur une
+page morte.
+
+Chacune met son `remote` à jour :
 
 ```bash
-git remote set-url origin https://github.com/KettabAya/<nom-retenu>.git
+git remote set-url origin https://github.com/KettabAya/pharmeazor-innovix.git
 ```
 
 ---

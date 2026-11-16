@@ -4,10 +4,12 @@
 
 **Base de connaissances médicamenteuse et assistant à preuves pour le pharmacien d'officine.**
 
-[![CI](https://github.com/KettabAya/pharmeazor/actions/workflows/ci.yml/badge.svg)](https://github.com/KettabAya/pharmeazor/actions/workflows/ci.yml)
+[![CI](https://github.com/KettabAya/pharmeazor-innovix/actions/workflows/ci.yml/badge.svg)](https://github.com/KettabAya/pharmeazor-innovix/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-2DE2F0)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/tests-132%20passing-34D399)](tests/)
+[![Tests](https://img.shields.io/badge/tests-174%20passing-34D399)](tests/)
 [![License](https://img.shields.io/badge/license-MIT-8B7BF7)](LICENSE)
+
+**Groupe INNOVIX**
 
 *Projet 2 — Module RCR, M1 IA · Université Constantine 2 Abdelhamid Mehri · Faculté NTIC · Département IFA*
 
@@ -61,7 +63,7 @@ Le chatbot n'est que la dernière brique. L'essentiel du travail est **en amont*
 ## Démarrage
 
 ```bash
-git clone https://github.com/KettabAya/pharmeazor.git
+git clone https://github.com/KettabAya/pharmeazor-innovix.git
 cd pharmeazor
 python -m venv .venv && source .venv/bin/activate   # Windows : .venv\Scripts\activate
 pip install -r requirements.lock.txt

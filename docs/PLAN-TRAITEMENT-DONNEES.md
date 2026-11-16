@@ -53,7 +53,7 @@ Tant que ce n'est pas fait, ne commencez pas à coder chacun de votre côté.
 ### 0.1 — Chacun installe le projet
 
 ```bash
-git clone https://github.com/KettabAya/pharmeazor.git
+git clone https://github.com/KettabAya/pharmeazor-innovix.git
 cd pharmeazor
 python -m venv .venv
 .venv\Scripts\activate
