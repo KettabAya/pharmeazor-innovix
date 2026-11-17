@@ -66,6 +66,11 @@ _FORMES_SALINES = (
     "CITRATE", "ACETATE", "PHOSPHATE", "SODIQUE", "POTASSIQUE", "CALCIQUE",
     "MAGNESIQUE", "HEMIHYDRATE", "FUMARATE", "SUCCINATE", "MESILATE",
     "BROMHYDRATE", "NITRATE", "LACTATE", "GLUCONATE", "STEARATE", "ARGININE",
+    # Ecritures anglaises du registre. Le ministere alterne les deux langues :
+    # DICLOFENAC POTASSIQUE et DICLOFENAC POTASSIUM designent le meme sel.
+    # Sans ces trois mots, 7 produits sortaient avec une forme saline vide,
+    # donc indiscernables d'un produit sans sel precise.
+    "POTASSIUM", "SODIUM", "HYDROCHLORIDE",
 )
 
 

@@ -191,19 +191,40 @@ def write_name_index(catalogue: Catalogue) -> int:
 
 
 def write_equivalents(catalogue: Catalogue) -> int:
+    """Ecrire les groupes d'equivalents, chaque produit avec SA propre DCI.
+
+    La colonne `inn` est celle du GROUPE : c'est la DCI du premier produit
+    rencontre, et elle sert d'etiquette. Elle ne decrit pas forcement chaque
+    membre, parce que le regroupement se fait sur la substance de base et
+    laisse de cote la forme saline.
+
+    Exemple constate le 17/11/2026 sur le groupe « diclofenac 50 mg
+    comprime » : six produits sont du diclofenac sodique, trois du
+    potassique -- RAPIDUS, BIOFENAC FAST, VOTREX RAPID, dont les noms
+    annoncent eux-memes l'absorption plus rapide du sel de potassium. Les
+    neuf lignes portaient pourtant « DICLOFENAC SODIQUE ».
+
+    La colonne `inn_produit` porte donc la DCI exacte de chaque ligne, et
+    `sel_produit` la forme saline lue par parse_inn. Un pharmacien voit ainsi
+    ce qu'il delivre vraiment, et peut ecarter lui-meme un sel qui ne
+    convient pas. Le regroupement, lui, n'est pas modifie : decider que deux
+    sels ne sont pas interchangeables est un jugement pharmaceutique, pas une
+    decision de programme.
+    """
     groups = [g for g in catalogue.groups() if g.size > 1]
     with open(EQUIVALENTS, "w", encoding="utf-8", newline="") as fh:
         writer = csv.writer(fh)
         writer.writerow([
             "group_id", "inn", "strength", "form_family", "group_size",
-            "drug_id", "brand_name", "form", "packaging", "lab_name",
-            "registration_no", "status",
+            "drug_id", "brand_name", "inn_produit", "sel_produit", "form",
+            "packaging", "lab_name", "registration_no", "status",
         ])
         for i, group in enumerate(groups, 1):
             for p in group.products:
                 writer.writerow([
                     f"EQ-{i:04d}", group.inn, group.strength, group.form_family,
-                    group.size, p.drug_id, p.brand_name, p.form,
+                    group.size, p.drug_id, p.brand_name,
+                    p.inn, p.substance.sel, p.form,
                     p.packaging.raw, p.lab_name, p.registration_no, p.status,
                 ])
     return len(groups)
