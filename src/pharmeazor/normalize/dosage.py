@@ -48,60 +48,32 @@ _COMPONENT_RE = re.compile(
     rf"^\s*(?P<value>{_NUMBER})\s*(?P<unit>[A-Za-zµ%]+)?\s*\**\s*$"
 )
 
-# Mots designant un contenant dont le nombre qui suit est un nombre d'UNITES.
-# Mesure sur les 5 423 conditionnements de la nomenclature d'aout 2026 : la
-# seule forme "B/N" couvre 53,1 %. Y ajouter les autres contenants et le mot
-# d'unite facultatif qui suit porte la couverture a 56,1 %, soit 159 produits.
-_CONTENANTS = r"B|BTE|BOITE|PILULIER|PLQ|PLAQUETTE"
+# --- Les mots qu'on reconnait dans un conditionnement ----------------------
+#
+# Des listes, pas des expressions regulieres : on peut les lire, et en ajouter
+# un mot ne demande pas de relire une regle.
 
-# Mots d'unite denombrable toleres apres le nombre : "B/30 SACHETS" vaut 30.
-# Un poids ou un volume ne figure PAS ici : "T/15G" est 15 grammes de pommade,
-# pas 15 unites, et "FL/5ML" un flacon de 5 ml.
-_DENOMBRABLES = (
-    r"SACHETS?|COMPRIMES?|CP|GELULES?|CAPSULES?|SUPPOSITOIRES?|OVULES?"
-    r"|AMPOULES?|AMP|PILULES?|STICKS?|DOSES?|UNITES?"
-)
+# Contenants dont le nombre qui suit est un nombre d'UNITES.
+# Mesure sur les 5 423 conditionnements d'aout 2026 : la seule forme "B/N"
+# couvre 53,1 %. Avec les autres contenants, 56,1 %.
+CONTENANTS_QUI_COMPTENT = ["B", "BTE", "BOITE", "PILULIER", "PLQ", "PLAQUETTE"]
 
-# "B/16", "BTE/20", "BOITE DE 30", "PILULIER/30", "B/30 SACHETS", "B/30SACHETS".
-# Le $ final est essentiel : il fait echouer "B/30 ET B/90", ou deux tailles de
-# boite coexistent et ou choisir serait inventer.
-_PACK_COUNT_RE = re.compile(
-    rf"^\s*(?:{_CONTENANTS})\s*(?:/|\s+DE\s+)\s*(?P<count>\d+)"
-    rf"\s*(?:{_DENOMBRABLES})?\s*$",
-    re.I,
-)
-# Contenants dont le contenu se mesure, et non se compte.
-_CONTENANTS_MESURE = r"FL|FLACON|F|T|TUBE|AMP|AMPOULE|SACHET|POT|SERINGUE"
-_UNITES_MESURE = r"ML|L|G|MG|KG"
+# Contenants dont le contenu se MESURE : un tube de 15 g n'est pas 15 unites.
+CONTENANTS_QUI_MESURENT = ["FL", "FLACON", "F", "T", "TUBE", "AMP", "AMPOULE",
+                           "SACHET", "POT", "SERINGUE"]
 
-# "B/FL 15 ML", "B/ FL. 60ML" : la boite annonce son contenant puis sa mesure.
-_PACK_VOLUME_RE = re.compile(
-    rf"^\s*B\s*(?:TE|OITE)?\s*/\s*(?P<container>{_CONTENANTS_MESURE})\.?\s*"
-    rf"(?P<value>{_NUMBER})\s*(?P<unit>{_UNITES_MESURE})\s*$",
-    re.I,
-)
+# Mots toleres apres le nombre : "B/30 SACHETS" vaut bien 30.
+MOTS_DENOMBRABLES = ["SACHET", "SACHETS", "COMPRIME", "COMPRIMES", "CP",
+                     "GELULE", "GELULES", "CAPSULE", "CAPSULES",
+                     "SUPPOSITOIRE", "SUPPOSITOIRES", "OVULE", "OVULES",
+                     "AMPOULE", "AMPOULES", "AMP", "PILULE", "PILULES",
+                     "STICK", "STICKS", "DOSE", "DOSES", "UNITE", "UNITES"]
 
-# Forme A : le contenant porte directement sa mesure, sans boite.
-# "T/30G", "FL/30ML", "FL/125 ML", "TUBE/30G", "FL./100ML", "F/5ML".
-# Mesure sur les 911 produits des 38 molecules : 77 cas, la famille la plus
-# frequente parmi les conditionnements que l'ancienne regle laissait de cote.
-_PACK_MESURE_SEULE_RE = re.compile(
-    rf"^\s*(?P<container>{_CONTENANTS_MESURE})\.?\s*/\s*"
-    rf"(?P<value>{_NUMBER})\s*(?P<unit>{_UNITES_MESURE})\s*$",
-    re.I,
-)
+# L'ordre compte : "MG" avant "G", sinon "500MG" se lirait "500M" + "G".
+UNITES_DE_MESURE = ["ML", "MG", "KG", "L", "G"]
 
-# Forme B : une boite de N contenants, chacun d'une mesure donnee.
-# "B/05 AMP. DE 2ML", "B/01 FL DE 60ML", "BOITE DE 01 FLACON DE 60ML".
-# Mesure : 34 cas. Elle porte DEUX informations -- le nombre d'ampoules ET le
-# volume de chacune -- la ou les autres formes n'en portent qu'une. Les
-# confondre ferait lire "5 ampoules de 2 ml" comme "5 ml".
-_PACK_COMPTE_ET_MESURE_RE = re.compile(
-    r"^\s*B\s*(?:TE|OITE)?\s*(?:/|\s+DE\s+)\s*(?P<count>\d+)\s*"
-    rf"(?P<container>{_CONTENANTS_MESURE})\.?\s*(?:DE)?\s*"
-    rf"(?P<value>{_NUMBER})\s*(?P<unit>{_UNITES_MESURE})\s*$",
-    re.I,
-)
+# Deux presentations dans une seule cellule. On refuse de choisir.
+SEPARATEURS_DE_PRESENTATIONS = [" ET ", " - ", " OU "]
 
 
 def _to_float(text: str) -> float:
@@ -208,6 +180,41 @@ def parse_strength(raw: str | None) -> Strength:
     return Strength(raw=text, components=tuple(components), unparsed=tuple(unparsed))
 
 
+def _separer_nombre_et_mot(texte: str) -> tuple[int | None, str]:
+    """'05 AMP' et '01FL' donnent tous deux (5, 'FL') ou (1, 'FL').
+
+    Le ministere ecrit parfois le nombre colle au contenant. Separer sur les
+    espaces seuls raterait "B/01FL DE 125ML" -- huit produits du registre.
+    """
+    texte = texte.strip()
+    chiffres = ""
+    for caractere in texte:
+        if caractere.isdigit():
+            chiffres += caractere
+        else:
+            break
+    if not chiffres:
+        return None, ""
+    return int(chiffres), texte[len(chiffres):].strip()
+
+
+def _lire_mesure(texte: str) -> Component | None:
+    """'125 ML' -> 125 ml.  Rend None si ce n'est pas une mesure.
+
+    Les unites sont essayees dans l'ordre de la liste, et "MG" y precede "G" :
+    sinon "500MG" se lirait "500M" suivi de "G", et le nombre serait faux.
+    """
+    texte = texte.strip()
+    for unite in UNITES_DE_MESURE:
+        if texte.endswith(unite):
+            nombre = texte[: -len(unite)].strip()
+            try:
+                return Component(value=_to_float(nombre), unit=normalize_unit(unite))
+            except ValueError:
+                return None
+    return None
+
+
 def parse_packaging(raw: str | None) -> Packaging:
     """Read a CONDITIONNEMENT cell.
 
@@ -224,27 +231,66 @@ def parse_packaging(raw: str | None) -> Packaging:
     if not text:
         return Packaging(raw="")
 
-    count_match = _PACK_COUNT_RE.match(text)
-    if count_match:
-        return Packaging(raw=text, count=int(count_match.group("count")))
+    propre = text.upper().replace(".", " ")
 
-    # La forme la plus riche en premier : elle porte un compte ET une mesure.
-    # Essayee avant les autres, sinon "B/05 AMP. DE 2ML" serait lu comme un
-    # simple volume de 2 ml et les cinq ampoules disparaitraient.
-    for pattern in (_PACK_COMPTE_ET_MESURE_RE, _PACK_VOLUME_RE, _PACK_MESURE_SEULE_RE):
-        match = pattern.match(text)
-        if not match:
-            continue
-        groupes = match.groupdict()
-        compte = groupes.get("count")
-        return Packaging(
-            raw=text,
-            count=int(compte) if compte else None,
-            container=groupes["container"].upper(),
-            volume=Component(
-                value=_to_float(groupes["value"]),
-                unit=normalize_unit(groupes["unit"]),
-            ),
-        )
+    # Deux presentations dans une seule cellule : on ne choisit pas.
+    # "B/30 ET B/90" decrit deux tailles de boite ; en retenir une serait
+    # inventer. C'est une decision, pas un echec.
+    for separateur in SEPARATEURS_DE_PRESENTATIONS:
+        if separateur in propre:
+            return Packaging(raw=text)
+
+    if "/" in propre:
+        gauche, droite = propre.split("/", 1)
+    elif " DE " in propre:
+        gauche, droite = propre.split(" DE ", 1)
+    else:
+        return Packaging(raw=text)
+    gauche, droite = gauche.strip(), droite.strip()
+    mots = droite.split()
+
+    # Cas 1 : le contenant est a gauche et son contenu se mesure. "FL/125 ML"
+    if gauche in CONTENANTS_QUI_MESURENT:
+        mesure = _lire_mesure(droite)
+        return Packaging(raw=text, container=gauche, volume=mesure) if mesure \
+            else Packaging(raw=text)
+
+    # Pour tout le reste, il faut une boite a gauche.
+    if gauche not in CONTENANTS_QUI_COMPTENT:
+        return Packaging(raw=text)
+
+    # Cas 2 : une boite de N contenants, d'une mesure chacun.
+    # "B/05 AMP DE 2ML" porte DEUX informations. On l'examine en premier :
+    # sinon le cas 3 y lirait un simple volume de 2 ml et les cinq ampoules
+    # disparaitraient.
+    if " DE " in droite:
+        avant, apres = droite.split(" DE ", 1)
+        nombre, contenant = _separer_nombre_et_mot(avant)
+        if nombre is not None and contenant in CONTENANTS_QUI_MESURENT:
+            mesure = _lire_mesure(apres)
+            if mesure:
+                return Packaging(raw=text, count=nombre,
+                                 container=contenant, volume=mesure)
+
+    # Cas 3 : une boite qui annonce son contenant puis sa mesure. "B/FL 15 ML"
+    if mots and mots[0] in CONTENANTS_QUI_MESURENT:
+        mesure = _lire_mesure(" ".join(mots[1:]))
+        if mesure:
+            return Packaging(raw=text, container=mots[0], volume=mesure)
+
+    # Cas 4 : une boite de N unites. "B/16", "B/30 SACHETS"
+    if mots and mots[0].isdigit():
+        reste = mots[1:]
+        if not reste or (len(reste) == 1 and reste[0] in MOTS_DENOMBRABLES):
+            return Packaging(raw=text, count=int(mots[0]))
+        # "B/30SACHETS" : le mot est colle au nombre.
+        chiffres = ""
+        for caractere in droite:
+            if caractere.isdigit():
+                chiffres += caractere
+            else:
+                break
+        if chiffres and droite[len(chiffres):].strip() in MOTS_DENOMBRABLES:
+            return Packaging(raw=text, count=int(chiffres))
 
     return Packaging(raw=text)
