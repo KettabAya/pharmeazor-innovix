@@ -36,13 +36,31 @@ __all__ = [
     "form_family",
 ]
 
-# Galenic families. Two products are only interchangeable within one of these:
-# a tablet does not replace a syrup, whatever the molecule.
+# La VOIE d'administration, examinee en premier.
+#
+# Elle prime sur la forme galenique : une solution injectable et une solution
+# buvable sont toutes deux des "solutions", mais l'une se pique et l'autre se
+# boit. Les confondre proposerait un injectable pour remplacer un sirop.
+#
+# Mesure sur les 911 produits des 38 molecules : 46 injectables et 15 collyres
+# etaient classes "SOLUTION", donc melangeables avec les solutions buvables.
+# Aucun groupe d'equivalents n'en avait encore souffert, parce que l'egalite
+# de dosage les separait de fait -- mais la regle etait fausse.
+_VOIES: tuple[str, ...] = (
+    "INJECTABLE", "PERFUSION",
+    "COLLYRE", "OPHTALMIQUE", "OCULAIRE",
+    "AURICULAIRE",
+    "VAGINAL", "RECTAL",
+    "CUTANEE", "CUTANE",
+)
+
+# Familles galeniques, examinees ensuite. Deux produits ne sont
+# interchangeables qu'a l'interieur d'une meme famille : un comprime ne
+# remplace pas un sirop, quelle que soit la molecule.
 _FORM_FAMILIES: tuple[str, ...] = (
     "COMPRIME", "GELULE", "CAPSULE", "SIROP", "SUSPENSION", "SOLUTION",
     "POUDRE", "GRANULE", "SACHET", "SUPPOSITOIRE", "OVULE", "CREME",
-    "POMMADE", "GEL", "COLLYRE", "SPRAY", "AEROSOL", "PATCH", "AMPOULE",
-    "INJECTABLE", "PERFUSION", "GOUTTES", "SIROP",
+    "POMMADE", "GEL", "SPRAY", "AEROSOL", "PATCH", "AMPOULE", "GOUTTES",
 )
 
 
@@ -53,12 +71,23 @@ def form_family(form: str | None) -> str:
     coating and the score line do not change what the product is. The full text
     is kept on the product so a pharmacist can still see the difference.
 
+    La voie d'administration est examinee avant la forme : une
+    ``SOLUTION INJECTABLE`` donne ``INJECTABLE`` et non ``SOLUTION``, sans
+    quoi elle se retrouverait interchangeable avec une solution buvable.
+
     >>> form_family("COMPRIME PELLICULE SECABLE")
     'COMPRIME'
     >>> form_family("POUDRE POUR SUSPENSSION BUVABLE")
     'POUDRE'
+    >>> form_family("SOLUTION INJECTABLE IM/IV")
+    'INJECTABLE'
+    >>> form_family("COLLYRE EN SOLUTION")
+    'COLLYRE'
     """
     text = (form or "").upper()
+    for voie in _VOIES:
+        if voie in text:
+            return voie
     for family in _FORM_FAMILIES:
         if family in text:
             return family
