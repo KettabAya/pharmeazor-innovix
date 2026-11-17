@@ -63,6 +63,47 @@ class TestArbitration:
         ]
         assert arbitrate(claims).value == "4 g"
 
+    def test_a_foreign_source_never_replaces_the_algerian_one(self):
+        """Le pays doit primer, meme si la source etrangere est mieux classee.
+
+        Le cahier des charges, section 3 : « Une source etrangere sert de
+        complement, jamais de substitut a la source algerienne. »
+
+        Ce test est ne d'un vrai defaut : ansm_bdpm, une base francaise, etait
+        enregistree au rang OFFICIAL, et l'arbitrage decidait de la nationalite
+        d'apres le rang seul. Une dose maximale francaise de 4 g ecrasait donc
+        la valeur algerienne de 3 g.
+        """
+        claims = [
+            make_claim("ansm_bdpm", Authority.OFFICIAL, "4 g", country="FR"),
+            make_claim("nomenclature", Authority.NOMENCLATURE, "3 g"),
+        ]
+        assert arbitrate(claims).value == "3 g"
+
+    def test_country_decides_nationality_not_rank(self):
+        fr = make_claim("ansm_bdpm", Authority.OFFICIAL, "4 g", country="FR")
+        dz = make_claim("anpp", Authority.OFFICIAL, "3 g")
+        assert fr.citation.passage.provenance.is_algerian_official is False
+        assert dz.citation.passage.provenance.is_algerian_official is True
+        # Le rang, lui, ignore le pays : c'est son role.
+        assert Authority.OFFICIAL.is_official_tier is True
+
+    def test_between_two_foreign_sources_the_rank_still_decides(self):
+        """La preference algerienne ne doit pas brouiller les autres arbitrages."""
+        claims = [
+            make_claim("forum_fr", Authority.PROFESSIONAL, "9 g", country="FR"),
+            make_claim("ema", Authority.INSTITUTIONAL, "4 g", country="EU"),
+        ]
+        assert arbitrate(claims).value == "4 g"
+
+    def test_the_preference_can_be_switched_off(self):
+        claims = [
+            make_claim("ansm_bdpm", Authority.OFFICIAL, "4 g", country="FR"),
+            make_claim("nomenclature", Authority.NOMENCLATURE, "3 g"),
+        ]
+        policy = ConflictPolicy(prefer_algerian=False)
+        assert arbitrate(claims, policy).value == "4 g"
+
     def test_same_rank_prefers_the_fresher_collection(self):
         claims = [
             make_claim("anpp-old", Authority.OFFICIAL, "3 g", day=1),

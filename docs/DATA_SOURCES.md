@@ -33,7 +33,7 @@ Elle n'est jamais contournée.
 | Thésaurus des interactions — ANSM | 2 — institutionnelle | 2026-11-15 | accès autorisé | robots.txt : `User-agent: * / Allow: /`, aucun crawler d'IA bloqué. **À privilégier en direct** pour les interactions, plutôt que par un relais secondaire. |
 | DailyMed | 2 — institutionnelle | 2026-11-13 | accès interdit au corpus (droits non confirmés) | robots.txt : seul /archives/ est interdit. Droits de réutilisation des labels fournis par les sociétés non confirmés. Ne pas intégrer ni redistribuer sans vérification. |
 | EMA | 2 — institutionnelle | 2026-11-15 | accès autorisé hors chemins techniques | robots.txt : `/core/`, `/profiles/`, `/admin/`, `/search/`, `/user/login`… interdits ; aucun crawler d'IA bloqué. Notice européenne : peut différer de l'algérienne. |
-| Base de données publique des médicaments — ANSM | 4 — officielle | 2026-11-15 | accès autorisé | robots.txt : `User-agent: * / Allow: /`. Notice française : complément, **jamais** substitut à une source algérienne. |
+| Base de données publique des médicaments — ANSM | 2 — institutionnelle | 2026-11-15 | accès autorisé | robots.txt : `User-agent: * / Allow: /`. Notice française : complément, **jamais** substitut à une source algérienne. |
 | Pharm'Net (e-Sahti) | 1 — secondaire | 2026-11-13 | accès manuel uniquement | robots.txt : accès autorisé aux chemins publics, chemins privés et administratifs interdits. CGU : aucun lien identifié sur la page d'accueil lors de la vérification du 13/11/2026. Conditions d'utilisation non confirmées. |
 | VIDAL | 0 — écartée | 2026-11-13 | forbidden | CGU : reproduction intégrale ou partielle interdite sans consentement. Source exclue faute d'autorisation de réutilisation. |
 | MEDAlgérie | 0 — écartée | non vérifiable (15/11/2026) | **écartée** | Le certificat TLS de `medalgerie.com` ne correspond pas au nom de l'hôte (`SEC_E_WRONG_PRINCIPAL`) et `www.medalgerie.com` ne répond pas. Conformité non établie, donc source inutilisée. |
@@ -68,9 +68,28 @@ lecteur sache de quand elle date.
 ## Note sur les différences entre pays
 
 Un même médicament peut avoir une notice différente d'un pays à l'autre, car chaque
-autorité valide son propre texte. Une source étrangère sert de complément, **jamais** de
-substitut à la source algérienne. Le code applique cette règle dans
-`ConflictPolicy.prefer_algerian`.
+autorité valide son propre texte.
+
+Le cahier des charges, section 3, classe les sources de la plus fiable à la moins
+fiable et place **les références institutionnelles étrangères — Thésaurus de l'ANSM,
+notices américaines (DailyMed), européennes (EMA) — au 3ᵉ rang sur 5**, sous la
+nomenclature algérienne. Puis il tranche :
+
+> « Une source étrangère sert de complément, jamais de substitut à la source
+> algérienne. »
+
+Les sources étrangères sont donc **explicitement autorisées**, à ce rang-là.
+
+Le code applique la règle dans `ConflictPolicy.prefer_algerian`, qui lit la
+nationalité sur `Provenance.is_algerian_official` — **le pays, pas le rang**.
+
+La distinction n'est pas théorique. Jusqu'au 17/11/2026, `ansm_bdpm` était
+enregistrée au rang `OFFICIAL`, réservé par le cahier des charges au « RCP et [à]
+la notice officiels, validés par l'autorité du pays (l'ANPP en Algérie) », et
+l'arbitrage déduisait la nationalité du seul rang. Conséquence mesurée : sur une
+dose maximale, la valeur française de 4 000 mg l'emportait sur la valeur
+algérienne de 3 000 mg. Deux corrections ont été faites — le rang, et la façon
+dont la nationalité est lue — et quatre tests les retiennent.
 
 ## État du corpus documentaire — semaine 1
 

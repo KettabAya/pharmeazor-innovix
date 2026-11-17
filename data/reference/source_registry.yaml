@@ -89,7 +89,13 @@ sources:
   - source_id: ansm_bdpm
     name: "Base de donnees publique des medicaments - ANSM"
     base_url: "https://base-donnees-publique.medicaments.gouv.fr/"
-    authority: OFFICIAL
+    # Rang corrige le 17/11/2026. Le cahier des charges, section 3, place
+    # "les references institutionnelles etrangeres : Thesaurus de l'ANSM,
+    # notices americaines (DailyMed), europeennes (EMA)" au 3e rang sur 5,
+    # sous la nomenclature algerienne. Le rang OFFICIAL est reserve au "RCP
+    # et [a] la notice officiels, valides par l'autorite du pays (l'ANPP en
+    # Algerie)" -- donc a une source algerienne.
+    authority: INSTITUTIONAL
     access: manual
     robots_checked_on: "2026-11-15"
     robots_note: >-

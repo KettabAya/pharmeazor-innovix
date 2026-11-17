@@ -50,7 +50,11 @@ def _normalise(value: str) -> str:
 
 def _sort_key(claim: Claim, policy: ConflictPolicy) -> tuple:
     provenance = claim.citation.passage.provenance
-    algerian_bonus = 1 if (policy.prefer_algerian and provenance.authority.is_algerian_official) else 0
+    # Le pays se lit sur la provenance, jamais sur le rang seul : une notice
+    # francaise enregistree au rang officiel passait pour algerienne et
+    # ecrasait la valeur algerienne.
+    algerian = provenance.is_algerian_official
+    algerian_bonus = 1 if (policy.prefer_algerian and algerian) else 0
     recency = provenance.collected_at.toordinal() if policy.prefer_recent_on_tie else 0
     return (algerian_bonus, int(provenance.authority), recency)
 
