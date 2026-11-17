@@ -1,12 +1,12 @@
 # Dossier de preuves — Pharmeazor
 
-Généré le **16/11/2026 à 22:49** depuis le dépôt lui-même.
+Généré le **17/11/2026 à 22:30** depuis le dépôt lui-même.
 Aucune valeur n'est saisie à la main : tout est relevé à l'exécution.
 
 - Dépôt : `https://github.com/KettabAya/pharmeazor-innovix.git`
 - Branche : `main`
-- Commit : `1791f49`
-- Total : **75 commits**, 111 fichiers suivis
+- Commit : `c37dc2f`
+- Total : **91 commits**, 119 fichiers suivis
 
 ---
 
@@ -17,13 +17,13 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 
 | Auteur | Commits | Lignes ajoutées | Lignes retirées | Première | Dernière |
 |---|---:|---:|---:|---|---|
-| **Kettab Aya** | 44 | +18,513 | −3,453 | 2026-11-10 | 2026-11-16 |
+| **Kettab Aya** | 60 | +28,475 | −5,494 | 2026-11-10 | 2026-11-17 |
 | **Ryma Ait** | 15 | +297 | −56 | 2026-11-13 | 2026-11-14 |
 | **aya** | 9 | +324 | −18 | 2026-11-13 | 2026-11-13 |
 
 ### Fichiers touchés par chaque personne
 
-**Kettab Aya** — 103 fichiers
+**Kettab Aya** — 112 fichiers
 
 - `.env.example`
 - `.gitattributes`
@@ -39,7 +39,7 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 - `Makefile`
 - `README.md`
 - `data/interim/.gitkeep`
-- *… et 89 autres*
+- *… et 98 autres*
 
 **Ryma Ait** — 10 fichiers
 
@@ -77,7 +77,7 @@ qu'il n'a pas été modifié depuis.
 | `data/reference/equivalents_semaine1.csv` | groupes d'équivalents | 242 | `eb659e61a1b49c6a` |
 | `data/reference/interactions_semaine1.csv` | interactions avec niveau ANSM | 87 | `55180b7af231b717` |
 | `data/reference/desaccords_versions.csv` | désaccords entre versions datées | 13 | `076d777a71ca7667` |
-| `data/reference/source_registry.yaml` | registre des sources et conformité | — | `64e82c32627e26bb` |
+| `data/reference/source_registry.yaml` | registre des sources et conformité | — | `7598d2ff635b20d1` |
 | `data/reference/documents_a_collecter.csv` | liste de collecte des notices | 18 | `e620d7233cd39f8a` |
 | `eval/llm_alone_test.json` | trace du test du modèle seul | — | `d17e6983bdb19967` |
 | `preprocessing.ipynb` | notebook de traitement | — | `63f77957d94bf329` |
@@ -87,9 +87,10 @@ qu'il n'a pas été modifié depuis.
 ## 3. Suite de tests
 
 ```
-........................................................................ [ 41%]
-........................................................................ [ 82%]
-..............................                                           [100%]
+........................................................................ [ 32%]
+........................................................................ [ 65%]
+........................................................................ [ 97%]
+.....                                                                    [100%]
 ```
 
 Code de sortie : **0** — tous les tests passent.
@@ -111,26 +112,26 @@ Code de sortie : **0** — tous les tests passent.
 ## 5. Les vingt derniers commits
 
 ```
+c37dc2f  2026-11-17  14an  docs(journal): ajouter les sept parties qui manquaient
+0dc8247  2026-11-17  14an  docs: journal de traitement complet, en carnet executable
+530a4e3  2026-11-17  14an  feat(dosage): traiter les derniers cas lisibles
+6c9d855  2026-11-17  14an  feat(retrieve): ouvrir le corpus aux 38 molecules
+f9a7d80  2026-11-17  14an  docs: remettre a jour le suivi du retour de l'enseignant
+5ed712f  2026-11-17  14an  style(substance): raccourcir un commentaire laisse en double
+85d39f8  2026-11-17  14an  fix(equivalents): montrer la DCI reelle de chaque produit, et ses sels
+c987114  2026-11-17  14an  fix(catalogue): une faute du registre separait deux fois le meme produit
+ffd2c68  2026-11-17  14an  fix(catalogue): la voie d'administration prime sur la forme galenique
+7cc7cec  2026-11-17  14an  refactor(dosage): lire les conditionnements sans expression reguliere
+35a136f  2026-11-17  14an  fix(registre): une cle robots_note en double annulait la mesure
+e9c7a09  2026-11-17  14an  fix(normalize): lire les conditionnements mesures et unifier les sels
+9560663  2026-11-17  14an  feat(reconcile): carte de couverture, pour ne sortir d'Algerie qu'au besoin
+e750b66  2026-11-17  14an  fix(reconcile): une source etrangere ne peut plus remplacer l'algerienne
+b30bc83  2026-11-16  14an  feat(data): etendre la couverture a 38 molecules sans toucher la semaine 1
+123ade7  2026-11-16  14an  fix(preuves): compter chaque personne une seule fois
 1791f49  2026-11-16  14an  fix: supprimer le doublon du test du modele seul, garder celui d'Aya
 bef8124  2026-11-16  14an  chore: renommer le depot en pharmeazor-innovix
 e9e9a07  2026-11-16  14an  chore: unifier les identites git d'une meme personne
 f5c9e0f  2026-11-16  14an  merge: integrer la PR #1 d'Aya, avec le modele de l'enseignant
-49e501f  2026-11-16  14an  merge: integrer l'extraction des documents (PR #2 de Ryma)
-6312e17  2026-11-15  14an  feat(eval): outil pour ecrire les questions, et 4 exemples travailles
-f84aba0  2026-11-15  14an  docs(semaine-2): la collecte n'est pas le goulot d'etranglement
-082c91e  2026-11-15  14an  feat(retrieve): rendre les donnees de la semaine 1 interrogeables
-e881d88  2026-11-15  14an  docs(conformite): repondre aux trois questions par lecture du code
-2211b7f  2026-11-15  14an  docs: consigner le retour de l'enseignant et en tirer l'ordre de travail
-4be2536  2026-11-15  14an  docs(conformite): verifier dzair-pharma et completer tout le registre
-a995c04  2026-11-15  14an  fix(llm): revenir a openai/gpt-oss-120b, confirme par l'enseignant
-cfe5f34  2026-11-14  14an  data: save amoxicilline BGR patient leaflet extraction
-95030ae  2026-11-14  14an  data: save paracetamol patient leaflet extraction
-ebe6940  2026-11-14  14an  data: save amlodipine MIBRAL RCP extraction
-21d5be9  2026-11-14  14an  data: save amoxicilline BIOPAMOX RCP extraction
-bfed443  2026-11-14  14an  feat: save paracetamol RCP section extraction results
-55a4308  2026-11-14  14an  docs: plan de la semaine 2 — recherche par le sens
-83f547e  2026-11-13  14an  feat(scripts): dossier de preuves genere depuis le depot
-a9a615c  2026-11-13  14an  chore: sorties du notebook apres execution complete
 ```
 
 ---

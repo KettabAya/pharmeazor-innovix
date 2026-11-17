@@ -157,6 +157,27 @@ def join_on_registration(
     return pairs, only_official, only_secondary
 
 
+def _meme_dosage(officiel: str, secondaire: str) -> bool:
+    """Deux ecritures d'un meme dosage designent-elles la meme dose ?
+
+    Le ministere ecrit « 25MG/ML » ; dzair-pharma ecrit « 25MG/ML (75MG/3ML) »,
+    c'est-a-dire la meme dose suivie de son equivalent pour un flacon de 3 ml.
+    Compares comme du texte, les deux different. Lus comme des dosages, ils
+    donnent la meme valeur.
+
+    Mesure du 17/11/2026 : dix faux desaccords venaient de la, sur trois
+    familles -- 25MG/ML, 120MG/5ML et 5%. Les signaler noierait les vrais.
+
+    La comparaison ne retient que la valeur annoncee a gauche. L'equivalent,
+    lui, part dans ``unparsed`` et n'entre pas dans la comparaison : s'il
+    differait, ce serait un desaccord sur une reformulation, pas sur la dose.
+    """
+    from ..normalize.dosage import parse_strength
+
+    a, b = parse_strength(officiel), parse_strength(secondaire)
+    return bool(a.parsed and b.parsed and a.canonical() == b.canonical())
+
+
 def compare_pair(pair: ProductPair) -> list[Disagreement]:
     """Compare one product across the two sources."""
     found: list[Disagreement] = []
@@ -171,6 +192,10 @@ def compare_pair(pair: ProductPair) -> list[Disagreement]:
         if not official_value.strip() or not secondary_value.strip():
             continue
         if normalize_value(official_value) == normalize_value(secondary_value):
+            continue
+        # Un dosage se compare sur sa valeur lue, pas sur son texte : deux
+        # sources peuvent ecrire la meme dose autrement.
+        if label == "dosage" and _meme_dosage(official_value, secondary_value):
             continue
 
         found.append(
