@@ -48,6 +48,13 @@ _COMPONENT_RE = re.compile(
     rf"^\s*(?P<value>{_NUMBER})\s*(?P<unit>[A-Za-zµ%]+)?\s*\**\s*$"
 )
 
+# "<valeur> (<equivalent>)" : 1% (10MG/ML), 400MG (684MG).
+# La parenthese redit la dose autrement ; elle ne s'ajoute pas a la premiere.
+_VALEUR_ET_EQUIVALENT = re.compile(
+    r"^\s*(?P<valeur>[^(]+?)\s*\(\s*(?P<equivalent>[^)]+?)\s*\)\s*$"
+)
+
+
 # --- Les mots qu'on reconnait dans un conditionnement ----------------------
 #
 # Des listes, pas des expressions regulieres : on peut les lire, et en ajouter
@@ -56,24 +63,43 @@ _COMPONENT_RE = re.compile(
 # Contenants dont le nombre qui suit est un nombre d'UNITES.
 # Mesure sur les 5 423 conditionnements d'aout 2026 : la seule forme "B/N"
 # couvre 53,1 %. Avec les autres contenants, 56,1 %.
-CONTENANTS_QUI_COMPTENT = ["B", "BTE", "BOITE", "PILULIER", "PLQ", "PLAQUETTE"]
+CONTENANTS_QUI_COMPTENT = ["B", "BTE", "BOITE", "PILULIER", "PLQ", "PLAQUETTE",
+                           # Faute du registre, un produit : PILULIRER/30.
+                           # Meme famille que le PILULIER/10 repere a la main
+                           # en semaine 1, que les tests avaient laisse passer.
+                           "PILULIRER"]
 
 # Contenants dont le contenu se MESURE : un tube de 15 g n'est pas 15 unites.
-CONTENANTS_QUI_MESURENT = ["FL", "FLACON", "F", "T", "TUBE", "AMP", "AMPOULE",
-                           "SACHET", "POT", "SERINGUE"]
+CONTENANTS_QUI_MESURENT = ["FL", "FLACON", "FLACONS", "F", "T", "TUBE", "TUBES",
+                           "AMP", "AMPOULE", "AMPOULES", "SACHET", "SACHETS",
+                           "POT", "SERINGUE", "STICK", "STICKS",
+                           "RECIPIENT", "RECIPIENTS UNIDOSES"]
 
 # Mots toleres apres le nombre : "B/30 SACHETS" vaut bien 30.
 MOTS_DENOMBRABLES = ["SACHET", "SACHETS", "COMPRIME", "COMPRIMES", "CP",
                      "GELULE", "GELULES", "CAPSULE", "CAPSULES",
                      "SUPPOSITOIRE", "SUPPOSITOIRES", "OVULE", "OVULES",
                      "AMPOULE", "AMPOULES", "AMP", "PILULE", "PILULES",
-                     "STICK", "STICKS", "DOSE", "DOSES", "UNITE", "UNITES"]
+                     "STICK", "STICKS", "DOSE", "DOSES", "UNITE", "UNITES",
+                     # "B/10 FL" : dix flacons, c'est bien un compte. Le cas 3
+                     # passe avant et echoue faute de mesure apres "FL".
+                     "FL", "FLACON", "FLACONS", "TUBE", "TUBES"]
 
 # L'ordre compte : "MG" avant "G", sinon "500MG" se lirait "500M" + "G".
 UNITES_DE_MESURE = ["ML", "MG", "KG", "L", "G"]
 
 # Deux presentations dans une seule cellule. On refuse de choisir.
-SEPARATEURS_DE_PRESENTATIONS = [" ET ", " - ", " OU "]
+SEPARATEURS_DE_PRESENTATIONS = [" ET ", " - ", " OU ", "OU FL"]
+
+# Ustensiles livres avec le medicament. Ils ne changent ni le compte ni la
+# mesure : "FL/100ML +PIPETTE GRADUEE EN KG" reste un flacon de 100 ml.
+#
+# La queue n'est retiree que si elle ne porte AUCUN chiffre. Sinon il s'agit
+# d'un second composant -- "B/06FL. DE PDRE + 06AMP. DE 2,5ML DE SOLVANT" est
+# un necessaire poudre + solvant, et le lire comme un simple flacon ferait
+# disparaitre le solvant.
+USTENSILES = ["PIPETTE", "SERINGUE", "GOBELET", "GOBLET", "CUILLERE",
+              "DOSEUR", "COMPTE-GOUTTES", "CANULE", "APPLICATEUR"]
 
 
 def _to_float(text: str) -> float:
@@ -162,6 +188,21 @@ def parse_strength(raw: str | None) -> Strength:
     components: list[Component] = []
     unparsed: list[str] = []
 
+    # "<valeur> (<equivalent>)" : le registre donne d'abord une concentration,
+    # puis la meme chose dite autrement entre parentheses.
+    #
+    #     1% (10MG/ML)        une creme a 1 %, soit 10 mg par ml
+    #     5% ( 5G/100 G )     5 %, soit 5 g pour 100 g
+    #     400MG (684MG)       400 mg de base, pour 684 mg de sel
+    #
+    # Mesure sur les 911 produits : 9 des 10 dosages illisibles suivent ce
+    # motif. La valeur retenue est celle de GAUCHE, qui est la dose annoncee ;
+    # l'equivalent part dans `unparsed`, visible mais jamais compte deux fois.
+    entre_parentheses = _VALEUR_ET_EQUIVALENT.match(text)
+    if entre_parentheses:
+        text = entre_parentheses.group("valeur").strip()
+        unparsed.append(entre_parentheses.group("equivalent").strip())
+
     for fragment in text.split("/"):
         fragment = fragment.strip()
         if not fragment:
@@ -178,6 +219,28 @@ def parse_strength(raw: str | None) -> Strength:
             unparsed.append(fragment)
 
     return Strength(raw=text, components=tuple(components), unparsed=tuple(unparsed))
+
+
+def _retirer_ustensile(texte: str) -> str:
+    """Couper la queue qui ne decrit qu'un ustensile livre avec le produit.
+
+    "FL/100ML +PIPETTE GRADUEE EN KG" devient "FL/100ML" : la pipette ne
+    change ni le volume du flacon ni le nombre d'unites.
+
+    La coupe n'a lieu que si la queue ne porte AUCUN chiffre. Sinon c'est un
+    second composant, et le perdre serait grave :
+    "B/06FL DE PDRE + 06AMP DE 2,5ML DE SOLVANT" est un necessaire poudre plus
+    solvant, pas un flacon de poudre.
+    """
+    for marque in ("+", " AVEC "):
+        if marque not in texte:
+            continue
+        tete, _, queue = texte.partition(marque)
+        if any(c.isdigit() for c in queue):
+            continue  # un second composant, pas un ustensile
+        if any(u in queue for u in USTENSILES):
+            return tete.strip()
+    return texte
 
 
 def _separer_nombre_et_mot(texte: str) -> tuple[int | None, str]:
@@ -231,7 +294,7 @@ def parse_packaging(raw: str | None) -> Packaging:
     if not text:
         return Packaging(raw="")
 
-    propre = text.upper().replace(".", " ")
+    propre = _retirer_ustensile(text.upper().replace(".", " "))
 
     # Deux presentations dans une seule cellule : on ne choisit pas.
     # "B/30 ET B/90" decrit deux tailles de boite ; en retenir une serait
