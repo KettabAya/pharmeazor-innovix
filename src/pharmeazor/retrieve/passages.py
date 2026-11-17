@@ -67,11 +67,24 @@ def _date_de_version(version: str) -> _dt.date:
     return _dt.date(int(annee), int(mois or 1), 1)
 
 
-def _lire(nom: str) -> list[dict[str, str]]:
+def _lire(nom: str, suffixe: str = "") -> list[dict[str, str]]:
+    """Lire un livrable de data/reference/, dans la version demandee.
+
+    Sans suffixe, ce sont les fichiers de la semaine 1 : 284 produits, trois
+    molecules. Avec ``--suffixe _40molecules``, la version elargie : 911
+    produits, 38 molecules.
+
+    Les deux jeux coexistent exprès. Le rapport de la semaine 1 annonce des
+    chiffres precis a l'enseignant ; les ecraser ferait mentir le rapport.
+    """
+    if suffixe:
+        tronc = nom.removesuffix(".csv").removesuffix("_semaine1")
+        nom = f"{tronc}{suffixe}.csv"
     chemin = _REFERENCE / nom
     if not chemin.exists():
         raise FileNotFoundError(
             f"{chemin} est absent. Lancez d'abord : python scripts/build_week1.py"
+            + (f" --suffixe {suffixe}" if suffixe else "")
         )
     with open(chemin, encoding="utf-8", newline="") as fh:
         return list(csv.DictReader(fh))
@@ -95,13 +108,14 @@ def _phrase(morceaux: list[str]) -> str:
     return " ".join(m.strip() for m in morceaux if m and m.strip())
 
 
-def passages_produits(lignes: list[dict[str, str]] | None = None) -> Iterator[Passage]:
+def passages_produits(lignes: list[dict[str, str]] | None = None,
+                      suffixe: str = "") -> Iterator[Passage]:
     """Un passage par produit enregistré.
 
     Répond aux questions de niveau 1 : dosage, forme, conditionnement,
     laboratoire, DCI derrière un nom de marque, statut d'enregistrement.
     """
-    for ligne in lignes if lignes is not None else _lire("drugs_semaine1.csv"):
+    for ligne in lignes if lignes is not None else _lire("drugs_semaine1.csv", suffixe):
         marque = ligne["brand_name"]
         dci = ligne["inn"]
 
@@ -142,6 +156,7 @@ def passages_produits(lignes: list[dict[str, str]] | None = None) -> Iterator[Pa
 
 def passages_equivalents(
     lignes: list[dict[str, str]] | None = None,
+    suffixe: str = "",
 ) -> Iterator[Passage]:
     """Un passage par groupe d'équivalents.
 
@@ -149,7 +164,7 @@ def passages_equivalents(
     remplacer ce médicament ? » Le groupe réunit même substance, même dosage,
     même famille de forme.
     """
-    lignes = lignes if lignes is not None else _lire("equivalents_semaine1.csv")
+    lignes = lignes if lignes is not None else _lire("equivalents_semaine1.csv", suffixe)
 
     groupes: dict[str, list[dict[str, str]]] = {}
     for ligne in lignes:
@@ -193,6 +208,7 @@ def passages_equivalents(
 
 def passages_interactions(
     lignes: list[dict[str, str]] | None = None,
+    suffixe: str = "",
 ) -> Iterator[Passage]:
     """Un passage par interaction médicamenteuse.
 
@@ -200,7 +216,7 @@ def passages_interactions(
     thésaurus ANSM (rang 2), mais il nous parvient par un relais secondaire,
     donc l'autorité effective retombe au rang 1. Le passage le dit.
     """
-    lignes = lignes if lignes is not None else _lire("interactions_semaine1.csv")
+    lignes = lignes if lignes is not None else _lire("interactions_semaine1.csv", suffixe)
 
     for i, ligne in enumerate(lignes):
         cible = ligne["substance_cible"]
@@ -243,7 +259,7 @@ def passages_interactions(
         )
 
 
-def construire_corpus() -> list[Passage]:
+def construire_corpus(suffixe: str = "") -> list[Passage]:
     """Tout le corpus de la semaine 1, prêt à être indexé.
 
     C'est le point d'entrée : ``BM25Index`` et le futur index vectoriel
@@ -251,9 +267,9 @@ def construire_corpus() -> list[Passage]:
     mêmes passages, mêmes identifiants, seule la méthode de recherche change.
     """
     corpus = [
-        *passages_produits(),
-        *passages_equivalents(),
-        *passages_interactions(),
+        *passages_produits(suffixe=suffixe),
+        *passages_equivalents(suffixe=suffixe),
+        *passages_interactions(suffixe=suffixe),
     ]
     vus = {p.passage_id for p in corpus}
     if len(vus) != len(corpus):
@@ -264,6 +280,13 @@ def construire_corpus() -> list[Passage]:
     return corpus
 
 
-def chemin_corpus() -> Path:
-    """Où le corpus est écrit par ``scripts/construire_corpus.py``."""
+def chemin_corpus(suffixe: str = "") -> Path:
+    """Où le corpus est écrit par ``scripts/construire_corpus.py``.
+
+    Chaque jeu a son fichier : sans suffixe ``corpus_semaine1.jsonl``,
+    avec ``_40molecules`` le fichier ``corpus_40molecules.jsonl``. Les deux
+    coexistent, comme les tables dont ils sont tires.
+    """
+    if suffixe:
+        return settings.processed_dir / f"corpus{suffixe}.jsonl"
     return settings.processed_dir / "corpus_semaine1.jsonl"

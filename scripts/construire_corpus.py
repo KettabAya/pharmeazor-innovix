@@ -50,9 +50,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--sortie", default=None)
     parser.add_argument("--top-k", type=int, default=3)
+    parser.add_argument(
+        "--suffixe", default="",
+        help="Jeu de donnees a lire. Vide : la semaine 1, 284 produits et "
+             "3 molecules. --suffixe _40molecules : 911 produits, 38 molecules.",
+    )
     args = parser.parse_args()
 
-    corpus = construire_corpus()
+    corpus = construire_corpus(args.suffixe)
     par_id = {p.passage_id: p for p in corpus}
 
     sections: dict[str, int] = {}
@@ -70,7 +75,7 @@ def main() -> int:
     print("            aucun passage ne depasse la fenetre de contexte : le")
     print("            decoupage n'a donc pas a etre agressif sur ce corpus.")
 
-    sortie = Path(args.sortie) if args.sortie else chemin_corpus()
+    sortie = Path(args.sortie) if args.sortie else chemin_corpus(args.suffixe)
     sortie.parent.mkdir(parents=True, exist_ok=True)
     with open(sortie, "w", encoding="utf-8") as fh:
         for p in corpus:

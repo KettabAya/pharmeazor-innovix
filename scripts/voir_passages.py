@@ -80,13 +80,18 @@ def main() -> int:
                         help="afficher le gabarit YAML et s'arreter")
     parser.add_argument("--graine", type=int, default=None,
                         help="pour retomber sur les memes passages")
+    parser.add_argument(
+        "--suffixe", default="",
+        help="Jeu de donnees a lire. Vide : la semaine 1, 284 produits et "
+             "3 molecules. --suffixe _40molecules : 911 produits, 38 molecules.",
+    )
     args = parser.parse_args()
 
     if args.modele:
         print(MODELE)
         return 0
 
-    corpus = construire_corpus()
+    corpus = construire_corpus(args.suffixe)
 
     choix = corpus
     if args.section:
