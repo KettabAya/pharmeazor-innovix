@@ -143,3 +143,34 @@ class TestCleDeRegroupement:
 def test_toute_dci_du_registre_produit_une_base(brut):
     assert parse_inn(brut).base
     assert isinstance(parse_inn(brut), Substance)
+
+
+class TestSousFormeEntreParentheses:
+    """Deux ecritures d'un meme sel doivent donner une meme cle.
+
+    Defaut mesure sur les 911 produits : "GENTAMICINE (SOUS FORME DE SULFATE)"
+    produisait la cle "GENTAMICINE (" -- parenthese comprise -- alors que
+    "GENTAMICINE SULFATE" donnait "GENTAMICINE". Les deux ecritures tombaient
+    donc dans deux groupes d'equivalents separes, et un pharmacien cherchant un
+    remplacant n'aurait pas vu la moitie des produits.
+    """
+
+    def test_les_trois_ecritures_de_gentamicine_se_rejoignent(self):
+        cles = {
+            parse_inn("GENTAMICINE").cle(),
+            parse_inn("GENTAMICINE SULFATE").cle(),
+            parse_inn("GENTAMICINE (SOUS FORME DE SULFATE)").cle(),
+        }
+        assert cles == {"GENTAMICINE"}
+
+    def test_la_parenthese_ne_reste_pas_dans_la_cle(self):
+        for brut in ("GENTAMICINE (SOUS FORME DE SULFATE)",
+                     "PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE)"):
+            cle = parse_inn(brut).cle()
+            assert "(" not in cle and ")" not in cle, brut
+
+    def test_la_forme_sans_parenthese_marche_toujours(self):
+        s = parse_inn("AMLODIPINE SOUS FORME DE BESILATE")
+        assert s.cle() == "AMLODIPINE"
+        assert s.sel == "BESILATE"
+

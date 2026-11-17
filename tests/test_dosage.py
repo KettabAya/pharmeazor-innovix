@@ -115,3 +115,55 @@ class TestPackaging:
 
     def test_empty_cell(self):
         assert not parse_packaging("").parsed
+
+class TestConditionnementsMesures:
+    """Les contenants dont le contenu se mesure au lieu de se compter.
+
+    Mesure sur les 911 produits des 38 molecules : 163 conditionnements
+    echappaient a la lecture sans etre des "ET". Deux familles dominaient,
+    77 cas pour l'une et 34 pour l'autre ; la regle a ete ecrite d'apres cette
+    distribution, et non d'apres quelques exemples.
+    """
+
+    @pytest.mark.parametrize("raw,valeur,contenant", [
+        ("T/30G", "30g", "T"),
+        ("TUBE/30G", "30g", "TUBE"),
+        ("FL/30ML", "30ml", "FL"),
+        ("FL/125 ML", "125ml", "FL"),
+        ("FL./100ML", "100ml", "FL"),
+        ("F/5ML", "5ml", "F"),
+    ])
+    def test_le_contenant_porte_sa_mesure(self, raw, valeur, contenant):
+        pack = parse_packaging(raw)
+        assert pack.parsed
+        assert str(pack.volume) == valeur
+        assert pack.container == contenant
+        # Une mesure n'est pas un nombre d'unites : 30 g de pommade ne font
+        # pas 30 comprimes.
+        assert pack.count is None
+
+    @pytest.mark.parametrize("raw,compte,valeur", [
+        ("B/05 AMP. DE 2ML", 5, "2ml"),
+        ("B/01 FL DE 60ML", 1, "60ml"),
+        ("BOITE DE 01 FLACON DE 60ML", 1, "60ml"),
+        ("B/10 AMP DE 1 ML", 10, "1ml"),
+    ])
+    def test_une_boite_de_n_contenants_porte_les_deux(self, raw, compte, valeur):
+        """Cinq ampoules de 2 ml, ce n'est ni "cinq" ni "2 ml" : c'est les deux."""
+        pack = parse_packaging(raw)
+        assert pack.count == compte
+        assert str(pack.volume) == valeur
+
+    def test_deux_presentations_echouent_toujours(self):
+        """Decision de la semaine 1, que l'elargissement ne doit pas defaire.
+
+        "B/30 ET B/90" decrit deux tailles de boite dans une seule cellule.
+        Choisir l'une des deux serait inventer.
+        """
+        for raw in ("B/30 ET B/90", "B/10 ET B/25"):
+            assert not parse_packaging(raw).parsed
+
+    def test_le_pilulier_trouve_a_la_main_marche_toujours(self):
+        """Cas repere par une verification manuelle, pas par les tests."""
+        assert parse_packaging("PILULIER/10").count == 10
+

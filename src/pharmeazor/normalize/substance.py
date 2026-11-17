@@ -45,7 +45,16 @@ __all__ = ["Substance", "parse_inn", "normaliser_substance"]
 _EXPRIME_EN = re.compile(r"\bEXPRIM\w*\s+EN\s+(?P<base>.+)$", re.I)
 
 # "X SOUS FORME DE Y" / "X SOUS FORME Y" : X est la base, Y la forme saline.
-_SOUS_FORME = re.compile(r"^(?P<base>.+?)\s*/?\s*\bSOUS\s+FORME\s+(?:DE\s+)?(?P<sel>.+)$", re.I)
+# "X SOUS FORME DE Y", et sa variante entre parentheses "X (SOUS FORME DE Y)".
+# Les parentheses sont optionnelles et consommees : sans \(? et \)?, la base
+# gardait sa parenthese ouvrante et le sel sa fermante, et
+# "GENTAMICINE (SOUS FORME DE SULFATE)" produisait la cle "GENTAMICINE (" --
+# distincte de "GENTAMICINE SULFATE", qui donne "GENTAMICINE". Deux ecritures
+# du meme sel se retrouvaient dans deux groupes d'equivalents separes.
+_SOUS_FORME = re.compile(
+    r"^(?P<base>.+?)\s*/?\s*\(?\s*\bSOUS\s+FORME\s+(?:DE\s+)?(?P<sel>[^)]+)\)?\s*$",
+    re.I,
+)
 
 # "X (Y)" : Y est la base, SAUF si la parenthese s'ouvre sur "OU" (synonyme).
 _PARENTHESE = re.compile(r"^(?P<avant>[^(]+?)\s*\((?P<dedans>[^)]+)\)\s*$")

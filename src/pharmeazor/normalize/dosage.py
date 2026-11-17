@@ -70,10 +70,36 @@ _PACK_COUNT_RE = re.compile(
     rf"\s*(?:{_DENOMBRABLES})?\s*$",
     re.I,
 )
-# "B/FL 15 ML", "B/ FL. 60ML"
+# Contenants dont le contenu se mesure, et non se compte.
+_CONTENANTS_MESURE = r"FL|FLACON|F|T|TUBE|AMP|AMPOULE|SACHET|POT|SERINGUE"
+_UNITES_MESURE = r"ML|L|G|MG|KG"
+
+# "B/FL 15 ML", "B/ FL. 60ML" : la boite annonce son contenant puis sa mesure.
 _PACK_VOLUME_RE = re.compile(
-    r"^\s*B\s*(?:TE|OITE)?\s*/\s*(?P<container>FL|FLACON|TUBE|SACHET|AMP|AMPOULE)\.?\s*"
-    rf"(?P<value>{_NUMBER})\s*(?P<unit>ML|L|G|MG)\s*$",
+    rf"^\s*B\s*(?:TE|OITE)?\s*/\s*(?P<container>{_CONTENANTS_MESURE})\.?\s*"
+    rf"(?P<value>{_NUMBER})\s*(?P<unit>{_UNITES_MESURE})\s*$",
+    re.I,
+)
+
+# Forme A : le contenant porte directement sa mesure, sans boite.
+# "T/30G", "FL/30ML", "FL/125 ML", "TUBE/30G", "FL./100ML", "F/5ML".
+# Mesure sur les 911 produits des 38 molecules : 77 cas, la famille la plus
+# frequente parmi les conditionnements que l'ancienne regle laissait de cote.
+_PACK_MESURE_SEULE_RE = re.compile(
+    rf"^\s*(?P<container>{_CONTENANTS_MESURE})\.?\s*/\s*"
+    rf"(?P<value>{_NUMBER})\s*(?P<unit>{_UNITES_MESURE})\s*$",
+    re.I,
+)
+
+# Forme B : une boite de N contenants, chacun d'une mesure donnee.
+# "B/05 AMP. DE 2ML", "B/01 FL DE 60ML", "BOITE DE 01 FLACON DE 60ML".
+# Mesure : 34 cas. Elle porte DEUX informations -- le nombre d'ampoules ET le
+# volume de chacune -- la ou les autres formes n'en portent qu'une. Les
+# confondre ferait lire "5 ampoules de 2 ml" comme "5 ml".
+_PACK_COMPTE_ET_MESURE_RE = re.compile(
+    r"^\s*B\s*(?:TE|OITE)?\s*(?:/|\s+DE\s+)\s*(?P<count>\d+)\s*"
+    rf"(?P<container>{_CONTENANTS_MESURE})\.?\s*(?:DE)?\s*"
+    rf"(?P<value>{_NUMBER})\s*(?P<unit>{_UNITES_MESURE})\s*$",
     re.I,
 )
 
@@ -202,14 +228,22 @@ def parse_packaging(raw: str | None) -> Packaging:
     if count_match:
         return Packaging(raw=text, count=int(count_match.group("count")))
 
-    volume_match = _PACK_VOLUME_RE.match(text)
-    if volume_match:
+    # La forme la plus riche en premier : elle porte un compte ET une mesure.
+    # Essayee avant les autres, sinon "B/05 AMP. DE 2ML" serait lu comme un
+    # simple volume de 2 ml et les cinq ampoules disparaitraient.
+    for pattern in (_PACK_COMPTE_ET_MESURE_RE, _PACK_VOLUME_RE, _PACK_MESURE_SEULE_RE):
+        match = pattern.match(text)
+        if not match:
+            continue
+        groupes = match.groupdict()
+        compte = groupes.get("count")
         return Packaging(
             raw=text,
-            container=volume_match.group("container").upper(),
+            count=int(compte) if compte else None,
+            container=groupes["container"].upper(),
             volume=Component(
-                value=_to_float(volume_match.group("value")),
-                unit=normalize_unit(volume_match.group("unit")),
+                value=_to_float(groupes["value"]),
+                unit=normalize_unit(groupes["unit"]),
             ),
         )
 
