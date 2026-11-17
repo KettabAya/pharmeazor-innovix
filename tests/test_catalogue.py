@@ -23,15 +23,71 @@ class TestFormFamily:
         assert form_family("COMPRIME PELLICULE SECABLE") == "COMPRIME"
         assert form_family("COMPRIME") == "COMPRIME"
 
-    def test_powder_for_suspension_is_a_powder(self):
-        # The source misspells it "SUSPENSSION"; the family must survive that.
-        assert form_family("POUDRE POUR SUSPENSSION BUVABLE") == "POUDRE"
+    def test_la_faute_du_registre_ne_change_pas_la_famille(self):
+        """Le ministere ecrit tantot SUSPENSION, tantot SUSPENSSION.
+
+        Ce test exigeait POUDRE pour la forme fautive, ce qui figeait un
+        defaut : l'orthographe juste donnait SUSPENSION, et les deux
+        ecritures du meme produit tombaient dans deux familles. Mesure du
+        17/11/2026 : 17 produits fautifs contre 51 corrects, et
+        AMOXICILLINE TRIHYDRATEE 1G/SACHET coupe en deux groupes pour cette
+        seule raison.
+        """
+        assert form_family("POUDRE POUR SUSPENSSION BUVABLE") == "SUSPENSION"
+        assert form_family("POUDRE POUR SUSPENSION BUVABLE") == "SUSPENSION"
 
     def test_capsule_family(self):
         assert form_family("GELULE") == "GELULE"
 
     def test_empty_form(self):
         assert form_family("") == ""
+
+
+class TestLaVoiePrimeSurLaForme:
+    """Une solution qu'on pique n'est pas une solution qu'on boit.
+
+    Defaut mesure le 17/11/2026 sur les 911 produits : form_family rendait
+    la premiere famille trouvee dans une liste unique, ou SOLUTION precedait
+    INJECTABLE. 46 injectables et 15 collyres etaient donc ranges avec les
+    solutions buvables, et un groupe d'equivalents etait deja faux :
+
+        LEVOFLOXACINE 5 mg
+          LEVOFLOXACINE RAZES  SOLUTION POUR PERFUSION
+          LEVOQUIN             SOLUTION POUR PERFUSION
+          LEVOWORLD            GOUTTES OCULAIRES ET AURICULAIRES
+
+    Des gouttes pour les yeux proposees comme remplacant d'une perfusion.
+    """
+
+    @pytest.mark.parametrize("forme,famille", [
+        ("SOLUTION INJECTABLE IM/IV", "INJECTABLE"),
+        ("SOLUTION INJECTABLE", "INJECTABLE"),
+        ("POUDRE POUR SOLUTION INJECTABLE IV", "INJECTABLE"),
+        ("SOLUTION POUR PERFUSION", "PERFUSION"),
+        ("COLLYRE EN SOLUTION", "COLLYRE"),
+        ("GOUTTES OCULAIRES ET AURICULAIRES EN SOLUTION", "OCULAIRE"),
+        ("SOL AURICULAIRE STERILE", "AURICULAIRE"),
+        ("OVULE VAGINALE", "VAGINAL"),
+        ("COMPRIME VAGINAL", "VAGINAL"),
+    ])
+    def test_une_voie_citee_l_emporte(self, forme, famille):
+        assert form_family(forme) == famille
+
+    def test_une_forme_sans_voie_citee_n_est_pas_touchee(self):
+        """La correction ne doit pas emporter les formes ordinaires."""
+        assert form_family("SOLUTION BUVABLE") == "SOLUTION"
+        assert form_family("COMPRIME PELLICULE") == "COMPRIME"
+        # "POUDRE POUR X" rend X : ce qui compte est la forme administree,
+        # pas celle de la boite. Une poudre pour solution buvable se boit.
+        assert form_family("POUDRE POUR SOLUTION BUVABLE") == "SOLUTION"
+
+    def test_le_cas_levoworld_ne_peut_plus_se_reproduire(self):
+        perfusion = form_family("SOLUTION POUR PERFUSION")
+        gouttes = form_family("GOUTTES OCULAIRES ET AURICULAIRES EN SOLUTION")
+        assert perfusion != gouttes
+
+    def test_injectable_et_buvable_ne_se_rejoignent_jamais(self):
+        assert form_family("SOLUTION INJECTABLE IM") != form_family("SOLUTION BUVABLE")
 
 
 class TestLoading:

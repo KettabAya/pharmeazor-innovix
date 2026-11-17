@@ -36,6 +36,21 @@ __all__ = [
     "form_family",
 ]
 
+# Fautes de frappe du registre, corrigees avant de chercher la famille.
+#
+# Le ministere ecrit tantot SUSPENSION, tantot SUSPENSSION. Sans cette
+# correction, les deux orthographes tombent dans deux familles differentes :
+# la forme fautive ne rencontre pas SUSPENSION, donc elle s'arrete sur POUDRE.
+#
+# Mesure sur les 911 produits : 17 produits portent la faute, 51 non, et
+# AMOXICILLINE TRIHYDRATEE 1G/SACHET se retrouvait coupe en deux groupes
+# d'equivalents pour cette seule raison.
+#
+# Le texte d'origine n'est pas modifie : seule la recherche de famille
+# travaille sur la version corrigee. Un pharmacien voit toujours ce que le
+# ministere a ecrit.
+_FAUTES_DE_FRAPPE = {"SUSPENSSION": "SUSPENSION"}
+
 # La VOIE d'administration, examinee en premier.
 #
 # Elle prime sur la forme galenique : une solution injectable et une solution
@@ -85,6 +100,8 @@ def form_family(form: str | None) -> str:
     'COLLYRE'
     """
     text = (form or "").upper()
+    for faute, correction in _FAUTES_DE_FRAPPE.items():
+        text = text.replace(faute, correction)
     for voie in _VOIES:
         if voie in text:
             return voie
