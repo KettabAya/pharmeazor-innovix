@@ -33,7 +33,6 @@ sources:
       du ministere. Les classeurs sont neanmoins telecharges a la main, un par
       version datee, pour garder une trace de ce qui a ete recu et quand.
       Copie : docs/conformite/robots-miph.gov.dz-2026-11-15.txt
-    robots_note: "La page de la liste interdit l'acces automatique (robots.txt)."
     terms_note: "Telechargement manuel uniquement. Ni posologie ni indications."
     country: DZ
 
@@ -48,7 +47,6 @@ sources:
       bloque. Source institutionnelle a privilegier pour les interactions,
       en direct plutot que par un relais.
       Copie : docs/conformite/robots-ansm.sante.fr-2026-11-15.txt
-    robots_note: "A verifier."
     terms_note: "Quatre niveaux d'interaction. Source etrangere : complement, jamais substitut."
     country: FR
 
@@ -103,7 +101,6 @@ sources:
       bloque. Notice francaise : complement, jamais substitut a une source
       algerienne (ConflictPolicy.prefer_algerian).
       Copie : docs/conformite/robots-base-donnees-publique.medicaments.gouv.fr-2026-11-15.txt
-    robots_note: "robots.txt non verifie. Consultation et collecte manuelles uniquement."
     terms_note: "Les donnees brutes telechargeables sont reutilisables sous conditions: attribution de la source et de la date de mise a jour, sans alteration. La licence des donnees brutes ne doit pas etre presumee applicable aux notices/RCP complets; verifier les droits documentaires avant redistribution."
     country: FR
     language: fr
