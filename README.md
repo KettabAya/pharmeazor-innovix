@@ -70,6 +70,9 @@ pip install -r requirements.lock.txt
 pip install -e . --no-deps
 ```
 
+> Première fois avec git ? [Le guide en quatre commandes](docs/GIT-POUR-DEBUTER.md).
+
+
 > **Toute l'équipe installe depuis `requirements.lock.txt`**, qui fige les
 > versions exactes. `requirements.txt` dit *quelles* bibliothèques ; le fichier
 > `.lock` dit *quelle version*. Sans lui, deux personnes qui installent à une
