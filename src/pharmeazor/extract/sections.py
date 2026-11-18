@@ -25,7 +25,7 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
         r"|autres medicaments et)", re.I)),
     (Section.POSOLOGY, re.compile(
         r"^\s*" + _NUMBER + r"(?:posologie"
-        r"|mode (?:et voie )?d.administration"
+       r"|mode (?:et voie )?d.(?:administration|emploi)"
         r"|comment (?:prendre|utiliser)"
         r"|dose|doses|dosage)", re.I)),
     (Section.INDICATIONS, re.compile(
@@ -39,7 +39,9 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
 ]
 
 _HEADING_SHAPE = re.compile(r"^\s*(?:\d[\d.]*\s*[-–.)]?\s*)?[^\n]{3,180}$")
-_NUMBERED_HEADING = re.compile(r"^\s*\d+(?:\.\d+)*\.\s+\S")
+_NUMBERED_HEADING = re.compile(
+    r"^\s*\d+(?:\.\d+)*(?:[.)]?\s*[-–]?\s*|\s+)[A-ZÀ-ÖØ-Þ]"
+)
 
 
 def _strip_accents(text: str) -> str:
@@ -60,8 +62,16 @@ def _looks_like_heading(line: str) -> bool:
 
 
 def _is_numbered_heading(line: str) -> bool:
-    """Recognize numbered RCP headings without mistaking table rows for headings."""
-    return _looks_like_heading(line) and bool(_NUMBERED_HEADING.match(line))
+    """Recognize numbered RCP headings, not numbered instructions."""
+    if not _looks_like_heading(line):
+        return False
+
+    # A single number followed by a dot is usually a list instruction.
+    # RCP headings generally use hierarchical numbering such as 4.1 or 6.6.
+    if re.match(r"^\s*\d+[.)]\s+", line):
+        return False
+
+    return bool(_NUMBERED_HEADING.match(line))
 
 
 def classify_heading(line: str) -> str | None:
@@ -71,6 +81,31 @@ def classify_heading(line: str) -> str | None:
         if pattern.match(probe):
             return section
     return None
+
+def _is_document_boundary(lines: list[str], index: int) -> bool:
+    """Detect a confirmed transition from an RCP to an annex or leaflet."""
+    line = " ".join(_strip_accents(lines[index]).upper().split())
+
+    boundaries = {
+        "ANNEXE II": "INFORMATIONS DESTINEES AU PUBLIC",
+        "ANNEXE III": "ETIQUETTE",
+    }
+
+    # A standalone NOTICE title is a boundary only after RCP content.
+    if line == "NOTICE":
+        return True
+
+    expected_heading = boundaries.get(line)
+    if expected_heading is None:
+        return False
+
+    # Skip empty lines and check the next non-empty line.
+    for next_line in lines[index + 1:]:
+        normalized = " ".join(_strip_accents(next_line).upper().split())
+        if normalized:
+            return normalized == expected_heading
+
+    return False
 
 
 @dataclass
@@ -113,18 +148,27 @@ def split_sections(text: str) -> SectionSplit:
             (existing + "\n" + body).strip() if existing else body
         )
 
-    for line in text.splitlines():
+    lines = text.splitlines()
+
+    for index, line in enumerate(lines):
+        # Stop at a confirmed document boundary, but only after
+        # at least one section has been identified.
+        if current_key is not None and _is_document_boundary(lines, index):
+            flush()
+            break
+
         if _looks_like_heading(line):
             section = classify_heading(line)
             if section is not None:
                 flush()
                 current_key, current_bucket, buffer = section, split.sections, []
                 continue
+
             if current_key is not None and _is_numbered_heading(line):
                 flush()
                 current_key, current_bucket, buffer = line.strip(), split.unmapped, []
                 continue
-        buffer.append(line)
 
+        buffer.append(line)
     flush()
     return split

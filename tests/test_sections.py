@@ -128,3 +128,118 @@ class TestSplitting:
         split = split_sections("4.1. Indications thérapeutiques\nDouleur légère.\n")
         assert Section.POSOLOGY in split.missing()
         assert split.coverage == 0.25
+
+    def test_rcp_stops_before_public_annex(self):
+        text = (
+            "4.2. Posologie et mode d'administration\n"
+            "Dose professionnelle.\n"
+            "ANNEXE II\n"
+            "INFORMATIONS DESTINEES AU PUBLIC\n"
+            "1- Posologie :\n"
+            "Information destinée au patient.\n"
+        )
+
+        split = split_sections(text)
+
+        assert "Dose professionnelle." in split.sections[Section.POSOLOGY]
+        assert "Information destinée au patient." not in split.sections[Section.POSOLOGY]
+
+    def test_rcp_stops_before_label_annex(self):
+        text = (
+            "4.2. Posologie et mode d'administration\n"
+            "Dose professionnelle.\n"
+            "ANNEXE III\n"
+            "ETIQUETTE\n"
+            "Composition du produit.\n"
+        )
+
+        split = split_sections(text)
+
+        assert "Dose professionnelle." in split.sections[Section.POSOLOGY]
+        assert "Composition du produit." not in split.sections[Section.POSOLOGY]
+
+    def test_standalone_notice_is_still_extracted(self):
+        text = (
+            "NOTICE\n"
+            "Comment prendre ce médicament\n"
+            "Respectez la dose prescrite.\n"
+            "Ne prenez jamais ce médicament\n"
+            "En cas d'allergie.\n"
+        )
+
+        split = split_sections(text)
+
+        assert "Respectez la dose prescrite." in split.sections[Section.POSOLOGY]
+        assert "En cas d'allergie." in split.sections[Section.CONTRAINDICATIONS]
+
+    def test_annexe_i_is_not_a_document_boundary(self):
+        text = (
+            "4.2. Posologie et mode d'administration\n"
+            "Dose professionnelle.\n"
+            "ANNEXE I\n"
+            "RESUME DES CARACTERISTIQUES DU PRODUIT\n"
+            "Suite du contenu.\n"
+        )
+
+        split = split_sections(text)
+
+        assert "Suite du contenu." in split.sections[Section.POSOLOGY]
+
+    def test_page_metadata_does_not_stop_section(self):
+        text = (
+            "4.2. Posologie et mode d'administration\n"
+            "Dose professionnelle.\n"
+            "VERSION : 01\n"
+            "Page: 29/32\n"
+            "Email : contact@example.com\n"
+            "Suite du contenu.\n"
+        )
+
+        split = split_sections(text)
+
+        assert "VERSION : 01" in split.sections[Section.POSOLOGY]
+        assert "Page: 29/32" in split.sections[Section.POSOLOGY]
+        assert "Suite du contenu." in split.sections[Section.POSOLOGY]
+    def test_numbered_instructions_stay_inside_posology(self):
+        text = (
+            "6.6- Mode d'emploi\n"
+            "Utiliser le gobelet doseur fourni avec le flacon :\n"
+            "1. Remplir le flacon d'eau non gazeuse jusqu'au trait.\n"
+            "RESUME DES CARACTERISTIQUES DU PRODUIT\n"
+            "VERSION : 01 Page: 22/32\n"
+            "2. Bien agiter pour obtenir un liquide homogène.\n"
+            "3. Remplir le gobelet doseur jusqu'à la dose prescrite.\n"
+            "4. Bien refermer.\n"
+        )
+
+        split = split_sections(text)
+        posology = split.sections[Section.POSOLOGY]
+
+        assert "1. Remplir le flacon" in posology
+        assert "2. Bien agiter" in posology
+        assert "3. Remplir le gobelet doseur" in posology
+        assert "4. Bien refermer" in posology
+        assert not split.unmapped
+
+    def test_biopamox_page_break_instructions_stay_inside_posology(self):
+        text = (
+            "6.6- Mode d'emploi :\n"
+            "Utiliser le gobelet doseur fournie avec le flacon :\n"
+            "1. Remplir le flacon d'eau non gazeuse jusqu'au trait.\n"
+            "RESUME DES CARACTERISTIQUES DU PRODUIT\n"
+            "VERSION : 01 Page: 22/32\n"
+            "2. Bien agiter pour obtenir un liquide homogène. "
+            "Compléter avec de l'eau jusqu'au trait si\n"
+            "nécessaire.\n"
+            "3. Remplir le gobelet doseur jusqu'au dose prescrite.\n"
+            "4. Bien refermer\n"
+        )
+
+        split = split_sections(text)
+        posology = split.sections[Section.POSOLOGY]
+
+        assert "2. Bien agiter" in posology
+        assert "nécessaire." in posology
+        assert "3. Remplir le gobelet doseur" in posology
+        assert "4. Bien refermer" in posology
+        assert not split.unmapped
