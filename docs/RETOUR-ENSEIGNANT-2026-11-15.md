@@ -10,7 +10,7 @@ semaine 2 (vendredi 20 novembre).
 | # | Point | État |
 |---|---|---|
 | 1 | Conformité dzair-pharma | ✅ **tranché** le 15/11 par lecture du code de collecte |
-| 2 | Couverture : 3 molécules sur 40 | ✅ **faite le 16/11** — 38 molécules, 911 produits |
+| 2 | Couverture : 3 molécules sur 40 | ✅ **faite le 16/11** — 38 molécules, 914 produits |
 | 3 | Amlodipine : un document suffit | ✅ consigné comme limite connue |
 | 4 | Jeu de questions annoté avant les embeddings | ⬜ **13 sur 30**, dont 2 sans réponse — **bloque la semaine 2** |
 | 5 | Lien du dépôt en `..git` | ✅ **renommé le 17/11** en `pharmeazor-innovix` — reste l'ancien dépôt à supprimer |

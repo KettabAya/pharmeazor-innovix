@@ -1,12 +1,12 @@
 # Dossier de preuves — Pharmeazor
 
-Généré le **17/11/2026 à 22:30** depuis le dépôt lui-même.
+Généré le **18/11/2026 à 23:57** depuis le dépôt lui-même.
 Aucune valeur n'est saisie à la main : tout est relevé à l'exécution.
 
 - Dépôt : `https://github.com/KettabAya/pharmeazor-innovix.git`
 - Branche : `main`
-- Commit : `c37dc2f`
-- Total : **91 commits**, 119 fichiers suivis
+- Commit : `3984026`
+- Total : **96 commits**, 134 fichiers suivis
 
 ---
 
@@ -17,13 +17,14 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 
 | Auteur | Commits | Lignes ajoutées | Lignes retirées | Première | Dernière |
 |---|---:|---:|---:|---|---|
-| **Kettab Aya** | 60 | +28,475 | −5,494 | 2026-11-10 | 2026-11-17 |
+| **Kettab Aya** | 64 | +30,497 | −6,184 | 2026-11-10 | 2026-11-18 |
 | **Ryma Ait** | 15 | +297 | −56 | 2026-11-13 | 2026-11-14 |
 | **aya** | 9 | +324 | −18 | 2026-11-13 | 2026-11-13 |
+| **alaa** | 1 | +2,858 | −0 | 2026-11-18 | 2026-11-18 |
 
 ### Fichiers touchés par chaque personne
 
-**Kettab Aya** — 112 fichiers
+**Kettab Aya** — 113 fichiers
 
 - `.env.example`
 - `.gitattributes`
@@ -39,7 +40,7 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 - `Makefile`
 - `README.md`
 - `data/interim/.gitkeep`
-- *… et 98 autres*
+- *… et 99 autres*
 
 **Ryma Ait** — 10 fichiers
 
@@ -63,6 +64,21 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 - `scripts/run_baseline.py`
 - `src/pharmeazor/answer/llm_client.py`
 
+**alaa** — 12 fichiers
+
+- `"scripts/collecte_alaanour/Base_de_Donn\303\251es_Publique_des_M\303\251dicaments.py"`
+- `scripts/collecte_alaanour/Dzair_Farma.py`
+- `scripts/collecte_alaanour/PharmNet.py`
+- `scripts/collecte_alaanour/check_robots.py`
+- `scripts/collecte_alaanour/discover_suburls.py`
+- `scripts/collecte_alaanour/download_rcp_from_json.py`
+- `scripts/collecte_alaanour/duplicate_checker.py`
+- `scripts/collecte_alaanour/html_collector.py`
+- `scripts/collecte_alaanour/metadata.py`
+- `scripts/collecte_alaanour/ocr_reader.py`
+- `scripts/collecte_alaanour/pdf_reader.py`
+- `scripts/collecte_alaanour/source_authority.py`
+
 ---
 
 ## 2. Livrables, avec leur empreinte
@@ -72,10 +88,10 @@ qu'il n'a pas été modifié depuis.
 
 | Fichier | Contenu | Lignes | Empreinte |
 |---|---|---:|---|
-| `data/reference/drugs_semaine1.csv` | table produit nettoyée | 284 | `308b1a6381bb7fa3` |
-| `data/reference/name_index.csv` | dictionnaire des noms | 1136 | `155c4160ffb412f1` |
+| `data/reference/drugs_semaine1.csv` | table produit nettoyée | 284 | `2abb8b48cb820e36` |
+| `data/reference/name_index.csv` | dictionnaire des noms | 1136 | `3a2c9bb7cb59cc56` |
 | `data/reference/equivalents_semaine1.csv` | groupes d'équivalents | 242 | `eb659e61a1b49c6a` |
-| `data/reference/interactions_semaine1.csv` | interactions avec niveau ANSM | 87 | `55180b7af231b717` |
+| `data/reference/interactions_semaine1.csv` | interactions avec niveau ANSM | 87 | `3a4d655889ddc836` |
 | `data/reference/desaccords_versions.csv` | désaccords entre versions datées | 13 | `076d777a71ca7667` |
 | `data/reference/source_registry.yaml` | registre des sources et conformité | — | `7598d2ff635b20d1` |
 | `data/reference/documents_a_collecter.csv` | liste de collecte des notices | 18 | `e620d7233cd39f8a` |
@@ -88,9 +104,9 @@ qu'il n'a pas été modifié depuis.
 
 ```
 ........................................................................ [ 32%]
-........................................................................ [ 65%]
-........................................................................ [ 97%]
-.....                                                                    [100%]
+........................................................................ [ 64%]
+........................................................................ [ 96%]
+.........                                                                [100%]
 ```
 
 Code de sortie : **0** — tous les tests passent.
@@ -112,6 +128,11 @@ Code de sortie : **0** — tous les tests passent.
 ## 5. Les vingt derniers commits
 
 ```
+3984026  2026-11-18  14an  feat(docs): assembler tout le dossier en un seul PDF
+73001d3  2026-11-18  14an  scripts de collecte : PharmNet, ANSM BDPM, dzair-pharma, audit robots
+4c66720  2026-11-18  14an  docs: un guide git en quatre commandes
+901991b  2026-11-18  14an  chore(journal): reexecuter apres la correction des faux desaccords
+af815fd  2026-11-17  14an  fix(crosscheck): comparer un dosage sur sa valeur, pas sur son texte
 c37dc2f  2026-11-17  14an  docs(journal): ajouter les sept parties qui manquaient
 0dc8247  2026-11-17  14an  docs: journal de traitement complet, en carnet executable
 530a4e3  2026-11-17  14an  feat(dosage): traiter les derniers cas lisibles
@@ -127,11 +148,6 @@ e9c7a09  2026-11-17  14an  fix(normalize): lire les conditionnements mesures et 
 9560663  2026-11-17  14an  feat(reconcile): carte de couverture, pour ne sortir d'Algerie qu'au besoin
 e750b66  2026-11-17  14an  fix(reconcile): une source etrangere ne peut plus remplacer l'algerienne
 b30bc83  2026-11-16  14an  feat(data): etendre la couverture a 38 molecules sans toucher la semaine 1
-123ade7  2026-11-16  14an  fix(preuves): compter chaque personne une seule fois
-1791f49  2026-11-16  14an  fix: supprimer le doublon du test du modele seul, garder celui d'Aya
-bef8124  2026-11-16  14an  chore: renommer le depot en pharmeazor-innovix
-e9e9a07  2026-11-16  14an  chore: unifier les identites git d'une meme personne
-f5c9e0f  2026-11-16  14an  merge: integrer la PR #1 d'Aya, avec le modele de l'enseignant
 ```
 
 ---

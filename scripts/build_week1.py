@@ -30,6 +30,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from pharmeazor.collect.dzair import load_directory  # noqa: E402
 from pharmeazor.collect.nomenclature import read_workbook  # noqa: E402
 from pharmeazor.normalize.catalogue import Catalogue  # noqa: E402
+from pharmeazor.normalize.substance import parse_inn  # noqa: E402
 from pharmeazor.reconcile.crosscheck import compare_all  # noqa: E402
 
 # The three starter molecules: one per therapeutic class, as the spec asks.
@@ -92,8 +93,24 @@ PRODUCT_FIELDS = [
 
 
 def targeted(inn: str, targets: tuple[str, ...]) -> bool:
+    """La DCI releve-t-elle d'une des molecules demandees ?
+
+    Le test porte d'abord sur le texte tel qu'ecrit, puis sur la BASE lue par
+    parse_inn. Le second passage est necessaire parce que le registre ecrit
+    parfois le sel en premier :
+
+        NEFOPAM CHLORHYDRATE      commence par NEFOPAM   -> retenu
+        CHLORHYDRATE DE NEFOPAM   commence par CHLOR...  -> manque
+
+    Mesure du 18/11/2026 : 38 DCI sur 1 414 sont ecrites sel-d'abord. Sur
+    notre perimetre, le seul produit concerne etait ANTAPAM, un nefopam
+    injectable, absent des livrables pour cette seule raison.
+    """
     upper = (inn or "").upper()
-    return any(upper.startswith(t) for t in targets)
+    if any(upper.startswith(t) for t in targets):
+        return True
+    base = parse_inn(inn).base.upper()
+    return any(base.startswith(t) for t in targets)
 
 
 def normaliser_texte(valeur: str) -> str:

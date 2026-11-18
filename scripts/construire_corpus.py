@@ -53,7 +53,7 @@ def main() -> int:
     parser.add_argument(
         "--suffixe", default="",
         help="Jeu de donnees a lire. Vide : la semaine 1, 284 produits et "
-             "3 molecules. --suffixe _40molecules : 911 produits, 38 molecules.",
+             "3 molecules. --suffixe _40molecules : 914 produits, 38 molecules.",
     )
     args = parser.parse_args()
 

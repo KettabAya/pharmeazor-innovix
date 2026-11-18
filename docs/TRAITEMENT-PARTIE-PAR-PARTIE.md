@@ -60,7 +60,7 @@ J'ai compté les formes avant d'écrire la règle : en remplaçant les chiffres 
   `unparsed`, visible mais jamais compté deux fois
 - le `n` reste illisible
 
-**Résultat : 910 dosages lus sur 911 — 99,9 %.**
+**Résultat : 913 dosages lus sur 914 — 99,9 %.**
 
 Le seul restant est le `PAROL` du ministère.
 
@@ -90,7 +90,7 @@ Les 28 % cachaient **trois choses différentes** :
 ```
 
 Et le champ `volume` existait dans le code **sans jamais être rempli : 0 sur
-911**.
+914**.
 
 ## Comment je l'ai traité
 
@@ -116,10 +116,10 @@ change rien au flacon. Mais `+ 06AMP. DE 2,5ML DE SOLVANT` est un **nécessaire
 poudre plus solvant** : il doit échouer. La règle ne coupe la queue que si elle
 ne porte **aucun chiffre**.
 
-**Résultat : 788 sur 911 — 86,5 %.** Dont 98 échecs voulus et 25 formes rares.
+**Résultat : 790 sur 914 — 86,4 %.** Dont 98 échecs voulus et 26 formes rares.
 
-> *« Les 86 % ne sont pas un taux d'échec de 14 %. Sur les 123 restants, 98
-> sont des refus volontaires. Il ne reste que 25 vraies formes rares. »*
+> *« Les 86 % ne sont pas un taux d'échec de 14 %. Sur les 124 restants, 98
+> sont des refus volontaires. Il ne reste que 26 vraies formes rares. »*
 
 ---
 
@@ -162,6 +162,49 @@ deviner.
 > ignore la forme saline, parce que le ministère l'écrit de sept façons — mais
 > elle distingue toujours une association d'une substance seule. »*
 
+### Le sel écrit devant la base — trouvé le 18/11
+
+En vérifiant une à une les 38 molécules demandées, il en manquait une :
+le **néfopam**. Le ministère ne l'écrit pas comme les autres.
+
+```
+ligne  377   CHLORHYDRATE DE NEFOPAM   ANTAPAM   20MG/2ML
+```
+
+Le sel est **devant**, pas derrière. Deux conséquences enchaînées :
+
+1. mon filtre teste si la DCI *commence par* le terme cherché — `CHLORHYDRATE…`
+   ne commence pas par `NEFOPAM`, le produit n'entrait donc jamais ;
+2. même entré, `parse_inn` retirait bien `CHLORHYDRATE` mais laissait le `DE` :
+   la clé devenait `DE NEFOPAM`, distincte de `NEFOPAM`.
+
+**Combien de cas ?** Mesuré avant d'écrire la règle : **38 DCI sur les 1 414**
+du registre sont écrites sel-d'abord.
+
+#### Ce que j'en ai fait
+
+Le filtre teste maintenant *aussi* la base découpée, et `parse_inn` retire le
+`DE` ou le `D'` que cette écriture laisse devant.
+
+**Trois produits sont revenus** — et le troisième est celui qui compte :
+
+| | avant | après |
+|---|---|---|
+| `ANTAPAM` (néfopam injectable) | absent | présent |
+| `ASPEGIC ADULTE` (aspirine 1 g) | absent | présent |
+| `TRAMADINE` (tramadol 100 mg suppositoire) | absent | présent, **et groupé** |
+
+Le suppositoire de tramadol à 100 mg paraissait n'avoir aucun équivalent. Il en
+a un : `TRAMADOL LS`, même substance, même dosage, même forme. Les deux
+écritures du ministère les séparaient.
+
+> *« C'est l'erreur la plus silencieuse du lot. Rien ne plantait, aucun chiffre
+> n'était faux — un médicament était simplement absent, et un équivalent réel
+> restait invisible. Je ne l'ai vu qu'en recomptant les 38 molécules une par
+> une. »*
+
+Un test retient le défaut : `TestLeSelEcritDevantLaBase`.
+
 ---
 
 # 5 · Le dictionnaire des noms
@@ -178,7 +221,7 @@ EXPANDOL, huit PARALGAN.
 
 ## Comment je l'ai traité
 
-**3 644 entrées.** Chercher « DOLIPRANE » ne suffit pas : il faut marque **+
+**3 656 entrées.** Chercher « DOLIPRANE » ne suffit pas : il faut marque **+
 dosage + forme**.
 
 > *« C'est pour ça que c'est un dictionnaire et pas une colonne. La relation
@@ -221,7 +264,7 @@ l'amoxicilline 1 g coupée en deux groupes pour cette seule raison.
 La voie d'administration est examinée **avant** la forme. Et un dictionnaire
 corrige les fautes connues du registre avant la comparaison.
 
-**152 groupes, 782 produits regroupés.** Et chaque groupe porte cet
+**153 groupes, 784 produits regroupés.** Et chaque groupe porte cet
 avertissement dans le texte lui-même :
 
 > *« Une équivalence de substance, de dosage et de forme ne vaut pas
@@ -358,12 +401,12 @@ Répondez franchement — c'est ce qui donne du poids au reste.
 # LES CHIFFRES À SAVOIR PAR CŒUR
 
 ```
-911   produits traités
-131   substances distinctes
-910   dosages lus       (99,9 %)
-788   conditionnements  (86,5 %, dont 98 refus volontaires)
-3644  entrées au dictionnaire
-152   groupes d'équivalents
+914   produits traités
+134   substances distinctes
+913   dosages lus       (99,9 %)
+790   conditionnements  (86,4 %, dont 98 refus volontaires)
+3656  entrées au dictionnaire
+153   groupes d'équivalents
  13   désaccords entre versions   (il en demandait 10)
-221   tests, en une seconde
+225   tests, en une seconde
 ```

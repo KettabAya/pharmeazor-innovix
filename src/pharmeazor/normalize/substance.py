@@ -159,9 +159,24 @@ def _extraire_base_et_sel(morceau: str) -> tuple[str, str, bool, str]:
     sel_mots = [w for w in mots if _sans_accents(w).upper() in _FORMES_SALINES]
     if sel_mots:
         base = " ".join(w for w in mots if w not in sel_mots)
-        return base.strip(), " ".join(sel_mots), False, "sel_accole"
+        return _retirer_de(base), " ".join(sel_mots), False, "sel_accole"
 
     return texte, "", False, "simple"
+
+
+def _retirer_de(base: str) -> str:
+    """Retirer le « DE » laisse par une ecriture sel-d'abord.
+
+    Le registre ecrit tantot « NEFOPAM CHLORHYDRATE », tantot « CHLORHYDRATE
+    DE NEFOPAM ». Dans le second cas, le sel est bien reconnu, mais la base
+    garde son « DE » : la cle devient « DE NEFOPAM », distincte de « NEFOPAM ».
+    Deux ecritures de la meme substance tombent alors dans deux groupes.
+
+    Mesure du 18/11/2026 sur le classeur d'aout : 38 DCI sur 1 414 sont
+    ecrites sel-d'abord, dont le nefopam, seule molecule de notre perimetre
+    concernee.
+    """
+    return re.sub(r"^(?:DE\s+|D\s*'\s*)", "", base.strip(), flags=re.I).strip()
 
 
 @lru_cache(maxsize=4096)

@@ -71,7 +71,7 @@ class Chaine:
 
 # Les chaînes, mesurées sur les données du projet et non supposées.
 #
-# « nomenclature » = le classeur du ministère, 911 produits.
+# « nomenclature » = le classeur du ministère, 914 produits.
 # « anpp_rcp »     = les RCP et notices officiels algériens.
 # « pharmnet »     = site professionnel algérien, non officiel.
 # Les sources étrangères portent leur pays dans le registre.
@@ -80,30 +80,30 @@ CHAINES: dict[str, Chaine] = {
     "nom_commercial": Chaine(
         ("nomenclature", "anpp_rcp"), (),
         "Une marque algérienne n'existe que dans le registre algérien. "
-        "Mesuré : 911/911 produits ont un nom de marque.",
+        "Mesuré : 914/914 produits ont un nom de marque.",
     ),
     "dci": Chaine(
         ("nomenclature", "anpp_rcp"), (),
-        "Mesuré : 911/911. La DCI est internationale, mais c'est "
+        "Mesuré : 914/914. La DCI est internationale, mais c'est "
         "l'enregistrement algérien qui fait foi sur ce qui est commercialisé ici.",
     ),
     "numero_enregistrement": Chaine(
         ("nomenclature",), (),
         "Identifiant purement algérien : aucune source étrangère ne peut le "
-        "porter. Mesuré : 911/911.",
+        "porter. Mesuré : 914/914.",
     ),
     "dosage": Chaine(
         ("nomenclature", "anpp_rcp"), (),
-        "Mesuré : 911/911. Un dosage étranger ne vaut pas pour un produit "
+        "Mesuré : 914/914. Un dosage étranger ne vaut pas pour un produit "
         "enregistré en Algérie : la présentation peut différer.",
     ),
     "conditionnement": Chaine(
         ("nomenclature",), (),
-        "Mesuré : 911/911. Propre à la présentation enregistrée ici.",
+        "Mesuré : 914/914. Propre à la présentation enregistrée ici.",
     ),
     "laboratoire": Chaine(
         ("nomenclature",), (),
-        "Mesuré : 911/911. Le titulaire de l'enregistrement est désigné "
+        "Mesuré : 914/914. Le titulaire de l'enregistrement est désigné "
         "par l'autorité algérienne ; un laboratoire étranger peut fabriquer, "
         "mais c'est l'enregistrement ici qui compte.",
     ),
@@ -118,8 +118,8 @@ CHAINES: dict[str, Chaine] = {
     ),
     "liste_substances_veneneuses": Chaine(
         ("nomenclature",), (),
-        "Classement réglementaire algérien. Mesuré : 745/911 renseignés ; les "
-        "166 vides signifient « hors liste », ils ne se complètent pas ailleurs.",
+        "Classement réglementaire algérien. Mesuré : 747/914 renseignés ; les "
+        "167 vides signifient « hors liste », ils ne se complètent pas ailleurs.",
     ),
 
     # --- ce que l'Algérie couvre, mais pas toujours : on sort en dernier ---

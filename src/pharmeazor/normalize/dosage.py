@@ -195,9 +195,10 @@ def parse_strength(raw: str | None) -> Strength:
     #     5% ( 5G/100 G )     5 %, soit 5 g pour 100 g
     #     400MG (684MG)       400 mg de base, pour 684 mg de sel
     #
-    # Mesure sur les 911 produits : 9 des 10 dosages illisibles suivent ce
-    # motif. La valeur retenue est celle de GAUCHE, qui est la dose annoncee ;
-    # l'equivalent part dans `unparsed`, visible mais jamais compte deux fois.
+    # Mesure du 17/11/2026, avant cette regle : 9 des 10 dosages illisibles
+    # suivaient ce motif. La valeur retenue est celle de GAUCHE, qui est la
+    # dose annoncee ; l'equivalent part dans `unparsed`, visible mais jamais
+    # compte deux fois.
     entre_parentheses = _VALEUR_ET_EQUIVALENT.match(text)
     if entre_parentheses:
         text = entre_parentheses.group("valeur").strip()

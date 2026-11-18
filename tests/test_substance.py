@@ -174,3 +174,43 @@ class TestSousFormeEntreParentheses:
         assert s.cle() == "AMLODIPINE"
         assert s.sel == "BESILATE"
 
+
+
+class TestLeSelEcritDevantLaBase:
+    """Defaut mesure le 18/11/2026 : le ministere ecrit tantot
+    "NEFOPAM CHLORHYDRATE", tantot "CHLORHYDRATE DE NEFOPAM".
+
+    Dans le second cas le sel etait bien reconnu, mais le "DE" restait colle a
+    la base : la cle devenait "DE NEFOPAM", distincte de "NEFOPAM". Trois
+    produits de notre perimetre -- ANTAPAM, TRAMADINE et ASPEGIC ADULTE --
+    manquaient de ce fait dans le catalogue, et le suppositoire de tramadol a
+    100 mg n'avait aucun equivalent alors qu'il en a un.
+
+    38 DCI sur les 1 414 du registre d'aout sont ecrites sel-d'abord.
+    """
+
+    def test_les_deux_ecritures_du_nefopam_se_rejoignent(self):
+        cles = {
+            parse_inn("NEFOPAM").cle(),
+            parse_inn("NEFOPAM CHLORHYDRATE").cle(),
+            parse_inn("CHLORHYDRATE DE NEFOPAM").cle(),
+        }
+        assert cles == {"NEFOPAM"}
+
+    def test_le_de_ne_reste_pas_dans_la_cle(self):
+        for brut, attendu in (
+            ("CHLORHYDRATE DE TRAMADOL", "TRAMADOL"),
+            ("ACETATE DE FLECAINIDE", "FLECAINIDE"),
+            ("CHLORHYDRATE D'AMBROXOL", "AMBROXOL"),
+        ):
+            assert parse_inn(brut).cle() == attendu, brut
+
+    def test_le_sel_reste_lisible(self):
+        s = parse_inn("CHLORHYDRATE DE NEFOPAM")
+        assert s.base == "NEFOPAM"
+        assert s.sel == "CHLORHYDRATE"
+
+    def test_une_substance_qui_commence_par_de_nest_pas_amputee(self):
+        # Rien ne doit disparaitre quand il n'y a pas de sel devant.
+        assert parse_inn("DEXAMETHASONE").cle() == "DEXAMETHASONE"
+        assert parse_inn("DESLORATADINE").cle() == "DESLORATADINE"

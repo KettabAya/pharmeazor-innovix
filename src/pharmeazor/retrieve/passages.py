@@ -71,7 +71,7 @@ def _lire(nom: str, suffixe: str = "") -> list[dict[str, str]]:
     """Lire un livrable de data/reference/, dans la version demandee.
 
     Sans suffixe, ce sont les fichiers de la semaine 1 : 284 produits, trois
-    molecules. Avec ``--suffixe _40molecules``, la version elargie : 911
+    molecules. Avec ``--suffixe _40molecules``, la version elargie : 914
     produits, 38 molecules.
 
     Les deux jeux coexistent exprès. Le rapport de la semaine 1 annonce des

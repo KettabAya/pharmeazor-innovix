@@ -42,9 +42,9 @@ __all__ = [
 # correction, les deux orthographes tombent dans deux familles differentes :
 # la forme fautive ne rencontre pas SUSPENSION, donc elle s'arrete sur POUDRE.
 #
-# Mesure sur les 911 produits : 17 produits portent la faute, 51 non, et
-# AMOXICILLINE TRIHYDRATEE 1G/SACHET se retrouvait coupe en deux groupes
-# d'equivalents pour cette seule raison.
+# Mesure du 17/11/2026, sur les 911 produits d'alors : 17 produits portent
+# la faute, 51 non, et AMOXICILLINE TRIHYDRATEE 1G/SACHET se retrouvait
+# coupe en deux groupes d'equivalents pour cette seule raison.
 #
 # Le texte d'origine n'est pas modifie : seule la recherche de famille
 # travaille sur la version corrigee. Un pharmacien voit toujours ce que le
@@ -57,8 +57,9 @@ _FAUTES_DE_FRAPPE = {"SUSPENSSION": "SUSPENSION"}
 # buvable sont toutes deux des "solutions", mais l'une se pique et l'autre se
 # boit. Les confondre proposerait un injectable pour remplacer un sirop.
 #
-# Mesure sur les 911 produits des 38 molecules : 46 injectables et 15 collyres
-# etaient classes "SOLUTION", donc melangeables avec les solutions buvables.
+# Mesure du 17/11/2026, sur les 911 produits d'alors : 46 injectables et
+# 15 collyres etaient classes "SOLUTION", donc melangeables avec les
+# solutions buvables.
 # Aucun groupe d'equivalents n'en avait encore souffert, parce que l'egalite
 # de dosage les separait de fait -- mais la regle etait fausse.
 _VOIES: tuple[str, ...] = (
