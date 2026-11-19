@@ -6,6 +6,7 @@ moindre règle de nettoyage.
 | Notebook | Ce qu'il montre |
 |---|---|
 | `01_explorer_la_nomenclature.ipynb` | la séquence complète : complétude, cardinalité, distribution, formes, anomalies |
+| `02_exercices.ipynb` | trois exercices sur des colonnes jamais traitées, avec les réponses mesurées |
 
 ## Lancer
 

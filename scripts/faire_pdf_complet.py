@@ -31,6 +31,7 @@ DOCUMENTS: list[tuple[str, str]] = [
     ("docs/RAPPORT-SEMAINE-1.md", "Rapport de la semaine 1"),
     ("docs/JOURNAL-TRAITEMENT.md", "Journal du traitement"),
     ("docs/TRAITEMENT-PARTIE-PAR-PARTIE.md", "Le traitement, partie par partie"),
+    ("docs/APPRENDRE-A-TRAITER.md", "Apprendre à traiter, du début à la fin"),
     ("docs/RETOUR-ENSEIGNANT-2026-11-15.md", "Retour de l'enseignant et suites"),
     ("docs/LLM-SEUL-RESULTAT.md", "Le modèle seul, sans corpus"),
     ("docs/DATA_SOURCES.md", "Sources et conformité"),
