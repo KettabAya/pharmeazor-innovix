@@ -115,16 +115,31 @@ def _phrase(morceaux: list[str]) -> str:
     return " ".join(m.strip() for m in morceaux if m and m.strip())
 
 
-def passages_produits(
-    lignes: list[dict[str, str]] | None = None, suffixe: str = ""
-) -> Iterator[Passage]:
+def _enrichissement(suffixe: str = "") -> dict[str, dict[str, str]]:
+    """Ce que dzair-pharma ajoute, indexe par numero d'enregistrement.
+
+    Le fichier peut manquer : la fonction rend alors un dictionnaire vide et
+    les passages se construisent sans ces precisions, comme avant.
+    """
+    try:
+        lignes = _lire("enrichissement_dzair_semaine1.csv", suffixe)
+    except FileNotFoundError:
+        return {}
+    return {x["registration_no"]: x for x in lignes if x.get("registration_no")}
+
+
+def passages_produits(lignes: list[dict[str, str]] | None = None,
+                      suffixe: str = "",
+                      enrichi: dict[str, dict[str, str]] | None = None) -> Iterator[Passage]:
     """Un passage par produit enregistré.
 
     Répond aux questions de niveau 1 : dosage, forme, conditionnement,
     laboratoire, DCI derrière un nom de marque, statut d'enregistrement.
     """
+    enrichi = _enrichissement(suffixe) if enrichi is None else enrichi
     for ligne in lignes if lignes is not None else _lire("drugs_semaine1.csv", suffixe):
         marque = ligne["brand_name"]
+        extra = enrichi.get(ligne.get("registration_no", ""), {})
         dci = ligne["inn"]
 
         corps = [f"{marque} est un médicament enregistré en Algérie."]
@@ -169,7 +184,34 @@ def passages_produits(
                 f"Le registre lui donne le code de statut « {ligne['status']} », "
                 "dont la légende n'est publiée nulle part."
             )
-        corps.append(f"Source : nomenclature nationale, version {ligne['source_version']}.")
+        # Ce que dzair-pharma ajoute. C'est une source PROFESSIONNELLE, rang 1
+        # contre rang 3 pour la nomenclature : chaque precision porte donc son
+        # origine dans la phrase, sinon le lecteur croirait que le ministere
+        # l'a ecrite.
+        if extra.get("voie_administration"):
+            corps.append(f"Voie d'administration : {extra['voie_administration']}.")
+        if extra.get("origine_fabrication"):
+            corps.append(f"Origine de fabrication : {extra['origine_fabrication']}.")
+        if extra.get("code_atc"):
+            corps.append(f"Classification ATC : {extra['code_atc']}.")
+        if extra.get("criticite"):
+            corps.append(
+                f"Ce produit est signalé « {extra['criticite']} » par "
+                "dzair-pharma, dont le barème n'est pas publié."
+            )
+        if extra:
+            corps.append(
+                "Ces quatre dernières précisions viennent de dzair-pharma, "
+                "source professionnelle et non officielle : à confirmer dans "
+                "le RCP avant toute décision."
+            )
+        if extra.get("rcp_officiel_url"):
+            corps.append(
+                f"Le RCP officiel de l'ANPP est disponible : {extra['rcp_officiel_url']}"
+            )
+        corps.append(
+            f"Source : nomenclature nationale, version {ligne['source_version']}."
+        )
 
         yield Passage(
             passage_id=f"nom-produit-{ligne['drug_id']}",
@@ -180,9 +222,8 @@ def passages_produits(
         )
 
 
-def passages_retraits(
-    lignes: list[dict[str, str]] | None = None, suffixe: str = ""
-) -> Iterator[Passage]:
+def passages_retraits(lignes: list[dict[str, str]] | None = None,
+                      suffixe: str = "") -> Iterator[Passage]:
     """Un passage par produit sorti du marche.
 
     Pourquoi ils sont dans le corpus alors qu'ils ne sont pas dans le catalogue
@@ -209,12 +250,10 @@ def passages_retraits(
         marque = ligne["brand_name"]
         retire = ligne["source_sheet"] == "retraits"
 
-        tete = (
-            f"{marque} N'EST PLUS un médicament enregistré en Algérie."
-            if retire
-            else f"{marque} n'est plus enregistré en Algérie : son "
-            "enregistrement n'a pas été renouvelé."
-        )
+        tete = (f"{marque} N'EST PLUS un médicament enregistré en Algérie."
+                if retire else
+                f"{marque} n'est plus enregistré en Algérie : son "
+                "enregistrement n'a pas été renouvelé.")
         corps = [tete]
         if ligne["withdrawal_date"]:
             corps.append(f"Il a été retiré le {ligne['withdrawal_date']}.")
@@ -230,7 +269,10 @@ def passages_retraits(
             corps.append(f"Il était produit par {ligne['lab_name']}.")
         if ligne["registration_no"]:
             corps.append(f"Son numéro d'enregistrement était {ligne['registration_no']}.")
-        corps.append("Ce produit ne doit pas être délivré et ne peut pas servir d'équivalent.")
+        corps.append(
+            "Ce produit ne doit pas être délivré et ne peut pas servir "
+            "d'équivalent."
+        )
         corps.append(
             f"Source : nomenclature nationale, version {ligne['source_version']}, "
             f"feuille {ligne['source_sheet']}."
@@ -270,7 +312,8 @@ def passages_equivalents(
             continue
 
         corps = [
-            f"{len(noms)} médicaments enregistrés en Algérie sont équivalents : {', '.join(noms)}.",
+            f"{len(noms)} médicaments enregistrés en Algérie sont équivalents : "
+            f"{', '.join(noms)}.",
             f"Ils partagent la même substance active, {tete['inn']}.",
         ]
         if tete["strength"]:
@@ -348,7 +391,9 @@ def passages_interactions(
             "marque."
         )
         if ligne["brand_name"]:
-            corps.append(f"Fiche d'où l'information a été lue : {ligne['brand_name']}.")
+            corps.append(
+                f"Fiche d'où l'information a été lue : {ligne['brand_name']}."
+            )
 
         origine = ligne["source_origine"] or "inconnue"
         relais = ligne["source_relais"] or "inconnu"

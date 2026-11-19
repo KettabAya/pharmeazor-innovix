@@ -39,7 +39,8 @@ import unicodedata
 from dataclasses import dataclass, field
 from functools import lru_cache
 
-__all__ = ["Substance", "parse_inn", "normaliser_substance", "concerne_molecule"]
+__all__ = ["Substance", "parse_inn", "normaliser_substance", "concerne_molecule",
+           "corriger_fautes"]
 
 # "X <sel> EXPRIME EN Y" / "EXPRIMEE EN" / "EXPRIMES EN" : Y est la base.
 _EXPRIME_EN = re.compile(r"\bEXPRIM\w*\s+EN\s+(?P<base>.+)$", re.I)
@@ -261,6 +262,47 @@ def parse_inn(valeur: str | None) -> Substance:
     )
 
 
+# Fautes de frappe du registre, dans la colonne DCI.
+#
+# Elles sont rares mais elles coutent cher : une DCI mal orthographiee ne
+# correspond a aucune molecule cherchee, le produit sort du perimetre, et
+# RIEN ne le signale. Mesure du 19/11/2026 sur le classeur d'aout, 13
+# produits enregistres en Algerie manquaient au catalogue pour cette seule
+# raison.
+#
+# Chaque correction est verifiee contre le nom de marque du produit, qui ne
+# laisse aucun doute :
+#
+#   ACETYLSALICYTIQUE   ASPEGIC, ASPEGIC ENFANTS, ASPEGIC NOURRISSON   3
+#   AMPLODIPINE         EXCAN et UNISIA, associations avec candesartan  6
+#   CIOROFLOXACINE      l'un des produits s'appelle CIPROFLOXACINE RAZES 4
+#
+# Ce ne sont PAS des substances differentes : il n'existe ni amplodipine ni
+# cioroxacine. On corrige donc la LECTURE, jamais le texte d'origine, qui
+# reste tel que le ministere l'a ecrit dans `inn`.
+#
+# Decouverte en confrontant le catalogue a la collecte dzair-pharma de
+# l'equipe : ces produits y figuraient, pas chez nous.
+_FAUTES_DE_DCI: dict[str, str] = {
+    "ACETYLSALICYTIQUE": "ACETYLSALICYLIQUE",
+    "AMPLODIPINE": "AMLODIPINE",
+    "CIOROFLOXACINE": "CIPROFLOXACINE",
+}
+
+
+def corriger_fautes(texte: str) -> str:
+    """Corriger les fautes de frappe connues du registre dans une DCI.
+
+    N'agit que sur les trois fautes relevees et verifiees. Une faute
+    inconnue n'est pas devinee : le produit ressortira hors perimetre, ce
+    qui est le comportement sur, et se verra au prochain recoupement.
+    """
+    for faute, correction in _FAUTES_DE_DCI.items():
+        if faute in texte:
+            texte = texte.replace(faute, correction)
+    return texte
+
+
 def concerne_molecule(inn: str | None, cibles: tuple[str, ...]) -> bool:
     """La DCI releve-t-elle d'une des molecules visees ?
 
@@ -279,8 +321,8 @@ def concerne_molecule(inn: str | None, cibles: tuple[str, ...]) -> bool:
     >>> concerne_molecule("DEXAMETHASONE", ("NEFOPAM",))
     False
     """
-    texte = (inn or "").upper()
+    texte = corriger_fautes((inn or "").upper())
     if any(texte.startswith(c) for c in cibles):
         return True
-    base = parse_inn(inn).base.upper()
+    base = corriger_fautes(parse_inn(texte).base.upper())
     return any(base.startswith(c) for c in cibles)

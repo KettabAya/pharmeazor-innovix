@@ -16,53 +16,35 @@ DATA = ROOT / "data"
 
 # Les molecules du projet, ecrites une seule fois.
 #
-# L'enseignant a fourni une liste de 40 entrees ; deux d'entre elles ne sont
-# pas des molecules (un dossier `metadata` et un dossier `row_data`), ce qui
-# en laisse 38. Le cotrimoxazole y figure sous ses deux composants, le
-# ministere l'enregistrant sous « SULFAMETHOXAZOLE/TRIMETHOPRIME ».
+# Elles viennent de config/Projet2_Liste_40_medicaments.xlsx, la liste donnee
+# par l'enseignant, versee au depot le 19/11/2026. Elle compte 40 entrees.
 #
-# Cette liste etait recopiee a la main sur la ligne de commande a chaque
+# Le cotrimoxazole y figure comme une seule entree ; le ministere l'enregistre
+# sous « SULFAMETHOXAZOLE/TRIMETHOPRIME », d'ou deux termes ici. La liste
+# ci-dessous en compte donc 41.
+#
+# Corrige le 19/11/2026 : le perimetre s'etait arrete a 38 termes, parce qu'il
+# avait ete deduit des dossiers d'une archive de l'equipe au lieu d'etre lu
+# dans la liste officielle. Deux molecules manquaient :
+#
+#     methyldopa   3 produits dans la feuille courante du classeur d'aout
+#     nifedipine   0 dans la feuille courante, 29 dans les retraits --
+#                  la molecule n'est plus enregistree en Algerie, et c'est
+#                  une information en soi
+#
+# Cette liste etait aussi recopiee a la main sur la ligne de commande a chaque
 # execution : une faute de frappe suffisait a perdre une molecule sans que
 # rien ne le signale.
 MOLECULES_PROJET: tuple[str, ...] = (
-    "PARACETAMOL",
-    "AMOXICILLINE",
-    "AMLODIPINE",
-    "IBUPROFENE",
-    "DICLOFENAC",
-    "KETOPROFENE",
-    "NAPROXENE",
-    "PIROXICAM",
-    "MELOXICAM",
-    "CELECOXIB",
-    "ACIDE ACETYLSALICYLIQUE",
-    "AZITHROMYCINE",
-    "CLARITHROMYCINE",
-    "CIPROFLOXACINE",
-    "LEVOFLOXACINE",
-    "DOXYCYCLINE",
-    "GENTAMICINE",
-    "CLINDAMYCINE",
-    "CEFTRIAXONE",
-    "CEFIXIME",
-    "CEFUROXIME",
-    "METRONIDAZOLE",
-    "SULFAMETHOXAZOLE",
-    "TRIMETHOPRIME",
-    "HYDROCHLOROTHIAZIDE",
-    "INDAPAMIDE",
-    "SPIRONOLACTONE",
-    "VALSARTAN",
-    "LOSARTAN",
-    "RAMIPRIL",
-    "PERINDOPRIL",
-    "ENALAPRIL",
-    "ATENOLOL",
-    "BISOPROLOL",
-    "NEBIVOLOL",
-    "TRAMADOL",
-    "NEFOPAM",
-    "CODEINE",
+    "PARACETAMOL", "AMOXICILLINE", "AMLODIPINE", "IBUPROFENE", "DICLOFENAC",
+    "KETOPROFENE", "NAPROXENE", "PIROXICAM", "MELOXICAM", "CELECOXIB",
+    "ACIDE ACETYLSALICYLIQUE", "AZITHROMYCINE", "CLARITHROMYCINE",
+    "CIPROFLOXACINE", "LEVOFLOXACINE", "DOXYCYCLINE", "GENTAMICINE",
+    "CLINDAMYCINE", "CEFTRIAXONE", "CEFIXIME", "CEFUROXIME", "METRONIDAZOLE",
+    "SULFAMETHOXAZOLE", "TRIMETHOPRIME", "HYDROCHLOROTHIAZIDE", "INDAPAMIDE",
+    "SPIRONOLACTONE", "VALSARTAN", "LOSARTAN", "RAMIPRIL", "PERINDOPRIL",
+    "ENALAPRIL", "ATENOLOL", "BISOPROLOL", "NEBIVOLOL", "TRAMADOL",
+    "NEFOPAM", "CODEINE", "NIFEDIPINE", "METHYLDOPA",
 )
 
 
@@ -86,9 +68,7 @@ class Settings:
     """All tunables in one place, so experiments stay reproducible."""
 
     # --- model (imposed by the module; same for every team) -----------------
-    model_name: str = field(
-        default_factory=lambda: os.getenv("PHARMEAZOR_MODEL", "openai/gpt-oss-120b")
-    )
+    model_name: str = field(default_factory=lambda: os.getenv("PHARMEAZOR_MODEL", "openai/gpt-oss-120b"))
     api_key: str = field(default_factory=lambda: os.getenv("GROQ_API_KEY", ""))
 
     # --- paths --------------------------------------------------------------
@@ -119,11 +99,8 @@ class Settings:
 
     def ensure_dirs(self) -> None:
         for directory in (
-            self.raw_dir,
-            self.interim_dir,
-            self.processed_dir,
-            self.reference_dir,
-            self.cache_dir,
+            self.raw_dir, self.interim_dir, self.processed_dir,
+            self.reference_dir, self.cache_dir,
         ):
             directory.mkdir(parents=True, exist_ok=True)
 
