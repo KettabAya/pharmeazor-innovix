@@ -12,13 +12,18 @@ Ce qu'il fait, dans l'ordre
 4. couper chaque rubrique en passages de taille raisonnable ;
 5. écrire ``data/processed/passages_bdm.jsonl`` et un récapitulatif.
 
-Pourquoi seulement les RCP et le bon usage
-------------------------------------------
-Quatre types de documents existent. La notice s'adresse au **patient**, la
-fiche d'information est un résumé public. Notre assistant répond à un
-**pharmacien** : le RCP est le document qui lui parle, et le bon usage
-complète. Les deux autres restent sur le disque, lisibles, et le choix est
-réversible d'une option.
+Les quatre types, et pourquoi tous
+-----------------------------------
+Le RCP s'adresse au **professionnel**, la notice au **patient**, la fiche
+d'information est un résumé public, le bon usage porte des recommandations.
+
+Un premier jet ne versait que le RCP et le bon usage, au motif que notre
+assistant répond à un pharmacien. C'était une économie mal placée : un
+pharmacien explique aussi un traitement **à un patient**, et la notice est
+écrite exactement pour ça -- en mots simples, là où le RCP est technique.
+Chaque passage porte son `type_document`, donc on peut toujours filtrer.
+
+Les quatre sont versés. ``--types`` permet de n'en prendre qu'une partie.
 
 Le rang d'autorité, qui décide de tout
 --------------------------------------
@@ -121,9 +126,9 @@ def decouper(texte: str, taille: int, recouvrement: int) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--types", nargs="+", default=["rcp", "bon_usage"],
+        "--types", nargs="+", default=list(TYPES_DE_DOCUMENT),
         choices=list(TYPES_DE_DOCUMENT),
-        help="Types de documents à verser (défaut : rcp et bon_usage).",
+        help="Types de documents à verser (défaut : les quatre).",
     )
     parser.add_argument(
         "--toutes-molecules", action="store_true",

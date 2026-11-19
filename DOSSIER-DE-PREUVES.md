@@ -1,12 +1,12 @@
 # Dossier de preuves — Pharmeazor
 
-Généré le **19/11/2026 à 19:36** depuis le dépôt lui-même.
+Généré le **19/11/2026 à 20:10** depuis le dépôt lui-même.
 Aucune valeur n'est saisie à la main : tout est relevé à l'exécution.
 
 - Dépôt : `https://github.com/KettabAya/pharmeazor-innovix.git`
 - Branche : `main`
-- Commit : `4bc5494`
-- Total : **106 commits**, 148 fichiers suivis
+- Commit : `e9667f5`
+- Total : **107 commits**, 154 fichiers suivis
 
 ---
 
@@ -17,14 +17,14 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 
 | Auteur | Commits | Lignes ajoutées | Lignes retirées | Première | Dernière |
 |---|---:|---:|---:|---|---|
-| **Kettab Aya** | 74 | +51,537 | −14,966 | 2026-11-10 | 2026-11-19 |
+| **Kettab Aya** | 75 | +57,507 | −19,662 | 2026-11-10 | 2026-11-19 |
 | **Ryma Ait** | 15 | +297 | −56 | 2026-11-13 | 2026-11-14 |
 | **aya** | 9 | +324 | −18 | 2026-11-13 | 2026-11-13 |
 | **alaa** | 1 | +2,858 | −0 | 2026-11-18 | 2026-11-18 |
 
 ### Fichiers touchés par chaque personne
 
-**Kettab Aya** — 127 fichiers
+**Kettab Aya** — 129 fichiers
 
 - `.env.example`
 - `.gitattributes`
@@ -40,7 +40,7 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 - `Makefile`
 - `README.md`
 - `data/interim/.gitkeep`
-- *… et 113 autres*
+- *… et 115 autres*
 
 **Ryma Ait** — 10 fichiers
 
@@ -102,7 +102,8 @@ qu'il n'a pas été modifié depuis.
 | `data/reference/retraits_40molecules.csv` | produits sortis du marché, 38 molécules | 1007 | `c94ebadcfe4c5a23` |
 | `data/reference/name_index_retraits_40molecules.csv` | dictionnaire des noms retirés, 38 molécules | 3021 | `cd345aff2ed98f58` |
 | `data/reference/enrichissement_dzair_40molecules.csv` | champs apportés par dzair-pharma | 788 | `ca2cd125c2fa47d2` |
-| `data/reference/documents_bdm.csv` | les 3 664 PDF français, rubrique par rubrique | 1401 | `412eadd5b88b10e2` |
+| `data/reference/documents_bdm.csv` | les 3 664 PDF français, rubrique par rubrique | 3478 | `425b09201a1b9175` |
+| `data/reference/equivalents_annonces_dzair_40molecules.csv` | équivalents annoncés par le site, avec substituabilité | 4904 | `06da32230e068b0d` |
 | `config/Projet2_Liste_40_medicaments.xlsx` | la liste des 40 molécules de l'enseignant | — | `b48881ffa658ed38` |
 | `docs/conformite/robots_audit_equipe_2026-11-11.json` | audit robots.txt de 10 sites | — | `b8a914cfe97ca908` |
 | `data/reference/desaccords_versions_40molecules.csv` | désaccords entre versions, 38 molécules | 29 | `9bd61ba97811d8da` |
@@ -143,6 +144,7 @@ Code de sortie : **0** — tous les tests passent.
 ## 5. Les vingt derniers commits
 
 ```
+e9667f5  2026-11-19  14an  feat(collect): traiter les 3 664 PDF francais, et completer le perimetre
 4bc5494  2026-11-19  14an  feat(collect): verser les champs que seule sa collecte apporte
 56854c3  2026-11-19  14an  feat(collect): utiliser les 45 fichiers de la collecte, pas 3
 b9c7d0c  2026-11-19  14an  docs(explorations): le parcours des 3 664 PDF, etape par etape
@@ -162,7 +164,6 @@ c37dc2f  2026-11-17  14an  docs(journal): ajouter les sept parties qui manquaien
 0dc8247  2026-11-17  14an  docs: journal de traitement complet, en carnet executable
 530a4e3  2026-11-17  14an  feat(dosage): traiter les derniers cas lisibles
 6c9d855  2026-11-17  14an  feat(retrieve): ouvrir le corpus aux 38 molecules
-f9a7d80  2026-11-17  14an  docs: remettre a jour le suivi du retour de l'enseignant
 ```
 
 ---

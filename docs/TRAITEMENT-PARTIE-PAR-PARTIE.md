@@ -951,6 +951,106 @@ de marcher.
 
 ---
 
+# 17 · Tout le reste de ce qu'ils ont envoyé
+
+J'ai repris les archives une par une pour qu'il ne reste rien.
+
+## Les quatre types de PDF, et non deux
+
+Mon premier jet ne versait que le RCP et le bon usage : notre assistant
+répond à un pharmacien, le RCP est son document.
+
+C'était une économie mal placée. **Un pharmacien explique aussi un
+traitement à un patient**, et la notice est écrite exactement pour ça — en
+mots simples, là où le RCP est technique.
+
+```
+29 956  rcp
+26 946  notice
+ 5 269  fiche_info
+     3  bon_usage
+───────
+62 174  passages
+```
+
+Chaque passage porte son `type_document` : on peut toujours filtrer, on ne
+peut pas récupérer ce qu'on n'a pas versé.
+
+## Les 1 179 fiches minces — et une erreur que j'avais faite
+
+J'avais écrit que **zéro** fiche contenait un équivalent. C'était faux, et
+pour une raison bête : la clé s'appelle « équivalents thérapeutiques », avec
+des accents, et je la cherchais en comparant littéralement. Le fichier la
+stocke sous une autre forme Unicode. La comparaison échouait **en silence**.
+
+La vérité mesurée :
+
+```
+986 fiches sur 1 103 portent une liste d'équivalents
+7 172 produits annoncés au total
+```
+
+Et chaque entrée porte deux champs qui ne sont **nulle part ailleurs** :
+
+| | |
+|---|---|
+| `substituable_indique` | le site se prononce sur la substitution |
+| `local` | produit fabriqué en Algérie |
+
+**4 904 équivalents** retenus sur notre périmètre, dans
+`equivalents_annonces_dzair_40molecules.csv` :
+
+```
+3 610  substitution indiquée
+1 294  non indiquée
+```
+
+### Pourquoi je ne les ai pas fusionnés avec mes groupes
+
+Mes groupes d'équivalents **refusent** de se prononcer sur
+l'interchangeabilité : c'est un jugement pharmaceutique, pas une décision de
+programme. Une source qui, elle, tranche, ne peut pas être recopiée comme
+une vérité.
+
+Elle est donc enregistrée **à part**, avec son rang, pour que le pharmacien
+voie qu'elle existe et qu'elle dit quoi.
+
+## Le bloc d'interactions de ces fiches reste inutilisable
+
+```
+752 fiches de notre périmètre, toutes avec le même texte :
+« Réservé aux professionnels de santé. Le détail des interactions est
+  accessible aux médecins et pharmaciens inscrits, après vérification du
+  numéro d'inscription à l'Ordre. »
+```
+
+**Ce n'est pas une lacune de la collecte.** Le site réserve cette rubrique.
+C'est consigné comme un fait sur la source, pas comme une donnée manquante —
+et ça justifie après coup d'être allé chercher l'extraction `row_data`, où
+les 1 190 interactions sont complètes.
+
+## Les 338 photos de boîtes
+
+Elles n'apportent rien à une recherche sur du texte. Mais elles disent
+**quel produit a été vu**, et le nom de fichier porte la marque et le
+dosage.
+
+`126 produits sur 483` ont leur photo. Le reste du nom — un identifiant —
+permettrait de les relier à la fiche d'origine.
+
+Le rapprochement par nom demandait un peu de soin : le fichier s'appelle
+`Aspegic_Adulte_1G_c8dda55e-….png`, et la marque contient elle-même des
+soulignés. Un découpage sur le premier souligné ne rendait que « Aspegic ».
+
+## Le journal de vérification des robots
+
+`docs/conformite/robots_checker_equipe.log`, et l'audit JSON de 10 sites
+daté du 11/11. C'est la preuve de conformité **automatique** qui manquait à
+côté de nos copies manuelles de `robots.txt`.
+
+
+---
+
 # LA QUESTION QUI PEUT VENIR
 
 ## « Et ce que vous n'avez pas pu traiter ? »
