@@ -80,13 +80,13 @@ class Interaction:
     """One interaction, as relayed by dzair-pharma from the ANSM thesaurus."""
 
     substance: str
-    target_kind: str          # "Substance" or "Classe"
-    level_label: str          # the site's own wording, kept verbatim
+    target_kind: str  # "Substance" or "Classe"
+    level_label: str  # the site's own wording, kept verbatim
     level: InteractionLevel | None
     risks: str
     what_to_do: str
     availability: str
-    origin_source: str        # what the record claims, e.g. "ANSM"
+    origin_source: str  # what the record claims, e.g. "ANSM"
 
     @property
     def level_fr(self) -> str:
@@ -279,9 +279,7 @@ def load_directory(
     products: list[DzairProduct] = []
     for path in sorted(Path(directory).glob("*.json")):
         for product in load_file(path):
-            if only_inn and not any(
-                product.inn.upper().startswith(p.upper()) for p in only_inn
-            ):
+            if only_inn and not any(product.inn.upper().startswith(p.upper()) for p in only_inn):
                 continue
             products.append(product)
     return products

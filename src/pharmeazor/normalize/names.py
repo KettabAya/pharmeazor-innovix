@@ -28,10 +28,37 @@ __all__ = [
 
 # Dosage, galenic form and packaging tokens carry no identity on their own.
 _NOISE = {
-    "comprime", "comprimes", "cp", "gelule", "gelules", "sachet", "sachets",
-    "sirop", "solution", "suspension", "injectable", "pommade", "creme",
-    "effervescent", "effervescents", "lp", "mg", "g", "ml", "ui", "pour",
-    "boite", "de", "du", "la", "le", "les", "a", "au", "aux", "et",
+    "comprime",
+    "comprimes",
+    "cp",
+    "gelule",
+    "gelules",
+    "sachet",
+    "sachets",
+    "sirop",
+    "solution",
+    "suspension",
+    "injectable",
+    "pommade",
+    "creme",
+    "effervescent",
+    "effervescents",
+    "lp",
+    "mg",
+    "g",
+    "ml",
+    "ui",
+    "pour",
+    "boite",
+    "de",
+    "du",
+    "la",
+    "le",
+    "les",
+    "a",
+    "au",
+    "aux",
+    "et",
 }
 
 
@@ -68,18 +95,20 @@ def levenshtein(a: str, b: str) -> int:
     for i, ca in enumerate(a, start=1):
         current = [i]
         for j, cb in enumerate(b, start=1):
-            current.append(min(
-                previous[j] + 1,          # deletion
-                current[j - 1] + 1,       # insertion
-                previous[j - 1] + (ca != cb),  # substitution
-            ))
+            current.append(
+                min(
+                    previous[j] + 1,  # deletion
+                    current[j - 1] + 1,  # insertion
+                    previous[j - 1] + (ca != cb),  # substitution
+                )
+            )
         previous = current
     return previous[-1]
 
 
 def _trigrams(text: str) -> set[str]:
     padded = f"  {text} "
-    return {padded[i:i + 3] for i in range(len(padded) - 2)}
+    return {padded[i : i + 3] for i in range(len(padded) - 2)}
 
 
 def trigram_similarity(a: str, b: str) -> float:
@@ -111,7 +140,7 @@ class DrugEntry:
     """One product in the reference dictionary built by the team."""
 
     drug_id: str
-    inn: str                       # DCI, e.g. "paracétamol"
+    inn: str  # DCI, e.g. "paracétamol"
     brand_names: tuple[str, ...] = ()
     atc_code: str = ""
     strength: str = ""
@@ -193,10 +222,7 @@ class NameResolver:
         if not ranked:
             return None
         if len(ranked) > 1 and ranked[0].confidence - ranked[1].confidence < self.margin:
-            close = tuple(
-                m for m in ranked
-                if ranked[0].confidence - m.confidence < self.margin
-            )
+            close = tuple(m for m in ranked if ranked[0].confidence - m.confidence < self.margin)
             return Ambiguity(query=query, candidates=close)
         return ranked[0]
 

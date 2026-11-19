@@ -33,26 +33,34 @@ __all__ = [
 
 # Spellings met in the nomenclature, mapped to one canonical form.
 _UNITS: dict[str, str] = {
-    "MG": "mg", "G": "g", "GR": "g", "KG": "kg",
-    "MCG": "µg", "UG": "µg", "µG": "µg", "MICROGRAMME": "µg",
-    "ML": "ml", "L": "l", "CL": "cl",
-    "UI": "UI", "U": "UI", "MUI": "MUI",
-    "%": "%", "POURCENT": "%",
-    "MEQ": "mEq", "MMOL": "mmol",
+    "MG": "mg",
+    "G": "g",
+    "GR": "g",
+    "KG": "kg",
+    "MCG": "µg",
+    "UG": "µg",
+    "µG": "µg",
+    "MICROGRAMME": "µg",
+    "ML": "ml",
+    "L": "l",
+    "CL": "cl",
+    "UI": "UI",
+    "U": "UI",
+    "MUI": "MUI",
+    "%": "%",
+    "POURCENT": "%",
+    "MEQ": "mEq",
+    "MMOL": "mmol",
 }
 
 _NUMBER = r"\d+(?:[.,]\d+)?"
 # A trailing '*' is a footnote marker used by the ministry (e.g. "875MG*/125MG*"),
 # not part of the quantity. It is stripped, and the raw text keeps it.
-_COMPONENT_RE = re.compile(
-    rf"^\s*(?P<value>{_NUMBER})\s*(?P<unit>[A-Za-zµ%]+)?\s*\**\s*$"
-)
+_COMPONENT_RE = re.compile(rf"^\s*(?P<value>{_NUMBER})\s*(?P<unit>[A-Za-zµ%]+)?\s*\**\s*$")
 
 # "<valeur> (<equivalent>)" : 1% (10MG/ML), 400MG (684MG).
 # La parenthese redit la dose autrement ; elle ne s'ajoute pas a la premiere.
-_VALEUR_ET_EQUIVALENT = re.compile(
-    r"^\s*(?P<valeur>[^(]+?)\s*\(\s*(?P<equivalent>[^)]+?)\s*\)\s*$"
-)
+_VALEUR_ET_EQUIVALENT = re.compile(r"^\s*(?P<valeur>[^(]+?)\s*\(\s*(?P<equivalent>[^)]+?)\s*\)\s*$")
 
 
 # --- Les mots qu'on reconnait dans un conditionnement ----------------------
@@ -63,27 +71,75 @@ _VALEUR_ET_EQUIVALENT = re.compile(
 # Contenants dont le nombre qui suit est un nombre d'UNITES.
 # Mesure sur les 5 423 conditionnements d'aout 2026 : la seule forme "B/N"
 # couvre 53,1 %. Avec les autres contenants, 56,1 %.
-CONTENANTS_QUI_COMPTENT = ["B", "BTE", "BOITE", "PILULIER", "PLQ", "PLAQUETTE",
-                           # Faute du registre, un produit : PILULIRER/30.
-                           # Meme famille que le PILULIER/10 repere a la main
-                           # en semaine 1, que les tests avaient laisse passer.
-                           "PILULIRER"]
+CONTENANTS_QUI_COMPTENT = [
+    "B",
+    "BTE",
+    "BOITE",
+    "PILULIER",
+    "PLQ",
+    "PLAQUETTE",
+    # Faute du registre, un produit : PILULIRER/30.
+    # Meme famille que le PILULIER/10 repere a la main
+    # en semaine 1, que les tests avaient laisse passer.
+    "PILULIRER",
+]
 
 # Contenants dont le contenu se MESURE : un tube de 15 g n'est pas 15 unites.
-CONTENANTS_QUI_MESURENT = ["FL", "FLACON", "FLACONS", "F", "T", "TUBE", "TUBES",
-                           "AMP", "AMPOULE", "AMPOULES", "SACHET", "SACHETS",
-                           "POT", "SERINGUE", "STICK", "STICKS",
-                           "RECIPIENT", "RECIPIENTS UNIDOSES"]
+CONTENANTS_QUI_MESURENT = [
+    "FL",
+    "FLACON",
+    "FLACONS",
+    "F",
+    "T",
+    "TUBE",
+    "TUBES",
+    "AMP",
+    "AMPOULE",
+    "AMPOULES",
+    "SACHET",
+    "SACHETS",
+    "POT",
+    "SERINGUE",
+    "STICK",
+    "STICKS",
+    "RECIPIENT",
+    "RECIPIENTS UNIDOSES",
+]
 
 # Mots toleres apres le nombre : "B/30 SACHETS" vaut bien 30.
-MOTS_DENOMBRABLES = ["SACHET", "SACHETS", "COMPRIME", "COMPRIMES", "CP",
-                     "GELULE", "GELULES", "CAPSULE", "CAPSULES",
-                     "SUPPOSITOIRE", "SUPPOSITOIRES", "OVULE", "OVULES",
-                     "AMPOULE", "AMPOULES", "AMP", "PILULE", "PILULES",
-                     "STICK", "STICKS", "DOSE", "DOSES", "UNITE", "UNITES",
-                     # "B/10 FL" : dix flacons, c'est bien un compte. Le cas 3
-                     # passe avant et echoue faute de mesure apres "FL".
-                     "FL", "FLACON", "FLACONS", "TUBE", "TUBES"]
+MOTS_DENOMBRABLES = [
+    "SACHET",
+    "SACHETS",
+    "COMPRIME",
+    "COMPRIMES",
+    "CP",
+    "GELULE",
+    "GELULES",
+    "CAPSULE",
+    "CAPSULES",
+    "SUPPOSITOIRE",
+    "SUPPOSITOIRES",
+    "OVULE",
+    "OVULES",
+    "AMPOULE",
+    "AMPOULES",
+    "AMP",
+    "PILULE",
+    "PILULES",
+    "STICK",
+    "STICKS",
+    "DOSE",
+    "DOSES",
+    "UNITE",
+    "UNITES",
+    # "B/10 FL" : dix flacons, c'est bien un compte. Le cas 3
+    # passe avant et echoue faute de mesure apres "FL".
+    "FL",
+    "FLACON",
+    "FLACONS",
+    "TUBE",
+    "TUBES",
+]
 
 # L'ordre compte : "MG" avant "G", sinon "500MG" se lirait "500M" + "G".
 UNITES_DE_MESURE = ["ML", "MG", "KG", "L", "G"]
@@ -98,8 +154,17 @@ SEPARATEURS_DE_PRESENTATIONS = [" ET ", " - ", " OU ", "OU FL"]
 # d'un second composant -- "B/06FL. DE PDRE + 06AMP. DE 2,5ML DE SOLVANT" est
 # un necessaire poudre + solvant, et le lire comme un simple flacon ferait
 # disparaitre le solvant.
-USTENSILES = ["PIPETTE", "SERINGUE", "GOBELET", "GOBLET", "CUILLERE",
-              "DOSEUR", "COMPTE-GOUTTES", "CANULE", "APPLICATEUR"]
+USTENSILES = [
+    "PIPETTE",
+    "SERINGUE",
+    "GOBELET",
+    "GOBLET",
+    "CUILLERE",
+    "DOSEUR",
+    "COMPTE-GOUTTES",
+    "CANULE",
+    "APPLICATEUR",
+]
 
 
 def _to_float(text: str) -> float:
@@ -232,9 +297,7 @@ def parse_strength(raw: str | None) -> Strength:
         if not fragment:
             continue
         if _FRACTION_NUE.match(fragment):
-            components.append(
-                Component(value=_to_float(fragment) * 100, unit="%")
-            )
+            components.append(Component(value=_to_float(fragment) * 100, unit="%"))
             continue
         match = _COMPONENT_RE.match(fragment)
         if match:
@@ -287,7 +350,7 @@ def _separer_nombre_et_mot(texte: str) -> tuple[int | None, str]:
             break
     if not chiffres:
         return None, ""
-    return int(chiffres), texte[len(chiffres):].strip()
+    return int(chiffres), texte[len(chiffres) :].strip()
 
 
 def _lire_mesure(texte: str) -> Component | None:
@@ -344,8 +407,9 @@ def parse_packaging(raw: str | None) -> Packaging:
     # Cas 1 : le contenant est a gauche et son contenu se mesure. "FL/125 ML"
     if gauche in CONTENANTS_QUI_MESURENT:
         mesure = _lire_mesure(droite)
-        return Packaging(raw=text, container=gauche, volume=mesure) if mesure \
-            else Packaging(raw=text)
+        return (
+            Packaging(raw=text, container=gauche, volume=mesure) if mesure else Packaging(raw=text)
+        )
 
     # Pour tout le reste, il faut une boite a gauche.
     if gauche not in CONTENANTS_QUI_COMPTENT:
@@ -361,8 +425,7 @@ def parse_packaging(raw: str | None) -> Packaging:
         if nombre is not None and contenant in CONTENANTS_QUI_MESURENT:
             mesure = _lire_mesure(apres)
             if mesure:
-                return Packaging(raw=text, count=nombre,
-                                 container=contenant, volume=mesure)
+                return Packaging(raw=text, count=nombre, container=contenant, volume=mesure)
 
     # Cas 3 : une boite qui annonce son contenant puis sa mesure. "B/FL 15 ML"
     if mots and mots[0] in CONTENANTS_QUI_MESURENT:
@@ -382,7 +445,7 @@ def parse_packaging(raw: str | None) -> Packaging:
                 chiffres += caractere
             else:
                 break
-        if chiffres and droite[len(chiffres):].strip() in MOTS_DENOMBRABLES:
+        if chiffres and droite[len(chiffres) :].strip() in MOTS_DENOMBRABLES:
             return Packaging(raw=text, count=int(chiffres))
 
     return Packaging(raw=text)

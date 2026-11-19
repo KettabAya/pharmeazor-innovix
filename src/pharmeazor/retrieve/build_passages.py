@@ -1,5 +1,4 @@
 import json
-import re
 from pathlib import Path
 
 MAX_CHARS = 700
@@ -30,10 +29,8 @@ def chunk_text(text):
         end = min(start + MAX_CHARS, len(text))
 
         if end < len(text):
-            # Prefer a sentence boundary
             boundary = text.rfind(". ", start, end)
 
-            # Otherwise, use a paragraph or space boundary
             if boundary == -1:
                 boundary = text.rfind("\n", start, end)
             if boundary == -1:
@@ -67,7 +64,6 @@ def build_passages():
     total_documents = 0
 
     with OUT_FILE.open("w", encoding="utf-8") as output:
-
         for file in sorted(SECTIONS_DIR.glob("*_sections.json")):
             data = json.loads(file.read_text(encoding="utf-8"))
 
@@ -81,14 +77,12 @@ def build_passages():
             total_documents += 1
 
             for sec_key, sec_text in data["sections"].items():
-
                 sec_type = SECTION_TYPE_MAP.get(sec_key)
 
                 if not sec_type or not sec_text.strip():
                     continue
 
                 for chunk, start, end in chunk_text(sec_text):
-
                     assert sec_text[start:end] == chunk, "Verbatim check failed"
 
                     passage_id += 1
@@ -107,9 +101,7 @@ def build_passages():
                         "char_end": end,
                     }
 
-                    output.write(
-                        json.dumps(passage, ensure_ascii=False) + "\n"
-                    )
+                    output.write(json.dumps(passage, ensure_ascii=False) + "\n")
 
     print(f"Created {passage_id} passages from {total_documents} documents.")
 

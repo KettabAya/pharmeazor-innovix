@@ -89,19 +89,33 @@ def test_une_citation_inventee_est_refusee():
 def test_un_groupe_d_un_seul_produit_est_ignore():
     """Un « equivalent » unique n'apprend rien au pharmacien."""
     ligne = {
-        "group_id": "G1", "inn": "PARACETAMOL", "strength": "500MG",
-        "form_family": "ORAL SEC", "group_size": "1", "drug_id": "D001",
-        "brand_name": "DOLIPRANE", "form": "COMPRIME", "packaging": "B/16",
-        "lab_name": "PHARMIDAL", "registration_no": "318/03", "status": "Enregistre",
+        "group_id": "G1",
+        "inn": "PARACETAMOL",
+        "strength": "500MG",
+        "form_family": "ORAL SEC",
+        "group_size": "1",
+        "drug_id": "D001",
+        "brand_name": "DOLIPRANE",
+        "form": "COMPRIME",
+        "packaging": "B/16",
+        "lab_name": "PHARMIDAL",
+        "registration_no": "318/03",
+        "status": "Enregistre",
     }
     assert list(passages_equivalents([ligne])) == []
 
 
 def test_un_groupe_de_deux_produits_les_nomme_tous():
     base = {
-        "group_id": "G1", "inn": "PARACETAMOL", "strength": "500MG",
-        "form_family": "ORAL SEC", "group_size": "2", "form": "COMPRIME",
-        "packaging": "B/16", "registration_no": "318/03", "status": "Enregistre",
+        "group_id": "G1",
+        "inn": "PARACETAMOL",
+        "strength": "500MG",
+        "form_family": "ORAL SEC",
+        "group_size": "2",
+        "form": "COMPRIME",
+        "packaging": "B/16",
+        "registration_no": "318/03",
+        "status": "Enregistre",
     }
     lignes = [
         {**base, "drug_id": "D001", "brand_name": "DOLIPRANE", "lab_name": "A"},
@@ -115,9 +129,15 @@ def test_un_groupe_de_deux_produits_les_nomme_tous():
 def test_le_passage_equivalents_avertit_du_piege():
     """Meme substance et meme dosage ne veut pas dire interchangeable."""
     base = {
-        "group_id": "G1", "inn": "PARACETAMOL", "strength": "500MG",
-        "form_family": "ORAL SEC", "group_size": "2", "form": "COMPRIME",
-        "packaging": "B/16", "registration_no": "318/03", "status": "Enregistre",
+        "group_id": "G1",
+        "inn": "PARACETAMOL",
+        "strength": "500MG",
+        "form_family": "ORAL SEC",
+        "group_size": "2",
+        "form": "COMPRIME",
+        "packaging": "B/16",
+        "registration_no": "318/03",
+        "status": "Enregistre",
     }
     lignes = [
         {**base, "drug_id": "D001", "brand_name": "DOLIPRANE", "lab_name": "A"},
@@ -130,12 +150,18 @@ def test_le_passage_equivalents_avertit_du_piege():
 def test_une_interaction_relayee_retombe_au_rang_secondaire():
     """Le contenu vient de l'ANSM, mais un relais peut introduire une erreur."""
     ligne = {
-        "inn": "PARACETAMOL", "brand_name": "DOLIPRANE",
-        "registration_no": "318/03", "substance_cible": "ANTIVITAMINES K",
-        "type_cible": "Substance", "niveau": "Precaution d'emploi",
-        "niveau_reconnu": "oui", "risques": "Risque hemorragique.",
-        "conduite_a_tenir": "Controle de l'INR.", "source_origine": "ANSM",
-        "source_relais": "dzair-pharma", "autorite_effective": "Secondaire",
+        "inn": "PARACETAMOL",
+        "brand_name": "DOLIPRANE",
+        "registration_no": "318/03",
+        "substance_cible": "ANTIVITAMINES K",
+        "type_cible": "Substance",
+        "niveau": "Precaution d'emploi",
+        "niveau_reconnu": "oui",
+        "risques": "Risque hemorragique.",
+        "conduite_a_tenir": "Controle de l'INR.",
+        "source_origine": "ANSM",
+        "source_relais": "dzair-pharma",
+        "autorite_effective": "Secondaire",
         "url": "https://www.dzair-pharma.net/medicament/1",
     }
     p = next(iter(passages_interactions([ligne])))
@@ -146,10 +172,18 @@ def test_une_interaction_relayee_retombe_au_rang_secondaire():
 
 def test_une_interaction_sans_cible_est_ignoree():
     ligne = {
-        "inn": "PARACETAMOL", "brand_name": "", "registration_no": "",
-        "substance_cible": "", "type_cible": "", "niveau": "",
-        "niveau_reconnu": "", "risques": "", "conduite_a_tenir": "",
-        "source_origine": "", "source_relais": "", "autorite_effective": "",
+        "inn": "PARACETAMOL",
+        "brand_name": "",
+        "registration_no": "",
+        "substance_cible": "",
+        "type_cible": "",
+        "niveau": "",
+        "niveau_reconnu": "",
+        "risques": "",
+        "conduite_a_tenir": "",
+        "source_origine": "",
+        "source_relais": "",
+        "autorite_effective": "",
         "url": "",
     }
     assert list(passages_interactions([ligne])) == []
@@ -195,8 +229,9 @@ class TestLesProduitsSortisDuMarche:
         assert "ne peut pas servir d'équivalent" in p.text
 
     def test_un_enregistrement_non_renouvele_se_dit_autrement_qu_un_retrait(self):
-        ligne = dict(LIGNE_RETRAIT, source_sheet="non_renouveles",
-                     withdrawal_date="", withdrawal_reason="")
+        ligne = dict(
+            LIGNE_RETRAIT, source_sheet="non_renouveles", withdrawal_date="", withdrawal_reason=""
+        )
         p = next(passages_retraits([ligne]))
         assert "n'a pas été renouvelé" in p.text
         assert "N'EST PLUS" not in p.text
@@ -207,8 +242,7 @@ class TestLesProduitsSortisDuMarche:
         assert p.section == "retrait"
 
     def test_un_champ_vide_ne_produit_aucune_phrase(self):
-        ligne = dict(LIGNE_RETRAIT, withdrawal_date="", withdrawal_reason="",
-                     lab_name="", form="")
+        ligne = dict(LIGNE_RETRAIT, withdrawal_date="", withdrawal_reason="", lab_name="", form="")
         p = next(passages_retraits([ligne]))
         assert "retiré le ." not in p.text
         assert "Motif" not in p.text
@@ -262,12 +296,18 @@ class TestLeGroupeNommeCeQuiDiffere:
     @staticmethod
     def _groupe(ecarts: str) -> list[dict]:
         base = {
-            "group_id": "EQ-0012", "inn": "DICLOFENAC SODIQUE",
-            "strength": "50mg", "form_family": "COMPRIME", "group_size": "2",
-            "differences_dans_le_groupe": ecarts, "lab_name": "LABO",
+            "group_id": "EQ-0012",
+            "inn": "DICLOFENAC SODIQUE",
+            "strength": "50mg",
+            "form_family": "COMPRIME",
+            "group_size": "2",
+            "differences_dans_le_groupe": ecarts,
+            "lab_name": "LABO",
         }
-        return [dict(base, drug_id="D1", brand_name="VOLTARENE"),
-                dict(base, drug_id="D2", brand_name="DICLOGESIC")]
+        return [
+            dict(base, drug_id="D1", brand_name="VOLTARENE"),
+            dict(base, drug_id="D2", brand_name="DICLOGESIC"),
+        ]
 
     def test_l_ecart_est_nomme_quand_il_existe(self):
         p = next(passages_equivalents(self._groupe("gastro-résistant")))
@@ -294,13 +334,19 @@ class TestUneInteractionConcerneUneSubstance:
     """
 
     LIGNE = {
-        "inn": "DICLOFENAC SODIQUE", "brand_name": "BIOFENAC",
-        "registration_no": "263/04 B 007", "substance_cible": "MIFAMURTIDE",
-        "type_cible": "substance", "niveau": "Contre-indication",
-        "niveau_reconnu": "oui", "risques": "Risque de moindre efficacité.",
+        "inn": "DICLOFENAC SODIQUE",
+        "brand_name": "BIOFENAC",
+        "registration_no": "263/04 B 007",
+        "substance_cible": "MIFAMURTIDE",
+        "type_cible": "substance",
+        "niveau": "Contre-indication",
+        "niveau_reconnu": "oui",
+        "risques": "Risque de moindre efficacité.",
         "conduite_a_tenir": "Aucune conduite spécifique.",
-        "source_origine": "ANSM", "source_relais": "dzair_pharma",
-        "autorite_effective": "Professionnelle", "url": "https://example.test/x",
+        "source_origine": "ANSM",
+        "source_relais": "dzair_pharma",
+        "autorite_effective": "Professionnelle",
+        "url": "https://example.test/x",
     }
 
     def test_la_substance_est_nommee_et_l_extension_dite(self):

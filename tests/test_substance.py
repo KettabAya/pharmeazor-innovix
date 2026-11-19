@@ -103,8 +103,7 @@ class TestPrudence:
 
     def test_deux_presentations_dans_une_cellule_sont_signalees(self):
         s = parse_inn(
-            "PARACETAMOL/PSEUDOEPHEDRINE COMP. DE JOUR "
-            "ET PARACETAMOL/DIPHENHYDRAMINE COMP. DE NUIT"
+            "PARACETAMOL/PSEUDOEPHEDRINE COMP. DE JOUR ET PARACETAMOL/DIPHENHYDRAMINE COMP. DE NUIT"
         )
         assert s.incertain
         assert s.motif == "deux_presentations"
@@ -135,12 +134,15 @@ class TestCleDeRegroupement:
         assert s.cle().startswith("AMLODIPINE")
 
 
-@pytest.mark.parametrize("brut", [
-    "PARACETAMOL",
-    "PARACETAMOL/CAFEINE",
-    "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN",
-    "AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE",
-])
+@pytest.mark.parametrize(
+    "brut",
+    [
+        "PARACETAMOL",
+        "PARACETAMOL/CAFEINE",
+        "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN",
+        "AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE",
+    ],
+)
 def test_toute_dci_du_registre_produit_une_base(brut):
     assert parse_inn(brut).base
     assert isinstance(parse_inn(brut), Substance)
@@ -165,8 +167,10 @@ class TestSousFormeEntreParentheses:
         assert cles == {"GENTAMICINE"}
 
     def test_la_parenthese_ne_reste_pas_dans_la_cle(self):
-        for brut in ("GENTAMICINE (SOUS FORME DE SULFATE)",
-                     "PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE)"):
+        for brut in (
+            "GENTAMICINE (SOUS FORME DE SULFATE)",
+            "PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE)",
+        ):
             cle = parse_inn(brut).cle()
             assert "(" not in cle and ")" not in cle, brut
 
@@ -174,7 +178,6 @@ class TestSousFormeEntreParentheses:
         s = parse_inn("AMLODIPINE SOUS FORME DE BESILATE")
         assert s.cle() == "AMLODIPINE"
         assert s.sel == "BESILATE"
-
 
 
 class TestLeSelEcritDevantLaBase:

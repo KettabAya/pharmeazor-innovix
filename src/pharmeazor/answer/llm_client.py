@@ -25,7 +25,6 @@ def _load_api_key() -> str:
             print(f"[llm_client] key loaded (ends ...{key[-4:]})")
             return key
     except Exception:
-
         pass
 
     try:

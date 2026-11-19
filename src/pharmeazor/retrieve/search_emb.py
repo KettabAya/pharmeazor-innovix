@@ -14,7 +14,7 @@ MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 class EmbIndex:
     def __init__(self, passages_file: Path = PASSAGES_FILE):
-        self.passages = [json.loads(l) for l in passages_file.open(encoding="utf-8")]
+        self.passages = [json.loads(line) for line in passages_file.open(encoding="utf-8")]
 
         if EMB_FILE.exists() and IDS_FILE.exists():
             self.emb = np.load(EMB_FILE)
@@ -24,7 +24,9 @@ class EmbIndex:
             print(f"Encoding {len(self.passages)} passages... (one-time, ~1 min)")
             model = SentenceTransformer(MODEL_NAME)
             texts = [p["text"] for p in self.passages]
-            self.emb = model.encode(texts, batch_size=64, show_progress_bar=True, normalize_embeddings=True)
+            self.emb = model.encode(
+                texts, batch_size=64, show_progress_bar=True, normalize_embeddings=True
+            )
             np.save(EMB_FILE, self.emb)
             self.ids = [p["passage_id"] for p in self.passages]
             IDS_FILE.write_text(json.dumps(self.ids), encoding="utf-8")
@@ -39,13 +41,15 @@ class EmbIndex:
         results = []
         for i in order:
             p = self.passages[i]
-            results.append({
-                "passage": p,
-                "score": float(scores[i]),
-                "section_id": p["passage_id"],
-                "document": p["document"],
-                "authority": p["authority"],
-            })
+            results.append(
+                {
+                    "passage": p,
+                    "score": float(scores[i]),
+                    "section_id": p["passage_id"],
+                    "document": p["document"],
+                    "authority": p["authority"],
+                }
+            )
         return results
 
 

@@ -11,7 +11,6 @@ PASSAGES_FILE = Path("data/processed/passages.jsonl")
 
 
 def tokenize(text: str) -> list[str]:
-    """Lowercase, strip accents, split on non-alphanumerics, drop very short tokens."""
     text = unicodedata.normalize("NFKD", text)
     text = "".join(c for c in text if not unicodedata.combining(c))
     text = text.lower()
@@ -21,7 +20,7 @@ def tokenize(text: str) -> list[str]:
 
 class BM25Index:
     def __init__(self, passages_file: Path = PASSAGES_FILE):
-        self.passages = [json.loads(l) for l in passages_file.open(encoding="utf-8")]
+        self.passages = [json.loads(line) for line in passages_file.open(encoding="utf-8")]
         self.tokenized = [tokenize(p["text"]) for p in self.passages]
         self.bm25 = BM25Okapi(self.tokenized)
 
@@ -35,17 +34,19 @@ class BM25Index:
         results = []
         for i in order:
             if scores[i] <= 0:
-                break   # below this, BM25 has no match — do not return noise
+                break
             p = self.passages[i]
             if drug_ids and p["drug_id"] not in drug_ids:
                 continue
-            results.append({
-                "passage": p,
-                "score": float(scores[i]),
-                "section_id": p["passage_id"],
-                "document": p["document"],
-                "authority": p["authority"],
-            })
+            results.append(
+                {
+                    "passage": p,
+                    "score": float(scores[i]),
+                    "section_id": p["passage_id"],
+                    "document": p["document"],
+                    "authority": p["authority"],
+                }
+            )
             if len(results) >= k:
                 break
         return results

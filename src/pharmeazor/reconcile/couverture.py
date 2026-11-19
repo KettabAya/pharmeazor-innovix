@@ -78,82 +78,95 @@ class Chaine:
 CHAINES: dict[str, Chaine] = {
     # --- ce que l'Algérie couvre entièrement : on ne sort jamais -----------
     "nom_commercial": Chaine(
-        ("nomenclature", "anpp_rcp"), (),
+        ("nomenclature", "anpp_rcp"),
+        (),
         "Une marque algérienne n'existe que dans le registre algérien. "
         "Mesuré : 914/914 produits ont un nom de marque.",
     ),
     "dci": Chaine(
-        ("nomenclature", "anpp_rcp"), (),
+        ("nomenclature", "anpp_rcp"),
+        (),
         "Mesuré : 914/914. La DCI est internationale, mais c'est "
         "l'enregistrement algérien qui fait foi sur ce qui est commercialisé ici.",
     ),
     "numero_enregistrement": Chaine(
-        ("nomenclature",), (),
+        ("nomenclature",),
+        (),
         "Identifiant purement algérien : aucune source étrangère ne peut le "
         "porter. Mesuré : 914/914.",
     ),
     "dosage": Chaine(
-        ("nomenclature", "anpp_rcp"), (),
+        ("nomenclature", "anpp_rcp"),
+        (),
         "Mesuré : 914/914. Un dosage étranger ne vaut pas pour un produit "
         "enregistré en Algérie : la présentation peut différer.",
     ),
     "conditionnement": Chaine(
-        ("nomenclature",), (),
+        ("nomenclature",),
+        (),
         "Mesuré : 914/914. Propre à la présentation enregistrée ici.",
     ),
     "laboratoire": Chaine(
-        ("nomenclature",), (),
+        ("nomenclature",),
+        (),
         "Mesuré : 914/914. Le titulaire de l'enregistrement est désigné "
         "par l'autorité algérienne ; un laboratoire étranger peut fabriquer, "
         "mais c'est l'enregistrement ici qui compte.",
     ),
     "statut_enregistrement": Chaine(
-        ("nomenclature",), (),
+        ("nomenclature",),
+        (),
         "Enregistré, radié, suspendu : décision de l'autorité algérienne seule.",
     ),
     "equivalents": Chaine(
-        ("nomenclature",), (),
+        ("nomenclature",),
+        (),
         "Un équivalent doit être enregistré EN ALGERIE pour être délivrable. "
         "Une liste étrangère serait trompeuse. Calculé sur la nomenclature.",
     ),
     "liste_substances_veneneuses": Chaine(
-        ("nomenclature",), (),
+        ("nomenclature",),
+        (),
         "Classement réglementaire algérien. Mesuré : 747/914 renseignés ; les "
         "167 vides signifient « hors liste », ils ne se complètent pas ailleurs.",
     ),
-
     # --- ce que l'Algérie couvre, mais pas toujours : on sort en dernier ---
     "posologie": Chaine(
-        ("anpp_rcp", "pharmnet"), ("ansm_bdpm", "ema"),
+        ("anpp_rcp", "pharmnet"),
+        ("ansm_bdpm", "ema"),
         "La nomenclature n'en contient pas. Mesuré : présente dans 5/5 de nos "
         "RCP et notices. L'étranger n'est atteint que si aucun RCP algérien "
         "n'existe pour la molécule — et la réponse doit alors le dire.",
     ),
     "indications": Chaine(
-        ("anpp_rcp", "pharmnet"), ("ansm_bdpm", "ema"),
+        ("anpp_rcp", "pharmnet"),
+        ("ansm_bdpm", "ema"),
         "Mesuré : 4/5 documents. Même raisonnement que la posologie : la "
         "nomenclature ne porte pas les indications, seul le RCP les donne.",
     ),
     "contre_indications": Chaine(
-        ("anpp_rcp", "pharmnet"), ("ansm_bdpm", "ema"),
+        ("anpp_rcp", "pharmnet"),
+        ("ansm_bdpm", "ema"),
         "Mesuré : 4/5 documents. Une contre-indication validée ailleurs peut "
         "différer : elle ne remplace pas celle du RCP algérien, elle la complète.",
     ),
     "effets_indesirables": Chaine(
-        ("anpp_rcp", "pharmnet"), ("ansm_bdpm", "ema"),
+        ("anpp_rcp", "pharmnet"),
+        ("ansm_bdpm", "ema"),
         "Mesuré : 5/5 documents, la rubrique la mieux couverte de notre corpus. "
         "L'étranger n'a donc presque jamais lieu d'être atteint.",
     ),
     "interactions_texte": Chaine(
-        ("anpp_rcp",), ("ansm_thesaurus", "ansm_bdpm"),
+        ("anpp_rcp",),
+        ("ansm_thesaurus", "ansm_bdpm"),
         "Mesuré : 4/5 de nos RCP décrivent les interactions en prose, de 1 800 "
         "à 4 400 caractères. Le texte algérien suffit pour DIRE qu'une "
         "interaction existe.",
     ),
-
     # --- ce que l'Algérie ne couvre pas : l'étranger est indispensable -----
     "interaction_niveau": Chaine(
-        (), ("ansm_thesaurus",),
+        (),
+        ("ansm_thesaurus",),
         "C'est le seul champ vraiment dépendant. Mesuré : un seul de nos cinq "
         "documents algériens nomme un niveau, et un seul des quatre. Le "
         "thésaurus de l'ANSM donne les 87 niveaux explicitement : "

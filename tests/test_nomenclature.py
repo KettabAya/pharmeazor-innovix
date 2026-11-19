@@ -40,56 +40,165 @@ openpyxl = pytest.importorskip("openpyxl")
 
 # L'ordre des titres sur la feuille principale.
 TITRES_NOMENCLATURE = [
-    "N°", "N°ENREGISTREMENT", "CODE", "DENOMINATION COMMUNE INTERNATIONALE",
-    "NOM DE MARQUE", "FORME", "DOSAGE", "CONDITIONNEMENT", "LISTE",
-    "P1", "P2", "OBS",
+    "N°",
+    "N°ENREGISTREMENT",
+    "CODE",
+    "DENOMINATION COMMUNE INTERNATIONALE",
+    "NOM DE MARQUE",
+    "FORME",
+    "DOSAGE",
+    "CONDITIONNEMENT",
+    "LISTE",
+    "P1",
+    "P2",
+    "OBS",
     "LABORATOIRES DETENTEUR DE LA DECISION D'ENREGISTREMENT",
     "PAYS DU LABORATOIRE DETENTEUR DE LA DECISION D'ENREGISTREMENT",
-    "DATE D'ENREGISTREMENT INITIAL", "DATE D'ENREGISTREMENT FINAL",
-    "TYPE", "STATUT", "DUREE DE STABILITE",
+    "DATE D'ENREGISTREMENT INITIAL",
+    "DATE D'ENREGISTREMENT FINAL",
+    "TYPE",
+    "STATUT",
+    "DUREE DE STABILITE",
 ]
 
 # La feuille des retraits : pas de OBS, deux colonnes en plus, et surtout un
 # ORDRE DIFFERENT. Une lecture par position mettrait la date dans le
 # laboratoire -- c'est exactement le piege que ce fichier reproduit.
 TITRES_RETRAITS = [
-    "N°", "N°ENREGISTREMENT", "DATE DE RETRAIT", "MOTIF DE RETRAIT",
-    "DENOMINATION COMMUNE INTERNATIONALE", "NOM DE MARQUE", "FORME", "DOSAGE",
-    "CONDITIONNEMENT", "LISTE",
+    "N°",
+    "N°ENREGISTREMENT",
+    "DATE DE RETRAIT",
+    "MOTIF DE RETRAIT",
+    "DENOMINATION COMMUNE INTERNATIONALE",
+    "NOM DE MARQUE",
+    "FORME",
+    "DOSAGE",
+    "CONDITIONNEMENT",
+    "LISTE",
     "LABORATOIRES DETENTEUR DE LA DECISION D'ENREGISTREMENT",
     "PAYS DU LABORATOIRE DETENTEUR DE LA DECISION D'ENREGISTREMENT",
-    "DATE D'ENREGISTREMENT INITIAL", "DATE D'ENREGISTREMENT FINAL",
-    "TYPE", "STATUT", "DUREE DE STABILITE", "CODE",
+    "DATE D'ENREGISTREMENT INITIAL",
+    "DATE D'ENREGISTREMENT FINAL",
+    "TYPE",
+    "STATUT",
+    "DUREE DE STABILITE",
+    "CODE",
 ]
 
 LIGNES_NOMENCLATURE = [
-    [1, "077/03 B 026/17", "03 B 026", "PARACETAMOL", "DOLIPRANE",
-     "COMPRIME", "500MG", "B/20", "LISTE I", "", "", "",
-     "LABORATOIRE ALGERIEN", "ALGERIE", "2017-03-01", "2027-03-01",
-     "F", "F", "36 MOIS"],
+    [
+        1,
+        "077/03 B 026/17",
+        "03 B 026",
+        "PARACETAMOL",
+        "DOLIPRANE",
+        "COMPRIME",
+        "500MG",
+        "B/20",
+        "LISTE I",
+        "",
+        "",
+        "",
+        "LABORATOIRE ALGERIEN",
+        "ALGERIE",
+        "2017-03-01",
+        "2027-03-01",
+        "F",
+        "F",
+        "36 MOIS",
+    ],
     # Faute de frappe et asterisque de bas de page du vrai registre : ils
     # doivent ressortir INTACTS, la correction se fait plus loin dans la chaine.
-    [2, "077/03 B 027/18", "03 B 027", "AMOXICILLINE TRIHYDRATEE", "CLAMOXYL",
-     "POUDRE POUR SUSPENSSION BUVABLE", "875MG*", "B/12", "Liste I", "", "", "",
-     "BIOPHARM", "ALGERIE", "2018-05-02", "2028-05-02", "I", "F", "24 MOIS"],
+    [
+        2,
+        "077/03 B 027/18",
+        "03 B 027",
+        "AMOXICILLINE TRIHYDRATEE",
+        "CLAMOXYL",
+        "POUDRE POUR SUSPENSSION BUVABLE",
+        "875MG*",
+        "B/12",
+        "Liste I",
+        "",
+        "",
+        "",
+        "BIOPHARM",
+        "ALGERIE",
+        "2018-05-02",
+        "2028-05-02",
+        "I",
+        "F",
+        "24 MOIS",
+    ],
     # Ligne sans numero d'enregistrement : inutilisable, elle doit etre ecartee.
-    [3, "", "", "IBUPROFENE", "SANS NUMERO", "COMPRIME", "400MG", "B/20",
-     "", "", "", "", "LABO", "ALGERIE", "", "", "", "", ""],
+    [
+        3,
+        "",
+        "",
+        "IBUPROFENE",
+        "SANS NUMERO",
+        "COMPRIME",
+        "400MG",
+        "B/20",
+        "",
+        "",
+        "",
+        "",
+        "LABO",
+        "ALGERIE",
+        "",
+        "",
+        "",
+        "",
+        "",
+    ],
 ]
 
 LIGNES_RETRAITS = [
-    [1, "077/03 B 099/11", "2011-05-08",
-     "RETRAIT PAR LE MSPRH POUR INTERDICTION DE LA SUBSTANCE",
-     "ACIDE ACETYLSALICYLIQUE", "ASPIRINE PH8", "COMPRIME", "500MG", "B/20",
-     "", "LABORATOIRES PHARMA", "ALGERIE", "2001-01-01", "2011-05-08",
-     "F", "R", "36 MOIS", "04 B 099"],
+    [
+        1,
+        "077/03 B 099/11",
+        "2011-05-08",
+        "RETRAIT PAR LE MSPRH POUR INTERDICTION DE LA SUBSTANCE",
+        "ACIDE ACETYLSALICYLIQUE",
+        "ASPIRINE PH8",
+        "COMPRIME",
+        "500MG",
+        "B/20",
+        "",
+        "LABORATOIRES PHARMA",
+        "ALGERIE",
+        "2001-01-01",
+        "2011-05-08",
+        "F",
+        "R",
+        "36 MOIS",
+        "04 B 099",
+    ],
 ]
 
 LIGNES_NON_RENOUVELES = [
-    [1, "077/03 B 055/09", "03 B 055", "ACIDE ACETYLSALICYLIQUE",
-     "ASPIRINE BEKER", "COMPRIME", "100MG", "B/30", "", "", "", "",
-     "LABORATOIRES BEKER", "ALGERIE", "2009-02-01", "2019-02-01",
-     "F", "N", "36 MOIS"],
+    [
+        1,
+        "077/03 B 055/09",
+        "03 B 055",
+        "ACIDE ACETYLSALICYLIQUE",
+        "ASPIRINE BEKER",
+        "COMPRIME",
+        "100MG",
+        "B/30",
+        "",
+        "",
+        "",
+        "",
+        "LABORATOIRES BEKER",
+        "ALGERIE",
+        "2009-02-01",
+        "2019-02-01",
+        "F",
+        "N",
+        "36 MOIS",
+    ],
 ]
 
 
@@ -118,10 +227,10 @@ def classeur(tmp_path: Path) -> Path:
     _ecrire_feuille(principale, TITRES_NOMENCLATURE, LIGNES_NOMENCLATURE)
 
     # L'espace final du titre est celui du vrai classeur.
-    _ecrire_feuille(livre.create_sheet("Non Renouvelés "),
-                    TITRES_NOMENCLATURE, LIGNES_NON_RENOUVELES)
-    _ecrire_feuille(livre.create_sheet("Retraits"),
-                    TITRES_RETRAITS, LIGNES_RETRAITS)
+    _ecrire_feuille(
+        livre.create_sheet("Non Renouvelés "), TITRES_NOMENCLATURE, LIGNES_NON_RENOUVELES
+    )
+    _ecrire_feuille(livre.create_sheet("Retraits"), TITRES_RETRAITS, LIGNES_RETRAITS)
 
     chemin = tmp_path / "nomenclature_2026-08.xlsx"
     livre.save(chemin)

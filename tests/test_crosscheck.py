@@ -50,20 +50,30 @@ class FakeSecondary:
 
 def official(registration_no: str, **overrides) -> Product:
     values = {
-        "inn": "IBUPROFENE", "brand_name": "BRUFEN",
-        "form": "COMPRIME PELLICULE", "strength_raw": "400MG",
-        "packaging_raw": "B/20", "lab_name": "LABO X",
+        "inn": "IBUPROFENE",
+        "brand_name": "BRUFEN",
+        "form": "COMPRIME PELLICULE",
+        "strength_raw": "400MG",
+        "packaging_raw": "B/20",
+        "lab_name": "LABO X",
         "date_initial": "2015-03-01",
     }
     values.update(overrides)
     return Product(
-        drug_id="DZ-0001", therapeutic_class="antalgique_ains",
-        inn=values["inn"], brand_name=values["brand_name"], code="04 B 042",
-        registration_no=registration_no, form=values["form"],
+        drug_id="DZ-0001",
+        therapeutic_class="antalgique_ains",
+        inn=values["inn"],
+        brand_name=values["brand_name"],
+        code="04 B 042",
+        registration_no=registration_no,
+        form=values["form"],
         strength=parse_strength(values["strength_raw"]),
         packaging=parse_packaging(values["packaging_raw"]),
-        lab_name=values["lab_name"], lab_country="ALGERIE",
-        date_initial=values["date_initial"], date_final="", status="F",
+        lab_name=values["lab_name"],
+        lab_country="ALGERIE",
+        date_initial=values["date_initial"],
+        date_final="",
+        status="F",
         source_version="2026-06",
     )
 
@@ -94,9 +104,7 @@ class TestJoin:
         assert len(pairs) == 1
 
     def test_reports_products_present_in_only_one_source(self):
-        pairs, only_o, only_s = join_on_registration(
-            [official("A/1")], [FakeSecondary("B/2")]
-        )
+        pairs, only_o, only_s = join_on_registration([official("A/1")], [FakeSecondary("B/2")])
         assert not pairs
         assert len(only_o) == 1 and len(only_s) == 1
 
@@ -147,9 +155,7 @@ class TestReport:
         assert report.disagreements == []
 
     def test_agreement_rate_falls_with_disagreements(self):
-        report = compare_all(
-            [official("A/1", lab_name="X")], [FakeSecondary("A/1", lab_name="Y")]
-        )
+        report = compare_all([official("A/1", lab_name="X")], [FakeSecondary("A/1", lab_name="Y")])
         assert report.agreement_rate == pytest.approx(1 - 1 / len(COMPARED_FIELDS))
 
     def test_by_field_counts_disagreements(self):
@@ -176,14 +182,16 @@ class TestUnProduitRetireEncorePublie:
     marche. Il fallait lire les feuilles de retraits pour pouvoir le dire.
     """
 
-    RETIRES = [{
-        "registration_no": "178/04 B 004/99",
-        "brand_name": "ALMIRAL",
-        "withdrawal_date": "2011-05-08",
-        "withdrawal_reason": "RETRAIT PAR LE MSPRH POUR INTERDICTION",
-        "source_sheet": "retraits",
-        "source_version": "2026-08",
-    }]
+    RETIRES = [
+        {
+            "registration_no": "178/04 B 004/99",
+            "brand_name": "ALMIRAL",
+            "withdrawal_date": "2011-05-08",
+            "withdrawal_reason": "RETRAIT PAR LE MSPRH POUR INTERDICTION",
+            "source_sheet": "retraits",
+            "source_version": "2026-08",
+        }
+    ]
 
     def test_la_ponctuation_du_numero_n_empeche_pas_le_rapprochement(self):
         # Le ministere ecrit « 178/04 B 004/99 », dzair « 178 04 B 004 99 ».

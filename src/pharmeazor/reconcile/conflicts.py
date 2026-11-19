@@ -87,10 +87,7 @@ def detect(claims: list[Claim], policy: ConflictPolicy | None = None) -> list[Co
         if len(distinct_values) < 2:
             continue
         retained = arbitrate(group, policy)
-        divergent = [
-            c for c in group
-            if _normalise(c.value) != _normalise(retained.value)
-        ]
+        divergent = [c for c in group if _normalise(c.value) != _normalise(retained.value)]
         conflicts.append(
             Conflict(
                 drug_id=drug_id,

@@ -64,10 +64,16 @@ class TestDependanceAlEtranger:
 
 
 class TestChampsPurementAlgeriens:
-    @pytest.mark.parametrize("champ", [
-        "numero_enregistrement", "conditionnement", "equivalents",
-        "statut_enregistrement", "liste_substances_veneneuses",
-    ])
+    @pytest.mark.parametrize(
+        "champ",
+        [
+            "numero_enregistrement",
+            "conditionnement",
+            "equivalents",
+            "statut_enregistrement",
+            "liste_substances_veneneuses",
+        ],
+    )
     def test_ces_champs_n_ont_aucun_secours_etranger(self, champ):
         """Un équivalent étranger n'est pas délivrable ici : le proposer tromperait."""
         assert chaine_de(champ).etrangeres == ()

@@ -98,8 +98,7 @@ def find_header_row(worksheet, max_scan: int = 30) -> int:
         if len(filled) >= _MIN_HEADER_CELLS:
             return index
     raise ValueError(
-        f"En-tête introuvable dans les {max_scan} premières lignes de "
-        f"« {worksheet.title} »."
+        f"En-tête introuvable dans les {max_scan} premières lignes de « {worksheet.title} »."
     )
 
 
@@ -167,11 +166,7 @@ def read_sheet(worksheet, source_version: str) -> Iterator[NomenclatureRow]:
     needs no special case: its extra columns simply map to extra fields.
     """
     header_index = find_header_row(worksheet)
-    header = next(
-        worksheet.iter_rows(
-            min_row=header_index, max_row=header_index, values_only=True
-        )
-    )
+    header = next(worksheet.iter_rows(min_row=header_index, max_row=header_index, values_only=True))
     columns = _column_map(header)
     kind = sheet_kind(worksheet.title)
     date_fields = {"date_initial", "date_final", "withdrawal_date"}
