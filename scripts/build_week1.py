@@ -34,6 +34,7 @@ from pharmeazor.config import MOLECULES_PROJET  # noqa: E402
 from pharmeazor.normalize.catalogue import Catalogue  # noqa: E402
 from pharmeazor.normalize.substance import (  # noqa: E402
     concerne_molecule,
+    corriger_fautes,
     normaliser_substance,
     parse_inn,
 )
@@ -90,6 +91,12 @@ CLASS_OF: dict[str, str] = {
 
     # Antihypertenseurs : inhibiteur calcique, sartans et IEC.
     "AMLODIPINE": "antihypertenseur",
+    # Ajoutees le 19/11/2026 avec le reste de la liste officielle.
+    # La nifedipine est un inhibiteur calcique comme l'amlodipine ; la
+    # methyldopa est un antihypertenseur central. La liste de l'enseignant
+    # les range toutes deux en « Antihypertenseurs ».
+    "NIFEDIPINE": "antihypertenseur",
+    "METHYLDOPA": "antihypertenseur",
     "VALSARTAN": "antihypertenseur",
     "LOSARTAN": "antihypertenseur",
     "RAMIPRIL": "antihypertenseur",
@@ -213,11 +220,14 @@ def therapeutic_class(inn: str) -> str:
     HYDROCHLOROTHIAZIDE » en antihypertenseur. La seconde substance reste
     lisible dans la colonne `inn`, qui n'est jamais reecrite.
     """
-    upper = (inn or "").upper()
+    # corriger_fautes, comme dans le filtre : sans lui, les produits repeches
+    # grace aux fautes du registre (ACETYLSALICYTIQUE, CIOROFLOXACINE)
+    # entraient au catalogue mais en ressortaient « non_classe ».
+    upper = corriger_fautes((inn or "").upper())
     for prefix, klass in CLASS_OF.items():
         if upper.startswith(prefix):
             return klass
-    base = parse_inn(inn).base.upper()
+    base = corriger_fautes(parse_inn(upper).base.upper())
     for prefix, klass in CLASS_OF.items():
         if base.startswith(prefix):
             return klass

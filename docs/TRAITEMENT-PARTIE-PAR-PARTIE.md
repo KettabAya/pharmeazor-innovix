@@ -833,6 +833,124 @@ de deux approches que le cahier des charges demande, et elle tombe juste.
 
 ---
 
+# 16 · Les 3 664 PDF français — traités le 19/11
+
+## Ce que c'était
+
+L'archive de l'équipe : **3 664 PDF, 990 Mo**, collectés sur la **Base de
+Données publique des Médicaments** française.
+
+```
+rcp          1 098   au professionnel de santé
+notice       1 098   au patient
+fiche_info   1 103   résumé public
+bon_usage      365   recommandations
+```
+
+**985 médicaments distincts** — le long nombre du nom de fichier est un
+identifiant, partagé par les documents d'un même médicament. C'est la même
+leçon que la nomenclature : 3 664 fichiers ne font pas 3 664 médicaments.
+
+## Le rang d'autorité décide de tout
+
+Ces documents sont **français** : rang 2, au-dessous de la nomenclature
+algérienne qui est au rang 3.
+
+> « Une source étrangère sert de complément, jamais de substitut. »
+
+Concrètement :
+
+| | |
+|---|---|
+| **transposable** | posologie, contre-indications, interactions, effets indésirables |
+| **jamais** | ce qui est enregistré en Algérie — dosage, conditionnement, titulaire |
+
+Chaque passage porte cette phrase **dans son texte**, pas dans une colonne à
+côté :
+
+> *Source française, autorité institutionnelle étrangère : elle complète la
+> nomenclature algérienne, elle ne la remplace pas. Le produit décrit est
+> enregistré en France ; son dosage, son conditionnement et son titulaire
+> peuvent différer de ceux du produit algérien du même nom.*
+
+Un passage voyage seul. S'il ne porte pas l'avertissement, rien ne dira d'où
+il vient quand il sera cité.
+
+## `build_index.py` n'était pas écrit
+
+Il faisait 46 lignes et se terminait par `NotImplementedError`. C'est le
+reproche de ma coéquipière, et il était juste.
+
+Il fait maintenant les cinq étapes : parcourir, extraire le texte, découper
+en rubriques, couper en passages, écrire.
+
+**Résultat : 29 959 passages, en 138 secondes.**
+
+```
+1 036  RCP traités
+  365  bon_usage
+1 039  posologie
+1 036  indications
+1 036  interactions
+1 036  effets indésirables
+1 034  contre-indications
+```
+
+**Aucune OCR.** Vérifié avant de commencer : les PDF portent du vrai texte.
+C'est une bonne nouvelle — l'OCR introduit des erreurs qu'une base de
+sécurité médicamenteuse ne peut pas se permettre.
+
+Le découpage en rubriques est celui de Ryma, `extract/sections.py`. Je ne
+l'ai pas réécrit : il trouve les quatre rubriques exigées dans **100 %** des
+RCP français.
+
+**362 documents `bon_usage` n'ont aucune rubrique reconnue.** Ils ne sont pas
+découpés au jugé : ils sont comptés, signalés, et laissés de côté.
+
+## Deux défauts que j'ai trouvés en vérifiant mon propre travail
+
+### Le passage ne nommait pas son médicament
+
+Premier essai de recherche :
+
+```
+« posologie paracetamol adulte »   →  un passage de CODEINE
+```
+
+La rubrique extraite ne contient pas le nom du médicament — il est dans le
+titre du document, pas dans la section. Un passage de posologie ressemble à
+tous les autres.
+
+Chaque passage commence maintenant par le nom lu dans le document lui-même :
+
+```
+TRAMADOL ALMUS 50 mg, gélule — interactions. TRAMADOL ALMUS est
+contre-indiqué avec les IMAO…
+```
+
+Même question, après :
+
+```
+« posologie paracetamol adulte »   →  HUMEXLIB PARACETAMOL…
+« interactions tramadol »          →  TRAMADOL ALMUS, TRAMADOL ZYDUS LP
+```
+
+### Mon découpage coupait les mots en deux
+
+Ma première version reculait jusqu'à un espace pour ne pas couper un mot.
+Mais le **début** du morceau suivant, lui, retombait au milieu :
+`mot285` devenait `t285`.
+
+**Ce sont mes propres tests qui l'ont attrapé** — `test_aucun_mot_n_est_coupe_en_deux`
+et `test_le_texte_entier_est_couvert`. Le découpage travaille maintenant par
+mots entiers.
+
+C'est exactement ce qu'un test doit faire : échouer sur du code qui a l'air
+de marcher.
+
+
+---
+
 # LA QUESTION QUI PEUT VENIR
 
 ## « Et ce que vous n'avez pas pu traiter ? »
@@ -903,5 +1021,5 @@ professionnelle, rang 1, pas du ministère.
  456  desaccords reels entre les deux sources
  29   désaccords entre versions   (il en demandait 10)
  61   mouvements entre décembre et août
-271   tests, en une seconde
+295   tests, en une seconde
 ```
