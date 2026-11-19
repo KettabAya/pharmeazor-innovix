@@ -141,7 +141,14 @@ def passages_produits(lignes: list[dict[str, str]] | None = None,
         if ligne["date_initial"]:
             corps.append(f"Il est enregistré depuis le {ligne['date_initial']}.")
         if ligne["status"]:
-            corps.append(f"Son statut est : {ligne['status']}.")
+            # Le registre porte ici une lettre, F ou I, dont la legende n'est
+            # publiee nulle part. Ecrire « Son statut est : F » laissait
+            # croire au lecteur qu'il devait comprendre ce code. On dit donc
+            # ce qu'on sait : le code, et qu'il n'est pas documente.
+            corps.append(
+                f"Le registre lui donne le code de statut « {ligne['status']} », "
+                "dont la légende n'est publiée nulle part."
+            )
         corps.append(
             f"Source : nomenclature nationale, version {ligne['source_version']}."
         )

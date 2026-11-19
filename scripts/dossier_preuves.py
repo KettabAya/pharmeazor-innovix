@@ -32,6 +32,7 @@ LIVRABLES = [
     ("data/reference/equivalents_semaine1.csv", "groupes d'équivalents"),
     ("data/reference/interactions_semaine1.csv", "interactions avec niveau ANSM"),
     ("data/reference/retraits_semaine1.csv", "produits sortis du marché"),
+    ("data/reference/name_index_retraits.csv", "dictionnaire des noms retirés"),
     ("data/reference/desaccords_versions.csv", "désaccords entre versions datées"),
     # Le périmètre élargi aux 38 molécules. Il coexiste avec la semaine 1 :
     # les deux jeux sont livrés, et leurs empreintes distinctes le prouvent.
@@ -40,6 +41,7 @@ LIVRABLES = [
     ("data/reference/equivalents_40molecules.csv", "groupes d'équivalents, 38 molécules"),
     ("data/reference/interactions_40molecules.csv", "interactions, 38 molécules"),
     ("data/reference/retraits_40molecules.csv", "produits sortis du marché, 38 molécules"),
+    ("data/reference/name_index_retraits_40molecules.csv", "dictionnaire des noms retirés, 38 molécules"),
     ("data/reference/desaccords_versions_40molecules.csv", "désaccords entre versions, 38 molécules"),
     ("data/reference/mouvements_versions_40molecules.csv", "produits apparus et disparus entre versions"),
     ("data/reference/source_registry.yaml", "registre des sources et conformité"),

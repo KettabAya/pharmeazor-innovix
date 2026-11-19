@@ -225,3 +225,24 @@ class TestLesProduitsSortisDuMarche:
         jumeau = dict(LIGNE_RETRAIT, brand_name="ASPIRINE PH8 BIS")
         passages = list(passages_retraits([LIGNE_RETRAIT, jumeau]))
         assert len({p.passage_id for p in passages}) == 2
+
+
+class TestLeCodeDeStatutNEstPasPresenteCommeCompris:
+    """Le registre porte une lettre, F ou I, dont la legende n'est publiee
+    nulle part.
+
+    Mesure du 19/11/2026 : F accompagne 793 laboratoires algeriens contre 3
+    etrangers, ce qui suggere « fabrique » contre « importe ». Mais 50
+    produits ne rentrent pas dans l'hypothese -- TAREG, de Novartis Suisse,
+    est marque F. Une correlation n'est pas une legende : le passage donne
+    donc le code ET dit qu'il n'est pas documente.
+    """
+
+    def test_le_code_est_donne_avec_sa_reserve(self):
+        p = next(passages_produits([LIGNE_PRODUIT]))
+        assert "code de statut" in p.text
+        assert "n'est publiée nulle part" in p.text
+
+    def test_le_code_n_est_pas_presente_comme_une_information_comprise(self):
+        p = next(passages_produits([LIGNE_PRODUIT]))
+        assert "Son statut est" not in p.text

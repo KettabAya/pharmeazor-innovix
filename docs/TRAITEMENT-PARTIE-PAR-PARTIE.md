@@ -379,7 +379,7 @@ chaque écart porte une date.
 ```
 13  conditionnement
  8  laboratoire
- 7  date de fin de validité
+ 7  date du dernier enregistrement
  1  forme
 ```
 
@@ -440,6 +440,18 @@ Un enregistrement non renouvelé se dit autrement qu'un retrait : ce n'est pas
 la même décision.
 
 **Le corpus passe de 1 323 à 2 293 passages.**
+
+### Et un dictionnaire pour les retrouver
+
+Le corpus savait répondre, mais le **dictionnaire des noms**, lui, ignorait
+toujours **544 des 626 marques retirées**. Un pharmacien qui tape `ACTIGRIP`
+n'obtenait rien — pas « retiré », rien du tout.
+
+`name_index_retraits_40molecules.csv`, **2 910 entrées**, les connaît
+maintenant. Volontairement **séparé** de `name_index` : un nom retiré ne doit
+pas se mélanger aux noms délivrables dans la même table, sinon un programme
+qui lirait le dictionnaire sans regarder une colonne de plus proposerait un
+produit interdit.
 
 > *« Reconnaître un produit et le proposer sont deux choses différentes. Ma
 > base devait savoir les distinguer, et elle ne le savait pas. »*
@@ -543,7 +555,7 @@ Répondez franchement — c'est ce qui donne du poids au reste.
 
 | | |
 |---|---|
-| Le code `F`/`I` du champ statut | 837 et 74 produits, **aucune légende nulle part**. Les deux se répartissent entre génériques et références, donc ce n'est pas le type de produit. **Question pour vous.** |
+| Le code `F`/`I` du champ statut | 840 et 74 produits, **aucune légende publiée**. J'ai une hypothèse mesurée, pas une réponse — voir ci-dessous. **Question pour vous.** |
 | 5 produits sans aucune date | signalés, non complétés |
 | Le `PAROL` à dosage `n` | erreur du ministère, non devinée |
 | 25 conditionnements rares | dont 2 où le nombre est écrit en toutes lettres |
@@ -552,6 +564,39 @@ Répondez franchement — c'est ce qui donne du poids au reste.
 > cœur de ma méthode : documenter un trou plutôt que le combler. Et c'est
 > exactement ce que notre système devra faire face à une question sans réponse
 > dans le corpus. »*
+
+## Ce que j'ai pu mesurer sur le code `F` / `I`
+
+Je ne l'ai trouvé documenté nulle part. Alors je l'ai croisé avec les autres
+colonnes, et une seule donne un signal net : **le pays du laboratoire**.
+
+| | `F` | `I` |
+|---|---:|---:|
+| laboratoire algérien | **793** | 3 |
+| laboratoire étranger | 47 | **71** |
+
+L'hypothèse qui s'impose est `F` = **fabriqué** localement, `I` = **importé**.
+Croisé avec le type de produit (générique / référence), le code ne donne au
+contraire aucun signal : ce n'est donc pas ça.
+
+**Mais je ne l'écris nulle part dans les données**, parce que 50 produits ne
+rentrent pas :
+
+```
+TAREG      NOVARTIS PHARMA SCHWEIZ AG (Suisse)   F
+GENTOCIL   GROUPEMENT PHARMACEUTIQUE ALGERIEN    I
+```
+
+Ces cas s'expliqueraient bien — un laboratoire étranger qui fait fabriquer en
+Algérie sous licence, un détenteur algérien qui importe — mais « s'expliquerait
+bien » n'est pas une source. Le corpus dit donc, pour chaque produit :
+
+> *Le registre lui donne le code de statut « F », dont la légende n'est publiée
+> nulle part.*
+
+> *« J'ai une corrélation à 99 % d'un côté et 50 exceptions de l'autre. C'est
+> assez pour vous poser une question précise, pas assez pour l'écrire dans une
+> base de sécurité médicamenteuse. »*
 
 ---
 
@@ -565,8 +610,9 @@ Répondez franchement — c'est ce qui donne du poids au reste.
 3656  entrées au dictionnaire
 153   groupes d'équivalents
 970   produits sortis du marché, avec date et motif
+2910  noms retirés indexés
 2293  passages interrogeables
  29   désaccords entre versions   (il en demandait 10)
  61   mouvements entre décembre et août
-254   tests, en une seconde
+256   tests, en une seconde
 ```

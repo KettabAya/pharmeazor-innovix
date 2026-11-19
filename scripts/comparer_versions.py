@@ -11,7 +11,7 @@ ici sont **datables** : on sait exactement entre quelles deux dates le registre
 a changé d'avis.
 
 Un écart n'est pas forcément une erreur. Un renouvellement d'enregistrement
-change légitimement la date de fin de validité. C'est pourquoi chaque ligne du
+change légitimement la date du dernier enregistrement. C'est pourquoi chaque ligne du
 rapport porte les deux versions et les deux valeurs : le lecteur tranche, pas
 le script.
 
@@ -55,7 +55,21 @@ CHAMPS: dict[str, str] = {
     "lab_country": "pays du laboratoire",
     "list_class": "liste",
     "status": "statut",
-    "date_final": "date de fin de validite",
+    # Le ministere intitule cette colonne « DATE D'ENREGISTREMENT FINAL ».
+    # Elle etait suivie ici sous le nom « date de fin de validite », et c'est
+    # faux : mesure du 19/11/2026 sur les 914 produits du perimetre,
+    #
+    #   * 909 valeurs sont DEJA PASSEES et aucune n'est future -- une date de
+    #     fin de validite donnerait l'inverse ;
+    #   * 307 produits la portent au MEME JOUR que leur enregistrement initial,
+    #     ce qui n'aurait pas de sens pour une echeance ;
+    #   * entre deux versions elle AVANCE : TRIATEC passe de 2024-06-13 a
+    #     2026-01-26, COXITAB de 2022-08-21 a 2025-12-29.
+    #
+    # C'est donc la date de la DERNIERE decision d'enregistrement, c'est-a-dire
+    # du dernier renouvellement. L'appeler « fin de validite » laisserait croire
+    # que 909 produits sur 914 sont perimes.
+    "date_final": "date du dernier enregistrement",
 }
 
 

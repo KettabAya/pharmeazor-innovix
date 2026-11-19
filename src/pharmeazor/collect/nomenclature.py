@@ -48,6 +48,10 @@ CANONICAL_COLUMNS: dict[str, str] = {
     "LABORATOIRES DETENTEUR DE LA DECISION DENREGISTREMENT": "lab_name",
     "PAYS DU LABORATOIRE DETENTEUR DE LA DECISION DENREGISTREMENT": "lab_country",
     "DATE DENREGISTREMENT INITIAL": "date_initial",
+    # « FINAL » ne veut pas dire « echeance » : mesure du 19/11/2026, 909 des
+    # 914 valeurs sont deja passees, aucune n'est future, 307 tombent le jour
+    # meme de l'enregistrement initial, et la valeur AVANCE d'une version a
+    # l'autre. C'est la date de la derniere decision d'enregistrement.
     "DATE DENREGISTREMENT FINAL": "date_final",
     "TYPE": "type_code",
     "STATUT": "status",

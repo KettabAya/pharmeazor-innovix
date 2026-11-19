@@ -1,12 +1,12 @@
 # Dossier de preuves — Pharmeazor
 
-Généré le **19/11/2026 à 01:33** depuis le dépôt lui-même.
+Généré le **19/11/2026 à 01:57** depuis le dépôt lui-même.
 Aucune valeur n'est saisie à la main : tout est relevé à l'exécution.
 
 - Dépôt : `https://github.com/KettabAya/pharmeazor-innovix.git`
 - Branche : `main`
-- Commit : `2d97e80`
-- Total : **97 commits**, 134 fichiers suivis
+- Commit : `d4c779f`
+- Total : **98 commits**, 140 fichiers suivis
 
 ---
 
@@ -17,7 +17,7 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 
 | Auteur | Commits | Lignes ajoutées | Lignes retirées | Première | Dernière |
 |---|---:|---:|---:|---|---|
-| **Kettab Aya** | 65 | +31,031 | −6,184 | 2026-11-10 | 2026-11-18 |
+| **Kettab Aya** | 66 | +36,293 | −11,282 | 2026-11-10 | 2026-11-18 |
 | **Ryma Ait** | 15 | +297 | −56 | 2026-11-13 | 2026-11-14 |
 | **aya** | 9 | +324 | −18 | 2026-11-13 | 2026-11-13 |
 | **alaa** | 1 | +2,858 | −0 | 2026-11-18 | 2026-11-18 |
@@ -93,13 +93,15 @@ qu'il n'a pas été modifié depuis.
 | `data/reference/equivalents_semaine1.csv` | groupes d'équivalents | 246 | `a267b1e38826fef2` |
 | `data/reference/interactions_semaine1.csv` | interactions avec niveau ANSM | 87 | `55180b7af231b717` |
 | `data/reference/retraits_semaine1.csv` | produits sortis du marché | 321 | `3f7c5f20e9f3b808` |
-| `data/reference/desaccords_versions.csv` | désaccords entre versions datées | 13 | `076d777a71ca7667` |
+| `data/reference/name_index_retraits.csv` | dictionnaire des noms retirés | 963 | `0ef1a21b2055ed38` |
+| `data/reference/desaccords_versions.csv` | désaccords entre versions datées | 13 | `26c6e5d96d5c79c0` |
 | `data/reference/drugs_40molecules.csv` | table produit, 38 molécules | 914 | `36a32960f9be83df` |
 | `data/reference/name_index_40molecules.csv` | dictionnaire des noms, 38 molécules | 3656 | `da71c31d825fb52a` |
 | `data/reference/equivalents_40molecules.csv` | groupes d'équivalents, 38 molécules | 784 | `95e01360e2b0b5fd` |
 | `data/reference/interactions_40molecules.csv` | interactions, 38 molécules | 256 | `1cbe9a5fac73ea8a` |
 | `data/reference/retraits_40molecules.csv` | produits sortis du marché, 38 molécules | 970 | `25f00cac693b2d30` |
-| `data/reference/desaccords_versions_40molecules.csv` | désaccords entre versions, 38 molécules | 29 | `517bb7c05686247f` |
+| `data/reference/name_index_retraits_40molecules.csv` | dictionnaire des noms retirés, 38 molécules | 2910 | `2c6bad75572bfa6a` |
+| `data/reference/desaccords_versions_40molecules.csv` | désaccords entre versions, 38 molécules | 29 | `9bd61ba97811d8da` |
 | `data/reference/mouvements_versions_40molecules.csv` | produits apparus et disparus entre versions | 61 | `beb47858364d963f` |
 | `data/reference/source_registry.yaml` | registre des sources et conformité | — | `7598d2ff635b20d1` |
 | `data/reference/documents_a_collecter.csv` | liste de collecte des notices | 18 | `e620d7233cd39f8a` |
@@ -113,8 +115,8 @@ qu'il n'a pas été modifié depuis.
 ```
 ........................................................................ [ 28%]
 ........................................................................ [ 56%]
-........................................................................ [ 85%]
-......................................                                   [100%]
+........................................................................ [ 84%]
+........................................                                 [100%]
 ```
 
 Code de sortie : **0** — tous les tests passent.
@@ -136,6 +138,7 @@ Code de sortie : **0** — tous les tests passent.
 ## 5. Les vingt derniers commits
 
 ```
+d4c779f  2026-11-19  14an  fix(data): lire les trois feuilles, et cinq autres trous du traitement
 2d97e80  2026-11-18  14an  fix(normalize): lire les DCI ecrites sel-d'abord
 3984026  2026-11-18  14an  feat(docs): assembler tout le dossier en un seul PDF
 73001d3  2026-11-18  14an  scripts de collecte : PharmNet, ANSM BDPM, dzair-pharma, audit robots
@@ -155,7 +158,6 @@ ffd2c68  2026-11-17  14an  fix(catalogue): la voie d'administration prime sur la
 35a136f  2026-11-17  14an  fix(registre): une cle robots_note en double annulait la mesure
 e9c7a09  2026-11-17  14an  fix(normalize): lire les conditionnements mesures et unifier les sels
 9560663  2026-11-17  14an  feat(reconcile): carte de couverture, pour ne sortir d'Algerie qu'au besoin
-e750b66  2026-11-17  14an  fix(reconcile): une source etrangere ne peut plus remplacer l'algerienne
 ```
 
 ---

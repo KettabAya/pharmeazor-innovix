@@ -31,7 +31,11 @@ from pharmeazor.collect.dzair import load_directory  # noqa: E402
 from pharmeazor.collect.nomenclature import read_workbook  # noqa: E402
 from pharmeazor.config import MOLECULES_PROJET  # noqa: E402
 from pharmeazor.normalize.catalogue import Catalogue  # noqa: E402
-from pharmeazor.normalize.substance import concerne_molecule, parse_inn  # noqa: E402
+from pharmeazor.normalize.substance import (  # noqa: E402
+    concerne_molecule,
+    normaliser_substance,
+    parse_inn,
+)
 from pharmeazor.reconcile.crosscheck import compare_all  # noqa: E402
 
 # The three starter molecules: one per therapeutic class, as the spec asks.
@@ -112,6 +116,7 @@ EQUIVALENTS = REFERENCE / "equivalents_semaine1.csv"
 INTERACTIONS = REFERENCE / "interactions_semaine1.csv"
 CONFLICTS = REFERENCE / "conflits_semaine1.csv"
 RETRAITS = REFERENCE / "retraits_semaine1.csv"
+NOMS_RETIRES = REFERENCE / "name_index_retraits.csv"
 
 
 def rediriger_sorties(suffixe: str) -> None:
@@ -127,6 +132,7 @@ def rediriger_sorties(suffixe: str) -> None:
     jeux coexistent, et on peut les comparer.
     """
     global PRODUCTS, NAME_INDEX, EQUIVALENTS, INTERACTIONS, CONFLICTS, RETRAITS
+    global NOMS_RETIRES
     if not suffixe:
         return
     # Le suffixe remplace "_semaine1" quand il est present, sinon il s'ajoute.
@@ -140,6 +146,7 @@ def rediriger_sorties(suffixe: str) -> None:
     INTERACTIONS = nommer("interactions_semaine1")
     CONFLICTS = nommer("conflits_semaine1")
     RETRAITS = nommer("retraits_semaine1")
+    NOMS_RETIRES = nommer("name_index_retraits")
 
 # Les colonnes du livrable produit.
 #
@@ -337,6 +344,42 @@ def extract_retraits(book: Path, targets: tuple[str, ...]) -> list[dict]:
     return rows
 
 
+def write_noms_retires(retires: list[dict]) -> int:
+    """Un dictionnaire de noms pour les produits sortis du marche.
+
+    Separe de `name_index`, pour deux raisons.
+
+    D'abord la securite : un nom retire ne doit pas se melanger aux noms
+    delivrables dans la meme table. Un programme qui lirait le dictionnaire
+    sans regarder une colonne de plus proposerait un produit interdit.
+
+    Ensuite la mesure : sans ce fichier, 544 des 626 marques retirees du
+    perimetre n'etaient connues d'aucun dictionnaire. Un pharmacien qui tape
+    ACTIGRIP n'obtenait rien -- pas « retire », rien du tout.
+    """
+    lignes: list[tuple[str, str, str, str, str]] = []
+    for rang, r in enumerate(retires, 1):
+        ident = f"DZ-R-{rang:04d}"
+        for genre, valeur in (("brand", r["brand_name"]),
+                              ("inn", r["inn"]),
+                              ("registration", r["registration_no"])):
+            if valeur:
+                lignes.append((valeur, normaliser_substance(valeur), genre,
+                               ident, r["source_sheet"]))
+
+    with open(NOMS_RETIRES, "w", encoding="utf-8", newline="") as fh:
+        writer = csv.writer(fh)
+        writer.writerow(["alias", "alias_normalized", "kind", "retrait_id",
+                         "source_sheet"])
+        # Tri sur le tuple ENTIER, pas sur (kind, alias) : deux produits
+        # peuvent porter la meme marque, et un tri a egalites laissait
+        # l'ordre de `set` decider -- il change d'une execution a l'autre
+        # parce que Python randomise le hachage des chaines. Le fichier
+        # n'etait donc pas reproductible, ce qui ruine une empreinte SHA-256.
+        writer.writerows(sorted(set(lignes)))
+    return len(set(lignes))
+
+
 def write_name_index(catalogue: Catalogue) -> int:
     aliases = catalogue.aliases()
     with open(NAME_INDEX, "w", encoding="utf-8", newline="") as fh:
@@ -528,6 +571,8 @@ def main() -> int:
     print("      Ils ne sont PAS dans le catalogue : un produit retiré ne doit")
     print("      jamais être proposé comme équivalent. Ils servent à répondre")
     print("      « il a été retiré le … » au lieu de « je ne sais pas ».")
+    n_noms = write_noms_retires(retires)
+    print(f"      {n_noms} noms retirés indexés -> {NOMS_RETIRES.name}")
 
     dzair = load_directory(RAW_JSON, only_inn=set(targets))
     covered = {inn for inn in targets
