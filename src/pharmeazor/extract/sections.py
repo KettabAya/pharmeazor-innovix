@@ -29,9 +29,10 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
         r"|comment (?:prendre|utiliser)"
         r"|dose|doses|dosage)", re.I)),
     (Section.INDICATIONS, re.compile(
-        r"^\s*" + _NUMBER + r"(?:indications?(?: therapeutiques?)?"
-        r"|dans quels? cas"
-        r"|qu.est[- ]ce que .* et dans quels? cas)", re.I)),
+      r"^\s*" + _NUMBER
+     + r"(?:indications?(?: therapeutiques?)?(?=\s*$)"
+     + r"|dans quels? cas"
+     + r"|qu.est[- ]ce que .* et dans quels? cas)", re.I)),
     (Section.ADVERSE, re.compile(
         r"^\s*" + _NUMBER + r"(?:effets? indesirables?"
         r"|quels? sont les effets"
