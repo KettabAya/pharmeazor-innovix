@@ -23,11 +23,11 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
         r"^\s*" + _NUMBER + r"(?:interactions?"
         r"|associations? (?:medicamenteuses?|deconseillees?)"
         r"|autres medicaments et)", re.I)),
-    (Section.POSOLOGY, re.compile(
+        (Section.POSOLOGY, re.compile(
         r"^\s*" + _NUMBER + r"(?:posologie"
-       r"|mode (?:et voie )?d.(?:administration|emploi)"
+        r"|mode (?:et voie )?d.(?:administration|emploi)"
         r"|comment (?:prendre|utiliser)"
-        r"|dose|doses|dosage)", re.I)),
+        r"|dose(?=\s*$)|doses(?=\s*$)|dosage(?=\s*$))", re.I)),
     (Section.INDICATIONS, re.compile(
       r"^\s*" + _NUMBER
      + r"(?:indications?(?: therapeutiques?)?(?=\s*$)"
