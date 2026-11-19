@@ -1,12 +1,12 @@
 # Dossier de preuves — Pharmeazor
 
-Généré le **19/11/2026 à 02:14** depuis le dépôt lui-même.
+Généré le **19/11/2026 à 18:59** depuis le dépôt lui-même.
 Aucune valeur n'est saisie à la main : tout est relevé à l'exécution.
 
 - Dépôt : `https://github.com/KettabAya/pharmeazor-innovix.git`
 - Branche : `main`
-- Commit : `a29e7fe`
-- Total : **100 commits**, 142 fichiers suivis
+- Commit : `b9c7d0c`
+- Total : **104 commits**, 146 fichiers suivis
 
 ---
 
@@ -17,14 +17,14 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 
 | Auteur | Commits | Lignes ajoutées | Lignes retirées | Première | Dernière |
 |---|---:|---:|---:|---|---|
-| **Kettab Aya** | 68 | +44,522 | −13,189 | 2026-11-10 | 2026-11-19 |
+| **Kettab Aya** | 72 | +47,882 | −14,713 | 2026-11-10 | 2026-11-19 |
 | **Ryma Ait** | 15 | +297 | −56 | 2026-11-13 | 2026-11-14 |
 | **aya** | 9 | +324 | −18 | 2026-11-13 | 2026-11-13 |
 | **alaa** | 1 | +2,858 | −0 | 2026-11-18 | 2026-11-18 |
 
 ### Fichiers touchés par chaque personne
 
-**Kettab Aya** — 123 fichiers
+**Kettab Aya** — 126 fichiers
 
 - `.env.example`
 - `.gitattributes`
@@ -40,7 +40,7 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 - `Makefile`
 - `README.md`
 - `data/interim/.gitkeep`
-- *… et 109 autres*
+- *… et 112 autres*
 
 **Ryma Ait** — 10 fichiers
 
@@ -91,14 +91,14 @@ qu'il n'a pas été modifié depuis.
 | `data/reference/drugs_semaine1.csv` | table produit nettoyée | 284 | `0c45a08e4006abf7` |
 | `data/reference/name_index.csv` | dictionnaire des noms | 1136 | `155c4160ffb412f1` |
 | `data/reference/equivalents_semaine1.csv` | groupes d'équivalents | 246 | `05fa65d6abe5c461` |
-| `data/reference/interactions_semaine1.csv` | interactions avec niveau ANSM | 87 | `55180b7af231b717` |
+| `data/reference/interactions_semaine1.csv` | interactions avec niveau ANSM | 201 | `6e9259a87d2d1592` |
 | `data/reference/retraits_semaine1.csv` | produits sortis du marché | 321 | `3f7c5f20e9f3b808` |
 | `data/reference/name_index_retraits.csv` | dictionnaire des noms retirés | 963 | `0ef1a21b2055ed38` |
 | `data/reference/desaccords_versions.csv` | désaccords entre versions datées | 13 | `26c6e5d96d5c79c0` |
 | `data/reference/drugs_40molecules.csv` | table produit, 38 molécules | 914 | `36a32960f9be83df` |
 | `data/reference/name_index_40molecules.csv` | dictionnaire des noms, 38 molécules | 3656 | `da71c31d825fb52a` |
 | `data/reference/equivalents_40molecules.csv` | groupes d'équivalents, 38 molécules | 785 | `4b5ac63f1fd128b8` |
-| `data/reference/interactions_40molecules.csv` | interactions, 38 molécules | 256 | `1cbe9a5fac73ea8a` |
+| `data/reference/interactions_40molecules.csv` | interactions, 38 molécules | 1493 | `46433ee2695b70f9` |
 | `data/reference/retraits_40molecules.csv` | produits sortis du marché, 38 molécules | 970 | `25f00cac693b2d30` |
 | `data/reference/name_index_retraits_40molecules.csv` | dictionnaire des noms retirés, 38 molécules | 2910 | `2c6bad75572bfa6a` |
 | `data/reference/desaccords_versions_40molecules.csv` | désaccords entre versions, 38 molécules | 29 | `9bd61ba97811d8da` |
@@ -138,6 +138,10 @@ Code de sortie : **0** — tous les tests passent.
 ## 5. Les vingt derniers commits
 
 ```
+b9c7d0c  2026-11-19  14an  docs(explorations): le parcours des 3 664 PDF, etape par etape
+e0fd570  2026-11-19  14an  docs: apprendre a traiter des donnees, du debut a la fin
+c7e459d  2026-11-19  14an  feat(scripts): voir fichier par fichier qui a ecrit quoi
+61a93e4  2026-11-19  14an  fix(normalize): un dosage en fraction et un en pourcentage sont le meme
 a29e7fe  2026-11-19  14an  feat(reconcile): les 5 orphelins dzair sont des produits retires
 60fd9f6  2026-11-19  14an  fix(data): date_final mal nommee, noms retires absents, code statut brut
 d4c779f  2026-11-19  14an  fix(data): lire les trois feuilles, et cinq autres trous du traitement
@@ -154,10 +158,6 @@ c37dc2f  2026-11-17  14an  docs(journal): ajouter les sept parties qui manquaien
 f9a7d80  2026-11-17  14an  docs: remettre a jour le suivi du retour de l'enseignant
 5ed712f  2026-11-17  14an  style(substance): raccourcir un commentaire laisse en double
 85d39f8  2026-11-17  14an  fix(equivalents): montrer la DCI reelle de chaque produit, et ses sels
-c987114  2026-11-17  14an  fix(catalogue): une faute du registre separait deux fois le meme produit
-ffd2c68  2026-11-17  14an  fix(catalogue): la voie d'administration prime sur la forme galenique
-7cc7cec  2026-11-17  14an  refactor(dosage): lire les conditionnements sans expression reguliere
-35a136f  2026-11-17  14an  fix(registre): une cle robots_note en double annulait la mesure
 ```
 
 ---

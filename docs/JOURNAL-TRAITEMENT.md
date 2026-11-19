@@ -220,7 +220,7 @@ Jointure des deux sources sur le numéro d'enregistrement, puis comparaison cham
 par champ :
 
 ```
-173 produits présents dans les deux sources
+784 produits présents dans les deux sources
 865 comparaisons de champs
   1 désaccord  (FLC COMPTE GOUTTE 05ML / FL COMPTE GOUTTE 05ML)
 99,9 % d'accord

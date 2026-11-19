@@ -56,7 +56,7 @@ python scripts/construire_corpus.py
 | | | Questions auxquelles il répond |
 |---|---:|---|
 | produits | 284 | dosage, forme, conditionnement, laboratoire, DCI d'une marque |
-| interactions | 87 | « peut-on associer X et Y ? », avec le niveau ANSM |
+| interactions | 201 | « peut-on associer X et Y ? », avec le niveau ANSM |
 | équivalents | 48 | « par quoi remplacer X en rupture ? » |
 
 Ce n'est pas un pis-aller. La nomenclature est une source **officielle de

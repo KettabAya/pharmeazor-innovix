@@ -303,7 +303,7 @@ parvient par dzair-pharma, site professionnel, **rang 1**.
 **L'autorité effective est celle du relais, pas celle de l'origine.** Un relais
 peut introduire une erreur.
 
-**256 interactions**, toutes marquées rang 1, avec la mention qu'il faut
+**1 493 interactions**, toutes marquées rang 1, avec la mention qu'il faut
 confirmer dans le thésaurus avant toute décision.
 
 ---
@@ -317,7 +317,7 @@ sur le numéro d'enregistrement.
 
 ## Ce que j'ai trouvé
 
-**Zéro désaccord sur 173 produits présents dans les deux sources**, avec 100 %
+**Zéro désaccord de contenu sur 784 produits présents dans les deux sources**, avec 100 %
 d'accord sur les champs.
 
 Mais ce zéro a demandé **deux corrections** :
@@ -700,6 +700,83 @@ retrouve mot pour mot dans la source citée.
 
 ---
 
+# 15 · La collecte de l'équipe : 3 fichiers sur 45
+
+## Ce que j'ai trouvé — et c'est une erreur à moi
+
+`data/raw/dzair/` contenait **trois** fichiers : paracétamol, ibuprofène,
+diclofénac. Chaque exécution affichait fidèlement :
+
+```
+ATTENTION — aucune donnée dzair pour : AMOXICILLINE, AMLODIPINE,
+KETOPROFENE, NAPROXENE, ... (35 molécules)
+```
+
+Je lisais ce message depuis le début **sans aller voir pourquoi**.
+
+L'archive envoyée par ma coéquipière le 16/11 contenait, dans un dossier
+`row_data/` que je n'avais pas ouvert, **45 fichiers** — un par molécule.
+Même format exactement, même structure, **1 650 produits**.
+
+J'ai comparé les trois que j'avais avec les siens : **identiques**. Ce
+n'étaient pas des données différentes. C'était le même jeu, dont je
+n'utilisais qu'un quinzième.
+
+## Ce que les 42 fichiers manquants apportaient
+
+| | avant | après |
+|---|---:|---:|
+| produits dzair lus | 180 | **1 527** |
+| interactions brutes | 2 239 | **13 862** |
+| interactions uniques | 256 | **1 493** |
+| liens vers un RCP officiel | 2 | **23** |
+| produits comparés aux deux sources | 173 | **784** |
+| désaccords documentés | 5 | **456** |
+| passages du corpus | 2 293 | **3 530** |
+
+**Les 456 désaccords sont tous du même type** : des produits que
+dzair-pharma publie comme enregistrés et que le ministère a sortis du marché
+— 292 retirés, 164 non renouvelés. Chacun daté et motivé.
+
+Le cahier des charges demandait au moins 10 désaccords entre sources.
+
+## Les 23 liens vers `rcp.anpp.dz`
+
+Ce sont des liens vers les **RCP officiels algériens** — le **rang 4**, le
+plus haut de notre échelle, celui dont on n'avait que 5 documents.
+
+## Le champ qui répond à la question du code `F` / `I`
+
+Sa collecte contient `Origine de fabrication`, que la nomenclature n'a pas.
+Croisé avec le `status` du classeur :
+
+```
+statut = F   →   🇩🇿 Fabriqué en Algérie      894 produits
+statut = I   →   📦 Importé                    84 produits
+```
+
+**978 produits appariés, zéro contradiction.**
+
+`F` = **Fabriqué**, `I` = **Importé**. Ce n'est plus une hypothèse tirée du
+pays du laboratoire : c'est un accord total avec une deuxième source.
+
+> *« J'avais écrit "aucune légende nulle part" et préparé une question pour
+> l'enseignant. La réponse était dans un dossier que je n'avais pas ouvert. »*
+
+## Ce que j'en retiens
+
+Le message d'avertissement faisait son travail : il annonçait, à chaque
+exécution, que 35 molécules n'avaient qu'une seule source. Un message
+d'avertissement qu'on lit sans agir ne sert à rien.
+
+**Et surtout : avant de juger qu'une donnée est inutilisable, ouvrir tous ses
+dossiers.** J'avais regardé `data/<molécule>/json/` — des fiches minces dont
+les interactions sont remplacées par « réservé aux professionnels de santé »
+— et j'en avais conclu que la collecte était vide. `row_data/` était à côté.
+
+
+---
+
 # LA QUESTION QUI PEUT VENIR
 
 ## « Et ce que vous n'avez pas pu traiter ? »
@@ -764,8 +841,8 @@ bien » n'est pas une source. Le corpus dit donc, pour chaque produit :
 153   groupes d'équivalents
 970   produits sortis du marché, avec date et motif
 2910  noms retirés indexés
-2293  passages interrogeables
-  5   desaccords reels entre les deux sources
+3530  passages interrogeables
+ 456  desaccords reels entre les deux sources
  29   désaccords entre versions   (il en demandait 10)
  61   mouvements entre décembre et août
 271   tests, en une seconde

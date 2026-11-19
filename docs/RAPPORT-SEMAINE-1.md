@@ -399,7 +399,7 @@ Les trois corrections, chacune retenue par un test :
    `DE …`, distincte de la substance. Trois produits manquaient au périmètre
    élargi, dont un suppositoire de tramadol qui paraissait sans équivalent.
 
-Le nombre de produits (284), le dictionnaire (1 136) et les interactions (87)
+Le nombre de produits (284) et le dictionnaire (1 136)
 sont inchangés.
 
 | Fichier | Lignes |
@@ -407,7 +407,7 @@ sont inchangés.
 | `drugs_semaine1.csv` | 284 |
 | `name_index.csv` | 1 136 |
 | `equivalents_semaine1.csv` | 246 |
-| `interactions_semaine1.csv` | 87 |
+| `interactions_semaine1.csv` | 201 |
 | `desaccords_versions.csv` | 13 |
 | `retraits_semaine1.csv` | 321 |
 | `documents_a_collecter.csv` | 18 |
