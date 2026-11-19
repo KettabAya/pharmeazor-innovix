@@ -148,6 +148,21 @@ class DzairProduct:
     withdrawal_reason: str
     withdrawal_date: str
     rcp_pdf_url: str
+    # Deux champs que la nomenclature du ministere n'a PAS, et qui ne
+    # figuraient pas ici alors qu'ils sont dans chaque fiche collectee.
+    #
+    # `origin` repond a une question restee ouverte : le classeur porte un
+    # code de statut F ou I dont la legende n'est publiee nulle part. Mesure
+    # du 19/11/2026 sur 978 produits apparies par numero d'enregistrement :
+    #
+    #     statut = F  ->  Fabrique en Algerie    894
+    #     statut = I  ->  Importe                 84
+    #
+    # Zero contradiction. F = Fabrique, I = Importe.
+    origin: str = ""
+    # `criticality` vaut « Critique » sur 46 produits. Le site ne publie pas
+    # son bareme : on recopie la valeur sans l'interpreter.
+    criticality: str = ""
     interactions: list[Interaction] = field(default_factory=list)
     generics: list[GenericRef] = field(default_factory=list)
     collected_at: _dt.date = field(default_factory=_dt.date.today)
@@ -236,6 +251,8 @@ def _product(raw: dict, collected_at: _dt.date) -> DzairProduct:
         stability=_clean(raw.get("Stabilité")),
         lab_name=_clean(raw.get("Laboratoire")),
         lab_country=_clean(raw.get("Pays d'origine")),
+        origin=_clean(raw.get("Origine de fabrication")),
+        criticality=_clean(raw.get("Criticité")),
         date_initial=_clean(raw.get("Date d'enregistrement")),
         date_final=_clean(raw.get("Date de fin de validité")),
         nomenclature_year=_clean(raw.get("Année de nomenclature")),

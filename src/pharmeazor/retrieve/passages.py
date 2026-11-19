@@ -115,15 +115,31 @@ def _phrase(morceaux: list[str]) -> str:
     return " ".join(m.strip() for m in morceaux if m and m.strip())
 
 
+def _enrichissement(suffixe: str = "") -> dict[str, dict[str, str]]:
+    """Ce que dzair-pharma ajoute, indexe par numero d'enregistrement.
+
+    Le fichier peut manquer : la fonction rend alors un dictionnaire vide et
+    les passages se construisent sans ces precisions, comme avant.
+    """
+    try:
+        lignes = _lire("enrichissement_dzair_semaine1.csv", suffixe)
+    except FileNotFoundError:
+        return {}
+    return {x["registration_no"]: x for x in lignes if x.get("registration_no")}
+
+
 def passages_produits(lignes: list[dict[str, str]] | None = None,
-                      suffixe: str = "") -> Iterator[Passage]:
+                      suffixe: str = "",
+                      enrichi: dict[str, dict[str, str]] | None = None) -> Iterator[Passage]:
     """Un passage par produit enregistré.
 
     Répond aux questions de niveau 1 : dosage, forme, conditionnement,
     laboratoire, DCI derrière un nom de marque, statut d'enregistrement.
     """
+    enrichi = _enrichissement(suffixe) if enrichi is None else enrichi
     for ligne in lignes if lignes is not None else _lire("drugs_semaine1.csv", suffixe):
         marque = ligne["brand_name"]
+        extra = enrichi.get(ligne.get("registration_no", ""), {})
         dci = ligne["inn"]
 
         corps = [f"{marque} est un médicament enregistré en Algérie."]
@@ -167,6 +183,31 @@ def passages_produits(lignes: list[dict[str, str]] | None = None,
             corps.append(
                 f"Le registre lui donne le code de statut « {ligne['status']} », "
                 "dont la légende n'est publiée nulle part."
+            )
+        # Ce que dzair-pharma ajoute. C'est une source PROFESSIONNELLE, rang 1
+        # contre rang 3 pour la nomenclature : chaque precision porte donc son
+        # origine dans la phrase, sinon le lecteur croirait que le ministere
+        # l'a ecrite.
+        if extra.get("voie_administration"):
+            corps.append(f"Voie d'administration : {extra['voie_administration']}.")
+        if extra.get("origine_fabrication"):
+            corps.append(f"Origine de fabrication : {extra['origine_fabrication']}.")
+        if extra.get("code_atc"):
+            corps.append(f"Classification ATC : {extra['code_atc']}.")
+        if extra.get("criticite"):
+            corps.append(
+                f"Ce produit est signalé « {extra['criticite']} » par "
+                "dzair-pharma, dont le barème n'est pas publié."
+            )
+        if extra:
+            corps.append(
+                "Ces quatre dernières précisions viennent de dzair-pharma, "
+                "source professionnelle et non officielle : à confirmer dans "
+                "le RCP avant toute décision."
+            )
+        if extra.get("rcp_officiel_url"):
+            corps.append(
+                f"Le RCP officiel de l'ANPP est disponible : {extra['rcp_officiel_url']}"
             )
         corps.append(
             f"Source : nomenclature nationale, version {ligne['source_version']}."

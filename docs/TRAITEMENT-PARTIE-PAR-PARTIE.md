@@ -775,6 +775,62 @@ les interactions sont remplacées par « réservé aux professionnels de santé 
 — et j'en avais conclu que la collecte était vide. `row_data/` était à côté.
 
 
+## Et ce que sa collecte apporte en plus du catalogue
+
+Cinq champs que la nomenclature n'a pas, versés dans
+`enrichissement_dzair_40molecules.csv` — une table **à part**, jointe par le
+numéro d'enregistrement, et non des colonnes du catalogue : le catalogue est
+bâti sur le rang 3, sa collecte est au rang 1, les mélanger dans un même
+fichier empêcherait de savoir quelle ligne fait foi.
+
+```
+785 produits du catalogue appariés
+
+code ATC                 785    classification internationale
+origine de fabrication   785    répond au code F / I
+voie d'administration    777    explicite, non déduite de la forme
+marqués « Critique »      16    barème non publié, recopié tel quel
+lien RCP officiel ANPP    17    ← RANG 4, la plus haute autorité
+```
+
+**Les 17 liens sont les plus précieux.** Ils pointent vers `rcp.anpp.dz` —
+les RCP officiels algériens, le rang le plus haut de notre échelle, celui
+dont nous n'avions que cinq documents.
+
+## Ses génériques contre mes groupes d'équivalents
+
+Elle liste pour chaque produit ses « génériques ». J'ai confronté sa liste à
+mes 154 groupes.
+
+```
+marques citées des deux côtés     1 967
+seulement dans mon groupe         2 285
+seulement dans sa liste           2 025
+```
+
+Les écarts sont énormes — et ils ne sont **pas** des erreurs. Nos deux
+méthodes ne regroupent pas la même chose :
+
+| | critère |
+|---|---|
+| **sa liste** | même **code DCI**, tous dosages et toutes formes confondus |
+| **mes groupes** | même substance **+ même dosage + même famille de forme** |
+
+Elle cite `CEBREX 100` à côté d'un célécoxib 200 mg : même substance, autre
+dosage. Pour un pharmacien en rupture, ce n'est pas un équivalent.
+
+**Le test qui compte**, c'est le critère strict. J'ai cherché toutes les
+marques qu'elle cite avec **le même dosage ET la même famille de forme** et
+qui manqueraient à mes groupes :
+
+```
+0 marque
+```
+
+Mes groupes ne ratent aucun équivalent au sens strict. C'est la comparaison
+de deux approches que le cahier des charges demande, et elle tombe juste.
+
+
 ---
 
 # LA QUESTION QUI PEUT VENIR
@@ -785,7 +841,7 @@ Répondez franchement — c'est ce qui donne du poids au reste.
 
 | | |
 |---|---|
-| Le code `F`/`I` du champ statut | 840 et 74 produits, **aucune légende publiée**. J'ai une hypothèse mesurée, pas une réponse — voir ci-dessous. **Question pour vous.** |
+| ~~Le code `F`/`I` du champ statut~~ | ✅ **résolu le 19/11** par la collecte de l'équipe : `F` = Fabriqué, `I` = Importé. 978 produits appariés, zéro contradiction. |
 | 5 produits sans aucune date | signalés, non complétés |
 | Le `PAROL` à dosage `n` | erreur du ministère, non devinée |
 | 25 conditionnements rares | dont 2 où le nombre est écrit en toutes lettres |
@@ -795,38 +851,40 @@ Répondez franchement — c'est ce qui donne du poids au reste.
 > exactement ce que notre système devra faire face à une question sans réponse
 > dans le corpus. »*
 
-## Ce que j'ai pu mesurer sur le code `F` / `I`
+## La réponse au code `F` / `I` — trouvée le 19/11
 
-Je ne l'ai trouvé documenté nulle part. Alors je l'ai croisé avec les autres
-colonnes, et une seule donne un signal net : **le pays du laboratoire**.
+Je ne l'avais trouvé documenté nulle part. J'avais croisé le code avec le
+pays du laboratoire et obtenu un signal fort mais imparfait : 793 `F` pour
+des laboratoires algériens contre 3, et **50 produits qui ne rentraient pas**
+dans l'hypothèse. J'avais préparé la question pour vous.
 
-| | `F` | `I` |
-|---|---:|---:|
-| laboratoire algérien | **793** | 3 |
-| laboratoire étranger | 47 | **71** |
+**La réponse était dans la collecte de mon équipe.** Son extraction
+dzair-pharma contient un champ que la nomenclature n'a pas :
+`Origine de fabrication`.
 
-L'hypothèse qui s'impose est `F` = **fabriqué** localement, `I` = **importé**.
-Croisé avec le type de produit (générique / référence), le code ne donne au
-contraire aucun signal : ce n'est donc pas ça.
-
-**Mais je ne l'écris nulle part dans les données**, parce que 50 produits ne
-rentrent pas :
+Croisé avec le code `status` du classeur, par numéro d'enregistrement :
 
 ```
-TAREG      NOVARTIS PHARMA SCHWEIZ AG (Suisse)   F
-GENTOCIL   GROUPEMENT PHARMACEUTIQUE ALGERIEN    I
+statut = F   →   🇩🇿 Fabriqué en Algérie      894 produits
+statut = I   →   📦 Importé                    84 produits
 ```
 
-Ces cas s'expliqueraient bien — un laboratoire étranger qui fait fabriquer en
-Algérie sous licence, un détenteur algérien qui importe — mais « s'expliquerait
-bien » n'est pas une source. Le corpus dit donc, pour chaque produit :
+**978 produits appariés. Zéro contradiction.**
 
-> *Le registre lui donne le code de statut « F », dont la légende n'est publiée
-> nulle part.*
+`F` = **Fabriqué**. `I` = **Importé**.
 
-> *« J'ai une corrélation à 99 % d'un côté et 50 exceptions de l'autre. C'est
-> assez pour vous poser une question précise, pas assez pour l'écrire dans une
-> base de sécurité médicamenteuse. »*
+Ce n'est plus une corrélation indirecte via le pays du laboratoire : c'est le
+champ lui-même, et l'accord est total. Les 50 exceptions qui me gênaient
+s'expliquent d'elles-mêmes — un laboratoire étranger peut faire fabriquer en
+Algérie, et c'est exactement ce que ce champ dit.
+
+> *« J'avais écrit "aucune légende nulle part" et préparé une question. La
+> réponse était dans un dossier de l'archive de mon équipe que je n'avais pas
+> ouvert. »*
+
+L'information est maintenant dans `enrichissement_dzair_40molecules.csv`, et
+dans le passage de chaque produit — en précisant qu'elle vient d'une source
+professionnelle, rang 1, pas du ministère.
 
 ---
 

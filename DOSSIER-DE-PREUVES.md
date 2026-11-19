@@ -1,12 +1,12 @@
 # Dossier de preuves — Pharmeazor
 
-Généré le **19/11/2026 à 18:59** depuis le dépôt lui-même.
+Généré le **19/11/2026 à 19:09** depuis le dépôt lui-même.
 Aucune valeur n'est saisie à la main : tout est relevé à l'exécution.
 
 - Dépôt : `https://github.com/KettabAya/pharmeazor-innovix.git`
 - Branche : `main`
-- Commit : `b9c7d0c`
-- Total : **104 commits**, 146 fichiers suivis
+- Commit : `56854c3`
+- Total : **105 commits**, 146 fichiers suivis
 
 ---
 
@@ -17,14 +17,14 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 
 | Auteur | Commits | Lignes ajoutées | Lignes retirées | Première | Dernière |
 |---|---:|---:|---:|---|---|
-| **Kettab Aya** | 72 | +47,882 | −14,713 | 2026-11-10 | 2026-11-19 |
+| **Kettab Aya** | 73 | +48,486 | −14,713 | 2026-11-10 | 2026-11-19 |
 | **Ryma Ait** | 15 | +297 | −56 | 2026-11-13 | 2026-11-14 |
 | **aya** | 9 | +324 | −18 | 2026-11-13 | 2026-11-13 |
 | **alaa** | 1 | +2,858 | −0 | 2026-11-18 | 2026-11-18 |
 
 ### Fichiers touchés par chaque personne
 
-**Kettab Aya** — 126 fichiers
+**Kettab Aya** — 127 fichiers
 
 - `.env.example`
 - `.gitattributes`
@@ -40,7 +40,7 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 - `Makefile`
 - `README.md`
 - `data/interim/.gitkeep`
-- *… et 112 autres*
+- *… et 113 autres*
 
 **Ryma Ait** — 10 fichiers
 
@@ -95,12 +95,13 @@ qu'il n'a pas été modifié depuis.
 | `data/reference/retraits_semaine1.csv` | produits sortis du marché | 321 | `3f7c5f20e9f3b808` |
 | `data/reference/name_index_retraits.csv` | dictionnaire des noms retirés | 963 | `0ef1a21b2055ed38` |
 | `data/reference/desaccords_versions.csv` | désaccords entre versions datées | 13 | `26c6e5d96d5c79c0` |
-| `data/reference/drugs_40molecules.csv` | table produit, 38 molécules | 914 | `36a32960f9be83df` |
-| `data/reference/name_index_40molecules.csv` | dictionnaire des noms, 38 molécules | 3656 | `da71c31d825fb52a` |
-| `data/reference/equivalents_40molecules.csv` | groupes d'équivalents, 38 molécules | 785 | `4b5ac63f1fd128b8` |
+| `data/reference/drugs_40molecules.csv` | table produit, 38 molécules | 921 | `fe73927c5f39b0e5` |
+| `data/reference/name_index_40molecules.csv` | dictionnaire des noms, 38 molécules | 3684 | `117d4d48a67558fe` |
+| `data/reference/equivalents_40molecules.csv` | groupes d'équivalents, 38 molécules | 789 | `a499da731d9f80dd` |
 | `data/reference/interactions_40molecules.csv` | interactions, 38 molécules | 1493 | `46433ee2695b70f9` |
 | `data/reference/retraits_40molecules.csv` | produits sortis du marché, 38 molécules | 970 | `25f00cac693b2d30` |
 | `data/reference/name_index_retraits_40molecules.csv` | dictionnaire des noms retirés, 38 molécules | 2910 | `2c6bad75572bfa6a` |
+| `data/reference/enrichissement_dzair_40molecules.csv` | champs apportés par dzair-pharma | 785 | `49b245b621700ea1` |
 | `data/reference/desaccords_versions_40molecules.csv` | désaccords entre versions, 38 molécules | 29 | `9bd61ba97811d8da` |
 | `data/reference/mouvements_versions_40molecules.csv` | produits apparus et disparus entre versions | 61 | `beb47858364d963f` |
 | `data/reference/source_registry.yaml` | registre des sources et conformité | — | `7598d2ff635b20d1` |
@@ -138,6 +139,7 @@ Code de sortie : **0** — tous les tests passent.
 ## 5. Les vingt derniers commits
 
 ```
+56854c3  2026-11-19  14an  feat(collect): utiliser les 45 fichiers de la collecte, pas 3
 b9c7d0c  2026-11-19  14an  docs(explorations): le parcours des 3 664 PDF, etape par etape
 e0fd570  2026-11-19  14an  docs: apprendre a traiter des donnees, du debut a la fin
 c7e459d  2026-11-19  14an  feat(scripts): voir fichier par fichier qui a ecrit quoi
@@ -157,7 +159,6 @@ c37dc2f  2026-11-17  14an  docs(journal): ajouter les sept parties qui manquaien
 6c9d855  2026-11-17  14an  feat(retrieve): ouvrir le corpus aux 38 molecules
 f9a7d80  2026-11-17  14an  docs: remettre a jour le suivi du retour de l'enseignant
 5ed712f  2026-11-17  14an  style(substance): raccourcir un commentaire laisse en double
-85d39f8  2026-11-17  14an  fix(equivalents): montrer la DCI reelle de chaque produit, et ses sels
 ```
 
 ---

@@ -118,6 +118,7 @@ INTERACTIONS = REFERENCE / "interactions_semaine1.csv"
 CONFLICTS = REFERENCE / "conflits_semaine1.csv"
 RETRAITS = REFERENCE / "retraits_semaine1.csv"
 NOMS_RETIRES = REFERENCE / "name_index_retraits.csv"
+ENRICHI = REFERENCE / "enrichissement_dzair_semaine1.csv"
 
 
 def rediriger_sorties(suffixe: str) -> None:
@@ -133,7 +134,7 @@ def rediriger_sorties(suffixe: str) -> None:
     jeux coexistent, et on peut les comparer.
     """
     global PRODUCTS, NAME_INDEX, EQUIVALENTS, INTERACTIONS, CONFLICTS, RETRAITS
-    global NOMS_RETIRES
+    global NOMS_RETIRES, ENRICHI
     if not suffixe:
         return
     # Le suffixe remplace "_semaine1" quand il est present, sinon il s'ajoute.
@@ -148,6 +149,7 @@ def rediriger_sorties(suffixe: str) -> None:
     CONFLICTS = nommer("conflits_semaine1")
     RETRAITS = nommer("retraits_semaine1")
     NOMS_RETIRES = nommer("name_index_retraits")
+    ENRICHI = nommer("enrichissement_dzair_semaine1")
 
 # Les colonnes du livrable produit.
 #
@@ -573,6 +575,68 @@ def conflits_de_retrait(report, retires: list[dict]) -> list[list[str]]:
     return lignes
 
 
+ENRICHI_FIELDS = [
+    "registration_no", "brand_name", "code_atc", "origine_fabrication",
+    "voie_administration", "criticite", "rcp_officiel_url",
+    "nb_generiques_annonces", "nb_interactions", "source", "autorite", "url",
+]
+
+
+def write_enrichissement(catalogue: Catalogue, dzair_products: list) -> dict:
+    """Les champs que dzair-pharma apporte et que la nomenclature n'a PAS.
+
+    Pourquoi une table a part, et pas des colonnes du catalogue
+    -----------------------------------------------------------
+    Le catalogue est bati sur la nomenclature nationale, rang 3. Y ajouter
+    des colonnes venues d'un site professionnel, rang 1, melangerait deux
+    niveaux d'autorite dans un meme fichier : un lecteur ne saurait plus
+    quelle ligne fait foi.
+
+    Cette table se joint au catalogue par le numero d'enregistrement, et
+    chaque ligne porte sa source et son rang. Un pharmacien voit donc
+    exactement d'ou vient chaque information.
+
+    Ce qu'elle apporte, mesure du 19/11/2026 :
+
+        code ATC                 1 320 produits   classification internationale
+        origine de fabrication   1 527            repond au code statut F / I
+        voie d'administration    1 478            explicite, non deduite
+        criticite                   46            « Critique », bareme non publie
+        lien RCP officiel           21            rcp.anpp.dz, c'est-a-dire RANG 4
+
+    Les 21 liens sont les plus precieux : ils pointent vers les RCP de
+    l'ANPP, l'autorite la plus haute de notre echelle, dont nous n'avions
+    que cinq documents.
+    """
+    par_numero = {_sans_ponctuation(p.registration_no): p for p in dzair_products}
+    lignes, comptes = [], {"atc": 0, "origine": 0, "voie": 0,
+                           "critique": 0, "rcp": 0, "apparies": 0}
+
+    for produit in catalogue.products:
+        d = par_numero.get(_sans_ponctuation(produit.registration_no))
+        if d is None:
+            continue
+        comptes["apparies"] += 1
+        comptes["atc"] += bool(d.atc_code)
+        comptes["origine"] += bool(d.origin)
+        comptes["voie"] += bool(d.route)
+        comptes["critique"] += bool(d.criticality)
+        comptes["rcp"] += bool(d.has_official_leaflet)
+        lignes.append([
+            produit.registration_no, produit.brand_name, d.atc_code, d.origin,
+            d.route, d.criticality,
+            d.rcp_pdf_url if d.has_official_leaflet else "",
+            len(d.generics), len(d.interactions),
+            "dzair_pharma", "professionnelle (rang 1)", d.url,
+        ])
+
+    with open(ENRICHI, "w", encoding="utf-8", newline="") as fh:
+        writer = csv.writer(fh)
+        writer.writerow(ENRICHI_FIELDS)
+        writer.writerows(sorted(lignes))
+    return comptes
+
+
 def write_conflicts(report, conflits_retrait: list[list[str]] | None = None) -> int:
     lignes_retrait = conflits_retrait or []
     with open(CONFLICTS, "w", encoding="utf-8", newline="") as fh:
@@ -715,6 +779,16 @@ def main() -> int:
     print(f"[6] Interactions : {n_written} uniques -> {INTERACTIONS.name}")
     for level, count in sorted(levels.items(), key=lambda kv: -kv[1]):
         print(f"      {count:>5}  {level}")
+
+    enrichi = write_enrichissement(catalogue, dzair)
+    print("")
+    print(f"[6b] Enrichissement par dzair-pharma -> {ENRICHI.name}")
+    print(f"      {enrichi['apparies']} produits du catalogue appariés")
+    print(f"      code ATC               {enrichi['atc']:>5}")
+    print(f"      origine de fabrication {enrichi['origine']:>5}   (répond au code F / I)")
+    print(f"      voie d'administration  {enrichi['voie']:>5}")
+    print(f"      marqués « Critique »   {enrichi['critique']:>5}")
+    print(f"      lien RCP officiel ANPP {enrichi['rcp']:>5}   <- RANG 4, la plus haute autorité")
 
     report = compare_all(catalogue.products, dzair)
     retires_dzair = conflits_de_retrait(report, retires)

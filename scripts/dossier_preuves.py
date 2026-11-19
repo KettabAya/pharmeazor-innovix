@@ -42,6 +42,7 @@ LIVRABLES = [
     ("data/reference/interactions_40molecules.csv", "interactions, 38 molécules"),
     ("data/reference/retraits_40molecules.csv", "produits sortis du marché, 38 molécules"),
     ("data/reference/name_index_retraits_40molecules.csv", "dictionnaire des noms retirés, 38 molécules"),
+    ("data/reference/enrichissement_dzair_40molecules.csv", "champs apportés par dzair-pharma"),
     ("data/reference/desaccords_versions_40molecules.csv", "désaccords entre versions, 38 molécules"),
     ("data/reference/mouvements_versions_40molecules.csv", "produits apparus et disparus entre versions"),
     ("data/reference/source_registry.yaml", "registre des sources et conformité"),
