@@ -173,3 +173,32 @@ soir. Trois minutes de message auraient suffi à l'éviter.
 
 Si `git status` vous montre des centaines de fichiers, c'est que l'un de ces
 dossiers s'est glissé dedans. **Ne poussez pas**, demandez d'abord.
+
+---
+
+# Voir tout mon travail d'un coup
+
+```
+python scripts/mon_travail.py
+```
+
+Il liste **chaque fichier suivi par git**, rangé par famille, avec qui l'a
+écrit. Trois choses y sont distinguées, et c'est tout l'intérêt :
+
+| | |
+|---|---|
+| `moi` | le dernier commit sur ce fichier est le mien |
+| `<- Prénom` | c'est le fichier de quelqu'un d'autre |
+| `[partagé : N lignes de moi, M des autres]` | on y a touché à deux — le compte de lignes est plus honnête que le dernier commit |
+| `[produit par une commande]` | ce n'est pas du code écrit à la main, c'est un **résultat** : sa valeur est d'être reproductible |
+
+La dernière section liste ce qui est **sur ma machine mais pas sur GitHub** —
+les classeurs du ministère, les exports dzair, les corpus. Ils sont écartés par
+`.gitignore` parce qu'ils sont lourds et re-téléchargeables. Conséquence à
+connaître : **personne d'autre ne peut relancer la chaîne sans eux.**
+
+Pour en garder une copie à montrer :
+
+```
+python scripts/mon_travail.py --sortie MON-TRAVAIL.md
+```
