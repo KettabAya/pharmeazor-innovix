@@ -1,12 +1,12 @@
 # Dossier de preuves — Pharmeazor
 
-Généré le **18/11/2026 à 23:57** depuis le dépôt lui-même.
+Généré le **19/11/2026 à 01:33** depuis le dépôt lui-même.
 Aucune valeur n'est saisie à la main : tout est relevé à l'exécution.
 
 - Dépôt : `https://github.com/KettabAya/pharmeazor-innovix.git`
 - Branche : `main`
-- Commit : `3984026`
-- Total : **96 commits**, 134 fichiers suivis
+- Commit : `2d97e80`
+- Total : **97 commits**, 134 fichiers suivis
 
 ---
 
@@ -17,14 +17,14 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 
 | Auteur | Commits | Lignes ajoutées | Lignes retirées | Première | Dernière |
 |---|---:|---:|---:|---|---|
-| **Kettab Aya** | 64 | +30,497 | −6,184 | 2026-11-10 | 2026-11-18 |
+| **Kettab Aya** | 65 | +31,031 | −6,184 | 2026-11-10 | 2026-11-18 |
 | **Ryma Ait** | 15 | +297 | −56 | 2026-11-13 | 2026-11-14 |
 | **aya** | 9 | +324 | −18 | 2026-11-13 | 2026-11-13 |
 | **alaa** | 1 | +2,858 | −0 | 2026-11-18 | 2026-11-18 |
 
 ### Fichiers touchés par chaque personne
 
-**Kettab Aya** — 113 fichiers
+**Kettab Aya** — 115 fichiers
 
 - `.env.example`
 - `.gitattributes`
@@ -40,7 +40,7 @@ empreinte : ces chiffres ne sont pas déclarés, ils sont constatés.
 - `Makefile`
 - `README.md`
 - `data/interim/.gitkeep`
-- *… et 99 autres*
+- *… et 101 autres*
 
 **Ryma Ait** — 10 fichiers
 
@@ -88,11 +88,19 @@ qu'il n'a pas été modifié depuis.
 
 | Fichier | Contenu | Lignes | Empreinte |
 |---|---|---:|---|
-| `data/reference/drugs_semaine1.csv` | table produit nettoyée | 284 | `2abb8b48cb820e36` |
-| `data/reference/name_index.csv` | dictionnaire des noms | 1136 | `3a2c9bb7cb59cc56` |
-| `data/reference/equivalents_semaine1.csv` | groupes d'équivalents | 242 | `eb659e61a1b49c6a` |
-| `data/reference/interactions_semaine1.csv` | interactions avec niveau ANSM | 87 | `3a4d655889ddc836` |
+| `data/reference/drugs_semaine1.csv` | table produit nettoyée | 284 | `0c45a08e4006abf7` |
+| `data/reference/name_index.csv` | dictionnaire des noms | 1136 | `155c4160ffb412f1` |
+| `data/reference/equivalents_semaine1.csv` | groupes d'équivalents | 246 | `a267b1e38826fef2` |
+| `data/reference/interactions_semaine1.csv` | interactions avec niveau ANSM | 87 | `55180b7af231b717` |
+| `data/reference/retraits_semaine1.csv` | produits sortis du marché | 321 | `3f7c5f20e9f3b808` |
 | `data/reference/desaccords_versions.csv` | désaccords entre versions datées | 13 | `076d777a71ca7667` |
+| `data/reference/drugs_40molecules.csv` | table produit, 38 molécules | 914 | `36a32960f9be83df` |
+| `data/reference/name_index_40molecules.csv` | dictionnaire des noms, 38 molécules | 3656 | `da71c31d825fb52a` |
+| `data/reference/equivalents_40molecules.csv` | groupes d'équivalents, 38 molécules | 784 | `95e01360e2b0b5fd` |
+| `data/reference/interactions_40molecules.csv` | interactions, 38 molécules | 256 | `1cbe9a5fac73ea8a` |
+| `data/reference/retraits_40molecules.csv` | produits sortis du marché, 38 molécules | 970 | `25f00cac693b2d30` |
+| `data/reference/desaccords_versions_40molecules.csv` | désaccords entre versions, 38 molécules | 29 | `517bb7c05686247f` |
+| `data/reference/mouvements_versions_40molecules.csv` | produits apparus et disparus entre versions | 61 | `beb47858364d963f` |
 | `data/reference/source_registry.yaml` | registre des sources et conformité | — | `7598d2ff635b20d1` |
 | `data/reference/documents_a_collecter.csv` | liste de collecte des notices | 18 | `e620d7233cd39f8a` |
 | `eval/llm_alone_test.json` | trace du test du modèle seul | — | `d17e6983bdb19967` |
@@ -103,10 +111,10 @@ qu'il n'a pas été modifié depuis.
 ## 3. Suite de tests
 
 ```
-........................................................................ [ 32%]
-........................................................................ [ 64%]
-........................................................................ [ 96%]
-.........                                                                [100%]
+........................................................................ [ 28%]
+........................................................................ [ 56%]
+........................................................................ [ 85%]
+......................................                                   [100%]
 ```
 
 Code de sortie : **0** — tous les tests passent.
@@ -128,6 +136,7 @@ Code de sortie : **0** — tous les tests passent.
 ## 5. Les vingt derniers commits
 
 ```
+2d97e80  2026-11-18  14an  fix(normalize): lire les DCI ecrites sel-d'abord
 3984026  2026-11-18  14an  feat(docs): assembler tout le dossier en un seul PDF
 73001d3  2026-11-18  14an  scripts de collecte : PharmNet, ANSM BDPM, dzair-pharma, audit robots
 4c66720  2026-11-18  14an  docs: un guide git en quatre commandes
@@ -147,7 +156,6 @@ ffd2c68  2026-11-17  14an  fix(catalogue): la voie d'administration prime sur la
 e9c7a09  2026-11-17  14an  fix(normalize): lire les conditionnements mesures et unifier les sels
 9560663  2026-11-17  14an  feat(reconcile): carte de couverture, pour ne sortir d'Algerie qu'au besoin
 e750b66  2026-11-17  14an  fix(reconcile): une source etrangere ne peut plus remplacer l'algerienne
-b30bc83  2026-11-16  14an  feat(data): etendre la couverture a 38 molecules sans toucher la semaine 1
 ```
 
 ---

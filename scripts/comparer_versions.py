@@ -33,10 +33,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from pharmeazor.collect.nomenclature import read_workbook  # noqa: E402
+from pharmeazor.config import MOLECULES_PROJET  # noqa: E402
+from pharmeazor.normalize.substance import concerne_molecule  # noqa: E402
 from pharmeazor.reconcile.crosscheck import normalize_value  # noqa: E402
 
 VERSIONS_DIR = ROOT / "data" / "raw" / "nomenclature"
-SORTIE = ROOT / "data" / "reference" / "desaccords_versions.csv"
+REFERENCE = ROOT / "data" / "reference"
+SORTIE = REFERENCE / "desaccords_versions.csv"
+SORTIE_MOUVEMENTS = REFERENCE / "mouvements_versions.csv"
 
 DEFAUT_INN = ("PARACETAMOL", "AMOXICILLINE", "AMLODIPINE")
 
@@ -60,9 +64,12 @@ def charger(cibles: tuple[str, ...]) -> dict[str, dict]:
     versions: dict[str, dict] = {}
     for fichier in sorted(VERSIONS_DIR.glob("*.xlsx")):
         version = fichier.stem.replace("nomenclature_", "")
+        # concerne_molecule et non startswith : « CHLORHYDRATE DE TRAMADOL »
+        # ne commence pas par TRAMADOL, et sortait du suivi de versions sans
+        # que rien ne le signale.
         lignes = [
             r for r in read_workbook(fichier, sheets={"nomenclature"})
-            if not cibles or any(r.inn.upper().startswith(c) for c in cibles)
+            if not cibles or concerne_molecule(r.inn, cibles)
         ]
         versions[version] = {r.registration_no: r for r in lignes if r.registration_no}
         print(f"  {version}  {len(lignes):>5} produits")
@@ -125,7 +132,23 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Comparer les versions de la nomenclature.")
     parser.add_argument("--inn", nargs="*", default=list(DEFAUT_INN),
                         help="DCI a suivre ; vide = toutes.")
+    parser.add_argument("--projet", action="store_true",
+                        help="Suivre les 38 molecules du projet et ecrire sous "
+                             "le suffixe _40molecules.")
+    parser.add_argument("--suffixe", default="",
+                        help="Ecrire les rapports sous ce suffixe, au lieu "
+                             "d'ecraser ceux de la semaine 1.")
     args = parser.parse_args()
+    # Les rapports de la semaine 1 ont ete remis a l'enseignant avec un chiffre
+    # precis : 13 desaccords sur trois molecules. Le suivi elargi s'ecrit donc
+    # a cote, comme le fait deja build_week1.py, pour que les deux coexistent.
+    if args.projet:
+        args.inn = list(MOLECULES_PROJET)
+        args.suffixe = args.suffixe or "_40molecules"
+    global SORTIE, SORTIE_MOUVEMENTS
+    if args.suffixe:
+        SORTIE = REFERENCE / f"desaccords_versions{args.suffixe}.csv"
+        SORTIE_MOUVEMENTS = REFERENCE / f"mouvements_versions{args.suffixe}.csv"
     cibles = tuple(x.upper() for x in args.inn)
 
     fichiers = list(VERSIONS_DIR.glob("*.xlsx"))
@@ -143,6 +166,16 @@ def main() -> int:
             w.writeheader()
             w.writerows(desaccords)
 
+    # Les mouvements etaient comptes et affiches, puis perdus. Un produit qui
+    # apparait ou disparait entre deux publications est pourtant une
+    # information datee et verifiable, au meme titre qu'un champ qui change.
+    with open(SORTIE_MOUVEMENTS, "w", encoding="utf-8", newline="") as fh:
+        champs = ["version_avant", "version_apres", "mouvement",
+                  "n_enregistrement", "marque", "dci"]
+        wm = csv.DictWriter(fh, fieldnames=champs)
+        wm.writeheader()
+        wm.writerows(mouvements)
+
     print(f"\n{'='*58}")
     print(f"DESACCORDS DATABLES : {len(desaccords)}")
     print(f"{'='*58}")
@@ -155,7 +188,8 @@ def main() -> int:
 
     ajouts = sum(1 for m in mouvements if m["mouvement"] == "ajoute")
     retraits = sum(1 for m in mouvements if m["mouvement"] == "retire")
-    print(f"\n  mouvements : {ajouts} produit(s) ajoute(s), {retraits} retire(s)")
+    print(f"\n  mouvements : {ajouts} produit(s) ajoute(s), {retraits} retire(s)"
+          f"  -> {SORTIE_MOUVEMENTS.name}")
 
     print("\n--- trois exemples ---")
     for d in desaccords[:3]:

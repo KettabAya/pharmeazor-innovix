@@ -7,6 +7,7 @@ import pytest
 
 from pharmeazor.normalize.substance import (
     Substance,
+    concerne_molecule,
     normaliser_substance,
     parse_inn,
 )
@@ -214,3 +215,37 @@ class TestLeSelEcritDevantLaBase:
         # Rien ne doit disparaitre quand il n'y a pas de sel devant.
         assert parse_inn("DEXAMETHASONE").cle() == "DEXAMETHASONE"
         assert parse_inn("DESLORATADINE").cle() == "DESLORATADINE"
+
+
+class TestLaRegleDeCorrespondance:
+    """`concerne_molecule` : la regle qui dit si une DCI releve d'une molecule.
+
+    Elle etait reecrite dans trois programmes -- build_week1, comparer_versions
+    et le classement therapeutique -- chacun avec un simple `startswith`. Les
+    trois laissaient donc passer les memes ecritures sel-d'abord. Elle vit
+    maintenant ici, une seule fois, et ces tests la tiennent.
+    """
+
+    def test_l_ecriture_directe_est_reconnue(self):
+        assert concerne_molecule("NEFOPAM", ("NEFOPAM",))
+        assert concerne_molecule("NEFOPAM CHLORHYDRATE", ("NEFOPAM",))
+
+    def test_l_ecriture_sel_d_abord_est_reconnue(self):
+        assert concerne_molecule("CHLORHYDRATE DE NEFOPAM", ("NEFOPAM",))
+        assert concerne_molecule("CHLORHYDRATE DE TRAMADOL", ("TRAMADOL",))
+        assert concerne_molecule("ACETATE DE FLECAINIDE", ("FLECAINIDE",))
+
+    def test_l_ecriture_exprime_en_est_reconnue(self):
+        brut = "ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE"
+        assert concerne_molecule(brut, ("ACIDE ACETYLSALICYLIQUE",))
+
+    def test_une_autre_substance_n_est_pas_retenue(self):
+        assert not concerne_molecule("DEXAMETHASONE", ("NEFOPAM",))
+        assert not concerne_molecule("PARACETAMOL", ("AMOXICILLINE",))
+        assert not concerne_molecule("", ("PARACETAMOL",))
+
+    def test_l_association_est_retenue_par_sa_premiere_substance(self):
+        # Le registre met en tete la substance qui donne son identite au
+        # produit : PARACETAMOL/CODEINE est d'abord un paracetamol.
+        assert concerne_molecule("PARACETAMOL/CODEINE", ("PARACETAMOL",))
+        assert not concerne_molecule("PARACETAMOL/CODEINE", ("CODEINE",))

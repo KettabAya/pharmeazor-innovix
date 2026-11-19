@@ -354,9 +354,10 @@ peut introduire une erreur que l'original n'avait pas. C'est implémenté dans
 | | |
 |---|---|
 | Produits | 284 — 143 antalgiques, 61 antibiotiques, 80 antihypertenseurs |
+| Colonnes | 19 (la durée de stabilité a été ajoutée le 19/11) |
 | Dosages exploitables | **283 / 284** (99,6 %) |
 | Conditionnements exploitables | **207 / 284** (73 %) |
-| Groupes d'équivalents | **46**, couvrant **242** produits |
+| Groupes d'équivalents | **48**, couvrant **246** produits — *revu le 19/11, voir ci-dessous* |
 | Entrées du dictionnaire de noms | **1 136** |
 | Associations détectées | 139 |
 | DCI signalées incertaines | 2 |
@@ -372,13 +373,43 @@ peut introduire une erreur que l'original n'avait pas. C'est implémenté dans
 
 ### Fichiers produits
 
+### Chiffres revus le 19/11/2026
+
+Ce rapport a été écrit le 15/11. Trois défauts de lecture ont été trouvés
+depuis, et corrigés. Ils changent deux chiffres de ce rapport — **vers le
+haut** : ce sont des produits qui auraient dû être regroupés et ne l'étaient
+pas.
+
+| Chiffre | Le 15/11 | Aujourd'hui | Pourquoi |
+|---|---|---|---|
+| Groupes d'équivalents | 46 | **48** | trois corrections, ci-dessous |
+| Produits regroupés | 242 | **246** | idem |
+| Colonnes de `drugs_semaine1.csv` | 18 | **19** | la durée de stabilité était lue puis jetée |
+
+Les trois corrections, chacune retenue par un test :
+
+1. **La voie d'administration prime sur la forme.** Une amoxicilline
+   injectable était rangée en « solution », donc mélangeable avec une solution
+   buvable. Elle a désormais son propre groupe.
+2. **La faute `SUSPENSSION` du registre.** Le ministère écrit tantôt
+   `SUSPENSION`, tantôt `SUSPENSSION` ; l'orthographe fautive tombait dans la
+   famille `POUDRE`. `HIMOXYL` rejoint donc `BIOPAMOX`, qui est bien le même
+   médicament.
+3. **Le sel écrit devant la base.** `CHLORHYDRATE DE …` donnait une clé
+   `DE …`, distincte de la substance. Trois produits manquaient au périmètre
+   élargi, dont un suppositoire de tramadol qui paraissait sans équivalent.
+
+Le nombre de produits (284), le dictionnaire (1 136) et les interactions (87)
+sont inchangés.
+
 | Fichier | Lignes |
 |---|---|
 | `drugs_semaine1.csv` | 284 |
 | `name_index.csv` | 1 136 |
-| `equivalents_semaine1.csv` | 242 |
-| `interactions_semaine1.csv` | 105 |
+| `equivalents_semaine1.csv` | 246 |
+| `interactions_semaine1.csv` | 87 |
 | `desaccords_versions.csv` | 13 |
+| `retraits_semaine1.csv` | 321 |
 | `documents_a_collecter.csv` | 18 |
 
 ### Qualité du code
@@ -400,7 +431,7 @@ ruff  : aucune erreur
 | Collecte rejouable sans doublons | ✅ | `build_week1.py` |
 | Conditions d'utilisation consignées **avant** collecte | ✅ | `assert_collectable()` refuse tant que le relevé est vide |
 | Relier nom commercial, DCI, code, variantes | ✅ | 1 136 entrées |
-| Retrouver les équivalents | ✅ | 46 groupes |
+| Retrouver les équivalents | ✅ | 48 groupes |
 | Cas ambigus signalés, non tranchés | ✅ | `Ambiguity`, testé |
 | **Au moins 10 désaccords réels annotés** | ✅ | **13** |
 | Contrôle des chiffres mot pour mot | ✅ | `number_guard.py`, 12 tests |

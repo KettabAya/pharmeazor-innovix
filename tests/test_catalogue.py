@@ -102,10 +102,29 @@ class TestLoading:
         assert expected > 50
 
     def test_every_product_has_a_therapeutic_class(self, catalogue):
+        """Aucune classe inventee, et aucune case vide.
+
+        Le vocabulaire a ete affine le 19/11/2026. « antalgique_ains »
+        melangeait deux choses : le paracetamol est antalgique mais n'est PAS
+        anti-inflammatoire, et le confondre avec un AINS laisserait croire
+        qu'il en partage les contre-indications digestives et renales. Les
+        diuretiques et les betabloquants, de meme, abaissent la tension sans
+        rien partager de leurs effets indesirables.
+        """
         classes = {p.therapeutic_class for p in catalogue.products}
         assert classes
         assert "" not in classes
-        assert classes <= {"antalgique_ains", "antibiotique", "antihypertenseur"}
+        assert classes <= {
+            "antalgique", "ains", "antibiotique",
+            "antihypertenseur", "diuretique", "betabloquant",
+        }
+
+    def test_le_paracetamol_n_est_pas_range_avec_les_ains(self, catalogue):
+        """Defaut corrige le 19/11/2026 : il l'etait depuis la semaine 1."""
+        paracetamols = [p for p in catalogue.products
+                        if p.inn.upper().startswith("PARACETAMOL")]
+        assert paracetamols, "le jeu de test ne contient aucun paracetamol"
+        assert {p.therapeutic_class for p in paracetamols} == {"antalgique"}
 
     def test_strengths_were_parsed_for_the_vast_majority(self, catalogue):
         parsed = sum(1 for p in catalogue.products if p.strength.parsed)

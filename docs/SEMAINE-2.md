@@ -57,7 +57,7 @@ python scripts/construire_corpus.py
 |---|---:|---|
 | produits | 284 | dosage, forme, conditionnement, laboratoire, DCI d'une marque |
 | interactions | 87 | « peut-on associer X et Y ? », avec le niveau ANSM |
-| équivalents | 46 | « par quoi remplacer X en rupture ? » |
+| équivalents | 48 | « par quoi remplacer X en rupture ? » |
 
 Ce n'est pas un pis-aller. La nomenclature est une source **officielle de
 rang 3**, et ces questions sont de vraies questions de pharmacien. Les RCP

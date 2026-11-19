@@ -14,6 +14,7 @@ from pharmeazor.retrieve.passages import (
     passages_equivalents,
     passages_interactions,
     passages_produits,
+    passages_retraits,
 )
 from pharmeazor.schemas import Authority, Citation
 
@@ -152,3 +153,75 @@ def test_une_interaction_sans_cible_est_ignoree():
         "url": "",
     }
     assert list(passages_interactions([ligne])) == []
+
+
+LIGNE_RETRAIT = {
+    "registration_no": "053/03 A 001/97",
+    "inn": "ACIDE ACETYLSALICYLIQUE",
+    "brand_name": "ASPIRINE PH8",
+    "form": "COMP.GASTRORESIST.",
+    "strength_raw": "500MG",
+    "packaging_raw": "B/30",
+    "lab_name": "3M SANTE",
+    "date_initial": "1997-01-01",
+    "date_final": "2011-05-08",
+    "withdrawal_date": "2011-05-08",
+    "withdrawal_reason": "RETRAIT PAR LE MSPRH POUR INTERDICTION D'IMPORTATION",
+    "source_version": "2026-08",
+    "source_sheet": "retraits",
+}
+
+
+class TestLesProduitsSortisDuMarche:
+    """Un produit retire doit pouvoir etre RECONNU, jamais PROPOSE.
+
+    Ces passages existent pour que « c'est quoi, ASPIRINE PH8 ? » obtienne une
+    reponse datee et sourcee, au lieu d'un silence qui se lit « je ne sais
+    pas ». Ils ne doivent pour autant jamais ressembler a une offre.
+    """
+
+    def test_le_passage_dit_d_abord_que_le_produit_n_est_plus_enregistre(self):
+        p = next(passages_retraits([LIGNE_RETRAIT]))
+        assert p.text.startswith("ASPIRINE PH8 N'EST PLUS")
+
+    def test_la_date_et_le_motif_sont_recopies_tels_quels(self):
+        p = next(passages_retraits([LIGNE_RETRAIT]))
+        assert "2011-05-08" in p.text
+        assert "RETRAIT PAR LE MSPRH POUR INTERDICTION D'IMPORTATION" in p.text
+
+    def test_le_passage_interdit_explicitement_de_le_delivrer(self):
+        p = next(passages_retraits([LIGNE_RETRAIT]))
+        assert "ne doit pas être délivré" in p.text
+        assert "ne peut pas servir d'équivalent" in p.text
+
+    def test_un_enregistrement_non_renouvele_se_dit_autrement_qu_un_retrait(self):
+        ligne = dict(LIGNE_RETRAIT, source_sheet="non_renouveles",
+                     withdrawal_date="", withdrawal_reason="")
+        p = next(passages_retraits([ligne]))
+        assert "n'a pas été renouvelé" in p.text
+        assert "N'EST PLUS" not in p.text
+
+    def test_l_autorite_reste_celle_de_la_nomenclature(self):
+        p = next(passages_retraits([LIGNE_RETRAIT]))
+        assert p.provenance.authority is Authority.NOMENCLATURE
+        assert p.section == "retrait"
+
+    def test_un_champ_vide_ne_produit_aucune_phrase(self):
+        ligne = dict(LIGNE_RETRAIT, withdrawal_date="", withdrawal_reason="",
+                     lab_name="", form="")
+        p = next(passages_retraits([ligne]))
+        assert "retiré le ." not in p.text
+        assert "Motif" not in p.text
+        assert "produit par" not in p.text
+
+    def test_les_nombres_restent_citables_mot_pour_mot(self):
+        p = next(passages_retraits([LIGNE_RETRAIT]))
+        citation = Citation(passage=p, quote="Son dosage était 500MG.")
+        assert citation.quote in p.text
+        with pytest.raises(ValueError):
+            Citation(passage=p, quote="Son dosage était 999MG.")
+
+    def test_deux_produits_de_meme_numero_gardent_des_identifiants_distincts(self):
+        jumeau = dict(LIGNE_RETRAIT, brand_name="ASPIRINE PH8 BIS")
+        passages = list(passages_retraits([LIGNE_RETRAIT, jumeau]))
+        assert len({p.passage_id for p in passages}) == 2

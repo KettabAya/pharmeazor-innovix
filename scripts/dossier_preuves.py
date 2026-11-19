@@ -31,7 +31,17 @@ LIVRABLES = [
     ("data/reference/name_index.csv", "dictionnaire des noms"),
     ("data/reference/equivalents_semaine1.csv", "groupes d'équivalents"),
     ("data/reference/interactions_semaine1.csv", "interactions avec niveau ANSM"),
+    ("data/reference/retraits_semaine1.csv", "produits sortis du marché"),
     ("data/reference/desaccords_versions.csv", "désaccords entre versions datées"),
+    # Le périmètre élargi aux 38 molécules. Il coexiste avec la semaine 1 :
+    # les deux jeux sont livrés, et leurs empreintes distinctes le prouvent.
+    ("data/reference/drugs_40molecules.csv", "table produit, 38 molécules"),
+    ("data/reference/name_index_40molecules.csv", "dictionnaire des noms, 38 molécules"),
+    ("data/reference/equivalents_40molecules.csv", "groupes d'équivalents, 38 molécules"),
+    ("data/reference/interactions_40molecules.csv", "interactions, 38 molécules"),
+    ("data/reference/retraits_40molecules.csv", "produits sortis du marché, 38 molécules"),
+    ("data/reference/desaccords_versions_40molecules.csv", "désaccords entre versions, 38 molécules"),
+    ("data/reference/mouvements_versions_40molecules.csv", "produits apparus et disparus entre versions"),
     ("data/reference/source_registry.yaml", "registre des sources et conformité"),
     ("data/reference/documents_a_collecter.csv", "liste de collecte des notices"),
     ("eval/llm_alone_test.json", "trace du test du modèle seul"),

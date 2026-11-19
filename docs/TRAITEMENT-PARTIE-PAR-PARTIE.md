@@ -372,9 +372,166 @@ un fichier avec lui-même.
 
 J'ai déplacé la comparaison vers les **cinq versions datées** du registre.
 
-**13 désaccords datés et traçables** : telle valeur a changé entre telle et
+**29 désaccords datés et traçables** : telle valeur a changé entre telle et
 telle version. C'est plus solide qu'une comparaison entre deux sites, parce que
 chaque écart porte une date.
+
+```
+13  conditionnement
+ 8  laboratoire
+ 7  date de fin de validité
+ 1  forme
+```
+
+Plus **61 mouvements** : 39 produits apparus, 22 disparus entre décembre et
+août — écrits dans `mouvements_versions_40molecules.csv`.
+
+> **Corrigé le 19/11.** Le script avait une liste par défaut de trois
+> molécules, et je le lançais sans la préciser : j'annonçais 13 désaccords.
+> Ils étaient vrais — pour trois molécules sur trente-huit. Les 13 de la
+> semaine 1 restent dans `desaccords_versions.csv`, les 29 du périmètre
+> complet dans `desaccords_versions_40molecules.csv`.
+
+---
+
+# 10 · Les produits sortis du marché — ajouté le 19/11
+
+## Comment
+
+En relisant ma propre chaîne, j'ai compté les onglets du fichier du ministère.
+Il y en a **trois**. Je n'en lisais qu'un.
+
+| Onglet | Lignes | Dont mes 38 molécules |
+|---|---:|---:|
+| `Nomenclature` | 5 425 | **914** |
+| `Non Renouvelés` | 1 491 | **302** |
+| `Retraits` | 2 679 | **668** |
+
+## Ce que j'ai trouvé
+
+**970 produits de mes molécules existaient dans le fichier officiel et
+n'étaient nulle part chez moi.** Avec leur date de retrait et leur motif :
+
+```
+ASPIRINE PH8    retiré le 2011-05-08
+                RETRAIT PAR LE MSPRH POUR INTERDICTION D'IMPORTATION
+```
+
+À la question « c'est quoi, ASPIRINE PH8 ? », ma base ne répondait rien. Or
+« je ne sais pas » et « il a été interdit en 2011 » ne sont pas la même
+réponse. Le premier est un trou **non documenté** — exactement ce que tout le
+reste de mon traitement s'interdit.
+
+## Comment je l'ai traité
+
+**Surtout pas dans le catalogue.** Un produit retiré ne doit jamais ressortir
+comme équivalent : ce serait envoyer un pharmacien chercher une boîte interdite.
+Le catalogue reste la liste de ce qui est enregistré aujourd'hui.
+
+Ils vont dans une table à part, `retraits_40molecules.csv`, et dans le corpus
+sous une forme qui commence toujours par le refus :
+
+> *ASPIRINE PH8 **N'EST PLUS** un médicament enregistré en Algérie. Il a été
+> retiré le 2011-05-08. Motif du retrait : RETRAIT PAR LE MSPRH POUR
+> INTERDICTION D'IMPORTATION. […] Ce produit ne doit pas être délivré et ne
+> peut pas servir d'équivalent.*
+
+Un enregistrement non renouvelé se dit autrement qu'un retrait : ce n'est pas
+la même décision.
+
+**Le corpus passe de 1 323 à 2 293 passages.**
+
+> *« Reconnaître un produit et le proposer sont deux choses différentes. Ma
+> base devait savoir les distinguer, et elle ne le savait pas. »*
+
+---
+
+# 11 · Les trois autres défauts trouvés le 19/11
+
+## La durée de stabilité était lue puis jetée
+
+`DUREE DE STABILITE` — combien de temps le médicament se conserve — est
+renseignée pour **857 produits sur 914**. Mon lecteur la lisait. Ma liste de
+colonnes de sortie en comptait 18, et celle-là n'y était pas : la valeur
+arrivait jusqu'au dernier pas du traitement et y était abandonnée. **19
+colonnes** maintenant.
+
+## Le classement thérapeutique était resté en semaine 1
+
+La table des classes avait **5 entrées**, écrites pour 3 molécules. Résultat :
+**510 produits sur 914** sortaient `non_classe` — tous les antibiotiques sauf
+l'amoxicilline, tous les antihypertenseurs sauf l'amlodipine.
+
+Le code ne protestait pas, et c'est *parce qu'il est prudent* : face à une
+substance qu'il ne connaît pas, il écrit `non_classe` au lieu de deviner.
+L'erreur était silencieuse à cause de la règle qui nous protège ailleurs.
+
+J'en ai profité pour affiner le vocabulaire :
+
+| Avant | Maintenant | Pourquoi |
+|---|---|---|
+| `antalgique_ains` | `antalgique` **et** `ains` | le paracétamol n'est pas un anti-inflammatoire ; le ranger avec les AINS laisse croire qu'il en partage les contre-indications digestives et rénales |
+| `antihypertenseur` seul | + `diuretique`, `betabloquant` | ils abaissent tous la tension, mais leurs effets indésirables et leurs surveillances n'ont rien à voir |
+
+**0 produit non classé sur 914.**
+
+## Un « commence par » affichait des chiffres faux
+
+Le défaut du néfopam survivait à trois autres endroits — non pas dans le
+filtre, mais dans ce qui **compte** et **affiche**. L'écran annonçait
+`NEFOPAM 0`, `TRAMADOL 15`, et la somme des lignes faisait 911 pour un fichier
+de 914.
+
+Les données étaient justes et l'affichage disait le contraire : le pire des
+deux mondes pour une démonstration.
+
+La règle vit maintenant à un seul endroit, `concerne_molecule`, avec ses
+tests. Et l'affichage distingue deux colonnes, parce qu'un simple total se lit
+de travers :
+
+```
+TRIMETHOPRIME            0   (antibiotique) +   8 en association
+HYDROCHLOROTHIAZIDE      0   (diuretique)   +  68 en association
+```
+
+Ces deux-là ne sont **jamais** la substance de tête : elles n'existent au
+registre qu'en association. Afficher « 0 » tout court laissait croire à une
+molécule manquante.
+
+## Le suivi de versions était resté sur 3 molécules
+
+`comparer_versions.py` avait une liste par défaut de trois molécules, et je le
+lançais sans préciser. Les 13 désaccords étaient vrais — pour trois molécules.
+
+Sur les 38 : **29 désaccords**, et **61 mouvements** (39 produits apparus, 22
+disparus entre décembre et août) que rien n'enregistrait.
+
+---
+
+# 12 · Le lecteur du classeur est enfin testé
+
+Sur les 225 tests, **aucun** n'appelait `collect/nomenclature.py` — la
+fondation de toute la chaîne. Parce qu'il faut un vrai fichier Excel pour
+l'exercer, et qu'un fichier Excel est plus long à fabriquer qu'une chaîne de
+caractères.
+
+`tests/test_nomenclature.py` fabrique donc un classeur d'essai qui **imite les
+défauts du vrai** : bloc à en-tête de treize lignes avant les titres, trois
+onglets, et surtout les colonnes de `Retraits` **dans un autre ordre**.
+
+Le test qui compte :
+
+```python
+def test_le_laboratoire_est_un_laboratoire_et_non_une_date(self, classeur):
+    retrait = next(r for r in read_workbook(classeur, sheets={"retraits"}))
+    assert retrait.lab_name == "LABORATOIRES PHARMA"
+```
+
+Lu par position, ce champ vaudrait `2001-01-01`. Le test mord vraiment.
+
+C'était le critère que mon propre plan avait fixé en semaine 1, et qui n'était
+pas rempli.
+
 
 ---
 
@@ -401,12 +558,15 @@ Répondez franchement — c'est ce qui donne du poids au reste.
 # LES CHIFFRES À SAVOIR PAR CŒUR
 
 ```
-914   produits traités
+914   produits traités          0 non classé
 134   substances distinctes
 913   dosages lus       (99,9 %)
 790   conditionnements  (86,4 %, dont 98 refus volontaires)
 3656  entrées au dictionnaire
 153   groupes d'équivalents
- 13   désaccords entre versions   (il en demandait 10)
-225   tests, en une seconde
+970   produits sortis du marché, avec date et motif
+2293  passages interrogeables
+ 29   désaccords entre versions   (il en demandait 10)
+ 61   mouvements entre décembre et août
+254   tests, en une seconde
 ```

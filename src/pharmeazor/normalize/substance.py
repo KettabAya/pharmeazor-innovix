@@ -39,7 +39,7 @@ import unicodedata
 from dataclasses import dataclass, field
 from functools import lru_cache
 
-__all__ = ["Substance", "parse_inn", "normaliser_substance"]
+__all__ = ["Substance", "parse_inn", "normaliser_substance", "concerne_molecule"]
 
 # "X <sel> EXPRIME EN Y" / "EXPRIMEE EN" / "EXPRIMES EN" : Y est la base.
 _EXPRIME_EN = re.compile(r"\bEXPRIM\w*\s+EN\s+(?P<base>.+)$", re.I)
@@ -236,3 +236,28 @@ def parse_inn(valeur: str | None) -> Substance:
         incertain=incertain,
         motif="+".join(dict.fromkeys(motifs)),
     )
+
+
+def concerne_molecule(inn: str | None, cibles: tuple[str, ...]) -> bool:
+    """La DCI releve-t-elle d'une des molecules visees ?
+
+    La regle est ecrite ici, une seule fois, parce que trois programmes en
+    avaient besoin et que chacun l'avait reecrite a sa facon -- avec un simple
+    ``startswith`` qui laissait passer les ecritures sel-d'abord.
+
+    Le test porte d'abord sur le texte tel que le ministere l'ecrit, puis sur
+    la BASE lue par :func:`parse_inn` :
+
+        NEFOPAM CHLORHYDRATE      commence par NEFOPAM   -> retenu
+        CHLORHYDRATE DE NEFOPAM   commence par CHLOR...  -> retenu par la base
+
+    >>> concerne_molecule("CHLORHYDRATE DE NEFOPAM", ("NEFOPAM",))
+    True
+    >>> concerne_molecule("DEXAMETHASONE", ("NEFOPAM",))
+    False
+    """
+    texte = (inn or "").upper()
+    if any(texte.startswith(c) for c in cibles):
+        return True
+    base = parse_inn(inn).base.upper()
+    return any(base.startswith(c) for c in cibles)

@@ -44,6 +44,7 @@ from pharmeazor.schemas import Authority, Passage, Provenance
 __all__ = [
     "MIPH_URL",
     "passages_produits",
+    "passages_retraits",
     "passages_equivalents",
     "passages_interactions",
     "construire_corpus",
@@ -151,6 +152,71 @@ def passages_produits(lignes: list[dict[str, str]] | None = None,
             text=_phrase(corps),
             provenance=_provenance_nomenclature(ligne["source_version"]),
             section="produit",
+        )
+
+
+def passages_retraits(lignes: list[dict[str, str]] | None = None,
+                      suffixe: str = "") -> Iterator[Passage]:
+    """Un passage par produit sorti du marche.
+
+    Pourquoi ils sont dans le corpus alors qu'ils ne sont pas dans le catalogue
+    --------------------------------------------------------------------------
+    Un produit retire ne doit jamais etre propose comme equivalent : il n'est
+    donc pas dans `drugs_*.csv`, et aucun groupe d'equivalents ne peut le faire
+    remonter.
+
+    Mais ne pas savoir qu'il a existe est un autre probleme. Sans ces passages,
+    « c'est quoi, ASPIRINE PH8 ? » n'obtenait rien -- un silence qui se lit
+    « je ne sais pas », alors que le registre dit « retire le 2011-05-08, par
+    le MSPRH, pour interdiction de la substance ». Les deux reponses n'ont pas
+    du tout le meme sens pour un pharmacien.
+
+    Chaque passage commence donc par dire que le produit n'est plus
+    enregistre. C'est la premiere chose a lire, avant le dosage et la forme.
+    """
+    lignes = lignes if lignes is not None else _lire("retraits_semaine1.csv", suffixe)
+    # Le rang sert d'identifiant : deux produits peuvent partager un numero
+    # d'enregistrement -- c'est un cas reel du registre, deja constate sur la
+    # feuille principale -- et deux passages de meme identifiant fausseraient
+    # la comparaison entre methodes de recherche.
+    for rang, ligne in enumerate(lignes, 1):
+        marque = ligne["brand_name"]
+        retire = ligne["source_sheet"] == "retraits"
+
+        tete = (f"{marque} N'EST PLUS un médicament enregistré en Algérie."
+                if retire else
+                f"{marque} n'est plus enregistré en Algérie : son "
+                "enregistrement n'a pas été renouvelé.")
+        corps = [tete]
+        if ligne["withdrawal_date"]:
+            corps.append(f"Il a été retiré le {ligne['withdrawal_date']}.")
+        if ligne["withdrawal_reason"]:
+            corps.append(f"Motif du retrait : {ligne['withdrawal_reason']}.")
+        if ligne["inn"]:
+            corps.append(f"Sa substance active (DCI) était {ligne['inn']}.")
+        if ligne["form"]:
+            corps.append(f"Il se présentait sous forme de {ligne['form']}.")
+        if ligne["strength_raw"]:
+            corps.append(f"Son dosage était {ligne['strength_raw']}.")
+        if ligne["lab_name"]:
+            corps.append(f"Il était produit par {ligne['lab_name']}.")
+        if ligne["registration_no"]:
+            corps.append(f"Son numéro d'enregistrement était {ligne['registration_no']}.")
+        corps.append(
+            "Ce produit ne doit pas être délivré et ne peut pas servir "
+            "d'équivalent."
+        )
+        corps.append(
+            f"Source : nomenclature nationale, version {ligne['source_version']}, "
+            f"feuille {ligne['source_sheet']}."
+        )
+
+        yield Passage(
+            passage_id=f"nom-retrait-{rang:04d}",
+            doc_id=f"nomenclature-{ligne['source_version']}",
+            text=_phrase(corps),
+            provenance=_provenance_nomenclature(ligne["source_version"]),
+            section="retrait",
         )
 
 
@@ -268,6 +334,7 @@ def construire_corpus(suffixe: str = "") -> list[Passage]:
     """
     corpus = [
         *passages_produits(suffixe=suffixe),
+        *passages_retraits(suffixe=suffixe),
         *passages_equivalents(suffixe=suffixe),
         *passages_interactions(suffixe=suffixe),
     ]

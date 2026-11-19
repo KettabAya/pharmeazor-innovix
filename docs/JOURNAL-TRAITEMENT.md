@@ -8,7 +8,7 @@ Ce document se remplit au fur et à mesure. Il sert de matière première au
 rapport : le cahier des charges demande des chiffres, pas des impressions.
 
 **Source principale examinée** : `data/reference/drugs_semaine1.csv` — 284
-produits, 18 colonnes, extraits de la nomenclature nationale de juin 2026 pour
+produits, 19 colonnes, extraits de la nomenclature nationale de juin 2026 pour
 le paracétamol, l'amoxicilline et l'amlodipine.
 
 ---
