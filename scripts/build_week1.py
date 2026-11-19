@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import re
 import sys
 from pathlib import Path
 
@@ -392,6 +393,55 @@ def write_name_index(catalogue: Catalogue) -> int:
     return len(aliases)
 
 
+# Traits galeniques qui survivent au regroupement, et qui changent quelque
+# chose pour le patient. La famille de forme les ignore : un comprime
+# gastro-resistant et un comprime pellicule sont tous deux des COMPRIME.
+_TRAITS_GALENIQUES: tuple[tuple[str, str], ...] = (
+    ("libération prolongée", r"\bLP\b|PROLONG|RETARD|CHRONO|LIBERATION MODIFIEE"),
+    ("gastro-résistant", r"GASTRO|ENTERIQUE"),
+    ("effervescent", r"EFFERVESC|EFFERVESS"),
+    ("orodispersible", r"ORODISPERS|LYOC|FONDANT"),
+)
+
+
+def differences_du_groupe(produits: list) -> list[str]:
+    """Ce qui differe entre les membres d'un groupe d'equivalents.
+
+    Un groupe reunit meme substance, meme dosage, meme famille de forme. Cela
+    laisse passer des ecarts qui comptent pour le patient, et que la famille
+    de forme ne voit pas. Mesure du 19/11/2026 sur les 153 groupes :
+
+        4 groupes melangent un trait galenique
+            EQ-0012  COMPRIME GASTRO-RESISTANT avec COMPRIME PELLICULE
+            EQ-0035  COMPRIME EFFERVESCENT avec COMPRIME
+            EQ-0098  COMPRIME ORODISPERSIBLE avec COMPRIME SECABLE
+        12 groupes melangent le classement reglementaire
+            LISTE I avec LISTE II, ou LISTE II avec une case vide
+
+    Ces ecarts ne sont pas anodins. Un comprime gastro-resistant existe
+    precisement pour ne pas liberer dans l'estomac -- pour un AINS, c'est
+    tout l'interet. Un comprime effervescent apporte du sodium, ce qui
+    compte chez un hypertendu. Et passer de « hors liste » a « LISTE I »
+    change ce dont le patient a besoin : une ordonnance.
+
+    Le groupe n'est PAS casse pour autant. Decider que deux presentations ne
+    sont pas interchangeables est un jugement pharmaceutique ; le programme
+    se contente de rendre l'ecart visible, comme il le fait deja pour la
+    forme saline avec `sel_produit`.
+    """
+    ecarts: list[str] = []
+    formes = [str(getattr(p, "form", "") or "").upper() for p in produits]
+    for libelle, motif in _TRAITS_GALENIQUES:
+        porte = [bool(re.search(motif, f)) for f in formes]
+        if any(porte) and not all(porte):
+            ecarts.append(libelle)
+    classements = {str(getattr(p, "list_class", "") or "").strip() for p in produits}
+    if len(classements) > 1:
+        lisibles = ", ".join(sorted(c or "hors liste" for c in classements))
+        ecarts.append(f"classement réglementaire ({lisibles})")
+    return ecarts
+
+
 def write_equivalents(catalogue: Catalogue) -> int:
     """Ecrire les groupes d'equivalents, chaque produit avec SA propre DCI.
 
@@ -418,14 +468,16 @@ def write_equivalents(catalogue: Catalogue) -> int:
         writer = csv.writer(fh)
         writer.writerow([
             "group_id", "inn", "strength", "form_family", "group_size",
+            "differences_dans_le_groupe",
             "drug_id", "brand_name", "inn_produit", "sel_produit", "form",
             "packaging", "lab_name", "registration_no", "status",
         ])
         for i, group in enumerate(groups, 1):
+            ecarts = " ; ".join(differences_du_groupe(group.products))
             for p in group.products:
                 writer.writerow([
                     f"EQ-{i:04d}", group.inn, group.strength, group.form_family,
-                    group.size, p.drug_id, p.brand_name,
+                    group.size, ecarts, p.drug_id, p.brand_name,
                     p.inn, p.substance.sel, p.form,
                     p.packaging.raw, p.lab_name, p.registration_no, p.status,
                 ])
@@ -465,7 +517,64 @@ def write_interactions(dzair_products: list) -> tuple[int, dict[str, int]]:
     return written, levels
 
 
-def write_conflicts(report) -> int:
+def _sans_ponctuation(valeur: str) -> str:
+    """Un numero d'enregistrement, reduit a ses lettres et ses chiffres.
+
+    Le ministere ecrit « 178/04 B 004/99 », dzair-pharma « 178 04 B 004 99 ».
+    C'est le meme produit.
+    """
+    return re.sub(r"[^0-9A-Z]", "", str(valeur or "").upper())
+
+
+def conflits_de_retrait(report, retires: list[dict]) -> list[list[str]]:
+    """Les produits que dzair publie alors que le ministere les a retires.
+
+    Constate le 19/11/2026 : les CINQ produits que la reconciliation listait
+    comme « seulement chez dzair-pharma » -- sans jamais dire pourquoi --
+    figurent tous dans la feuille « Retraits » du classeur officiel.
+
+        BIDICLO LP   retire le 2021-08-25
+        ALMIRAL      retire le 2011-05-08
+        ALMIRAL      retire le 2007-06-12   (deux presentations)
+        BIOFENAC     retire le 2015-07-09
+
+    Dix-neuf ans pour le plus ancien. Ce n'est donc pas une lacune de notre
+    appariement : c'est un VRAI desaccord entre les deux sources, et le plus
+    grave qu'on puisse avoir -- une source secondaire qui presente comme
+    disponible un medicament que l'autorite a retire du marche.
+
+    Il fallait lire les feuilles de retraits pour pouvoir le dire. Tant
+    qu'elles n'etaient pas lues, ces cinq lignes restaient un trou inexplique
+    dans le rapport de reconciliation.
+    """
+    index = {_sans_ponctuation(r["registration_no"]): r for r in retires}
+    lignes: list[list[str]] = []
+    for numero in report.secondary_only:
+        retire = index.get(_sans_ponctuation(numero))
+        if retire is None:
+            continue
+        quand = retire["withdrawal_date"] or "date non precisee"
+        motif = retire["withdrawal_reason"] or "motif non precise"
+        lignes.append([
+            numero,
+            "statut d'enregistrement",
+            f"sorti du marche ({retire['source_sheet']}), {quand} : {motif}",
+            "publie comme enregistre",
+            "nomenclature",
+            "dzair_pharma",
+            retire["source_version"],
+            "export dzair",
+            f"sorti du marche ({retire['source_sheet']}), {quand}",
+            "La nomenclature nationale fait foi sur ce qui est enregistre en "
+            "Algerie. Un produit absent de sa feuille courante et present dans "
+            "ses feuilles de retraits n'est plus delivrable, quelle que soit la "
+            "source qui continue de l'afficher.",
+        ])
+    return lignes
+
+
+def write_conflicts(report, conflits_retrait: list[list[str]] | None = None) -> int:
+    lignes_retrait = conflits_retrait or []
     with open(CONFLICTS, "w", encoding="utf-8", newline="") as fh:
         writer = csv.writer(fh)
         writer.writerow([
@@ -480,7 +589,8 @@ def write_conflicts(report) -> int:
                 d.official_collected, d.secondary_collected, d.retained,
                 d.reason_fr,
             ])
-    return len(report.disagreements)
+        writer.writerows(lignes_retrait)
+    return len(report.disagreements) + len(lignes_retrait)
 
 
 def show_answer(catalogue: Catalogue, name: str) -> None:
@@ -607,7 +717,8 @@ def main() -> int:
         print(f"      {count:>5}  {level}")
 
     report = compare_all(catalogue.products, dzair)
-    n_conflicts = write_conflicts(report)
+    retires_dzair = conflits_de_retrait(report, retires)
+    n_conflicts = write_conflicts(report, retires_dzair)
     print("\n[7] Réconciliation des deux sources")
     print(f"      produits présents dans les deux : {len(report.pairs)}")
     print(f"      désaccords détectés             : {n_conflicts} -> {CONFLICTS.name}")
@@ -618,6 +729,17 @@ def main() -> int:
             print(f"        {count:>4}  {field_name}")
     print(f"      seulement dans la nomenclature  : {len(report.official_only)}")
     print(f"      seulement chez dzair-pharma     : {len(report.secondary_only)}")
+    if retires_dzair:
+        print(f"        dont {len(retires_dzair)} que le ministère a RETIRÉS du marché")
+        print("        et que dzair-pharma publie toujours comme enregistrés :")
+        for ligne in retires_dzair:
+            print(f"          {ligne[0]:<22} {ligne[2][:62]}")
+        print("        C'est le désaccord le plus grave possible entre deux")
+        print("        sources : l'une présente comme disponible ce que")
+        print("        l'autorité a retiré. La nomenclature fait foi.")
+    inexpliques = len(report.secondary_only) - len(retires_dzair)
+    if inexpliques:
+        print(f"        {inexpliques} reste(nt) sans explication.")
 
     demo = args.question
     if not demo:

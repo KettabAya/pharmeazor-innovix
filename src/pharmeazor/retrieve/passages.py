@@ -268,6 +268,16 @@ def passages_equivalents(
             "interchangeabilité clinique : excipients et biodisponibilité "
             "peuvent différer."
         )
+        # L'avertissement ci-dessus est general. Quand on sait PRECISEMENT ce
+        # qui differe dans le groupe, on le nomme : un pharmacien ne peut pas
+        # arbitrer sur « peuvent differer », il arbitre sur « l'un est
+        # gastro-resistant, l'autre non ».
+        ecarts = tete.get("differences_dans_le_groupe", "").strip()
+        if ecarts:
+            corps.append(
+                f"Attention, ce groupe n'est pas homogène sur : {ecarts}. "
+                "La décision revient au pharmacien."
+            )
         corps.append("Source : nomenclature nationale.")
 
         yield Passage(

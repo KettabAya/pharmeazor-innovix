@@ -246,3 +246,39 @@ class TestLeCodeDeStatutNEstPasPresenteCommeCompris:
     def test_le_code_n_est_pas_presente_comme_une_information_comprise(self):
         p = next(passages_produits([LIGNE_PRODUIT]))
         assert "Son statut est" not in p.text
+
+
+class TestLeGroupeNommeCeQuiDiffere:
+    """Un groupe d'equivalents n'est pas toujours homogene.
+
+    Mesure du 19/11/2026 sur les 153 groupes : 4 melangent un trait galenique
+    (gastro-resistant, effervescent, orodispersible, liberation prolongee) et
+    12 melangent le classement reglementaire. L'avertissement general
+    « excipients et biodisponibilite peuvent differer » ne suffit pas : un
+    pharmacien n'arbitre pas sur « peuvent differer », il arbitre sur
+    « l'un est gastro-resistant, l'autre non ».
+    """
+
+    @staticmethod
+    def _groupe(ecarts: str) -> list[dict]:
+        base = {
+            "group_id": "EQ-0012", "inn": "DICLOFENAC SODIQUE",
+            "strength": "50mg", "form_family": "COMPRIME", "group_size": "2",
+            "differences_dans_le_groupe": ecarts, "lab_name": "LABO",
+        }
+        return [dict(base, drug_id="D1", brand_name="VOLTARENE"),
+                dict(base, drug_id="D2", brand_name="DICLOGESIC")]
+
+    def test_l_ecart_est_nomme_quand_il_existe(self):
+        p = next(passages_equivalents(self._groupe("gastro-résistant")))
+        assert "n'est pas homogène sur : gastro-résistant" in p.text
+        assert "La décision revient au pharmacien." in p.text
+
+    def test_aucune_phrase_en_trop_quand_le_groupe_est_homogene(self):
+        p = next(passages_equivalents(self._groupe("")))
+        assert "homogène" not in p.text
+
+    def test_l_avertissement_general_reste_present_dans_les_deux_cas(self):
+        for ecarts in ("", "effervescent"):
+            p = next(passages_equivalents(self._groupe(ecarts)))
+            assert "ne vaut pas interchangeabilité clinique" in p.text

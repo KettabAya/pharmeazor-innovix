@@ -547,6 +547,81 @@ pas rempli.
 
 ---
 
+# 13 · Trois défauts de plus, trouvés le 19/11
+
+## Ce que dzair publie encore, et que le ministère a retiré
+
+La réconciliation annonçait depuis le début **« seulement chez dzair-pharma : 5 »**,
+sans jamais dire pourquoi. Maintenant que les feuilles de retraits sont lues,
+j'ai pu croiser. **Les cinq y sont tous.**
+
+```
+BIDICLO LP   retiré le 2021-08-25
+ALMIRAL      retiré le 2011-05-08
+ALMIRAL      retiré le 2007-06-12    (deux présentations)
+BIOFENAC     retiré le 2015-07-09
+```
+
+Dix-neuf ans pour le plus ancien. Ce n'était donc pas une lacune de mon
+appariement : **c'est un vrai désaccord entre les deux sources**, et le plus
+grave possible — une source secondaire qui présente comme disponible un
+médicament que l'autorité a retiré du marché.
+
+Ma table de conflits passe de **0 à 5 lignes**. Et le cahier des charges
+demandait justement des désaccords entre sources : j'en avais zéro de ce
+type, j'en ai cinq, datés et motivés.
+
+> *« Je croyais que ces cinq lignes étaient un trou dans mon travail. C'était
+> en fait le résultat le plus intéressant de la réconciliation — je ne pouvais
+> simplement pas le voir tant que je ne lisais qu'un onglet sur trois. »*
+
+## Des groupes d'équivalents qui n'étaient pas homogènes
+
+Un groupe réunit même substance, même dosage, même famille de forme. Ça laisse
+passer des écarts que la famille de forme ne voit pas :
+
+| | |
+|---|---|
+| `EQ-0012` | un **comprimé gastro-résistant** avec un comprimé pelliculé |
+| `EQ-0035` | un **comprimé effervescent** avec un comprimé simple |
+| `EQ-0097` | une gélule à **double libération** avec deux à libération prolongée |
+| `EQ-0098` | un **comprimé orodispersible** avec un comprimé sécable |
+
+Ce ne sont pas des détails. Un gastro-résistant existe précisément pour ne pas
+libérer dans l'estomac — pour un AINS, c'est tout l'intérêt. Un effervescent
+apporte du sodium, ce qui compte chez un hypertendu.
+
+Et **12 groupes de plus mélangent le classement réglementaire** : `LISTE I`
+avec `LISTE II`, ou `LISTE II` avec « hors liste ». Passer de l'un à l'autre
+change ce dont le patient a besoin — une ordonnance.
+
+**Je n'ai pas cassé les groupes.** Décider que deux présentations ne sont pas
+interchangeables est un jugement pharmaceutique, pas une décision de
+programme. J'ai fait comme pour les sels : rendre l'écart **visible**. Une
+colonne `differences_dans_le_groupe`, et une phrase dans le passage :
+
+> *Attention, ce groupe n'est pas homogène sur : gastro-résistant. La décision
+> revient au pharmacien.*
+
+L'avertissement général — « excipients et biodisponibilité peuvent différer » —
+reste là. Mais un pharmacien n'arbitre pas sur « peuvent différer ». Il arbitre
+sur « l'un est gastro-résistant, l'autre non ».
+
+**16 groupes sur 153** portent maintenant un écart nommé.
+
+## Le classement réglementaire était perdu en route
+
+En voulant signaler ces écarts, je me suis aperçue que je ne pouvais pas :
+`list_class` était écrit dans le CSV, puis **abandonné au chargement du
+catalogue**. Le seul champ qui dit si une ordonnance est nécessaire n'existait
+pas dans l'objet `Product`.
+
+Même famille de défaut que la durée de stabilité : une donnée lue, portée, et
+jetée au dernier étage.
+
+
+---
+
 # LA QUESTION QUI PEUT VENIR
 
 ## « Et ce que vous n'avez pas pu traiter ? »
@@ -612,7 +687,8 @@ bien » n'est pas une source. Le corpus dit donc, pour chaque produit :
 970   produits sortis du marché, avec date et motif
 2910  noms retirés indexés
 2293  passages interrogeables
+  5   desaccords reels entre les deux sources
  29   désaccords entre versions   (il en demandait 10)
  61   mouvements entre décembre et août
-256   tests, en une seconde
+262   tests, en une seconde
 ```

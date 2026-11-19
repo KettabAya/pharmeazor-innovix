@@ -150,6 +150,18 @@ class Product:
     date_final: str
     status: str
     source_version: str
+    # Le classement reglementaire algerien : LISTE I, LISTE II, ou vide pour
+    # « hors liste », c'est-a-dire delivrable sans ordonnance.
+    #
+    # Il etait ecrit dans le CSV et perdu ici : le catalogue, et donc les
+    # groupes d'equivalents, ignoraient le seul champ qui dit si le patient a
+    # besoin d'une ordonnance. Mesure du 19/11/2026 : 12 groupes sur 153
+    # reunissent des produits de classements differents, dont trois qui
+    # melangent LISTE II et « hors liste ».
+    #
+    # Valeur par defaut pour ne pas casser les Product construits a la main
+    # dans les tests.
+    list_class: str = ""
 
     @property
     def form_family(self) -> str:
@@ -258,6 +270,7 @@ class Catalogue:
                         date_final=row["date_final"].strip(),
                         status=row["status"].strip(),
                         source_version=row["source_version"].strip(),
+                        list_class=row.get("list_class", "").strip(),
                     )
                 )
         return cls(products=products).build()

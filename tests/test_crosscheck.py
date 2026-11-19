@@ -1,7 +1,10 @@
 """Joining the two sources and reporting where they disagree."""
 
 import datetime as dt
+import sys
 from dataclasses import dataclass
+from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
@@ -15,6 +18,12 @@ from pharmeazor.reconcile.crosscheck import (
     normalize_value,
 )
 from pharmeazor.schemas import Authority, Provenance
+
+# `build_week1.py` est un script, pas un module installe : on l'importe par
+# son chemin pour tester `conflits_de_retrait`, qui y vit.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+
+from build_week1 import _sans_ponctuation, conflits_de_retrait  # noqa: E402
 
 
 @dataclass
@@ -152,3 +161,46 @@ class TestReport:
 
     def test_empty_inputs_do_not_divide_by_zero(self):
         assert compare_all([], []).agreement_rate == 0.0
+
+
+class TestUnProduitRetireEncorePublie:
+    """Le desaccord le plus grave possible entre deux sources.
+
+    Constate le 19/11/2026 : les cinq produits que la reconciliation listait
+    comme « seulement chez dzair-pharma » -- sans jamais dire pourquoi --
+    figurent tous dans la feuille « Retraits » du classeur officiel. Le plus
+    ancien, ALMIRAL, a ete retire en 2007 : dix-neuf ans.
+
+    Ce n'etait donc pas une lacune de notre appariement, mais une source
+    secondaire qui presente comme disponible ce que l'autorite a retire du
+    marche. Il fallait lire les feuilles de retraits pour pouvoir le dire.
+    """
+
+    RETIRES = [{
+        "registration_no": "178/04 B 004/99",
+        "brand_name": "ALMIRAL",
+        "withdrawal_date": "2011-05-08",
+        "withdrawal_reason": "RETRAIT PAR LE MSPRH POUR INTERDICTION",
+        "source_sheet": "retraits",
+        "source_version": "2026-08",
+    }]
+
+    def test_la_ponctuation_du_numero_n_empeche_pas_le_rapprochement(self):
+        # Le ministere ecrit « 178/04 B 004/99 », dzair « 178 04 B 004 99 ».
+        assert _sans_ponctuation("178/04 B 004/99") == _sans_ponctuation("178 04 B 004 99")
+
+    def test_un_orphelin_dzair_devient_un_desaccord_documente(self):
+        rapport = SimpleNamespace(secondary_only=["178 04 B 004 99"])
+        lignes = conflits_de_retrait(rapport, self.RETIRES)
+        assert len(lignes) == 1
+        ligne = lignes[0]
+        assert ligne[1] == "statut d'enregistrement"
+        assert "2011-05-08" in ligne[2]
+        assert "RETRAIT PAR LE MSPRH" in ligne[2]
+        assert ligne[3] == "publie comme enregistre"
+        assert "nomenclature nationale fait foi" in ligne[9]
+
+    def test_un_orphelin_qui_n_est_pas_retire_reste_inexplique(self):
+        """On n'invente pas une explication pour un produit qu'on ne trouve pas."""
+        rapport = SimpleNamespace(secondary_only=["999 99 Z 999 99"])
+        assert conflits_de_retrait(rapport, self.RETIRES) == []
