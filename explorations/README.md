@@ -7,6 +7,7 @@ moindre règle de nettoyage.
 |---|---|
 | `01_explorer_la_nomenclature.ipynb` | la séquence complète : complétude, cardinalité, distribution, formes, anomalies |
 | `02_exercices.ipynb` | trois exercices sur des colonnes jamais traitées, avec les réponses mesurées |
+| `03_traiter_les_pdf.ipynb` | le parcours complet sur les 3 664 PDF de la base française, étape par étape |
 
 ## Lancer
 
