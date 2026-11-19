@@ -9,6 +9,10 @@ data/interim/*
 data/processed/*
 !data/processed/cache.json
 !data/processed/call_counter.json
+!data/processed/documents_index.json
+!data/processed/embedding_ids.json
+!data/processed/passages.jsonl
+!data/processed/embeddings.npy
 !data/**/.gitkeep
 .cache/
 

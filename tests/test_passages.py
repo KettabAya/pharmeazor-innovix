@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import pytest
 
-from pharmeazor.retrieve.passages import (
+from pharmeazor.retrieve.build_passages import (
     passages_equivalents,
     passages_interactions,
     passages_produits,

@@ -29,7 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from pharmeazor.retrieve.passages import construire_corpus  # noqa: E402
+from pharmeazor.retrieve.build_passages import construire_corpus  # noqa: E402
 
 LARGEUR = 78
 
