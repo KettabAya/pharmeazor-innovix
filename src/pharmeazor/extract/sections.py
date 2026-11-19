@@ -91,15 +91,21 @@ def _is_document_boundary(lines: list[str], index: int) -> bool:
         "ANNEXE III": "ETIQUETTE",
     }
 
-    # A standalone NOTICE title is a boundary only after RCP content.
+    # Ignore the ANSM navigation menu entry.
     if line == "NOTICE":
-        return True
-
+        previous_lines = lines[max(0, index - 3):index]
+        previous_text = " ".join(
+            " ".join(_strip_accents(item).upper().split())
+            for item in previous_lines
+        )
+        return not (
+            "FICHE INFO" in previous_text
+            or "RESUME DES CARACTERISTIQUES DU PRODUIT" in previous_text
+        )
     expected_heading = boundaries.get(line)
     if expected_heading is None:
         return False
 
-    # Skip empty lines and check the next non-empty line.
     for next_line in lines[index + 1:]:
         normalized = " ".join(_strip_accents(next_line).upper().split())
         if normalized:
@@ -153,6 +159,15 @@ def split_sections(text: str) -> SectionSplit:
     for index, line in enumerate(lines):
         # Stop at a confirmed document boundary, but only after
         # at least one section has been identified.
+                # Ignore ANSM navigation menu entries.
+        normalized = " ".join(_strip_accents(line).upper().split())
+        if normalized in {
+            "FICHE INFO",
+            "RESUME DES CARACTERISTIQUES DU PRODUIT",
+            "NOTICE",
+            "BON USAGE",
+        }:
+            continue
         if current_key is not None and _is_document_boundary(lines, index):
             flush()
             break

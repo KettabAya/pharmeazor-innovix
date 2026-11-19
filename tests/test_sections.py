@@ -166,11 +166,29 @@ class TestSplitting:
             "Ne prenez jamais ce médicament\n"
             "En cas d'allergie.\n"
         )
+        
 
         split = split_sections(text)
 
         assert "Respectez la dose prescrite." in split.sections[Section.POSOLOGY]
         assert "En cas d'allergie." in split.sections[Section.CONTRAINDICATIONS]
+
+    def test_rcp_navigation_notice_does_not_stop_extraction(self):
+      text = (
+            "4.2. Posologie et mode d'administration\n"
+            "Dose professionnelle.\n"
+            "Fiche info\n"
+            "Résumé des caractéristiques du produit\n"
+           "Notice\n"
+          "Bon usage\n"
+         "Suite du RCP.\n"
+         "4.3. Contre-indications\n"
+         "Contenu des contre-indications.\n"
+       )
+
+      split = split_sections(text)
+
+      assert "Contenu des contre-indications." in split.sections[Section.CONTRAINDICATIONS]
 
     def test_annexe_i_is_not_a_document_boundary(self):
         text = (
