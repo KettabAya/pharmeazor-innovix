@@ -622,6 +622,84 @@ jetée au dernier étage.
 
 ---
 
+# 14 · Trois défauts de plus, trouvés le 19/11 au soir
+
+## Un dosage écrit en fraction, un autre en pourcentage
+
+39 produits portent un dosage **sans aucune unité** : `0,001`, `0,0075`, `0,03`.
+
+Ce sont des fractions. Je l'ai vérifié six fois contre la concentration de
+référence connue de chaque produit :
+
+```
+0,001    collyre diclofénac            = 0,1 %
+0,003    pommade ciprofloxacine        = 0,3 %
+0,0075   gel métronidazole             = 0,75 %
+0,01     gel diclofénac                = 1 %
+0,025    gel kétoprofène               = 2,5 %
+0,03     solution buvable paracétamol  = 3 %, soit 30 mg/ml
+```
+
+Six sur six. Et le registre écrit **la même chose des deux façons** :
+
+| | |
+|---|---|
+| `VOLTARENE` collyre | **0,001** |
+| `XINAC` collyre | **0,001** |
+| `DICLOGESIC` collyre | **0.1%** |
+
+Même substance, même forme, même concentration — et deux groupes séparés.
+`DICLOGESIC` paraissait **sans aucun équivalent** alors qu'il en a deux.
+
+**C'est le seul endroit où j'ai interprété au lieu de signaler**, et je le dis
+franchement : une fraction nue est maintenant lue comme un pourcentage. La
+valeur brute n'est jamais réécrite, seule la lecture est unifiée. Les trois
+collyres sont réunis dans `EQ-0098`.
+
+Et le passage ne laisse plus un nombre nu :
+
+> *Son dosage est 0,0075. Le registre écrit ce dosage en fraction, sans unité.
+> Lu comme un pourcentage, cela vaut 0,75 % — cette conversion est notre
+> lecture, elle n'est pas écrite dans le registre.*
+
+Cette dernière phrase n'est pas de la politesse. J'ai balayé les **2 293
+passages** en cherchant chaque nombre dans les tables sources : un seul n'y
+est pas, `0,75`, et c'est celui que ma conversion produit. Le passage doit
+donc dire qu'il vient de moi, sinon il attribue au ministère un chiffre qu'il
+n'a pas écrit.
+
+## « Médicament concerné : BIOFENAC » était faux par omission
+
+Chaque interaction nommait **une** marque. Or une interaction concerne une
+**substance** — donc tous les produits qui la contiennent.
+
+```
+les 16 interactions du DICLOFENAC SODIQUE  →  « Médicament concerné : BIOFENAC »
+mais 36 marques du catalogue portent cette substance
+```
+
+Nommer BIOFENAC laissait entendre que les 35 autres diclofénacs ne sont pas
+concernés. Le passage dit maintenant :
+
+> *Cette interaction concerne la substance DICLOFENAC SODIQUE, donc **TOUS**
+> les médicaments qui la contiennent, quelle que soit leur marque. Fiche d'où
+> l'information a été lue : BIOFENAC.*
+
+L'information n'est pas perdue — elle est remise à sa place : c'est une
+provenance, pas un périmètre.
+
+## Le balayage des nombres
+
+Je l'ai fait systématiquement, et c'est devenu un contrôle : **1 459 nombres
+distincts** dans les tables sources, et chaque nombre de chaque passage
+recherché dedans. Un seul écart, expliqué ci-dessus.
+
+C'est le contrôle qui garantit la règle d'or du projet : un chiffre affiché se
+retrouve mot pour mot dans la source citée.
+
+
+---
+
 # LA QUESTION QUI PEUT VENIR
 
 ## « Et ce que vous n'avez pas pu traiter ? »
@@ -690,5 +768,5 @@ bien » n'est pas une source. Le corpus dit donc, pour chaque produit :
   5   desaccords reels entre les deux sources
  29   désaccords entre versions   (il en demandait 10)
  61   mouvements entre décembre et août
-262   tests, en une seconde
+271   tests, en une seconde
 ```

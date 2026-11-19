@@ -35,6 +35,7 @@ from __future__ import annotations
 
 import csv
 import datetime as _dt
+import re
 from collections.abc import Iterator
 from pathlib import Path
 
@@ -53,6 +54,11 @@ __all__ = [
 # Le ministere publie la nomenclature ici. Verifie le 15/11/2026 : l'ancienne
 # adresse du registre, www.mip.gov.dz, ne resout pas -- c'est miph, avec un H.
 MIPH_URL = "https://miph.gov.dz/"
+
+# Un dosage ecrit en fraction nue, sans unite : « 0,001 » pour 0,1 %.
+# La regle de lecture vit dans normalize.dosage ; ici on s en sert
+# seulement pour expliquer la valeur au lecteur du passage.
+_FRACTION_NUE = re.compile(r"^0[.,][0-9]+$")
 
 _REFERENCE = settings.reference_dir
 
@@ -129,6 +135,19 @@ def passages_produits(lignes: list[dict[str, str]] | None = None,
         # number_guard doit pouvoir les retrouver mot pour mot.
         if ligne["strength_raw"]:
             corps.append(f"Son dosage est {ligne['strength_raw']}.")
+            # « Son dosage est 0,001 » ne veut rien dire pour un pharmacien.
+            # Le registre ecrit certaines concentrations en fraction nue ; on
+            # le dit, et on donne l'equivalent en pourcentage, qui est la
+            # facon dont le meme registre ecrit les autres produits.
+            if _FRACTION_NUE.match(ligne["strength_raw"].strip()):
+                pourcent = float(ligne["strength_raw"].strip().replace(",", ".")) * 100
+                lisible = f"{pourcent:g}".replace(".", ",")
+                corps.append(
+                    "Le registre écrit ce dosage en fraction, sans unité. "
+                    f"Lu comme un pourcentage, cela vaut {lisible} % — cette "
+                    "conversion est notre lecture, elle n'est pas écrite dans "
+                    "le registre."
+                )
         if ligne["packaging_raw"]:
             corps.append(f"Son conditionnement est {ligne['packaging_raw']}.")
         if ligne["list_class"]:
@@ -315,8 +334,25 @@ def passages_interactions(
             corps.append(f"Risque : {ligne['risques']}")
         if ligne["conduite_a_tenir"]:
             corps.append(f"Conduite à tenir : {ligne['conduite_a_tenir']}")
+        # « Medicament concerne : BIOFENAC » etait faux par omission.
+        #
+        # Une interaction concerne une SUBSTANCE, donc TOUS les produits qui
+        # la contiennent. La colonne brand_name de la table ne nomme qu'un
+        # produit : le premier rencontre dans l'export dzair. Mesure du
+        # 19/11/2026 : les 16 interactions du diclofenac sodique citaient
+        # BIOFENAC, alors que 36 marques du catalogue portent cette substance.
+        #
+        # Nommer une marque laissait donc entendre que les 35 autres ne sont
+        # pas concernees. On nomme la substance, et on dit d'ou vient la fiche.
+        corps.append(
+            f"Cette interaction concerne la substance {ligne['inn']}, donc "
+            "TOUS les médicaments qui la contiennent, quelle que soit leur "
+            "marque."
+        )
         if ligne["brand_name"]:
-            corps.append(f"Médicament concerné : {ligne['brand_name']}.")
+            corps.append(
+                f"Fiche d'où l'information a été lue : {ligne['brand_name']}."
+            )
 
         origine = ligne["source_origine"] or "inconnue"
         relais = ligne["source_relais"] or "inconnu"

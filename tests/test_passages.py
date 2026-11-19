@@ -282,3 +282,62 @@ class TestLeGroupeNommeCeQuiDiffere:
         for ecarts in ("", "effervescent"):
             p = next(passages_equivalents(self._groupe(ecarts)))
             assert "ne vaut pas interchangeabilité clinique" in p.text
+
+
+class TestUneInteractionConcerneUneSubstance:
+    """Nommer une marque sur une interaction est faux par omission.
+
+    Mesure du 19/11/2026 : les 16 interactions du diclofenac sodique
+    nommaient BIOFENAC, alors que 36 marques du catalogue portent cette
+    substance. Le passage disait « Medicament concerne : BIOFENAC », ce qui
+    laisse entendre que les 35 autres ne le sont pas.
+    """
+
+    LIGNE = {
+        "inn": "DICLOFENAC SODIQUE", "brand_name": "BIOFENAC",
+        "registration_no": "263/04 B 007", "substance_cible": "MIFAMURTIDE",
+        "type_cible": "substance", "niveau": "Contre-indication",
+        "niveau_reconnu": "oui", "risques": "Risque de moindre efficacité.",
+        "conduite_a_tenir": "Aucune conduite spécifique.",
+        "source_origine": "ANSM", "source_relais": "dzair_pharma",
+        "autorite_effective": "Professionnelle", "url": "https://example.test/x",
+    }
+
+    def test_la_substance_est_nommee_et_l_extension_dite(self):
+        p = next(passages_interactions([self.LIGNE]))
+        assert "concerne la substance DICLOFENAC SODIQUE" in p.text
+        assert "TOUS les médicaments qui la contiennent" in p.text
+
+    def test_la_marque_n_est_plus_presentee_comme_le_medicament_concerne(self):
+        p = next(passages_interactions([self.LIGNE]))
+        assert "Médicament concerné" not in p.text
+
+    def test_la_marque_reste_citee_comme_provenance(self):
+        """On ne perd pas l'information : elle dit d'ou la fiche a ete lue."""
+        p = next(passages_interactions([self.LIGNE]))
+        assert "Fiche d'où l'information a été lue : BIOFENAC." in p.text
+
+
+class TestUnDosageEnFractionEstExplique:
+    """« Son dosage est 0,001 » ne veut rien dire pour un pharmacien."""
+
+    LIGNE = dict(LIGNE_PRODUIT, strength_raw="0,0075", brand_name="ROZEX")
+
+    def test_la_valeur_brute_est_conservee_mot_pour_mot(self):
+        p = next(passages_produits([self.LIGNE]))
+        assert "Son dosage est 0,0075." in p.text
+
+    def test_la_conversion_est_donnee(self):
+        p = next(passages_produits([self.LIGNE]))
+        assert "0,75 %" in p.text
+
+    def test_la_conversion_est_attribuee_a_notre_lecture(self):
+        """Le registre n'ecrit pas « 0,75 % ». Le passage doit le dire, sinon
+        la phrase attribue au ministere un nombre qu'il n'a pas ecrit."""
+        p = next(passages_produits([self.LIGNE]))
+        assert "notre lecture" in p.text
+        assert "n'est pas écrite dans le registre" in p.text
+
+    def test_un_dosage_normal_ne_declenche_aucune_explication(self):
+        p = next(passages_produits([LIGNE_PRODUIT]))
+        assert "fraction" not in p.text

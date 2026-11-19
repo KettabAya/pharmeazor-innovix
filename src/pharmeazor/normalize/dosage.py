@@ -167,6 +167,29 @@ class Packaging:
         return self.count is not None or self.volume is not None
 
 
+# Un dosage ecrit comme une fraction nue, sans aucune unite : « 0,001 ».
+#
+# Mesure du 19/11/2026 : 39 produits sur 914. Ce sont des fractions, pas des
+# milligrammes -- six verifications independantes contre la concentration de
+# reference de chaque produit :
+#
+#     0,001    collyre diclofenac        = 0,1 %   (concentration usuelle)
+#     0,003    pommade ciprofloxacine    = 0,3 %
+#     0,0075   gel metronidazole         = 0,75 %
+#     0,01     gel diclofenac            = 1 %
+#     0,025    gel ketoprofene           = 2,5 %
+#     0,03     solution buvable paracetamol = 3 %, soit 30 mg/ml
+#
+# Les six tombent sur la concentration de reference connue. Et le registre
+# ecrit la MEME chose des deux facons : le collyre diclofenac a 0,1 % est
+# « 0,001 » pour VOLTARENE et XINAC, « 0.1% » pour DICLOGESIC. Sans cette
+# regle, DICLOGESIC paraissait sans aucun equivalent alors qu il en a deux.
+#
+# La valeur brute n est jamais reecrite : seule la lecture est unifiee, pour
+# que deux notations du meme nombre tombent dans le meme groupe.
+_FRACTION_NUE = re.compile(r"^0[.,][0-9]+$")
+
+
 def parse_strength(raw: str | None) -> Strength:
     """Read a DOSAGE cell into its quantities.
 
@@ -176,8 +199,8 @@ def parse_strength(raw: str | None) -> Strength:
 
     >>> parse_strength("325MG/37,5MG").canonical()
     '325mg+37.5mg'
-    >>> parse_strength("0,03").parsed
-    True
+    >>> parse_strength("0,03").canonical()   # une fraction nue vaut un %
+    '3%'
     >>> parse_strength("CF NOTICE").parsed
     False
     """
@@ -207,6 +230,11 @@ def parse_strength(raw: str | None) -> Strength:
     for fragment in text.split("/"):
         fragment = fragment.strip()
         if not fragment:
+            continue
+        if _FRACTION_NUE.match(fragment):
+            components.append(
+                Component(value=_to_float(fragment) * 100, unit="%")
+            )
             continue
         match = _COMPONENT_RE.match(fragment)
         if match:
