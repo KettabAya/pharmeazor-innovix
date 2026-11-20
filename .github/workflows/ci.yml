@@ -24,9 +24,32 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: pip
 
-      - name: Install dev dependencies
+      # Installer l'environnement DECLARE, pas seulement les outils.
+      #
+      # Corrige le 20/11/2026. Ce bloc n'installait que `pytest pytest-cov
+      # ruff`. Aucune dependance du projet n'etait installee -- et la chaine
+      # passait quand meme, par chance : sur `main`, les imports lourds
+      # (openpyxl, pymupdf) sont tous faits a l'interieur des fonctions, donc
+      # la collecte des tests ne les reclamait jamais.
+      #
+      # C'etait une chance, pas une garantie. Des qu'un module du paquet
+      # importe une bibliotheque EN TETE DE FICHIER, la collecte echoue et
+      # toute la CI tombe -- donc la fusion est bloquee. C'est arrive sur une
+      # branche de l'equipe :
+      #
+      #     src/pharmeazor/retrieve/bm25.py:8: in <module>
+      #         from rank_bm25 import BM25Okapi
+      #     E   ModuleNotFoundError: No module named 'rank_bm25'
+      #
+      # `rank-bm25` etait pourtant declare dans requirements.txt. Le defaut
+      # n'etait pas la declaration : c'etait que la CI ne lisait ce fichier
+      # nulle part. Une CI qui n'installe pas ce que le projet declare ne
+      # verifie pas le projet, elle verifie un sous-ensemble silencieux.
+      - name: Install the declared environment
         run: |
           python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
           pip install pytest pytest-cov ruff
 
       - name: Lint
