@@ -71,7 +71,7 @@ sources:
   - source_id: ansm_bdpm
     name: "Base de donnees publique des medicaments - ANSM"
     base_url: "https://base-donnees-publique.medicaments.gouv.fr/"
-    authority: OFFICIAL
+    authority: INSTITUTIONAL
     access: manual
     robots_checked_on: null
     robots_note: "robots.txt non verifie. Consultation et collecte manuelles uniquement."
