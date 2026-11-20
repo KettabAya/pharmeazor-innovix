@@ -1,3 +1,4 @@
+
 """Splitting a leaflet or RCP into the rubriques the project needs."""
 
 from __future__ import annotations
@@ -36,18 +37,19 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
         Section.POSOLOGY,
         re.compile(
             r"^\s*" + _NUMBER + r"(?:posologie"
-            r"|mode (?:et voie )?d.administration"
+            r"|mode (?:et voie )?d.(?:administration|emploi)"
             r"|comment (?:prendre|utiliser)"
-            r"|dose|doses|dosage)",
+            r"|dose(?=\s*$)|doses(?=\s*$)|dosage(?=\s*$))",
             re.I,
         ),
     ),
     (
         Section.INDICATIONS,
         re.compile(
-            r"^\s*" + _NUMBER + r"(?:indications?(?: therapeutiques?)?"
-            r"|dans quels? cas"
-            r"|qu.est[- ]ce que .* et dans quels? cas)",
+            r"^\s*" + _NUMBER
+            + r"(?:indications?(?: therapeutiques?)?(?=\s*$)"
+            + r"|dans quels? cas"
+            + r"|qu.est[- ]ce que .* et dans quels? cas)",
             re.I,
         ),
     ),
@@ -63,7 +65,9 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
 ]
 
 _HEADING_SHAPE = re.compile(r"^\s*(?:\d[\d.]*\s*[-–.)]?\s*)?[^\n]{3,180}$")
-_NUMBERED_HEADING = re.compile(r"^\s*\d+(?:\.\d+)*\.\s+\S")
+_NUMBERED_HEADING = re.compile(
+    r"^\s*\d+(?:\.\d+)*(?:[.)]?\s*[-–]?\s*|\s+)[A-ZÀ-ÖØ-Þ]"
+)
 
 
 def _strip_accents(text: str) -> str:
@@ -84,8 +88,16 @@ def _looks_like_heading(line: str) -> bool:
 
 
 def _is_numbered_heading(line: str) -> bool:
-    """Recognize numbered RCP headings without mistaking table rows for headings."""
-    return _looks_like_heading(line) and bool(_NUMBERED_HEADING.match(line))
+    """Recognize numbered RCP headings, not numbered instructions."""
+    if not _looks_like_heading(line):
+        return False
+
+    # A single number followed by a dot is usually a list instruction.
+    # RCP headings generally use hierarchical numbering such as 4.1 or 6.6.
+    if re.match(r"^\s*\d+[.)]\s+", line):
+        return False
+
+    return bool(_NUMBERED_HEADING.match(line))
 
 
 def classify_heading(line: str) -> str | None:
@@ -95,6 +107,37 @@ def classify_heading(line: str) -> str | None:
         if pattern.match(probe):
             return section
     return None
+
+def _is_document_boundary(lines: list[str], index: int) -> bool:
+    """Detect a confirmed transition from an RCP to an annex or leaflet."""
+    line = " ".join(_strip_accents(lines[index]).upper().split())
+
+    boundaries = {
+        "ANNEXE II": "INFORMATIONS DESTINEES AU PUBLIC",
+        "ANNEXE III": "ETIQUETTE",
+    }
+
+    # Ignore the ANSM navigation menu entry.
+    if line == "NOTICE":
+        previous_lines = lines[max(0, index - 3):index]
+        previous_text = " ".join(
+            " ".join(_strip_accents(item).upper().split())
+            for item in previous_lines
+        )
+        return not (
+            "FICHE INFO" in previous_text
+            or "RESUME DES CARACTERISTIQUES DU PRODUIT" in previous_text
+        )
+    expected_heading = boundaries.get(line)
+    if expected_heading is None:
+        return False
+
+    for next_line in lines[index + 1:]:
+        normalized = " ".join(_strip_accents(next_line).upper().split())
+        if normalized:
+            return normalized == expected_heading
+
+    return False
 
 
 @dataclass
@@ -139,18 +182,89 @@ def split_sections(text: str) -> SectionSplit:
         existing = current_bucket.get(current_key)
         current_bucket[current_key] = (existing + "\n" + body).strip() if existing else body
 
-    for line in text.splitlines():
+    raw_lines = text.splitlines()
+    lines = []
+    i = 0
+
+    while i < len(raw_lines):
+        line = raw_lines[i]
+
+        if (
+            re.match(r"^\s*1\.\s*QU[’']EST-CE QUE", line, re.I)
+            and i + 1 < len(raw_lines)
+        ):
+            line = line + " " + raw_lines[i + 1].strip()
+            i += 1
+            normalized_heading = " ".join(
+                _strip_accents(line).upper().split()
+            )
+            if (
+                "ET DANS QUELS CAS EST-IL UTILISE" not in normalized_heading
+                and i + 1 < len(raw_lines)
+            ):
+                line = line + " " + raw_lines[i + 1].strip()
+                i += 1
+
+        if (
+            re.match(r"^\s*3\.\s*COMMENT PRENDRE", line, re.I)
+            and i + 1 < len(raw_lines)
+        ):
+            line = line + " " + raw_lines[i + 1].strip()
+            i += 1
+
+        lines.append(line)
+        i += 1
+
+    for index, line in enumerate(lines):
+        # Stop at a confirmed document boundary, but only after
+        # at least one section has been identified.
+                # Ignore ANSM navigation menu entries.
+        normalized = " ".join(_strip_accents(line).upper().split())
+        if normalized in {
+            "FICHE INFO",
+            "RESUME DES CARACTERISTIQUES DU PRODUIT",
+            "NOTICE",
+            "BON USAGE",
+        }:
+            continue
+        if current_key is not None and _is_document_boundary(lines, index):
+            flush()
+            break
+
+        if (
+            current_key is not None
+            and re.match(
+                r"^\s*[256]\.\s*(?:QUELLES SONT LES INFORMATIONS"
+                r"|COMMENT CONSERVER|CONTENU DE L['’]EMBALLAGE)",
+                line,
+                re.I,
+            )
+        ):
+            flush()
+            current_key, current_bucket, buffer = line.strip(), split.unmapped, []
+            continue
+
+        if (
+            current_key == Section.CONTRAINDICATIONS
+            and " ".join(_strip_accents(line).upper().split())
+            == "AVERTISSEMENTS ET PRECAUTIONS"
+        ):
+            flush()
+            current_key, current_bucket, buffer = line.strip(), split.unmapped, []
+            continue
+
         if _looks_like_heading(line):
             section = classify_heading(line)
             if section is not None:
                 flush()
                 current_key, current_bucket, buffer = section, split.sections, []
                 continue
+
             if current_key is not None and _is_numbered_heading(line):
                 flush()
                 current_key, current_bucket, buffer = line.strip(), split.unmapped, []
                 continue
-        buffer.append(line)
 
+        buffer.append(line)
     flush()
     return split

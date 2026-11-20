@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-19",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "notice",
+  "product": "TRAMADOL EG L.P. 200 mg",
+  "dci": "tramadol",
+  "cis_code": "60004487"
+}

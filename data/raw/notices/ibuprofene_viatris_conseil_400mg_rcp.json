@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69938682/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-20",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "rcp",
+  "product": "IBUPROFENE VIATRIS CONSEIL 400 mg, suspension buvable en sachet",
+  "dci": "ibuprofene",
+  "cis_code": "69938682"
+}
