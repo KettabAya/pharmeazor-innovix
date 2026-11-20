@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-18",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "rcp",
+  "product": "RAMIPRIL ALMUS 10 mg",
+  "dci": "ramipril",
+  "cis_code": "60049895"
+}
