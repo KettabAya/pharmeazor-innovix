@@ -261,3 +261,16 @@ class TestSplitting:
         assert "3. Remplir le gobelet doseur" in posology
         assert "4. Bien refermer" in posology
         assert not split.unmapped
+
+    def test_real_notice_indications_heading_split_across_lines(self): 
+     text = (
+        "1. QU’EST-CE QUE TRAMADOL EG L.P. 200 mg, comprimé à libération\n"
+        "prolongée ET DANS QUELS CAS EST-IL UTILISE ?\n"
+        "TRAMADOL EG L.P. est utilisé pour le traitement des douleurs modérées à intenses.\n"
+     )
+
+     split = split_sections(text)
+
+     assert "traitement des douleurs modérées à intenses" in (
+        split.sections[Section.INDICATIONS]
+     )

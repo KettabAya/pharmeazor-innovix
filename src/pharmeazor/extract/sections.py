@@ -155,7 +155,38 @@ def split_sections(text: str) -> SectionSplit:
             (existing + "\n" + body).strip() if existing else body
         )
 
-    lines = text.splitlines()
+    raw_lines = text.splitlines()
+    lines = []
+    i = 0
+
+    while i < len(raw_lines):
+        line = raw_lines[i]
+
+        if (
+            re.match(r"^\s*1\.\s*QU[’']EST-CE QUE", line, re.I)
+            and i + 1 < len(raw_lines)
+        ):
+            line = line + " " + raw_lines[i + 1].strip()
+            i += 1
+            normalized_heading = " ".join(
+                _strip_accents(line).upper().split()
+            )
+            if (
+                "ET DANS QUELS CAS EST-IL UTILISE" not in normalized_heading
+                and i + 1 < len(raw_lines)
+            ):
+                line = line + " " + raw_lines[i + 1].strip()
+                i += 1
+
+        if (
+            re.match(r"^\s*3\.\s*COMMENT PRENDRE", line, re.I)
+            and i + 1 < len(raw_lines)
+        ):
+            line = line + " " + raw_lines[i + 1].strip()
+            i += 1
+
+        lines.append(line)
+        i += 1
 
     for index, line in enumerate(lines):
         # Stop at a confirmed document boundary, but only after
@@ -172,6 +203,28 @@ def split_sections(text: str) -> SectionSplit:
         if current_key is not None and _is_document_boundary(lines, index):
             flush()
             break
+
+        if (
+            current_key is not None
+            and re.match(
+                r"^\s*[256]\.\s*(?:QUELLES SONT LES INFORMATIONS"
+                r"|COMMENT CONSERVER|CONTENU DE L['’]EMBALLAGE)",
+                line,
+                re.I,
+            )
+        ):
+            flush()
+            current_key, current_bucket, buffer = line.strip(), split.unmapped, []
+            continue
+
+        if (
+            current_key == Section.CONTRAINDICATIONS
+            and " ".join(_strip_accents(line).upper().split())
+            == "AVERTISSEMENTS ET PRECAUTIONS"
+        ):
+            flush()
+            current_key, current_bucket, buffer = line.strip(), split.unmapped, []
+            continue
 
         if _looks_like_heading(line):
             section = classify_heading(line)
