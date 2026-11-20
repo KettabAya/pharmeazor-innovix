@@ -33,29 +33,138 @@ __all__ = [
 
 # Spellings met in the nomenclature, mapped to one canonical form.
 _UNITS: dict[str, str] = {
-    "MG": "mg", "G": "g", "GR": "g", "KG": "kg",
-    "MCG": "µg", "UG": "µg", "µG": "µg", "MICROGRAMME": "µg",
-    "ML": "ml", "L": "l", "CL": "cl",
-    "UI": "UI", "U": "UI", "MUI": "MUI",
-    "%": "%", "POURCENT": "%",
-    "MEQ": "mEq", "MMOL": "mmol",
+    "MG": "mg",
+    "G": "g",
+    "GR": "g",
+    "KG": "kg",
+    "MCG": "µg",
+    "UG": "µg",
+    "µG": "µg",
+    "MICROGRAMME": "µg",
+    "ML": "ml",
+    "L": "l",
+    "CL": "cl",
+    "UI": "UI",
+    "U": "UI",
+    "MUI": "MUI",
+    "%": "%",
+    "POURCENT": "%",
+    "MEQ": "mEq",
+    "MMOL": "mmol",
 }
 
 _NUMBER = r"\d+(?:[.,]\d+)?"
 # A trailing '*' is a footnote marker used by the ministry (e.g. "875MG*/125MG*"),
 # not part of the quantity. It is stripped, and the raw text keeps it.
-_COMPONENT_RE = re.compile(
-    rf"^\s*(?P<value>{_NUMBER})\s*(?P<unit>[A-Za-zµ%]+)?\s*\**\s*$"
-)
+_COMPONENT_RE = re.compile(rf"^\s*(?P<value>{_NUMBER})\s*(?P<unit>[A-Za-zµ%]+)?\s*\**\s*$")
 
-# "B/16", "BTE/20", "B /10"
-_PACK_COUNT_RE = re.compile(r"^\s*B\s*(?:TE|OITE)?\s*/\s*(?P<count>\d+)\s*$", re.I)
-# "B/FL 15 ML", "B/ FL. 60ML"
-_PACK_VOLUME_RE = re.compile(
-    r"^\s*B\s*(?:TE|OITE)?\s*/\s*(?P<container>FL|FLACON|TUBE|SACHET|AMP|AMPOULE)\.?\s*"
-    rf"(?P<value>{_NUMBER})\s*(?P<unit>ML|L|G|MG)\s*$",
-    re.I,
-)
+# "<valeur> (<equivalent>)" : 1% (10MG/ML), 400MG (684MG).
+# La parenthese redit la dose autrement ; elle ne s'ajoute pas a la premiere.
+_VALEUR_ET_EQUIVALENT = re.compile(r"^\s*(?P<valeur>[^(]+?)\s*\(\s*(?P<equivalent>[^)]+?)\s*\)\s*$")
+
+
+# --- Les mots qu'on reconnait dans un conditionnement ----------------------
+#
+# Des listes, pas des expressions regulieres : on peut les lire, et en ajouter
+# un mot ne demande pas de relire une regle.
+
+# Contenants dont le nombre qui suit est un nombre d'UNITES.
+# Mesure sur les 5 423 conditionnements d'aout 2026 : la seule forme "B/N"
+# couvre 53,1 %. Avec les autres contenants, 56,1 %.
+CONTENANTS_QUI_COMPTENT = [
+    "B",
+    "BTE",
+    "BOITE",
+    "PILULIER",
+    "PLQ",
+    "PLAQUETTE",
+    # Faute du registre, un produit : PILULIRER/30.
+    # Meme famille que le PILULIER/10 repere a la main
+    # en semaine 1, que les tests avaient laisse passer.
+    "PILULIRER",
+]
+
+# Contenants dont le contenu se MESURE : un tube de 15 g n'est pas 15 unites.
+CONTENANTS_QUI_MESURENT = [
+    "FL",
+    "FLACON",
+    "FLACONS",
+    "F",
+    "T",
+    "TUBE",
+    "TUBES",
+    "AMP",
+    "AMPOULE",
+    "AMPOULES",
+    "SACHET",
+    "SACHETS",
+    "POT",
+    "SERINGUE",
+    "STICK",
+    "STICKS",
+    "RECIPIENT",
+    "RECIPIENTS UNIDOSES",
+]
+
+# Mots toleres apres le nombre : "B/30 SACHETS" vaut bien 30.
+MOTS_DENOMBRABLES = [
+    "SACHET",
+    "SACHETS",
+    "COMPRIME",
+    "COMPRIMES",
+    "CP",
+    "GELULE",
+    "GELULES",
+    "CAPSULE",
+    "CAPSULES",
+    "SUPPOSITOIRE",
+    "SUPPOSITOIRES",
+    "OVULE",
+    "OVULES",
+    "AMPOULE",
+    "AMPOULES",
+    "AMP",
+    "PILULE",
+    "PILULES",
+    "STICK",
+    "STICKS",
+    "DOSE",
+    "DOSES",
+    "UNITE",
+    "UNITES",
+    # "B/10 FL" : dix flacons, c'est bien un compte. Le cas 3
+    # passe avant et echoue faute de mesure apres "FL".
+    "FL",
+    "FLACON",
+    "FLACONS",
+    "TUBE",
+    "TUBES",
+]
+
+# L'ordre compte : "MG" avant "G", sinon "500MG" se lirait "500M" + "G".
+UNITES_DE_MESURE = ["ML", "MG", "KG", "L", "G"]
+
+# Deux presentations dans une seule cellule. On refuse de choisir.
+SEPARATEURS_DE_PRESENTATIONS = [" ET ", " - ", " OU ", "OU FL"]
+
+# Ustensiles livres avec le medicament. Ils ne changent ni le compte ni la
+# mesure : "FL/100ML +PIPETTE GRADUEE EN KG" reste un flacon de 100 ml.
+#
+# La queue n'est retiree que si elle ne porte AUCUN chiffre. Sinon il s'agit
+# d'un second composant -- "B/06FL. DE PDRE + 06AMP. DE 2,5ML DE SOLVANT" est
+# un necessaire poudre + solvant, et le lire comme un simple flacon ferait
+# disparaitre le solvant.
+USTENSILES = [
+    "PIPETTE",
+    "SERINGUE",
+    "GOBELET",
+    "GOBLET",
+    "CUILLERE",
+    "DOSEUR",
+    "COMPTE-GOUTTES",
+    "CANULE",
+    "APPLICATEUR",
+]
 
 
 def _to_float(text: str) -> float:
@@ -123,6 +232,29 @@ class Packaging:
         return self.count is not None or self.volume is not None
 
 
+# Un dosage ecrit comme une fraction nue, sans aucune unite : « 0,001 ».
+#
+# Mesure du 19/11/2026 : 39 produits sur 914. Ce sont des fractions, pas des
+# milligrammes -- six verifications independantes contre la concentration de
+# reference de chaque produit :
+#
+#     0,001    collyre diclofenac        = 0,1 %   (concentration usuelle)
+#     0,003    pommade ciprofloxacine    = 0,3 %
+#     0,0075   gel metronidazole         = 0,75 %
+#     0,01     gel diclofenac            = 1 %
+#     0,025    gel ketoprofene           = 2,5 %
+#     0,03     solution buvable paracetamol = 3 %, soit 30 mg/ml
+#
+# Les six tombent sur la concentration de reference connue. Et le registre
+# ecrit la MEME chose des deux facons : le collyre diclofenac a 0,1 % est
+# « 0,001 » pour VOLTARENE et XINAC, « 0.1% » pour DICLOGESIC. Sans cette
+# regle, DICLOGESIC paraissait sans aucun equivalent alors qu il en a deux.
+#
+# La valeur brute n est jamais reecrite : seule la lecture est unifiee, pour
+# que deux notations du meme nombre tombent dans le meme groupe.
+_FRACTION_NUE = re.compile(r"^0[.,][0-9]+$")
+
+
 def parse_strength(raw: str | None) -> Strength:
     """Read a DOSAGE cell into its quantities.
 
@@ -132,8 +264,8 @@ def parse_strength(raw: str | None) -> Strength:
 
     >>> parse_strength("325MG/37,5MG").canonical()
     '325mg+37.5mg'
-    >>> parse_strength("0,03").parsed
-    True
+    >>> parse_strength("0,03").canonical()   # une fraction nue vaut un %
+    '3%'
     >>> parse_strength("CF NOTICE").parsed
     False
     """
@@ -144,9 +276,28 @@ def parse_strength(raw: str | None) -> Strength:
     components: list[Component] = []
     unparsed: list[str] = []
 
+    # "<valeur> (<equivalent>)" : le registre donne d'abord une concentration,
+    # puis la meme chose dite autrement entre parentheses.
+    #
+    #     1% (10MG/ML)        une creme a 1 %, soit 10 mg par ml
+    #     5% ( 5G/100 G )     5 %, soit 5 g pour 100 g
+    #     400MG (684MG)       400 mg de base, pour 684 mg de sel
+    #
+    # Mesure du 17/11/2026, avant cette regle : 9 des 10 dosages illisibles
+    # suivaient ce motif. La valeur retenue est celle de GAUCHE, qui est la
+    # dose annoncee ; l'equivalent part dans `unparsed`, visible mais jamais
+    # compte deux fois.
+    entre_parentheses = _VALEUR_ET_EQUIVALENT.match(text)
+    if entre_parentheses:
+        text = entre_parentheses.group("valeur").strip()
+        unparsed.append(entre_parentheses.group("equivalent").strip())
+
     for fragment in text.split("/"):
         fragment = fragment.strip()
         if not fragment:
+            continue
+        if _FRACTION_NUE.match(fragment):
+            components.append(Component(value=_to_float(fragment) * 100, unit="%"))
             continue
         match = _COMPONENT_RE.match(fragment)
         if match:
@@ -160,6 +311,63 @@ def parse_strength(raw: str | None) -> Strength:
             unparsed.append(fragment)
 
     return Strength(raw=text, components=tuple(components), unparsed=tuple(unparsed))
+
+
+def _retirer_ustensile(texte: str) -> str:
+    """Couper la queue qui ne decrit qu'un ustensile livre avec le produit.
+
+    "FL/100ML +PIPETTE GRADUEE EN KG" devient "FL/100ML" : la pipette ne
+    change ni le volume du flacon ni le nombre d'unites.
+
+    La coupe n'a lieu que si la queue ne porte AUCUN chiffre. Sinon c'est un
+    second composant, et le perdre serait grave :
+    "B/06FL DE PDRE + 06AMP DE 2,5ML DE SOLVANT" est un necessaire poudre plus
+    solvant, pas un flacon de poudre.
+    """
+    for marque in ("+", " AVEC "):
+        if marque not in texte:
+            continue
+        tete, _, queue = texte.partition(marque)
+        if any(c.isdigit() for c in queue):
+            continue  # un second composant, pas un ustensile
+        if any(u in queue for u in USTENSILES):
+            return tete.strip()
+    return texte
+
+
+def _separer_nombre_et_mot(texte: str) -> tuple[int | None, str]:
+    """'05 AMP' et '01FL' donnent tous deux (5, 'FL') ou (1, 'FL').
+
+    Le ministere ecrit parfois le nombre colle au contenant. Separer sur les
+    espaces seuls raterait "B/01FL DE 125ML" -- huit produits du registre.
+    """
+    texte = texte.strip()
+    chiffres = ""
+    for caractere in texte:
+        if caractere.isdigit():
+            chiffres += caractere
+        else:
+            break
+    if not chiffres:
+        return None, ""
+    return int(chiffres), texte[len(chiffres) :].strip()
+
+
+def _lire_mesure(texte: str) -> Component | None:
+    """'125 ML' -> 125 ml.  Rend None si ce n'est pas une mesure.
+
+    Les unites sont essayees dans l'ordre de la liste, et "MG" y precede "G" :
+    sinon "500MG" se lirait "500M" suivi de "G", et le nombre serait faux.
+    """
+    texte = texte.strip()
+    for unite in UNITES_DE_MESURE:
+        if texte.endswith(unite):
+            nombre = texte[: -len(unite)].strip()
+            try:
+                return Component(value=_to_float(nombre), unit=normalize_unit(unite))
+            except ValueError:
+                return None
+    return None
 
 
 def parse_packaging(raw: str | None) -> Packaging:
@@ -178,19 +386,66 @@ def parse_packaging(raw: str | None) -> Packaging:
     if not text:
         return Packaging(raw="")
 
-    count_match = _PACK_COUNT_RE.match(text)
-    if count_match:
-        return Packaging(raw=text, count=int(count_match.group("count")))
+    propre = _retirer_ustensile(text.upper().replace(".", " "))
 
-    volume_match = _PACK_VOLUME_RE.match(text)
-    if volume_match:
-        return Packaging(
-            raw=text,
-            container=volume_match.group("container").upper(),
-            volume=Component(
-                value=_to_float(volume_match.group("value")),
-                unit=normalize_unit(volume_match.group("unit")),
-            ),
+    # Deux presentations dans une seule cellule : on ne choisit pas.
+    # "B/30 ET B/90" decrit deux tailles de boite ; en retenir une serait
+    # inventer. C'est une decision, pas un echec.
+    for separateur in SEPARATEURS_DE_PRESENTATIONS:
+        if separateur in propre:
+            return Packaging(raw=text)
+
+    if "/" in propre:
+        gauche, droite = propre.split("/", 1)
+    elif " DE " in propre:
+        gauche, droite = propre.split(" DE ", 1)
+    else:
+        return Packaging(raw=text)
+    gauche, droite = gauche.strip(), droite.strip()
+    mots = droite.split()
+
+    # Cas 1 : le contenant est a gauche et son contenu se mesure. "FL/125 ML"
+    if gauche in CONTENANTS_QUI_MESURENT:
+        mesure = _lire_mesure(droite)
+        return (
+            Packaging(raw=text, container=gauche, volume=mesure) if mesure else Packaging(raw=text)
         )
+
+    # Pour tout le reste, il faut une boite a gauche.
+    if gauche not in CONTENANTS_QUI_COMPTENT:
+        return Packaging(raw=text)
+
+    # Cas 2 : une boite de N contenants, d'une mesure chacun.
+    # "B/05 AMP DE 2ML" porte DEUX informations. On l'examine en premier :
+    # sinon le cas 3 y lirait un simple volume de 2 ml et les cinq ampoules
+    # disparaitraient.
+    if " DE " in droite:
+        avant, apres = droite.split(" DE ", 1)
+        nombre, contenant = _separer_nombre_et_mot(avant)
+        if nombre is not None and contenant in CONTENANTS_QUI_MESURENT:
+            mesure = _lire_mesure(apres)
+            if mesure:
+                return Packaging(raw=text, count=nombre, container=contenant, volume=mesure)
+
+    # Cas 3 : une boite qui annonce son contenant puis sa mesure. "B/FL 15 ML"
+    if mots and mots[0] in CONTENANTS_QUI_MESURENT:
+        mesure = _lire_mesure(" ".join(mots[1:]))
+        if mesure:
+            return Packaging(raw=text, container=mots[0], volume=mesure)
+
+    # Cas 4 : une boite de N unites. "B/16", "B/30 SACHETS"
+    if mots and mots[0].isdigit():
+        reste = mots[1:]
+        if not reste or (len(reste) == 1 and reste[0] in MOTS_DENOMBRABLES):
+            return Packaging(raw=text, count=int(mots[0]))
+        # "B/30SACHETS" : le mot est colle au nombre.
+        chiffres = ""
+        for caractere in droite:
+            if caractere.isdigit():
+                chiffres += caractere
+            else:
+                break
+        if chiffres and droite[len(chiffres) :].strip() in MOTS_DENOMBRABLES:
+            return Packaging(raw=text, count=int(chiffres))
 
     return Packaging(raw=text)

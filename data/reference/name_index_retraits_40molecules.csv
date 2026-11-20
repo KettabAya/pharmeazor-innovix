@@ -1,0 +1,3022 @@
+alias,alias_normalized,kind,retrait_id,source_sheet
+001/03 B 005/97,001/03 B 005/97,registration,DZ-R-0333,retraits
+001/03 B 006/97,001/03 B 006/97,registration,DZ-R-0346,retraits
+001/03 B 007/97,001/03 B 007/97,registration,DZ-R-0355,retraits
+001/03 B 070/06/12,001/03 B 070/06/12,registration,DZ-R-0046,non_renouveles
+001/03 B 071/07,001/03 B 071/07,registration,DZ-R-0047,non_renouveles
+001/04 B 004/97,001/04 B 004/97,registration,DZ-R-0425,retraits
+001/04 B 005/97,001/04 B 005/97,registration,DZ-R-0431,retraits
+001/04 B 009/97,001/04 B 009/97,registration,DZ-R-0511,retraits
+001/04 B 010/09,001/04 B 010/09,registration,DZ-R-0519,retraits
+001/04 B 019/97/09,001/04 B 019/97/09,registration,DZ-R-0076,non_renouveles
+001/04 B 020/97/09,001/04 B 020/97/09,registration,DZ-R-0079,non_renouveles
+001/04 B 040/11,001/04 B 040/11,registration,DZ-R-0094,non_renouveles
+001/04 B 042/06,001/04 B 042/06,registration,DZ-R-0099,non_renouveles
+001/04 B 047/06,001/04 B 047/06,registration,DZ-R-0601,retraits
+001/04 B 058/09,001/04 B 058/09,registration,DZ-R-0106,non_renouveles
+001/04 B 060/09,001/04 B 060/09,registration,DZ-R-0109,non_renouveles
+001/06 H 163/12,001/06 H 163/12,registration,DZ-R-0155,non_renouveles
+001/13 B 019/02/13,001/13 B 019/02/13,registration,DZ-R-0767,retraits
+001/13 B 158/01,001/13 B 158/01,registration,DZ-R-0182,non_renouveles
+001/13 B 210/01,001/13 B 210/01,registration,DZ-R-0196,non_renouveles
+001/13 B 211/01,001/13 B 211/01,registration,DZ-R-0198,non_renouveles
+001/13 B 247/01,001/13 B 247/01,registration,DZ-R-0200,non_renouveles
+001/13 B 255/01,001/13 B 255/01,registration,DZ-R-0201,non_renouveles
+001/13 E 176/05,001/13 E 176/05,registration,DZ-R-0791,retraits
+001/13 E 244/07,001/13 E 244/07,registration,DZ-R-0215,non_renouveles
+001/13 E 299/07,001/13 E 299/07,registration,DZ-R-0220,non_renouveles
+001/13 F 039/97/06,001/13 F 039/97/06,registration,DZ-R-0815,retraits
+001/13 F 040/97,001/13 F 040/97,registration,DZ-R-0224,non_renouveles
+001/13 F 199/07/14,001/13 F 199/07/14,registration,DZ-R-0824,retraits
+001/13 F 225/06/12,001/13 F 225/06/12,registration,DZ-R-0228,non_renouveles
+001/13 G 044/98,001/13 G 044/98,registration,DZ-R-0846,retraits
+001/13 G 045/97/10,001/13 G 045/97/10,registration,DZ-R-0234,non_renouveles
+001/13 G 046/97/08,001/13 G 046/97/08,registration,DZ-R-0237,non_renouveles
+001/13 G 047/97/10,001/13 G 047/97/10,registration,DZ-R-0242,non_renouveles
+001/13 G 050/98/09,001/13 G 050/98/09,registration,DZ-R-0247,non_renouveles
+001/13 G 051/97/09,001/13 G 051/97/09,registration,DZ-R-0253,non_renouveles
+001/13 G 182/05/13,001/13 G 182/05/13,registration,DZ-R-0914,retraits
+001/13 G 221/04/09,001/13 G 221/04/09,registration,DZ-R-0266,non_renouveles
+001/13 G 245/12,001/13 G 245/12,registration,DZ-R-0268,non_renouveles
+001/13 G 265/03,001/13 G 265/03,registration,DZ-R-0274,non_renouveles
+001/13 G 280/05,001/13 G 280/05,registration,DZ-R-0280,non_renouveles
+001/13 K 251/02/09,001/13 K 251/02/09,registration,DZ-R-0286,non_renouveles
+001/13 K 252/02/09,001/13 K 252/02/09,registration,DZ-R-0287,non_renouveles
+001/13 K 253/02/09,001/13 K 253/02/09,registration,DZ-R-0289,non_renouveles
+001/13 K 254/02/09,001/13 K 254/02/09,registration,DZ-R-0291,non_renouveles
+001/13 M 090/98/06,001/13 M 090/98/06,registration,DZ-R-0296,non_renouveles
+001/13 M 092/97/07,001/13 M 092/97/07,registration,DZ-R-0966,retraits
+001/21 A 052/07,001/21 A 052/07,registration,DZ-R-1006,retraits
+002/04 B 004/97,002/04 B 004/97,registration,DZ-R-0421,retraits
+003/03 A 024/08,003/03 A 024/08,registration,DZ-R-0006,non_renouveles
+003/03 A 025/08,003/03 A 025/08,registration,DZ-R-0007,non_renouveles
+003/03 A 069/09,003/03 A 069/09,registration,DZ-R-0008,non_renouveles
+003/03 A 084/06,003/03 A 084/06,registration,DZ-R-0009,non_renouveles
+003/03 A 104/08,003/03 A 104/08,registration,DZ-R-0010,non_renouveles
+003/03 B 007/08,003/03 B 007/08,registration,DZ-R-0025,non_renouveles
+003/03 B 057/06,003/03 B 057/06,registration,DZ-R-0043,non_renouveles
+003/03 B 086/07,003/03 B 086/07,registration,DZ-R-0051,non_renouveles
+003/03 B 087/07,003/03 B 087/07,registration,DZ-R-0052,non_renouveles
+003/03 B 091/07,003/03 B 091/07,registration,DZ-R-0053,non_renouveles
+003/03 B 096/97/10,003/03 B 096/97/10,registration,DZ-R-0055,non_renouveles
+003/03 B 100/07,003/03 B 100/07,registration,DZ-R-0058,non_renouveles
+003/03 B 101/08,003/03 B 101/08,registration,DZ-R-0059,non_renouveles
+003/03 D 010/08,003/03 D 010/08,registration,DZ-R-0398,retraits
+003/03 F 107/09,003/03 F 107/09,registration,DZ-R-0061,non_renouveles
+003/03 F 108/09,003/03 F 108/09,registration,DZ-R-0062,non_renouveles
+003/03 F 109/09,003/03 F 109/09,registration,DZ-R-0063,non_renouveles
+003/04 B 012/99,003/04 B 012/99,registration,DZ-R-0526,retraits
+003/04 B 017/01/10,003/04 B 017/01/10,registration,DZ-R-0073,non_renouveles
+003/04 B 022/06,003/04 B 022/06,registration,DZ-R-0084,non_renouveles
+003/04 B 023/99,003/04 B 023/99,registration,DZ-R-0088,non_renouveles
+003/06 B 123/09,003/06 B 123/09,registration,DZ-R-0118,non_renouveles
+003/06 B 243/09,003/06 B 243/09,registration,DZ-R-0121,non_renouveles
+003/06 E 060/09,003/06 E 060/09,registration,DZ-R-0132,non_renouveles
+003/06 E 127/06,003/06 E 127/06,registration,DZ-R-0136,non_renouveles
+003/06 E 128/06,003/06 E 128/06,registration,DZ-R-0138,non_renouveles
+003/06 E 139/06,003/06 E 139/06,registration,DZ-R-0139,non_renouveles
+003/06 E 201/06,003/06 E 201/06,registration,DZ-R-0143,non_renouveles
+003/06 E 277/09,003/06 E 277/09,registration,DZ-R-0147,non_renouveles
+003/06 E 278/09,003/06 E 278/09,registration,DZ-R-0148,non_renouveles
+003/06 F 069/06,003/06 F 069/06,registration,DZ-R-0152,non_renouveles
+003/06 F 149/07,003/06 F 149/07,registration,DZ-R-0153,non_renouveles
+003/06 M 290/11,003/06 M 290/11,registration,DZ-R-0157,non_renouveles
+003/12 A 144/09,003/12 A 144/09,registration,DZ-R-0165,non_renouveles
+003/12 A 150/09,003/12 A 150/09,registration,DZ-R-0167,non_renouveles
+003/13 C 020/07,003/13 C 020/07,registration,DZ-R-0204,non_renouveles
+003/13 C 020/98,003/13 C 020/98,registration,DZ-R-0205,non_renouveles
+003/13 E 177/07,003/13 E 177/07,registration,DZ-R-0210,non_renouveles
+003/13 E 215/08,003/13 E 215/08,registration,DZ-R-0211,non_renouveles
+003/13 E 244/08,003/13 E 244/08,registration,DZ-R-0216,non_renouveles
+003/13 E 297/10,003/13 E 297/10,registration,DZ-R-0218,non_renouveles
+003/13 F 040/09,003/13 F 040/09,registration,DZ-R-0225,non_renouveles
+003/13 G 046/08,003/13 G 046/08,registration,DZ-R-0238,non_renouveles
+003/13 G 220/08,003/13 G 220/08,registration,DZ-R-0265,non_renouveles
+003/13 G 301/06,003/13 G 301/06,registration,DZ-R-0281,non_renouveles
+003/13 G 302/09,003/13 G 302/09,registration,DZ-R-0283,non_renouveles
+003/13 K 462/11,003/13 K 462/11,registration,DZ-R-0294,non_renouveles
+003/13 M 090/07,003/13 M 090/07,registration,DZ-R-0295,non_renouveles
+003/20 B 053/99,003/20 B 053/99,registration,DZ-R-0988,retraits
+003/20 B 215/11,003/20 B 215/11,registration,DZ-R-0303,non_renouveles
+003/21 A 057/09,003/21 A 057/09,registration,DZ-R-0306,non_renouveles
+008/03 B 006/96,008/03 B 006/96,registration,DZ-R-0339,retraits
+008/03 B 007/96,008/03 B 007/96,registration,DZ-R-0350,retraits
+008/03 B 027/00,008/03 B 027/00,registration,DZ-R-0362,retraits
+008/03 B 034/00,008/03 B 034/00,registration,DZ-R-0028,non_renouveles
+008/03 B 040/00,008/03 B 040/00,registration,DZ-R-0365,retraits
+008/04 B 040/00,008/04 B 040/00,registration,DZ-R-0587,retraits
+008/22 A 032/08,008/22 A 032/08,registration,DZ-R-0307,non_renouveles
+010/04 B 017/96,010/04 B 017/96,registration,DZ-R-0530,retraits
+010/06 F 069/99/07,010/06 F 069/99/07,registration,DZ-R-0708,retraits
+011/13 D 024/96,011/13 D 024/96,registration,DZ-R-0207,non_renouveles
+011/13 G 042/96,011/13 G 042/96,registration,DZ-R-0828,retraits
+011/13 G 043/96,011/13 G 043/96,registration,DZ-R-0838,retraits
+012/04 B 008/99,012/04 B 008/99,registration,DZ-R-0490,retraits
+012/04 B 012/98,012/04 B 012/98,registration,DZ-R-0069,non_renouveles
+013/04 B 010/98,013/04 B 010/98,registration,DZ-R-0515,retraits
+013/20 B 029/98,013/20 B 029/98,registration,DZ-R-0302,non_renouveles
+014/17 D 020/96,014/17 D 020/96,registration,DZ-R-0299,non_renouveles
+014/17 D 021/96,014/17 D 021/96,registration,DZ-R-0986,retraits
+015/04 B 004/97,015/04 B 004/97,registration,DZ-R-0412,retraits
+015/04 B 005/97,015/04 B 005/97,registration,DZ-R-0441,retraits
+015/04 B 006/97,015/04 B 006/97,registration,DZ-R-0464,retraits
+015/04 B 007/97,015/04 B 007/97,registration,DZ-R-0485,retraits
+015/06 B 017/97,015/06 B 017/97,registration,DZ-R-0609,retraits
+015/06 B 018/97,015/06 B 018/97,registration,DZ-R-0622,retraits
+015/21 A 004/99,015/21 A 004/99,registration,DZ-R-0992,retraits
+016/03 B 007/96,016/03 B 007/96,registration,DZ-R-0349,retraits
+016/03 B 040/00,016/03 B 040/00,registration,DZ-R-0366,retraits
+016/04 B 016/96,016/04 B 016/96,registration,DZ-R-0527,retraits
+016/13 B 199/99,016/13 B 199/99,registration,DZ-R-0188,non_renouveles
+016/13 B 200/99,016/13 B 200/99,registration,DZ-R-0189,non_renouveles
+016/13 F 038/96,016/13 F 038/96,registration,DZ-R-0801,retraits
+016/21 A 032/99/14,016/21 A 032/99/14,registration,DZ-R-1005,retraits
+017/03 A 005/96,017/03 A 005/96,registration,DZ-R-0315,retraits
+017/03 B 010/96,017/03 B 010/96,registration,DZ-R-0359,retraits
+017/03 B 067/05/17,017/03 B 067/05/17,registration,DZ-R-0379,retraits
+017/03 B 068/05,017/03 B 068/05,registration,DZ-R-0380,retraits
+017/13 G 045/96,017/13 G 045/96,registration,DZ-R-0851,retraits
+017/13 G 046/96,017/13 G 046/96,registration,DZ-R-0875,retraits
+017/13 G 047/96,017/13 G 047/96,registration,DZ-R-0892,retraits
+018/13 C 020/98,018/13 C 020/98,registration,DZ-R-0779,retraits
+022/17 D 124/00,022/17 D 124/00,registration,DZ-R-0987,retraits
+023/13 B 019/08,023/13 B 019/08,registration,DZ-R-0181,non_renouveles
+023/13 G 049/08,023/13 G 049/08,registration,DZ-R-0245,non_renouveles
+023/13 G 182/08,023/13 G 182/08,registration,DZ-R-0260,non_renouveles
+023/17 D 020/96,023/17 D 020/96,registration,DZ-R-0300,non_renouveles
+024/06 E 059/99,024/06 E 059/99,registration,DZ-R-0126,non_renouveles
+024/06 E 060/99,024/06 E 060/99,registration,DZ-R-0134,non_renouveles
+026/03 B 007/01/07,026/03 B 007/01/07,registration,DZ-R-0354,retraits
+026/03 B 042/06,026/03 B 042/06,registration,DZ-R-0034,non_renouveles
+026/03 B 043/06,026/03 B 043/06,registration,DZ-R-0038,non_renouveles
+026/03 B 061/05,026/03 B 061/05,registration,DZ-R-0044,non_renouveles
+026/03 B 096/01/09,026/03 B 096/01/09,registration,DZ-R-0054,non_renouveles
+026/03 D 010/99,026/03 D 010/99,registration,DZ-R-0390,retraits
+026/04 B 017/09,026/04 B 017/09,registration,DZ-R-0072,non_renouveles
+026/04 B 023/01,026/04 B 023/01,registration,DZ-R-0087,non_renouveles
+026/04 B 024/99,026/04 B 024/99,registration,DZ-R-0570,retraits
+026/04 B 042/07,026/04 B 042/07,registration,DZ-R-0100,non_renouveles
+026/21 A 004/09,026/21 A 004/09,registration,DZ-R-0304,non_renouveles
+026/21 A 005/09,026/21 A 005/09,registration,DZ-R-0305,non_renouveles
+027/13 A 003/97,027/13 A 003/97,registration,DZ-R-0749,retraits
+027/13 A 004/97,027/13 A 004/97,registration,DZ-R-0169,non_renouveles
+027/13 A 005/97,027/13 A 005/97,registration,DZ-R-0173,non_renouveles
+027/17 D 020/97,027/17 D 020/97,registration,DZ-R-0979,retraits
+027/17 D 021/97,027/17 D 021/97,registration,DZ-R-0984,retraits
+028/17 D 131/09,028/17 D 131/09,registration,DZ-R-0301,non_renouveles
+031/13 G 042/96,031/13 G 042/96,registration,DZ-R-0827,retraits
+031/13 G 043/96,031/13 G 043/96,registration,DZ-R-0837,retraits
+032/17 D 020/96,032/17 D 020/96,registration,DZ-R-0978,retraits
+034/04 B 007/99,034/04 B 007/99,registration,DZ-R-0487,retraits
+035/03 B 005/00,035/03 B 005/00,registration,DZ-R-0318,retraits
+035/03 B 007/09,035/03 B 007/09,registration,DZ-R-0023,non_renouveles
+035/03 B 041/09,035/03 B 041/09,registration,DZ-R-0033,non_renouveles
+035/03 B 042/09,035/03 B 042/09,registration,DZ-R-0036,non_renouveles
+035/03 B 043/09,035/03 B 043/09,registration,DZ-R-0040,non_renouveles
+035/03 F 047/10,035/03 F 047/10,registration,DZ-R-0060,non_renouveles
+035/04 B 004/00/07,035/04 B 004/00/07,registration,DZ-R-0408,retraits
+035/04 B 010/09,035/04 B 010/09,registration,DZ-R-0066,non_renouveles
+035/04 B 032/98/07,035/04 B 032/98/07,registration,DZ-R-0090,non_renouveles
+035/04 B 040/09,035/04 B 040/09,registration,DZ-R-0091,non_renouveles
+035/06 B 017/97,035/06 B 017/97,registration,DZ-R-0112,non_renouveles
+035/06 B 018/98/07,035/06 B 018/98/07,registration,DZ-R-0116,non_renouveles
+035/06 B 123/07,035/06 B 123/07,registration,DZ-R-0119,non_renouveles
+035/06 B 243/10,035/06 B 243/10,registration,DZ-R-0120,non_renouveles
+035/06 E 059/02,035/06 E 059/02,registration,DZ-R-0649,retraits
+035/06 E 060/01,035/06 E 060/01,registration,DZ-R-0653,retraits
+035/06 E 291/09,035/06 E 291/09,registration,DZ-R-0150,non_renouveles
+035/06 F 069/00/07,035/06 F 069/00/07,registration,DZ-R-0151,non_renouveles
+035/13 F 199/11,035/13 F 199/11,registration,DZ-R-0227,non_renouveles
+035/13 G 050/01/07,035/13 G 050/01/07,registration,DZ-R-0252,non_renouveles
+035/13 G 051/01/07,035/13 G 051/01/07,registration,DZ-R-0904,retraits
+035/13 G 159/01,035/13 G 159/01,registration,DZ-R-0907,retraits
+035/13 K 252/06,035/13 K 252/06,registration,DZ-R-0288,non_renouveles
+035/13 K 253/06,035/13 K 253/06,registration,DZ-R-0290,non_renouveles
+035/21 A 004/00/07,035/21 A 004/00/07,registration,DZ-R-0999,retraits
+036/06 F 149/06,036/06 F 149/06,registration,DZ-R-0729,retraits
+038/04 B 008/97,038/04 B 008/97,registration,DZ-R-0492,retraits
+038/04 B 009/97,038/04 B 009/97,registration,DZ-R-0502,retraits
+038/06 E 060/97,038/06 E 060/97,registration,DZ-R-0654,retraits
+039/03 D 010/00/07,039/03 D 010/00/07,registration,DZ-R-0395,retraits
+039/04 B 004/00,039/04 B 004/00,registration,DZ-R-0409,retraits
+039/06 B 018/98/08,039/06 B 018/98/08,registration,DZ-R-0620,retraits
+039/06 E 147/11,039/06 E 147/11,registration,DZ-R-0684,retraits
+039/06 E 166/11,039/06 E 166/11,registration,DZ-R-0688,retraits
+039/06 E 257/15,039/06 E 257/15,registration,DZ-R-0703,retraits
+039/06 E 258/15,039/06 E 258/15,registration,DZ-R-0704,retraits
+039/06 E 259/15,039/06 E 259/15,registration,DZ-R-0705,retraits
+039/13 A 005/97/08,039/13 A 005/97/08,registration,DZ-R-0762,retraits
+039/13 G 043/99/08,039/13 G 043/99/08,registration,DZ-R-0833,retraits
+039/13 G 045/97/18,039/13 G 045/97/18,registration,DZ-R-0870,retraits
+039/13 G 046/13,039/13 G 046/13,registration,DZ-R-0881,retraits
+039/13 G 047/99/13,039/13 G 047/99/13,registration,DZ-R-0901,retraits
+039/13 G 050/08,039/13 G 050/08,registration,DZ-R-0903,retraits
+039/13 G 220/13,039/13 G 220/13,registration,DZ-R-0917,retraits
+039/13 G 230/08/18,039/13 G 230/08/18,registration,DZ-R-0924,retraits
+039/13 G 245/08,039/13 G 245/08,registration,DZ-R-0925,retraits
+040/06 E 165/03,040/06 E 165/03,registration,DZ-R-0686,retraits
+040/06 E 227/06,040/06 E 227/06,registration,DZ-R-0697,retraits
+040/06 E 228/07,040/06 E 228/07,registration,DZ-R-0698,retraits
+040/06 E 246/08,040/06 E 246/08,registration,DZ-R-0702,retraits
+042/03 B 005/98,042/03 B 005/98,registration,DZ-R-0327,retraits
+042/04 B 004/98,042/04 B 004/98,registration,DZ-R-0422,retraits
+042/04 B 005/98,042/04 B 005/98,registration,DZ-R-0435,retraits
+042/04 B 006/98,042/04 B 006/98,registration,DZ-R-0454,retraits
+042/04 B 007/98,042/04 B 007/98,registration,DZ-R-0476,retraits
+042/04 B 008/98,042/04 B 008/98,registration,DZ-R-0493,retraits
+042/04 B 009/98,042/04 B 009/98,registration,DZ-R-0505,retraits
+042/13 G 050/98,042/13 G 050/98,registration,DZ-R-0248,non_renouveles
+042/13 G 051/98,042/13 G 051/98,registration,DZ-R-0254,non_renouveles
+043/03 B 005/98,043/03 B 005/98,registration,DZ-R-0323,retraits
+043/03 B 006/98,043/03 B 006/98,registration,DZ-R-0342,retraits
+043/04 B 010/07,043/04 B 010/07,registration,DZ-R-0524,retraits
+043/04 B 023/98,043/04 B 023/98,registration,DZ-R-0565,retraits
+043/04 B 042/08,043/04 B 042/08,registration,DZ-R-0597,retraits
+043/04 B 055/07,043/04 B 055/07,registration,DZ-R-0104,non_renouveles
+043/04 B 056/07,043/04 B 056/07,registration,DZ-R-0105,non_renouveles
+043/04 B 058/08,043/04 B 058/08,registration,DZ-R-0108,non_renouveles
+043/04 B 060/08,043/04 B 060/08,registration,DZ-R-0110,non_renouveles
+043/06 E 059/98,043/06 E 059/98,registration,DZ-R-0123,non_renouveles
+043/06 E 060/98,043/06 E 060/98,registration,DZ-R-0128,non_renouveles
+043/06 E 061/98,043/06 E 061/98,registration,DZ-R-0662,retraits
+043/06 E 222/07,043/06 E 222/07,registration,DZ-R-0145,non_renouveles
+043/06 F 162/08,043/06 F 162/08,registration,DZ-R-0732,retraits
+043/06 F 267/08,043/06 F 267/08,registration,DZ-R-0734,retraits
+043/13 E 215/07,043/13 E 215/07,registration,DZ-R-0213,non_renouveles
+043/13 E 244/03,043/13 E 244/03,registration,DZ-R-0214,non_renouveles
+043/13 F 039/98,043/13 F 039/98,registration,DZ-R-0810,retraits
+043/13 F 040/98,043/13 F 040/98,registration,DZ-R-0819,retraits
+043/13 K 254/08,043/13 K 254/08,registration,DZ-R-0943,retraits
+043/13 M 090/98,043/13 M 090/98,registration,DZ-R-0953,retraits
+043/13 M 092/98,043/13 M 092/98,registration,DZ-R-0964,retraits
+044/23 B 027/99,044/23 B 027/99,registration,DZ-R-1007,retraits
+045/04 B 022/99,045/04 B 022/99,registration,DZ-R-0082,non_renouveles
+045/04 B 023/99,045/04 B 023/99,registration,DZ-R-0564,retraits
+045/04 B 024/98/16,045/04 B 024/98/16,registration,DZ-R-0572,retraits
+045/06 H 096/97/16,045/06 H 096/97/16,registration,DZ-R-0739,retraits
+045/13 C 020/98/09,045/13 C 020/98/09,registration,DZ-R-0786,retraits
+045/13 E 176/97,045/13 E 176/97,registration,DZ-R-0793,retraits
+045/13 E 177/97,045/13 E 177/97,registration,DZ-R-0795,retraits
+045/21 A 005/98,045/21 A 005/98,registration,DZ-R-1004,retraits
+050/03 A 058/98,050/03 A 058/98,registration,DZ-R-0316,retraits
+050/03 B 010/98,050/03 B 010/98,registration,DZ-R-0026,non_renouveles
+050/03 D 010/04,050/03 D 010/04,registration,DZ-R-0386,retraits
+050/03 F 047/09,050/03 F 047/09,registration,DZ-R-0406,retraits
+050/04 B 022/08,050/04 B 022/08,registration,DZ-R-0085,non_renouveles
+050/04 B 022/98,050/04 B 022/98,registration,DZ-R-0562,retraits
+050/06 B 123/05/11,050/06 B 123/05/11,registration,DZ-R-0117,non_renouveles
+050/13 C 020/98/10,050/13 C 020/98/10,registration,DZ-R-0206,non_renouveles
+050/13 F 039/02/10,050/13 F 039/02/10,registration,DZ-R-0816,retraits
+050/13 G 045/98/10,050/13 G 045/98/10,registration,DZ-R-0859,retraits
+050/13 G 221/00,050/13 G 221/00,registration,DZ-R-0920,retraits
+050/13 G 230/06,050/13 G 230/06,registration,DZ-R-0923,retraits
+050/13 K 254/11,050/13 K 254/11,registration,DZ-R-0293,non_renouveles
+051/13 A 005/99,051/13 A 005/99,registration,DZ-R-0758,retraits
+051/13 G 045/98,051/13 G 045/98,registration,DZ-R-0864,retraits
+051/13 G 046/98,051/13 G 046/98,registration,DZ-R-0872,retraits
+051/13 G 047/98,051/13 G 047/98,registration,DZ-R-0888,retraits
+051/13 G 220/00,051/13 G 220/00,registration,DZ-R-0916,retraits
+053/03 A 001/97,053/03 A 001/97,registration,DZ-R-0308,retraits
+055/03 B 007/99,055/03 B 007/99,registration,DZ-R-0351,retraits
+055/04 B 004/99,055/04 B 004/99,registration,DZ-R-0411,retraits
+055/04 B 005/98,055/04 B 005/98,registration,DZ-R-0433,retraits
+055/04 B 009/99,055/04 B 009/99,registration,DZ-R-0503,retraits
+055/04 B 042/08,055/04 B 042/08,registration,DZ-R-0101,non_renouveles
+055/06 B 017/97,055/06 B 017/97,registration,DZ-R-0607,retraits
+055/06 B 123/08,055/06 B 123/08,registration,DZ-R-0641,retraits
+055/06 B 243/08,055/06 B 243/08,registration,DZ-R-0648,retraits
+055/13 B 207/08,055/13 B 207/08,registration,DZ-R-0194,non_renouveles
+055/13 C 020/01,055/13 C 020/01,registration,DZ-R-0778,retraits
+055/13 G 044/98,055/13 G 044/98,registration,DZ-R-0841,retraits
+055/13 G 045/01,055/13 G 045/01,registration,DZ-R-0857,retraits
+055/13 G 046/98,055/13 G 046/98,registration,DZ-R-0877,retraits
+055/13 G 047/98,055/13 G 047/98,registration,DZ-R-0893,retraits
+055/13 G 221/07,055/13 G 221/07,registration,DZ-R-0918,retraits
+055/13 G 265/12,055/13 G 265/12,registration,DZ-R-0273,non_renouveles
+055/13 K 252/02/13,055/13 K 252/02/13,registration,DZ-R-0933,retraits
+055/13 M 090/98,055/13 M 090/98,registration,DZ-R-0956,retraits
+055/13 M 169/07,055/13 M 169/07,registration,DZ-R-0970,retraits
+055/21 A 004/98,055/21 A 004/98,registration,DZ-R-0991,retraits
+057/13 G 045/98,057/13 G 045/98,registration,DZ-R-0850,retraits
+057/13 G 047/98,057/13 G 047/98,registration,DZ-R-0882,retraits
+057/17 D 020/98,057/17 D 020/98,registration,DZ-R-0976,retraits
+064/03 A 001/98,064/03 A 001/98,registration,DZ-R-0311,retraits
+064/03 B 005/97,064/03 B 005/97,registration,DZ-R-0332,retraits
+066/04 B 004/01,066/04 B 004/01,registration,DZ-R-0414,retraits
+066/04 B 005/98,066/04 B 005/98,registration,DZ-R-0440,retraits
+066/04 B 006/00,066/04 B 006/00,registration,DZ-R-0462,retraits
+066/04 B 007/98,066/04 B 007/98,registration,DZ-R-0482,retraits
+066/04 B 008/98,066/04 B 008/98,registration,DZ-R-0491,retraits
+066/13 M 090/00,066/13 M 090/00,registration,DZ-R-0947,retraits
+066/13 M 092/97,066/13 M 092/97,registration,DZ-R-0961,retraits
+066/21 A 004/97,066/21 A 004/97,registration,DZ-R-0998,retraits
+068/04 B 004/97,068/04 B 004/97,registration,DZ-R-0424,retraits
+068/04 B 005/97,068/04 B 005/97,registration,DZ-R-0439,retraits
+068/04 B 006/98,068/04 B 006/98,registration,DZ-R-0460,retraits
+068/04 B 007/97,068/04 B 007/97,registration,DZ-R-0481,retraits
+068/04 B 037/00,068/04 B 037/00,registration,DZ-R-0576,retraits
+068/04 B 063/11,068/04 B 063/11,registration,DZ-R-0111,non_renouveles
+068/04 B 063/11,068/04 B 063/11,registration,DZ-R-0605,retraits
+068/06 E 146/99,068/06 E 146/99,registration,DZ-R-0682,retraits
+071/03 D 010/99,071/03 D 010/99,registration,DZ-R-0389,retraits
+071/04 B 005/99,071/04 B 005/99,registration,DZ-R-0446,retraits
+071/04 B 006/99,071/04 B 006/99,registration,DZ-R-0471,retraits
+071/06 B 123/05,071/06 B 123/05,registration,DZ-R-0631,retraits
+072/13 C 020/97,072/13 C 020/97,registration,DZ-R-0783,retraits
+074/03 B 005/97,074/03 B 005/97,registration,DZ-R-0321,retraits
+076/13 D 024/99,076/13 D 024/99,registration,DZ-R-0788,retraits
+076/13 G 044/97,076/13 G 044/97,registration,DZ-R-0845,retraits
+076/13 G 045/97,076/13 G 045/97,registration,DZ-R-0848,retraits
+076/13 G 046/97,076/13 G 046/97,registration,DZ-R-0880,retraits
+076/13 G 047/97,076/13 G 047/97,registration,DZ-R-0883,retraits
+079/04 B 006/98,079/04 B 006/98,registration,DZ-R-0457,retraits
+079/04 B 007/98,079/04 B 007/98,registration,DZ-R-0477,retraits
+079/04 B 021/98,079/04 B 021/98,registration,DZ-R-0081,non_renouveles
+079/13 G 045/97,079/13 G 045/97,registration,DZ-R-0231,non_renouveles
+079/13 G 047/04,079/13 G 047/04,registration,DZ-R-0241,non_renouveles
+079/13 G 050/98,079/13 G 050/98,registration,DZ-R-0249,non_renouveles
+080/13 A 005/98,080/13 A 005/98,registration,DZ-R-0174,non_renouveles
+080/13 F 038/98,080/13 F 038/98,registration,DZ-R-0223,non_renouveles
+080/13 G 044/98,080/13 G 044/98,registration,DZ-R-0843,retraits
+080/13 G 046/98,080/13 G 046/98,registration,DZ-R-0871,retraits
+080/13 G 047/98,080/13 G 047/98,registration,DZ-R-0884,retraits
+080/13 G 050/99,080/13 G 050/99,registration,DZ-R-0250,non_renouveles
+080/13 G 051/99,080/13 G 051/99,registration,DZ-R-0255,non_renouveles
+080/13 G 159/99,080/13 G 159/99,registration,DZ-R-0908,retraits
+080/13 G 181/09,080/13 G 181/09,registration,DZ-R-0910,retraits
+080/13 G 245/09,080/13 G 245/09,registration,DZ-R-0269,non_renouveles
+080/13 G 269/09,080/13 G 269/09,registration,DZ-R-0278,non_renouveles
+081/06 B 017/98,081/06 B 017/98,registration,DZ-R-0613,retraits
+081/06 B 018/97,081/06 B 018/97,registration,DZ-R-0627,retraits
+081/06 F 069/98,081/06 F 069/98,registration,DZ-R-0723,retraits
+081/13 C 020/98,081/13 C 020/98,registration,DZ-R-0782,retraits
+081/13 G 045/97,081/13 G 045/97,registration,DZ-R-0867,retraits
+081/13 G 046/98,081/13 G 046/98,registration,DZ-R-0879,retraits
+081/13 G 047/98,081/13 G 047/98,registration,DZ-R-0900,retraits
+081/13 M 169/98,081/13 M 169/98,registration,DZ-R-0975,retraits
+082/03 B 006/97,082/03 B 006/97,registration,DZ-R-0344,retraits
+084/04 B 022/99,084/04 B 022/99,registration,DZ-R-0561,retraits
+084/04 B 023/99,084/04 B 023/99,registration,DZ-R-0567,retraits
+084/13 A 004/99,084/13 A 004/99,registration,DZ-R-0170,non_renouveles
+084/13 A 005/99,084/13 A 005/99,registration,DZ-R-0175,non_renouveles
+085/03 B 038/00,085/03 B 038/00,registration,DZ-R-0363,retraits
+085/03 B 039/00,085/03 B 039/00,registration,DZ-R-0364,retraits
+086/04 B 021/98,086/04 B 021/98,registration,DZ-R-0544,retraits
+086/04 B 022/98,086/04 B 022/98,registration,DZ-R-0553,retraits
+088/13 K 231/12,088/13 K 231/12,registration,DZ-R-0931,retraits
+090/04 B 004/98,090/04 B 004/98,registration,DZ-R-0419,retraits
+090/04 B 005/98,090/04 B 005/98,registration,DZ-R-0444,retraits
+090/04 B 006/98,090/04 B 006/98,registration,DZ-R-0469,retraits
+090/04 B 009/99,090/04 B 009/99,registration,DZ-R-0509,retraits
+092/04 B 054/07,092/04 B 054/07,registration,DZ-R-0103,non_renouveles
+093/13 G 045/98,093/13 G 045/98,registration,DZ-R-0855,retraits
+094/04 B 004/99,094/04 B 004/99,registration,DZ-R-0420,retraits
+094/04 B 005/99,094/04 B 005/99,registration,DZ-R-0445,retraits
+094/04 B 006/99,094/04 B 006/99,registration,DZ-R-0470,retraits
+094/04 B 008/99,094/04 B 008/99,registration,DZ-R-0496,retraits
+094/04 B 009/99,094/04 B 009/99,registration,DZ-R-0510,retraits
+094/06 B 017/99,094/06 B 017/99,registration,DZ-R-0610,retraits
+094/06 B 018/99,094/06 B 018/99,registration,DZ-R-0624,retraits
+094/06 E 061/99,094/06 E 061/99,registration,DZ-R-0663,retraits
+094/06 E 062/99,094/06 E 062/99,registration,DZ-R-0666,retraits
+094/13 M 090/99,094/13 M 090/99,registration,DZ-R-0949,retraits
+094/13 M 092/99,094/13 M 092/99,registration,DZ-R-0958,retraits
+094/13 M 169/00,094/13 M 169/00,registration,DZ-R-0972,retraits
+094/21 A 004/99,094/21 A 004/99,registration,DZ-R-0996,retraits
+096/17 D 020/98,096/17 D 020/98,registration,DZ-R-0981,retraits
+097/03 A 105/08,097/03 A 105/08,registration,DZ-R-0011,non_renouveles
+097/06 E 126/06,097/06 E 126/06,registration,DZ-R-0669,retraits
+097/06 E 167/08,097/06 E 167/08,registration,DZ-R-0689,retraits
+097/06 F 162/09,097/06 F 162/09,registration,DZ-R-0733,retraits
+097/12 A 111/04,097/12 A 111/04,registration,DZ-R-0160,non_renouveles
+097/13 B 198/10,097/13 B 198/10,registration,DZ-R-0185,non_renouveles
+097/13 B 201/10,097/13 B 201/10,registration,DZ-R-0191,non_renouveles
+097/13 F 199/09,097/13 F 199/09,registration,DZ-R-0823,retraits
+098/04 B 006/99,098/04 B 006/99,registration,DZ-R-0450,retraits
+098/04 B 007/99,098/04 B 007/99,registration,DZ-R-0478,retraits
+098/04 B 009/99,098/04 B 009/99,registration,DZ-R-0507,retraits
+098/04 B 019/98/08,098/04 B 019/98/08,registration,DZ-R-0077,non_renouveles
+098/04 B 020/98/08,098/04 B 020/98/08,registration,DZ-R-0080,non_renouveles
+098/13 D 025/98,098/13 D 025/98,registration,DZ-R-0209,non_renouveles
+098/21 A 004/98,098/21 A 004/98,registration,DZ-R-0993,retraits
+099/03 B 110/09,099/03 B 110/09,registration,DZ-R-0383,retraits
+099/06 H 096/99,099/06 H 096/99,registration,DZ-R-0738,retraits
+099/13 G 045/98,099/13 G 045/98,registration,DZ-R-0861,retraits
+099/13 G 046/99,099/13 G 046/99,registration,DZ-R-0878,retraits
+099/13 G 047/98,099/13 G 047/98,registration,DZ-R-0897,retraits
+100/04 B 006/98,100/04 B 006/98,registration,DZ-R-0467,retraits
+100/04 B 007/98,100/04 B 007/98,registration,DZ-R-0483,retraits
+100/13 M 092/98,100/13 M 092/98,registration,DZ-R-0963,retraits
+101/03 H 112/09,101/03 H 112/09,registration,DZ-R-0065,non_renouveles
+102/04 B 024/08,102/04 B 024/08,registration,DZ-R-0571,retraits
+107/06 E 059/04,107/06 E 059/04,registration,DZ-R-0124,non_renouveles
+107/06 E 060/04,107/06 E 060/04,registration,DZ-R-0129,non_renouveles
+108/13 G 042/98,108/13 G 042/98,registration,DZ-R-0826,retraits
+108/13 G 043/98,108/13 G 043/98,registration,DZ-R-0836,retraits
+108/13 G 045/04,108/13 G 045/04,registration,DZ-R-0865,retraits
+108/13 G 047/06,108/13 G 047/06,registration,DZ-R-0898,retraits
+109/04 B 004/99,109/04 B 004/99,registration,DZ-R-0413,retraits
+109/04 B 005/99,109/04 B 005/99,registration,DZ-R-0436,retraits
+109/04 B 006/99,109/04 B 006/99,registration,DZ-R-0455,retraits
+109/06 B 017/99,109/06 B 017/99,registration,DZ-R-0113,non_renouveles
+109/06 B 018/99,109/06 B 018/99,registration,DZ-R-0617,retraits
+109/06 F 069/00/07,109/06 F 069/00/07,registration,DZ-R-0714,retraits
+109/13 A 004/99,109/13 A 004/99,registration,DZ-R-0168,non_renouveles
+109/13 G 047/99,109/13 G 047/99,registration,DZ-R-0887,retraits
+111/13 B 019/09,111/13 B 019/09,registration,DZ-R-0765,retraits
+111/13 B 210/09,111/13 B 210/09,registration,DZ-R-0773,retraits
+111/13 B 255/09,111/13 B 255/09,registration,DZ-R-0775,retraits
+112/03 B 006/00,112/03 B 006/00,registration,DZ-R-0345,retraits
+112/03 B 043/01,112/03 B 043/01,registration,DZ-R-0368,retraits
+112/13 B 207/00,112/13 B 207/00,registration,DZ-R-0193,non_renouveles
+112/13 B 210/00,112/13 B 210/00,registration,DZ-R-0774,retraits
+117/04 B 022/99,117/04 B 022/99,registration,DZ-R-0559,retraits
+117/06 H 272/09,117/06 H 272/09,registration,DZ-R-0742,retraits
+118/03 B 005/98,118/03 B 005/98,registration,DZ-R-0335,retraits
+118/03 B 007/99,118/03 B 007/99,registration,DZ-R-0352,retraits
+118/04 B 004/98,118/04 B 004/98,registration,DZ-R-0415,retraits
+118/04 B 005/98,118/04 B 005/98,registration,DZ-R-0429,retraits
+118/04 B 006/98,118/04 B 006/98,registration,DZ-R-0456,retraits
+118/04 B 007/98,118/04 B 007/98,registration,DZ-R-0474,retraits
+118/04 B 009/98,118/04 B 009/98,registration,DZ-R-0506,retraits
+118/04 B 010/98,118/04 B 010/98,registration,DZ-R-0514,retraits
+118/06 B 017/99,118/06 B 017/99,registration,DZ-R-0608,retraits
+118/06 F 069/99,118/06 F 069/99,registration,DZ-R-0707,retraits
+118/13 A 005/98,118/13 A 005/98,registration,DZ-R-0176,non_renouveles
+118/13 D 025/98,118/13 D 025/98,registration,DZ-R-0789,retraits
+118/13 F 039/98,118/13 F 039/98,registration,DZ-R-0812,retraits
+118/13 F 040/99,118/13 F 040/99,registration,DZ-R-0822,retraits
+118/13 G 045/98,118/13 G 045/98,registration,DZ-R-0854,retraits
+118/13 G 047/98,118/13 G 047/98,registration,DZ-R-0889,retraits
+118/13 M 090/98,118/13 M 090/98,registration,DZ-R-0951,retraits
+118/13 M 092/98,118/13 M 092/98,registration,DZ-R-0959,retraits
+118/21 A 004/98,118/21 A 004/98,registration,DZ-R-0997,retraits
+119/04 B 004/99,119/04 B 004/99,registration,DZ-R-0418,retraits
+119/13 A 005/99,119/13 A 005/99,registration,DZ-R-0759,retraits
+119/13 M 090/99,119/13 M 090/99,registration,DZ-R-0948,retraits
+121/03 B 005/06,121/03 B 005/06,registration,DZ-R-0336,retraits
+121/04 B 007/06,121/04 B 007/06,registration,DZ-R-0475,retraits
+121/06 E 060/03,121/06 E 060/03,registration,DZ-R-0130,non_renouveles
+121/06 E 061/99,121/06 E 061/99,registration,DZ-R-0661,retraits
+121/13 F 039/03,121/13 F 039/03,registration,DZ-R-0813,retraits
+122/13 F 039/99,122/13 F 039/99,registration,DZ-R-0811,retraits
+122/13 F 040/99,122/13 F 040/99,registration,DZ-R-0821,retraits
+124/06 B 017/98,124/06 B 017/98,registration,DZ-R-0612,retraits
+124/06 B 018/98,124/06 B 018/98,registration,DZ-R-0616,retraits
+128/04 B 019/99,128/04 B 019/99,registration,DZ-R-0535,retraits
+128/04 B 020/99,128/04 B 020/99,registration,DZ-R-0537,retraits
+128/13 B 019/99,128/13 B 019/99,registration,DZ-R-0763,retraits
+128/13 B 158/99,128/13 B 158/99,registration,DZ-R-0768,retraits
+128/13 M 090/99,128/13 M 090/99,registration,DZ-R-0950,retraits
+128/13 M 092/99,128/13 M 092/99,registration,DZ-R-0957,retraits
+128/13 M 169/00,128/13 M 169/00,registration,DZ-R-0969,retraits
+135/03 B 005/98,135/03 B 005/98,registration,DZ-R-0329,retraits
+135/13 F 039/98,135/13 F 039/98,registration,DZ-R-0805,retraits
+135/13 G 045/98,135/13 G 045/98,registration,DZ-R-0862,retraits
+135/13 M 092/98,135/13 M 092/98,registration,DZ-R-0968,retraits
+137/13 G 046/99,137/13 G 046/99,registration,DZ-R-0873,retraits
+139/04 B 006/99,139/04 B 006/99,registration,DZ-R-0463,retraits
+139/04 B 009/99,139/04 B 009/99,registration,DZ-R-0501,retraits
+144/13 G 042/98,144/13 G 042/98,registration,DZ-R-0825,retraits
+144/13 G 043/98,144/13 G 043/98,registration,DZ-R-0834,retraits
+146/03 B 005/98,146/03 B 005/98,registration,DZ-R-0322,retraits
+146/03 B 006/98,146/03 B 006/98,registration,DZ-R-0341,retraits
+146/04 B 004/98,146/04 B 004/98,registration,DZ-R-0423,retraits
+146/04 B 005/98,146/04 B 005/98,registration,DZ-R-0443,retraits
+146/04 B 006/98,146/04 B 006/98,registration,DZ-R-0468,retraits
+146/04 B 008/98,146/04 B 008/98,registration,DZ-R-0494,retraits
+146/04 B 009/98,146/04 B 009/98,registration,DZ-R-0508,retraits
+146/04 B 022/98,146/04 B 022/98,registration,DZ-R-0557,retraits
+146/06 E 061/98,146/06 E 061/98,registration,DZ-R-0664,retraits
+146/06 F 069/98,146/06 F 069/98,registration,DZ-R-0715,retraits
+146/13 A 004/98,146/13 A 004/98,registration,DZ-R-0750,retraits
+146/13 A 005/98,146/13 A 005/98,registration,DZ-R-0757,retraits
+146/13 M 090/98,146/13 M 090/98,registration,DZ-R-0955,retraits
+146/13 M 169/99,146/13 M 169/99,registration,DZ-R-0974,retraits
+147/04 B 042/10,147/04 B 042/10,registration,DZ-R-0095,non_renouveles
+147/13 E 297/08,147/13 E 297/08,registration,DZ-R-0219,non_renouveles
+149/04 B 007/13,149/04 B 007/13,registration,DZ-R-0489,retraits
+149/04 B 037/15,149/04 B 037/15,registration,DZ-R-0578,retraits
+149/06 B 017/99,149/06 B 017/99,registration,DZ-R-0614,retraits
+149/06 E 228/14,149/06 E 228/14,registration,DZ-R-0699,retraits
+149/13 C 020/98,149/13 C 020/98,registration,DZ-R-0785,retraits
+149/21 A 004/11,149/21 A 004/11,registration,DZ-R-1001,retraits
+153/03 B 005/05,153/03 B 005/05,registration,DZ-R-0325,retraits
+154/13 A 004/99,154/13 A 004/99,registration,DZ-R-0752,retraits
+154/13 A 005/99,154/13 A 005/99,registration,DZ-R-0755,retraits
+154/13 G 045/99,154/13 G 045/99,registration,DZ-R-0849,retraits
+154/13 G 047/99,154/13 G 047/99,registration,DZ-R-0899,retraits
+156/04 B 006/99,156/04 B 006/99,registration,DZ-R-0448,retraits
+156/04 B 009/99,156/04 B 009/99,registration,DZ-R-0500,retraits
+156/04 B 017/99,156/04 B 017/99,registration,DZ-R-0528,retraits
+156/04 B 022/99,156/04 B 022/99,registration,DZ-R-0548,retraits
+156/04 B 023/99,156/04 B 023/99,registration,DZ-R-0563,retraits
+156/06 E 059/99,156/06 E 059/99,registration,DZ-R-0651,retraits
+156/06 E 060/99,156/06 E 060/99,registration,DZ-R-0656,retraits
+157/03 B 005/99,157/03 B 005/99,registration,DZ-R-0319,retraits
+160/04 B 022/99,160/04 B 022/99,registration,DZ-R-0550,retraits
+160/13 A 005/99,160/13 A 005/99,registration,DZ-R-0756,retraits
+160/13 C 020/99,160/13 C 020/99,registration,DZ-R-0777,retraits
+160/13 G 045/99,160/13 G 045/99,registration,DZ-R-0852,retraits
+160/13 G 047/99,160/13 G 047/99,registration,DZ-R-0896,retraits
+161/04 B 004/98,161/04 B 004/98,registration,DZ-R-0416,retraits
+161/04 B 006/99,161/04 B 006/99,registration,DZ-R-0459,retraits
+161/04 B 007/99,161/04 B 007/99,registration,DZ-R-0479,retraits
+161/06 E 059/98,161/06 E 059/98,registration,DZ-R-0125,non_renouveles
+161/06 E 060/98,161/06 E 060/98,registration,DZ-R-0133,non_renouveles
+161/06 E 240/14,161/06 E 240/14,registration,DZ-R-0701,retraits
+161/13 A 005/99,161/13 A 005/99,registration,DZ-R-0177,non_renouveles
+161/13 M 092/99,161/13 M 092/99,registration,DZ-R-0967,retraits
+161/21 A 004/98,161/21 A 004/98,registration,DZ-R-0994,retraits
+162/13 A 004/98,162/13 A 004/98,registration,DZ-R-0751,retraits
+164/04 B 021/98,164/04 B 021/98,registration,DZ-R-0545,retraits
+164/04 B 022/98,164/04 B 022/98,registration,DZ-R-0555,retraits
+166/04 B 005/98,166/04 B 005/98,registration,DZ-R-0434,retraits
+166/04 B 006/98,166/04 B 006/98,registration,DZ-R-0453,retraits
+166/04 B 020/98,166/04 B 020/98,registration,DZ-R-0078,non_renouveles
+166/06 F 069/98,166/06 F 069/98,registration,DZ-R-0712,retraits
+170/04 B 004/98,170/04 B 004/98,registration,DZ-R-0428,retraits
+170/04 B 021/98,170/04 B 021/98,registration,DZ-R-0546,retraits
+170/04 B 022/98,170/04 B 022/98,registration,DZ-R-0560,retraits
+170/06 B 018/98,170/06 B 018/98,registration,DZ-R-0626,retraits
+170/13 A 004/98,170/13 A 004/98,registration,DZ-R-0754,retraits
+170/13 A 005/98,170/13 A 005/98,registration,DZ-R-0761,retraits
+170/17 D 020/98,170/17 D 020/98,registration,DZ-R-0980,retraits
+170/17 D 021/99,170/17 D 021/99,registration,DZ-R-0985,retraits
+171/06 F 069/99,171/06 F 069/99,registration,DZ-R-0721,retraits
+172/04 B 018/99,172/04 B 018/99,registration,DZ-R-0533,retraits
+172/11 A 002/99,172/11 A 002/99,registration,DZ-R-0746,retraits
+172/13 E 299/09,172/13 E 299/09,registration,DZ-R-0800,retraits
+172/13 F 039/99,172/13 F 039/99,registration,DZ-R-0808,retraits
+172/13 F 040/99,172/13 F 040/99,registration,DZ-R-0817,retraits
+173/04 B 021/98,173/04 B 021/98,registration,DZ-R-0538,retraits
+173/04 B 022/98,173/04 B 022/98,registration,DZ-R-0554,retraits
+173/06 F 069/07,173/06 F 069/07,registration,DZ-R-0709,retraits
+173/06 F 149/07,173/06 F 149/07,registration,DZ-R-0726,retraits
+173/12 A 111/07,173/12 A 111/07,registration,DZ-R-0162,non_renouveles
+174/04 B 006/98,174/04 B 006/98,registration,DZ-R-0452,retraits
+174/04 B 021/98,174/04 B 021/98,registration,DZ-R-0540,retraits
+174/04 B 022/98,174/04 B 022/98,registration,DZ-R-0556,retraits
+174/04 B 023/99,174/04 B 023/99,registration,DZ-R-0566,retraits
+174/06 B 017/98,174/06 B 017/98,registration,DZ-R-0114,non_renouveles
+174/06 B 018/98,174/06 B 018/98,registration,DZ-R-0618,retraits
+174/06 F 069/98,174/06 F 069/98,registration,DZ-R-0717,retraits
+174/07 C 018/99,174/07 C 018/99,registration,DZ-R-0158,non_renouveles
+174/13 D 025/98,174/13 D 025/98,registration,DZ-R-0208,non_renouveles
+174/13 F 039/99,174/13 F 039/99,registration,DZ-R-0809,retraits
+174/21 A 004/98,174/21 A 004/98,registration,DZ-R-0990,retraits
+174/21 A 005/98,174/21 A 005/98,registration,DZ-R-1003,retraits
+175/11 A 002/01,175/11 A 002/01,registration,DZ-R-0744,retraits
+177/03 A 001/98,177/03 A 001/98,registration,DZ-R-0310,retraits
+177/04 B 004/98,177/04 B 004/98,registration,DZ-R-0427,retraits
+177/21 A 004/98,177/21 A 004/98,registration,DZ-R-1000,retraits
+178/04 B 004/99,178/04 B 004/99,registration,DZ-R-0426,retraits
+178/04 B 006/99,178/04 B 006/99,registration,DZ-R-0447,retraits
+178/04 B 009/99,178/04 B 009/99,registration,DZ-R-0499,retraits
+178/04 B 010/99,178/04 B 010/99,registration,DZ-R-0513,retraits
+178/04 B 022/99,178/04 B 022/99,registration,DZ-R-0547,retraits
+178/06 B 018/99,178/06 B 018/99,registration,DZ-R-0615,retraits
+178/06 E 061/99,178/06 E 061/99,registration,DZ-R-0659,retraits
+178/06 F 069/99,178/06 F 069/99,registration,DZ-R-0718,retraits
+178/13 A 005/99,178/13 A 005/99,registration,DZ-R-0760,retraits
+178/13 G 043/99,178/13 G 043/99,registration,DZ-R-0835,retraits
+178/13 G 044/99,178/13 G 044/99,registration,DZ-R-0839,retraits
+178/13 G 045/99,178/13 G 045/99,registration,DZ-R-0847,retraits
+182/06 B 018/99,182/06 B 018/99,registration,DZ-R-0621,retraits
+182/13 M 090/99/08,182/13 M 090/99/08,registration,DZ-R-0952,retraits
+182/13 M 092/98,182/13 M 092/98,registration,DZ-R-0960,retraits
+182/21 A 005/98/08,182/21 A 005/98/08,registration,DZ-R-1002,retraits
+185/03 B 007/05,185/03 B 007/05,registration,DZ-R-0357,retraits
+185/03 B 007/06,185/03 B 007/06,registration,DZ-R-0356,retraits
+185/03 B 043/05,185/03 B 043/05,registration,DZ-R-0367,retraits
+185/04 B 008/03,185/04 B 008/03,registration,DZ-R-0498,retraits
+185/04 B 017/03,185/04 B 017/03,registration,DZ-R-0531,retraits
+185/20 C 213/06,185/20 C 213/06,registration,DZ-R-0989,retraits
+188/03 B 005/99,188/03 B 005/99,registration,DZ-R-0324,retraits
+188/04 B 017/99,188/04 B 017/99,registration,DZ-R-0529,retraits
+188/06 B 018/99,188/06 B 018/99,registration,DZ-R-0619,retraits
+188/13 A 004/99,188/13 A 004/99,registration,DZ-R-0753,retraits
+188/13 A 005/99,188/13 A 005/99,registration,DZ-R-0172,non_renouveles
+188/13 G 051/99,188/13 G 051/99,registration,DZ-R-0906,retraits
+188/13 M 090/99,188/13 M 090/99,registration,DZ-R-0954,retraits
+188/13 M 092/99,188/13 M 092/99,registration,DZ-R-0965,retraits
+188/17 D 021/99,188/17 D 021/99,registration,DZ-R-0983,retraits
+190/03 B 005/98,190/03 B 005/98,registration,DZ-R-0334,retraits
+190/03 B 006/98,190/03 B 006/98,registration,DZ-R-0347,retraits
+190/04 B 004/98,190/04 B 004/98,registration,DZ-R-0417,retraits
+190/04 B 005/98,190/04 B 005/98,registration,DZ-R-0430,retraits
+190/04 B 006/98,190/04 B 006/98,registration,DZ-R-0458,retraits
+190/04 B 039/08,190/04 B 039/08,registration,DZ-R-0580,retraits
+190/04 B 042/03,190/04 B 042/03,registration,DZ-R-0596,retraits
+190/06 F 069/98,190/06 F 069/98,registration,DZ-R-0710,retraits
+190/13 G 044/00,190/13 G 044/00,registration,DZ-R-0842,retraits
+190/13 G 045/00,190/13 G 045/00,registration,DZ-R-0869,retraits
+190/13 G 046/00,190/13 G 046/00,registration,DZ-R-0874,retraits
+190/13 G 047/01,190/13 G 047/01,registration,DZ-R-0895,retraits
+190/13 G 051/00,190/13 G 051/00,registration,DZ-R-0256,non_renouveles
+190/13 G 159/01,190/13 G 159/01,registration,DZ-R-0257,non_renouveles
+190/13 G 265/08,190/13 G 265/08,registration,DZ-R-0275,non_renouveles
+190/13 G 266/07,190/13 G 266/07,registration,DZ-R-0276,non_renouveles
+190/13 G 267/07,190/13 G 267/07,registration,DZ-R-0277,non_renouveles
+190/13 K 252/03,190/13 K 252/03,registration,DZ-R-0934,retraits
+190/13 K 253/03,190/13 K 253/03,registration,DZ-R-0938,retraits
+190/13 K 254/07,190/13 K 254/07,registration,DZ-R-0944,retraits
+190/17 D 020/98,190/17 D 020/98,registration,DZ-R-0977,retraits
+190/17 D 021/98,190/17 D 021/98,registration,DZ-R-0982,retraits
+190/21 A 004/98,190/21 A 004/98,registration,DZ-R-0995,retraits
+191/06 F 069/98,191/06 F 069/98,registration,DZ-R-0716,retraits
+191/06 F 149/99,191/06 F 149/99,registration,DZ-R-0730,retraits
+191/13 C 020/98,191/13 C 020/98,registration,DZ-R-0776,retraits
+193/03 B 005/99,193/03 B 005/99,registration,DZ-R-0320,retraits
+193/03 B 006/99,193/03 B 006/99,registration,DZ-R-0343,retraits
+193/04 B 005/98,193/04 B 005/98,registration,DZ-R-0442,retraits
+193/04 B 006/98,193/04 B 006/98,registration,DZ-R-0465,retraits
+193/04 B 008/98,193/04 B 008/98,registration,DZ-R-0497,retraits
+193/04 B 009/98,193/04 B 009/98,registration,DZ-R-0504,retraits
+193/13 C 020/99,193/13 C 020/99,registration,DZ-R-0780,retraits
+193/13 F 040/99,193/13 F 040/99,registration,DZ-R-0818,retraits
+193/13 G 044/98,193/13 G 044/98,registration,DZ-R-0840,retraits
+193/13 G 045/99,193/13 G 045/99,registration,DZ-R-0853,retraits
+193/13 G 047/99,193/13 G 047/99,registration,DZ-R-0894,retraits
+193/13 G 051/99,193/13 G 051/99,registration,DZ-R-0905,retraits
+193/13 G 159/99,193/13 G 159/99,registration,DZ-R-0909,retraits
+194/04 B 021/99,194/04 B 021/99,registration,DZ-R-0542,retraits
+194/04 B 022/99,194/04 B 022/99,registration,DZ-R-0551,retraits
+194/06 E 061/99,194/06 E 061/99,registration,DZ-R-0665,retraits
+194/06 E 062/99,194/06 E 062/99,registration,DZ-R-0667,retraits
+195/03 B 005/06,195/03 B 005/06,registration,DZ-R-0020,non_renouveles
+195/03 B 005/99,195/03 B 005/99,registration,DZ-R-0330,retraits
+195/03 D 010/08,195/03 D 010/08,registration,DZ-R-0392,retraits
+195/04 B 040/09,195/04 B 040/09,registration,DZ-R-0093,non_renouveles
+195/06 E 127/11,195/06 E 127/11,registration,DZ-R-0135,non_renouveles
+195/06 E 128/11,195/06 E 128/11,registration,DZ-R-0137,non_renouveles
+195/13 G 045/99,195/13 G 045/99,registration,DZ-R-0866,retraits
+195/13 M 090/00,195/13 M 090/00,registration,DZ-R-0946,retraits
+200/13 G 047/99,200/13 G 047/99,registration,DZ-R-0886,retraits
+204/03 A 002/96,204/03 A 002/96,registration,DZ-R-0312,retraits
+204/03 A 003/96,204/03 A 003/96,registration,DZ-R-0313,retraits
+213/04 B 021/99,213/04 B 021/99,registration,DZ-R-0543,retraits
+213/04 B 022/99,213/04 B 022/99,registration,DZ-R-0552,retraits
+213/04 B 041/01,213/04 B 041/01,registration,DZ-R-0595,retraits
+216/13 B 019/05,216/13 B 019/05,registration,DZ-R-0179,non_renouveles
+224/07 C 018/00,224/07 C 018/00,registration,DZ-R-0743,retraits
+225/04 B 005/99,225/04 B 005/99,registration,DZ-R-0432,retraits
+225/04 B 006/99,225/04 B 006/99,registration,DZ-R-0449,retraits
+225/04 B 010/00,225/04 B 010/00,registration,DZ-R-0516,retraits
+225/04 B 040/06,225/04 B 040/06,registration,DZ-R-0583,retraits
+225/06 F 069/00,225/06 F 069/00,registration,DZ-R-0713,retraits
+225/06 F 149/06,225/06 F 149/06,registration,DZ-R-0727,retraits
+225/13 F 039/00,225/13 F 039/00,registration,DZ-R-0806,retraits
+225/13 F 040/00,225/13 F 040/00,registration,DZ-R-0820,retraits
+225/13 G 044/00,225/13 G 044/00,registration,DZ-R-0844,retraits
+225/13 G 045/00,225/13 G 045/00,registration,DZ-R-0868,retraits
+225/13 G 046/00,225/13 G 046/00,registration,DZ-R-0876,retraits
+225/13 G 047/00,225/13 G 047/00,registration,DZ-R-0890,retraits
+225/13 G 050/03,225/13 G 050/03,registration,DZ-R-0251,non_renouveles
+226/04 B 058/08,226/04 B 058/08,registration,DZ-R-0107,non_renouveles
+226/13 B 198/08,226/13 B 198/08,registration,DZ-R-0187,non_renouveles
+226/13 B 201/09,226/13 B 201/09,registration,DZ-R-0192,non_renouveles
+226/13 K 252/08,226/13 K 252/08,registration,DZ-R-0936,retraits
+226/13 K 253/08,226/13 K 253/08,registration,DZ-R-0942,retraits
+228/13 B 019/00,228/13 B 019/00,registration,DZ-R-0764,retraits
+228/13 B 158/00,228/13 B 158/00,registration,DZ-R-0769,retraits
+229/13 G 045/00,229/13 G 045/00,registration,DZ-R-0860,retraits
+229/13 M 169/02,229/13 M 169/02,registration,DZ-R-0971,retraits
+230/03 B 006/00,230/03 B 006/00,registration,DZ-R-0340,retraits
+230/03 D 010/97,230/03 D 010/97,registration,DZ-R-0393,retraits
+230/06 E 287/10,230/06 E 287/10,registration,DZ-R-0149,non_renouveles
+230/13 F 039/96,230/13 F 039/96,registration,DZ-R-0814,retraits
+230/13 K 231/00/08,230/13 K 231/00/08,registration,DZ-R-0932,retraits
+231/03 B 005/04,231/03 B 005/04,registration,DZ-R-0338,retraits
+231/03 B 007/02,231/03 B 007/02,registration,DZ-R-0022,non_renouveles
+231/03 B 041/07,231/03 B 041/07,registration,DZ-R-0032,non_renouveles
+231/03 B 042/02,231/03 B 042/02,registration,DZ-R-0035,non_renouveles
+231/03 B 043/02,231/03 B 043/02,registration,DZ-R-0039,non_renouveles
+231/03 B 057/17,231/03 B 057/17,registration,DZ-R-0372,retraits
+231/03 D 010/08,231/03 D 010/08,registration,DZ-R-0397,retraits
+231/04 B 017/04,231/04 B 017/04,registration,DZ-R-0070,non_renouveles
+231/04 B 023/00,231/04 B 023/00,registration,DZ-R-0086,non_renouveles
+231/06 B 123/10,231/06 B 123/10,registration,DZ-R-0644,retraits
+231/06 E 127/08,231/06 E 127/08,registration,DZ-R-0675,retraits
+231/06 E 128/08,231/06 E 128/08,registration,DZ-R-0680,retraits
+231/06 E 201/10,231/06 E 201/10,registration,DZ-R-0142,non_renouveles
+231/06 H 279/09,231/06 H 279/09,registration,DZ-R-0156,non_renouveles
+231/11 A 002/06,231/11 A 002/06,registration,DZ-R-0159,non_renouveles
+231/12 A 131/06,231/12 A 131/06,registration,DZ-R-0748,retraits
+233/04 B 010/00,233/04 B 010/00,registration,DZ-R-0522,retraits
+235/03 D 010/05,235/03 D 010/05,registration,DZ-R-0384,retraits
+235/04 B 010/11,235/04 B 010/11,registration,DZ-R-0067,non_renouveles
+235/06 H 095/04,235/06 H 095/04,registration,DZ-R-0735,retraits
+236/04 B 021/00,236/04 B 021/00,registration,DZ-R-0539,retraits
+236/13 G 047/00,236/13 G 047/00,registration,DZ-R-0885,retraits
+239/06 F 069/07,239/06 F 069/07,registration,DZ-R-0719,retraits
+240/06 F 069/97,240/06 F 069/97,registration,DZ-R-0724,retraits
+242/03 B 005/03/09,242/03 B 005/03/09,registration,DZ-R-0018,non_renouveles
+242/03 B 006/06,242/03 B 006/06,registration,DZ-R-0348,retraits
+242/03 B 061/09,242/03 B 061/09,registration,DZ-R-0045,non_renouveles
+242/04 B 042/05,242/04 B 042/05,registration,DZ-R-0096,non_renouveles
+242/06 E 127/05,242/06 E 127/05,registration,DZ-R-0672,retraits
+242/06 E 128/05,242/06 E 128/05,registration,DZ-R-0676,retraits
+242/06 E 139/05,242/06 E 139/05,registration,DZ-R-0681,retraits
+242/06 E 201/09,242/06 E 201/09,registration,DZ-R-0692,retraits
+242/13 F 040/04,242/13 F 040/04,registration,DZ-R-0226,non_renouveles
+242/13 M 092/09,242/13 M 092/09,registration,DZ-R-0962,retraits
+243/03 B 007/01,243/03 B 007/01,registration,DZ-R-0353,retraits
+243/04 B 008/01,243/04 B 008/01,registration,DZ-R-0495,retraits
+243/04 B 023/01,243/04 B 023/01,registration,DZ-R-0568,retraits
+247/04 B 007/02,247/04 B 007/02,registration,DZ-R-0484,retraits
+247/04 B 022/02,247/04 B 022/02,registration,DZ-R-0549,retraits
+247/06 B 018/02,247/06 B 018/02,registration,DZ-R-0623,retraits
+250/06 B 017/01,250/06 B 017/01,registration,DZ-R-0115,non_renouveles
+252/06 B 018/98,252/06 B 018/98,registration,DZ-R-0625,retraits
+253/03 B 010/04,253/03 B 010/04,registration,DZ-R-0361,retraits
+256/06 E 207/05/16,256/06 E 207/05/16,registration,DZ-R-0695,retraits
+258/03 B 005/06,258/03 B 005/06,registration,DZ-R-0337,retraits
+258/03 D 090/07,258/03 D 090/07,registration,DZ-R-0400,retraits
+258/04 B 005/05,258/04 B 005/05,registration,DZ-R-0437,retraits
+258/04 B 006/04,258/04 B 006/04,registration,DZ-R-0451,retraits
+258/04 B 019/04,258/04 B 019/04,registration,DZ-R-0075,non_renouveles
+258/04 B 040/06,258/04 B 040/06,registration,DZ-R-0582,retraits
+258/06 B 018/08,258/06 B 018/08,registration,DZ-R-0629,retraits
+258/06 B 123/06,258/06 B 123/06,registration,DZ-R-0633,retraits
+258/06 E 059/05,258/06 E 059/05,registration,DZ-R-0122,non_renouveles
+258/06 E 060/05,258/06 E 060/05,registration,DZ-R-0127,non_renouveles
+258/06 E 126/06,258/06 E 126/06,registration,DZ-R-0670,retraits
+258/06 F 069/06,258/06 F 069/06,registration,DZ-R-0720,retraits
+258/11 A 002/01,258/11 A 002/01,registration,DZ-R-0747,retraits
+258/13 F 039/04,258/13 F 039/04,registration,DZ-R-0804,retraits
+261/03 B 005/96,261/03 B 005/96,registration,DZ-R-0328,retraits
+262/13 G 042/97,262/13 G 042/97,registration,DZ-R-0829,retraits
+262/13 G 043/97/09,262/13 G 043/97/09,registration,DZ-R-0832,retraits
+262/13 G 049/98,262/13 G 049/98,registration,DZ-R-0244,non_renouveles
+262/13 G 049/98,262/13 G 049/98,registration,DZ-R-0902,retraits
+262/13 G 182/99,262/13 G 182/99,registration,DZ-R-0913,retraits
+262/13 G 183/99,262/13 G 183/99,registration,DZ-R-0915,retraits
+262/13 G 204/04,262/13 G 204/04,registration,DZ-R-0261,non_renouveles
+262/13 G 245/02,262/13 G 245/02,registration,DZ-R-0270,non_renouveles
+263/03 A 001/99/08,263/03 A 001/99/08,registration,DZ-R-0309,retraits
+263/03 A 002/06,263/03 A 002/06,registration,DZ-R-0003,non_renouveles
+263/03 B 005/02/09,263/03 B 005/02/09,registration,DZ-R-0016,non_renouveles
+263/03 D 059/02/07,263/03 D 059/02/07,registration,DZ-R-0399,retraits
+263/04 B 005/03/09,263/04 B 005/03/09,registration,DZ-R-0438,retraits
+263/04 B 007/03/09,263/04 B 007/03/09,registration,DZ-R-0473,retraits
+263/13 F 039/03/09,263/13 F 039/03/09,registration,DZ-R-0803,retraits
+268/03 D 010/05,268/03 D 010/05,registration,DZ-R-0387,retraits
+268/06 F 069/05,268/06 F 069/05,registration,DZ-R-0706,retraits
+269/11 A 002/99,269/11 A 002/99,registration,DZ-R-0745,retraits
+272/04 B 043/06,272/04 B 043/06,registration,DZ-R-0600,retraits
+276/04 B 004/08,276/04 B 004/08,registration,DZ-R-0410,retraits
+279/03 A 085/06,279/03 A 085/06,registration,DZ-R-0317,retraits
+279/03 B 010/06,279/03 B 010/06,registration,DZ-R-0360,retraits
+279/03 B 060/03,279/03 B 060/03,registration,DZ-R-0373,retraits
+279/03 B 062/03,279/03 B 062/03,registration,DZ-R-0374,retraits
+279/03 B 063/04,279/03 B 063/04,registration,DZ-R-0375,retraits
+279/03 B 064/04,279/03 B 064/04,registration,DZ-R-0376,retraits
+279/03 B 065/04,279/03 B 065/04,registration,DZ-R-0377,retraits
+279/03 B 083/06,279/03 B 083/06,registration,DZ-R-0381,retraits
+282/03 D 010/06,282/03 D 010/06,registration,DZ-R-0394,retraits
+282/04 B 010/07,282/04 B 010/07,registration,DZ-R-0517,retraits
+282/13 A 005/03,282/13 A 005/03,registration,DZ-R-0178,non_renouveles
+283/04 B 007/03,283/04 B 007/03,registration,DZ-R-0488,retraits
+283/04 B 037/03,283/04 B 037/03,registration,DZ-R-0577,retraits
+283/06 B 017/03,283/06 B 017/03,registration,DZ-R-0611,retraits
+283/06 B 018/03,283/06 B 018/03,registration,DZ-R-0628,retraits
+283/06 E 059/03,283/06 E 059/03,registration,DZ-R-0652,retraits
+283/06 E 060/03,283/06 E 060/03,registration,DZ-R-0657,retraits
+283/13 B 019/03,283/13 B 019/03,registration,DZ-R-0766,retraits
+283/13 B 158/03,283/13 B 158/03,registration,DZ-R-0770,retraits
+283/13 C 020/03,283/13 C 020/03,registration,DZ-R-0784,retraits
+284/04 B 010/05,284/04 B 010/05,registration,DZ-R-0521,retraits
+284/04 B 019/04,284/04 B 019/04,registration,DZ-R-0534,retraits
+284/04 B 020/03,284/04 B 020/03,registration,DZ-R-0536,retraits
+284/04 B 040/04,284/04 B 040/04,registration,DZ-R-0589,retraits
+284/06 E 061/04,284/06 E 061/04,registration,DZ-R-0660,retraits
+284/13 M 169/05,284/13 M 169/05,registration,DZ-R-0973,retraits
+285/04 B 040/05,285/04 B 040/05,registration,DZ-R-0584,retraits
+286/04 B 040/04,286/04 B 040/04,registration,DZ-R-0588,retraits
+286/06 E 126/08,286/06 E 126/08,registration,DZ-R-0668,retraits
+287/13 G 047/09,287/13 G 047/09,registration,DZ-R-0891,retraits
+287/13 G 181/09,287/13 G 181/09,registration,DZ-R-0912,retraits
+287/13 G 230/03,287/13 G 230/03,registration,DZ-R-0922,retraits
+287/13 G 245/09,287/13 G 245/09,registration,DZ-R-0271,non_renouveles
+287/13 G 269/09,287/13 G 269/09,registration,DZ-R-0279,non_renouveles
+287/13 G 301/07,287/13 G 301/07,registration,DZ-R-0927,retraits
+287/13 G 301/09,287/13 G 301/09,registration,DZ-R-0282,non_renouveles
+289/03 B 005/04,289/03 B 005/04,registration,DZ-R-0017,non_renouveles
+289/03 B 097/08,289/03 B 097/08,registration,DZ-R-0056,non_renouveles
+289/03 D 010/03,289/03 D 010/03,registration,DZ-R-0388,retraits
+289/04 B 040/04,289/04 B 040/04,registration,DZ-R-0581,retraits
+289/13 E 176/08,289/13 E 176/08,registration,DZ-R-0794,retraits
+289/13 E 328/08,289/13 E 328/08,registration,DZ-R-0221,non_renouveles
+292/04 B 009/97,292/04 B 009/97,registration,DZ-R-0512,retraits
+293/03 B 006/10,293/03 B 006/10,registration,DZ-R-0021,non_renouveles
+293/03 B 045/10,293/03 B 045/10,registration,DZ-R-0042,non_renouveles
+293/03 B 057/06,293/03 B 057/06,registration,DZ-R-0371,retraits
+293/13 G 230/07,293/13 G 230/07,registration,DZ-R-0921,retraits
+295/03 D 010/06,295/03 D 010/06,registration,DZ-R-0391,retraits
+295/03 F 047/04,295/03 F 047/04,registration,DZ-R-0401,retraits
+295/04 B 021/05,295/04 B 021/05,registration,DZ-R-0541,retraits
+295/04 B 022/05,295/04 B 022/05,registration,DZ-R-0558,retraits
+295/04 B 040/05,295/04 B 040/05,registration,DZ-R-0591,retraits
+295/06 F 069/06,295/06 F 069/06,registration,DZ-R-0722,retraits
+295/06 F 149/05,295/06 F 149/05,registration,DZ-R-0731,retraits
+295/13 G 045/05,295/13 G 045/05,registration,DZ-R-0863,retraits
+295/13 G 268/04,295/13 G 268/04,registration,DZ-R-0926,retraits
+296/04 B 040/05,296/04 B 040/05,registration,DZ-R-0586,retraits
+301/03 B 005/08,301/03 B 005/08,registration,DZ-R-0326,retraits
+301/12 A 146/08,301/12 A 146/08,registration,DZ-R-0166,non_renouveles
+304/04 B 007/04,304/04 B 007/04,registration,DZ-R-0472,retraits
+304/04 B 035/05,304/04 B 035/05,registration,DZ-R-0573,retraits
+304/04 B 036/05,304/04 B 036/05,registration,DZ-R-0575,retraits
+304/06 B 123/05,304/06 B 123/05,registration,DZ-R-0635,retraits
+304/06 E 229/08,304/06 E 229/08,registration,DZ-R-0146,non_renouveles
+304/06 F 069/05,304/06 F 069/05,registration,DZ-R-0711,retraits
+304/06 F 149/09,304/06 F 149/09,registration,DZ-R-0728,retraits
+304/12 A 111/07,304/12 A 111/07,registration,DZ-R-0163,non_renouveles
+304/13 B 198/07,304/13 B 198/07,registration,DZ-R-0184,non_renouveles
+304/13 B 208/08,304/13 B 208/08,registration,DZ-R-0195,non_renouveles
+304/13 E 215/08,304/13 E 215/08,registration,DZ-R-0212,non_renouveles
+304/13 F 039/98,304/13 F 039/98,registration,DZ-R-0807,retraits
+305/13 G 045/98,305/13 G 045/98,registration,DZ-R-0858,retraits
+306/04 B 038/00/08,306/04 B 038/00/08,registration,DZ-R-0579,retraits
+311/03 D 010/04,311/03 D 010/04,registration,DZ-R-0385,retraits
+311/03 F 047/09,311/03 F 047/09,registration,DZ-R-0402,retraits
+311/04 B 040/05,311/04 B 040/05,registration,DZ-R-0585,retraits
+317/04 B 022/10,317/04 B 022/10,registration,DZ-R-0083,non_renouveles
+317/13 G 221/05,317/13 G 221/05,registration,DZ-R-0919,retraits
+317/13 K 254/11,317/13 K 254/11,registration,DZ-R-0292,non_renouveles
+319/03 A 001/06,319/03 A 001/06,registration,DZ-R-0002,non_renouveles
+319/03 B 005/05,319/03 B 005/05,registration,DZ-R-0014,non_renouveles
+319/03 B 007/06,319/03 B 007/06,registration,DZ-R-0024,non_renouveles
+319/03 B 040/06,319/03 B 040/06,registration,DZ-R-0031,non_renouveles
+319/03 B 042/06,319/03 B 042/06,registration,DZ-R-0037,non_renouveles
+319/03 B 043/06,319/03 B 043/06,registration,DZ-R-0041,non_renouveles
+319/03 B 081/07,319/03 B 081/07,registration,DZ-R-0050,non_renouveles
+319/04 B 017/09,319/04 B 017/09,registration,DZ-R-0071,non_renouveles
+319/04 B 042/08,319/04 B 042/08,registration,DZ-R-0097,non_renouveles
+319/12 A 131/07,319/12 A 131/07,registration,DZ-R-0164,non_renouveles
+319/13 G 045/07,319/13 G 045/07,registration,DZ-R-0232,non_renouveles
+319/13 G 047/07,319/13 G 047/07,registration,DZ-R-0243,non_renouveles
+319/13 G 181/11,319/13 G 181/11,registration,DZ-R-0258,non_renouveles
+319/13 M 092/08,319/13 M 092/08,registration,DZ-R-0297,non_renouveles
+319/13 M 169/11,319/13 M 169/11,registration,DZ-R-0298,non_renouveles
+320/06 E 158/08,320/06 E 158/08,registration,DZ-R-0140,non_renouveles
+320/06 E 166/08,320/06 E 166/08,registration,DZ-R-0141,non_renouveles
+321/04 B 024/06,321/04 B 024/06,registration,DZ-R-0569,retraits
+321/06 B 123/05,321/06 B 123/05,registration,DZ-R-0634,retraits
+321/06 E 126/08,321/06 E 126/08,registration,DZ-R-0671,retraits
+321/06 E 128/08,321/06 E 128/08,registration,DZ-R-0678,retraits
+321/06 E 147/08,321/06 E 147/08,registration,DZ-R-0683,retraits
+321/06 E 158/09,321/06 E 158/09,registration,DZ-R-0685,retraits
+321/06 E 166/08,321/06 E 166/08,registration,DZ-R-0687,retraits
+321/06 E 167/08,321/06 E 167/08,registration,DZ-R-0691,retraits
+321/06 E 237/09,321/06 E 237/09,registration,DZ-R-0700,retraits
+321/13 B 201/06,321/13 B 201/06,registration,DZ-R-0190,non_renouveles
+321/13 B 309/06,321/13 B 309/06,registration,DZ-R-0202,non_renouveles
+321/13 E 176/05,321/13 E 176/05,registration,DZ-R-0790,retraits
+321/13 G 050/06,321/13 G 050/06,registration,DZ-R-0246,non_renouveles
+321/13 G 302/06,321/13 G 302/06,registration,DZ-R-0928,retraits
+323/13 G 045/04,323/13 G 045/04,registration,DZ-R-0229,non_renouveles
+323/13 G 047/04,323/13 G 047/04,registration,DZ-R-0239,non_renouveles
+323/13 G 220/08,323/13 G 220/08,registration,DZ-R-0262,non_renouveles
+324/04 B 006/05,324/04 B 006/05,registration,DZ-R-0461,retraits
+324/04 B 007/05,324/04 B 007/05,registration,DZ-R-0486,retraits
+324/06 H 217/06,324/06 H 217/06,registration,DZ-R-0740,retraits
+324/06 H 218/06,324/06 H 218/06,registration,DZ-R-0741,retraits
+326/13 G 045/05,326/13 G 045/05,registration,DZ-R-0230,non_renouveles
+326/13 G 046/05,326/13 G 046/05,registration,DZ-R-0236,non_renouveles
+326/13 G 047/05,326/13 G 047/05,registration,DZ-R-0240,non_renouveles
+326/13 G 220/05,326/13 G 220/05,registration,DZ-R-0264,non_renouveles
+332/13 F 038/08,332/13 F 038/08,registration,DZ-R-0802,retraits
+342/04 B 042/07,342/04 B 042/07,registration,DZ-R-0598,retraits
+348/03 B 005/06,348/03 B 005/06,registration,DZ-R-0019,non_renouveles
+348/03 B 010/08,348/03 B 010/08,registration,DZ-R-0027,non_renouveles
+348/03 B 034/08,348/03 B 034/08,registration,DZ-R-0029,non_renouveles
+348/03 B 080/08,348/03 B 080/08,registration,DZ-R-0048,non_renouveles
+348/04 B 010/08,348/04 B 010/08,registration,DZ-R-0068,non_renouveles
+348/04 B 040/08,348/04 B 040/08,registration,DZ-R-0092,non_renouveles
+352/03 A 004/08,352/03 A 004/08,registration,DZ-R-0005,non_renouveles
+352/04 B 042/07,352/04 B 042/07,registration,DZ-R-0098,non_renouveles
+352/06 E 127/08,352/06 E 127/08,registration,DZ-R-0674,retraits
+352/06 E 128/08,352/06 E 128/08,registration,DZ-R-0679,retraits
+352/06 E 201/08,352/06 E 201/08,registration,DZ-R-0694,retraits
+352/13 A 004/06,352/13 A 004/06,registration,DZ-R-0171,non_renouveles
+352/13 B 019/01/09,352/13 B 019/01/09,registration,DZ-R-0180,non_renouveles
+352/13 B 158/01/09,352/13 B 158/01/09,registration,DZ-R-0183,non_renouveles
+352/13 B 198/09,352/13 B 198/09,registration,DZ-R-0186,non_renouveles
+352/13 B 210/01/09,352/13 B 210/01/09,registration,DZ-R-0197,non_renouveles
+352/13 B 211/02/09,352/13 B 211/02/09,registration,DZ-R-0199,non_renouveles
+352/13 B 326/08,352/13 B 326/08,registration,DZ-R-0203,non_renouveles
+352/13 C 020/06,352/13 C 020/06,registration,DZ-R-0781,retraits
+352/13 E 177/06,352/13 E 177/06,registration,DZ-R-0796,retraits
+352/13 E 297/06,352/13 E 297/06,registration,DZ-R-0217,non_renouveles
+352/13 F 038/06,352/13 F 038/06,registration,DZ-R-0222,non_renouveles
+352/13 G 042/08,352/13 G 042/08,registration,DZ-R-0830,retraits
+352/13 G 043/08,352/13 G 043/08,registration,DZ-R-0831,retraits
+352/13 G 182/08,352/13 G 182/08,registration,DZ-R-0259,non_renouveles
+353/06 B 123/07,353/06 B 123/07,registration,DZ-R-0636,retraits
+356/03 D 010/07,356/03 D 010/07,registration,DZ-R-0396,retraits
+356/03 F 047/07,356/03 F 047/07,registration,DZ-R-0404,retraits
+356/06 B 123/08,356/06 B 123/08,registration,DZ-R-0642,retraits
+358/03 F 047/07,358/03 F 047/07,registration,DZ-R-0403,retraits
+358/03 F 111/09,358/03 F 111/09,registration,DZ-R-0064,non_renouveles
+358/06 B 123/06,358/06 B 123/06,registration,DZ-R-0630,retraits
+359/04 B 049/06,359/04 B 049/06,registration,DZ-R-0102,non_renouveles
+360/04 B 010/08,360/04 B 010/08,registration,DZ-R-0525,retraits
+360/04 B 040/08,360/04 B 040/08,registration,DZ-R-0594,retraits
+361/04 B 007/07,361/04 B 007/07,registration,DZ-R-0480,retraits
+361/06 E 167/08,361/06 E 167/08,registration,DZ-R-0690,retraits
+361/13 K 252/08,361/13 K 252/08,registration,DZ-R-0937,retraits
+361/13 K 253/08,361/13 K 253/08,registration,DZ-R-0941,retraits
+366/03 B 100/08,366/03 B 100/08,registration,DZ-R-0057,non_renouveles
+366/04 B 017/08,366/04 B 017/08,registration,DZ-R-0074,non_renouveles
+369/06 B 123/08,369/06 B 123/08,registration,DZ-R-0640,retraits
+369/13 E 176/09,369/13 E 176/09,registration,DZ-R-0792,retraits
+376/03 A 004/97/09,376/03 A 004/97/09,registration,DZ-R-0004,non_renouveles
+376/03 A 004/97/09,376/03 A 004/97/09,registration,DZ-R-0314,retraits
+376/04 B 053/07/16,376/04 B 053/07/16,registration,DZ-R-0602,retraits
+376/06 E 060/09,376/06 E 060/09,registration,DZ-R-0131,non_renouveles
+376/06 E 060/09,376/06 E 060/09,registration,DZ-R-0658,retraits
+376/13 B 197/99/15,376/13 B 197/99/15,registration,DZ-R-0771,retraits
+376/13 K 227/00/08,376/13 K 227/00/08,registration,DZ-R-0284,non_renouveles
+376/13 K 227/00/08,376/13 K 227/00/08,registration,DZ-R-0929,retraits
+376/13 K 228/00/08,376/13 K 228/00/08,registration,DZ-R-0285,non_renouveles
+376/13 K 228/00/08,376/13 K 228/00/08,registration,DZ-R-0930,retraits
+377/03 B 005/08,377/03 B 005/08,registration,DZ-R-0331,retraits
+377/04 B 010/09,377/04 B 010/09,registration,DZ-R-0520,retraits
+377/04 B 040/08,377/04 B 040/08,registration,DZ-R-0590,retraits
+377/06 B 123/08,377/06 B 123/08,registration,DZ-R-0637,retraits
+377/06 B 243/08,377/06 B 243/08,registration,DZ-R-0645,retraits
+380/06 F 162/11,380/06 F 162/11,registration,DZ-R-0154,non_renouveles
+382/04 B 006/07,382/04 B 006/07,registration,DZ-R-0466,retraits
+382/06 F 069/08,382/06 F 069/08,registration,DZ-R-0725,retraits
+384/06 B 123/08,384/06 B 123/08,registration,DZ-R-0639,retraits
+384/06 B 243/07,384/06 B 243/07,registration,DZ-R-0647,retraits
+386/13 K 254/09,386/13 K 254/09,registration,DZ-R-0945,retraits
+392/03 B 005/98/09,392/03 B 005/98/09,registration,DZ-R-0013,non_renouveles
+392/03 B 044/00/16,392/03 B 044/00/16,registration,DZ-R-0369,retraits
+392/03 B 045/00/16,392/03 B 045/00/16,registration,DZ-R-0370,retraits
+392/04 B 010/16,392/04 B 010/16,registration,DZ-R-0523,retraits
+392/04 B 040/16,392/04 B 040/16,registration,DZ-R-0593,retraits
+392/04 B 068/13,392/04 B 068/13,registration,DZ-R-0606,retraits
+398/06 H 095/98/09,398/06 H 095/98/09,registration,DZ-R-0736,retraits
+398/06 H 096/98/07,398/06 H 096/98/07,registration,DZ-R-0737,retraits
+400/03 B 005/11,400/03 B 005/11,registration,DZ-R-0012,non_renouveles
+400/03 B 081/11,400/03 B 081/11,registration,DZ-R-0049,non_renouveles
+400/06 B 123/09,400/06 B 123/09,registration,DZ-R-0632,retraits
+400/13 G 045/09,400/13 G 045/09,registration,DZ-R-0233,non_renouveles
+400/13 G 046/11,400/13 G 046/11,registration,DZ-R-0235,non_renouveles
+400/13 G 181/09,400/13 G 181/09,registration,DZ-R-0911,retraits
+400/13 G 220/11,400/13 G 220/11,registration,DZ-R-0263,non_renouveles
+400/13 G 230/04/11,400/13 G 230/04/11,registration,DZ-R-0267,non_renouveles
+400/13 G 245/07,400/13 G 245/07,registration,DZ-R-0272,non_renouveles
+408/04 B 010/05,408/04 B 010/05,registration,DZ-R-0518,retraits
+408/04 B 040/05,408/04 B 040/05,registration,DZ-R-0592,retraits
+413/06 B 123/08,413/06 B 123/08,registration,DZ-R-0643,retraits
+416/13 C 444/09,416/13 C 444/09,registration,DZ-R-0787,retraits
+418/03 B 005/09,418/03 B 005/09,registration,DZ-R-0015,non_renouveles
+418/04 B 032/09,418/04 B 032/09,registration,DZ-R-0089,non_renouveles
+418/12 A 111/08,418/12 A 111/08,registration,DZ-R-0161,non_renouveles
+428/04 B 035/15,428/04 B 035/15,registration,DZ-R-0574,retraits
+428/06 B 123/12,428/06 B 123/12,registration,DZ-R-0638,retraits
+428/06 B 243/12,428/06 B 243/12,registration,DZ-R-0646,retraits
+428/06 E 127/09,428/06 E 127/09,registration,DZ-R-0673,retraits
+428/06 E 128/09,428/06 E 128/09,registration,DZ-R-0677,retraits
+428/06 E 201/09,428/06 E 201/09,registration,DZ-R-0693,retraits
+428/13 K 253/13,428/13 K 253/13,registration,DZ-R-0940,retraits
+429/03 F 047/09,429/03 F 047/09,registration,DZ-R-0405,retraits
+429/06 E 059/09,429/06 E 059/09,registration,DZ-R-0650,retraits
+429/06 E 060/09,429/06 E 060/09,registration,DZ-R-0655,retraits
+429/06 E 222/09,429/06 E 222/09,registration,DZ-R-0696,retraits
+429/13 E 299/09,429/13 E 299/09,registration,DZ-R-0799,retraits
+429/13 K 252/09,429/13 K 252/09,registration,DZ-R-0935,retraits
+429/13 K 253/09,429/13 K 253/09,registration,DZ-R-0939,retraits
+430/04 B 018/09,430/04 B 018/09,registration,DZ-R-0532,retraits
+440/13 G 045/09,440/13 G 045/09,registration,DZ-R-0856,retraits
+441/13 B 198/09,441/13 B 198/09,registration,DZ-R-0772,retraits
+441/13 E 215/13,441/13 E 215/13,registration,DZ-R-0798,retraits
+447/03 A 001/10,447/03 A 001/10,registration,DZ-R-0001,non_renouveles
+450/03 B 008/07,450/03 B 008/07,registration,DZ-R-0358,retraits
+450/03 B 099/08,450/03 B 099/08,registration,DZ-R-0382,retraits
+450/06 E 222/06,450/06 E 222/06,registration,DZ-R-0144,non_renouveles
+457/03 B 040/11,457/03 B 040/11,registration,DZ-R-0030,non_renouveles
+460/03 B 067/11,460/03 B 067/11,registration,DZ-R-0378,retraits
+470/03 F 115/13,470/03 F 115/13,registration,DZ-R-0407,retraits
+470/04 B 042/20,470/04 B 042/20,registration,DZ-R-0599,retraits
+549/04 B 058/21,549/04 B 058/21,registration,DZ-R-0603,retraits
+549/04 B 060/21,549/04 B 060/21,registration,DZ-R-0604,retraits
+608/13 E 177/09/24,608/13 E 177/09/24,registration,DZ-R-0797,retraits
+ACEPRAL L- NOURRISSON,ACEPRAL L- NOURRISSON,brand,DZ-R-0010,non_renouveles
+ACEPRAL-L,ACEPRAL-L,brand,DZ-R-0165,non_renouveles
+ACEPRAL-L 1000MG,ACEPRAL-L 1000MG,brand,DZ-R-0008,non_renouveles
+ACEPRAL-L ADULTES,ACEPRAL-L ADULTES,brand,DZ-R-0007,non_renouveles
+ACEPRAL-L ENFANT,ACEPRAL-L ENFANT,brand,DZ-R-0006,non_renouveles
+ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0003,non_renouveles
+ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0004,non_renouveles
+ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0005,non_renouveles
+ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0006,non_renouveles
+ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0007,non_renouveles
+ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0008,non_renouveles
+ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0010,non_renouveles
+ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0314,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0001,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0002,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0009,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0160,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0161,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0162,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0163,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0164,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0166,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0167,non_renouveles
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0308,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0309,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0310,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0311,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0312,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0313,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0315,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0316,retraits
+ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0748,retraits
+ACIDE ACETYLSALICYLIQUE / ACIDE ASCORBIQUE,ACIDE ACETYLSALICYLIQUE / ACIDE ASCORBIQUE,inn,DZ-R-0317,retraits
+ACIDE ACETYLSALICYLIQUE SOUS FORME D' ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,ACIDE ACETYLSALICYLIQUE SOUS FORME D ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE,inn,DZ-R-0165,non_renouveles
+ACIDE ACETYLSALICYLIQUE/ACIDE ASCORBIQUE/CAFEINE,ACIDE ACETYLSALICYLIQUE/ACIDE ASCORBIQUE/CAFEINE,inn,DZ-R-0011,non_renouveles
+ACTIGRIP,ACTIGRIP,brand,DZ-R-0371,retraits
+ACTOCYL,ACTOCYL,brand,DZ-R-0166,non_renouveles
+ACUPAN,ACUPAN,brand,DZ-R-0065,non_renouveles
+ADALAT,ADALAT,brand,DZ-R-0612,retraits
+ADALAT RETARD,ADALAT RETARD,brand,DZ-R-0616,retraits
+ADFEN,ADFEN,brand,DZ-R-0599,retraits
+ADIPINE,ADIPINE,brand,DZ-R-0112,non_renouveles
+ADIPINE,ADIPINE,brand,DZ-R-0116,non_renouveles
+ADVIL,ADVIL,brand,DZ-R-0598,retraits
+AGRAM,AGRAM,brand,DZ-R-0861,retraits
+AGRAM,AGRAM,brand,DZ-R-0878,retraits
+AGRAM,AGRAM,brand,DZ-R-0897,retraits
+ALCOMICIN,ALCOMICIN,brand,DZ-R-0976,retraits
+ALDACTAZINE,ALDACTAZINE,brand,DZ-R-0739,retraits
+ALDOMETHYL,ALDOMETHYL,brand,DZ-R-0661,retraits
+ALGIDEX,ALGIDEX,brand,DZ-R-0402,retraits
+ALGIMOL,ALGIMOL,brand,DZ-R-0054,non_renouveles
+ALGIMOL,ALGIMOL,brand,DZ-R-0354,retraits
+ALGIMOL ENFANT,ALGIMOL ENFANT,brand,DZ-R-0034,non_renouveles
+ALGIMOL ENFANT,ALGIMOL ENFANT,brand,DZ-R-0038,non_renouveles
+ALGIMOL-PEDIATRIQUE,ALGIMOL-PEDIATRIQUE,brand,DZ-R-0044,non_renouveles
+ALMIRAL,ALMIRAL,brand,DZ-R-0426,retraits
+ALMIRAL,ALMIRAL,brand,DZ-R-0447,retraits
+ALMIRAL,ALMIRAL,brand,DZ-R-0499,retraits
+ALODIPINE,ALODIPINE,brand,DZ-R-0119,non_renouveles
+ALODIPINE,ALODIPINE,brand,DZ-R-0120,non_renouveles
+ALPHAMOL,ALPHAMOL,brand,DZ-R-0329,retraits
+ALPHAMOX,ALPHAMOX,brand,DZ-R-0862,retraits
+ALPHATRIM,ALPHATRIM,brand,DZ-R-0948,retraits
+ALPROFEN,ALPROFEN,brand,DZ-R-0070,non_renouveles
+ALVIL,ALVIL,brand,DZ-R-0100,non_renouveles
+AMADVIL,AMADVIL,brand,DZ-R-0588,retraits
+AMEP,AMEP,brand,DZ-R-0642,retraits
+AMILO,AMILO,brand,DZ-R-0636,retraits
+AMLIBON,AMLIBON,brand,DZ-R-0117,non_renouveles
+AMLOCAL,AMLOCAL,brand,DZ-R-0630,retraits
+AMLOCARDINE,AMLOCARDINE,brand,DZ-R-0635,retraits
+AMLOCOR-5,AMLOCOR-5,brand,DZ-R-0643,retraits
+AMLODAR,AMLODAR,brand,DZ-R-0641,retraits
+AMLODAR,AMLODAR,brand,DZ-R-0648,retraits
+AMLODEX,AMLODEX,brand,DZ-R-0644,retraits
+AMLODIPINE,AMLODIPINE,brand,DZ-R-0631,retraits
+AMLODIPINE,AMLODIPINE,inn,DZ-R-0636,retraits
+AMLODIPINE,AMLODIPINE,inn,DZ-R-0641,retraits
+AMLODIPINE,AMLODIPINE,inn,DZ-R-0643,retraits
+AMLODIPINE,AMLODIPINE,inn,DZ-R-0648,retraits
+AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/ATORVASTATINE CALCIQUE TRIHYDRATEE EXPRIME EN ATORVASTATINE,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/ATORVASTATINE CALCIQUE TRIHYDRATEE EXPRIME EN ATORVASTATINE,inn,DZ-R-0157,non_renouveles
+AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN,inn,DZ-R-0703,retraits
+AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN,inn,DZ-R-0704,retraits
+AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN,inn,DZ-R-0705,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0630,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0631,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0632,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0633,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0634,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0635,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0637,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0639,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0640,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0642,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0645,retraits
+AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,AMLODIPINE BESYLATE EXPRIME EN AMLODIPINE,inn,DZ-R-0647,retraits
+AMLODIPINE ZENTIVA,AMLODIPINE ZENTIVA,brand,DZ-R-0638,retraits
+AMLODIPINE ZENTIVA,AMLODIPINE ZENTIVA,brand,DZ-R-0646,retraits
+AMLOMEX,AMLOMEX,brand,DZ-R-0632,retraits
+AMLOPRESS,AMLOPRESS,brand,DZ-R-0633,retraits
+AMLORIDAL,AMLORIDAL,brand,DZ-R-0118,non_renouveles
+AMLORIDAL,AMLORIDAL,brand,DZ-R-0121,non_renouveles
+AMLOTENSINE,AMLOTENSINE,brand,DZ-R-0637,retraits
+AMLOTENSINE,AMLOTENSINE,brand,DZ-R-0645,retraits
+AMLOVAL,AMLOVAL,brand,DZ-R-0703,retraits
+AMLOVAL,AMLOVAL,brand,DZ-R-0704,retraits
+AMLOVAL,AMLOVAL,brand,DZ-R-0705,retraits
+AMLOVASTE,AMLOVASTE,brand,DZ-R-0157,non_renouveles
+AMMOXYL,AMMOXYL,brand,DZ-R-0922,retraits
+AMMOXYL,AMMOXYL,brand,DZ-R-0927,retraits
+AMOCLAN,AMOCLAN,brand,DZ-R-0280,non_renouveles
+AMOCLAN,AMOCLAN,brand,DZ-R-0914,retraits
+AMOCLAN 8:1,AMOCLAN 8 1,brand,DZ-R-0268,non_renouveles
+AMOCLAN BID,AMOCLAN BID,brand,DZ-R-0274,non_renouveles
+AMOCLAN FORTE,AMOCLAN FORTE,brand,DZ-R-0247,non_renouveles
+AMOCLAN FORTE,AMOCLAN FORTE,brand,DZ-R-0253,non_renouveles
+AMOCLAV ENFANT,AMOCLAV ENFANT,brand,DZ-R-0258,non_renouveles
+AMODEX,AMODEX,brand,DZ-R-0850,retraits
+AMODEX,AMODEX,brand,DZ-R-0882,retraits
+AMODEX Gé,AMODEX GE,brand,DZ-R-0262,non_renouveles
+AMODEX-Gé,AMODEX-GE,brand,DZ-R-0229,non_renouveles
+AMODEX-Gé,AMODEX-GE,brand,DZ-R-0239,non_renouveles
+AMOKSIKLAV,AMOKSIKLAV,brand,DZ-R-0906,retraits
+AMOXAL,AMOXAL,brand,DZ-R-0833,retraits
+AMOXAL,AMOXAL,brand,DZ-R-0870,retraits
+AMOXAL,AMOXAL,brand,DZ-R-0881,retraits
+AMOXAL,AMOXAL,brand,DZ-R-0901,retraits
+AMOXAL,AMOXAL,brand,DZ-R-0917,retraits
+AMOXAL,AMOXAL,brand,DZ-R-0924,retraits
+AMOXI-GOBENS,AMOXI-GOBENS,brand,DZ-R-0849,retraits
+AMOXI-GOBENS,AMOXI-GOBENS,brand,DZ-R-0899,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0826,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0827,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0828,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0829,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0830,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0833,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0835,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0836,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0837,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0838,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0839,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0840,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0841,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0842,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0843,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0844,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0845,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0846,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0847,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0848,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0849,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0850,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0851,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0852,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0853,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0854,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0855,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0857,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0858,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0860,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0861,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0862,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0863,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0864,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0865,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0866,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0867,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0868,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0869,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0871,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0872,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0873,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0874,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0875,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0876,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0877,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0878,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0879,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0880,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0882,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0883,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0884,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0885,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0886,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0887,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0888,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0889,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0890,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0892,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0893,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0894,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0895,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0896,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0897,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0899,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0900,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0916,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0918,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0919,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0920,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0922,retraits
+AMOXICILLINE,AMOXICILLINE,inn,DZ-R-0927,retraits
+AMOXICILLINE (SODIQUE),AMOXICILLINE (SODIQUE),inn,DZ-R-0825,retraits
+AMOXICILLINE (SODIQUE),AMOXICILLINE (SODIQUE),inn,DZ-R-0834,retraits
+AMOXICILLINE (TRIHYDRATE),AMOXICILLINE (TRIHYDRATE),inn,DZ-R-0928,retraits
+AMOXICILLINE (TRIHYDRATE)/ACIDE CLAVULANIQUE (SEL DE POTASSIUM),AMOXICILLINE (TRIHYDRATE)/ACIDE CLAVULANIQUE (SEL DE POTASSIUM),inn,DZ-R-0246,non_renouveles
+AMOXICILLINE - BAYER,AMOXICILLINE - BAYER,brand,DZ-R-0885,retraits
+AMOXICILLINE - SOLVAY,AMOXICILLINE - SOLVAY,brand,DZ-R-0827,retraits
+AMOXICILLINE - SOLVAY,AMOXICILLINE - SOLVAY,brand,DZ-R-0837,retraits
+AMOXICILLINE / ACIDE CLAVULANIQUE SANDOZ (ENFANT ET NOURRISSON),AMOXICILLINE / ACIDE CLAVULANIQUE SANDOZ (ENFANT ET NOURRISSON),brand,DZ-R-0910,retraits
+AMOXICILLINE BIOGARAN,AMOXICILLINE BIOGARAN,brand,DZ-R-0863,retraits
+AMOXICILLINE BIOGARAN,AMOXICILLINE BIOGARAN,brand,DZ-R-0926,retraits
+AMOXICILLINE FLAVELAB,AMOXICILLINE FLAVELAB,brand,DZ-R-0825,retraits
+AMOXICILLINE FLAVELAB,AMOXICILLINE FLAVELAB,brand,DZ-R-0834,retraits
+AMOXICILLINE KELA,AMOXICILLINE KELA,brand,DZ-R-0856,retraits
+AMOXICILLINE PANPHARMA,AMOXICILLINE PANPHARMA,brand,DZ-R-0826,retraits
+AMOXICILLINE PANPHARMA,AMOXICILLINE PANPHARMA,brand,DZ-R-0836,retraits
+AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE / ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE / ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0913,retraits
+AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE / ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE / ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0915,retraits
+AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0259,non_renouveles
+AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0260,non_renouveles
+AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0914,retraits
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0229,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0230,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0231,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0232,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0235,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0236,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0237,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0238,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0239,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0240,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0241,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0242,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0243,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0891,retraits
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0898,retraits
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE,inn,DZ-R-0901,retraits
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE / ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE / ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0902,retraits
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0244,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0245,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0247,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0248,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0249,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0250,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0253,non_renouveles
+AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE SEL DE POTASSIUM EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0903,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0233,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0234,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0262,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0263,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0264,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0265,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0266,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0267,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0281,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0282,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0283,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0859,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0870,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0881,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0917,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0921,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0923,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0924,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE,inn,DZ-R-0926,retraits
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0258,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0268,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0269,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0270,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0271,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0272,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0278,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0279,non_renouveles
+AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE,inn,DZ-R-0925,retraits
+AMOXICILLINE** (SOUS FORME SODIQUE),AMOXICILLINE (SOUS FORME SODIQUE),inn,DZ-R-0831,retraits
+AMOXICILLINE** (SOUS FORME SODIQUE),AMOXICILLINE (SOUS FORME SODIQUE),inn,DZ-R-0832,retraits
+AMOXICILLINE** (SOUS FORME SODIQUE)/ ACIDE CLAVULANIQUE** (SOUS FORME POTASSIQUE),AMOXICILLINE (SOUS FORME SODIQUE)/ ACIDE CLAVULANIQUE (SOUS FORME POTASSIQUE),inn,DZ-R-0911,retraits
+AMOXICILLINE** (SOUS FORME TRIHYDRATEE),AMOXICILLINE (SOUS FORME TRIHYDRATEE),inn,DZ-R-0856,retraits
+AMOXICILLINE** (SOUS FORME TRIHYDRATEE)/ACIDE CLAVULANIQUE** (SOUS FORME POTASSIQUE),AMOXICILLINE (SOUS FORME TRIHYDRATEE)/ACIDE CLAVULANIQUE (SOUS FORME POTASSIQUE),inn,DZ-R-0273,non_renouveles
+AMOXICILLINE**(SOUS FORME TRIHYDRATEE) / ACIDE CLAVULANIQUE (SOUS FORME POTASSIQUE)**RAPPORT 8/1,AMOXICILLINE (SOUS FORME TRIHYDRATEE) / ACIDE CLAVULANIQUE (SOUS FORME POTASSIQUE) RAPPORT 8/1,inn,DZ-R-0912,retraits
+AMOXICILLINE**(SOUS FORME TRIHYDRATEE) / ACIDE CLAVULANIQUE **(SOUS FORME POTASSIQUE),AMOXICILLINE (SOUS FORME TRIHYDRATEE) / ACIDE CLAVULANIQUE (SOUS FORME POTASSIQUE),inn,DZ-R-0910,retraits
+AMOXICILLINE-RATIOPHARM,AMOXICILLINE-RATIOPHARM,brand,DZ-R-0867,retraits
+AMOXICILLINE-RATIOPHARM,AMOXICILLINE-RATIOPHARM,brand,DZ-R-0879,retraits
+AMOXICILLINE-RATIOPHARM,AMOXICILLINE-RATIOPHARM,brand,DZ-R-0900,retraits
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0251,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0252,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0254,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0255,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0256,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0257,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0274,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0275,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0276,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0277,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0280,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0904,retraits
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0905,retraits
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0906,retraits
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0907,retraits
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0908,retraits
+AMOXICILLINE/ACIDE CLAVULANIQUE,AMOXICILLINE/ACIDE CLAVULANIQUE,inn,DZ-R-0909,retraits
+AMOXICILLINE/ACIDE CLAVULANIQUE RAPPORT 8/1,AMOXICILLINE/ACIDE CLAVULANIQUE RAPPORT 8/1,inn,DZ-R-0261,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE SANDOZ ADULTE,AMOXICILLINE/ACIDE CLAVULANIQUE SANDOZ ADULTE,brand,DZ-R-0269,non_renouveles
+AMOXICILLINE/ACIDE CLAVULANIQUE SANDOZ ADULTE,AMOXICILLINE/ACIDE CLAVULANIQUE SANDOZ ADULTE,brand,DZ-R-0278,non_renouveles
+AMOXIMEX,AMOXIMEX,brand,DZ-R-0233,non_renouveles
+AMOXIMEX,AMOXIMEX,brand,DZ-R-0235,non_renouveles
+AMOXIMEX,AMOXIMEX,brand,DZ-R-0263,non_renouveles
+AMOXIMEX,AMOXIMEX,brand,DZ-R-0267,non_renouveles
+AMOXYDAR,AMOXYDAR,brand,DZ-R-0841,retraits
+AMOXYDAR,AMOXYDAR,brand,DZ-R-0877,retraits
+AMOXYDAR,AMOXYDAR,brand,DZ-R-0918,retraits
+AMOXYDAR FORTE,AMOXYDAR FORTE,brand,DZ-R-0857,retraits
+AMOXYDAR FORTE,AMOXYDAR FORTE,brand,DZ-R-0893,retraits
+AMOXYPEN,AMOXYPEN,brand,DZ-R-0238,non_renouveles
+AMOXYPEN,AMOXYPEN,brand,DZ-R-0265,non_renouveles
+AMOXYPEN,AMOXYPEN,brand,DZ-R-0281,non_renouveles
+AMOXYPEN,AMOXYPEN,brand,DZ-R-0283,non_renouveles
+AMRIZOLE,AMRIZOLE,brand,DZ-R-0746,retraits
+AMRIZOLE,AMRIZOLE,brand,DZ-R-0808,retraits
+AMRIZOLE,AMRIZOLE,brand,DZ-R-0817,retraits
+ANGILAT,ANGILAT,brand,DZ-R-0629,retraits
+ANGIOPRIL,ANGIOPRIL,brand,DZ-R-0122,non_renouveles
+ANGIOPRIL,ANGIOPRIL,brand,DZ-R-0127,non_renouveles
+ANGIOTEC,ANGIOTEC,brand,DZ-R-0123,non_renouveles
+ANGIOTEC,ANGIOTEC,brand,DZ-R-0128,non_renouveles
+ANGIOZIDE,ANGIOZIDE,brand,DZ-R-0145,non_renouveles
+ANTAFENE,ANTAFENE,brand,DZ-R-0585,retraits
+ANTALFEN,ANTALFEN,brand,DZ-R-0066,non_renouveles
+ANTALFEN,ANTALFEN,brand,DZ-R-0091,non_renouveles
+ANTAMOL,ANTAMOL,brand,DZ-R-0330,retraits
+ANTARENE Gé,ANTARENE GE,brand,DZ-R-0518,retraits
+ANTARENE Gé,ANTARENE GE,brand,DZ-R-0592,retraits
+ANTI GRIP,ANTI GRIP,brand,DZ-R-0011,non_renouveles
+ANTIDOL,ANTIDOL,brand,DZ-R-0319,retraits
+APIFEN,APIFEN,brand,DZ-R-0068,non_renouveles
+APIFEN,APIFEN,brand,DZ-R-0092,non_renouveles
+APRANAX,APRANAX,brand,DZ-R-0535,retraits
+APRANAX,APRANAX,brand,DZ-R-0537,retraits
+ARDINE,ARDINE,brand,DZ-R-0845,retraits
+ARDINE,ARDINE,brand,DZ-R-0848,retraits
+ARDINE,ARDINE,brand,DZ-R-0880,retraits
+ARDINE,ARDINE,brand,DZ-R-0883,retraits
+ARTENOL,ARTENOL,brand,DZ-R-0725,retraits
+ASIAPIRINE 81,ASIAPIRINE 81,brand,DZ-R-0160,non_renouveles
+ASITAMOL,ASITAMOL,brand,DZ-R-0336,retraits
+ASPALGINE,ASPALGINE,brand,DZ-R-0161,non_renouveles
+ASPEGIC,ASPEGIC,brand,DZ-R-0004,non_renouveles
+ASPEGIC,ASPEGIC,brand,DZ-R-0314,retraits
+ASPEVASC 100,ASPEVASC 100,brand,DZ-R-0748,retraits
+ASPICARD,ASPICARD,brand,DZ-R-0162,non_renouveles
+ASPIREFF-500,ASPIREFF-500,brand,DZ-R-0316,retraits
+ASPIRINE BEKER,ASPIRINE BEKER,brand,DZ-R-0001,non_renouveles
+ASPIRINE BIOTIC,ASPIRINE BIOTIC,brand,DZ-R-0009,non_renouveles
+ASPIRINE BIOTIC,ASPIRINE BIOTIC,brand,DZ-R-0167,non_renouveles
+ASPIRINE PH8,ASPIRINE PH8,brand,DZ-R-0308,retraits
+ASPIRINE UPSA 500,ASPIRINE UPSA 500,brand,DZ-R-0315,retraits
+ASPRIL 500,ASPRIL 500,brand,DZ-R-0311,retraits
+ASPROCARD,ASPROCARD,brand,DZ-R-0163,non_renouveles
+ATASPIN,ATASPIN,brand,DZ-R-0309,retraits
+ATELOL,ATELOL,brand,DZ-R-0707,retraits
+ATENOCLOR,ATENOCLOR,brand,DZ-R-0150,non_renouveles
+ATENOL,ATENOL,brand,DZ-R-0708,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0151,non_renouveles
+ATENOLOL,ATENOLOL,inn,DZ-R-0152,non_renouveles
+ATENOLOL,ATENOLOL,inn,DZ-R-0153,non_renouveles
+ATENOLOL,ATENOLOL,inn,DZ-R-0706,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0707,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0708,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0709,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0710,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0711,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0712,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0713,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0714,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0715,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0716,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0717,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0718,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0719,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0720,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0721,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0722,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0723,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0724,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0725,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0726,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0727,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0728,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0729,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0730,retraits
+ATENOLOL,ATENOLOL,inn,DZ-R-0731,retraits
+ATENOLOL / NIFEDIPINE,ATENOLOL / NIFEDIPINE,inn,DZ-R-0695,retraits
+ATENOLOL BIOGARAN,ATENOLOL BIOGARAN,brand,DZ-R-0722,retraits
+ATENOLOL BIOGARAN,ATENOLOL BIOGARAN,brand,DZ-R-0731,retraits
+ATENOLOL MERCK,ATENOLOL MERCK,brand,DZ-R-0719,retraits
+ATENOLOL-RATIOPHARM,ATENOLOL-RATIOPHARM,brand,DZ-R-0723,retraits
+ATENOLOL/CHLORTHALIDONE,ATENOLOL/CHLORTHALIDONE,inn,DZ-R-0150,non_renouveles
+ATENOR,ATENOR,brand,DZ-R-0151,non_renouveles
+ATINAL,ATINAL,brand,DZ-R-0152,non_renouveles
+ATINAL,ATINAL,brand,DZ-R-0153,non_renouveles
+AUGMENTIMEX ADULTES,AUGMENTIMEX ADULTES,brand,DZ-R-0272,non_renouveles
+AUGMENTIMEX ENFANTS,AUGMENTIMEX ENFANTS,brand,DZ-R-0911,retraits
+AUGMENTIN,AUGMENTIN,brand,DZ-R-0244,non_renouveles
+AUGMENTIN,AUGMENTIN,brand,DZ-R-0248,non_renouveles
+AUGMENTIN,AUGMENTIN,brand,DZ-R-0254,non_renouveles
+AUGMENTIN,AUGMENTIN,brand,DZ-R-0902,retraits
+AUGMENTIN,AUGMENTIN,brand,DZ-R-0913,retraits
+AUGMENTIN,AUGMENTIN,brand,DZ-R-0915,retraits
+AUGMENTIN ADULTES,AUGMENTIN ADULTES,brand,DZ-R-0270,non_renouveles
+AUGMENTIN ENFANTS,AUGMENTIN ENFANTS,brand,DZ-R-0261,non_renouveles
+AZED,AZED,brand,DZ-R-0790,retraits
+AZIMYCINE,AZIMYCINE,brand,DZ-R-0210,non_renouveles
+AZITHROMYCINE,AZITHROMYCINE,inn,DZ-R-0790,retraits
+AZITHROMYCINE,AZITHROMYCINE,inn,DZ-R-0791,retraits
+AZITHROMYCINE,AZITHROMYCINE,inn,DZ-R-0793,retraits
+AZITHROMYCINE,AZITHROMYCINE,inn,DZ-R-0795,retraits
+AZITHROMYCINE,AZITHROMYCINE,inn,DZ-R-0796,retraits
+AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE,AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE,inn,DZ-R-0210,non_renouveles
+AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE,AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE,inn,DZ-R-0220,non_renouveles
+AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE,AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE,inn,DZ-R-0797,retraits
+AZITHROMYCINE IBERAL,AZITHROMYCINE IBERAL,brand,DZ-R-0799,retraits
+AZITHROMYCINE** (SOUS FORME DHYDRATEE),AZITHROMYCINE (SOUS FORME DHYDRATEE),inn,DZ-R-0799,retraits
+AZITHROMYCINE** (SOUS FORME DIHYDRATEE),AZITHROMYCINE (SOUS FORME DIHYDRATEE),inn,DZ-R-0800,retraits
+AZITHROMYCINE** (SOUS FORME MONOHYDRATE HEMIETHANOLATE),AZITHROMYCINE (SOUS FORME MONOHYDRATE HEMIETHANOLATE),inn,DZ-R-0221,non_renouveles
+AZITHROMYCINE** (SOUS FORME MONOHYDRATE HEMIETHANOLATE),AZITHROMYCINE (SOUS FORME MONOHYDRATE HEMIETHANOLATE),inn,DZ-R-0794,retraits
+AZITHROMYCINE**(SOUS FORME DIHYDRATEE),AZITHROMYCINE (SOUS FORME DIHYDRATEE),inn,DZ-R-0792,retraits
+AZROLID,AZROLID,brand,DZ-R-0800,retraits
+Amlodipine bésilate exprimé en amlodipine,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE,inn,DZ-R-0117,non_renouveles
+Amlodipine bésilate exprimé en amlodipine,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE,inn,DZ-R-0118,non_renouveles
+Amlodipine bésilate exprimé en amlodipine,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE,inn,DZ-R-0119,non_renouveles
+Amlodipine bésilate exprimé en amlodipine,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE,inn,DZ-R-0120,non_renouveles
+Amlodipine bésilate exprimé en amlodipine,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE,inn,DZ-R-0121,non_renouveles
+Amlodipine bésilate exprimé en amlodipine,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE,inn,DZ-R-0638,retraits
+Amlodipine bésilate exprimé en amlodipine,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE,inn,DZ-R-0644,retraits
+Amlodipine bésilate exprimé en amlodipine,AMLODIPINE BESILATE EXPRIME EN AMLODIPINE,inn,DZ-R-0646,retraits
+BACTALL,BACTALL,brand,DZ-R-0943,retraits
+BACTEKOD,BACTEKOD,brand,DZ-R-0949,retraits
+BACTEKOD,BACTEKOD,brand,DZ-R-0958,retraits
+BACTEKOD FORT,BACTEKOD FORT,brand,DZ-R-0972,retraits
+BACTRIM,BACTRIM,brand,DZ-R-0950,retraits
+BACTRIM,BACTRIM,brand,DZ-R-0957,retraits
+BACTRIM FORTE,BACTRIM FORTE,brand,DZ-R-0969,retraits
+BALKAPROFEN,BALKAPROFEN,brand,DZ-R-0514,retraits
+BALKATRINE,BALKATRINE,brand,DZ-R-0951,retraits
+BALKATRINE,BALKATRINE,brand,DZ-R-0959,retraits
+BETATOP,BETATOP,brand,DZ-R-0724,retraits
+BETIXIM,BETIXIM,brand,DZ-R-0187,non_renouveles
+BETIXIM 200,BETIXIM 200,brand,DZ-R-0192,non_renouveles
+BI-ANTALGIQUE,BI-ANTALGIQUE,brand,DZ-R-0389,retraits
+BIAMOX,BIAMOX,brand,DZ-R-0830,retraits
+BIAMOX,BIAMOX,brand,DZ-R-0831,retraits
+BIDICLO LP,BIDICLO LP,brand,DZ-R-0578,retraits
+BINOVAX,BINOVAX,brand,DZ-R-0699,retraits
+BINOZYT,BINOZYT,brand,DZ-R-0797,retraits
+BIODAZOLE,BIODAZOLE,brand,DZ-R-0803,retraits
+BIOFENAC,BIOFENAC,brand,DZ-R-0410,retraits
+BIOFENAC,BIOFENAC,brand,DZ-R-0438,retraits
+BIOFENAC,BIOFENAC,brand,DZ-R-0473,retraits
+BIOFENE,BIOFENE,brand,DZ-R-0522,retraits
+BIOFLOX,BIOFLOX,brand,DZ-R-0945,retraits
+BIOMYCINE,BIOMYCINE,brand,DZ-R-0204,non_renouveles
+BIOPAMOX,BIOPAMOX,brand,DZ-R-0921,retraits
+BIOTALVIC,BIOTALVIC,brand,DZ-R-0384,retraits
+BIOTIC PLUS,BIOTIC PLUS,brand,DZ-R-0905,retraits
+BIOTIC PLUS,BIOTIC PLUS,brand,DZ-R-0909,retraits
+BIPRETERAX,BIPRETERAX,brand,DZ-R-0698,retraits
+BISOPROLOL (SOUS FORME DE FUMARATE)**,BISOPROLOL (SOUS FORME DE FUMARATE),inn,DZ-R-0732,retraits
+BISOPROLOL FUMARATE,BISOPROLOL FUMARATE,inn,DZ-R-0154,non_renouveles
+BISOPROLOL FUMARATE,BISOPROLOL FUMARATE,inn,DZ-R-0733,retraits
+BISOPROLOL HEMIFUMARATE,BISOPROLOL HEMIFUMARATE,inn,DZ-R-0734,retraits
+BISOPROLOL HUP,BISOPROLOL HUP,brand,DZ-R-0154,non_renouveles
+BLEDURAN,BLEDURAN,brand,DZ-R-0550,retraits
+BRISTAMOX - HICONCIL,BRISTAMOX - HICONCIL,brand,DZ-R-0851,retraits
+BRISTAMOX - HICONCIL,BRISTAMOX - HICONCIL,brand,DZ-R-0875,retraits
+BRISTAMOX - HICONCIL,BRISTAMOX - HICONCIL,brand,DZ-R-0892,retraits
+BRUFEN,BRUFEN,brand,DZ-R-0095,non_renouveles
+BUFEN,BUFEN,brand,DZ-R-0096,non_renouveles
+CANAR,CANAR,brand,DZ-R-0709,retraits
+CANAR,CANAR,brand,DZ-R-0726,retraits
+CARDIOSAFE,CARDIOSAFE,brand,DZ-R-0732,retraits
+CARDIOSAFE,CARDIOSAFE,brand,DZ-R-0734,retraits
+CARDOL,CARDOL,brand,DZ-R-0710,retraits
+CATAFLAM,CATAFLAM,brand,DZ-R-0111,non_renouveles
+CATAFLAM,CATAFLAM,brand,DZ-R-0605,retraits
+CATALGINE ADULT,CATALGINE ADULT,brand,DZ-R-0313,retraits
+CATALGINE ENF et NOUR,CATALGINE ENF ET NOUR,brand,DZ-R-0312,retraits
+CEFAXONE,CEFAXONE,brand,DZ-R-0181,non_renouveles
+CEFIX,CEFIX,brand,DZ-R-0184,non_renouveles
+CEFIXIME,CEFIXIME,inn,DZ-R-0184,non_renouveles
+CEFIXIME,CEFIXIME,inn,DZ-R-0202,non_renouveles
+CEFIXIME TRIHYDRATE (CEFIXIME ANHYDRE),CEFIXIME TRIHYDRATE (CEFIXIME ANHYDRE),inn,DZ-R-0771,retraits
+CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,inn,DZ-R-0185,non_renouveles
+CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,inn,DZ-R-0186,non_renouveles
+CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,inn,DZ-R-0187,non_renouveles
+CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,inn,DZ-R-0188,non_renouveles
+CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,inn,DZ-R-0189,non_renouveles
+CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,inn,DZ-R-0190,non_renouveles
+CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,inn,DZ-R-0191,non_renouveles
+CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE,inn,DZ-R-0772,retraits
+CEFIXIME TRIHYDRATEE EXPRIME EN CEFIXIME,CEFIXIME TRIHYDRATEE EXPRIME EN CEFIXIME,inn,DZ-R-0192,non_renouveles
+CEFOFIX,CEFOFIX,brand,DZ-R-0196,non_renouveles
+CEFOFIX,CEFOFIX,brand,DZ-R-0198,non_renouveles
+CEFTRIAXONA HIKMA,CEFTRIAXONA HIKMA,brand,DZ-R-0182,non_renouveles
+CEFTRIAXONA HIKMA,CEFTRIAXONA HIKMA,brand,DZ-R-0200,non_renouveles
+CEFTRIAXONA HIKMA,CEFTRIAXONA HIKMA,brand,DZ-R-0201,non_renouveles
+CEFTRIAXONA HIKMA,CEFTRIAXONA HIKMA,brand,DZ-R-0767,retraits
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0179,non_renouveles
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0182,non_renouveles
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0183,non_renouveles
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0200,non_renouveles
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0201,non_renouveles
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0763,retraits
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0764,retraits
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0766,retraits
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0768,retraits
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0769,retraits
+CEFTRIAXONE,CEFTRIAXONE,inn,DZ-R-0770,retraits
+CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE,CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE,inn,DZ-R-0180,non_renouveles
+CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE,CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE,inn,DZ-R-0181,non_renouveles
+CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE,CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE,inn,DZ-R-0765,retraits
+CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE,CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE,inn,DZ-R-0767,retraits
+CEFTRIAXONE** (SOUS FORME DE CEFTRIAXONE SODIUM),CEFTRIAXONE (SOUS FORME DE CEFTRIAXONE SODIUM),inn,DZ-R-0203,non_renouveles
+CEFTRIAXONE** (SOUS FORME SODIQUE TRISESQUIHYDRATEE),CEFTRIAXONE (SOUS FORME SODIQUE TRISESQUIHYDRATEE),inn,DZ-R-0775,retraits
+CEFUROXIME,CEFUROXIME,inn,DZ-R-0195,non_renouveles
+CEFUROXIME AXETIL EXPRIME EN CEFUROXIME,CEFUROXIME AXETIL EXPRIME EN CEFUROXIME,inn,DZ-R-0194,non_renouveles
+CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,inn,DZ-R-0196,non_renouveles
+CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,inn,DZ-R-0197,non_renouveles
+CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,inn,DZ-R-0198,non_renouveles
+CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,inn,DZ-R-0199,non_renouveles
+CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,inn,DZ-R-0773,retraits
+CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,CEFUROXIME SODIQUE EXPRIME EN CEFUROXIME,inn,DZ-R-0774,retraits
+CEFUROXIME** AXETIL,CEFUROXIME AXETIL,inn,DZ-R-0193,non_renouveles
+CEFUTIL,CEFUTIL,brand,DZ-R-0195,non_renouveles
+CELECOXIB,CELECOXIB,inn,DZ-R-0573,retraits
+CELECOXIB,CELECOXIB,inn,DZ-R-0574,retraits
+CELECOXIB,CELECOXIB,inn,DZ-R-0575,retraits
+CELECOXIB ZENTIVA,CELECOXIB ZENTIVA,brand,DZ-R-0574,retraits
+CELOXIB,CELOXIB,brand,DZ-R-0573,retraits
+CELOXIB,CELOXIB,brand,DZ-R-0575,retraits
+CETALGINE,CETALGINE,brand,DZ-R-0022,non_renouveles
+CETALGINE,CETALGINE,brand,DZ-R-0032,non_renouveles
+CETALGINE,CETALGINE,brand,DZ-R-0035,non_renouveles
+CETALGINE,CETALGINE,brand,DZ-R-0039,non_renouveles
+CETAMYL,CETAMYL,brand,DZ-R-0320,retraits
+CETAMYL,CETAMYL,brand,DZ-R-0343,retraits
+CETAPRANE,CETAPRANE,brand,DZ-R-0331,retraits
+CILOXAN,CILOXAN,brand,DZ-R-0301,non_renouveles
+CIPLIN,CIPLIN,brand,DZ-R-0952,retraits
+CIPLIN,CIPLIN,brand,DZ-R-0960,retraits
+CIPRO 750,CIPRO 750,brand,DZ-R-0292,non_renouveles
+CIPROCINE,CIPROCINE,brand,DZ-R-0294,non_renouveles
+CIPRODAR,CIPRODAR,brand,DZ-R-0933,retraits
+CIPROFLOXACINE,CIPROFLOXACINE,inn,DZ-R-0286,non_renouveles
+CIPROFLOXACINE,CIPROFLOXACINE,inn,DZ-R-0294,non_renouveles
+CIPROFLOXACINE,CIPROFLOXACINE,inn,DZ-R-0934,retraits
+CIPROFLOXACINE,CIPROFLOXACINE,inn,DZ-R-0936,retraits
+CIPROFLOXACINE,CIPROFLOXACINE,inn,DZ-R-0938,retraits
+CIPROFLOXACINE,CIPROFLOXACINE,inn,DZ-R-0942,retraits
+CIPROFLOXACINE,CIPROFLOXACINE,inn,DZ-R-0944,retraits
+CIPROFLOXACINE (SOUS FORME DE CHLORHYDRATE)**,CIPROFLOXACINE (SOUS FORME DE CHLORHYDRATE),inn,DZ-R-0945,retraits
+CIPROFLOXACINE ** (SOUS FORME DE CHLORHYDRATE),CIPROFLOXACINE (SOUS FORME DE CHLORHYDRATE),inn,DZ-R-0943,retraits
+CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0287,non_renouveles
+CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0289,non_renouveles
+CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0291,non_renouveles
+CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0301,non_renouveles
+CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0933,retraits
+CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0940,retraits
+CIPROFLOXACINE CHLORHYRATE MONOHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYRATE MONOHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0288,non_renouveles
+CIPROFLOXACINE CHLORHYRATE MONOHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYRATE MONOHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0290,non_renouveles
+CIPROFLOXACINE CHLORHYRATE MONOHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYRATE MONOHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0292,non_renouveles
+CIPROFLOXACINE CHLORHYRATE MONOHYDRATE EXPRIME EN CIPROFLOXACINE,CIPROFLOXACINE CHLORHYRATE MONOHYDRATE EXPRIME EN CIPROFLOXACINE,inn,DZ-R-0293,non_renouveles
+CIPROFLOXACINE IBERAL,CIPROFLOXACINE IBERAL,brand,DZ-R-0935,retraits
+CIPROFLOXACINE IBERAL,CIPROFLOXACINE IBERAL,brand,DZ-R-0939,retraits
+CIPROFLOXACINE ZENTIVA,CIPROFLOXACINE ZENTIVA,brand,DZ-R-0940,retraits
+CIPROFLOXACINE** (SOUS FORME DE CHLORHYDRATE),CIPROFLOXACINE (SOUS FORME DE CHLORHYDRATE),inn,DZ-R-0935,retraits
+CIPROFLOXACINE** (SOUS FORME DE CHLORHYDRATE),CIPROFLOXACINE (SOUS FORME DE CHLORHYDRATE),inn,DZ-R-0937,retraits
+CIPROFLOXACINE** (SOUS FORME DE CHLORHYDRATE),CIPROFLOXACINE (SOUS FORME DE CHLORHYDRATE),inn,DZ-R-0939,retraits
+CIPROFLOXACINE** (SOUS FORME DE CHLORHYDRATE),CIPROFLOXACINE (SOUS FORME DE CHLORHYDRATE),inn,DZ-R-0941,retraits
+CIPROLON,CIPROLON,brand,DZ-R-0286,non_renouveles
+CIPROLON,CIPROLON,brand,DZ-R-0287,non_renouveles
+CIPROLON,CIPROLON,brand,DZ-R-0289,non_renouveles
+CIPROLON,CIPROLON,brand,DZ-R-0291,non_renouveles
+CIPROMAX,CIPROMAX,brand,DZ-R-0934,retraits
+CIPROMAX,CIPROMAX,brand,DZ-R-0938,retraits
+CIPROMAX,CIPROMAX,brand,DZ-R-0944,retraits
+CIPROMID 250,CIPROMID 250,brand,DZ-R-0936,retraits
+CIPROMID 500,CIPROMID 500,brand,DZ-R-0942,retraits
+CIPROVAL,CIPROVAL,brand,DZ-R-0937,retraits
+CIPROVAL,CIPROVAL,brand,DZ-R-0941,retraits
+CLAMENTIN 625,CLAMENTIN 625,brand,DZ-R-0249,non_renouveles
+CLAMOX,CLAMOX,brand,DZ-R-0866,retraits
+CLAMOXYL,CLAMOXYL,brand,DZ-R-0829,retraits
+CLAMOXYL,CLAMOXYL,brand,DZ-R-0832,retraits
+CLAMOXYL,CLAMOXYL,brand,DZ-R-0858,retraits
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0211,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0212,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0213,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0214,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0215,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0216,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0217,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0218,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0219,non_renouveles
+CLARITHROMYCINE,CLARITHROMYCINE,inn,DZ-R-0798,retraits
+CLARITHROMYCINE GEO,CLARITHROMYCINE GEO,brand,DZ-R-0212,non_renouveles
+CLARITT,CLARITT,brand,DZ-R-0217,non_renouveles
+CLAVAMOX,CLAVAMOX,brand,DZ-R-0903,retraits
+CLAVAMOX,CLAVAMOX,brand,DZ-R-0925,retraits
+"CLAVODAR 200/28,5",CLAVODAR 200/28 5,brand,DZ-R-0273,non_renouveles
+CLAVOR,CLAVOR,brand,DZ-R-0271,non_renouveles
+CLAVOR,CLAVOR,brand,DZ-R-0279,non_renouveles
+CLAVOR,CLAVOR,brand,DZ-R-0912,retraits
+CLAVUCILLINE,CLAVUCILLINE,brand,DZ-R-0252,non_renouveles
+CLAVUCILLINE,CLAVUCILLINE,brand,DZ-R-0904,retraits
+CLAVUCILLINE,CLAVUCILLINE,brand,DZ-R-0907,retraits
+CLINDACIN,CLINDACIN,brand,DZ-R-0208,non_renouveles
+CLINDAMYCINE,CLINDAMYCINE,inn,DZ-R-0207,non_renouveles
+CLINDAMYCINE,CLINDAMYCINE,inn,DZ-R-0208,non_renouveles
+CLINDAMYCINE,CLINDAMYCINE,inn,DZ-R-0209,non_renouveles
+CLINDAMYCINE,CLINDAMYCINE,inn,DZ-R-0788,retraits
+CLINDAMYCINE,CLINDAMYCINE,inn,DZ-R-0789,retraits
+CLINDAMYL,CLINDAMYL,brand,DZ-R-0789,retraits
+CLINIMYCIN,CLINIMYCIN,brand,DZ-R-0209,non_renouveles
+CO - TRIMOXAZOLE,CO - TRIMOXAZOLE,brand,DZ-R-0947,retraits
+CO -TRIMOXAZOLE,CO -TRIMOXAZOLE,brand,DZ-R-0961,retraits
+CODEINE,CODEINE,inn,DZ-R-0988,retraits
+CODEINE BIOTIC LP,CODEINE BIOTIC LP,brand,DZ-R-0303,non_renouveles
+CODEINE PHOSPHATE,CODEINE PHOSPHATE,inn,DZ-R-0302,non_renouveles
+CODEINE PHOSPHATE,CODEINE PHOSPHATE,inn,DZ-R-0303,non_renouveles
+"COLIRCUSI GENTAMICINE 0,3%",COLIRCUSI GENTAMICINE 0 3,brand,DZ-R-0978,retraits
+COMAX,COMAX,brand,DZ-R-0432,retraits
+COMAX,COMAX,brand,DZ-R-0449,retraits
+CONVERTASE,CONVERTASE,brand,DZ-R-0649,retraits
+CONVERTASE,CONVERTASE,brand,DZ-R-0653,retraits
+CORACTEN,CORACTEN,brand,DZ-R-0625,retraits
+CORDIPIN RETARD,CORDIPIN RETARD,brand,DZ-R-0626,retraits
+CORENIPRIL,CORENIPRIL,brand,DZ-R-0147,non_renouveles
+CORENIPRIL,CORENIPRIL,brand,DZ-R-0148,non_renouveles
+COROTREND 10,COROTREND 10,brand,DZ-R-0614,retraits
+CORPRILOR,CORPRILOR,brand,DZ-R-0124,non_renouveles
+CORPRILOR,CORPRILOR,brand,DZ-R-0129,non_renouveles
+CORTIMAZOL FORT-RATIOPHARM,CORTIMAZOL FORT-RATIOPHARM,brand,DZ-R-0975,retraits
+CORTOLEXAN,CORTOLEXAN,brand,DZ-R-0756,retraits
+COSARTAN - 50,COSARTAN - 50,brand,DZ-R-0669,retraits
+COTRIM ADULTE,COTRIM ADULTE,brand,DZ-R-0962,retraits
+COVERSYL,COVERSYL,brand,DZ-R-0686,retraits
+COVERSYL,COVERSYL,brand,DZ-R-0702,retraits
+CROFENAC,CROFENAC,brand,DZ-R-0490,retraits
+CROMIVAL,CROMIVAL,brand,DZ-R-0069,non_renouveles
+CURAM,CURAM,brand,DZ-R-0250,non_renouveles
+CURAM,CURAM,brand,DZ-R-0255,non_renouveles
+CURAM,CURAM,brand,DZ-R-0908,retraits
+CURATEC,CURATEC,brand,DZ-R-0678,retraits
+CYCLADOL,CYCLADOL,brand,DZ-R-0103,non_renouveles
+DAFALGAN,DAFALGAN,brand,DZ-R-0365,retraits
+DALACINE,DALACINE,brand,DZ-R-0788,retraits
+DANIPROL,DANIPROL,brand,DZ-R-0321,retraits
+DAROXIME,DAROXIME,brand,DZ-R-0194,non_renouveles
+DEDOLOR,DEDOLOR,brand,DZ-R-0487,retraits
+DEXTROPOPOXYPHENE/ PARACETAMOL,DEXTROPOPOXYPHENE/ PARACETAMOL,brand,DZ-R-0390,retraits
+DEXTROPROPOXYPHENE CHLORHYDRATE / PARACETAMOL BIOGARAN,DEXTROPROPOXYPHENE CHLORHYDRATE / PARACETAMOL BIOGARAN,brand,DZ-R-0391,retraits
+DI-ALGIC,DI-ALGIC,brand,DZ-R-0392,retraits
+DI-ANTALVIC,DI-ANTALVIC,brand,DZ-R-0393,retraits
+DI-CETALGIC,DI-CETALGIC,brand,DZ-R-0397,retraits
+DI-DOLYC,DI-DOLYC,brand,DZ-R-0387,retraits
+DI-PARACETAL,DI-PARACETAL,brand,DZ-R-0395,retraits
+DI-PRALGIC,DI-PRALGIC,brand,DZ-R-0385,retraits
+DIALAMOL,DIALAMOL,brand,DZ-R-0030,non_renouveles
+DIAVIC,DIAVIC,brand,DZ-R-0394,retraits
+DICLO 25,DICLO 25,brand,DZ-R-0498,retraits
+DICLOFAL,DICLOFAL,brand,DZ-R-0409,retraits
+DICLOFEN,DICLOFEN,brand,DZ-R-0452,retraits
+DICLOFEN CREMOGEL,DICLOFEN CREMOGEL,brand,DZ-R-0990,retraits
+DICLOFENAC,DICLOFENAC,brand,DZ-R-0421,retraits
+DICLOFENAC,DICLOFENAC,brand,DZ-R-0440,retraits
+DICLOFENAC,DICLOFENAC,brand,DZ-R-0462,retraits
+DICLOFENAC,DICLOFENAC,brand,DZ-R-0491,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0411,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0412,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0413,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0414,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0415,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0416,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0417,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0418,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0419,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0420,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0421,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0422,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0424,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0425,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0427,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0428,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0429,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0430,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0431,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0432,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0434,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0435,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0436,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0439,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0440,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0441,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0442,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0443,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0444,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0445,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0446,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0447,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0448,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0449,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0450,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0452,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0453,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0454,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0455,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0456,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0458,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0459,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0460,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0462,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0463,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0465,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0467,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0468,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0469,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0470,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0471,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0474,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0476,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0478,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0479,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0481,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0482,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0483,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0484,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0485,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0487,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0490,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0491,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0493,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0494,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0495,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0496,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0497,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0499,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0500,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0501,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0502,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0503,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0504,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0505,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0506,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0507,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0508,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0509,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0510,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0990,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0991,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0992,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0993,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0994,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0995,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0996,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0997,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0998,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-0999,retraits
+DICLOFENAC,DICLOFENAC,inn,DZ-R-1000,retraits
+DICLOFENAC (SODIQUE),DICLOFENAC (SODIQUE),inn,DZ-R-0488,retraits
+DICLOFENAC (SODIUM),DICLOFENAC (SODIUM),inn,DZ-R-0511,retraits
+DICLOFENAC (SODIUM),DICLOFENAC (SODIUM),inn,DZ-R-0600,retraits
+DICLOFENAC (SOUS FORME DE DICLOFENAC EPOLAMINE),DICLOFENAC (SOUS FORME DE DICLOFENAC EPOLAMINE),inn,DZ-R-1006,retraits
+DICLOFENAC (SOUS FORME SODIQUE),DICLOFENAC (SOUS FORME SODIQUE),inn,DZ-R-0464,retraits
+DICLOFENAC (SOUS FORME SODIQUE),DICLOFENAC (SOUS FORME SODIQUE),inn,DZ-R-0492,retraits
+DICLOFENAC (SOUS FORME SODIQUE)**,DICLOFENAC (SOUS FORME SODIQUE),inn,DZ-R-0423,retraits
+DICLOFENAC (SOUS FORME SODIQUE)**,DICLOFENAC (SOUS FORME SODIQUE),inn,DZ-R-0426,retraits
+DICLOFENAC 100 STADA RETARD,DICLOFENAC 100 STADA RETARD,brand,DZ-R-0484,retraits
+DICLOFENAC 25,DICLOFENAC 25,brand,DZ-R-0446,retraits
+DICLOFENAC 50,DICLOFENAC 50,brand,DZ-R-0471,retraits
+DICLOFENAC DIETHYLAMINE (DICLOFENAC SODIQUE),DICLOFENAC DIETHYLAMINE (DICLOFENAC SODIQUE),inn,DZ-R-1001,retraits
+DICLOFENAC DIETHYLAMINE EXPRIME EN DICLOFENAC SODIQUE,DICLOFENAC DIETHYLAMINE EXPRIME EN DICLOFENAC SODIQUE,inn,DZ-R-0304,non_renouveles
+DICLOFENAC L.P.,DICLOFENAC L P,inn,DZ-R-0576,retraits
+DICLOFENAC L.P. (SODIUM),DICLOFENAC L P (SODIUM),inn,DZ-R-0577,retraits
+DICLOFENAC LLORENS,DICLOFENAC LLORENS,brand,DZ-R-0463,retraits
+DICLOFENAC LLORENS,DICLOFENAC LLORENS,brand,DZ-R-0501,retraits
+DICLOFENAC NOVA GENERICS,DICLOFENAC NOVA GENERICS,brand,DZ-R-1001,retraits
+DICLOFENAC NOVAGENERICS LP,DICLOFENAC NOVAGENERICS LP,brand,DZ-R-0489,retraits
+DICLOFENAC POTASSIQUE,DICLOFENAC POTASSIQUE,inn,DZ-R-0111,non_renouveles
+DICLOFENAC POTASSIQUE,DICLOFENAC POTASSIQUE,inn,DZ-R-0605,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0408,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0409,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0410,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0433,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0437,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0438,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0451,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0457,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0461,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0466,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0472,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0473,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0475,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0477,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0480,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0486,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0489,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0498,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0512,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0578,retraits
+DICLOFENAC SODIQUE,DICLOFENAC SODIQUE,inn,DZ-R-0580,retraits
+DICLOFENAC TEDEC,DICLOFENAC TEDEC,brand,DZ-R-0492,retraits
+DICLOFENAC TEDEC,DICLOFENAC TEDEC,brand,DZ-R-0502,retraits
+DICLOFENAC/GENTAMICINE,DICLOFENAC/GENTAMICINE,inn,DZ-R-0987,retraits
+DICLOFENACO RATIOPHARM,DICLOFENACO RATIOPHARM,brand,DZ-R-0448,retraits
+DICLOFENACO RATIOPHARM,DICLOFENACO RATIOPHARM,brand,DZ-R-0500,retraits
+DICLOFENIL,DICLOFENIL,brand,DZ-R-0304,non_renouveles
+DICLOGESIC,DICLOGESIC,brand,DZ-R-0411,retraits
+DICLOGESIC,DICLOGESIC,brand,DZ-R-0433,retraits
+DICLOGESIC,DICLOGESIC,brand,DZ-R-0503,retraits
+DICLOGESIC,DICLOGESIC,brand,DZ-R-0600,retraits
+DICLOGESIC,DICLOGESIC,brand,DZ-R-0991,retraits
+DICLOMEC,DICLOMEC,brand,DZ-R-0427,retraits
+DICLOMEC,DICLOMEC,brand,DZ-R-1000,retraits
+DICLOREUM,DICLOREUM,brand,DZ-R-0412,retraits
+DICLOREUM,DICLOREUM,brand,DZ-R-0441,retraits
+DICLOREUM,DICLOREUM,brand,DZ-R-0464,retraits
+DICLOREUM,DICLOREUM,brand,DZ-R-0485,retraits
+DICLOREUM,DICLOREUM,brand,DZ-R-0992,retraits
+DIFAL,DIFAL,brand,DZ-R-0442,retraits
+DIFAL,DIFAL,brand,DZ-R-0465,retraits
+DIFAL,DIFAL,brand,DZ-R-0497,retraits
+DIFAL,DIFAL,brand,DZ-R-0504,retraits
+DIFEN,DIFEN,brand,DZ-R-0434,retraits
+DIFEN,DIFEN,brand,DZ-R-0453,retraits
+DIFLORENE,DIFLORENE,brand,DZ-R-0466,retraits
+DIPROLOL,DIPROLOL,brand,DZ-R-0733,retraits
+DIURIMAT,DIURIMAT,brand,DZ-R-0742,retraits
+DOFEBRIL,DOFEBRIL,brand,DZ-R-0019,non_renouveles
+DOFEBRIL,DOFEBRIL,brand,DZ-R-0027,non_renouveles
+DOFEBRIL,DOFEBRIL,brand,DZ-R-0048,non_renouveles
+DOFEBRIL C,DOFEBRIL C,brand,DZ-R-0029,non_renouveles
+DOLICRANE,DOLICRANE,brand,DZ-R-0012,non_renouveles
+DOLICRANE,DOLICRANE,brand,DZ-R-0049,non_renouveles
+DOLIGEN,DOLIGEN,brand,DZ-R-0328,retraits
+DOLIPRANE,DOLIPRANE,brand,DZ-R-0013,non_renouveles
+DOLIPRANE,DOLIPRANE,brand,DZ-R-0340,retraits
+DOLIPRANE,DOLIPRANE,brand,DZ-R-0361,retraits
+DOLIPRANE,DOLIPRANE,brand,DZ-R-0366,retraits
+DOLIPRANE,DOLIPRANE,brand,DZ-R-0369,retraits
+DOLIPRANE,DOLIPRANE,brand,DZ-R-0370,retraits
+DOLIPRANE JEUNE ENFANT,DOLIPRANE JEUNE ENFANT,brand,DZ-R-0349,retraits
+DOLOGESIC,DOLOGESIC,brand,DZ-R-0400,retraits
+DOLOMOL,DOLOMOL,brand,DZ-R-0046,non_renouveles
+DOLOMOL,DOLOMOL,brand,DZ-R-0047,non_renouveles
+DOLOMOL,DOLOMOL,brand,DZ-R-0333,retraits
+DOLOMOL,DOLOMOL,brand,DZ-R-0346,retraits
+DOLOMOL,DOLOMOL,brand,DZ-R-0355,retraits
+DOLORAZ,DOLORAZ,brand,DZ-R-0597,retraits
+DOLORAZ 400,DOLORAZ 400,brand,DZ-R-0524,retraits
+DOLOROL,DOLOROL,brand,DZ-R-0322,retraits
+DOLPRIV,DOLPRIV,brand,DZ-R-0023,non_renouveles
+DOLPRIV,DOLPRIV,brand,DZ-R-0033,non_renouveles
+DOLPRIV,DOLPRIV,brand,DZ-R-0036,non_renouveles
+DOLPRIV,DOLPRIV,brand,DZ-R-0040,non_renouveles
+DOLPRIV,DOLPRIV,brand,DZ-R-0318,retraits
+DOLTRAM,DOLTRAM,brand,DZ-R-0061,non_renouveles
+DOLTRAM,DOLTRAM,brand,DZ-R-0062,non_renouveles
+DOLTRAM,DOLTRAM,brand,DZ-R-0063,non_renouveles
+DOPAMET,DOPAMET,brand,DZ-R-0659,retraits
+DOPANORE,DOPANORE,brand,DZ-R-0662,retraits
+DOPEGYT,DOPEGYT,brand,DZ-R-0665,retraits
+DOPEGYT,DOPEGYT,brand,DZ-R-0667,retraits
+DOTUR,DOTUR,brand,DZ-R-0206,non_renouveles
+DOXINATE,DOXINATE,brand,DZ-R-0779,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0204,non_renouveles
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0205,non_renouveles
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0776,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0777,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0778,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0779,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0780,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0781,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0782,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0783,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0784,retraits
+DOXYCYCLINE,DOXYCYCLINE,inn,DZ-R-0785,retraits
+DOXYCYCLINE KELA,DOXYCYCLINE KELA,brand,DZ-R-0787,retraits
+DOXYCYCLINE MONOHYDRATEE EXPRIME EN DOXYCYCLINE,DOXYCYCLINE MONOHYDRATEE EXPRIME EN DOXYCYCLINE,inn,DZ-R-0786,retraits
+DOXYCYCLINE MONOHYDRATEE EXPRIME EN DOXYCYCLINE,DOXYCYCLINE MONOHYDRATEE EXPRIME EN DOXYCYCLINE,inn,DZ-R-0787,retraits
+DOXYCYCLINE**(SOUS FOPME D'HYCLATE),DOXYCYCLINE (SOUS FOPME D HYCLATE),inn,DZ-R-0206,non_renouveles
+DOXYCYCLINE-RATIOPHARM,DOXYCYCLINE-RATIOPHARM,brand,DZ-R-0782,retraits
+DOXYDAR,DOXYDAR,brand,DZ-R-0778,retraits
+DOXYL,DOXYL,brand,DZ-R-0780,retraits
+DOXYLINE,DOXYLINE,brand,DZ-R-0205,non_renouveles
+DOXYTEC,DOXYTEC,brand,DZ-R-0776,retraits
+DQA DICLO 50,DQA DICLO 50,brand,DZ-R-0461,retraits
+DQA DICLO LP 100,DQA DICLO LP 100,brand,DZ-R-0486,retraits
+DQA SPIRONO 100,DQA SPIRONO 100,brand,DZ-R-0740,retraits
+DQA SPIRONO 50,DQA SPIRONO 50,brand,DZ-R-0741,retraits
+DUOFEM,DUOFEM,brand,DZ-R-0060,non_renouveles
+DYCLOMAX,DYCLOMAX,brand,DZ-R-0422,retraits
+DYCLOMAX,DYCLOMAX,brand,DZ-R-0435,retraits
+DYCLOMAX,DYCLOMAX,brand,DZ-R-0454,retraits
+DYCLOMAX,DYCLOMAX,brand,DZ-R-0476,retraits
+DYCLOMAX,DYCLOMAX,brand,DZ-R-0493,retraits
+DYCLOMAX,DYCLOMAX,brand,DZ-R-0505,retraits
+ECOPIRIN,ECOPIRIN,brand,DZ-R-0310,retraits
+EFFERALGAN,EFFERALGAN,brand,DZ-R-0339,retraits
+EFFERALGAN,EFFERALGAN,brand,DZ-R-0350,retraits
+EFFERALGAN,EFFERALGAN,brand,DZ-R-0359,retraits
+EFFERALGAN CODEINE,EFFERALGAN CODEINE,brand,DZ-R-0362,retraits
+EFFERALGAN VITAMINE C,EFFERALGAN VITAMINE C,brand,DZ-R-0028,non_renouveles
+EMOX,EMOX,brand,DZ-R-0887,retraits
+ENALAPRIL,ENALAPRIL,brand,DZ-R-0130,non_renouveles
+ENALAPRIL,ENALAPRIL,brand,DZ-R-0654,retraits
+ENALAPRIL ( SOUS FORME DE MALEATE)**,ENALAPRIL ( SOUS FORME DE MALEATE),inn,DZ-R-0649,retraits
+ENALAPRIL ( SOUS FORME DE MALEATE)**,ENALAPRIL ( SOUS FORME DE MALEATE),inn,DZ-R-0651,retraits
+ENALAPRIL ( SOUS FORME DE MALEATE)**,ENALAPRIL ( SOUS FORME DE MALEATE),inn,DZ-R-0652,retraits
+ENALAPRIL ( SOUS FORME DE MALEATE)**,ENALAPRIL ( SOUS FORME DE MALEATE),inn,DZ-R-0653,retraits
+ENALAPRIL ( SOUS FORME DE MALEATE)**,ENALAPRIL ( SOUS FORME DE MALEATE),inn,DZ-R-0656,retraits
+ENALAPRIL ( SOUS FORME DE MALEATE)**,ENALAPRIL ( SOUS FORME DE MALEATE),inn,DZ-R-0657,retraits
+ENALAPRIL IBERAL,ENALAPRIL IBERAL,brand,DZ-R-0650,retraits
+ENALAPRIL IBERAL,ENALAPRIL IBERAL,brand,DZ-R-0655,retraits
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0122,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0123,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0124,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0125,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0126,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0127,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0128,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0129,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0130,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0131,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0132,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0133,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0134,non_renouveles
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0650,retraits
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0654,retraits
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0655,retraits
+ENALAPRIL MALEATE,ENALAPRIL MALEATE,inn,DZ-R-0658,retraits
+ENALAPRIL MALEATE / HYDROCHLOROTHIAZIDE,ENALAPRIL MALEATE / HYDROCHLOROTHIAZIDE,inn,DZ-R-0696,retraits
+ENALAPRIL MALEATE/HYDROCHLOROTHIAZIDE,ENALAPRIL MALEATE/HYDROCHLOROTHIAZIDE,inn,DZ-R-0144,non_renouveles
+ENALAPRIL MALEATE/HYDROCHLOROTHIAZIDE,ENALAPRIL MALEATE/HYDROCHLOROTHIAZIDE,inn,DZ-R-0145,non_renouveles
+ENALAPRIL RATIOPHARM,ENALAPRIL RATIOPHARM,brand,DZ-R-0651,retraits
+ENALAPRIL RATIOPHARM,ENALAPRIL RATIOPHARM,brand,DZ-R-0656,retraits
+ENALAPRIL WINTHROP,ENALAPRIL WINTHROP,brand,DZ-R-0131,non_renouveles
+ENALAPRIL WINTHROP,ENALAPRIL WINTHROP,brand,DZ-R-0658,retraits
+ENALAPRIL/HYDROCHLOROTHIAZIDE IBERAL,ENALAPRIL/HYDROCHLOROTHIAZIDE IBERAL,brand,DZ-R-0696,retraits
+ENALAPRIL/HYDROCHLOROTHIAZIDE MYLAN,ENALAPRIL/HYDROCHLOROTHIAZIDE MYLAN,brand,DZ-R-0144,non_renouveles
+ENATEC-20,ENATEC-20,brand,DZ-R-0657,retraits
+ENATEC-5,ENATEC-5,brand,DZ-R-0652,retraits
+ENTIZOL,ENTIZOL,brand,DZ-R-0744,retraits
+EPIFENAC,EPIFENAC,brand,DZ-R-0413,retraits
+EPIFENAC 25,EPIFENAC 25,brand,DZ-R-0436,retraits
+EPIFENAC 50,EPIFENAC 50,brand,DZ-R-0455,retraits
+EPIGENT 40,EPIGENT 40,brand,DZ-R-0168,non_renouveles
+EPILAT,EPILAT,brand,DZ-R-0617,retraits
+EPILAT 10,EPILAT 10,brand,DZ-R-0113,non_renouveles
+EQUIBAR,EQUIBAR,brand,DZ-R-0663,retraits
+EQUIBAR,EQUIBAR,brand,DZ-R-0666,retraits
+ERACID,ERACID,brand,DZ-R-0214,non_renouveles
+ERACID 500,ERACID 500,brand,DZ-R-0213,non_renouveles
+ERAZON,ERAZON,brand,DZ-R-0546,retraits
+ERAZON,ERAZON,brand,DZ-R-0560,retraits
+EVOXICAM,EVOXICAM,brand,DZ-R-0603,retraits
+EVOXICAM,EVOXICAM,brand,DZ-R-0604,retraits
+EXTRAMADOL,EXTRAMADOL,brand,DZ-R-0407,retraits
+FAMOXYL,FAMOXYL,brand,DZ-R-0230,non_renouveles
+FAMOXYL,FAMOXYL,brand,DZ-R-0236,non_renouveles
+FAMOXYL,FAMOXYL,brand,DZ-R-0240,non_renouveles
+FAMOXYL,FAMOXYL,brand,DZ-R-0264,non_renouveles
+FARCEF,FARCEF,brand,DZ-R-0765,retraits
+FARCEF IM,FARCEF IM,brand,DZ-R-0775,retraits
+FARCONCIL,FARCONCIL,brand,DZ-R-0873,retraits
+FELDENE,FELDENE,brand,DZ-R-0082,non_renouveles
+FELDENE,FELDENE,brand,DZ-R-0564,retraits
+FELDENE,FELDENE,brand,DZ-R-0572,retraits
+FENAMON SR,FENAMON SR,brand,DZ-R-0615,retraits
+FENOXAM 20,FENOXAM 20,brand,DZ-R-0571,retraits
+FERMENTMYCIN,FERMENTMYCIN,brand,DZ-R-0750,retraits
+FERMENTMYCIN,FERMENTMYCIN,brand,DZ-R-0757,retraits
+FERVEX ENFANT,FERVEX ENFANT,brand,DZ-R-0307,non_renouveles
+FEVADOL,FEVADOL,brand,DZ-R-0334,retraits
+FEVADOL,FEVADOL,brand,DZ-R-0347,retraits
+FIRALGINE,FIRALGINE,brand,DZ-R-0356,retraits
+FIRALGINE ENFANTS,FIRALGINE ENFANTS,brand,DZ-R-0367,retraits
+FIRALGINE NOURRISSON,FIRALGINE NOURRISSON,brand,DZ-R-0357,retraits
+FLAGISOL,FLAGISOL,brand,DZ-R-0813,retraits
+FLAGISOL,FLAGISOL,brand,DZ-R-0823,retraits
+FLAGYL,FLAGYL,brand,DZ-R-0801,retraits
+FLAGYL,FLAGYL,brand,DZ-R-0814,retraits
+FLANIZOL,FLANIZOL,brand,DZ-R-0158,non_renouveles
+FLANIZOL,FLANIZOL,brand,DZ-R-0809,retraits
+FLEXEN,FLEXEN,brand,DZ-R-0530,retraits
+FLOGOFENAC,FLOGOFENAC,brand,DZ-R-0414,retraits
+FLOGOFENAC,FLOGOFENAC,brand,DZ-R-0482,retraits
+FLOGOFENAC,FLOGOFENAC,brand,DZ-R-0512,retraits
+FLOGOFENAC,FLOGOFENAC,brand,DZ-R-0998,retraits
+FONGYNE,FONGYNE,brand,DZ-R-0159,non_renouveles
+FORTICAM,FORTICAM,brand,DZ-R-0568,retraits
+GEASPERIQUE,GEASPERIQUE,brand,DZ-R-0164,non_renouveles
+GEASPIRIQUE,GEASPIRIQUE,brand,DZ-R-0002,non_renouveles
+GEFENE,GEFENE,brand,DZ-R-0097,non_renouveles
+GELDENE,GELDENE,brand,DZ-R-1004,retraits
+GEMAL,GEMAL,brand,DZ-R-0014,non_renouveles
+GEMAL,GEMAL,brand,DZ-R-0024,non_renouveles
+GEMAL,GEMAL,brand,DZ-R-0031,non_renouveles
+GEMAL,GEMAL,brand,DZ-R-0037,non_renouveles
+GEMAL,GEMAL,brand,DZ-R-0041,non_renouveles
+GEMAL,GEMAL,brand,DZ-R-0050,non_renouveles
+GENOLOL,GENOLOL,brand,DZ-R-0711,retraits
+GENOLOL,GENOLOL,brand,DZ-R-0728,retraits
+GENTA-GOBENS,GENTA-GOBENS,brand,DZ-R-0752,retraits
+GENTA-GOBENS,GENTA-GOBENS,brand,DZ-R-0755,retraits
+GENTAL,GENTAL,brand,DZ-R-0762,retraits
+GENTALEK,GENTALEK,brand,DZ-R-0172,non_renouveles
+GENTALEK,GENTALEK,brand,DZ-R-0753,retraits
+GENTALEK,GENTALEK,brand,DZ-R-0983,retraits
+GENTALLINE,GENTALLINE,brand,DZ-R-0169,non_renouveles
+GENTALLINE,GENTALLINE,brand,DZ-R-0173,non_renouveles
+GENTALLINE,GENTALLINE,brand,DZ-R-0749,retraits
+GENTALLINE,GENTALLINE,brand,DZ-R-0979,retraits
+GENTALLINE,GENTALLINE,brand,DZ-R-0984,retraits
+GENTAM,GENTAM,brand,DZ-R-0977,retraits
+GENTAM,GENTAM,brand,DZ-R-0982,retraits
+GENTAMED,GENTAMED,brand,DZ-R-0760,retraits
+GENTAMICIN,GENTAMICIN,brand,DZ-R-0980,retraits
+GENTAMICINE,GENTAMICINE,brand,DZ-R-0177,non_renouveles
+GENTAMICINE,GENTAMICINE,brand,DZ-R-0754,retraits
+GENTAMICINE,GENTAMICINE,brand,DZ-R-0761,retraits
+GENTAMICINE,GENTAMICINE,brand,DZ-R-0985,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0168,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0169,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0170,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0172,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0173,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0174,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0175,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0176,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0177,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0299,non_renouveles
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0749,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0750,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0751,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0752,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0753,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0754,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0755,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0756,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0757,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0758,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0759,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0760,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0761,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0762,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0976,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0977,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0978,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0979,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0980,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0982,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0983,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0984,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0985,retraits
+GENTAMICINE,GENTAMICINE,inn,DZ-R-0986,retraits
+GENTAMICINE (SOUS FORME DE SULFATE),GENTAMICINE (SOUS FORME DE SULFATE),inn,DZ-R-0981,retraits
+GENTAMICINE BIOCHEMIE,GENTAMICINE BIOCHEMIE,brand,DZ-R-0174,non_renouveles
+"GENTAMICINE CHAUVIN O,3%",GENTAMICINE CHAUVIN O 3,brand,DZ-R-0981,retraits
+GENTAMICINE LEURQUIN,GENTAMICINE LEURQUIN,brand,DZ-R-0758,retraits
+GENTAMICINE SULFATE EXPRIME EN GENTAMICINE,GENTAMICINE SULFATE EXPRIME EN GENTAMICINE,inn,DZ-R-0171,non_renouveles
+GENTAMICINE SULFATE EXPRIME EN GENTAMICINE,GENTAMICINE SULFATE EXPRIME EN GENTAMICINE,inn,DZ-R-0178,non_renouveles
+GENTAMICINE** (SOUS FORME DE SULFATE),GENTAMICINE (SOUS FORME DE SULFATE),inn,DZ-R-0300,non_renouveles
+GENTAMINE,GENTAMINE,brand,DZ-R-0178,non_renouveles
+GENTAMYCIN SULFATE,GENTAMYCIN SULFATE,brand,DZ-R-0751,retraits
+GENTATIC,GENTATIC,brand,DZ-R-0171,non_renouveles
+GENTICOL,GENTICOL,brand,DZ-R-0299,non_renouveles
+GENTICOL,GENTICOL,brand,DZ-R-0986,retraits
+GENTOCIL 80,GENTOCIL 80,brand,DZ-R-0759,retraits
+GENTOMIL,GENTOMIL,brand,DZ-R-0170,non_renouveles
+GENTOMIL,GENTOMIL,brand,DZ-R-0175,non_renouveles
+GEOFENAC,GEOFENAC,brand,DZ-R-0472,retraits
+GEPROFENE,GEPROFENE,brand,DZ-R-0071,non_renouveles
+GETRIM,GETRIM,brand,DZ-R-0297,non_renouveles
+GETRIM FORT,GETRIM FORT,brand,DZ-R-0298,non_renouveles
+GRAMIDIL,GRAMIDIL,brand,DZ-R-0864,retraits
+GRAMIDIL,GRAMIDIL,brand,DZ-R-0872,retraits
+GRAMIDIL,GRAMIDIL,brand,DZ-R-0888,retraits
+GRAMIDIL,GRAMIDIL,brand,DZ-R-0916,retraits
+GRAMOX,GRAMOX,brand,DZ-R-0231,non_renouveles
+GRAMOX,GRAMOX,brand,DZ-R-0241,non_renouveles
+GRINAZOLE,GRINAZOLE,brand,DZ-R-1007,retraits
+GROFENAC,GROFENAC,brand,DZ-R-0467,retraits
+GROFENAC,GROFENAC,brand,DZ-R-0483,retraits
+GROPRIM,GROPRIM,brand,DZ-R-0963,retraits
+GYNOPLIX,GYNOPLIX,brand,DZ-R-0745,retraits
+HOTEMIN,HOTEMIN,brand,DZ-R-0542,retraits
+HOTEMIN,HOTEMIN,brand,DZ-R-0551,retraits
+HY-PO-TONE 250,HY-PO-TONE 250,brand,DZ-R-0664,retraits
+HYDREX,HYDREX,brand,DZ-R-0156,non_renouveles
+HYDROCHLOROTHIAZIDE,HYDROCHLOROTHIAZIDE,inn,DZ-R-0156,non_renouveles
+HYMOX,HYMOX,brand,DZ-R-0842,retraits
+HYMOX,HYMOX,brand,DZ-R-0869,retraits
+HYMOX,HYMOX,brand,DZ-R-0874,retraits
+HYMOX,HYMOX,brand,DZ-R-0895,retraits
+IBU 200,IBU 200,brand,DZ-R-0594,retraits
+IBU 400,IBU 400,brand,DZ-R-0525,retraits
+IBUGESIC,IBUGESIC,brand,DZ-R-0101,non_renouveles
+IBUMAL,IBUMAL,brand,DZ-R-0306,non_renouveles
+IBUMAL,IBUMAL,brand,DZ-R-0521,retraits
+IBUMAL,IBUMAL,brand,DZ-R-0526,retraits
+IBUMAL,IBUMAL,brand,DZ-R-0589,retraits
+IBUPRANE,IBUPRANE,brand,DZ-R-0523,retraits
+IBUPRANE,IBUPRANE,brand,DZ-R-0593,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0066,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0067,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0068,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0069,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0091,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0092,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0093,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0094,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0095,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0096,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0097,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0098,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0099,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0100,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0101,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0306,non_renouveles
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0513,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0514,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0515,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0516,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0517,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0518,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0519,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0520,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0521,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0522,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0523,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0524,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0525,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0526,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0581,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0582,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0583,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0584,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0585,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0586,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0587,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0588,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0589,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0590,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0591,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0592,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0593,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0594,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0596,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0597,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0598,retraits
+IBUPROFENE,IBUPROFENE,inn,DZ-R-0599,retraits
+IBUPROFENE BIOGARAN,IBUPROFENE BIOGARAN,brand,DZ-R-0591,retraits
+IBUPROFENE IVAL,IBUPROFENE IVAL,brand,DZ-R-0093,non_renouveles
+IBUPROFENE UPC,IBUPROFENE UPC,brand,DZ-R-0584,retraits
+IMUZOLE,IMUZOLE,brand,DZ-R-0227,non_renouveles
+INDAPAMIDE,INDAPAMIDE,inn,DZ-R-0155,non_renouveles
+INDAPAMIDE,INDAPAMIDE,inn,DZ-R-0742,retraits
+INFLA-BAN,INFLA-BAN,brand,DZ-R-0415,retraits
+INFLA-BAN,INFLA-BAN,brand,DZ-R-0429,retraits
+INFLA-BAN,INFLA-BAN,brand,DZ-R-0456,retraits
+INFLA-BAN,INFLA-BAN,brand,DZ-R-0474,retraits
+INFLA-BAN,INFLA-BAN,brand,DZ-R-0506,retraits
+INFLA-BAN,INFLA-BAN,brand,DZ-R-0997,retraits
+INFLACED,INFLACED,brand,DZ-R-0543,retraits
+INFLACED,INFLACED,brand,DZ-R-0552,retraits
+INFLACED,INFLACED,brand,DZ-R-0595,retraits
+INPHAMOX,INPHAMOX,brand,DZ-R-0919,retraits
+INTRALGIS,INTRALGIS,brand,DZ-R-0586,retraits
+ISIOCEF,ISIOCEF,brand,DZ-R-0190,non_renouveles
+ISIOCEF,ISIOCEF,brand,DZ-R-0202,non_renouveles
+IZARTAN,IZARTAN,brand,DZ-R-0690,retraits
+JAZOFEN,JAZOFEN,brand,DZ-R-0516,retraits
+JAZOFEN,JAZOFEN,brand,DZ-R-0583,retraits
+JOPAMOL,JOPAMOL,brand,DZ-R-0323,retraits
+JOPAMOL,JOPAMOL,brand,DZ-R-0342,retraits
+KEFENTECH,KEFENTECH,brand,DZ-R-0102,non_renouveles
+KETOFAN,KETOFAN,brand,DZ-R-0533,retraits
+KETOFEN,KETOFEN,brand,DZ-R-0074,non_renouveles
+KETOFEN LP,KETOFEN LP,brand,DZ-R-0089,non_renouveles
+KETOFENID,KETOFENID,brand,DZ-R-0531,retraits
+KETONAL,KETONAL,brand,DZ-R-0529,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0070,non_renouveles
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0071,non_renouveles
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0072,non_renouveles
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0073,non_renouveles
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0074,non_renouveles
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0089,non_renouveles
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0090,non_renouveles
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0102,non_renouveles
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0527,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0528,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0529,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0530,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0531,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0532,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0533,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0602,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-0606,retraits
+KETOPROFENE,KETOPROFENE,inn,DZ-R-1005,retraits
+KETOPROFENE LPA,KETOPROFENE LPA,brand,DZ-R-0072,non_renouveles
+KETOPROFENO RATIOPHARM,KETOPROFENO RATIOPHARM,brand,DZ-R-0528,retraits
+KLARIMIX 500,KLARIMIX 500,brand,DZ-R-0798,retraits
+KLAVOX,KLAVOX,brand,DZ-R-0256,non_renouveles
+KLAVOX,KLAVOX,brand,DZ-R-0257,non_renouveles
+KLAVOX,KLAVOX,brand,DZ-R-0275,non_renouveles
+KLAVOX,KLAVOX,brand,DZ-R-0276,non_renouveles
+KLAVOX,KLAVOX,brand,DZ-R-0277,non_renouveles
+KLAXIN,KLAXIN,brand,DZ-R-0215,non_renouveles
+KLIPAL CODEINE,KLIPAL CODEINE,brand,DZ-R-0383,retraits
+KLONT,KLONT,brand,DZ-R-0807,retraits
+LADOFENAC,LADOFENAC,brand,DZ-R-0457,retraits
+LADOFENAC,LADOFENAC,brand,DZ-R-0477,retraits
+LAMBERIN,LAMBERIN,brand,DZ-R-0852,retraits
+LAMBERIN,LAMBERIN,brand,DZ-R-0896,retraits
+LAMOXYL,LAMOXYL,brand,DZ-R-0232,non_renouveles
+LAMOXYL,LAMOXYL,brand,DZ-R-0243,non_renouveles
+LASYTEQ,LASYTEQ,brand,DZ-R-0132,non_renouveles
+LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE,LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE,inn,DZ-R-0284,non_renouveles
+LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE,LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE,inn,DZ-R-0285,non_renouveles
+LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE,LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE,inn,DZ-R-0929,retraits
+LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE,LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE,inn,DZ-R-0930,retraits
+LEVOFLOXACINE PHARMAGHREB 500,LEVOFLOXACINE PHARMAGHREB 500,brand,DZ-R-0931,retraits
+LEVOFLOXACINE** (SOUS FORME HEMIHYDRATEE),LEVOFLOXACINE (SOUS FORME HEMIHYDRATEE),inn,DZ-R-0931,retraits
+LEVOFLOXACINE** (SOUS FORME HEMIHYDRATEE),LEVOFLOXACINE (SOUS FORME HEMIHYDRATEE),inn,DZ-R-0932,retraits
+LISACLIN,LISACLIN,brand,DZ-R-0207,non_renouveles
+LISAMOX,LISAMOX,brand,DZ-R-0828,retraits
+LISAMOX,LISAMOX,brand,DZ-R-0838,retraits
+LOCAGEL,LOCAGEL,brand,DZ-R-0993,retraits
+LORAX,LORAX,brand,DZ-R-0634,retraits
+LOSARTAN HEMOFARM,LOSARTAN HEMOFARM,brand,DZ-R-0701,retraits
+LOSARTAN POTASSIQUE,LOSARTAN POTASSIQUE,inn,DZ-R-0146,non_renouveles
+LOSARTAN POTASSIQUE,LOSARTAN POTASSIQUE,inn,DZ-R-0668,retraits
+LOSARTAN POTASSIQUE,LOSARTAN POTASSIQUE,inn,DZ-R-0669,retraits
+LOSARTAN POTASSIQUE,LOSARTAN POTASSIQUE,inn,DZ-R-0670,retraits
+LOSARTAN POTASSIQUE,LOSARTAN POTASSIQUE,inn,DZ-R-0671,retraits
+LOSARTAN POTASSIQUE,LOSARTAN POTASSIQUE,inn,DZ-R-0701,retraits
+LOSARTAN POTASSIQUE / HYDROCHLOROTHIAZIDE,LOSARTAN POTASSIQUE / HYDROCHLOROTHIAZIDE,inn,DZ-R-0689,retraits
+LOSARTAN POTASSIQUE / HYDROCHLOROTHIAZIDE,LOSARTAN POTASSIQUE / HYDROCHLOROTHIAZIDE,inn,DZ-R-0690,retraits
+LOSARTAN POTASSIQUE / HYDROCHLOROTHIAZIDE,LOSARTAN POTASSIQUE / HYDROCHLOROTHIAZIDE,inn,DZ-R-0691,retraits
+LOSARTIC,LOSARTIC,brand,DZ-R-0689,retraits
+LOTEN,LOTEN,brand,DZ-R-0712,retraits
+LOZAR 50,LOZAR 50,brand,DZ-R-0670,retraits
+LOZARTAN GEO,LOZARTAN GEO,brand,DZ-R-0146,non_renouveles
+LYSOGIC,LYSOGIC,brand,DZ-R-0003,non_renouveles
+MEGAMOX,MEGAMOX,brand,DZ-R-0251,non_renouveles
+MELOXICAM,MELOXICAM,inn,DZ-R-0106,non_renouveles
+MELOXICAM,MELOXICAM,inn,DZ-R-0107,non_renouveles
+MELOXICAM,MELOXICAM,inn,DZ-R-0108,non_renouveles
+MELOXICAM,MELOXICAM,inn,DZ-R-0109,non_renouveles
+MELOXICAM,MELOXICAM,inn,DZ-R-0110,non_renouveles
+MELOXICAM,MELOXICAM,inn,DZ-R-0603,retraits
+MELOXICAM,MELOXICAM,inn,DZ-R-0604,retraits
+MERAZINE,MERAZINE,brand,DZ-R-0804,retraits
+MESPORIN-1000,MESPORIN-1000,brand,DZ-R-0766,retraits
+MESPORIN-500,MESPORIN-500,brand,DZ-R-0770,retraits
+METHYL DOPA SOLUPHARM,METHYL DOPA SOLUPHARM,brand,DZ-R-0660,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0659,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0660,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0661,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0662,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0663,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0664,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0665,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0666,retraits
+METHYLDOPA,METHYLDOPA,inn,DZ-R-0667,retraits
+METRAZIN,METRAZIN,brand,DZ-R-0747,retraits
+METRIS,METRIS,brand,DZ-R-0222,non_renouveles
+METROGYL,METROGYL,brand,DZ-R-0225,non_renouveles
+METRONIDAZOLE,METRONIDAZOLE,brand,DZ-R-0805,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0158,non_renouveles
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0159,non_renouveles
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0222,non_renouveles
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0223,non_renouveles
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0224,non_renouveles
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0227,non_renouveles
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0743,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0744,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0745,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0746,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0747,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0801,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0802,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0803,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0804,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0805,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0806,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0807,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0808,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0809,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0810,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0811,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0812,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0813,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0814,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0815,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0816,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0817,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0818,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0819,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0820,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0821,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0822,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0823,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-0824,retraits
+METRONIDAZOLE,METRONIDAZOLE,inn,DZ-R-1007,retraits
+METRONIDAZOLE BENZOATE EXPRIME EN METRONIDAZOLE,METRONIDAZOLE BENZOATE EXPRIME EN METRONIDAZOLE,inn,DZ-R-0225,non_renouveles
+METRONIDAZOLE BENZOATE EXPRIME EN METRONIDAZOLE,METRONIDAZOLE BENZOATE EXPRIME EN METRONIDAZOLE,inn,DZ-R-0226,non_renouveles
+METRONIDAZOLE BENZOATE EXPRIME EN METRONIDAZOLE,METRONIDAZOLE BENZOATE EXPRIME EN METRONIDAZOLE,inn,DZ-R-0228,non_renouveles
+METRONIDAZOLE BIOSEDRA,METRONIDAZOLE BIOSEDRA,brand,DZ-R-0802,retraits
+METROZA,METROZA,brand,DZ-R-0743,retraits
+METROZAL,METROZAL,brand,DZ-R-0818,retraits
+METROZOLE,METROZOLE,brand,DZ-R-0810,retraits
+METROZOLE,METROZOLE,brand,DZ-R-0819,retraits
+METZOL,METZOL,brand,DZ-R-0226,non_renouveles
+MIBRAL,MIBRAL,brand,DZ-R-0639,retraits
+MIBRAL,MIBRAL,brand,DZ-R-0647,retraits
+MITAZOL,MITAZOL,brand,DZ-R-0806,retraits
+MITAZOL,MITAZOL,brand,DZ-R-0820,retraits
+MODAZOLE,MODAZOLE,brand,DZ-R-0811,retraits
+MODAZOLE,MODAZOLE,brand,DZ-R-0821,retraits
+MONOCLINE,MONOCLINE,brand,DZ-R-0783,retraits
+MOTION 15,MOTION 15,brand,DZ-R-0107,non_renouveles
+MOVEN,MOVEN,brand,DZ-R-0106,non_renouveles
+MOVEN,MOVEN,brand,DZ-R-0109,non_renouveles
+MOXILEN,MOXILEN,brand,DZ-R-0835,retraits
+MOXILEN,MOXILEN,brand,DZ-R-0839,retraits
+MOXILEN,MOXILEN,brand,DZ-R-0847,retraits
+MYOGARD,MYOGARD,brand,DZ-R-0114,non_renouveles
+MYOGARD RETARD,MYOGARD RETARD,brand,DZ-R-0618,retraits
+NAKLOFEN,NAKLOFEN,brand,DZ-R-0428,retraits
+NAPROXENE,NAPROXENE,inn,DZ-R-0104,non_renouveles
+NAPROXENE,NAPROXENE,inn,DZ-R-0105,non_renouveles
+NAPROXENE,NAPROXENE,inn,DZ-R-0534,retraits
+NAPROXENE,NAPROXENE,inn,DZ-R-0535,retraits
+NAPROXENE,NAPROXENE,inn,DZ-R-0536,retraits
+NAPROXENE,NAPROXENE,inn,DZ-R-0537,retraits
+NAPROXENE SODIQUE,NAPROXENE SODIQUE,inn,DZ-R-0075,non_renouveles
+NAPROXENE SODIQUE,NAPROXENE SODIQUE,inn,DZ-R-0076,non_renouveles
+NAPROXENE SODIQUE,NAPROXENE SODIQUE,inn,DZ-R-0077,non_renouveles
+NAPROXENE SODIQUE,NAPROXENE SODIQUE,inn,DZ-R-0078,non_renouveles
+NAPROXENE SODIQUE,NAPROXENE SODIQUE,inn,DZ-R-0079,non_renouveles
+NAPROXENE SODIQUE,NAPROXENE SODIQUE,inn,DZ-R-0080,non_renouveles
+NAPROXENE SODIQUE,NAPROXENE SODIQUE,inn,DZ-R-0601,retraits
+NAPROXENE SOLUPHARM,NAPROXENE SOLUPHARM,brand,DZ-R-0534,retraits
+NAPROXENE SOLUPHARM,NAPROXENE SOLUPHARM,brand,DZ-R-0536,retraits
+NAREX,NAREX,brand,DZ-R-0075,non_renouveles
+NATRIXAL,NATRIXAL,brand,DZ-R-0155,non_renouveles
+NEFOPAM CHLORHYDRATE,NEFOPAM CHLORHYDRATE,inn,DZ-R-0065,non_renouveles
+NEOMOX,NEOMOX,brand,DZ-R-0840,retraits
+NEOMOX,NEOMOX,brand,DZ-R-0853,retraits
+NEOMOX,NEOMOX,brand,DZ-R-0894,retraits
+NEUPREN,NEUPREN,brand,DZ-R-0067,non_renouveles
+NEXORPAN,NEXORPAN,brand,DZ-R-0078,non_renouveles
+NIDAZOLE,NIDAZOLE,brand,DZ-R-0224,non_renouveles
+NIDAZOLE,NIDAZOLE,brand,DZ-R-0228,non_renouveles
+NIDAZOLE,NIDAZOLE,brand,DZ-R-0815,retraits
+NIDAZOLE,NIDAZOLE,brand,DZ-R-0824,retraits
+NIDILAT,NIDILAT,brand,DZ-R-0115,non_renouveles
+NIFAR,NIFAR,brand,DZ-R-0608,retraits
+NIFECARD,NIFECARD,brand,DZ-R-0619,retraits
+NIFEDAR,NIFEDAR,brand,DZ-R-0607,retraits
+NIFEDICOR,NIFEDICOR,brand,DZ-R-0609,retraits
+NIFEDICOR,NIFEDICOR,brand,DZ-R-0622,retraits
+NIFEDIPAL,NIFEDIPAL,brand,DZ-R-0620,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0112,non_renouveles
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0113,non_renouveles
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0114,non_renouveles
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0115,non_renouveles
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0116,non_renouveles
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0607,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0608,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0609,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0610,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0611,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0612,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0613,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0614,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0615,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0616,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0617,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0618,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0619,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0620,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0621,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0622,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0623,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0624,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0625,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0626,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0627,retraits
+NIFEDIPINE,NIFEDIPINE,inn,DZ-R-0628,retraits
+NIFEDIPINE LP,NIFEDIPINE LP,inn,DZ-R-0629,retraits
+NIFEDIPINE T20 STADA RETARD,NIFEDIPINE T20 STADA RETARD,brand,DZ-R-0623,retraits
+NIFEDIPINE-RATIOPHARM,NIFEDIPINE-RATIOPHARM,brand,DZ-R-0613,retraits
+NIFEDIPINE-RATIOPHARM LP,NIFEDIPINE-RATIOPHARM LP,brand,DZ-R-0627,retraits
+NIFELAT RETARD,NIFELAT RETARD,brand,DZ-R-0621,retraits
+NIFELATE,NIFELATE,brand,DZ-R-0610,retraits
+NIFELATE,NIFELATE,brand,DZ-R-0624,retraits
+NOFEB,NOFEB,brand,DZ-R-0056,non_renouveles
+NOPAIN,NOPAIN,brand,DZ-R-0076,non_renouveles
+NOPAIN,NOPAIN,brand,DZ-R-0601,retraits
+NOPAIN DS,NOPAIN DS,brand,DZ-R-0079,non_renouveles
+NORMINE 100,NORMINE 100,brand,DZ-R-0720,retraits
+NORMOTEN,NORMOTEN,brand,DZ-R-0713,retraits
+NORMOTEN,NORMOTEN,brand,DZ-R-0727,retraits
+NORTRIME,NORTRIME,brand,DZ-R-0953,retraits
+NORTRIME,NORTRIME,brand,DZ-R-0964,retraits
+NOTENSE,NOTENSE,brand,DZ-R-0714,retraits
+NOVAKOD,NOVAKOD,brand,DZ-R-0302,non_renouveles
+NOVAMAL,NOVAMAL,brand,DZ-R-0515,retraits
+NOVIMAX,NOVIMAX,brand,DZ-R-0777,retraits
+NOVOSEF,NOVOSEF,brand,DZ-R-0764,retraits
+NOVOSEF,NOVOSEF,brand,DZ-R-0769,retraits
+NOVOXYL,NOVOXYL,brand,DZ-R-0928,retraits
+NOXEN,NOXEN,brand,DZ-R-0104,non_renouveles
+NOXEN,NOXEN,brand,DZ-R-0105,non_renouveles
+OFRAMAX,OFRAMAX,brand,DZ-R-0179,non_renouveles
+OLCAM,OLCAM,brand,DZ-R-0544,retraits
+OLCAM,OLCAM,brand,DZ-R-0553,retraits
+OLFEN - 100 SR,OLFEN - 100 SR,brand,DZ-R-0488,retraits
+OLFEN - 75 RETARD,OLFEN - 75 RETARD,brand,DZ-R-0577,retraits
+OPTIFEN,OPTIFEN,brand,DZ-R-0450,retraits
+OPTIFEN,OPTIFEN,brand,DZ-R-0478,retraits
+OPTIFEN,OPTIFEN,brand,DZ-R-0507,retraits
+OROKEN,OROKEN,brand,DZ-R-0188,non_renouveles
+OROKEN,OROKEN,brand,DZ-R-0189,non_renouveles
+OROKEN NOUR,OROKEN NOUR,brand,DZ-R-0771,retraits
+ORTHOCAM,ORTHOCAM,brand,DZ-R-0538,retraits
+ORTHOCAM,ORTHOCAM,brand,DZ-R-0554,retraits
+OSPAMOX,OSPAMOX,brand,DZ-R-0843,retraits
+OSPAMOX,OSPAMOX,brand,DZ-R-0859,retraits
+OSPAMOX,OSPAMOX,brand,DZ-R-0871,retraits
+OSPAMOX,OSPAMOX,brand,DZ-R-0884,retraits
+OSPAMOX,OSPAMOX,brand,DZ-R-0920,retraits
+OSPAMOX,OSPAMOX,brand,DZ-R-0923,retraits
+OXIJEX,OXIJEX,brand,DZ-R-0569,retraits
+OXIMAL,OXIMAL,brand,DZ-R-0108,non_renouveles
+OXIMAL,OXIMAL,brand,DZ-R-0110,non_renouveles
+OZAFLOX,OZAFLOX,brand,DZ-R-0293,non_renouveles
+PACET,PACET,brand,DZ-R-0015,non_renouveles
+PAMAFEN,PAMAFEN,brand,DZ-R-0386,retraits
+PAMOL,PAMOL,brand,DZ-R-0351,retraits
+PAN-AMOXICILLINE,PAN-AMOXICILLINE,brand,DZ-R-0865,retraits
+PAN-AMOXICILLINE,PAN-AMOXICILLINE,brand,DZ-R-0898,retraits
+PANADOL,PANADOL,brand,DZ-R-0026,non_renouveles
+PANADOL,PANADOL,brand,DZ-R-0327,retraits
+PANAMOR,PANAMOR,brand,DZ-R-0423,retraits
+PANAMOR,PANAMOR,brand,DZ-R-0443,retraits
+PANAMOR,PANAMOR,brand,DZ-R-0494,retraits
+PANAMOR,PANAMOR,brand,DZ-R-0508,retraits
+PANAMOR AT 50,PANAMOR AT 50,brand,DZ-R-0468,retraits
+PARACETAMOL,PARACETAMOL,brand,DZ-R-0324,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0012,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0013,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0014,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0015,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0016,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0017,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0018,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0019,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0020,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0021,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0022,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0023,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0024,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0025,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0026,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0027,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0030,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0031,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0032,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0033,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0034,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0035,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0036,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0037,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0038,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0039,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0040,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0041,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0042,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0044,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0045,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0046,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0047,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0048,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0049,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0050,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0051,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0052,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0053,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0054,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0055,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0057,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0058,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0059,non_renouveles
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0318,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0319,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0320,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0321,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0322,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0323,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0324,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0325,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0326,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0327,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0328,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0329,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0330,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0331,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0332,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0333,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0334,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0335,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0336,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0337,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0338,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0339,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0340,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0341,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0342,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0343,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0344,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0345,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0346,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0347,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0348,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0349,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0350,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0351,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0352,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0353,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0354,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0355,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0356,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0357,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0359,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0360,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0361,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0363,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0364,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0365,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0366,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0367,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0368,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0369,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0370,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0373,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0375,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0376,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0378,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0379,retraits
+PARACETAMOL,PARACETAMOL,inn,DZ-R-0380,retraits
+PARACETAMOL / ACIDE ASCORBIQUE,PARACETAMOL / ACIDE ASCORBIQUE,inn,DZ-R-0374,retraits
+PARACETAMOL / ACIDE ASCORBIQUE,PARACETAMOL / ACIDE ASCORBIQUE,inn,DZ-R-0381,retraits
+PARACETAMOL / CODEINE,PARACETAMOL / CODEINE,inn,DZ-R-0362,retraits
+PARACETAMOL / DEXTROPROPOXYPHENE,PARACETAMOL / DEXTROPROPOXYPHENE,inn,DZ-R-0390,retraits
+PARACETAMOL / DEXTROPROPOXYPHENE,PARACETAMOL / DEXTROPROPOXYPHENE,inn,DZ-R-0391,retraits
+PARACETAMOL / DEXTROPROPOXYPHENE,PARACETAMOL / DEXTROPROPOXYPHENE,inn,DZ-R-0392,retraits
+PARACETAMOL / DEXTROPROPOXYPHENE,PARACETAMOL / DEXTROPROPOXYPHENE,inn,DZ-R-0394,retraits
+PARACETAMOL / DEXTROPROPOXYPHENE,PARACETAMOL / DEXTROPROPOXYPHENE,inn,DZ-R-0396,retraits
+PARACETAMOL / DEXTROPROPOXYPHENE,PARACETAMOL / DEXTROPROPOXYPHENE,inn,DZ-R-0397,retraits
+PARACETAMOL / DEXTROPROPOXYPHENE,PARACETAMOL / DEXTROPROPOXYPHENE,inn,DZ-R-0398,retraits
+PARACETAMOL / DEXTROPROPOXYPHENE,PARACETAMOL / DEXTROPROPOXYPHENE,inn,DZ-R-0400,retraits
+PARACETAMOL / EUCALYPTOL,PARACETAMOL / EUCALYPTOL,inn,DZ-R-0989,retraits
+PARACETAMOL / PHOSPHATE DE CODEINE HEMIHYDRATE,PARACETAMOL / PHOSPHATE DE CODEINE HEMIHYDRATE,inn,DZ-R-0383,retraits
+PARACETAMOL / PSEUDOEPHEDRINE CHLORHYDRATE,PARACETAMOL / PSEUDOEPHEDRINE CHLORHYDRATE,inn,DZ-R-0371,retraits
+PARACETAMOL BIOCARE,PARACETAMOL BIOCARE,brand,DZ-R-0021,non_renouveles
+PARACETAMOL BIOCARE,PARACETAMOL BIOCARE,brand,DZ-R-0042,non_renouveles
+PARACETAMOL ELEXIR SAD,PARACETAMOL ELEXIR SAD,brand,DZ-R-0341,retraits
+PARACETAMOL IVAL,PARACETAMOL IVAL,brand,DZ-R-0020,non_renouveles
+PARACETAMOL PEDIATRIQUE,PARACETAMOL PEDIATRIQUE,brand,DZ-R-0344,retraits
+PARACETAMOL** (SOUS FORME DE PROPACETAMOL CHLORHYDRATE ),PARACETAMOL (SOUS FORME DE PROPACETAMOL CHLORHYDRATE ),inn,DZ-R-0358,retraits
+PARACETAMOL** (SOUS FORME DE PROPACETAMOL CHLORHYDRATE),PARACETAMOL (SOUS FORME DE PROPACETAMOL CHLORHYDRATE),inn,DZ-R-0382,retraits
+PARACETAMOL/ACIDE ASCORBIQUE,PARACETAMOL/ACIDE ASCORBIQUE,inn,DZ-R-0028,non_renouveles
+PARACETAMOL/ACIDE ASCORBIQUE,PARACETAMOL/ACIDE ASCORBIQUE,inn,DZ-R-0029,non_renouveles
+PARACETAMOL/ACIDE ASCORBIQUE/MALEATE DE PHENIRAMINE,PARACETAMOL/ACIDE ASCORBIQUE/MALEATE DE PHENIRAMINE,inn,DZ-R-0307,non_renouveles
+PARACETAMOL/CHLORPHENAMINE MALEATE/ACIDE ASCORBIQUE,PARACETAMOL/CHLORPHENAMINE MALEATE/ACIDE ASCORBIQUE,inn,DZ-R-0056,non_renouveles
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0384,retraits
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0385,retraits
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0386,retraits
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0387,retraits
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0388,retraits
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0389,retraits
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0393,retraits
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0395,retraits
+PARACETAMOL/DEXTROPROPOXYPHENE,PARACETAMOL/DEXTROPROPOXYPHENE,inn,DZ-R-0399,retraits
+PARACETAMOL/PSEUDOEPHEDRINE,PARACETAMOL/PSEUDOEPHEDRINE,inn,DZ-R-0377,retraits
+PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE)**,PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE),inn,DZ-R-0372,retraits
+PARACETAMOL/PSEUDOEPHEDRINE CHLORHYDRATE,PARACETAMOL/PSEUDOEPHEDRINE CHLORHYDRATE,inn,DZ-R-0043,non_renouveles
+PARACETAMOL/TRAMADOL CHLORHYDRATE,PARACETAMOL/TRAMADOL CHLORHYDRATE,inn,DZ-R-0407,retraits
+PARADEX,PARADEX,brand,DZ-R-0396,retraits
+PARALGAN,PARALGAN,brand,DZ-R-0025,non_renouveles
+PARALGAN,PARALGAN,brand,DZ-R-0051,non_renouveles
+PARALGAN,PARALGAN,brand,DZ-R-0052,non_renouveles
+PARALGAN,PARALGAN,brand,DZ-R-0053,non_renouveles
+PARALGAN,PARALGAN,brand,DZ-R-0055,non_renouveles
+PARALGAN,PARALGAN,brand,DZ-R-0058,non_renouveles
+PARALGAN,PARALGAN,brand,DZ-R-0059,non_renouveles
+PARALVIC,PARALVIC,brand,DZ-R-0398,retraits
+PARALYOC,PARALYOC,brand,DZ-R-0363,retraits
+PARALYOC,PARALYOC,brand,DZ-R-0364,retraits
+PARAMOL,PARAMOL,brand,DZ-R-0338,retraits
+PARAMOL RHUME,PARAMOL RHUME,brand,DZ-R-0372,retraits
+PARAMOLYPTOL JEUNES ENFANTS,PARAMOLYPTOL JEUNES ENFANTS,brand,DZ-R-0989,retraits
+PARAVERSAL,PARAVERSAL,brand,DZ-R-0360,retraits
+PARAVERSAL,PARAVERSAL,brand,DZ-R-0373,retraits
+PARAVERSAL,PARAVERSAL,brand,DZ-R-0375,retraits
+PARAVERSAL,PARAVERSAL,brand,DZ-R-0376,retraits
+PARAVERSAL VITAMINE C,PARAVERSAL VITAMINE C,brand,DZ-R-0374,retraits
+PARAVERSAL VITAMINE C,PARAVERSAL VITAMINE C,brand,DZ-R-0381,retraits
+PAROL,PAROL,brand,DZ-R-0016,non_renouveles
+PENACIN,PENACIN,brand,DZ-R-0844,retraits
+PENACIN,PENACIN,brand,DZ-R-0868,retraits
+PENACIN,PENACIN,brand,DZ-R-0876,retraits
+PENACIN,PENACIN,brand,DZ-R-0890,retraits
+PENAMOX,PENAMOX,brand,DZ-R-0237,non_renouveles
+PENAMOX,PENAMOX,brand,DZ-R-0242,non_renouveles
+PENAMOX,PENAMOX,brand,DZ-R-0266,non_renouveles
+PENAMOX,PENAMOX,brand,DZ-R-0846,retraits
+PENAMOX 500,PENAMOX 500,brand,DZ-R-0234,non_renouveles
+PERFALGAN ADULTES,PERFALGAN ADULTES,brand,DZ-R-0379,retraits
+PERFALGAN ENFANTS / NOURRISSONS,PERFALGAN ENFANTS / NOURRISSONS,brand,DZ-R-0380,retraits
+PERINDOPRIL TER-BUTYLAMINE,PERINDOPRIL TER-BUTYLAMINE,inn,DZ-R-0686,retraits
+PERINDOPRIL TER-BUTYLAMINE,PERINDOPRIL TER-BUTYLAMINE,inn,DZ-R-0702,retraits
+PERINDOPRIL TER-BUTYLAMINE / INDAPAMIDE,PERINDOPRIL TER-BUTYLAMINE / INDAPAMIDE,inn,DZ-R-0697,retraits
+PERINDOPRIL TER-BUTYLAMINE / INDAPAMIDE,PERINDOPRIL TER-BUTYLAMINE / INDAPAMIDE,inn,DZ-R-0698,retraits
+PERINDOPRIL TER-BUTYLAMINE / INDAPAMIDE,PERINDOPRIL TER-BUTYLAMINE / INDAPAMIDE,inn,DZ-R-0699,retraits
+PHAMOX,PHAMOX,brand,DZ-R-0860,retraits
+PIROCAM,PIROCAM,brand,DZ-R-0081,non_renouveles
+PIROX,PIROX,brand,DZ-R-1002,retraits
+PIROXAL,PIROXAL,brand,DZ-R-0086,non_renouveles
+PIROXEN,PIROXEN,brand,DZ-R-0083,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0081,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0082,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0083,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0084,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0085,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0086,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0087,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0088,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0305,non_renouveles
+PIROXICAM,PIROXICAM,inn,DZ-R-0538,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0539,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0540,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0541,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0542,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0543,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0544,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0545,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0546,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0547,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0548,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0549,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0550,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0551,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0552,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0553,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0554,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0555,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0556,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0557,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0558,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0559,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0560,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0561,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0562,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0563,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0564,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0565,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0566,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0567,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0568,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0569,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0570,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0571,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0572,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0579,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-0595,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-1002,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-1003,retraits
+PIROXICAM,PIROXICAM,inn,DZ-R-1004,retraits
+PIROXICAM (SOUS FORME COMPLEXE PIROXICAM BETA CYCLODEXTRINE),PIROXICAM (SOUS FORME COMPLEXE PIROXICAM BETA CYCLODEXTRINE),inn,DZ-R-0103,non_renouveles
+PIROXICAM - BAYER,PIROXICAM - BAYER,brand,DZ-R-0539,retraits
+PIROXICAM 10 REIG JOFRE,PIROXICAM 10 REIG JOFRE,brand,DZ-R-0545,retraits
+PIROXICAM 20 REIG JOFRE,PIROXICAM 20 REIG JOFRE,brand,DZ-R-0555,retraits
+PIROXICAM 20 STADA,PIROXICAM 20 STADA,brand,DZ-R-0549,retraits
+PIROXICAM BIOGARAN,PIROXICAM BIOGARAN,brand,DZ-R-0541,retraits
+PIROXICAM BIOGARAN,PIROXICAM BIOGARAN,brand,DZ-R-0558,retraits
+PIROXICAM LPA,PIROXICAM LPA,brand,DZ-R-0305,non_renouveles
+PIROXICAM RATIOPHARM,PIROXICAM RATIOPHARM,brand,DZ-R-0548,retraits
+PIROXICAM RATIOPHARM,PIROXICAM RATIOPHARM,brand,DZ-R-0563,retraits
+PIROXICAM SANDOZ,PIROXICAM SANDOZ,brand,DZ-R-0085,non_renouveles
+POLIDOL,POLIDOL,brand,DZ-R-0326,retraits
+POLIPIROX,POLIPIROX,brand,DZ-R-0087,non_renouveles
+POLIPIROX,POLIPIROX,brand,DZ-R-0561,retraits
+POLIPIROX,POLIPIROX,brand,DZ-R-0567,retraits
+PRACTAZIN,PRACTAZIN,brand,DZ-R-0738,retraits
+PRALGIR,PRALGIR,brand,DZ-R-0325,retraits
+PRECYL,PRECYL,brand,DZ-R-0706,retraits
+PRETERAX,PRETERAX,brand,DZ-R-0697,retraits
+PRILENAP,PRILENAP,brand,DZ-R-0125,non_renouveles
+PRILENAP,PRILENAP,brand,DZ-R-0133,non_renouveles
+PRIMAZOL,PRIMAZOL,brand,DZ-R-0295,non_renouveles
+PRIMAZOL FORT,PRIMAZOL FORT,brand,DZ-R-0973,retraits
+PRIMOTREN,PRIMOTREN,brand,DZ-R-0954,retraits
+PRIMOTREN,PRIMOTREN,brand,DZ-R-0965,retraits
+PRIXAM,PRIXAM,brand,DZ-R-0084,non_renouveles
+PRIXAM,PRIXAM,brand,DZ-R-0088,non_renouveles
+PROF,PROF,brand,DZ-R-0098,non_renouveles
+PROFELADJ,PROFELADJ,brand,DZ-R-0532,retraits
+PROFEMIGR,PROFEMIGR,brand,DZ-R-0602,retraits
+PROFEN LP,PROFEN LP,brand,DZ-R-0090,non_renouveles
+PROFENID,PROFENID,brand,DZ-R-0527,retraits
+PROFENID,PROFENID,brand,DZ-R-1005,retraits
+PROFENID ENFANT ET NOURRISON,PROFENID ENFANT ET NOURRISON,brand,DZ-R-0606,retraits
+PROFLOX,PROFLOX,brand,DZ-R-0288,non_renouveles
+PROFLOX,PROFLOX,brand,DZ-R-0290,non_renouveles
+PROPACETAMOL MYLAN,PROPACETAMOL MYLAN,brand,DZ-R-0358,retraits
+PROPACETAMOL MYLAN,PROPACETAMOL MYLAN,brand,DZ-R-0382,retraits
+PROTOZOL,PROTOZOL,brand,DZ-R-0812,retraits
+PROTOZOL,PROTOZOL,brand,DZ-R-0822,retraits
+PROXALYOC,PROXALYOC,brand,DZ-R-0579,retraits
+PROXIDOL,PROXIDOL,brand,DZ-R-0077,non_renouveles
+PROXIDOL DS,PROXIDOL DS,brand,DZ-R-0080,non_renouveles
+PURBAC,PURBAC,brand,DZ-R-0974,retraits
+PURBAC PEDIATRIC,PURBAC PEDIATRIC,brand,DZ-R-0955,retraits
+PYRATOL,PYRATOL,brand,DZ-R-0332,retraits
+PYREMOL,PYREMOL,brand,DZ-R-0345,retraits
+PYREMOL,PYREMOL,brand,DZ-R-0368,retraits
+RAMI,RAMI,brand,DZ-R-0672,retraits
+RAMI,RAMI,brand,DZ-R-0676,retraits
+RAMI,RAMI,brand,DZ-R-0681,retraits
+RAMI,RAMI,brand,DZ-R-0692,retraits
+RAMIPREX,RAMIPREX,brand,DZ-R-0674,retraits
+RAMIPREX,RAMIPREX,brand,DZ-R-0679,retraits
+RAMIPREX,RAMIPREX,brand,DZ-R-0694,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0135,non_renouveles
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0136,non_renouveles
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0137,non_renouveles
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0138,non_renouveles
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0139,non_renouveles
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0142,non_renouveles
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0143,non_renouveles
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0672,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0673,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0674,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0675,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0676,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0677,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0678,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0679,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0680,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0681,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0692,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0693,retraits
+RAMIPRIL,RAMIPRIL,inn,DZ-R-0694,retraits
+RAMIPRIL IVAL,RAMIPRIL IVAL,brand,DZ-R-0135,non_renouveles
+RAMIPRIL IVAL,RAMIPRIL IVAL,brand,DZ-R-0137,non_renouveles
+RAMIPRIL WINTHROP,RAMIPRIL WINTHROP,brand,DZ-R-0673,retraits
+RAMIPRIL WINTHROP,RAMIPRIL WINTHROP,brand,DZ-R-0677,retraits
+RAMIPRIL WINTHROP,RAMIPRIL WINTHROP,brand,DZ-R-0693,retraits
+RAMIPRIL/FELODIPINE,RAMIPRIL/FELODIPINE,inn,DZ-R-0149,non_renouveles
+RAMITEC,RAMITEC,brand,DZ-R-0142,non_renouveles
+RAMITEC,RAMITEC,brand,DZ-R-0675,retraits
+RAMITEC,RAMITEC,brand,DZ-R-0680,retraits
+REFEN,REFEN,brand,DZ-R-0416,retraits
+REFEN,REFEN,brand,DZ-R-0459,retraits
+REFEN,REFEN,brand,DZ-R-0479,retraits
+REFEN,REFEN,brand,DZ-R-0994,retraits
+REMOFEN,REMOFEN,brand,DZ-R-0094,non_renouveles
+REMOFEN,REMOFEN,brand,DZ-R-0099,non_renouveles
+REMOFEN,REMOFEN,brand,DZ-R-0519,retraits
+RENIPRIL,RENIPRIL,brand,DZ-R-0136,non_renouveles
+RENIPRIL,RENIPRIL,brand,DZ-R-0138,non_renouveles
+RENIPRIL,RENIPRIL,brand,DZ-R-0139,non_renouveles
+RENIPRIL,RENIPRIL,brand,DZ-R-0143,non_renouveles
+RENITEC,RENITEC,brand,DZ-R-0126,non_renouveles
+RENITEC,RENITEC,brand,DZ-R-0134,non_renouveles
+REVANIN,REVANIN,brand,DZ-R-0335,retraits
+REVANIN,REVANIN,brand,DZ-R-0352,retraits
+RHUMEDRINE,RHUMEDRINE,brand,DZ-R-0043,non_renouveles
+RIACEN,RIACEN,brand,DZ-R-0559,retraits
+RITHRODAL,RITHRODAL,brand,DZ-R-0211,non_renouveles
+RITHRODAL,RITHRODAL,brand,DZ-R-0216,non_renouveles
+RITHRODAL,RITHRODAL,brand,DZ-R-0218,non_renouveles
+RIVALTAN,RIVALTAN,brand,DZ-R-0683,retraits
+RIVALTAN,RIVALTAN,brand,DZ-R-0687,retraits
+RIVALTAN-H,RIVALTAN-H,brand,DZ-R-0685,retraits
+RIVALTAN-H,RIVALTAN-H,brand,DZ-R-0700,retraits
+ROCEPHIN,ROCEPHIN,brand,DZ-R-0763,retraits
+ROCEPHIN,ROCEPHIN,brand,DZ-R-0768,retraits
+ROFENAC,ROFENAC,brand,DZ-R-0417,retraits
+ROFENAC,ROFENAC,brand,DZ-R-0430,retraits
+ROFENAC,ROFENAC,brand,DZ-R-0458,retraits
+ROFENAC,ROFENAC,brand,DZ-R-0995,retraits
+ROFENAC D,ROFENAC D,brand,DZ-R-0580,retraits
+ROXAM,ROXAM,brand,DZ-R-0565,retraits
+RUFENAL,RUFENAL,brand,DZ-R-0437,retraits
+RUFENAL,RUFENAL,brand,DZ-R-0451,retraits
+RUPAN,RUPAN,brand,DZ-R-0513,retraits
+Ramipril/Hydrochlorothiazide,RAMIPRIL/HYDROCHLOROTHIAZIDE,inn,DZ-R-0147,non_renouveles
+Ramipril/Hydrochlorothiazide,RAMIPRIL/HYDROCHLOROTHIAZIDE,inn,DZ-R-0148,non_renouveles
+SAIFEN,SAIFEN,brand,DZ-R-0073,non_renouveles
+SAIFOXYL,SAIFOXYL,brand,DZ-R-0282,non_renouveles
+SAIFOXYL,SAIFOXYL,brand,DZ-R-0891,retraits
+SALITIN,SALITIN,brand,DZ-R-0005,non_renouveles
+SAPALVIC,SAPALVIC,brand,DZ-R-0388,retraits
+SAPBUFEN,SAPBUFEN,brand,DZ-R-0581,retraits
+SAPOFEN JUNIOR,SAPOFEN JUNIOR,brand,DZ-R-0596,retraits
+SAPRAMOL,SAPRAMOL,brand,DZ-R-0017,non_renouveles
+SEDAMOL,SEDAMOL,brand,DZ-R-0337,retraits
+SIGADOXIN,SIGADOXIN,brand,DZ-R-0785,retraits
+SIPHAMOL,SIPHAMOL,brand,DZ-R-0378,retraits
+SOTILEN,SOTILEN,brand,DZ-R-0547,retraits
+SPIFEN,SPIFEN,brand,DZ-R-0517,retraits
+SPIROCTAN,SPIROCTAN,brand,DZ-R-0736,retraits
+SPIROCTAZINE,SPIROCTAZINE,brand,DZ-R-0737,retraits
+SPIRONOLACTONE,SPIRONOLACTONE,inn,DZ-R-0740,retraits
+SPIRONOLACTONE,SPIRONOLACTONE,inn,DZ-R-0741,retraits
+SPIRONOLACTONE MICRONISEE,SPIRONOLACTONE MICRONISEE,inn,DZ-R-0735,retraits
+SPIRONOLACTONE MICRONISEE,SPIRONOLACTONE MICRONISEE,inn,DZ-R-0736,retraits
+SPIRONOLACTONE/ALTIZIDE,SPIRONOLACTONE/ALTIZIDE,inn,DZ-R-0737,retraits
+SPIRONOLACTONE/ALTIZIDE,SPIRONOLACTONE/ALTIZIDE,inn,DZ-R-0738,retraits
+SPIRONOLACTONE/ALTIZIDE,SPIRONOLACTONE/ALTIZIDE,inn,DZ-R-0739,retraits
+SPIRONOLONE 75,SPIRONOLONE 75,brand,DZ-R-0735,retraits
+STATIX,STATIX,brand,DZ-R-0668,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0962,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0966,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0968,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0969,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0970,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0971,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0972,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0973,retraits
+SULFAMETHOXAZOLE / TRIMETHOPRIME,SULFAMETHOXAZOLE / TRIMETHOPRIME,inn,DZ-R-0974,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0946,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0947,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0948,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0949,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0950,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0951,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0952,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0953,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0954,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0955,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0956,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0957,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0958,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0959,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0960,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0961,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0963,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0964,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0965,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0967,retraits
+SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),SULFAMETHOXAZOLE / TRIMETOPRIME (OU COTRIMOXAZOLE),inn,DZ-R-0975,retraits
+SULFAMETHOXAZOLE/TRIMETHOPRIME,SULFAMETHOXAZOLE/TRIMETHOPRIME,inn,DZ-R-0295,non_renouveles
+SULFAMETHOXAZOLE/TRIMETHOPRIME,SULFAMETHOXAZOLE/TRIMETHOPRIME,inn,DZ-R-0296,non_renouveles
+SULFAMETHOXAZOLE/TRIMETHOPRIME,SULFAMETHOXAZOLE/TRIMETHOPRIME,inn,DZ-R-0297,non_renouveles
+SULFAMETHOXAZOLE/TRIMETHOPRIME,SULFAMETHOXAZOLE/TRIMETHOPRIME,inn,DZ-R-0298,non_renouveles
+SULFOLYPTOL,SULFOLYPTOL,brand,DZ-R-0988,retraits
+SULPRIM,SULPRIM,brand,DZ-R-0296,non_renouveles
+SULPRIM,SULPRIM,brand,DZ-R-0966,retraits
+SULTRIM,SULTRIM,brand,DZ-R-0946,retraits
+SUPERGIFEN,SUPERGIFEN,brand,DZ-R-0520,retraits
+SUPERGIFEN,SUPERGIFEN,brand,DZ-R-0590,retraits
+SUPPFADOL,SUPPFADOL,brand,DZ-R-0057,non_renouveles
+SUPPLIN,SUPPLIN,brand,DZ-R-0223,non_renouveles
+SUPPLIN,SUPPLIN,brand,DZ-R-0816,retraits
+SUPRAMOXYL,SUPRAMOXYL,brand,DZ-R-0886,retraits
+SUPRAXIME,SUPRAXIME,brand,DZ-R-0185,non_renouveles
+SUPRAXIME,SUPRAXIME,brand,DZ-R-0191,non_renouveles
+TABOCINE 100,TABOCINE 100,brand,DZ-R-0781,retraits
+TABUKLAV,TABUKLAV,brand,DZ-R-0259,non_renouveles
+TAREG,TAREG,brand,DZ-R-0682,retraits
+TAVANIC,TAVANIC,brand,DZ-R-0284,non_renouveles
+TAVANIC,TAVANIC,brand,DZ-R-0285,non_renouveles
+TAVANIC,TAVANIC,brand,DZ-R-0929,retraits
+TAVANIC,TAVANIC,brand,DZ-R-0930,retraits
+TAVANIC,TAVANIC,brand,DZ-R-0932,retraits
+TEN-BLOKA,TEN-BLOKA,brand,DZ-R-0715,retraits
+TENOLIN,TENOLIN,brand,DZ-R-0716,retraits
+TENOLIN,TENOLIN,brand,DZ-R-0730,retraits
+TENOLOL,TENOLOL,brand,DZ-R-0717,retraits
+TENORDATE,TENORDATE,brand,DZ-R-0695,retraits
+TENORMINE,TENORMINE,brand,DZ-R-0721,retraits
+TENORMINE,TENORMINE,brand,DZ-R-0729,retraits
+THIA-VALSAN,THIA-VALSAN,brand,DZ-R-0140,non_renouveles
+TRAMADOL (SOUS FORME DE CHLORHYDRATE)**,TRAMADOL (SOUS FORME DE CHLORHYDRATE),inn,DZ-R-0401,retraits
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0060,non_renouveles
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0061,non_renouveles
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0062,non_renouveles
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0063,non_renouveles
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0064,non_renouveles
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0402,retraits
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0403,retraits
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0404,retraits
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0405,retraits
+TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,TRAMADOL CHLORHYDRATE EXPRIME EN TRAMADOL,inn,DZ-R-0406,retraits
+TRAMADOL IBERAL,TRAMADOL IBERAL,brand,DZ-R-0405,retraits
+TRAMADOL SANDOZ,TRAMADOL SANDOZ,brand,DZ-R-0406,retraits
+TRAMADOL-BIOGARAN,TRAMADOL-BIOGARAN,brand,DZ-R-0401,retraits
+TRAMGESIC,TRAMGESIC,brand,DZ-R-0064,non_renouveles
+TRAMGESIC,TRAMGESIC,brand,DZ-R-0403,retraits
+TREMADOL,TREMADOL,brand,DZ-R-0404,retraits
+TRIACOR,TRIACOR,brand,DZ-R-0149,non_renouveles
+TRIAXONE,TRIAXONE,brand,DZ-R-0180,non_renouveles
+TRIAXONE,TRIAXONE,brand,DZ-R-0183,non_renouveles
+"TRIAXONE 0,5",TRIAXONE 0 5,brand,DZ-R-0203,non_renouveles
+TRIMIDAR - M,TRIMIDAR - M,brand,DZ-R-0956,retraits
+TRIMIDAR M,TRIMIDAR M,brand,DZ-R-0970,retraits
+TRIMOSUL,TRIMOSUL,brand,DZ-R-0967,retraits
+TRIMOX,TRIMOX,brand,DZ-R-0971,retraits
+TRISULAM,TRISULAM,brand,DZ-R-0562,retraits
+TRISULAM,TRISULAM,brand,DZ-R-0570,retraits
+TRIZOL,TRIZOL,brand,DZ-R-0968,retraits
+TYLENOL,TYLENOL,brand,DZ-R-0018,non_renouveles
+TYLENOL,TYLENOL,brand,DZ-R-0045,non_renouveles
+TYLENOL JEUNE ENFANT GOÛT BANANE,TYLENOL JEUNE ENFANT GOUT BANANE,brand,DZ-R-0348,retraits
+ULTIMOX,ULTIMOX,brand,DZ-R-0246,non_renouveles
+ULTRAFEN,ULTRAFEN,brand,DZ-R-0582,retraits
+ULTRAGENT,ULTRAGENT,brand,DZ-R-0176,non_renouveles
+ULTRAMOL,ULTRAMOL,brand,DZ-R-0353,retraits
+ULTRAMOX,ULTRAMOX,brand,DZ-R-0854,retraits
+ULTRAMOX,ULTRAMOX,brand,DZ-R-0889,retraits
+UNICAM,UNICAM,brand,DZ-R-0540,retraits
+UNICAM,UNICAM,brand,DZ-R-0556,retraits
+UNICAM,UNICAM,brand,DZ-R-0566,retraits
+UNICAM,UNICAM,brand,DZ-R-1003,retraits
+UNIGENTA,UNIGENTA,brand,DZ-R-0300,non_renouveles
+UNIVALGINE VIT C,UNIVALGINE VIT C,brand,DZ-R-0317,retraits
+UPFEN,UPFEN,brand,DZ-R-0587,retraits
+VAAMOX ADULTE,VAAMOX ADULTE,brand,DZ-R-0260,non_renouveles
+VAAMOX ENFANT ET NOURRISSON,VAAMOX ENFANT ET NOURRISSON,brand,DZ-R-0245,non_renouveles
+VALSAN,VALSAN,brand,DZ-R-0141,non_renouveles
+VALSARTAL,VALSARTAL,brand,DZ-R-0684,retraits
+VALSARTAL,VALSARTAL,brand,DZ-R-0688,retraits
+VALSARTAN,VALSARTAN,inn,DZ-R-0682,retraits
+VALSARTAN,VALSARTAN,inn,DZ-R-0683,retraits
+VALSARTAN,VALSARTAN,inn,DZ-R-0687,retraits
+VALSARTAN / HYDROCHLOROTHIAZIDE,VALSARTAN / HYDROCHLOROTHIAZIDE,inn,DZ-R-0685,retraits
+VALSARTAN / HYDROCHLOROTHIAZIDE,VALSARTAN / HYDROCHLOROTHIAZIDE,inn,DZ-R-0700,retraits
+VASCOPIN,VASCOPIN,brand,DZ-R-0640,retraits
+VASCOTEN,VASCOTEN,brand,DZ-R-0718,retraits
+VEKFAZOLIN,VEKFAZOLIN,brand,DZ-R-0773,retraits
+VERSALRHUME,VERSALRHUME,brand,DZ-R-0377,retraits
+VIBRAMYCINE,VIBRAMYCINE,brand,DZ-R-0786,retraits
+VOLDAC LP,VOLDAC LP,brand,DZ-R-0480,retraits
+VOLTAGESIC,VOLTAGESIC,brand,DZ-R-0418,retraits
+VOLTAMED,VOLTAMED,brand,DZ-R-0495,retraits
+VOLTAMICINE,VOLTAMICINE,brand,DZ-R-0987,retraits
+VOLTARENE,VOLTARENE,brand,DZ-R-0424,retraits
+VOLTARENE,VOLTARENE,brand,DZ-R-0439,retraits
+VOLTARENE,VOLTARENE,brand,DZ-R-0460,retraits
+VOLTARENE LP,VOLTARENE LP,brand,DZ-R-0481,retraits
+VOLTARENE LP,VOLTARENE LP,brand,DZ-R-0576,retraits
+VOLTARILE L.P. 100,VOLTARILE L P 100,brand,DZ-R-0475,retraits
+VOLTUM,VOLTUM,brand,DZ-R-0408,retraits
+VOLTUM,VOLTUM,brand,DZ-R-0999,retraits
+VOTREX,VOTREX,brand,DZ-R-0425,retraits
+VOTREX,VOTREX,brand,DZ-R-0431,retraits
+VOTREX,VOTREX,brand,DZ-R-0511,retraits
+VOTREX TISSUGE 1%,VOTREX TISSUGE 1,brand,DZ-R-1006,retraits
+Valsartan,VALSARTAN,inn,DZ-R-0141,non_renouveles
+Valsartan,VALSARTAN,inn,DZ-R-0684,retraits
+Valsartan,VALSARTAN,inn,DZ-R-0688,retraits
+Valsartan/Hydrochlorothiazide,VALSARTAN/HYDROCHLOROTHIAZIDE,inn,DZ-R-0140,non_renouveles
+WERAFENAC,WERAFENAC,brand,DZ-R-0444,retraits
+WERAFENAC 100,WERAFENAC 100,brand,DZ-R-0509,retraits
+WERAFENAC 50,WERAFENAC 50,brand,DZ-R-0469,retraits
+WERAFENAC 75,WERAFENAC 75,brand,DZ-R-0419,retraits
+WINEX,WINEX,brand,DZ-R-0186,non_renouveles
+XALGESIC,XALGESIC,brand,DZ-R-0399,retraits
+XENID,XENID,brand,DZ-R-0420,retraits
+XENID,XENID,brand,DZ-R-0445,retraits
+XENID,XENID,brand,DZ-R-0470,retraits
+XENID,XENID,brand,DZ-R-0496,retraits
+XENID,XENID,brand,DZ-R-0510,retraits
+XENID,XENID,brand,DZ-R-0996,retraits
+XIMACEF,XIMACEF,brand,DZ-R-0772,retraits
+XYCAM,XYCAM,brand,DZ-R-0557,retraits
+ZADORIN-100,ZADORIN-100,brand,DZ-R-0784,retraits
+ZAMOCILLINE,ZAMOCILLINE,brand,DZ-R-0855,retraits
+ZARTENS,ZARTENS,brand,DZ-R-0671,retraits
+ZARTENS - H,ZARTENS - H,brand,DZ-R-0691,retraits
+ZECLAR 50,ZECLAR 50,brand,DZ-R-0219,non_renouveles
+ZENUSIN-10,ZENUSIN-10,brand,DZ-R-0611,retraits
+ZENUSIN-20 SR,ZENUSIN-20 SR,brand,DZ-R-0628,retraits
+ZETRON,ZETRON,brand,DZ-R-0796,retraits
+ZINACEF,ZINACEF,brand,DZ-R-0774,retraits
+ZINNAT,ZINNAT,brand,DZ-R-0193,non_renouveles
+ZINOXIME,ZINOXIME,brand,DZ-R-0197,non_renouveles
+ZINOXIME,ZINOXIME,brand,DZ-R-0199,non_renouveles
+ZITHROMAX,ZITHROMAX,brand,DZ-R-0793,retraits
+ZITHROMAX,ZITHROMAX,brand,DZ-R-0795,retraits
+ZITHRON,ZITHRON,brand,DZ-R-0221,non_renouveles
+ZITHRON,ZITHRON,brand,DZ-R-0794,retraits
+ZITROCIN,ZITROCIN,brand,DZ-R-0792,retraits
+ZOMAX,ZOMAX,brand,DZ-R-0220,non_renouveles
+ZOMAX,ZOMAX,brand,DZ-R-0791,retraits

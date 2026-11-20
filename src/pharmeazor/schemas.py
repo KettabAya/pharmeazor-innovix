@@ -19,11 +19,11 @@ class Authority(IntEnum):
     and the system must be able to say why.
     """
 
-    DISCARDED = 0       # forums, blogs, social media, advertising, prices, stock
-    PROFESSIONAL = 1    # Pharm'Net, MEDAlgerie, dzair-pharma -- practical, unofficial
-    INSTITUTIONAL = 2   # ANSM Thesaurus, DailyMed, EMA -- foreign, complement only
-    NOMENCLATURE = 3    # official registry, Ministry of Pharmaceutical Industry
-    OFFICIAL = 4        # RCP and patient leaflets validated by the ANPP
+    DISCARDED = 0  # forums, blogs, social media, advertising, prices, stock
+    PROFESSIONAL = 1  # Pharm'Net, MEDAlgerie, dzair-pharma -- practical, unofficial
+    INSTITUTIONAL = 2  # ANSM Thesaurus, DailyMed, EMA -- foreign, complement only
+    NOMENCLATURE = 3  # official registry, Ministry of Pharmaceutical Industry
+    OFFICIAL = 4  # RCP and patient leaflets validated by the ANPP
 
     @property
     def label_fr(self) -> str:
@@ -36,8 +36,18 @@ class Authority(IntEnum):
         }[self]
 
     @property
-    def is_algerian_official(self) -> bool:
-        """Foreign sources complement the Algerian source; they never replace it."""
+    def is_official_tier(self) -> bool:
+        """True for the two top ranks, whatever the country.
+
+        This deliberately says nothing about *where* a source is published: a
+        ranking enum cannot know that. The country lives on :class:`Provenance`,
+        so the "an Algerian source is never replaced" rule is decided there, in
+        :attr:`Provenance.is_algerian_official`.
+
+        The property used to be called ``is_algerian_official``, and the name
+        was not harmless: a French notice registered at the OFFICIAL rank was
+        read as Algerian and overrode the Algerian value.
+        """
         return self in (Authority.OFFICIAL, Authority.NOMENCLATURE)
 
 
@@ -88,6 +98,22 @@ class Provenance:
     language: str = "fr"
     country: str = "DZ"
     checksum: str | None = None
+
+    @property
+    def is_algerian_official(self) -> bool:
+        """An Algerian source of official rank — the one a foreign one cannot replace.
+
+        Both conditions are needed, and the country is the one the ranking enum
+        cannot carry. The cahier des charges puts "les références
+        institutionnelles étrangères : Thésaurus de l'ANSM, notices américaines
+        (DailyMed), européennes (EMA)" at the third rank of five, below the
+        Algerian nomenclature, and states: « Une source étrangère sert de
+        complément, jamais de substitut à la source algérienne. »
+
+        So a French or American source never answers True here, whatever rank
+        it was registered at.
+        """
+        return self.country.upper() == "DZ" and self.authority.is_official_tier
 
     def cite(self) -> str:
         return (

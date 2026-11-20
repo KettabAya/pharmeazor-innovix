@@ -25,6 +25,7 @@ from pathlib import Path
 from ..schemas import Authority, Provenance
 from .dosage import Packaging, Strength, parse_packaging, parse_strength
 from .names import DrugEntry, normalize
+from .substance import Substance, parse_inn
 
 __all__ = [
     "Product",
@@ -35,13 +36,68 @@ __all__ = [
     "form_family",
 ]
 
-# Galenic families. Two products are only interchangeable within one of these:
-# a tablet does not replace a syrup, whatever the molecule.
+# Fautes de frappe du registre, corrigees avant de chercher la famille.
+#
+# Le ministere ecrit tantot SUSPENSION, tantot SUSPENSSION. Sans cette
+# correction, les deux orthographes tombent dans deux familles differentes :
+# la forme fautive ne rencontre pas SUSPENSION, donc elle s'arrete sur POUDRE.
+#
+# Mesure du 17/11/2026, sur les 911 produits d'alors : 17 produits portent
+# la faute, 51 non, et AMOXICILLINE TRIHYDRATEE 1G/SACHET se retrouvait
+# coupe en deux groupes d'equivalents pour cette seule raison.
+#
+# Le texte d'origine n'est pas modifie : seule la recherche de famille
+# travaille sur la version corrigee. Un pharmacien voit toujours ce que le
+# ministere a ecrit.
+_FAUTES_DE_FRAPPE = {"SUSPENSSION": "SUSPENSION"}
+
+# La VOIE d'administration, examinee en premier.
+#
+# Elle prime sur la forme galenique : une solution injectable et une solution
+# buvable sont toutes deux des "solutions", mais l'une se pique et l'autre se
+# boit. Les confondre proposerait un injectable pour remplacer un sirop.
+#
+# Mesure du 17/11/2026, sur les 911 produits d'alors : 46 injectables et
+# 15 collyres etaient classes "SOLUTION", donc melangeables avec les
+# solutions buvables.
+# Aucun groupe d'equivalents n'en avait encore souffert, parce que l'egalite
+# de dosage les separait de fait -- mais la regle etait fausse.
+_VOIES: tuple[str, ...] = (
+    "INJECTABLE",
+    "PERFUSION",
+    "COLLYRE",
+    "OPHTALMIQUE",
+    "OCULAIRE",
+    "AURICULAIRE",
+    "VAGINAL",
+    "RECTAL",
+    "CUTANEE",
+    "CUTANE",
+)
+
+# Familles galeniques, examinees ensuite. Deux produits ne sont
+# interchangeables qu'a l'interieur d'une meme famille : un comprime ne
+# remplace pas un sirop, quelle que soit la molecule.
 _FORM_FAMILIES: tuple[str, ...] = (
-    "COMPRIME", "GELULE", "CAPSULE", "SIROP", "SUSPENSION", "SOLUTION",
-    "POUDRE", "GRANULE", "SACHET", "SUPPOSITOIRE", "OVULE", "CREME",
-    "POMMADE", "GEL", "COLLYRE", "SPRAY", "AEROSOL", "PATCH", "AMPOULE",
-    "INJECTABLE", "PERFUSION", "GOUTTES", "SIROP",
+    "COMPRIME",
+    "GELULE",
+    "CAPSULE",
+    "SIROP",
+    "SUSPENSION",
+    "SOLUTION",
+    "POUDRE",
+    "GRANULE",
+    "SACHET",
+    "SUPPOSITOIRE",
+    "OVULE",
+    "CREME",
+    "POMMADE",
+    "GEL",
+    "SPRAY",
+    "AEROSOL",
+    "PATCH",
+    "AMPOULE",
+    "GOUTTES",
 )
 
 
@@ -52,12 +108,25 @@ def form_family(form: str | None) -> str:
     coating and the score line do not change what the product is. The full text
     is kept on the product so a pharmacist can still see the difference.
 
+    La voie d'administration est examinee avant la forme : une
+    ``SOLUTION INJECTABLE`` donne ``INJECTABLE`` et non ``SOLUTION``, sans
+    quoi elle se retrouverait interchangeable avec une solution buvable.
+
     >>> form_family("COMPRIME PELLICULE SECABLE")
     'COMPRIME'
     >>> form_family("POUDRE POUR SUSPENSSION BUVABLE")
     'POUDRE'
+    >>> form_family("SOLUTION INJECTABLE IM/IV")
+    'INJECTABLE'
+    >>> form_family("COLLYRE EN SOLUTION")
+    'COLLYRE'
     """
     text = (form or "").upper()
+    for faute, correction in _FAUTES_DE_FRAPPE.items():
+        text = text.replace(faute, correction)
+    for voie in _VOIES:
+        if voie in text:
+            return voie
     for family in _FORM_FAMILIES:
         if family in text:
             return family
@@ -102,15 +171,54 @@ class Product:
     date_final: str
     status: str
     source_version: str
+    # Le classement reglementaire algerien : LISTE I, LISTE II, ou vide pour
+    # « hors liste », c'est-a-dire delivrable sans ordonnance.
+    #
+    # Il etait ecrit dans le CSV et perdu ici : le catalogue, et donc les
+    # groupes d'equivalents, ignoraient le seul champ qui dit si le patient a
+    # besoin d'une ordonnance. Mesure du 19/11/2026 : 12 groupes sur 153
+    # reunissent des produits de classements differents, dont trois qui
+    # melangent LISTE II et « hors liste ».
+    #
+    # Valeur par defaut pour ne pas casser les Product construits a la main
+    # dans les tests.
+    list_class: str = ""
 
     @property
     def form_family(self) -> str:
         return form_family(self.form)
 
+    # The original cell text, exposed under the same names the secondary
+    # source uses, so the two can be compared field by field without the
+    # comparison silently reading an attribute that does not exist.
+    @property
+    def strength_raw(self) -> str:
+        return self.strength.raw
+
+    @property
+    def packaging_raw(self) -> str:
+        return self.packaging.raw
+
+    @property
+    def substance(self) -> Substance:
+        """La DCI decoupee : base, forme saline, substances associees."""
+        return parse_inn(self.inn)
+
     @property
     def equivalence_key(self) -> tuple[str, str, str]:
-        """Same substance, same strength, same galenic family."""
-        return (normalize(self.inn), self.strength.canonical(), self.form_family)
+        """Meme substance, meme dosage, meme famille galenique.
+
+        La substance est comparee sur sa cle decoupee et non sur le texte brut :
+        « AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE » et « AMOXICILLINE
+        SOUS FORME TRIHYDRATEE » designent le meme produit. En revanche une
+        association ne se confond jamais avec la substance seule -- rapprocher
+        paracetamol et paracetamol/codeine ferait disparaitre un opiace.
+        """
+        return (
+            self.substance.cle() or normalize(self.inn),
+            self.strength.canonical(),
+            self.form_family,
+        )
 
     def label(self) -> str:
         return f"{self.brand_name} {self.strength} {self.form}".strip()
@@ -157,9 +265,7 @@ class Catalogue:
 
     _by_id: dict[str, Product] = field(default_factory=dict, repr=False)
     _by_alias: dict[str, list[Product]] = field(default_factory=dict, repr=False)
-    _groups: dict[tuple[str, str, str], EquivalenceGroup] = field(
-        default_factory=dict, repr=False
-    )
+    _groups: dict[tuple[str, str, str], EquivalenceGroup] = field(default_factory=dict, repr=False)
 
     # ---------------------------------------------------------------- loading
 
@@ -186,6 +292,7 @@ class Catalogue:
                         date_final=row["date_final"].strip(),
                         status=row["status"].strip(),
                         source_version=row["source_version"].strip(),
+                        list_class=row.get("list_class", "").strip(),
                     )
                 )
         return cls(products=products).build()
@@ -320,8 +427,8 @@ class Catalogue:
             "short": (
                 f"{len(others)} équivalent(s) enregistré(s) en Algérie pour "
                 f"{product.brand_name} ({product.strength}, {product.form_family.lower()})."
-                if others else
-                f"Aucun équivalent enregistré pour {product.brand_name} "
+                if others
+                else f"Aucun équivalent enregistré pour {product.brand_name} "
                 f"({product.strength}, {product.form_family.lower()}) dans cette version."
             ),
             "explanation": (

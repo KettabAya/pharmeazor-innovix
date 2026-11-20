@@ -1,0 +1,16 @@
+# Unifier les identites git d'une meme personne.
+#
+# Aya a pousse depuis trois configurations differentes : deux noms et trois
+# adresses. Sans ce fichier, `git shortlog` et scripts/dossier_preuves.py
+# comptent son travail comme celui de trois contributeurs distincts, et le
+# panneau Contributors de GitHub fait pareil. Son apport reel est donc
+# sous-evalue dans le dossier remis a l'enseignant.
+#
+# Forme : <nom retenu> <adresse retenue> <ancienne adresse>
+# L'adresse retenue est l'adresse GitHub noreply, qui ne divulgue pas
+# d'adresse personnelle.
+#
+# Pour changer le nom affiche, modifier la colonne de gauche.
+
+aya <197521555+ayabelm@users.noreply.github.com> <ayuoyabelm@gmail.com>
+aya <197521555+ayabelm@users.noreply.github.com> <ayabelmir024@gmail.com>

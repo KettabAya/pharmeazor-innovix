@@ -15,28 +15,53 @@ __all__ = ["SectionSplit", "split_sections", "HEADING_PATTERNS"]
 _NUMBER = r"(?:\d+(?:\.\d+)*[.)]?\s*[-–]?\s*)?"
 
 HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
-    (Section.CONTRAINDICATIONS, re.compile(
-        r"^\s*" + _NUMBER + r"(?:contre[-\s]?indications?"
-        r"|ne (?:prenez|utilisez) jamais"
-        r"|quand ne (?:faut|doit)[- ]il pas)", re.I)),
-    (Section.INTERACTIONS, re.compile(
-        r"^\s*" + _NUMBER + r"(?:interactions?"
-        r"|associations? (?:medicamenteuses?|deconseillees?)"
-        r"|autres medicaments et)", re.I)),
-        (Section.POSOLOGY, re.compile(
-        r"^\s*" + _NUMBER + r"(?:posologie"
-        r"|mode (?:et voie )?d.(?:administration|emploi)"
-        r"|comment (?:prendre|utiliser)"
-        r"|dose(?=\s*$)|doses(?=\s*$)|dosage(?=\s*$))", re.I)),
-    (Section.INDICATIONS, re.compile(
-      r"^\s*" + _NUMBER
-     + r"(?:indications?(?: therapeutiques?)?(?=\s*$)"
-     + r"|dans quels? cas"
-     + r"|qu.est[- ]ce que .* et dans quels? cas)", re.I)),
-    (Section.ADVERSE, re.compile(
-        r"^\s*" + _NUMBER + r"(?:effets? indesirables?"
-        r"|quels? sont les effets"
-        r"|effets? secondaires?)", re.I)),
+    (
+        Section.CONTRAINDICATIONS,
+        re.compile(
+            r"^\s*" + _NUMBER + r"(?:contre[-\s]?indications?"
+            r"|ne (?:prenez|utilisez) jamais"
+            r"|quand ne (?:faut|doit)[- ]il pas)",
+            re.I,
+        ),
+    ),
+    (
+        Section.INTERACTIONS,
+        re.compile(
+            r"^\s*" + _NUMBER + r"(?:interactions?"
+            r"|associations? (?:medicamenteuses?|deconseillees?)"
+            r"|autres medicaments et)",
+            re.I,
+        ),
+    ),
+    (
+        Section.POSOLOGY,
+        re.compile(
+            r"^\s*" + _NUMBER + r"(?:posologie"
+            r"|mode (?:et voie )?d.(?:administration|emploi)"
+            r"|comment (?:prendre|utiliser)"
+            r"|dose(?=\s*$)|doses(?=\s*$)|dosage(?=\s*$))",
+            re.I,
+        ),
+    ),
+    (
+        Section.INDICATIONS,
+        re.compile(
+            r"^\s*" + _NUMBER
+            + r"(?:indications?(?: therapeutiques?)?(?=\s*$)"
+            + r"|dans quels? cas"
+            + r"|qu.est[- ]ce que .* et dans quels? cas)",
+            re.I,
+        ),
+    ),
+    (
+        Section.ADVERSE,
+        re.compile(
+            r"^\s*" + _NUMBER + r"(?:effets? indesirables?"
+            r"|quels? sont les effets"
+            r"|effets? secondaires?)",
+            re.I,
+        ),
+    ),
 ]
 
 _HEADING_SHAPE = re.compile(r"^\s*(?:\d[\d.]*\s*[-–.)]?\s*)?[^\n]{3,180}$")
@@ -126,15 +151,19 @@ class SectionSplit:
     def coverage(self) -> float:
         """Share of the four required rubriques that were found, in [0, 1]."""
         required = {
-            Section.INDICATIONS, Section.CONTRAINDICATIONS,
-            Section.POSOLOGY, Section.INTERACTIONS,
+            Section.INDICATIONS,
+            Section.CONTRAINDICATIONS,
+            Section.POSOLOGY,
+            Section.INTERACTIONS,
         }
         return len(required & set(self.sections)) / len(required)
 
     def missing(self) -> list[str]:
         required = [
-            Section.INDICATIONS, Section.CONTRAINDICATIONS,
-            Section.POSOLOGY, Section.INTERACTIONS,
+            Section.INDICATIONS,
+            Section.CONTRAINDICATIONS,
+            Section.POSOLOGY,
+            Section.INTERACTIONS,
         ]
         return [s for s in required if s not in self.sections]
 
@@ -151,9 +180,7 @@ def split_sections(text: str) -> SectionSplit:
             return
         body = "\n".join(buffer).strip()
         existing = current_bucket.get(current_key)
-        current_bucket[current_key] = (
-            (existing + "\n" + body).strip() if existing else body
-        )
+        current_bucket[current_key] = (existing + "\n" + body).strip() if existing else body
 
     raw_lines = text.splitlines()
     lines = []

@@ -7,6 +7,12 @@ credentials*.json
 data/raw/*
 data/interim/*
 data/processed/*
+!data/processed/cache.json
+!data/processed/call_counter.json
+!data/processed/documents_index.json
+!data/processed/embedding_ids.json
+!data/processed/passages.jsonl
+!data/processed/embeddings.npy
 !data/**/.gitkeep
 .cache/
 
@@ -24,9 +30,18 @@ env/
 .coverage
 htmlcov/
 
+# --- rapport genere, reconstruit par scripts/faire_pdf.py ---
+RAPPORT-PHARMEAZOR.html
+
+# --- jupyter ---
+.ipynb_checkpoints/
+Untitled*.ipynb
+
 # --- editors / OS ---
 .idea/
 .vscode/
 *.iml
 .DS_Store
 Thumbs.db
+PHARMEAZOR-DOSSIER-COMPLET.pdf
+MON-TRAVAIL.md

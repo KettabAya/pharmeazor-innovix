@@ -1,0 +1,24 @@
+- match: "_rcp"
+  source_name: "anpp_rcp"
+  authority: 5
+  language: "fr"
+
+- match: "_notice"
+  source_name: "ansm"
+  authority: 3
+  language: "fr"
+
+- match: "_nomenclature"
+  source_name: "nomenclature_miph"
+  authority: 4
+  language: "fr"
+
+- match: "_dailymed"
+  source_name: "dailymed"
+  authority: 3
+  language: "en"
+
+- match: "_pharmnet"
+  source_name: "pharmnet"
+  authority: 2
+  language: "fr"

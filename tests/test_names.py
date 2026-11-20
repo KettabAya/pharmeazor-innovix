@@ -16,7 +16,9 @@ from pharmeazor.normalize.names import (
 @pytest.fixture
 def catalogue() -> list[DrugEntry]:
     return [
-        DrugEntry("DZ-001", "paracétamol", ("Doliprane", "Efferalgan"), "N02BE01", "1000 mg", "comprimé"),
+        DrugEntry(
+            "DZ-001", "paracétamol", ("Doliprane", "Efferalgan"), "N02BE01", "1000 mg", "comprimé"
+        ),
         DrugEntry("DZ-002", "ibuprofène", ("Nurofen", "Advil"), "M01AE01", "400 mg", "comprimé"),
         DrugEntry("DZ-003", "amoxicilline", ("Clamoxyl",), "J01CA04", "500 mg", "gélule"),
         DrugEntry("DZ-004", "paracétamol", ("Panadol",), "N02BE01", "1000 mg", "comprimé"),

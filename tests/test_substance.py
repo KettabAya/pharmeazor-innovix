@@ -1,0 +1,254 @@
+"""Découpage de la DCI — l'Entity Linking du projet.
+
+Les cas testés viennent tous du registre réel, pas d'exemples inventés.
+"""
+
+import pytest
+
+from pharmeazor.normalize.substance import (
+    Substance,
+    concerne_molecule,
+    normaliser_substance,
+    parse_inn,
+)
+
+
+class TestNormalisation:
+    def test_accents_et_casse(self):
+        assert normaliser_substance("Amoxicilline trihydratée") == "AMOXICILLINE TRIHYDRATEE"
+
+    def test_asterisques_de_bas_de_page_retires(self):
+        assert normaliser_substance("AMOXICILLINE**") == "AMOXICILLINE"
+
+    def test_espaces_reduits(self):
+        assert normaliser_substance("  ACIDE   CLAVULANIQUE ") == "ACIDE CLAVULANIQUE"
+
+    def test_valeur_vide(self):
+        assert normaliser_substance(None) == ""
+
+
+class TestSubstanceSimple:
+    def test_substance_seule(self):
+        s = parse_inn("PARACETAMOL")
+        assert s.base == "PARACETAMOL"
+        assert s.sel == ""
+        assert not s.est_association
+        assert not s.incertain
+
+    def test_le_texte_d_origine_est_conserve(self):
+        assert parse_inn("  PARACETAMOL ").raw == "PARACETAMOL"
+
+    def test_valeur_vide(self):
+        assert parse_inn("").base == ""
+
+
+class TestFormeSaline:
+    def test_exprime_en_donne_la_base(self):
+        s = parse_inn("AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE")
+        assert s.base == "AMOXICILLINE"
+        assert s.sel == "TRIHYDRATEE"
+
+    def test_le_sel_peut_preceder_la_base(self):
+        # "ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE"
+        s = parse_inn("ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE")
+        assert s.base == "ACIDE ACETYLSALICYLIQUE"
+
+    def test_sous_forme(self):
+        s = parse_inn("AMOXICILLINE SOUS FORME TRIHYDRATEE")
+        assert s.base == "AMOXICILLINE"
+        assert "TRIHYDRATEE" in s.sel
+
+    def test_parenthese_donne_la_base(self):
+        s = parse_inn("AMLODIPINE BESILATE (AMLODIPINE)")
+        assert s.base == "AMLODIPINE"
+        assert s.sel == "BESILATE"
+
+    def test_sel_accole_sans_marqueur(self):
+        s = parse_inn("AMLODIPINE SOUS  FORME BESYLATE")
+        assert s.base == "AMLODIPINE"
+
+
+class TestAssociations:
+    def test_deux_substances(self):
+        s = parse_inn("PARACETAMOL/CAFEINE")
+        assert s.base == "PARACETAMOL"
+        assert s.associes == ("CAFEINE",)
+        assert s.est_association
+
+    def test_trois_substances(self):
+        s = parse_inn("ACETYLCYSTEINE/TUAMINOHEPTANE/CHLORURE DE BENZALKONIUM")
+        assert len(s.toutes_substances) == 3
+
+    def test_association_avec_sels_des_deux_cotes(self):
+        s = parse_inn(
+            "AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE"
+            "/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE"
+        )
+        assert s.base == "AMOXICILLINE"
+        assert s.associes == ("ACIDE CLAVULANIQUE",)
+
+    def test_sous_forme_apres_slash_n_est_pas_une_association(self):
+        # "ACIDE ACETYLSALICYTIQUE/SOUS FORME DE ACETYLSALICYLATE DE DL-LYSINE"
+        s = parse_inn("ACIDE ACETYLSALICYLIQUE/SOUS FORME DE ACETYLSALICYLATE DE DL-LYSINE")
+        assert not s.est_association
+        assert s.base == "ACIDE ACETYLSALICYLIQUE"
+
+
+class TestPrudence:
+    def test_synonyme_entre_parentheses_est_signale(self):
+        # "(OU ...)" annonce un autre nom, pas une forme saline : on ne tranche pas.
+        s = parse_inn("ALFACALCIDOL (OU 1 ALPHA-HYDROXYCHOLECALCIFEROL)")
+        assert s.incertain
+        assert s.motif == "synonyme_entre_parentheses"
+
+    def test_deux_presentations_dans_une_cellule_sont_signalees(self):
+        s = parse_inn(
+            "PARACETAMOL/PSEUDOEPHEDRINE COMP. DE JOUR ET PARACETAMOL/DIPHENHYDRAMINE COMP. DE NUIT"
+        )
+        assert s.incertain
+        assert s.motif == "deux_presentations"
+
+    def test_une_ecriture_incertaine_garde_son_texte(self):
+        brut = "ALFACALCIDOL (OU 1 ALPHA-HYDROXYCHOLECALCIFEROL)"
+        assert parse_inn(brut).raw == brut
+
+
+class TestCleDeRegroupement:
+    def test_deux_ecritures_de_la_meme_substance_se_rejoignent(self):
+        a = parse_inn("AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE")
+        b = parse_inn("AMOXICILLINE SOUS FORME TRIHYDRATEE")
+        assert a.cle() == b.cle() == "AMOXICILLINE"
+
+    def test_la_forme_saline_ne_change_pas_la_cle(self):
+        assert parse_inn("AMLODIPINE BESILATE (AMLODIPINE)").cle() == parse_inn("AMLODIPINE").cle()
+
+    def test_une_association_ne_se_confond_JAMAIS_avec_la_substance_seule(self):
+        # Le point le plus important du module : rapprocher paracetamol et
+        # paracetamol+codeine ferait disparaitre un opiace d'une recherche.
+        seul = parse_inn("PARACETAMOL")
+        avec = parse_inn("PARACETAMOL/CODEINE PHOSPHATE HEMIHYDRATE")
+        assert seul.cle() != avec.cle()
+
+    def test_l_ordre_des_substances_est_conserve(self):
+        s = parse_inn("AMLODIPINE/VALSARTAN")
+        assert s.cle().startswith("AMLODIPINE")
+
+
+@pytest.mark.parametrize(
+    "brut",
+    [
+        "PARACETAMOL",
+        "PARACETAMOL/CAFEINE",
+        "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN",
+        "AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE",
+    ],
+)
+def test_toute_dci_du_registre_produit_une_base(brut):
+    assert parse_inn(brut).base
+    assert isinstance(parse_inn(brut), Substance)
+
+
+class TestSousFormeEntreParentheses:
+    """Deux ecritures d'un meme sel doivent donner une meme cle.
+
+    Defaut mesure sur les 911 produits : "GENTAMICINE (SOUS FORME DE SULFATE)"
+    produisait la cle "GENTAMICINE (" -- parenthese comprise -- alors que
+    "GENTAMICINE SULFATE" donnait "GENTAMICINE". Les deux ecritures tombaient
+    donc dans deux groupes d'equivalents separes, et un pharmacien cherchant un
+    remplacant n'aurait pas vu la moitie des produits.
+    """
+
+    def test_les_trois_ecritures_de_gentamicine_se_rejoignent(self):
+        cles = {
+            parse_inn("GENTAMICINE").cle(),
+            parse_inn("GENTAMICINE SULFATE").cle(),
+            parse_inn("GENTAMICINE (SOUS FORME DE SULFATE)").cle(),
+        }
+        assert cles == {"GENTAMICINE"}
+
+    def test_la_parenthese_ne_reste_pas_dans_la_cle(self):
+        for brut in (
+            "GENTAMICINE (SOUS FORME DE SULFATE)",
+            "PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE)",
+        ):
+            cle = parse_inn(brut).cle()
+            assert "(" not in cle and ")" not in cle, brut
+
+    def test_la_forme_sans_parenthese_marche_toujours(self):
+        s = parse_inn("AMLODIPINE SOUS FORME DE BESILATE")
+        assert s.cle() == "AMLODIPINE"
+        assert s.sel == "BESILATE"
+
+
+class TestLeSelEcritDevantLaBase:
+    """Defaut mesure le 18/11/2026 : le ministere ecrit tantot
+    "NEFOPAM CHLORHYDRATE", tantot "CHLORHYDRATE DE NEFOPAM".
+
+    Dans le second cas le sel etait bien reconnu, mais le "DE" restait colle a
+    la base : la cle devenait "DE NEFOPAM", distincte de "NEFOPAM". Trois
+    produits de notre perimetre -- ANTAPAM, TRAMADINE et ASPEGIC ADULTE --
+    manquaient de ce fait dans le catalogue, et le suppositoire de tramadol a
+    100 mg n'avait aucun equivalent alors qu'il en a un.
+
+    38 DCI sur les 1 414 du registre d'aout sont ecrites sel-d'abord.
+    """
+
+    def test_les_deux_ecritures_du_nefopam_se_rejoignent(self):
+        cles = {
+            parse_inn("NEFOPAM").cle(),
+            parse_inn("NEFOPAM CHLORHYDRATE").cle(),
+            parse_inn("CHLORHYDRATE DE NEFOPAM").cle(),
+        }
+        assert cles == {"NEFOPAM"}
+
+    def test_le_de_ne_reste_pas_dans_la_cle(self):
+        for brut, attendu in (
+            ("CHLORHYDRATE DE TRAMADOL", "TRAMADOL"),
+            ("ACETATE DE FLECAINIDE", "FLECAINIDE"),
+            ("CHLORHYDRATE D'AMBROXOL", "AMBROXOL"),
+        ):
+            assert parse_inn(brut).cle() == attendu, brut
+
+    def test_le_sel_reste_lisible(self):
+        s = parse_inn("CHLORHYDRATE DE NEFOPAM")
+        assert s.base == "NEFOPAM"
+        assert s.sel == "CHLORHYDRATE"
+
+    def test_une_substance_qui_commence_par_de_nest_pas_amputee(self):
+        # Rien ne doit disparaitre quand il n'y a pas de sel devant.
+        assert parse_inn("DEXAMETHASONE").cle() == "DEXAMETHASONE"
+        assert parse_inn("DESLORATADINE").cle() == "DESLORATADINE"
+
+
+class TestLaRegleDeCorrespondance:
+    """`concerne_molecule` : la regle qui dit si une DCI releve d'une molecule.
+
+    Elle etait reecrite dans trois programmes -- build_week1, comparer_versions
+    et le classement therapeutique -- chacun avec un simple `startswith`. Les
+    trois laissaient donc passer les memes ecritures sel-d'abord. Elle vit
+    maintenant ici, une seule fois, et ces tests la tiennent.
+    """
+
+    def test_l_ecriture_directe_est_reconnue(self):
+        assert concerne_molecule("NEFOPAM", ("NEFOPAM",))
+        assert concerne_molecule("NEFOPAM CHLORHYDRATE", ("NEFOPAM",))
+
+    def test_l_ecriture_sel_d_abord_est_reconnue(self):
+        assert concerne_molecule("CHLORHYDRATE DE NEFOPAM", ("NEFOPAM",))
+        assert concerne_molecule("CHLORHYDRATE DE TRAMADOL", ("TRAMADOL",))
+        assert concerne_molecule("ACETATE DE FLECAINIDE", ("FLECAINIDE",))
+
+    def test_l_ecriture_exprime_en_est_reconnue(self):
+        brut = "ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE"
+        assert concerne_molecule(brut, ("ACIDE ACETYLSALICYLIQUE",))
+
+    def test_une_autre_substance_n_est_pas_retenue(self):
+        assert not concerne_molecule("DEXAMETHASONE", ("NEFOPAM",))
+        assert not concerne_molecule("PARACETAMOL", ("AMOXICILLINE",))
+        assert not concerne_molecule("", ("PARACETAMOL",))
+
+    def test_l_association_est_retenue_par_sa_premiere_substance(self):
+        # Le registre met en tete la substance qui donne son identite au
+        # produit : PARACETAMOL/CODEINE est d'abord un paracetamol.
+        assert concerne_molecule("PARACETAMOL/CODEINE", ("PARACETAMOL",))
+        assert not concerne_molecule("PARACETAMOL/CODEINE", ("CODEINE",))

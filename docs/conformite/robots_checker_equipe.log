@@ -1,0 +1,551 @@
+2026-11-11 20:04:48 | INFO     | ============================================================
+2026-11-11 20:04:48 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 20:04:48 | INFO     | ============================================================
+2026-11-11 20:04:48 | INFO     | ------------------------------------------------------------
+2026-11-11 20:04:48 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 20:04:48 | INFO     | Website URL: https://www.miph.gov.dz/fr/nomenclature-nationale-des-produits-pharmaceutiques/
+2026-11-11 20:04:48 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 20:04:53 | DEBUG    | HTTP response: Ministère_industrie_Pharmaceutique | Status: 200
+2026-11-11 20:04:53 | DEBUG    | Robots content length: 169 characters
+2026-11-11 20:04:53 | INFO     | ROBOTS ALLOWED: Ministère_industrie_Pharmaceutique
+2026-11-11 20:04:53 | DEBUG    | Crawl delay: None
+2026-11-11 20:04:53 | DEBUG    | Request rate: None
+2026-11-11 20:04:53 | INFO     | RESULT | Name: Ministère_industrie_Pharmaceutique | URL: https://www.miph.gov.dz/fr/nomenclature-nationale-des-produits-pharmaceutiques/ | Authority: 1 | Robots: https://www.miph.gov.dz/robots.txt | Access: True
+2026-11-11 20:04:53 | INFO     | ------------------------------------------------------------
+2026-11-11 20:04:53 | INFO     | Checking website: PharmNet
+2026-11-11 20:04:53 | INFO     | Website URL: https://pharmnet-dz.com/
+2026-11-11 20:04:53 | DEBUG    | Robots URL: https://pharmnet-dz.com/robots.txt
+2026-11-11 20:04:54 | DEBUG    | HTTP response: PharmNet | Status: 200
+2026-11-11 20:04:54 | DEBUG    | Robots content length: 349 characters
+2026-11-11 20:04:54 | INFO     | ROBOTS ALLOWED: PharmNet
+2026-11-11 20:04:54 | DEBUG    | Crawl delay: None
+2026-11-11 20:04:54 | DEBUG    | Request rate: None
+2026-11-11 20:04:54 | INFO     | RESULT | Name: PharmNet | URL: https://pharmnet-dz.com/ | Authority: 2 | Robots: https://pharmnet-dz.com/robots.txt | Access: True
+2026-11-11 20:04:54 | INFO     | ------------------------------------------------------------
+2026-11-11 20:04:54 | INFO     | Checking website: MEDALgérie
+2026-11-11 20:04:54 | INFO     | Website URL: https://medal-dz.com/
+2026-11-11 20:04:54 | DEBUG    | Robots URL: https://medal-dz.com/robots.txt
+2026-11-11 20:04:55 | DEBUG    | HTTP response: MEDALgérie | Status: 404
+2026-11-11 20:04:55 | WARNING  | No robots.txt found: MEDALgérie
+2026-11-11 20:04:55 | INFO     | RESULT | Name: MEDALgérie | URL: https://medal-dz.com/ | Authority: 2 | Robots: https://medal-dz.com/robots.txt | Access: True
+2026-11-11 20:04:55 | INFO     | ------------------------------------------------------------
+2026-11-11 20:04:55 | INFO     | Checking website: dzair-pharma
+2026-11-11 20:04:55 | INFO     | Website URL: https://www.dzair-pharma.net/
+2026-11-11 20:04:55 | DEBUG    | Robots URL: https://www.dzair-pharma.net/robots.txt
+2026-11-11 20:04:56 | DEBUG    | HTTP response: dzair-pharma | Status: 200
+2026-11-11 20:04:56 | DEBUG    | Robots content length: 995 characters
+2026-11-11 20:04:56 | INFO     | ROBOTS ALLOWED: dzair-pharma
+2026-11-11 20:04:56 | DEBUG    | Crawl delay: None
+2026-11-11 20:04:56 | DEBUG    | Request rate: None
+2026-11-11 20:04:56 | INFO     | RESULT | Name: dzair-pharma | URL: https://www.dzair-pharma.net/ | Authority: 2 | Robots: https://www.dzair-pharma.net/robots.txt | Access: True
+2026-11-11 20:04:56 | INFO     | ------------------------------------------------------------
+2026-11-11 20:04:56 | INFO     | Checking website: ANPP
+2026-11-11 20:04:56 | INFO     | Website URL: https://rcp.anpp.dz/
+2026-11-11 20:04:56 | DEBUG    | Robots URL: https://rcp.anpp.dz/robots.txt
+2026-11-11 20:04:57 | DEBUG    | HTTP response: ANPP | Status: 200
+2026-11-11 20:04:57 | DEBUG    | Robots content length: 24 characters
+2026-11-11 20:04:57 | INFO     | ROBOTS ALLOWED: ANPP
+2026-11-11 20:04:57 | DEBUG    | Crawl delay: None
+2026-11-11 20:04:57 | DEBUG    | Request rate: None
+2026-11-11 20:04:57 | INFO     | RESULT | Name: ANPP | URL: https://rcp.anpp.dz/ | Authority: 1 | Robots: https://rcp.anpp.dz/robots.txt | Access: True
+2026-11-11 20:04:57 | INFO     | ------------------------------------------------------------
+2026-11-11 20:04:57 | INFO     | Checking website: DailyMed
+2026-11-11 20:04:57 | INFO     | Website URL: https://dailymed.nlm.nih.gov/dailymed/
+2026-11-11 20:04:57 | DEBUG    | Robots URL: https://dailymed.nlm.nih.gov/robots.txt
+2026-11-11 20:04:59 | DEBUG    | HTTP response: DailyMed | Status: 200
+2026-11-11 20:04:59 | DEBUG    | Robots content length: 78286 characters
+2026-11-11 20:04:59 | WARNING  | Cannot reliably parse robots.txt: DailyMed
+2026-11-11 20:04:59 | INFO     | RESULT | Name: DailyMed | URL: https://dailymed.nlm.nih.gov/dailymed/ | Authority: 3 | Robots: https://dailymed.nlm.nih.gov/robots.txt | Access: None
+2026-11-11 20:04:59 | INFO     | ------------------------------------------------------------
+2026-11-11 20:04:59 | INFO     | Checking website: EMA
+2026-11-11 20:04:59 | INFO     | Website URL: https://www.ema.europa.eu/en/medicines
+2026-11-11 20:04:59 | DEBUG    | Robots URL: https://www.ema.europa.eu/robots.txt
+2026-11-11 20:05:01 | DEBUG    | HTTP response: EMA | Status: 200
+2026-11-11 20:05:01 | DEBUG    | Robots content length: 2082 characters
+2026-11-11 20:05:01 | INFO     | ROBOTS ALLOWED: EMA
+2026-11-11 20:05:01 | DEBUG    | Crawl delay: None
+2026-11-11 20:05:01 | DEBUG    | Request rate: None
+2026-11-11 20:05:01 | INFO     | RESULT | Name: EMA | URL: https://www.ema.europa.eu/en/medicines | Authority: 3 | Robots: https://www.ema.europa.eu/robots.txt | Access: True
+2026-11-11 20:05:01 | INFO     | ------------------------------------------------------------
+2026-11-11 20:05:01 | INFO     | Checking website: ANSM
+2026-11-11 20:05:01 | INFO     | Website URL: https://ansm.sante.fr/
+2026-11-11 20:05:01 | DEBUG    | Robots URL: https://ansm.sante.fr/robots.txt
+2026-11-11 20:05:16 | ERROR    | Connection timeout: ANSM
+2026-11-11 20:05:16 | INFO     | RESULT | Name: ANSM | URL: https://ansm.sante.fr/ | Authority: 3 | Robots: https://ansm.sante.fr/robots.txt | Access: None
+2026-11-11 20:05:16 | INFO     | ------------------------------------------------------------
+2026-11-11 20:05:16 | INFO     | Checking website: TGA
+2026-11-11 20:05:16 | INFO     | Website URL: https://www.tga.gov.au/
+2026-11-11 20:05:16 | DEBUG    | Robots URL: https://www.tga.gov.au/robots.txt
+2026-11-11 20:05:49 | ERROR    | Connection timeout: TGA
+2026-11-11 20:05:49 | INFO     | RESULT | Name: TGA | URL: https://www.tga.gov.au/ | Authority: 3 | Robots: https://www.tga.gov.au/robots.txt | Access: None
+2026-11-11 20:05:49 | INFO     | ------------------------------------------------------------
+2026-11-11 20:05:49 | INFO     | Checking website: MHRA
+2026-11-11 20:05:49 | INFO     | Website URL: https://products.mhra.gov.uk/
+2026-11-11 20:05:49 | DEBUG    | Robots URL: https://products.mhra.gov.uk/robots.txt
+2026-11-11 20:06:04 | ERROR    | Connection timeout: MHRA
+2026-11-11 20:06:04 | INFO     | RESULT | Name: MHRA | URL: https://products.mhra.gov.uk/ | Authority: 3 | Robots: https://products.mhra.gov.uk/robots.txt | Access: None
+2026-11-11 20:06:04 | INFO     | Results saved: C:\Users\ThinkPad\OneDrive\Desktop\Projet Pharmeazor\data\metadata\robots_audit.json
+2026-11-11 20:06:04 | INFO     | ============================================================
+2026-11-11 20:06:04 | INFO     | AUDIT SUMMARY
+2026-11-11 20:06:04 | INFO     | ============================================================
+2026-11-11 20:06:04 | INFO     | Total websites: 10
+2026-11-11 20:06:04 | INFO     | Robots allowed: 6
+2026-11-11 20:06:04 | INFO     | Robots denied: 0
+2026-11-11 20:06:04 | INFO     | Unknown status: 4
+2026-11-11 20:06:04 | WARNING  | Review website terms of use before collection.
+2026-11-11 20:06:04 | INFO     | Audit completed successfully
+2026-11-11 20:22:49 | INFO     | ============================================================
+2026-11-11 20:22:49 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 20:22:49 | INFO     | ============================================================
+2026-11-11 20:22:49 | INFO     | ------------------------------------------------------------
+2026-11-11 20:22:49 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 20:22:49 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 20:22:49 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 20:22:54 | DEBUG    | HTTP response: Ministère_industrie_Pharmaceutique | Status: 200
+2026-11-11 20:22:54 | DEBUG    | Robots content length: 169 characters
+2026-11-11 20:22:54 | INFO     | ROBOTS ALLOWED: Ministère_industrie_Pharmaceutique
+2026-11-11 20:22:54 | DEBUG    | Crawl delay: None
+2026-11-11 20:22:54 | DEBUG    | Request rate: None
+2026-11-11 20:22:54 | INFO     | RESULT | Name: Ministère_industrie_Pharmaceutique | URL: https://www.miph.gov.dz/fr/ | Authority: 1 | Robots: https://www.miph.gov.dz/robots.txt | Access: True
+2026-11-11 20:22:54 | INFO     | ------------------------------------------------------------
+2026-11-11 20:22:54 | INFO     | Checking website: PharmNet
+2026-11-11 20:22:54 | INFO     | Website URL: https://pharmnet-dz.com/
+2026-11-11 20:22:54 | DEBUG    | Robots URL: https://pharmnet-dz.com/robots.txt
+2026-11-11 20:22:55 | DEBUG    | HTTP response: PharmNet | Status: 200
+2026-11-11 20:22:55 | DEBUG    | Robots content length: 349 characters
+2026-11-11 20:22:55 | INFO     | ROBOTS ALLOWED: PharmNet
+2026-11-11 20:22:55 | DEBUG    | Crawl delay: None
+2026-11-11 20:22:55 | DEBUG    | Request rate: None
+2026-11-11 20:22:55 | INFO     | RESULT | Name: PharmNet | URL: https://pharmnet-dz.com/ | Authority: 2 | Robots: https://pharmnet-dz.com/robots.txt | Access: True
+2026-11-11 20:22:55 | INFO     | ------------------------------------------------------------
+2026-11-11 20:22:55 | INFO     | Checking website: MEDAlgérie
+2026-11-11 20:22:55 | INFO     | Website URL: https://www.medal-dz.com/
+2026-11-11 20:22:55 | DEBUG    | Robots URL: https://www.medal-dz.com/robots.txt
+2026-11-11 20:22:56 | DEBUG    | HTTP response: MEDAlgérie | Status: 404
+2026-11-11 20:22:56 | WARNING  | No robots.txt found: MEDAlgérie
+2026-11-11 20:22:56 | INFO     | RESULT | Name: MEDAlgérie | URL: https://www.medal-dz.com/ | Authority: 2 | Robots: https://www.medal-dz.com/robots.txt | Access: True
+2026-11-11 20:22:56 | INFO     | ------------------------------------------------------------
+2026-11-11 20:22:56 | INFO     | Checking website: dzair-pharma.net
+2026-11-11 20:22:56 | INFO     | Website URL: https://www.dzair-pharma.net/
+2026-11-11 20:22:56 | DEBUG    | Robots URL: https://www.dzair-pharma.net/robots.txt
+2026-11-11 20:22:57 | DEBUG    | HTTP response: dzair-pharma.net | Status: 200
+2026-11-11 20:22:57 | DEBUG    | Robots content length: 995 characters
+2026-11-11 20:22:57 | INFO     | ROBOTS ALLOWED: dzair-pharma.net
+2026-11-11 20:22:57 | DEBUG    | Crawl delay: None
+2026-11-11 20:22:57 | DEBUG    | Request rate: None
+2026-11-11 20:22:57 | INFO     | RESULT | Name: dzair-pharma.net | URL: https://www.dzair-pharma.net/ | Authority: 2 | Robots: https://www.dzair-pharma.net/robots.txt | Access: True
+2026-11-11 20:22:57 | INFO     | ------------------------------------------------------------
+2026-11-11 20:22:57 | INFO     | Checking website: ANPP
+2026-11-11 20:22:57 | INFO     | Website URL: https://rcp.anpp.dz/
+2026-11-11 20:22:57 | DEBUG    | Robots URL: https://rcp.anpp.dz/robots.txt
+2026-11-11 20:22:57 | DEBUG    | HTTP response: ANPP | Status: 200
+2026-11-11 20:22:57 | DEBUG    | Robots content length: 24 characters
+2026-11-11 20:22:57 | INFO     | ROBOTS ALLOWED: ANPP
+2026-11-11 20:22:57 | DEBUG    | Crawl delay: None
+2026-11-11 20:22:57 | DEBUG    | Request rate: None
+2026-11-11 20:22:57 | INFO     | RESULT | Name: ANPP | URL: https://rcp.anpp.dz/ | Authority: 1 | Robots: https://rcp.anpp.dz/robots.txt | Access: True
+2026-11-11 20:22:57 | INFO     | ------------------------------------------------------------
+2026-11-11 20:22:57 | INFO     | Checking website: DailyMed
+2026-11-11 20:22:57 | INFO     | Website URL: https://dailymed.nlm.nih.gov/dailymed/
+2026-11-11 20:22:57 | DEBUG    | Robots URL: https://dailymed.nlm.nih.gov/robots.txt
+2026-11-11 20:22:59 | DEBUG    | HTTP response: DailyMed | Status: 200
+2026-11-11 20:22:59 | DEBUG    | Robots content length: 78286 characters
+2026-11-11 20:22:59 | WARNING  | Cannot reliably parse robots.txt: DailyMed
+2026-11-11 20:22:59 | INFO     | RESULT | Name: DailyMed | URL: https://dailymed.nlm.nih.gov/dailymed/ | Authority: 3 | Robots: https://dailymed.nlm.nih.gov/robots.txt | Access: None
+2026-11-11 20:22:59 | INFO     | ------------------------------------------------------------
+2026-11-11 20:22:59 | INFO     | Checking website: EMA
+2026-11-11 20:22:59 | INFO     | Website URL: https://www.ema.europa.eu/en
+2026-11-11 20:22:59 | DEBUG    | Robots URL: https://www.ema.europa.eu/robots.txt
+2026-11-11 20:23:00 | DEBUG    | HTTP response: EMA | Status: 200
+2026-11-11 20:23:00 | DEBUG    | Robots content length: 2082 characters
+2026-11-11 20:23:00 | INFO     | ROBOTS ALLOWED: EMA
+2026-11-11 20:23:00 | DEBUG    | Crawl delay: None
+2026-11-11 20:23:00 | DEBUG    | Request rate: None
+2026-11-11 20:23:00 | INFO     | RESULT | Name: EMA | URL: https://www.ema.europa.eu/en | Authority: 3 | Robots: https://www.ema.europa.eu/robots.txt | Access: True
+2026-11-11 20:23:00 | INFO     | ------------------------------------------------------------
+2026-11-11 20:23:00 | INFO     | Checking website: ANSM
+2026-11-11 20:23:00 | INFO     | Website URL: https://ansm.sante.fr/
+2026-11-11 20:23:00 | DEBUG    | Robots URL: https://ansm.sante.fr/robots.txt
+2026-11-11 20:23:01 | DEBUG    | HTTP response: ANSM | Status: 200
+2026-11-11 20:23:01 | DEBUG    | Robots content length: 23 characters
+2026-11-11 20:23:01 | INFO     | ROBOTS ALLOWED: ANSM
+2026-11-11 20:23:01 | DEBUG    | Crawl delay: None
+2026-11-11 20:23:01 | DEBUG    | Request rate: None
+2026-11-11 20:23:01 | INFO     | RESULT | Name: ANSM | URL: https://ansm.sante.fr/ | Authority: 3 | Robots: https://ansm.sante.fr/robots.txt | Access: True
+2026-11-11 20:23:01 | INFO     | ------------------------------------------------------------
+2026-11-11 20:23:01 | INFO     | Checking website: TGA
+2026-11-11 20:23:01 | INFO     | Website URL: https://www.tga.gov.au/
+2026-11-11 20:23:01 | DEBUG    | Robots URL: https://www.tga.gov.au/robots.txt
+2026-11-11 20:23:16 | ERROR    | Connection timeout: TGA
+2026-11-11 20:23:16 | INFO     | RESULT | Name: TGA | URL: https://www.tga.gov.au/ | Authority: 3 | Robots: https://www.tga.gov.au/robots.txt | Access: None
+2026-11-11 20:23:16 | INFO     | ------------------------------------------------------------
+2026-11-11 20:23:16 | INFO     | Checking website: MHRA
+2026-11-11 20:23:16 | INFO     | Website URL: https://products.mhra.gov.uk/
+2026-11-11 20:23:16 | DEBUG    | Robots URL: https://products.mhra.gov.uk/robots.txt
+2026-11-11 20:23:18 | DEBUG    | HTTP response: MHRA | Status: 200
+2026-11-11 20:23:18 | DEBUG    | Robots content length: 66 characters
+2026-11-11 20:23:18 | INFO     | ROBOTS ALLOWED: MHRA
+2026-11-11 20:23:18 | DEBUG    | Crawl delay: None
+2026-11-11 20:23:18 | DEBUG    | Request rate: None
+2026-11-11 20:23:18 | INFO     | RESULT | Name: MHRA | URL: https://products.mhra.gov.uk/ | Authority: 3 | Robots: https://products.mhra.gov.uk/robots.txt | Access: True
+2026-11-11 20:23:18 | INFO     | Results saved: C:\Users\ThinkPad\OneDrive\Desktop\Projet Pharmeazor\data\metadata\robots_audit.json
+2026-11-11 20:23:18 | INFO     | ============================================================
+2026-11-11 20:23:18 | INFO     | AUDIT SUMMARY
+2026-11-11 20:23:18 | INFO     | ============================================================
+2026-11-11 20:23:18 | INFO     | Total websites: 10
+2026-11-11 20:23:18 | INFO     | Robots allowed: 8
+2026-11-11 20:23:18 | INFO     | Robots denied: 0
+2026-11-11 20:23:18 | INFO     | Unknown status: 2
+2026-11-11 20:23:18 | WARNING  | Review website terms of use before collection.
+2026-11-11 20:23:18 | INFO     | Audit completed successfully
+2026-11-11 20:28:07 | INFO     | ============================================================
+2026-11-11 20:28:07 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 20:28:07 | INFO     | ============================================================
+2026-11-11 20:28:07 | INFO     | ------------------------------------------------------------
+2026-11-11 20:28:07 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 20:28:07 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 20:28:07 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 20:28:11 | DEBUG    | HTTP response: Ministère_industrie_Pharmaceutique | Status: 200
+2026-11-11 20:28:11 | DEBUG    | Robots content length: 169 characters
+2026-11-11 20:28:11 | INFO     | ROBOTS ALLOWED: Ministère_industrie_Pharmaceutique
+2026-11-11 20:28:11 | DEBUG    | Crawl delay: None
+2026-11-11 20:34:36 | INFO     | ============================================================
+2026-11-11 20:34:36 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 20:34:36 | INFO     | ============================================================
+2026-11-11 20:34:36 | INFO     | ------------------------------------------------------------
+2026-11-11 20:34:36 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 20:34:36 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 20:34:36 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 20:34:42 | DEBUG    | HTTP response: Ministère_industrie_Pharmaceutique | Status: 200
+2026-11-11 20:34:42 | DEBUG    | Robots content length: 169 characters
+2026-11-11 20:34:42 | INFO     | ROBOTS ALLOWED: Ministère_industrie_Pharmaceutique
+2026-11-11 20:34:42 | DEBUG    | Crawl delay: None
+2026-11-11 20:34:42 | INFO     | RESULT | Name: Ministère_industrie_Pharmaceutique | URL: https://www.miph.gov.dz/fr/ | Authority: 1 | Robots: https://www.miph.gov.dz/robots.txt | Access: True
+2026-11-11 20:34:42 | INFO     | ------------------------------------------------------------
+2026-11-11 20:34:42 | INFO     | Checking website: PharmNet
+2026-11-11 20:34:42 | INFO     | Website URL: https://pharmnet-dz.com/
+2026-11-11 20:34:42 | DEBUG    | Robots URL: https://pharmnet-dz.com/robots.txt
+2026-11-11 20:34:43 | DEBUG    | HTTP response: PharmNet | Status: 200
+2026-11-11 20:34:43 | DEBUG    | Robots content length: 349 characters
+2026-11-11 20:34:43 | INFO     | ROBOTS ALLOWED: PharmNet
+2026-11-11 20:34:43 | DEBUG    | Crawl delay: None
+2026-11-11 20:34:43 | INFO     | RESULT | Name: PharmNet | URL: https://pharmnet-dz.com/ | Authority: 2 | Robots: https://pharmnet-dz.com/robots.txt | Access: True
+2026-11-11 20:34:43 | INFO     | ------------------------------------------------------------
+2026-11-11 20:34:43 | INFO     | Checking website: MEDAlgérie
+2026-11-11 20:34:43 | INFO     | Website URL: https://www.medal-dz.com/
+2026-11-11 20:34:43 | DEBUG    | Robots URL: https://www.medal-dz.com/robots.txt
+2026-11-11 20:34:58 | ERROR    | Connection timeout: MEDAlgérie
+2026-11-11 20:34:58 | INFO     | RESULT | Name: MEDAlgérie | URL: https://www.medal-dz.com/ | Authority: 2 | Robots: https://www.medal-dz.com/robots.txt | Access: None
+2026-11-11 20:34:58 | INFO     | ------------------------------------------------------------
+2026-11-11 20:34:58 | INFO     | Checking website: dzair-pharma.net
+2026-11-11 20:34:58 | INFO     | Website URL: https://www.dzair-pharma.net/
+2026-11-11 20:34:58 | DEBUG    | Robots URL: https://www.dzair-pharma.net/robots.txt
+2026-11-11 20:34:59 | DEBUG    | HTTP response: dzair-pharma.net | Status: 200
+2026-11-11 20:34:59 | DEBUG    | Robots content length: 995 characters
+2026-11-11 20:34:59 | INFO     | ROBOTS ALLOWED: dzair-pharma.net
+2026-11-11 20:34:59 | DEBUG    | Crawl delay: None
+2026-11-11 20:34:59 | INFO     | RESULT | Name: dzair-pharma.net | URL: https://www.dzair-pharma.net/ | Authority: 2 | Robots: https://www.dzair-pharma.net/robots.txt | Access: True
+2026-11-11 20:34:59 | INFO     | ------------------------------------------------------------
+2026-11-11 20:34:59 | INFO     | Checking website: ANPP
+2026-11-11 20:34:59 | INFO     | Website URL: https://rcp.anpp.dz/
+2026-11-11 20:34:59 | DEBUG    | Robots URL: https://rcp.anpp.dz/robots.txt
+2026-11-11 20:35:01 | DEBUG    | HTTP response: ANPP | Status: 200
+2026-11-11 20:35:01 | DEBUG    | Robots content length: 24 characters
+2026-11-11 20:35:01 | INFO     | ROBOTS ALLOWED: ANPP
+2026-11-11 20:35:01 | DEBUG    | Crawl delay: None
+2026-11-11 20:35:01 | INFO     | RESULT | Name: ANPP | URL: https://rcp.anpp.dz/ | Authority: 1 | Robots: https://rcp.anpp.dz/robots.txt | Access: True
+2026-11-11 20:35:01 | INFO     | ------------------------------------------------------------
+2026-11-11 20:35:01 | INFO     | Checking website: DailyMed
+2026-11-11 20:35:01 | INFO     | Website URL: https://dailymed.nlm.nih.gov/dailymed/
+2026-11-11 20:35:01 | DEBUG    | Robots URL: https://dailymed.nlm.nih.gov/robots.txt
+2026-11-11 20:35:03 | DEBUG    | HTTP response: DailyMed | Status: 200
+2026-11-11 20:35:03 | DEBUG    | Robots content length: 78286 characters
+2026-11-11 20:35:03 | WARNING  | Cannot reliably parse robots.txt: DailyMed
+2026-11-11 20:35:03 | INFO     | RESULT | Name: DailyMed | URL: https://dailymed.nlm.nih.gov/dailymed/ | Authority: 3 | Robots: https://dailymed.nlm.nih.gov/robots.txt | Access: None
+2026-11-11 20:35:03 | INFO     | ------------------------------------------------------------
+2026-11-11 20:35:03 | INFO     | Checking website: EMA
+2026-11-11 20:35:03 | INFO     | Website URL: https://www.ema.europa.eu/en
+2026-11-11 20:35:03 | DEBUG    | Robots URL: https://www.ema.europa.eu/robots.txt
+2026-11-11 20:35:04 | DEBUG    | HTTP response: EMA | Status: 200
+2026-11-11 20:35:04 | DEBUG    | Robots content length: 2082 characters
+2026-11-11 20:35:04 | INFO     | ROBOTS ALLOWED: EMA
+2026-11-11 20:35:04 | DEBUG    | Crawl delay: None
+2026-11-11 20:35:04 | INFO     | RESULT | Name: EMA | URL: https://www.ema.europa.eu/en | Authority: 3 | Robots: https://www.ema.europa.eu/robots.txt | Access: True
+2026-11-11 20:35:04 | INFO     | ------------------------------------------------------------
+2026-11-11 20:35:04 | INFO     | Checking website: ANSM
+2026-11-11 20:35:04 | INFO     | Website URL: https://ansm.sante.fr/
+2026-11-11 20:35:04 | DEBUG    | Robots URL: https://ansm.sante.fr/robots.txt
+2026-11-11 20:35:05 | DEBUG    | HTTP response: ANSM | Status: 200
+2026-11-11 20:35:05 | DEBUG    | Robots content length: 23 characters
+2026-11-11 20:35:05 | INFO     | ROBOTS ALLOWED: ANSM
+2026-11-11 20:35:05 | DEBUG    | Crawl delay: None
+2026-11-11 20:35:05 | INFO     | RESULT | Name: ANSM | URL: https://ansm.sante.fr/ | Authority: 3 | Robots: https://ansm.sante.fr/robots.txt | Access: True
+2026-11-11 20:35:05 | INFO     | ------------------------------------------------------------
+2026-11-11 20:35:05 | INFO     | Checking website: TGA
+2026-11-11 20:35:05 | INFO     | Website URL: https://www.tga.gov.au/
+2026-11-11 20:35:05 | DEBUG    | Robots URL: https://www.tga.gov.au/robots.txt
+2026-11-11 20:35:20 | ERROR    | Connection timeout: TGA
+2026-11-11 20:35:20 | INFO     | RESULT | Name: TGA | URL: https://www.tga.gov.au/ | Authority: 3 | Robots: https://www.tga.gov.au/robots.txt | Access: None
+2026-11-11 20:35:20 | INFO     | ------------------------------------------------------------
+2026-11-11 20:35:20 | INFO     | Checking website: MHRA
+2026-11-11 20:35:20 | INFO     | Website URL: https://products.mhra.gov.uk/
+2026-11-11 20:35:20 | DEBUG    | Robots URL: https://products.mhra.gov.uk/robots.txt
+2026-11-11 20:35:21 | DEBUG    | HTTP response: MHRA | Status: 200
+2026-11-11 20:35:21 | DEBUG    | Robots content length: 66 characters
+2026-11-11 20:35:21 | INFO     | ROBOTS ALLOWED: MHRA
+2026-11-11 20:35:21 | DEBUG    | Crawl delay: None
+2026-11-11 20:35:21 | INFO     | RESULT | Name: MHRA | URL: https://products.mhra.gov.uk/ | Authority: 3 | Robots: https://products.mhra.gov.uk/robots.txt | Access: True
+2026-11-11 20:35:21 | INFO     | Results saved: C:\Users\ThinkPad\OneDrive\Desktop\Projet Pharmeazor\data\metadata\robots_audit.json
+2026-11-11 20:35:21 | INFO     | ============================================================
+2026-11-11 20:35:21 | INFO     | AUDIT SUMMARY
+2026-11-11 20:35:21 | INFO     | ============================================================
+2026-11-11 20:35:21 | INFO     | Total websites: 10
+2026-11-11 20:35:21 | INFO     | Robots allowed: 7
+2026-11-11 20:35:21 | INFO     | Robots denied: 0
+2026-11-11 20:35:21 | INFO     | Unknown status: 3
+2026-11-11 20:35:21 | WARNING  | Review website terms of use before collection.
+2026-11-11 20:35:21 | INFO     | Audit completed successfully
+2026-11-11 21:13:03 | INFO     | ============================================================
+2026-11-11 21:13:03 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 21:13:03 | INFO     | ============================================================
+2026-11-11 21:13:03 | INFO     | ------------------------------------------------------------
+2026-11-11 21:13:03 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 21:13:03 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 21:13:03 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 21:14:17 | INFO     | ============================================================
+2026-11-11 21:14:17 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 21:14:17 | INFO     | ============================================================
+2026-11-11 21:14:17 | INFO     | ------------------------------------------------------------
+2026-11-11 21:14:17 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 21:14:17 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 21:14:17 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 21:14:51 | INFO     | ============================================================
+2026-11-11 21:14:51 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 21:14:51 | INFO     | ============================================================
+2026-11-11 21:14:51 | INFO     | ------------------------------------------------------------
+2026-11-11 21:14:51 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 21:14:51 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 21:14:51 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 21:15:58 | INFO     | ============================================================
+2026-11-11 21:15:58 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 21:15:58 | INFO     | ============================================================
+2026-11-11 21:15:58 | INFO     | ------------------------------------------------------------
+2026-11-11 21:15:58 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 21:15:58 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 21:15:58 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 21:16:02 | DEBUG    | HTTP response: Ministère_industrie_Pharmaceutique | Status: 200
+2026-11-11 21:16:02 | DEBUG    | Final response URL: https://miph.gov.dz/robots.txt
+2026-11-11 21:16:02 | DEBUG    | Robots content length: 169 characters
+2026-11-11 21:16:02 | INFO     | ALLOWED PATHS | Ministère_industrie_Pharmaceutique | []
+2026-11-11 21:16:02 | INFO     | DISALLOWED PATHS | Ministère_industrie_Pharmaceutique | []
+2026-11-11 21:16:02 | INFO     | ROBOTS ALLOWED URL: https://www.miph.gov.dz/fr/
+2026-11-11 21:16:02 | DEBUG    | Crawl delay: None
+2026-11-11 21:16:02 | DEBUG    | Request rate: None
+2026-11-11 21:16:02 | INFO     | RESULT | Name: Ministère_industrie_Pharmaceutique | URL: https://www.miph.gov.dz/fr/ | Authority: 1 | Robots: https://www.miph.gov.dz/robots.txt | URL Allowed: True
+2026-11-11 21:16:02 | INFO     | ------------------------------------------------------------
+2026-11-11 21:16:02 | INFO     | Checking website: PharmNet
+2026-11-11 21:16:02 | INFO     | Website URL: https://pharmnet-dz.com/
+2026-11-11 21:16:02 | DEBUG    | Robots URL: https://pharmnet-dz.com/robots.txt
+2026-11-11 21:16:03 | DEBUG    | HTTP response: PharmNet | Status: 200
+2026-11-11 21:16:03 | DEBUG    | Final response URL: https://pharmnet-dz.com/robots.txt
+2026-11-11 21:16:03 | DEBUG    | Robots content length: 349 characters
+2026-11-11 21:16:03 | INFO     | ALLOWED PATHS | PharmNet | ['/']
+2026-11-11 21:16:03 | INFO     | DISALLOWED PATHS | PharmNet | ['/administration', '/admin-utilisateurs', '/admin-comptes', '/admin-publicites', '/admin-devis-labo', '/mon-profil', '/notifications', '/tableau-de-bord', '/connexion']
+2026-11-11 21:16:03 | INFO     | ROBOTS ALLOWED URL: https://pharmnet-dz.com/
+2026-11-11 21:16:03 | DEBUG    | Crawl delay: None
+2026-11-11 21:16:03 | DEBUG    | Request rate: None
+2026-11-11 21:16:03 | INFO     | RESULT | Name: PharmNet | URL: https://pharmnet-dz.com/ | Authority: 2 | Robots: https://pharmnet-dz.com/robots.txt | URL Allowed: True
+2026-11-11 21:16:03 | INFO     | ------------------------------------------------------------
+2026-11-11 21:16:03 | INFO     | Checking website: MEDAlgérie
+2026-11-11 21:16:03 | INFO     | Website URL: https://www.medal-dz.com/
+2026-11-11 21:16:03 | DEBUG    | Robots URL: https://www.medal-dz.com/robots.txt
+2026-11-11 21:16:04 | DEBUG    | HTTP response: MEDAlgérie | Status: 404
+2026-11-11 21:16:04 | DEBUG    | Final response URL: https://www.medal-dz.com/robots.txt
+2026-11-11 21:16:04 | WARNING  | No robots.txt found: MEDAlgérie
+2026-11-11 21:16:04 | INFO     | RESULT | Name: MEDAlgérie | URL: https://www.medal-dz.com/ | Authority: 2 | Robots: https://www.medal-dz.com/robots.txt | URL Allowed: True
+2026-11-11 21:16:04 | INFO     | ------------------------------------------------------------
+2026-11-11 21:16:04 | INFO     | Checking website: dzair-pharma.net
+2026-11-11 21:16:04 | INFO     | Website URL: https://www.dzair-pharma.net/
+2026-11-11 21:16:04 | DEBUG    | Robots URL: https://www.dzair-pharma.net/robots.txt
+2026-11-11 21:16:05 | DEBUG    | HTTP response: dzair-pharma.net | Status: 200
+2026-11-11 21:16:05 | DEBUG    | Final response URL: https://www.dzair-pharma.net/robots.txt
+2026-11-11 21:16:05 | DEBUG    | Robots content length: 995 characters
+2026-11-11 21:16:05 | INFO     | ALLOWED PATHS | dzair-pharma.net | ['/']
+2026-11-11 21:16:05 | INFO     | DISALLOWED PATHS | dzair-pharma.net | ['/admin', '/api/', '/diff']
+2026-11-11 21:16:05 | INFO     | ROBOTS ALLOWED URL: https://www.dzair-pharma.net/
+2026-11-11 21:16:05 | DEBUG    | Crawl delay: None
+2026-11-11 21:16:05 | DEBUG    | Request rate: None
+2026-11-11 21:16:05 | INFO     | RESULT | Name: dzair-pharma.net | URL: https://www.dzair-pharma.net/ | Authority: 2 | Robots: https://www.dzair-pharma.net/robots.txt | URL Allowed: True
+2026-11-11 21:16:05 | INFO     | ------------------------------------------------------------
+2026-11-11 21:16:05 | INFO     | Checking website: ANPP
+2026-11-11 21:16:05 | INFO     | Website URL: https://rcp.anpp.dz/
+2026-11-11 21:16:05 | DEBUG    | Robots URL: https://rcp.anpp.dz/robots.txt
+2026-11-11 21:16:05 | DEBUG    | HTTP response: ANPP | Status: 200
+2026-11-11 21:16:05 | DEBUG    | Final response URL: https://rcp.anpp.dz/robots.txt
+2026-11-11 21:16:05 | DEBUG    | Robots content length: 24 characters
+2026-11-11 21:16:05 | INFO     | ALLOWED PATHS | ANPP | []
+2026-11-11 21:16:05 | INFO     | DISALLOWED PATHS | ANPP | []
+2026-11-11 21:16:05 | INFO     | ROBOTS ALLOWED URL: https://rcp.anpp.dz/
+2026-11-11 21:16:05 | DEBUG    | Crawl delay: None
+2026-11-11 21:16:05 | DEBUG    | Request rate: None
+2026-11-11 21:16:05 | INFO     | RESULT | Name: ANPP | URL: https://rcp.anpp.dz/ | Authority: 1 | Robots: https://rcp.anpp.dz/robots.txt | URL Allowed: True
+2026-11-11 21:16:05 | INFO     | ------------------------------------------------------------
+2026-11-11 21:16:05 | INFO     | Checking website: DailyMed
+2026-11-11 21:16:05 | INFO     | Website URL: https://dailymed.nlm.nih.gov/dailymed/
+2026-11-11 21:16:05 | DEBUG    | Robots URL: https://dailymed.nlm.nih.gov/robots.txt
+2026-11-11 21:16:07 | DEBUG    | HTTP response: DailyMed | Status: 200
+2026-11-11 21:16:07 | DEBUG    | Final response URL: https://dailymed.nlm.nih.gov/dailymed/index.cfm
+2026-11-11 21:16:07 | DEBUG    | Robots content length: 78286 characters
+2026-11-11 21:16:07 | WARNING  | Cannot reliably parse robots.txt: DailyMed
+2026-11-11 21:16:07 | INFO     | RESULT | Name: DailyMed | URL: https://dailymed.nlm.nih.gov/dailymed/ | Authority: 3 | Robots: https://dailymed.nlm.nih.gov/robots.txt | URL Allowed: None
+2026-11-11 21:16:07 | INFO     | ------------------------------------------------------------
+2026-11-11 21:16:07 | INFO     | Checking website: EMA
+2026-11-11 21:16:07 | INFO     | Website URL: https://www.ema.europa.eu/en
+2026-11-11 21:16:07 | DEBUG    | Robots URL: https://www.ema.europa.eu/robots.txt
+2026-11-11 21:16:08 | DEBUG    | HTTP response: EMA | Status: 200
+2026-11-11 21:16:08 | DEBUG    | Final response URL: https://www.ema.europa.eu/robots.txt
+2026-11-11 21:16:08 | DEBUG    | Robots content length: 2082 characters
+2026-11-11 21:16:08 | INFO     | ALLOWED PATHS | EMA | ['/core/*.css$', '/core/*.css?', '/core/*.js$', '/core/*.js?', '/core/*.gif', '/core/*.jpg', '/core/*.jpeg', '/core/*.png', '/core/*.svg', '/profiles/*.css$', '/profiles/*.css?', '/profiles/*.js$', '/profiles/*.js?', '/profiles/*.gif', '/profiles/*.jpg', '/profiles/*.jpeg', '/profiles/*.png', '/profiles/*.svg', '/*/documents/report/*.json$']
+2026-11-11 21:16:08 | INFO     | DISALLOWED PATHS | EMA | ['/core/', '/profiles/', '/README.md', '/composer/Metapackage/README.txt', '/composer/Plugin/ProjectMessage/README.md', '/composer/Plugin/Scaffold/README.md', '/composer/Plugin/VendorHardening/README.txt', '/composer/Template/README.txt', '/modules/README.txt', '/sites/README.txt', '/themes/README.txt', '/web.config', '/admin/', '/comment/reply/', '/filter/tips', '/node/add/', '/search/', '/user/register', '/user/password', '/user/login', '/user/logout', '/media/oembed', '/*/media/oembed', '*search_api_autocomplete*', '/index.php/admin/', '/index.php/comment/reply/', '/index.php/filter/tips', '/index.php/node/add/', '/index.php/search/', '/index.php/user/password', '/index.php/user/register', '/index.php/user/login', '/index.php/user/logout', '/index.php/media/oembed', '/index.php/*/media/oembed']
+2026-11-11 21:16:08 | INFO     | ROBOTS ALLOWED URL: https://www.ema.europa.eu/en
+2026-11-11 21:16:08 | DEBUG    | Crawl delay: None
+2026-11-11 21:16:08 | DEBUG    | Request rate: None
+2026-11-11 21:16:08 | INFO     | RESULT | Name: EMA | URL: https://www.ema.europa.eu/en | Authority: 3 | Robots: https://www.ema.europa.eu/robots.txt | URL Allowed: True
+2026-11-11 21:16:08 | INFO     | ------------------------------------------------------------
+2026-11-11 21:16:08 | INFO     | Checking website: ANSM
+2026-11-11 21:16:08 | INFO     | Website URL: https://ansm.sante.fr/
+2026-11-11 21:16:08 | DEBUG    | Robots URL: https://ansm.sante.fr/robots.txt
+2026-11-11 21:16:44 | INFO     | ============================================================
+2026-11-11 21:16:44 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 21:16:44 | INFO     | ============================================================
+2026-11-11 21:16:44 | INFO     | ------------------------------------------------------------
+2026-11-11 21:16:44 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 21:16:44 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 21:16:44 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 21:24:01 | INFO     | ============================================================
+2026-11-11 21:24:01 | INFO     | PHARMEAZOR - SOURCE AUDIT STARTED
+2026-11-11 21:24:01 | INFO     | ============================================================
+2026-11-11 21:24:01 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:01 | INFO     | Checking website: Ministère_industrie_Pharmaceutique
+2026-11-11 21:24:01 | INFO     | Website URL: https://www.miph.gov.dz/fr/
+2026-11-11 21:24:01 | DEBUG    | Robots URL: https://www.miph.gov.dz/robots.txt
+2026-11-11 21:24:07 | DEBUG    | HTTP response: Ministère_industrie_Pharmaceutique | Status: 200
+2026-11-11 21:24:07 | DEBUG    | Final response URL: https://miph.gov.dz/robots.txt
+2026-11-11 21:24:07 | DEBUG    | Robots content length: 169 characters
+2026-11-11 21:24:07 | INFO     | ALLOWED PATHS | Ministère_industrie_Pharmaceutique | []
+2026-11-11 21:24:07 | INFO     | DISALLOWED PATHS | Ministère_industrie_Pharmaceutique | []
+2026-11-11 21:24:07 | INFO     | ROBOTS ALLOWED URL: https://www.miph.gov.dz/fr/
+2026-11-11 21:24:07 | DEBUG    | Crawl delay: None
+2026-11-11 21:24:07 | DEBUG    | Request rate: None
+2026-11-11 21:24:07 | INFO     | RESULT | Name: Ministère_industrie_Pharmaceutique | URL: https://www.miph.gov.dz/fr/ | Authority: 1 | Robots: https://www.miph.gov.dz/robots.txt | URL Allowed: True
+2026-11-11 21:24:07 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:07 | INFO     | Checking website: PharmNet
+2026-11-11 21:24:07 | INFO     | Website URL: https://pharmnet-dz.com/
+2026-11-11 21:24:07 | DEBUG    | Robots URL: https://pharmnet-dz.com/robots.txt
+2026-11-11 21:24:08 | DEBUG    | HTTP response: PharmNet | Status: 200
+2026-11-11 21:24:08 | DEBUG    | Final response URL: https://pharmnet-dz.com/robots.txt
+2026-11-11 21:24:08 | DEBUG    | Robots content length: 349 characters
+2026-11-11 21:24:08 | INFO     | ALLOWED PATHS | PharmNet | ['/']
+2026-11-11 21:24:08 | INFO     | DISALLOWED PATHS | PharmNet | ['/administration', '/admin-utilisateurs', '/admin-comptes', '/admin-publicites', '/admin-devis-labo', '/mon-profil', '/notifications', '/tableau-de-bord', '/connexion']
+2026-11-11 21:24:08 | INFO     | ROBOTS ALLOWED URL: https://pharmnet-dz.com/
+2026-11-11 21:24:08 | DEBUG    | Crawl delay: None
+2026-11-11 21:24:08 | DEBUG    | Request rate: None
+2026-11-11 21:24:08 | INFO     | RESULT | Name: PharmNet | URL: https://pharmnet-dz.com/ | Authority: 2 | Robots: https://pharmnet-dz.com/robots.txt | URL Allowed: True
+2026-11-11 21:24:08 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:08 | INFO     | Checking website: MEDAlgérie
+2026-11-11 21:24:08 | INFO     | Website URL: https://www.medal-dz.com/
+2026-11-11 21:24:08 | DEBUG    | Robots URL: https://www.medal-dz.com/robots.txt
+2026-11-11 21:24:09 | DEBUG    | HTTP response: MEDAlgérie | Status: 404
+2026-11-11 21:24:09 | DEBUG    | Final response URL: https://www.medal-dz.com/robots.txt
+2026-11-11 21:24:09 | WARNING  | No robots.txt found: MEDAlgérie
+2026-11-11 21:24:09 | INFO     | RESULT | Name: MEDAlgérie | URL: https://www.medal-dz.com/ | Authority: 2 | Robots: https://www.medal-dz.com/robots.txt | URL Allowed: True
+2026-11-11 21:24:09 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:09 | INFO     | Checking website: dzair-pharma.net
+2026-11-11 21:24:09 | INFO     | Website URL: https://www.dzair-pharma.net/
+2026-11-11 21:24:09 | DEBUG    | Robots URL: https://www.dzair-pharma.net/robots.txt
+2026-11-11 21:24:10 | DEBUG    | HTTP response: dzair-pharma.net | Status: 200
+2026-11-11 21:24:10 | DEBUG    | Final response URL: https://www.dzair-pharma.net/robots.txt
+2026-11-11 21:24:10 | DEBUG    | Robots content length: 995 characters
+2026-11-11 21:24:10 | INFO     | ALLOWED PATHS | dzair-pharma.net | ['/']
+2026-11-11 21:24:10 | INFO     | DISALLOWED PATHS | dzair-pharma.net | ['/admin', '/api/', '/diff']
+2026-11-11 21:24:10 | INFO     | ROBOTS ALLOWED URL: https://www.dzair-pharma.net/
+2026-11-11 21:24:10 | DEBUG    | Crawl delay: None
+2026-11-11 21:24:10 | DEBUG    | Request rate: None
+2026-11-11 21:24:10 | INFO     | RESULT | Name: dzair-pharma.net | URL: https://www.dzair-pharma.net/ | Authority: 2 | Robots: https://www.dzair-pharma.net/robots.txt | URL Allowed: True
+2026-11-11 21:24:10 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:10 | INFO     | Checking website: ANPP
+2026-11-11 21:24:10 | INFO     | Website URL: https://rcp.anpp.dz/
+2026-11-11 21:24:10 | DEBUG    | Robots URL: https://rcp.anpp.dz/robots.txt
+2026-11-11 21:24:11 | DEBUG    | HTTP response: ANPP | Status: 200
+2026-11-11 21:24:11 | DEBUG    | Final response URL: https://rcp.anpp.dz/robots.txt
+2026-11-11 21:24:11 | DEBUG    | Robots content length: 24 characters
+2026-11-11 21:24:11 | INFO     | ALLOWED PATHS | ANPP | []
+2026-11-11 21:24:11 | INFO     | DISALLOWED PATHS | ANPP | []
+2026-11-11 21:24:11 | INFO     | ROBOTS ALLOWED URL: https://rcp.anpp.dz/
+2026-11-11 21:24:11 | DEBUG    | Crawl delay: None
+2026-11-11 21:24:11 | DEBUG    | Request rate: None
+2026-11-11 21:24:11 | INFO     | RESULT | Name: ANPP | URL: https://rcp.anpp.dz/ | Authority: 1 | Robots: https://rcp.anpp.dz/robots.txt | URL Allowed: True
+2026-11-11 21:24:11 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:11 | INFO     | Checking website: DailyMed
+2026-11-11 21:24:11 | INFO     | Website URL: https://dailymed.nlm.nih.gov/dailymed/
+2026-11-11 21:24:11 | DEBUG    | Robots URL: https://dailymed.nlm.nih.gov/robots.txt
+2026-11-11 21:24:14 | DEBUG    | HTTP response: DailyMed | Status: 200
+2026-11-11 21:24:14 | DEBUG    | Final response URL: https://dailymed.nlm.nih.gov/dailymed/index.cfm
+2026-11-11 21:24:14 | DEBUG    | Robots content length: 78286 characters
+2026-11-11 21:24:14 | WARNING  | Cannot reliably parse robots.txt: DailyMed
+2026-11-11 21:24:14 | INFO     | RESULT | Name: DailyMed | URL: https://dailymed.nlm.nih.gov/dailymed/ | Authority: 3 | Robots: https://dailymed.nlm.nih.gov/robots.txt | URL Allowed: None
+2026-11-11 21:24:14 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:14 | INFO     | Checking website: EMA
+2026-11-11 21:24:14 | INFO     | Website URL: https://www.ema.europa.eu/en
+2026-11-11 21:24:14 | DEBUG    | Robots URL: https://www.ema.europa.eu/robots.txt
+2026-11-11 21:24:15 | DEBUG    | HTTP response: EMA | Status: 200
+2026-11-11 21:24:15 | DEBUG    | Final response URL: https://www.ema.europa.eu/robots.txt
+2026-11-11 21:24:15 | DEBUG    | Robots content length: 2082 characters
+2026-11-11 21:24:15 | INFO     | ALLOWED PATHS | EMA | ['/core/*.css$', '/core/*.css?', '/core/*.js$', '/core/*.js?', '/core/*.gif', '/core/*.jpg', '/core/*.jpeg', '/core/*.png', '/core/*.svg', '/profiles/*.css$', '/profiles/*.css?', '/profiles/*.js$', '/profiles/*.js?', '/profiles/*.gif', '/profiles/*.jpg', '/profiles/*.jpeg', '/profiles/*.png', '/profiles/*.svg', '/*/documents/report/*.json$']
+2026-11-11 21:24:15 | INFO     | DISALLOWED PATHS | EMA | ['/core/', '/profiles/', '/README.md', '/composer/Metapackage/README.txt', '/composer/Plugin/ProjectMessage/README.md', '/composer/Plugin/Scaffold/README.md', '/composer/Plugin/VendorHardening/README.txt', '/composer/Template/README.txt', '/modules/README.txt', '/sites/README.txt', '/themes/README.txt', '/web.config', '/admin/', '/comment/reply/', '/filter/tips', '/node/add/', '/search/', '/user/register', '/user/password', '/user/login', '/user/logout', '/media/oembed', '/*/media/oembed', '*search_api_autocomplete*', '/index.php/admin/', '/index.php/comment/reply/', '/index.php/filter/tips', '/index.php/node/add/', '/index.php/search/', '/index.php/user/password', '/index.php/user/register', '/index.php/user/login', '/index.php/user/logout', '/index.php/media/oembed', '/index.php/*/media/oembed']
+2026-11-11 21:24:15 | INFO     | ROBOTS ALLOWED URL: https://www.ema.europa.eu/en
+2026-11-11 21:24:15 | DEBUG    | Crawl delay: None
+2026-11-11 21:24:15 | DEBUG    | Request rate: None
+2026-11-11 21:24:15 | INFO     | RESULT | Name: EMA | URL: https://www.ema.europa.eu/en | Authority: 3 | Robots: https://www.ema.europa.eu/robots.txt | URL Allowed: True
+2026-11-11 21:24:15 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:15 | INFO     | Checking website: ANSM
+2026-11-11 21:24:15 | INFO     | Website URL: https://ansm.sante.fr/
+2026-11-11 21:24:15 | DEBUG    | Robots URL: https://ansm.sante.fr/robots.txt
+2026-11-11 21:24:16 | DEBUG    | HTTP response: ANSM | Status: 200
+2026-11-11 21:24:16 | DEBUG    | Final response URL: https://ansm.sante.fr/robots.txt
+2026-11-11 21:24:16 | DEBUG    | Robots content length: 23 characters
+2026-11-11 21:24:16 | INFO     | ALLOWED PATHS | ANSM | ['/']
+2026-11-11 21:24:16 | INFO     | DISALLOWED PATHS | ANSM | []
+2026-11-11 21:24:16 | INFO     | ROBOTS ALLOWED URL: https://ansm.sante.fr/
+2026-11-11 21:24:16 | DEBUG    | Crawl delay: None
+2026-11-11 21:24:16 | DEBUG    | Request rate: None
+2026-11-11 21:24:16 | INFO     | RESULT | Name: ANSM | URL: https://ansm.sante.fr/ | Authority: 3 | Robots: https://ansm.sante.fr/robots.txt | URL Allowed: True
+2026-11-11 21:24:16 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:16 | INFO     | Checking website: TGA
+2026-11-11 21:24:16 | INFO     | Website URL: https://www.tga.gov.au/
+2026-11-11 21:24:16 | DEBUG    | Robots URL: https://www.tga.gov.au/robots.txt
+2026-11-11 21:24:46 | ERROR    | Connection timeout: TGA
+2026-11-11 21:24:46 | INFO     | RESULT | Name: TGA | URL: https://www.tga.gov.au/ | Authority: 3 | Robots: https://www.tga.gov.au/robots.txt | URL Allowed: None
+2026-11-11 21:24:46 | INFO     | ------------------------------------------------------------
+2026-11-11 21:24:46 | INFO     | Checking website: MHRA
+2026-11-11 21:24:46 | INFO     | Website URL: https://products.mhra.gov.uk/
+2026-11-11 21:24:46 | DEBUG    | Robots URL: https://products.mhra.gov.uk/robots.txt
+2026-11-11 21:24:48 | DEBUG    | HTTP response: MHRA | Status: 200
+2026-11-11 21:24:48 | DEBUG    | Final response URL: https://products.mhra.gov.uk/robots.txt
+2026-11-11 21:24:48 | DEBUG    | Robots content length: 66 characters
+2026-11-11 21:24:48 | INFO     | ALLOWED PATHS | MHRA | []
+2026-11-11 21:24:48 | INFO     | DISALLOWED PATHS | MHRA | []
+2026-11-11 21:24:48 | INFO     | ROBOTS ALLOWED URL: https://products.mhra.gov.uk/
+2026-11-11 21:24:48 | DEBUG    | Crawl delay: None
+2026-11-11 21:24:48 | DEBUG    | Request rate: None
+2026-11-11 21:24:48 | INFO     | RESULT | Name: MHRA | URL: https://products.mhra.gov.uk/ | Authority: 3 | Robots: https://products.mhra.gov.uk/robots.txt | URL Allowed: True
+2026-11-11 21:24:48 | INFO     | Results saved: C:\Users\ThinkPad\OneDrive\Desktop\Projet Pharmeazor\data\metadata\robots_audit.json
+2026-11-11 21:24:48 | INFO     | ============================================================
+2026-11-11 21:24:48 | INFO     | AUDIT SUMMARY
+2026-11-11 21:24:48 | INFO     | ============================================================
+2026-11-11 21:24:48 | INFO     | Total websites: 10
+2026-11-11 21:24:48 | INFO     | Robots allowed: 8
+2026-11-11 21:24:48 | INFO     | Robots denied: 0
+2026-11-11 21:24:48 | INFO     | Unknown status: 2
+2026-11-11 21:24:48 | WARNING  | Review website terms of use before collection.
+2026-11-11 21:24:48 | INFO     | Audit completed successfully

@@ -1,0 +1,328 @@
+"""Découper la colonne DCI en substance de base, forme saline et associations.
+
+C'est l'**Entity Linking** du chapitre 01 : rattacher chaque désignation à la
+bonne entité. Le registre écrit une même substance de plusieurs façons, et
+mélange dans un seul champ trois informations différentes :
+
+* la **substance de base** — ce que le pharmacien appelle le médicament
+* la **forme saline** — trihydratée, bésilate, chlorhydrate : la même substance
+  sous une forme chimique précise, sans effet sur l'identité du produit
+* les **associations** — d'autres substances actives dans le même comprimé
+
+Les confondre serait grave. Rapprocher ``PARACETAMOL`` et
+``PARACETAMOL/CODEINE`` ferait disparaître un opiacé d'une recherche
+d'équivalents.
+
+Mesure sur les 1 414 DCI distinctes du registre d'août 2026 :
+
+===========================  =====  ====
+motif                        cas    part
+===========================  =====  ====
+``/`` (association ou sel)     273   19 %
+``EXPRIME EN``                 181   13 %
+parenthèses                    121    9 %
+``SOUS FORME``                  73    5 %
+``ET``                          13    1 %
+===========================  =====  ====
+
+Le reste est une substance simple, écrite telle quelle.
+
+Règle de prudence : ce module **ne devine pas**. Une écriture qu'il ne sait pas
+analyser avec certitude ressort marquée ``incertain``, avec son texte d'origine
+intact, pour revue humaine.
+"""
+
+from __future__ import annotations
+
+import re
+import unicodedata
+from dataclasses import dataclass, field
+from functools import lru_cache
+
+__all__ = ["Substance", "parse_inn", "normaliser_substance", "concerne_molecule",
+           "corriger_fautes"]
+
+# "X <sel> EXPRIME EN Y" / "EXPRIMEE EN" / "EXPRIMES EN" : Y est la base.
+_EXPRIME_EN = re.compile(r"\bEXPRIM\w*\s+EN\s+(?P<base>.+)$", re.I)
+
+# "X SOUS FORME DE Y" : X est la base, Y le sel. Les parentheses de
+# "GENTAMICINE (SOUS FORME DE SULFATE)" sont avalees, sinon la cle les garde.
+_SOUS_FORME = re.compile(
+    r"^(?P<base>.+?)\s*/?\s*\(?\s*\bSOUS\s+FORME\s+(?:DE\s+)?(?P<sel>[^)]+)\)?\s*$",
+    re.I,
+)
+
+# "X (Y)" : Y est la base, SAUF si la parenthese s'ouvre sur "OU" (synonyme).
+_PARENTHESE = re.compile(r"^(?P<avant>[^(]+?)\s*\((?P<dedans>[^)]+)\)\s*$")
+
+# Mots qui designent une forme saline ou un hydrate, jamais une substance.
+_FORMES_SALINES = (
+    "TRIHYDRATE",
+    "TRIHYDRATEE",
+    "DIHYDRATE",
+    "MONOHYDRATE",
+    "ANHYDRE",
+    "BESILATE",
+    "BESYLATE",
+    "CHLORHYDRATE",
+    "SULFATE",
+    "MALEATE",
+    "TARTRATE",
+    "CITRATE",
+    "ACETATE",
+    "PHOSPHATE",
+    "SODIQUE",
+    "POTASSIQUE",
+    "CALCIQUE",
+    "MAGNESIQUE",
+    "HEMIHYDRATE",
+    "FUMARATE",
+    "SUCCINATE",
+    "MESILATE",
+    "BROMHYDRATE",
+    "NITRATE",
+    "LACTATE",
+    "GLUCONATE",
+    "STEARATE",
+    "ARGININE",
+    # Ecritures anglaises du registre. Le ministere alterne les deux langues :
+    # DICLOFENAC POTASSIQUE et DICLOFENAC POTASSIUM designent le meme sel.
+    # Sans ces trois mots, 7 produits sortaient avec une forme saline vide,
+    # donc indiscernables d'un produit sans sel precise.
+    "POTASSIUM",
+    "SODIUM",
+    "HYDROCHLORIDE",
+)
+
+
+def _sans_accents(texte: str) -> str:
+    decompose = unicodedata.normalize("NFKD", texte)
+    return "".join(c for c in decompose if not unicodedata.combining(c))
+
+
+def normaliser_substance(nom: str | None) -> str:
+    """Forme canonique d'un nom de substance, pour comparer deux écritures.
+
+    Majuscules, sans accents, sans astérisques de bas de page, espaces réduits.
+    Ne retire aucun mot : c'est une normalisation de **forme**, pas de sens.
+
+    >>> normaliser_substance("  Amoxicilline**  trihydratée ")
+    'AMOXICILLINE TRIHYDRATEE'
+    """
+    texte = _sans_accents(str(nom or "")).upper()
+    texte = texte.replace("*", " ")
+    texte = re.sub(r"[^\w\s/()-]", " ", texte)
+    return " ".join(texte.split())
+
+
+@dataclass(frozen=True)
+class Substance:
+    """Une DCI décomposée."""
+
+    raw: str
+    base: str = ""
+    sel: str = ""
+    associes: tuple[str, ...] = field(default=())
+    incertain: bool = False
+    motif: str = ""  # pourquoi incertain, ou quelle règle a servi
+
+    @property
+    def est_association(self) -> bool:
+        return bool(self.associes)
+
+    @property
+    def toutes_substances(self) -> tuple[str, ...]:
+        """Base et associées, dans l'ordre où elles apparaissent."""
+        return ((self.base,) if self.base else ()) + self.associes
+
+    def cle(self) -> str:
+        """Clé de regroupement : les substances, pas la forme saline.
+
+        Deux produits de même base et mêmes associées sont la même substance,
+        que l'un soit trihydraté et l'autre non.
+        """
+        return "+".join(normaliser_substance(s) for s in self.toutes_substances)
+
+    def __str__(self) -> str:
+        return self.cle() or self.raw
+
+
+def _extraire_base_et_sel(morceau: str) -> tuple[str, str, bool, str]:
+    """Analyser un morceau : renvoie (base, sel, incertain, motif)."""
+    texte = " ".join(morceau.replace("*", " ").split())
+    if not texte:
+        return "", "", False, ""
+
+    # "<sel> EXPRIME EN <base>" : la base est explicitement nommee apres.
+    m = _EXPRIME_EN.search(texte)
+    if m:
+        base = m.group("base").strip()
+        sel = texte[: m.start()].strip()
+        # Le sel contient souvent la base : "AMOXICILLINE TRIHYDRATEE".
+        sel_mots = [w for w in sel.split() if _sans_accents(w).upper() in _FORMES_SALINES]
+        return base, " ".join(sel_mots), False, "exprime_en"
+
+    # "<base> SOUS FORME DE <sel>"
+    m = _SOUS_FORME.match(texte)
+    if m:
+        return m.group("base").strip(), m.group("sel").strip(), False, "sous_forme"
+
+    # "<avant> (<dedans>)"
+    m = _PARENTHESE.match(texte)
+    if m:
+        dedans = m.group("dedans").strip()
+        avant = m.group("avant").strip()
+        # "(OU autre nom)" est un synonyme, pas la base : on ne tranche pas.
+        if re.match(r"^OU\b", dedans, re.I):
+            return avant, "", True, "synonyme_entre_parentheses"
+        sel_mots = [w for w in avant.split() if _sans_accents(w).upper() in _FORMES_SALINES]
+        return dedans, " ".join(sel_mots), False, "parenthese"
+
+    # Substance simple, eventuellement suivie d'une forme saline.
+    mots = texte.split()
+    sel_mots = [w for w in mots if _sans_accents(w).upper() in _FORMES_SALINES]
+    if sel_mots:
+        base = " ".join(w for w in mots if w not in sel_mots)
+        return _retirer_de(base), " ".join(sel_mots), False, "sel_accole"
+
+    return texte, "", False, "simple"
+
+
+def _retirer_de(base: str) -> str:
+    """Retirer le « DE » laisse par une ecriture sel-d'abord.
+
+    Le registre ecrit tantot « NEFOPAM CHLORHYDRATE », tantot « CHLORHYDRATE
+    DE NEFOPAM ». Dans le second cas, le sel est bien reconnu, mais la base
+    garde son « DE » : la cle devient « DE NEFOPAM », distincte de « NEFOPAM ».
+    Deux ecritures de la meme substance tombent alors dans deux groupes.
+
+    Mesure du 18/11/2026 sur le classeur d'aout : 38 DCI sur 1 414 sont
+    ecrites sel-d'abord, dont le nefopam, seule molecule de notre perimetre
+    concernee.
+    """
+    return re.sub(r"^(?:DE\s+|D\s*'\s*)", "", base.strip(), flags=re.I).strip()
+
+
+@lru_cache(maxsize=4096)
+def parse_inn(valeur: str | None) -> Substance:
+    """Découper une DCI en base, forme saline et substances associées.
+
+    Les associations sont séparées par ``/``. Un morceau qui commence par
+    ``SOUS FORME`` n'est pas une association mais la précision saline du
+    morceau précédent.
+
+    >>> parse_inn("PARACETAMOL").base
+    'PARACETAMOL'
+    >>> parse_inn("AMLODIPINE BESILATE EXPRIME EN AMLODIPINE").base
+    'AMLODIPINE'
+    >>> parse_inn("PARACETAMOL/CAFEINE").associes
+    ('CAFEINE',)
+    >>> parse_inn("ALFACALCIDOL (OU 1 ALPHA-HYDROXY)").incertain
+    True
+    """
+    brut = str(valeur or "").strip()
+    if not brut:
+        return Substance(raw="")
+
+    # " ET " relie deux presentations distinctes dans une seule cellule
+    # (comprime de jour / comprime de nuit) : on ne sait pas les separer
+    # proprement, donc on le signale au lieu de choisir.
+    if re.search(r"\sET\s", brut, re.I) and "/" in brut:
+        return Substance(raw=brut, base=brut, incertain=True, motif="deux_presentations")
+
+    morceaux = [m.strip() for m in brut.split("/") if m.strip()]
+    bases: list[str] = []
+    sels: list[str] = []
+    incertain = False
+    motifs: list[str] = []
+
+    for i, morceau in enumerate(morceaux):
+        # "SOUS FORME ..." seul : precision du morceau precedent, pas une association.
+        if re.match(r"^\s*SOUS\s+FORME\b", morceau, re.I) and bases:
+            sels.append(re.sub(r"^\s*SOUS\s+FORME\s+(?:DE\s+)?", "", morceau, flags=re.I).strip())
+            continue
+        base, sel, inc, motif = _extraire_base_et_sel(morceau)
+        if base:
+            bases.append(base)
+        if sel and i == 0:
+            sels.append(sel)
+        incertain = incertain or inc
+        motifs.append(motif)
+
+    if not bases:
+        return Substance(raw=brut, base=brut, incertain=True, motif="non_analysable")
+
+    return Substance(
+        raw=brut,
+        base=bases[0],
+        sel=" ".join(dict.fromkeys(s for s in sels if s)),
+        associes=tuple(bases[1:]),
+        incertain=incertain,
+        motif="+".join(dict.fromkeys(motifs)),
+    )
+
+
+# Fautes de frappe du registre, dans la colonne DCI.
+#
+# Elles sont rares mais elles coutent cher : une DCI mal orthographiee ne
+# correspond a aucune molecule cherchee, le produit sort du perimetre, et
+# RIEN ne le signale. Mesure du 19/11/2026 sur le classeur d'aout, 13
+# produits enregistres en Algerie manquaient au catalogue pour cette seule
+# raison.
+#
+# Chaque correction est verifiee contre le nom de marque du produit, qui ne
+# laisse aucun doute :
+#
+#   ACETYLSALICYTIQUE   ASPEGIC, ASPEGIC ENFANTS, ASPEGIC NOURRISSON   3
+#   AMPLODIPINE         EXCAN et UNISIA, associations avec candesartan  6
+#   CIOROFLOXACINE      l'un des produits s'appelle CIPROFLOXACINE RAZES 4
+#
+# Ce ne sont PAS des substances differentes : il n'existe ni amplodipine ni
+# cioroxacine. On corrige donc la LECTURE, jamais le texte d'origine, qui
+# reste tel que le ministere l'a ecrit dans `inn`.
+#
+# Decouverte en confrontant le catalogue a la collecte dzair-pharma de
+# l'equipe : ces produits y figuraient, pas chez nous.
+_FAUTES_DE_DCI: dict[str, str] = {
+    "ACETYLSALICYTIQUE": "ACETYLSALICYLIQUE",
+    "AMPLODIPINE": "AMLODIPINE",
+    "CIOROFLOXACINE": "CIPROFLOXACINE",
+}
+
+
+def corriger_fautes(texte: str) -> str:
+    """Corriger les fautes de frappe connues du registre dans une DCI.
+
+    N'agit que sur les trois fautes relevees et verifiees. Une faute
+    inconnue n'est pas devinee : le produit ressortira hors perimetre, ce
+    qui est le comportement sur, et se verra au prochain recoupement.
+    """
+    for faute, correction in _FAUTES_DE_DCI.items():
+        if faute in texte:
+            texte = texte.replace(faute, correction)
+    return texte
+
+
+def concerne_molecule(inn: str | None, cibles: tuple[str, ...]) -> bool:
+    """La DCI releve-t-elle d'une des molecules visees ?
+
+    La regle est ecrite ici, une seule fois, parce que trois programmes en
+    avaient besoin et que chacun l'avait reecrite a sa facon -- avec un simple
+    ``startswith`` qui laissait passer les ecritures sel-d'abord.
+
+    Le test porte d'abord sur le texte tel que le ministere l'ecrit, puis sur
+    la BASE lue par :func:`parse_inn` :
+
+        NEFOPAM CHLORHYDRATE      commence par NEFOPAM   -> retenu
+        CHLORHYDRATE DE NEFOPAM   commence par CHLOR...  -> retenu par la base
+
+    >>> concerne_molecule("CHLORHYDRATE DE NEFOPAM", ("NEFOPAM",))
+    True
+    >>> concerne_molecule("DEXAMETHASONE", ("NEFOPAM",))
+    False
+    """
+    texte = corriger_fautes((inn or "").upper())
+    if any(texte.startswith(c) for c in cibles):
+        return True
+    base = corriger_fautes(parse_inn(texte).base.upper())
+    return any(base.startswith(c) for c in cibles)

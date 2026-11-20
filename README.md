@@ -4,10 +4,12 @@
 
 **Base de connaissances médicamenteuse et assistant à preuves pour le pharmacien d'officine.**
 
-[![CI](https://github.com/KettabAya/pharmeazor/actions/workflows/ci.yml/badge.svg)](https://github.com/KettabAya/pharmeazor/actions/workflows/ci.yml)
+[![CI](https://github.com/KettabAya/pharmeazor-innovix/actions/workflows/ci.yml/badge.svg)](https://github.com/KettabAya/pharmeazor-innovix/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-2DE2F0)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/tests-102%20passing-34D399)](tests/)
+[![Tests](https://img.shields.io/badge/tests-209%20passing-34D399)](tests/)
 [![License](https://img.shields.io/badge/license-MIT-8B7BF7)](LICENSE)
+
+**Groupe INNOVIX**
 
 *Projet 2 — Module RCR, M1 IA · Université Constantine 2 Abdelhamid Mehri · Faculté NTIC · Département IFA*
 
@@ -61,16 +63,28 @@ Le chatbot n'est que la dernière brique. L'essentiel du travail est **en amont*
 ## Démarrage
 
 ```bash
-git clone https://github.com/KettabAya/pharmeazor.git
+git clone https://github.com/KettabAya/pharmeazor-innovix.git
 cd pharmeazor
 python -m venv .venv && source .venv/bin/activate   # Windows : .venv\Scripts\activate
-pip install -e ".[dev]"
+pip install -r requirements.lock.txt
+pip install -e . --no-deps
 ```
 
-Configurer sa clé — **chaque membre crée la sienne**, gratuitement, dans Google AI Studio :
+> Première fois avec git ? [Le guide en quatre commandes](docs/GIT-POUR-DEBUTER.md).
+
+
+> **Toute l'équipe installe depuis `requirements.lock.txt`**, qui fige les
+> versions exactes. `requirements.txt` dit *quelles* bibliothèques ; le fichier
+> `.lock` dit *quelle version*. Sans lui, deux personnes qui installent à une
+> semaine d'intervalle n'exécutent pas le même code, et un bug chez l'un
+> n'existe pas chez l'autre. Après tout ajout de dépendance, régénérez-le et
+> commitez-le.
+
+Configurer sa clé — **chaque membre crée la sienne**, gratuitement, sur
+[console.groq.com/keys](https://console.groq.com/keys) :
 
 ```bash
-cp .env.example .env    # puis remplir GOOGLE_API_KEY et PHARMEAZOR_MODEL
+cp .env.example .env    # puis remplir GROQ_API_KEY
 ```
 
 `.env` est ignoré par git. Une clé ne part **jamais** dans le dépôt ni dans le rapport.
@@ -101,6 +115,9 @@ L'interface est servie sur <http://localhost:8000>. `make help` liste toutes les
 | Recherche BM25 (référence) | `retrieve/bm25.py` | ✅ implémenté, testé |
 | Lecture des dosages et conditionnements | `normalize/dosage.py` | ✅ implémenté, testé |
 | Catalogue, dictionnaire des noms, équivalents | `normalize/catalogue.py` | ✅ implémenté, testé |
+| Lecture des classeurs de la nomenclature | `collect/nomenclature.py` | ✅ implémenté, testé |
+| Lecture des exports dzair-pharma | `collect/dzair.py` | ✅ implémenté, testé |
+| Comparaison des deux sources | `reconcile/crosscheck.py` | ✅ implémenté, testé |
 | Registre des sources + conformité | `collect/registry.py` | ✅ implémenté |
 | Collecte effective | `scripts/collect.py` | 🚧 semaine 1–2 |
 | Lecture PDF / OCR | `extract/` | 🚧 semaine 2 |
@@ -164,7 +181,7 @@ pharmeazor/
 │   └── reference/            # registre des sources, liste des médicaments
 ├── eval/questions.yaml       # jeu de test annoté, rejouable d'un clic
 ├── scripts/                  # collect · build_index · run_eval
-├── tests/                    # 102 tests
+├── tests/                    # 132 tests
 └── docs/                     # architecture, sources, évaluation
 ```
 
@@ -200,7 +217,11 @@ Le système aide à **retrouver et contrôler** l'information. La décision rest
 
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — les choix techniques et pourquoi
 - [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) — registre des sources, `robots.txt` et CGU consignés
+- [`docs/RAPPORT-SEMAINE-1.md`](docs/RAPPORT-SEMAINE-1.md) — **le rapport complet** : ce qui a été trouvé, comment c'est traité, les chiffres
+- [`docs/MISSION.md`](docs/MISSION.md) — la mission, la question-test et le protocole du test du modèle seul
+- [`docs/JOURNAL-TRAITEMENT.md`](docs/JOURNAL-TRAITEMENT.md) — ce que l'examen des sources a révélé, avec la mesure et la décision
 - [`docs/EVALUATION.md`](docs/EVALUATION.md) — protocole et résultats chiffrés
+- [`docs/SEMAINE-2.md`](docs/SEMAINE-2.md) — le plan de la semaine 2 : recherche par le sens
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — conventions de branche, de commit et de revue
 
 ---

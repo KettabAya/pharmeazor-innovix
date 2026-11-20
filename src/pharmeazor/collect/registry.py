@@ -22,9 +22,9 @@ __all__ = ["SourceAccess", "SourceSpec", "SourceRegistry", "assert_collectable"]
 class SourceAccess:
     """How a source may legitimately be gathered."""
 
-    AUTOMATED = "automated"   # crawling allowed, with delays
-    MANUAL = "manual"         # robots.txt or ToS forbid automation
-    FORBIDDEN = "forbidden"   # not to be used at all
+    AUTOMATED = "automated"  # crawling allowed, with delays
+    MANUAL = "manual"  # robots.txt or ToS forbid automation
+    FORBIDDEN = "forbidden"  # not to be used at all
 
 
 class CollectionNotPermitted(RuntimeError):
@@ -53,7 +53,8 @@ class SourceSpec:
     def describe(self) -> str:
         checked = (
             f"robots.txt lu le {self.robots_checked_on:%d/%m/%Y}"
-            if self.robots_checked_on else "robots.txt NON VÉRIFIÉ"
+            if self.robots_checked_on
+            else "robots.txt NON VÉRIFIÉ"
         )
         return f"{self.name} [{self.authority.label_fr}] — accès {self.access}, {checked}"
 
@@ -107,9 +108,7 @@ class SourceRegistry:
                 base_url=entry.get("base_url", ""),
                 authority=Authority[entry["authority"]],
                 access=entry.get("access", SourceAccess.MANUAL),
-                robots_checked_on=(
-                    _dt.date.fromisoformat(checked) if checked else None
-                ),
+                robots_checked_on=(_dt.date.fromisoformat(checked) if checked else None),
                 robots_note=entry.get("robots_note", ""),
                 terms_note=entry.get("terms_note", ""),
                 country=entry.get("country", "DZ"),

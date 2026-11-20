@@ -14,6 +14,39 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 
+# Les molecules du projet, ecrites une seule fois.
+#
+# Elles viennent de config/Projet2_Liste_40_medicaments.xlsx, la liste donnee
+# par l'enseignant, versee au depot le 19/11/2026. Elle compte 40 entrees.
+#
+# Le cotrimoxazole y figure comme une seule entree ; le ministere l'enregistre
+# sous « SULFAMETHOXAZOLE/TRIMETHOPRIME », d'ou deux termes ici. La liste
+# ci-dessous en compte donc 41.
+#
+# Corrige le 19/11/2026 : le perimetre s'etait arrete a 38 termes, parce qu'il
+# avait ete deduit des dossiers d'une archive de l'equipe au lieu d'etre lu
+# dans la liste officielle. Deux molecules manquaient :
+#
+#     methyldopa   3 produits dans la feuille courante du classeur d'aout
+#     nifedipine   0 dans la feuille courante, 29 dans les retraits --
+#                  la molecule n'est plus enregistree en Algerie, et c'est
+#                  une information en soi
+#
+# Cette liste etait aussi recopiee a la main sur la ligne de commande a chaque
+# execution : une faute de frappe suffisait a perdre une molecule sans que
+# rien ne le signale.
+MOLECULES_PROJET: tuple[str, ...] = (
+    "PARACETAMOL", "AMOXICILLINE", "AMLODIPINE", "IBUPROFENE", "DICLOFENAC",
+    "KETOPROFENE", "NAPROXENE", "PIROXICAM", "MELOXICAM", "CELECOXIB",
+    "ACIDE ACETYLSALICYLIQUE", "AZITHROMYCINE", "CLARITHROMYCINE",
+    "CIPROFLOXACINE", "LEVOFLOXACINE", "DOXYCYCLINE", "GENTAMICINE",
+    "CLINDAMYCINE", "CEFTRIAXONE", "CEFIXIME", "CEFUROXIME", "METRONIDAZOLE",
+    "SULFAMETHOXAZOLE", "TRIMETHOPRIME", "HYDROCHLOROTHIAZIDE", "INDAPAMIDE",
+    "SPIRONOLACTONE", "VALSARTAN", "LOSARTAN", "RAMIPRIL", "PERINDOPRIL",
+    "ENALAPRIL", "ATENOLOL", "BISOPROLOL", "NEBIVOLOL", "TRAMADOL",
+    "NEFOPAM", "CODEINE", "NIFEDIPINE", "METHYLDOPA",
+)
+
 
 def _load_dotenv(path: Path) -> None:
     """Minimal .env reader so the project runs without extra dependencies."""
@@ -35,8 +68,8 @@ class Settings:
     """All tunables in one place, so experiments stay reproducible."""
 
     # --- model (imposed by the module; same for every team) -----------------
-    model_name: str = field(default_factory=lambda: os.getenv("PHARMEAZOR_MODEL", ""))
-    api_key: str = field(default_factory=lambda: os.getenv("GOOGLE_API_KEY", ""))
+    model_name: str = field(default_factory=lambda: os.getenv("PHARMEAZOR_MODEL", "openai/gpt-oss-120b"))
+    api_key: str = field(default_factory=lambda: os.getenv("GROQ_API_KEY", ""))
 
     # --- paths --------------------------------------------------------------
     raw_dir: Path = DATA / "raw"
@@ -59,8 +92,8 @@ class Settings:
     def require_api_key(self) -> str:
         if not self.api_key:
             raise RuntimeError(
-                "GOOGLE_API_KEY is not set. Copy .env.example to .env and add "
-                "your own free key from Google AI Studio. Never commit it."
+                "GROQ_API_KEY is not set. Copy .env.example to .env and add "
+                "your own free key from console.groq.com. Never commit it."
             )
         return self.api_key
 
