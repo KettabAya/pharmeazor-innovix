@@ -13,8 +13,25 @@ beautifulsoup4>=4.12
 pymupdf>=1.24
 pdfplumber>=0.11
 
+# Markdown -> HTML, pour assembler le dossier en PDF
+# (scripts/faire_pdf_complet.py). Il etait utilise sans etre declare :
+# une installation neuve plantait sur un import.
+markdown>=3.5
+
 # Name matching
 rapidfuzz>=3.9
+
+# Reference BM25, pour la comparaison de la semaine 2.
+#
+# Le projet a sa PROPRE implementation, dans retrieve/bm25.py, ecrite pour
+# que chaque etape du calcul soit lisible et testable. Cette bibliotheque-ci
+# est une implementation de reference, largement utilisee : elle sert de
+# temoin. Si nos scores s'ecartent des siens sur le meme corpus, c'est notre
+# code qui a un probleme, pas le contraire.
+#
+# Ajoutee le 19/11/2026 : elle manquait, et un membre de l'equipe ne pouvait
+# pas installer l'environnement complet.
+rank-bm25>=0.2.2
 
 # Modele de langage impose (Groq, API compatible OpenAI)
 openai>=1.40
