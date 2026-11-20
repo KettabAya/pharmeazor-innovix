@@ -8,9 +8,7 @@ from pharmeazor.normalize.catalogue import Catalogue, form_family
 
 CSV = Path(__file__).resolve().parents[1] / "data" / "reference" / "drugs_semaine1.csv"
 
-pytestmark = pytest.mark.skipif(
-    not CSV.exists(), reason="drugs_semaine1.csv not extracted yet"
-)
+pytestmark = pytest.mark.skipif(not CSV.exists(), reason="drugs_semaine1.csv not extracted yet")
 
 
 @pytest.fixture(scope="module")
@@ -59,17 +57,20 @@ class TestLaVoiePrimeSurLaForme:
     Des gouttes pour les yeux proposees comme remplacant d'une perfusion.
     """
 
-    @pytest.mark.parametrize("forme,famille", [
-        ("SOLUTION INJECTABLE IM/IV", "INJECTABLE"),
-        ("SOLUTION INJECTABLE", "INJECTABLE"),
-        ("POUDRE POUR SOLUTION INJECTABLE IV", "INJECTABLE"),
-        ("SOLUTION POUR PERFUSION", "PERFUSION"),
-        ("COLLYRE EN SOLUTION", "COLLYRE"),
-        ("GOUTTES OCULAIRES ET AURICULAIRES EN SOLUTION", "OCULAIRE"),
-        ("SOL AURICULAIRE STERILE", "AURICULAIRE"),
-        ("OVULE VAGINALE", "VAGINAL"),
-        ("COMPRIME VAGINAL", "VAGINAL"),
-    ])
+    @pytest.mark.parametrize(
+        "forme,famille",
+        [
+            ("SOLUTION INJECTABLE IM/IV", "INJECTABLE"),
+            ("SOLUTION INJECTABLE", "INJECTABLE"),
+            ("POUDRE POUR SOLUTION INJECTABLE IV", "INJECTABLE"),
+            ("SOLUTION POUR PERFUSION", "PERFUSION"),
+            ("COLLYRE EN SOLUTION", "COLLYRE"),
+            ("GOUTTES OCULAIRES ET AURICULAIRES EN SOLUTION", "OCULAIRE"),
+            ("SOL AURICULAIRE STERILE", "AURICULAIRE"),
+            ("OVULE VAGINALE", "VAGINAL"),
+            ("COMPRIME VAGINAL", "VAGINAL"),
+        ],
+    )
     def test_une_voie_citee_l_emporte(self, forme, famille):
         assert form_family(forme) == famille
 
@@ -115,14 +116,17 @@ class TestLoading:
         assert classes
         assert "" not in classes
         assert classes <= {
-            "antalgique", "ains", "antibiotique",
-            "antihypertenseur", "diuretique", "betabloquant",
+            "antalgique",
+            "ains",
+            "antibiotique",
+            "antihypertenseur",
+            "diuretique",
+            "betabloquant",
         }
 
     def test_le_paracetamol_n_est_pas_range_avec_les_ains(self, catalogue):
         """Defaut corrige le 19/11/2026 : il l'etait depuis la semaine 1."""
-        paracetamols = [p for p in catalogue.products
-                        if p.inn.upper().startswith("PARACETAMOL")]
+        paracetamols = [p for p in catalogue.products if p.inn.upper().startswith("PARACETAMOL")]
         assert paracetamols, "le jeu de test ne contient aucun paracetamol"
         assert {p.therapeutic_class for p in paracetamols} == {"antalgique"}
 

@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from pharmeazor.retrieve.bm25 import BM25Index  # noqa: E402
-from pharmeazor.retrieve.passages import chemin_corpus, construire_corpus  # noqa: E402
+from pharmeazor.retrieve.build_passages import chemin_corpus, construire_corpus  # noqa: E402
 
 # Questions de controle. Elles ne remplacent pas eval/questions.yaml : elles
 # servent a voir, a chaque execution, si la recherche par mots-cles se comporte

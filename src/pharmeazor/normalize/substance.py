@@ -57,16 +57,41 @@ _PARENTHESE = re.compile(r"^(?P<avant>[^(]+?)\s*\((?P<dedans>[^)]+)\)\s*$")
 
 # Mots qui designent une forme saline ou un hydrate, jamais une substance.
 _FORMES_SALINES = (
-    "TRIHYDRATE", "TRIHYDRATEE", "DIHYDRATE", "MONOHYDRATE", "ANHYDRE",
-    "BESILATE", "BESYLATE", "CHLORHYDRATE", "SULFATE", "MALEATE", "TARTRATE",
-    "CITRATE", "ACETATE", "PHOSPHATE", "SODIQUE", "POTASSIQUE", "CALCIQUE",
-    "MAGNESIQUE", "HEMIHYDRATE", "FUMARATE", "SUCCINATE", "MESILATE",
-    "BROMHYDRATE", "NITRATE", "LACTATE", "GLUCONATE", "STEARATE", "ARGININE",
+    "TRIHYDRATE",
+    "TRIHYDRATEE",
+    "DIHYDRATE",
+    "MONOHYDRATE",
+    "ANHYDRE",
+    "BESILATE",
+    "BESYLATE",
+    "CHLORHYDRATE",
+    "SULFATE",
+    "MALEATE",
+    "TARTRATE",
+    "CITRATE",
+    "ACETATE",
+    "PHOSPHATE",
+    "SODIQUE",
+    "POTASSIQUE",
+    "CALCIQUE",
+    "MAGNESIQUE",
+    "HEMIHYDRATE",
+    "FUMARATE",
+    "SUCCINATE",
+    "MESILATE",
+    "BROMHYDRATE",
+    "NITRATE",
+    "LACTATE",
+    "GLUCONATE",
+    "STEARATE",
+    "ARGININE",
     # Ecritures anglaises du registre. Le ministere alterne les deux langues :
     # DICLOFENAC POTASSIQUE et DICLOFENAC POTASSIUM designent le meme sel.
     # Sans ces trois mots, 7 produits sortaient avec une forme saline vide,
     # donc indiscernables d'un produit sans sel precise.
-    "POTASSIUM", "SODIUM", "HYDROCHLORIDE",
+    "POTASSIUM",
+    "SODIUM",
+    "HYDROCHLORIDE",
 )
 
 
@@ -99,7 +124,7 @@ class Substance:
     sel: str = ""
     associes: tuple[str, ...] = field(default=())
     incertain: bool = False
-    motif: str = ""          # pourquoi incertain, ou quelle règle a servi
+    motif: str = ""  # pourquoi incertain, ou quelle règle a servi
 
     @property
     def est_association(self) -> bool:
@@ -134,8 +159,7 @@ def _extraire_base_et_sel(morceau: str) -> tuple[str, str, bool, str]:
         base = m.group("base").strip()
         sel = texte[: m.start()].strip()
         # Le sel contient souvent la base : "AMOXICILLINE TRIHYDRATEE".
-        sel_mots = [w for w in sel.split()
-                    if _sans_accents(w).upper() in _FORMES_SALINES]
+        sel_mots = [w for w in sel.split() if _sans_accents(w).upper() in _FORMES_SALINES]
         return base, " ".join(sel_mots), False, "exprime_en"
 
     # "<base> SOUS FORME DE <sel>"
@@ -151,8 +175,7 @@ def _extraire_base_et_sel(morceau: str) -> tuple[str, str, bool, str]:
         # "(OU autre nom)" est un synonyme, pas la base : on ne tranche pas.
         if re.match(r"^OU\b", dedans, re.I):
             return avant, "", True, "synonyme_entre_parentheses"
-        sel_mots = [w for w in avant.split()
-                    if _sans_accents(w).upper() in _FORMES_SALINES]
+        sel_mots = [w for w in avant.split() if _sans_accents(w).upper() in _FORMES_SALINES]
         return dedans, " ".join(sel_mots), False, "parenthese"
 
     # Substance simple, eventuellement suivie d'une forme saline.

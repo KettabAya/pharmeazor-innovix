@@ -1,122 +1,188 @@
-"""A small, dependency-free BM25 ranker.
-
-Present so the repository has a working keyword baseline from day one: the
-dense retriever is compared *against* this, with figures, rather than adopted on
-faith. Keyword search misses rephrasings; semantic search sometimes conflates
-two drugs with similar names. The evaluation set decides which wins where.
-
-Reference: Robertson & Zaragoza, "The Probabilistic Relevance Framework:
-BM25 and Beyond" (2009).
-"""
-
 from __future__ import annotations
 
-import math
+import json
 import re
 import unicodedata
-from collections import Counter
-from dataclasses import dataclass, field
+from dataclasses import dataclass
+from pathlib import Path
 
-__all__ = ["tokenize", "BM25Index", "ScoredPassage"]
+from rank_bm25 import BM25Okapi
 
-# Very common French words carry no discriminating signal for this corpus.
-_STOPWORDS = {
-    "le", "la", "les", "un", "une", "des", "du", "de", "d", "et", "ou", "a",
-    "au", "aux", "en", "dans", "pour", "par", "sur", "avec", "sans", "est",
-    "sont", "ce", "cet", "cette", "ces", "il", "elle", "on", "que", "qui",
-    "quel", "quelle", "ne", "pas", "plus", "peut", "doit", "se", "son", "sa",
+PASSAGES_FILE = Path("data/processed/passages.jsonl")
+
+# French stopwords (enough for the test and the queries we have).
+STOPWORDS = {
+    "au",
+    "aux",
+    "avec",
+    "ce",
+    "ces",
+    "dans",
+    "de",
+    "des",
+    "du",
+    "elle",
+    "en",
+    "et",
+    "eux",
+    "il",
+    "ils",
+    "je",
+    "la",
+    "le",
+    "les",
+    "leur",
+    "lui",
+    "ma",
+    "mais",
+    "me",
+    "meme",
+    "mes",
+    "moi",
+    "mon",
+    "ne",
+    "nos",
+    "notre",
+    "nous",
+    "on",
+    "ou",
+    "par",
+    "pas",
+    "pour",
+    "que",
+    "qui",
+    "sa",
+    "se",
+    "ses",
+    "son",
+    "sur",
+    "ta",
+    "te",
+    "tes",
+    "toi",
+    "ton",
+    "tu",
+    "un",
+    "une",
+    "vos",
+    "votre",
+    "vous",
+    "y",
+    "a",
+    "ete",
+    "etee",
+    "etees",
+    "etes",
+    "etant",
+    "suis",
+    "es",
+    "est",
+    "sommes",
+    "sont",
+    "sera",
+    "seront",
+    "d",
+    "l",
+    "j",
+    "t",
+    "m",
+    "n",
+    "s",
+    "c",
+    "qu",
 }
 
 
-def _strip_accents(text: str) -> str:
-    decomposed = unicodedata.normalize("NFKD", text)
-    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
-
-
 def tokenize(text: str) -> list[str]:
-    """Lowercase, de-accent, split on non-letters, drop stopwords.
-
-    Numbers are kept: a dose is often the most discriminating token in a query.
-    """
-    normalised = _strip_accents(text.lower())
-    tokens = re.findall(r"[a-z0-9]+", normalised)
-    return [t for t in tokens if t not in _STOPWORDS and len(t) > 1]
-
-
-@dataclass(frozen=True)
-class ScoredPassage:
-    """One retrieval hit."""
-
-    passage_id: str
-    score: float
-    text: str
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    text = text.lower()
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return [t for t in text.split() if len(t) >= 2 and t not in STOPWORDS]
 
 
 @dataclass
+class BM25Result:
+    passage_id: str
+    text: str
+    score: float
+
+
 class BM25Index:
-    """An in-memory BM25 index over passages.
-
-    Args:
-        k1: Term-frequency saturation. Higher means repeated terms keep adding.
-        b: Length normalisation, 0 (off) to 1 (full).
-    """
-
-    k1: float = 1.5
-    b: float = 0.75
-
-    _ids: list[str] = field(default_factory=list, repr=False)
-    _texts: list[str] = field(default_factory=list, repr=False)
-    _tokens: list[list[str]] = field(default_factory=list, repr=False)
-    _freqs: list[Counter] = field(default_factory=list, repr=False)
-    _doc_freq: Counter = field(default_factory=Counter, repr=False)
-    _avg_len: float = field(default=0.0, repr=False)
+    def __init__(self):
+        self._ids: list[str] = []
+        self._texts: list[str] = []
+        self._tokens: list[list[str]] = []
+        self._bm25: BM25Okapi | None = None
 
     def add(self, passage_id: str, text: str) -> None:
-        """Index one passage. Call :meth:`finalize` once all are added."""
-        tokens = tokenize(text)
-        self._ids.append(passage_id)
+        if not text.strip():
+            return
+        self._ids.append(str(passage_id))
         self._texts.append(text)
-        self._tokens.append(tokens)
-        self._freqs.append(Counter(tokens))
-        for term in set(tokens):
-            self._doc_freq[term] += 1
+        self._tokens.append(tokenize(text))
+        self._bm25 = None
 
     def finalize(self) -> BM25Index:
-        """Compute the average document length. Returns self for chaining."""
         if self._tokens:
-            self._avg_len = sum(len(t) for t in self._tokens) / len(self._tokens)
+            self._bm25 = BM25Okapi(self._tokens)
         return self
-
-    def _idf(self, term: str) -> float:
-        n = len(self._tokens)
-        df = self._doc_freq.get(term, 0)
-        # Robertson/Sparck Jones IDF, floored at zero to avoid negative weights.
-        return max(0.0, math.log(1 + (n - df + 0.5) / (df + 0.5)))
-
-    def search(self, query: str, top_k: int = 8) -> list[ScoredPassage]:
-        """Rank indexed passages against ``query``, best first."""
-        if not self._tokens:
-            return []
-        if self._avg_len == 0.0:
-            self.finalize()
-
-        query_terms = tokenize(query)
-        results: list[ScoredPassage] = []
-
-        for i, freqs in enumerate(self._freqs):
-            length = len(self._tokens[i])
-            total = 0.0
-            for term in query_terms:
-                tf = freqs.get(term, 0)
-                if tf == 0:
-                    continue
-                denominator = tf + self.k1 * (1 - self.b + self.b * length / self._avg_len)
-                total += self._idf(term) * (tf * (self.k1 + 1)) / denominator
-            if total > 0:
-                results.append(ScoredPassage(self._ids[i], round(total, 6), self._texts[i]))
-
-        results.sort(key=lambda r: r.score, reverse=True)
-        return results[:top_k]
 
     def __len__(self) -> int:
         return len(self._ids)
+
+    def search(self, question: str, top_k: int = 5) -> list[BM25Result]:
+        if self._bm25 is None or not self._ids:
+            return []
+        q_tokens = tokenize(question)
+        if not q_tokens:
+            return []
+
+        scores = self._bm25.get_scores(q_tokens)
+        order = sorted(range(len(self._ids)), key=lambda i: -scores[i])
+
+        results: list[BM25Result] = []
+        for i in order:
+            if scores[i] <= 0:
+                break
+            results.append(
+                BM25Result(
+                    passage_id=self._ids[i],
+                    text=self._texts[i],
+                    score=float(scores[i]),
+                )
+            )
+            if len(results) >= top_k:
+                break
+        return results
+
+
+def load_passages_index(passages_file: Path = PASSAGES_FILE) -> BM25Index:
+    idx = load_passages_index()
+    with Path(passages_file).open(encoding="utf-8") as fh:
+        for line in fh:
+            p = json.loads(line)
+            idx.add(p["passage_id"], p["text"])
+    idx.finalize()
+    return idx
+
+
+if __name__ == "__main__":
+    idx = load_passages_index()
+    print(f"Indexed {len(idx)} passages.")
+    for query in [
+        "amlodipine contre-indications",
+        "amlodipine posologie",
+        "amoxicilline posologie enfant",
+        "amoxicilline effets indésirables",
+        "paracetamol posologie enfant",
+        "paracetamol contre-indications",
+    ]:
+        print(f"\n=== {query}")
+        results = idx.search(query, top_k=3)
+        if not results:
+            print("  (no result)")
+            continue
+        for r in results:
+            print(f"  [{r.score:.2f}] {r.passage_id}")
+            print(f"    {r.text[:120].strip()}...")

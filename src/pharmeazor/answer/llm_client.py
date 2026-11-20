@@ -12,10 +12,6 @@ PROCESSED_DIR = REPO_ROOT / "data" / "processed"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_FILE = PROCESSED_DIR / "cache.json"
 COUNTER_FILE = PROCESSED_DIR / "call_counter.json"
-# Modele impose a toutes les equipes. Confirme par l'enseignant le
-# 15/11/2026 : "utilisez openai/gpt-oss-120b. Le modele de secours n'est
-# utilise que sur annonce de ma part." Le nom se lit dans
-# PHARMEAZOR_MODEL, donc un eventuel basculement passera par .env.
 MODEL_NAME = os.getenv("PHARMEAZOR_MODEL", "openai/gpt-oss-120b")
 BASE_URL = "https://api.groq.com/openai/v1"
 
@@ -29,9 +25,6 @@ def _load_api_key() -> str:
             print(f"[llm_client] key loaded (ends ...{key[-4:]})")
             return key
     except Exception:
-        # Correctif d'Aya (PR #1) : dans un sous-processus Colab, userdata.get()
-        # leve AttributeError et non ImportError -- un except trop etroit fait
-        # planter le chargement de la cle au lieu de passer au secours suivant.
         pass
 
     try:

@@ -76,9 +76,7 @@ def sources() -> list[dict]:
     except FileNotFoundError as exc:
         raise HTTPException(503, "Registre des sources introuvable.") from exc
     except ModuleNotFoundError as exc:
-        raise HTTPException(
-            503, "PyYAML requis : pip install -r requirements.txt"
-        ) from exc
+        raise HTTPException(503, "PyYAML requis : pip install -r requirements.txt") from exc
 
     return [
         {

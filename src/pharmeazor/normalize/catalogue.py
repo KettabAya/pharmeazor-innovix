@@ -63,20 +63,41 @@ _FAUTES_DE_FRAPPE = {"SUSPENSSION": "SUSPENSION"}
 # Aucun groupe d'equivalents n'en avait encore souffert, parce que l'egalite
 # de dosage les separait de fait -- mais la regle etait fausse.
 _VOIES: tuple[str, ...] = (
-    "INJECTABLE", "PERFUSION",
-    "COLLYRE", "OPHTALMIQUE", "OCULAIRE",
+    "INJECTABLE",
+    "PERFUSION",
+    "COLLYRE",
+    "OPHTALMIQUE",
+    "OCULAIRE",
     "AURICULAIRE",
-    "VAGINAL", "RECTAL",
-    "CUTANEE", "CUTANE",
+    "VAGINAL",
+    "RECTAL",
+    "CUTANEE",
+    "CUTANE",
 )
 
 # Familles galeniques, examinees ensuite. Deux produits ne sont
 # interchangeables qu'a l'interieur d'une meme famille : un comprime ne
 # remplace pas un sirop, quelle que soit la molecule.
 _FORM_FAMILIES: tuple[str, ...] = (
-    "COMPRIME", "GELULE", "CAPSULE", "SIROP", "SUSPENSION", "SOLUTION",
-    "POUDRE", "GRANULE", "SACHET", "SUPPOSITOIRE", "OVULE", "CREME",
-    "POMMADE", "GEL", "SPRAY", "AEROSOL", "PATCH", "AMPOULE", "GOUTTES",
+    "COMPRIME",
+    "GELULE",
+    "CAPSULE",
+    "SIROP",
+    "SUSPENSION",
+    "SOLUTION",
+    "POUDRE",
+    "GRANULE",
+    "SACHET",
+    "SUPPOSITOIRE",
+    "OVULE",
+    "CREME",
+    "POMMADE",
+    "GEL",
+    "SPRAY",
+    "AEROSOL",
+    "PATCH",
+    "AMPOULE",
+    "GOUTTES",
 )
 
 
@@ -193,8 +214,11 @@ class Product:
         association ne se confond jamais avec la substance seule -- rapprocher
         paracetamol et paracetamol/codeine ferait disparaitre un opiace.
         """
-        return (self.substance.cle() or normalize(self.inn),
-                self.strength.canonical(), self.form_family)
+        return (
+            self.substance.cle() or normalize(self.inn),
+            self.strength.canonical(),
+            self.form_family,
+        )
 
     def label(self) -> str:
         return f"{self.brand_name} {self.strength} {self.form}".strip()
@@ -241,9 +265,7 @@ class Catalogue:
 
     _by_id: dict[str, Product] = field(default_factory=dict, repr=False)
     _by_alias: dict[str, list[Product]] = field(default_factory=dict, repr=False)
-    _groups: dict[tuple[str, str, str], EquivalenceGroup] = field(
-        default_factory=dict, repr=False
-    )
+    _groups: dict[tuple[str, str, str], EquivalenceGroup] = field(default_factory=dict, repr=False)
 
     # ---------------------------------------------------------------- loading
 
@@ -405,8 +427,8 @@ class Catalogue:
             "short": (
                 f"{len(others)} équivalent(s) enregistré(s) en Algérie pour "
                 f"{product.brand_name} ({product.strength}, {product.form_family.lower()})."
-                if others else
-                f"Aucun équivalent enregistré pour {product.brand_name} "
+                if others
+                else f"Aucun équivalent enregistré pour {product.brand_name} "
                 f"({product.strength}, {product.form_family.lower()}) dans cette version."
             ),
             "explanation": (

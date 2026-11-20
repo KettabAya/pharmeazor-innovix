@@ -1,0 +1,67 @@
+{
+  "amlodipine_mibral_rcp": {
+    "drug_id": "DZ-0320",
+    "dci": "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE",
+    "therapeutic_class": "antihypertenseur",
+    "source_name": "anpp_rcp",
+    "authority": 5,
+    "language": "fr",
+    "collected_at": "2026-11-17",
+    "n_enregistrement": "",
+    "laboratoire": "",
+    "dosage": "",
+    "forme": ""
+  },
+  "amoxicilline_bgr_1g_notice": {
+    "drug_id": "DZ-0741",
+    "dci": "AMOXICILLINE SODIQUE (AMOXICILLINE)",
+    "therapeutic_class": "antibiotique",
+    "source_name": "ansm",
+    "authority": 3,
+    "language": "fr",
+    "collected_at": "2026-11-17",
+    "n_enregistrement": "",
+    "laboratoire": "",
+    "dosage": "",
+    "forme": ""
+  },
+  "amoxicilline_biopamox_rcp": {
+    "drug_id": "DZ-0741",
+    "dci": "AMOXICILLINE SODIQUE (AMOXICILLINE)",
+    "therapeutic_class": "antibiotique",
+    "source_name": "anpp_rcp",
+    "authority": 5,
+    "language": "fr",
+    "collected_at": "2026-11-17",
+    "n_enregistrement": "",
+    "laboratoire": "",
+    "dosage": "",
+    "forme": ""
+  },
+  "paracetamol_doliprane_2.4_notice": {
+    "drug_id": "DZ-0004",
+    "dci": "PARACETAMOL",
+    "therapeutic_class": "antalgique_ains",
+    "source_name": "ansm",
+    "authority": 3,
+    "language": "fr",
+    "collected_at": "2026-11-17",
+    "n_enregistrement": "201/03 B 007/00/24",
+    "laboratoire": "PROPHARMAL",
+    "dosage": "100MG",
+    "forme": "SUPPOSITOIRE"
+  },
+  "paracetamol_doliprane_2.4_rcp": {
+    "drug_id": "DZ-0004",
+    "dci": "PARACETAMOL",
+    "therapeutic_class": "antalgique_ains",
+    "source_name": "anpp_rcp",
+    "authority": 5,
+    "language": "fr",
+    "collected_at": "2026-11-17",
+    "n_enregistrement": "201/03 B 007/00/24",
+    "laboratoire": "PROPHARMAL",
+    "dosage": "100MG",
+    "forme": "SUPPOSITOIRE"
+  }
+}

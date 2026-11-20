@@ -21,26 +21,55 @@ __all__ = ["NumericClaim", "GuardReport", "extract_numbers", "verify"]
 # Unit spellings that a French leaflet may use for the same unit. The guard
 # compares canonical forms, so "24 heures", "24 h" and "24h" all match.
 _UNIT_ALIASES: dict[str, str] = {
-    "g": "g", "gramme": "g", "grammes": "g",
-    "mg": "mg", "milligramme": "mg", "milligrammes": "mg",
-    "mcg": "ug", "ug": "ug", "microgramme": "ug", "microgrammes": "ug",
-    "ml": "ml", "millilitre": "ml", "millilitres": "ml",
-    "l": "l", "litre": "l", "litres": "l",
-    "h": "h", "heure": "h", "heures": "h",
-    "min": "min", "minute": "min", "minutes": "min",
-    "j": "j", "jour": "j", "jours": "j",
-    "sem": "sem", "semaine": "sem", "semaines": "sem",
+    "g": "g",
+    "gramme": "g",
+    "grammes": "g",
+    "mg": "mg",
+    "milligramme": "mg",
+    "milligrammes": "mg",
+    "mcg": "ug",
+    "ug": "ug",
+    "microgramme": "ug",
+    "microgrammes": "ug",
+    "ml": "ml",
+    "millilitre": "ml",
+    "millilitres": "ml",
+    "l": "l",
+    "litre": "l",
+    "litres": "l",
+    "h": "h",
+    "heure": "h",
+    "heures": "h",
+    "min": "min",
+    "minute": "min",
+    "minutes": "min",
+    "j": "j",
+    "jour": "j",
+    "jours": "j",
+    "sem": "sem",
+    "semaine": "sem",
+    "semaines": "sem",
     "mois": "mois",
-    "an": "an", "ans": "an", "annee": "an", "annees": "an",
-    "kg": "kg", "kilogramme": "kg", "kilogrammes": "kg",
-    "%": "%", "pour cent": "%", "pourcent": "%",
-    "ui": "ui", "mmhg": "mmhg", "fois": "fois", "prise": "prise", "prises": "prise",
-    "comprime": "comprime", "comprimes": "comprime",
+    "an": "an",
+    "ans": "an",
+    "annee": "an",
+    "annees": "an",
+    "kg": "kg",
+    "kilogramme": "kg",
+    "kilogrammes": "kg",
+    "%": "%",
+    "pour cent": "%",
+    "pourcent": "%",
+    "ui": "ui",
+    "mmhg": "mmhg",
+    "fois": "fois",
+    "prise": "prise",
+    "prises": "prise",
+    "comprime": "comprime",
+    "comprimes": "comprime",
 }
 
-_UNIT_PATTERN = "|".join(
-    sorted((re.escape(u) for u in _UNIT_ALIASES), key=len, reverse=True)
-)
+_UNIT_PATTERN = "|".join(sorted((re.escape(u) for u in _UNIT_ALIASES), key=len, reverse=True))
 
 # A number, optionally followed by a unit, optionally followed by "/ unit"
 # (as in "4 g/24 h" or "500 mg / prise").
@@ -143,7 +172,9 @@ def extract_numbers(text: str) -> list[NumericClaim]:
         claim = NumericClaim(
             value=_canon_value(match.group("value")),
             unit=_canon_unit(match.group("unit")),
-            per_value=_canon_value(match.group("per_value") or "") if match.group("per_value") else "",
+            per_value=_canon_value(match.group("per_value") or "")
+            if match.group("per_value")
+            else "",
             per_unit=_canon_unit(match.group("per_unit")),
             raw=match.group(0).strip(),
         )

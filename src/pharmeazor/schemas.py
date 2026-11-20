@@ -19,11 +19,11 @@ class Authority(IntEnum):
     and the system must be able to say why.
     """
 
-    DISCARDED = 0       # forums, blogs, social media, advertising, prices, stock
-    PROFESSIONAL = 1    # Pharm'Net, MEDAlgerie, dzair-pharma -- practical, unofficial
-    INSTITUTIONAL = 2   # ANSM Thesaurus, DailyMed, EMA -- foreign, complement only
-    NOMENCLATURE = 3    # official registry, Ministry of Pharmaceutical Industry
-    OFFICIAL = 4        # RCP and patient leaflets validated by the ANPP
+    DISCARDED = 0  # forums, blogs, social media, advertising, prices, stock
+    PROFESSIONAL = 1  # Pharm'Net, MEDAlgerie, dzair-pharma -- practical, unofficial
+    INSTITUTIONAL = 2  # ANSM Thesaurus, DailyMed, EMA -- foreign, complement only
+    NOMENCLATURE = 3  # official registry, Ministry of Pharmaceutical Industry
+    OFFICIAL = 4  # RCP and patient leaflets validated by the ANPP
 
     @property
     def label_fr(self) -> str:
