@@ -443,3 +443,45 @@ class TestLesQuatreNomsSontUnContrat:
 
         for nom in self.NOMS:
             assert callable(getattr(retrieve, nom)), nom
+
+
+class TestLesQuatreNomsSontUnContrat:
+    """Defaut mesure le 20/11/2026, en integration continue.
+
+    La CI s'est arretee sur :
+
+        tests/test_passages.py:13: in <module>
+            from pharmeazor.retrieve.build_passages import (
+        E   ImportError: cannot import name 'passages_equivalents' from
+            'pharmeazor.retrieve.build_passages'
+
+    Rien n'etait casse dans le code : un fichier avait ete renomme sur une
+    branche, et l'import le suivait par son nom de fichier. La collecte des
+    tests s'est interrompue, la CI est tombee, la fusion est restee bloquee.
+
+    Ces trois tests pinent le contrat lui-meme : les quatre constructeurs sont
+    atteignables depuis le PAQUET `pharmeazor.retrieve`. Tant qu'ils passent,
+    on peut renommer, deplacer ou decouper le fichier sans bloquer personne.
+    """
+
+    NOMS = ("passages_produits", "passages_retraits",
+            "passages_equivalents", "passages_interactions")
+
+    def test_les_quatre_sont_atteignables_depuis_le_paquet(self):
+        import pharmeazor.retrieve as retrieve
+        manquants = [n for n in self.NOMS if not hasattr(retrieve, n)]
+        assert not manquants, f"absents de pharmeazor.retrieve : {manquants}"
+
+    def test_les_quatre_sont_annonces_dans_all(self):
+        """`__all__` est la promesse ecrite. Un nom expose par accident peut
+        disparaitre au prochain menage ; un nom annonce, non."""
+        import pharmeazor.retrieve as retrieve
+        for nom in self.NOMS:
+            assert nom in retrieve.__all__, nom
+
+    def test_les_quatre_sont_appelables(self):
+        """Exposer le nom ne suffit pas : ce doit etre la fonction, pas une
+        constante ni un module homonyme."""
+        import pharmeazor.retrieve as retrieve
+        for nom in self.NOMS:
+            assert callable(getattr(retrieve, nom)), nom
