@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pharmeazor — résultats de la semaine 2</title>
+<meta name="description" content="Résultats mesurés de la semaine 2 du projet Pharmeazor : traitement des données, comparaison des deux méthodes de recherche, et contributions de l'équipe INNOVIX.">
+<style>
+  :root {
+    --fond: #fbfaf8; --panneau: #ffffff; --texte: #1b1f23; --doux: #5c6670;
+    --trait: #e2e1dd; --accent: #11405c; --accent2: #c2703a; --mauvais: #a3401f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #14171a; --panneau: #1b1f23; --texte: #e8e6e1; --doux: #9aa3ab;
+      --trait: #2b3137; --accent: #7fb8da; --accent2: #e09257; --mauvais: #e58b6b;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .enveloppe { max-width: 980px; margin: 0 auto; padding: 48px 20px 72px; }
+  .surtitre { font-size: 13px; letter-spacing: .09em; text-transform: uppercase;
+              color: var(--doux); margin: 0; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400;
+       font-size: clamp(32px, 6vw, 46px); line-height: 1.1; margin: .12em 0 0;
+       color: var(--accent); }
+  .intro { color: var(--doux); max-width: 64ch; margin: .5em 0 0; }
+  .constat { max-width: 64ch; margin: 20px 0 0; font-size: 17px; }
+  .constat b { font-family: Georgia, serif; font-weight: 400; font-size: 1.12em;
+               color: var(--accent); font-variant-numeric: tabular-nums; }
+
+  section { margin-top: 52px; }
+  h2 { font-size: clamp(21px, 3vw, 26px); margin: 0 0 6px; color: var(--accent); }
+  section > p { color: var(--doux); max-width: 64ch; margin: 0 0 18px; }
+
+  .tuiles { display: grid; gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); }
+  .tuile { background: var(--panneau); border: 1px solid var(--trait);
+           border-radius: 10px; padding: 16px 18px; min-width: 0; }
+  .tuile .n { display: block; font-family: Georgia, serif; font-size: 30px;
+              line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .tuile .k { display: block; font-size: 13px; color: var(--doux); margin-top: 3px; }
+
+  .duo { display: grid; gap: 18px;
+         grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); }
+  .carte { background: var(--panneau); border: 1px solid var(--trait);
+           border-radius: 10px; padding: 18px; min-width: 0; }
+  .carte h3 { margin: 0 0 10px; font-size: 15px; font-weight: 600; }
+  .carte .note { font-size: 13px; color: var(--doux); margin: 10px 0 0; }
+  svg { display: block; width: 100%; height: auto; }
+  .barre { fill: var(--accent); }
+  .serie-a { fill: var(--accent); }
+  .serie-b { fill: var(--accent2); }
+  .grille { stroke: var(--trait); stroke-width: 1; }
+  text { font-family: "Segoe UI", system-ui, sans-serif; }
+  .lib { font-size: 11px; fill: var(--doux); }
+  .val { font-size: 11px; fill: var(--texte); font-variant-numeric: tabular-nums; }
+  .legende { font-size: 13px; color: var(--doux); margin: 8px 0 0; }
+  .puce { display: inline-block; width: 9px; height: 9px; border-radius: 2px;
+          margin-right: 5px; vertical-align: baseline; }
+
+  .defile { overflow-x: auto; border: 1px solid var(--trait); border-radius: 10px;
+            background: var(--panneau); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { padding: 9px 12px; text-align: left; vertical-align: top;
+           border-bottom: 1px solid var(--trait); }
+  th { color: var(--doux); font-weight: 600; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .mauvais { color: var(--mauvais); }
+
+  .equipe { display: flex; flex-direction: column; gap: 20px; }
+  .personne { background: var(--panneau); border: 1px solid var(--trait);
+              border-radius: 10px; padding: 20px; min-width: 0; }
+  .personne header { display: flex; flex-wrap: wrap; align-items: baseline;
+                     gap: 6px 10px; margin-bottom: 10px; }
+  .personne h3 { margin: 0; font-size: 18px; font-weight: 600; color: var(--texte); }
+  .role { font-size: 13px; color: var(--doux); border: 1px solid var(--trait);
+          border-radius: 999px; padding: 2px 10px; }
+  .personne ul { margin: 0 0 16px; padding-left: 1.15em; }
+  .personne li { margin-bottom: 4px; }
+  figure { margin: 0; }
+  figure img { width: 100%; height: auto; display: block; border: 1px solid var(--trait);
+               border-radius: 8px; background: #fff; }
+  figcaption { font-size: 13px; color: var(--doux); margin-top: 7px; }
+
+  details { margin-top: 44px; border-top: 1px solid var(--trait); padding-top: 18px;
+            color: var(--doux); font-size: 14px; }
+  summary { cursor: pointer; color: var(--texte); font-weight: 600; }
+  details p { max-width: 64ch; }
+  footer { margin-top: 44px; border-top: 1px solid var(--trait); padding-top: 18px;
+           font-size: 13px; color: var(--doux); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="enveloppe">
+
+  <header>
+    <p class="surtitre">Groupe INNOVIX · M1 IA · Université Constantine 2 Abdelhamid Mehri</p>
+    <h1>Pharmeazor</h1>
+    <p class="intro">Base de connaissances médicamenteuse et assistant à preuves pour le
+      pharmacien d'officine. Résultats de la semaine 2, du 16 au 21 novembre 2026, relevés
+      dans les fichiers que la chaîne a produits.</p>
+    <p class="constat">Le traitement couvre <b>924</b> produits enregistrés et
+      relève <b>493</b> désaccords entre sources. Sur les quinze questions
+      évaluées, la recherche par mots-clés trouve la bonne rubrique <b>14</b> fois,
+      contre <b>6</b> pour la recherche par le sens.</p>
+  </header>
+
+  <section>
+    <h2>Ce que la chaîne produit</h2>
+    <p>Chaque nombre est écrit par le programme dans un fichier de
+      <code>data/reference/</code>, versionné dans le dépôt. Aucun n'est saisi à la main.</p>
+    <div class="tuiles"><div class="tuile"><span class="n">924</span><span class="k">Produits enregistres</span></div><div class="tuile"><span class="n">1 007</span><span class="k">Produits sortis du marche</span></div><div class="tuile"><span class="n">3 696</span><span class="k">Noms indexes</span></div><div class="tuile"><span class="n">1 510</span><span class="k">Interactions uniques</span></div><div class="tuile"><span class="n">792</span><span class="k">Produits equivalents</span></div><div class="tuile"><span class="n">788</span><span class="k">Produits enrichis</span></div><div class="tuile"><span class="n">493</span><span class="k">Desaccords entre sources</span></div><div class="tuile"><span class="n">4 904</span><span class="k">Equivalents annonces par dzair</span></div></div>
+  </section>
+
+  <section>
+    <h2>Le traitement</h2>
+    <p>Le périmètre est celui des quarante médicaments imposés. Tout produit retenu porte
+      une classe thérapeutique et un dosage lisible ; aucun n'est laissé sans classement.</p>
+    <div class="duo">
+      <div class="carte">
+        <h3>Produits par classe thérapeutique</h3>
+        <svg viewBox="0 0 460 192" role="img" aria-label="6 valeurs, de antibiotique a diuretique"><rect x="112.4" y="11" width="299.6" height="20" rx="2" class="barre"/><text x="105.4" y="21.0" dy="0.34em" text-anchor="end" class="lib">antibiotique</text><text x="418.0" y="21.0" dy="0.34em" class="val">251</text><rect x="112.4" y="41" width="281.7" height="20" rx="2" class="barre"/><text x="105.4" y="51.0" dy="0.34em" text-anchor="end" class="lib">antihypertenseur</text><text x="400.1" y="51.0" dy="0.34em" class="val">236</text><rect x="112.4" y="71" width="269.8" height="20" rx="2" class="barre"/><text x="105.4" y="81.0" dy="0.34em" text-anchor="end" class="lib">ains</text><text x="388.2" y="81.0" dy="0.34em" class="val">226</text><rect x="112.4" y="101" width="196.9" height="20" rx="2" class="barre"/><text x="105.4" y="111.0" dy="0.34em" text-anchor="end" class="lib">antalgique</text><text x="315.3" y="111.0" dy="0.34em" class="val">165</text><rect x="112.4" y="131" width="46.6" height="20" rx="2" class="barre"/><text x="105.4" y="141.0" dy="0.34em" text-anchor="end" class="lib">betabloquant</text><text x="165.0" y="141.0" dy="0.34em" class="val">39</text><rect x="112.4" y="161" width="8.4" height="20" rx="2" class="barre"/><text x="105.4" y="171.0" dy="0.34em" text-anchor="end" class="lib">diuretique</text><text x="126.8" y="171.0" dy="0.34em" class="val">7</text></svg>
+        <p class="note">Source : nomenclature nationale, version d'août 2026.</p>
+      </div>
+      <div class="carte">
+        <h3>Interactions par niveau</h3>
+        <svg viewBox="0 0 460 102" role="img" aria-label="3 valeurs, de Précaution d&#x27;emploi a Contre-indication"><rect x="163.6" y="11" width="248.4" height="20" rx="2" class="barre"/><text x="156.6" y="21.0" dy="0.34em" text-anchor="end" class="lib">Précaution d&#x27;emploi</text><text x="418.0" y="21.0" dy="0.34em" class="val">718</text><rect x="163.6" y="41" width="221.1" height="20" rx="2" class="barre"/><text x="156.6" y="51.0" dy="0.34em" text-anchor="end" class="lib">Association déconseillée</text><text x="390.7" y="51.0" dy="0.34em" class="val">639</text><rect x="163.6" y="71" width="52.9" height="20" rx="2" class="barre"/><text x="156.6" y="81.0" dy="0.34em" text-anchor="end" class="lib">Contre-indication</text><text x="222.5" y="81.0" dy="0.34em" class="val">153</text></svg>
+        <p class="note">Les niveaux du thésaurus de l'ANSM. Le niveau est toujours énoncé
+          avec sa source, et jamais adouci.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>La recherche, comparée sur des chiffres</h2>
+    <p>Deux méthodes sur le même corpus et les mêmes questions. La réussite est comptée
+      quand la rubrique attendue figure parmi les trois passages rapportés.</p>
+    <div class="duo">
+      <div class="carte">
+        <h3>Rang auquel la bonne rubrique est trouvée</h3>
+        <svg viewBox="0 0 460 210" role="img" aria-label="Nombre de questions par rang, pour les deux methodes"><line x1="28" y1="176.0" x2="454" y2="176.0" class="grille"/><text x="22" y="176.0" dy="0.32em" text-anchor="end" class="lib">0</text><line x1="28" y1="140.0" x2="454" y2="140.0" class="grille"/><text x="22" y="140.0" dy="0.32em" text-anchor="end" class="lib">2</text><line x1="28" y1="104.0" x2="454" y2="104.0" class="grille"/><text x="22" y="104.0" dy="0.32em" text-anchor="end" class="lib">4</text><line x1="28" y1="68.0" x2="454" y2="68.0" class="grille"/><text x="22" y="68.0" dy="0.32em" text-anchor="end" class="lib">6</text><line x1="28" y1="32.0" x2="454" y2="32.0" class="grille"/><text x="22" y="32.0" dy="0.32em" text-anchor="end" class="lib">8</text><rect x="45.0" y="14.0" width="34.2" height="162.0" rx="2" class="serie-a"/><text x="62.1" y="10.0" text-anchor="middle" class="val">9</text><rect x="81.2" y="104.0" width="34.2" height="72.0" rx="2" class="serie-b"/><text x="98.4" y="100.0" text-anchor="middle" class="val">4</text><text x="81.2" y="192" text-anchor="middle" class="lib">1</text><rect x="151.5" y="140.0" width="34.2" height="36.0" rx="2" class="serie-a"/><text x="168.6" y="136.0" text-anchor="middle" class="val">2</text><rect x="187.8" y="140.0" width="34.2" height="36.0" rx="2" class="serie-b"/><text x="204.9" y="136.0" text-anchor="middle" class="val">2</text><text x="187.8" y="192" text-anchor="middle" class="lib">2</text><rect x="258.0" y="122.0" width="34.2" height="54.0" rx="2" class="serie-a"/><text x="275.1" y="118.0" text-anchor="middle" class="val">3</text><rect x="294.2" y="176.0" width="34.2" height="0.0" rx="2" class="serie-b"/><text x="294.2" y="192" text-anchor="middle" class="lib">3</text><rect x="364.5" y="158.0" width="34.2" height="18.0" rx="2" class="serie-a"/><text x="381.6" y="154.0" text-anchor="middle" class="val">1</text><rect x="400.8" y="14.0" width="34.2" height="162.0" rx="2" class="serie-b"/><text x="417.9" y="10.0" text-anchor="middle" class="val">9</text><text x="400.8" y="192" text-anchor="middle" class="lib">non trouvée</text></svg>
+        <p class="legende">
+          <span class="puce" style="background:var(--accent)"></span>mots-clés
+          &nbsp;&nbsp;<span class="puce" style="background:var(--accent2)"></span>vecteurs
+        </p>
+        <p class="note">Quinze questions. Plus la barre du rang 1 est haute, mieux c'est.</p>
+      </div>
+      <div class="carte">
+        <h3>Passages du corpus interrogé</h3>
+        <svg viewBox="0 0 460 162" role="img" aria-label="5 valeurs, de posologie a contre_indications"><rect x="131.6" y="11" width="280.4" height="20" rx="2" class="barre"/><text x="124.6" y="21.0" dy="0.34em" text-anchor="end" class="lib">posologie</text><text x="418.0" y="21.0" dy="0.34em" class="val">890</text><rect x="131.6" y="41" width="237.6" height="20" rx="2" class="barre"/><text x="124.6" y="51.0" dy="0.34em" text-anchor="end" class="lib">effets_indesirables</text><text x="375.2" y="51.0" dy="0.34em" class="val">754</text><rect x="131.6" y="71" width="224.3" height="20" rx="2" class="barre"/><text x="124.6" y="81.0" dy="0.34em" text-anchor="end" class="lib">interactions</text><text x="361.9" y="81.0" dy="0.34em" class="val">712</text><rect x="131.6" y="101" width="16.4" height="20" rx="2" class="barre"/><text x="124.6" y="111.0" dy="0.34em" text-anchor="end" class="lib">indications</text><text x="154.0" y="111.0" dy="0.34em" class="val">52</text><rect x="131.6" y="131" width="14.5" height="20" rx="2" class="barre"/><text x="124.6" y="141.0" dy="0.34em" text-anchor="end" class="lib">contre_indications</text><text x="152.1" y="141.0" dy="0.34em" class="val">46</text></svg>
+        <p class="note">La posologie et les effets indésirables occupent la plus grande part
+          du corpus. Les indications et les contre-indications sont de courtes rubriques,
+          et c'est là que les deux méthodes échouent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Les questions sans réponse</h2>
+    <p>Quatre questions du jeu n'ont aucune réponse dans le corpus : un prix, une
+      disponibilité, deux choix de traitement pour un patient donné. Elles obtiennent
+      pourtant les scores de recherche les plus élevés de tout le jeu. Un score élevé ne
+      signifie donc pas qu'une réponse existe, et le refus ne peut pas reposer sur un seuil.</p>
+    <div class="defile">
+      <table>
+        <thead><tr><th>#</th><th>Question</th><th>Ce qui manque</th>
+          <th>Score mots-clés</th><th>Score vecteurs</th></tr></thead>
+        <tbody><tr><td class="num">16</td><td>What is the current retail price of DOLIPRANE 2.4% in Algeria?</td><td>price</td><td class="num mauvais">8.984</td><td class="num">0.33</td></tr><tr><td class="num">17</td><td>Is DOLIPRANE 2.4% currently available in pharmacies near me?</td><td>availability</td><td class="num mauvais">8.984</td><td class="num">0.547</td></tr><tr><td class="num">18</td><td>Which antibiotic should a particular patient take instead of amoxicill</td><td>individualized</td><td class="num mauvais">3.819</td><td class="num">0.65</td></tr><tr><td class="num">19</td><td>Which antihypertensive is best for a specific patient?</td><td>individualized</td><td class="num mauvais">8.984</td><td class="num">0.626</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Les sources, et leur rang</h2>
+    <p>Chaque source porte un rang d'autorité inscrit dans le code. Une source étrangère
+      complète la source algérienne ; elle ne la remplace jamais, et la règle est garantie
+      par construction plutôt que par convention. Trois sources ont été écartées
+      volontairement, faute de conditions de réutilisation établies.</p>
+    <div class="defile">
+      <table>
+        <thead><tr><th>Source</th><th>Pays</th><th>Rang</th><th>Accès</th></tr></thead>
+        <tbody><tr><td>RCP et notices officiels - ANPP</td><td>DZ</td><td class="">4 — officielle</td><td class="">manuel</td></tr><tr><td>Nomenclature nationale - Ministere de l&#x27;Industrie pharmaceutique</td><td>DZ</td><td class="">3 — nomenclature</td><td class="">manuel</td></tr><tr><td>Thesaurus des interactions medicamenteuses - ANSM</td><td>FR</td><td class="">2 — institutionnelle</td><td class="">manuel</td></tr><tr><td>DailyMed - notices officielles americaines</td><td>US</td><td class="">2 — institutionnelle</td><td class="mauvais">écartée</td></tr><tr><td>EMA - notices europeennes</td><td>EU</td><td class="">2 — institutionnelle</td><td class="">manuel</td></tr><tr><td>Base de donnees publique des medicaments - ANSM</td><td>FR</td><td class="">2 — institutionnelle</td><td class="">manuel</td></tr><tr><td>Pharm&#x27;Net (e-Sahti)</td><td>DZ</td><td class="">1 — professionnelle</td><td class="">manuel</td></tr><tr><td>VIDAL - Base de donnees medicamenteuse</td><td>FR</td><td class="">1 — professionnelle</td><td class="mauvais">écartée</td></tr><tr><td>MEDAlgerie</td><td>DZ</td><td class="">1 — professionnelle</td><td class="mauvais">écartée</td></tr><tr><td>dzair-pharma.net (DwaDZ)</td><td>DZ</td><td class="">1 — professionnelle</td><td class="">manuel</td></tr><tr><td>Forums  blogs  reseaux sociaux</td><td></td><td class="mauvais">0 — écartée</td><td class="mauvais">écartée</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>L'équipe, et ce que chacune a fait</h2>
+    <p>Les briques sont volontairement séparées : chacune travaille sur ses propres
+      fichiers, et elles communiquent par les types partagés. L'ordre suit la chaîne, de la
+      collecte à la recherche. Chaque capture vient du travail lui-même.</p>
+    <div class="equipe"><article class="personne" id="adjimi"><header><h3>Alae Nour El Houda Adjimi</h3><span class="role">Collecte et conformité</span></header><ul><li>Collecte manuelle des données pharmaceutiques depuis le site de l&#x27;ENMP.</li><li>Exploration de Pharm&#x27;Net et développement des fonctions d&#x27;extraction.</li><li>Relevé et analyse des robots.txt de chaque site, avant toute collecte automatique, pour vérifier ce qui est autorisé.</li><li>Vérification de la cohérence et de la fiabilité des données collectées.</li></ul><figure><img src="img/semaine2-audit-robots.png" alt="Tableau de l&#x27;audit des robots.txt site par site, et un relevé brut" loading="lazy"><figcaption>L&#x27;audit automatisé du 11/11/2026, conservé dans le dépôt, et le relevé brut de dzair-pharma, qui bloque nommément une vingtaine de robots d&#x27;indexation et d&#x27;intelligence artificielle.</figcaption></figure></article><article class="personne" id="beddiaf"><header><h3>Dounia Beddiaf</h3><span class="role">Collecte de la base française</span></header><ul><li>Collecte manuelle depuis l&#x27;ANSM, et vérification des informations relatives aux médicaments.</li><li>Analyse du robots.txt et de la structure de la base publique française avant extraction.</li><li>Fonction d&#x27;extraction automatisée parcourant les quarante médicaments et récupérant, pour chacun, ses quatre documents : résumé des caractéristiques, notice, bon usage et fiche d&#x27;information.</li><li>Génération et organisation des fichiers PDF obtenus.</li></ul><figure><img src="img/semaine2-dounia-collecte.png" alt="Extrait du script de collecte et compte des PDF obtenus par type" loading="lazy"><figcaption>Le script déclare les quatre documents à récupérer par médicament ; la collecte a produit 3 664 PDF répartis en 31 dossiers.</figcaption></figure></article><article class="personne" id="ait"><header><h3>Ryma Ait El Hadj</h3><span class="role">Extraction des rubriques</span></header><ul><li>Constitution et organisation du corpus des résumés des caractéristiques du produit, sur les dix substances retenues.</li><li>Découpage de chaque document en cinq rubriques — indications, contre-indications, posologie, interactions, effets indésirables — et vérification avant enregistrement.</li><li>Amélioration de extract/sections.py : reconnaissance des titres numérotés, prise en charge de leurs variantes, réduction des faux positifs.</li><li>Intégration du travail de l&#x27;équipe et résolution des conflits de la Pull Request n° 4.</li></ul><figure><img src="img/semaine2-ryma-rapport.png" alt="Première page du rapport hebdomadaire de Ryma Ait El Hadj" loading="lazy"><figcaption>Première page de son rapport de la semaine, du 16 au 20 novembre 2026.</figcaption></figure></article><article class="personne" id="kettab"><header><h3>Kettab Aya Tesnim</h3><span class="role">Traitement des données</span></header><ul><li>Lecture des trois feuilles du classeur du ministère, par titre de colonne et non par position, l&#x27;ordre des colonnes changeant d&#x27;une feuille à l&#x27;autre.</li><li>Nettoyage et normalisation : dosages en écriture libre, substances écrites sel d&#x27;abord, fautes de frappe du registre, voie d&#x27;administration avant forme galénique.</li><li>Réconciliation des sources et arbitrage des désaccords selon un rang d&#x27;autorité inscrit dans le code.</li><li>Lecture des 3 664 documents français et découpage en passages citables ; extension du périmètre à l&#x27;ensemble des quarante médicaments.</li></ul><figure><img src="img/semaine2-resultats.png" alt="Sortie de la chaîne de traitement, livrable par livrable" loading="lazy"><figcaption>La sortie de la chaîne, exécutée le 21/11/2026. Tous les nombres sont imprimés par le programme ; aucun n&#x27;est saisi à la main.</figcaption></figure></article><article class="personne" id="belmir"><header><h3>Aya Belmir</h3><span class="role">Recherche et évaluation</span></header><ul><li>Fabrication des passages interrogeables, avec contrôle que le texte de chaque passage se retrouve mot pour mot à la position qu&#x27;il déclare.</li><li>Recherche par mots-clés et recherche par embeddings, sur un index vectoriel mis en cache.</li><li>Évaluation des deux méthodes sur le jeu officiel de dix-neuf questions, dont quatre sans réponse dans le corpus.</li><li>Adaptateur de mots-clés entre les questions, posées en anglais, et le corpus, rédigé en français.</li></ul><figure><img src="img/semaine2-evaluation.png" alt="Tableaux de l&#x27;évaluation : rang obtenu par chaque méthode, question par question" loading="lazy"><figcaption>Le résultat de l&#x27;évaluation, question par question, et les quatre questions sans réponse avec leur score.</figcaption></figure></article></div>
+  </section>
+
+  <details>
+    <summary>Comment lire ces chiffres</summary>
+    <p><b>Rang d'autorité.</b> De 0 à 4 : forums écartés (0), sites professionnels (1),
+      sources institutionnelles étrangères (2), nomenclature nationale (3), résumé des
+      caractéristiques du produit (4). La comparaison est arithmétique dans le code, et un
+      rang officiel étranger ne suffit pas : la source doit aussi être algérienne.</p>
+    <p><b>Désaccord entre sources.</b> Un champ sur lequel deux sources ne disent pas la
+      même chose au sujet du même produit. Il n'est pas tranché en silence : la valeur
+      retenue est écrite avec sa raison, et la valeur écartée reste visible avec sa
+      provenance et sa date.</p>
+    <p><b>Rubrique.</b> La partie d'un document qui répond à un type de question :
+      indications, contre-indications, posologie, interactions, effets indésirables.</p>
+  </details>
+
+  <footer>
+    <p>Chiffres relevés le 21 novembre 2026, à l'exécution de la chaîne.
+      Dépôt : <a href="https://github.com/KettabAya/pharmeazor-innovix">KettabAya/pharmeazor-innovix</a>.
+      <a href="index.html">Page de preuves de la semaine 1</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
