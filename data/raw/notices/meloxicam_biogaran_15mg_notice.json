@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60330522/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-25",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "notice",
+  "product": "MELOXICAM BIOGARAN 15 mg, comprimé sécable",
+  "dci": "meloxicam",
+  "cis_code": "60330522"
+}
