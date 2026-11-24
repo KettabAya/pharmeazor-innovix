@@ -20,6 +20,7 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
         re.compile(
             r"^\s*" + _NUMBER + r"(?:contre[-\s]?indications?"
             r"|ne (?:prenez|utilisez) jamais"
+            r"|n[’']utilisez jamais"
             r"|quand ne (?:faut|doit)[- ]il pas)",
             re.I,
         ),
