@@ -1,0 +1,13 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66511789/extrait",
+  "authority": "OFFICIAL",
+  "collected_at": "2026-11-13",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "patient_leaflet",
+  "product": "AMOXICILLINE BGR 1 g",
+  "dci": "amoxicilline",
+  "strength": "1 g",
+  "pharmaceutical_form": "comprimé dispersible"
+}

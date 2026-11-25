@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60325201/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-25",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "rcp",
+  "product": "NEFOPAM MEDISOL 20 mg/2 ml, solution injectable",
+  "dci": "nefopam",
+  "cis_code": "60325201"
+}
