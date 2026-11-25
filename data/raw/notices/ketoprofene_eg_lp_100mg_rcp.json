@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61927417/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-24",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "rcp",
+  "product": "KETOPROFENE EG LP 100 mg, comprimé sécable à libération prolongée",
+  "dci": "ketoprofene",
+  "cis_code": "61927417"
+}

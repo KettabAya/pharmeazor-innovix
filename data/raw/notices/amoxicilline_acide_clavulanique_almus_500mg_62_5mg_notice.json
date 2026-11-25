@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-25",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "notice",
+  "product": "AMOXICILLINE/ACIDE CLAVULANIQUE ALMUS 500 mg/62,5 mg ADULTES",
+  "dci": "Amoxicilline + acide clavulanique",
+  "cis_code": "60099738"
+}
