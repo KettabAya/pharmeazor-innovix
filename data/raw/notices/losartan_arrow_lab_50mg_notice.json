@@ -1,0 +1,14 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67645691/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-26",
+  "language": "fr",
+  "country": "FR",
+  "document_type": "patient_leaflet",
+  "product": "LOSARTAN ARROW LAB 50 mg, comprimé pelliculé sécable",
+  "dci": "losartan potassique",
+  "cis_code": "67645691",
+  "strength": "50 mg",
+  "pharmaceutical_form": "comprimé pelliculé sécable"
+}
