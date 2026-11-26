@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60235330/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-26",
+  "language": "fr",
+  "country": "FR",
+  "product": "CEFTRIAXONE VIATRIS 500 mg/5 ml, poudre et solvant pour solution injectable (IV)",
+  "dci": "ceftriaxone",
+  "cis_code": "60235330",
+  "document_type": "rcp"
+}
