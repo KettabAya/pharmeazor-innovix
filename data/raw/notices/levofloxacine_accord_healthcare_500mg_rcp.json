@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69602023/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-26",
+  "language": "fr",
+  "country": "FR",
+  "product": "LEVOFLOXACINE ACCORD HEALTHCARE 500 mg, comprimé pelliculé sécable",
+  "dci": "lévofloxacine",
+  "cis_code": "69602023",
+  "document_type": "rcp"
+}
