@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60985976/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-26",
+  "language": "fr",
+  "country": "FR",
+  "product": "CLINDAMYCINE SUBSTIPHARM 300 mg, gélule",
+  "dci": "Clindamycine",
+  "cis_code": "60985976",
+  "document_type": "rcp"
+}

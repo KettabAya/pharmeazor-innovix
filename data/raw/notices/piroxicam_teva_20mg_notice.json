@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69721369/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-26",
+  "language": "fr",
+  "country": "FR",
+  "product": "PIROXICAM TEVA 20 mg/1 ml, solution injectable (IM)",
+  "dci": "Piroxicam",
+  "cis_code": "69721369",
+  "document_type": "notice"
+}

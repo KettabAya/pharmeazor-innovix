@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69801139/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-26",
+  "language": "fr",
+  "country": "FR",
+  "product": "AZITHROMYCINE ZENTIVA 250 mg, comprimé pelliculé",
+  "dci": "azithromycine",
+  "cis_code": "69801139",
+  "document_type": "rcp"
+}
