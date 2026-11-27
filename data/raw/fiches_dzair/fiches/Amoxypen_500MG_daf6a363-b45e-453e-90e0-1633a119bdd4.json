@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Amoxypen",
+  "dosage": "500MG",
+  "dci": "AMOXICILLINE SOUS FORME TRIHYDRATEE EXPRIMÉ EN AMOXICILLINE SOUS FORME TRIHYDRATEE",
+  "Interactions de Amoxicilline Sous Forme Trihydratee": "Interactions de Amoxicilline Sous Forme Trihydratee Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n045",
+    "description": "Produits partageant le code DCI 13 G 045 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "14e6470f-9c4c-4e7f-9723-32e76217697e",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Biopamox",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

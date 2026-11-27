@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "S-Genta",
+  "dosage": "20MG/ML (40MG/2ML)",
+  "dci": "GENTAMICINE SULFATE EXPRIMEE EN GENTAMICINE EXPRIMÉ EN GENTAMICINE SULFATE EXPRIMEE EN GENTAMICINE",
+  "Interactions de Gentamicine Sulfate Exprimee En Gentamicine": "Interactions de Gentamicine Sulfate Exprimee En Gentamicine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nA\n004",
+    "description": "Produits partageant le code DCI 13 A 004 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "20MG/ML (40MG/2ML)",
+        "id": "5f0e2e4e-4419-43ea-b9d9-a9be83bcb7c3",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Genta 40",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML (40MG/2ML)",
+        "id": "ef090648-188d-4cdd-9cc0-b4cd54efa6fc",
+        "laboratoire": "Les Laboratoires Frater Razes",
+        "local": true,
+        "nom": "Gentaxyn",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML (40MG/2ML)",
+        "id": "1e54179b-8fd1-411b-b660-a6971d1da329",
+        "laboratoire": "Biothera",
+        "local": true,
+        "nom": "Gentheraxine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

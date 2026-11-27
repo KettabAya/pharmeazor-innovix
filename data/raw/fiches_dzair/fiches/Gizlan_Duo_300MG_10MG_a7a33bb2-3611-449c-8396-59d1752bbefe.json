@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Gizlan Duo",
+  "dosage": "300MG/10MG",
+  "dci": "IRBESARTAN/AMLODIPINE EXPRIMÉ EN IRBESARTAN/AMLODIPINE",
+  "Interactions de Irbesartan/Amlodipine": "Interactions de Irbesartan/Amlodipine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n312",
+    "description": "Produits partageant le code DCI 06 E 312 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "300MG/10MG",
+        "id": "3451af4b-4627-4f7c-9612-749a0477ef79",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Aprovasc",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/10MG",
+        "id": "848ea70e-ce92-4c0a-897d-0b6bf324dfcb",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Exirb",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/10MG",
+        "id": "8edfbe7c-48c3-4ac6-865f-0ab22c29a53b",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Aprodex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG/10MG",
+        "id": "e52648a6-ee6c-4a89-b1dd-cdf7e47eb98d",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Aprovasc",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG/10MG",
+        "id": "d0d0ba5e-ec33-47cc-aa6b-c79a25dfe8cf",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Vascovel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Zeclar",
+  "dosage": "250MG",
+  "dci": "CLARITHROMYCINE EXPRIMÉ EN CLARITHROMYCINE",
+  "Interactions de Clarithromycine": "Interactions de Clarithromycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n244",
+    "description": "Produits partageant le code DCI 13 E 244 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "250MG",
+        "id": "58efd297-8683-4c0b-81cb-67f98c6a9933",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Claridar 250",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG",
+        "id": "0f5c00a0-aeb3-4e57-a482-df795ce3a214",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Oradro",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG",
+        "id": "266eb49b-08e0-480d-9453-3a3e1711dc93",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Ritocine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250 MG",
+        "id": "d1b8acad-82c6-4119-b981-924fa3b01e95",
+        "laboratoire": "Janis Med Sarl",
+        "local": true,
+        "nom": "Medoclar",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Clofenal Enfant",
+  "dosage": "25MG",
+  "dci": "DICLOFENAC SODIQUE EXPRIMÉ EN DICLOFENAC SODIQUE",
+  "Interactions de Diclofenac Sodique": "Interactions de Diclofenac Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n008",
+    "description": "Produits partageant le code DCI 04 B 008 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "25MG",
+        "id": "1ff19701-a069-4cb0-84a3-27e7d47d23e8",
+        "laboratoire": "4a Sante Industrie",
+        "local": true,
+        "nom": "Diclofar",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

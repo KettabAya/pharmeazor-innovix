@@ -1,0 +1,105 @@
+{
+  "nom_commercial": "Humlor",
+  "dosage": "10MG",
+  "dci": "AMLODIPINE SOUS FORME BESYLATE EXPRIMÉ EN AMLODIPINE SOUS FORME BESYLATE",
+  "Interactions de Amlodipine Sous Forme Besylate": "Interactions de Amlodipine Sous Forme Besylate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nB\n243",
+    "description": "Produits partageant le code DCI 06 B 243 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 10,
+    "produits": [
+      {
+        "dosage": "10MG",
+        "id": "f62de68b-8d15-4f7c-a09d-045837e7a903",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Amlocardine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "4236f09e-8229-4d08-9a75-ffa2f0fdf50e",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Amlodipine Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "0d43fb17-e99f-43b9-b510-a8976265bc8f",
+        "laboratoire": "Upjohn Saidal Pharma",
+        "local": true,
+        "nom": "Amlor",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "aeca34b3-79cc-4cfc-86cb-ea71322f025c",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Dimlor",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "2749e08e-397b-4fdd-9f71-7867240d3492",
+        "laboratoire": "At Pharma",
+        "local": true,
+        "nom": "Dipicard",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "bbd05f01-f912-489b-8937-72823f5631c3",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Lotense",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "8720aea4-454f-4398-9036-09311d07f3b6",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Mibral",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "e32143a7-a361-4b2b-ae38-323742eac427",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Tensodipine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "5c456945-af28-45a9-a977-78f54d46cf4e",
+        "laboratoire": "Spa Jamjoom Algeria Lil Dawa",
+        "local": true,
+        "nom": "Amlibon",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG",
+        "id": "2eb03e67-e2ff-44d4-b744-1597b7f59d00",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Amlodal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

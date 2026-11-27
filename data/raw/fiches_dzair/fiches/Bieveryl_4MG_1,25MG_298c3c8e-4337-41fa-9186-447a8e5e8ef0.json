@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Bieveryl",
+  "dosage": "4MG/1,25MG",
+  "dci": "PERINDOPRIL TER-BUTYLAMINE/INDAPAMIDE EXPRIMÉ EN PERINDOPRIL TER-BUTYLAMINE/INDAPAMIDE",
+  "Interactions de Perindopril Ter-Butylamine/Indapamide": "Interactions de Perindopril Ter-Butylamine/Indapamide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n228",
+    "description": "Produits partageant le code DCI 06 E 228 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "4MG/1,25MG",
+        "id": "7f7f5136-6b3a-41b8-9941-cdec9b820558",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Fluterax",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

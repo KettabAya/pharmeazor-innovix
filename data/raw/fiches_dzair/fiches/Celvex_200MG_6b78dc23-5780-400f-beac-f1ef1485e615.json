@@ -1,0 +1,168 @@
+{
+  "nom_commercial": "Celvex",
+  "dosage": "200MG",
+  "dci": "CELECOXIB EXPRIMÉ EN CELECOXIB",
+  "Interactions de Celecoxib": "Interactions de Celecoxib Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n036",
+    "description": "Produits partageant le code DCI 04 B 036 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 17,
+    "produits": [
+      {
+        "dosage": "200MG",
+        "id": "2c43be74-fe3c-442a-82df-180f3e4b4442",
+        "laboratoire": "Alembic Mami Spa",
+        "local": true,
+        "nom": "Arbrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "a4f68e93-180f-4ca0-912f-0a269fc44731",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Cebrex 200",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "e9f5f73b-a4cf-457e-895c-084d7a994ce3",
+        "laboratoire": "Upjohn Saidal Pharma",
+        "local": true,
+        "nom": "Celebrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "27bea08d-7d9c-4496-b8be-a25c75482949",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Celecobrex Hup",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "e0b42a89-24b0-44bc-92a4-66a7b9a6b60e",
+        "laboratoire": "Kpma Biotic",
+        "local": true,
+        "nom": "Celecomex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "9d287640-3c2f-40e7-83a7-31ee55afc0ba",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Celecoxib Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "04a6579e-8ecb-455f-a465-ef91095492cb",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Celecoxib Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "fa97d5f2-da98-4be4-bee1-e9193e6da43c",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Celexal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "bdb57078-46e2-4daa-9b98-a991c750af73",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Cirexa",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "136fa658-5e4c-4872-9b19-e4ecacc831b0",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Coxibrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "fc91232f-4928-4920-b06d-dc576d75469a",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Coxitab",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "6ee9cd7c-a325-436b-9238-532ff390b243",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Inicox 200",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "ee083bc3-9878-43a4-adc4-34415d6fb58a",
+        "laboratoire": "Janis Med Sarl",
+        "local": true,
+        "nom": "Medibrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "0bd14b53-3cc9-4082-b906-8f35ca5572bd",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Notorex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "eb2d062b-81f0-4b8a-8e5b-afbbd5a7de11",
+        "laboratoire": "Novapharm Trading",
+        "local": true,
+        "nom": "Novabrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "e3ce0481-4f20-4c2d-9409-8d9e0798d3f1",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Pedexa",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "b1e96449-886a-4726-8bf5-80028e84357e",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Rumabrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Myoxydol",
+  "dosage": "200MG/500MG",
+  "dci": "IBUPROFENE / METHOCARBAMOL EXPRIMÉ EN IBUPROFENE / METHOCARBAMOL",
+  "Interactions de Ibuprofene / Methocarbamol": "Interactions de Ibuprofene / Methocarbamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "21\nE\n073",
+    "description": "Produits partageant le code DCI 21 E 073 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

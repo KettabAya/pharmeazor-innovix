@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Zetron",
+  "dosage": "250MG",
+  "dci": "AZITHROMYCINE DIHYDRATE EXPRIMÉ EN AZITHROMYCINE DIHYDRATE",
+  "Interactions de Azithromycine Dihydrate": "Interactions de Azithromycine Dihydrate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n176",
+    "description": "Produits partageant le code DCI 13 E 176 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "250MG",
+        "id": "49ed984a-b142-4e90-a723-af68432414fe",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Azimycine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG",
+        "id": "cfb50ef3-6a29-40d1-82c1-d83f86cd6aec",
+        "laboratoire": "Spa Jamjoom Algeria Lil Dawa",
+        "local": true,
+        "nom": "Binozyt",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG",
+        "id": "18d539c5-6e23-4a74-b745-8f716bf8110b",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Mycinad",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "250MG",
+        "id": "106ff4e3-b7c7-470e-8fc0-8d44ed6618ca",
+        "laboratoire": "Tabet Pharm",
+        "local": true,
+        "nom": "Zitromicine",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "250MG",
+        "id": "c2c4b294-b89c-4dcb-ad13-138d759fb582",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Zotrix",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

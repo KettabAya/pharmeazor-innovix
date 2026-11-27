@@ -1,0 +1,40 @@
+{
+  "dci": "énalapril",
+  "found": 2,
+  "processed": 2,
+  "errors": [],
+  "medications": [
+    {
+      "medication": {
+        "id": "4de2542e-564a-446a-8df0-ef94f9de01ab",
+        "name": "Enalapril Mylan",
+        "dose": "5MG",
+        "form": "Comprime Secable",
+        "dci": "ENALAPRIL MALEATE EXPRIMÉ EN ENALAPRIL MALEATE",
+        "laboratory": "Mylan Sas",
+        "status": "Commercialisé"
+      },
+      "picture": null,
+      "table": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\Projet Pharmeazor\\data\\énalapril\\table\\medicaments.csv",
+      "sections_json": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\Projet Pharmeazor\\data\\énalapril\\json\\Enalapril_Mylan_5MG_4de2542e-564a-446a-8df0-ef94f9de01ab.json",
+      "pdfs": [],
+      "equivalents_count": 0
+    },
+    {
+      "medication": {
+        "id": "89814813-70bc-49cf-89a7-7c726ff6a905",
+        "name": "Enalapril Mylan",
+        "dose": "20MG",
+        "form": "Comprime Secable",
+        "dci": "ENALAPRIL MALEATE EXPRIMÉ EN ENALAPRIL MALEATE",
+        "laboratory": "Mylan Sas",
+        "status": "Commercialisé"
+      },
+      "picture": null,
+      "table": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\Projet Pharmeazor\\data\\énalapril\\table\\medicaments.csv",
+      "sections_json": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\Projet Pharmeazor\\data\\énalapril\\json\\Enalapril_Mylan_20MG_89814813-70bc-49cf-89a7-7c726ff6a905.json",
+      "pdfs": [],
+      "equivalents_count": 0
+    }
+  ]
+}

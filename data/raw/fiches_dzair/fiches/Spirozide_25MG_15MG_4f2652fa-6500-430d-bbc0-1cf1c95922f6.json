@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Spirozide",
+  "dosage": "25MG/15MG",
+  "dci": "SPIRONOLACTONE / ALTIZIDE EXPRIMÉ EN SPIRONOLACTONE / ALTIZIDE",
+  "Interactions de Spironolactone / Altizide": "Interactions de Spironolactone / Altizide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nH\n096",
+    "description": "Produits partageant le code DCI 06 H 096 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

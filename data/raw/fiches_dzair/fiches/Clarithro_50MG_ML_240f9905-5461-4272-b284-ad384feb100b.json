@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Clarithro",
+  "dosage": "50MG/ML",
+  "dci": "CLARITHROMYCINE EXPRIMÉ EN CLARITHROMYCINE",
+  "Interactions de Clarithromycine": "Interactions de Clarithromycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n297",
+    "description": "Produits partageant le code DCI 13 E 297 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "250MG/5ML",
+        "id": "bd40dcad-2864-4bf7-8ac4-30d097e80267",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Huclar",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "250MG/5ML",
+        "id": "b6351e24-2353-427c-a181-ae786ce45702",
+        "laboratoire": "Dar Al Dawa",
+        "local": false,
+        "nom": "Claridar 250",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

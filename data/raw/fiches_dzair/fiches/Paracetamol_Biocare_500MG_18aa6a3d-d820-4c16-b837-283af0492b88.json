@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Paracetamol Biocare",
+  "dosage": "500MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n066",
+    "description": "Produits partageant le code DCI 03 B 066 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "aca40e6a-052d-4ede-b1e9-52e2a74360e4",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Expandol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "81310abe-257f-411a-9402-49a6dd405de6",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Paracetamol Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "d9f2565c-d0c3-4453-99b3-4355d633c895",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Paralgan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "84fcdc38-57f7-426c-9d98-7d4ba6432f9f",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Planadix",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "0e44e554-a083-4644-bb38-6af179099fc0",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Sapramol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

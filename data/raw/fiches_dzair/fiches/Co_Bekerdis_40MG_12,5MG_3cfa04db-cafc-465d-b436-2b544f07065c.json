@@ -1,0 +1,78 @@
+{
+  "nom_commercial": "Co Bekerdis",
+  "dosage": "40MG/12,5MG",
+  "dci": "TELMISARTAN/HYDROCHLOROTHIAZIDE EXPRIMÉ EN TELMISARTAN/HYDROCHLOROTHIAZIDE",
+  "Interactions de Telmisartan/Hydrochlorothiazide": "Interactions de Telmisartan/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n265",
+    "description": "Produits partageant le code DCI 06 E 265 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 7,
+    "produits": [
+      {
+        "dosage": "40MG/12,5MG",
+        "id": "2bc4fac9-565f-4f92-9da1-eff6c35b30cb",
+        "laboratoire": "Spa Union Pharmaceuitique Constantinoise Production",
+        "local": true,
+        "nom": "Cardomyl Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/12,5MG",
+        "id": "b80c2bf1-b1dd-4bdf-951c-8873500ef8d8",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Co Tensotel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/12,5MG",
+        "id": "360786a4-f44f-4733-9444-0ab62e62a052",
+        "laboratoire": "Boehringer Ingelheim International Gmbh",
+        "local": true,
+        "nom": "Micardis Plus",
+        "pays": "Allemagne",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/12,5MG",
+        "id": "12a6c9ee-2445-4952-a68c-d5b6643163d9",
+        "laboratoire": "Biologie Et Vitamine D'Algerie Biovital",
+        "local": true,
+        "nom": "Mizart Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/12,5MG",
+        "id": "e77bb177-aaba-4e57-ae8e-2cf89e7077b9",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Telmed Plus 40/12.5",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/12,5MG",
+        "id": "8f83d963-1f96-4931-8f4c-7d120d120bcc",
+        "laboratoire": "Les Laboratoires Frater Razes",
+        "local": true,
+        "nom": "Telmidis Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/12,5MG",
+        "id": "4fe41dac-e80e-44be-9d18-2d1162e06d59",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Telmisarte +",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

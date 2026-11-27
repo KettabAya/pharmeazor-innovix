@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Fluterax",
+  "dosage": "2MG/0,625MG",
+  "dci": "PERINDOPRIL ERBUMINE/INDAPAMIDE EXPRIMÉ EN PERINDOPRIL ERBUMINE/INDAPAMIDE",
+  "Interactions de Perindopril Erbumine/Indapamide": "Interactions de Perindopril Erbumine/Indapamide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n227",
+    "description": "Produits partageant le code DCI 06 E 227 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "2MG/0,625MG",
+        "id": "090616eb-9c28-4727-952e-3143ce11de3e",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Everyl",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

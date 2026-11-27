@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Profek",
+  "dosage": "100MG",
+  "dci": "KETOPROFENE EXPRIMÉ EN KETOPROFENE",
+  "Interactions de Ketoprofene": "Interactions de Ketoprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n034",
+    "description": "Produits partageant le code DCI 04 B 034 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "29d83d5f-45f7-4aab-8d15-1a29297395f4",
+        "laboratoire": "Sarl Evolab",
+        "local": true,
+        "nom": "Evofenid",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "a135bc52-6a80-4560-a6ef-ebe68f5f4be7",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Profenid",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "2892570f-2093-4a0a-916a-0f55e339fcc6",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Prohefen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

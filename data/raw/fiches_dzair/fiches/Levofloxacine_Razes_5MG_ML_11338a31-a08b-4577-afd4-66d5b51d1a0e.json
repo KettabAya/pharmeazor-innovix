@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Levofloxacine Razes",
+  "dosage": "5MG/ML",
+  "dci": "LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE EXPRIMÉ EN LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE",
+  "Interactions de Levofloxacine Hemihydrate Exprime En Levofloxacine": "Interactions de Levofloxacine Hemihydrate Exprime En Levofloxacine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nK\n231",
+    "description": "Produits partageant le code DCI 13 K 231 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "5MG/ML",
+        "id": "e2e210d6-e1bd-4b23-827d-2585424a20e8",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Levoquin",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/ML",
+        "id": "a5b96d4f-cfa7-4f11-82d5-8f32a7c3369a",
+        "laboratoire": "World Medecine Ilac San.ve Tic.as",
+        "local": false,
+        "nom": "Levoworld",
+        "pays": "Turquie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

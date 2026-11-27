@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Temerivol",
+  "dosage": "5MG",
+  "dci": "NEBIVOLOL CHLORHYDRATE (NEBIVOLOL) EXPRIMÉ EN NEBIVOLOL CHLORHYDRATE (NEBIVOLOL)",
+  "Interactions de Nebivolol Chlorhydrate (Nebivolol)": "Interactions de Nebivolol Chlorhydrate (Nebivolol) Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nF\n273",
+    "description": "Produits partageant le code DCI 06 F 273 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "5MG",
+        "id": "70ed9fe3-9ac5-450d-a49b-d61df2be0503",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Nebcar",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "38281f29-5875-4a34-8e30-fe1038c3f2f4",
+        "laboratoire": "Menarini International Operations Luxembourg Sa",
+        "local": false,
+        "nom": "Temerit",
+        "pays": "Luxembourg",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

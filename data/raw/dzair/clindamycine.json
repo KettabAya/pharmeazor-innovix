@@ -1,0 +1,1186 @@
+[
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1821/acnestop-1-10mg-ml-gel-dermique",
+        "status": "Enregistré",
+        "DCI (Substance active)": "CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE",
+        "Nom de marque": "ACNESTOP",
+        "N° d'enregistrement": "352/07 B 159/16/22",
+        "Code produit": "07 B 159",
+        "Code ATC": "D10AF01 – clindamycine",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "🇩🇿 Fabriqué en Algérie",
+        "Forme pharmaceutique": "GEL DERMIQUE",
+        "Voie d'administration": "Voie cutanée",
+        "Méthode d'administration": "Application",
+        "Dosage": "1% (10MG/ML)",
+        "Conditionnement": "TUBE/30G",
+        "Prescription": "HOP",
+        "Stabilité": "36 MOIS",
+        "Laboratoire": "EL KENDI INDUSTRIE DU MEDICAMENT",
+        "Pays d'origine": "🇩🇿 ALGERIE",
+        "Date d'enregistrement": "2016-11-02",
+        "Date de fin de validité": "2022-11-22",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "ACNESTOP 1% (10MG/ML) est un médicament sous forme de gel dermique dont la substance active est CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, produit par le laboratoire EL KENDI INDUSTRIE DU MEDICAMENT (ALGERIE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et fabriqué en Algérie. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "1 autre présentation enregistrée en Algérie a la même substance active (CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE), le même dosage et la même forme que ACNESTOP 1% (10MG/ML), issue de 1 laboratoire. 4 autres produits contiennent aussi CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, à d'autres dosages ou formes.\nLe laboratoire EL KENDI INDUSTRIE DU MEDICAMENT compte 283 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 2 novembre 2016 (il y a environ 10 ans). La validité indiquée a pris fin le 22 novembre 2022 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1816/clean-acne-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "GEL POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1822/clean-acne-1-10mg-ml-gel-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1817/denacine-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE EMULGEL",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1823/denacine-emulgel-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "DERMA-T",
+                "forme": "SOLUTION DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 TABUK ALGERIE ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1818/derma-t-1-10mg-ml-solution-dermique"
+            }
+        ],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1816/clean-acne-1-10mg-ml-solution-pour-application-locale",
+        "status": "Enregistré",
+        "DCI (Substance active)": "CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE",
+        "Nom de marque": "CLEAN-ACNE",
+        "N° d'enregistrement": "088/07 B 147/24",
+        "Code produit": "07 B 147",
+        "Code ATC": "D10AF01 – clindamycine",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "🇩🇿 Fabriqué en Algérie",
+        "Forme pharmaceutique": "SOLUTION POUR APPLICATION LOCALE",
+        "Voie d'administration": "Voie cutanée",
+        "Méthode d'administration": "Application",
+        "Dosage": "1% (10MG/ML)",
+        "Conditionnement": "FL/30ML",
+        "Prescription": "HOP",
+        "Stabilité": "24 MOIS",
+        "Laboratoire": "LABORATOIRES PHARMAGHREB",
+        "Pays d'origine": "🇩🇿 ALGERIE",
+        "Date d'enregistrement": "2024-03-27",
+        "Date de fin de validité": "2024-11-27",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "CLEAN-ACNE 1% (10MG/ML) est un médicament sous forme de solution pour application locale dont la substance active est CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, produit par le laboratoire LABORATOIRES PHARMAGHREB (ALGERIE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et fabriqué en Algérie. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "1 autre présentation enregistrée en Algérie a la même substance active (CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE), le même dosage et la même forme que CLEAN-ACNE 1% (10MG/ML), issue de 1 laboratoire. 4 autres produits contiennent aussi CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, à d'autres dosages ou formes.\nLe laboratoire LABORATOIRES PHARMAGHREB compte 35 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 27 mars 2024 (il y a environ 2 ans). La validité indiquée a pris fin le 27 novembre 2024 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [
+            {
+                "nom": "ACNESTOP",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 EL KENDI INDUSTRIE DU MEDICAMENT ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1821/acnestop-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "GEL POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1822/clean-acne-1-10mg-ml-gel-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1817/denacine-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE EMULGEL",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1823/denacine-emulgel-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "DERMA-T",
+                "forme": "SOLUTION DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 TABUK ALGERIE ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1818/derma-t-1-10mg-ml-solution-dermique"
+            }
+        ],
+        "related_presentations": [
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "GEL POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "conditionnement": "TUBE/30G",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1822/clean-acne-1-10mg-ml-gel-pour-application-locale"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "conditionnement": "FL/30ML",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1816/clean-acne-1-10mg-ml-solution-pour-application-locale"
+            }
+        ],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1822/clean-acne-1-10mg-ml-gel-pour-application-locale",
+        "status": "Enregistré",
+        "DCI (Substance active)": "CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE",
+        "Nom de marque": "CLEAN-ACNE",
+        "N° d'enregistrement": "088/07 B 159/24",
+        "Code produit": "07 B 159",
+        "Code ATC": "D10AF01 – clindamycine",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "🇩🇿 Fabriqué en Algérie",
+        "Forme pharmaceutique": "GEL POUR APPLICATION LOCALE",
+        "Voie d'administration": "Voie cutanée",
+        "Méthode d'administration": "Application",
+        "Dosage": "1% (10MG/ML)",
+        "Conditionnement": "TUBE/30G",
+        "Prescription": "HOP",
+        "Stabilité": "24 MOIS",
+        "Laboratoire": "LABORATOIRES PHARMAGHREB",
+        "Pays d'origine": "🇩🇿 ALGERIE",
+        "Date d'enregistrement": "2024-03-14",
+        "Date de fin de validité": "2024-11-27",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "CLEAN-ACNE 1% (10MG/ML) est un médicament sous forme de gel pour application locale dont la substance active est CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, produit par le laboratoire LABORATOIRES PHARMAGHREB (ALGERIE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et fabriqué en Algérie. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "Aucune autre présentation de même substance active, dosage et forme que CLEAN-ACNE 1% (10MG/ML) n'est enregistrée dans la nomenclature actuelle. 5 autres produits contiennent aussi CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, à d'autres dosages ou formes.\nLe laboratoire LABORATOIRES PHARMAGHREB compte 35 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 14 mars 2024 (il y a environ 2 ans). La validité indiquée a pris fin le 27 novembre 2024 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [
+            {
+                "nom": "ACNESTOP",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 EL KENDI INDUSTRIE DU MEDICAMENT ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1821/acnestop-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1816/clean-acne-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1817/denacine-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE EMULGEL",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1823/denacine-emulgel-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "DERMA-T",
+                "forme": "SOLUTION DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 TABUK ALGERIE ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1818/derma-t-1-10mg-ml-solution-dermique"
+            }
+        ],
+        "related_presentations": [
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "GEL POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "conditionnement": "TUBE/30G",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1822/clean-acne-1-10mg-ml-gel-pour-application-locale"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "conditionnement": "FL/30ML",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1816/clean-acne-1-10mg-ml-solution-pour-application-locale"
+            }
+        ],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/2988/clinaram-150mg-gelule",
+        "status": "Enregistré",
+        "DCI (Substance active)": "CLINDAMYCINE CHLORHYDRATE EXPRIME EN CLINDAMYCINE",
+        "Nom de marque": "CLINARAM",
+        "N° d'enregistrement": "166/13 D 025/98/15",
+        "Code produit": "13 D 025",
+        "Code ATC": "D10AF01 – clindamycine",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "GELULE",
+        "Voie d'administration": "Voie orale",
+        "Méthode d'administration": "Avaler",
+        "Dosage": "150MG",
+        "Conditionnement": "B/16",
+        "Prescription": "HOP",
+        "Stabilité": "36 MOIS",
+        "Laboratoire": "RAM PHARMACEUTICAL INDUSTRIES",
+        "Pays d'origine": "🇯🇴 JORDANIE",
+        "Date d'enregistrement": "1998-06-30",
+        "Date de fin de validité": "2015-05-31",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "CLINARAM 150MG est un médicament sous forme de gelule dont la substance active est CLINDAMYCINE CHLORHYDRATE EXPRIME EN CLINDAMYCINE, produit par le laboratoire RAM PHARMACEUTICAL INDUSTRIES (JORDANIE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et importé. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "Aucune autre présentation de même substance active, dosage et forme que CLINARAM 150MG n'est enregistrée dans la nomenclature actuelle.\nLe laboratoire RAM PHARMACEUTICAL INDUSTRIES compte 6 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 30 juin 1998 (il y a environ 28 ans). La validité indiquée a pris fin le 31 mai 2015 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1817/denacine-1-10mg-ml-solution-pour-application-locale",
+        "status": "Enregistré",
+        "DCI (Substance active)": "CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE",
+        "Nom de marque": "DENACINE",
+        "N° d'enregistrement": "406/07 B 147/08/16",
+        "Code produit": "07 B 147",
+        "Code ATC": "D10AF01 – clindamycine",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "SOLUTION POUR APPLICATION LOCALE",
+        "Voie d'administration": "Voie cutanée",
+        "Méthode d'administration": "Application",
+        "Dosage": "1% (10MG/ML)",
+        "Conditionnement": "FL/30ML",
+        "Prescription": "HOP",
+        "Stabilité": "24 MOIS",
+        "Laboratoire": "BEIT JALA PHARMACEUTICALS COMPANY",
+        "Pays d'origine": "🇵🇸 PALESTINE",
+        "Date d'enregistrement": "2008-12-22",
+        "Date de fin de validité": "2016-07-10",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "DENACINE 1% (10MG/ML) est un médicament sous forme de solution pour application locale dont la substance active est CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, produit par le laboratoire BEIT JALA PHARMACEUTICALS COMPANY (PALESTINE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et importé. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "1 autre présentation enregistrée en Algérie a la même substance active (CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE), le même dosage et la même forme que DENACINE 1% (10MG/ML), issue de 1 laboratoire dont 1 fabriquée localement. 4 autres produits contiennent aussi CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, à d'autres dosages ou formes.\nLe laboratoire BEIT JALA PHARMACEUTICALS COMPANY compte 14 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 22 décembre 2008 (il y a environ 17 ans). La validité indiquée a pris fin le 10 juillet 2016 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [
+            {
+                "nom": "ACNESTOP",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 EL KENDI INDUSTRIE DU MEDICAMENT ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1821/acnestop-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1816/clean-acne-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "GEL POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1822/clean-acne-1-10mg-ml-gel-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE EMULGEL",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1823/denacine-emulgel-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "DERMA-T",
+                "forme": "SOLUTION DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 TABUK ALGERIE ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1818/derma-t-1-10mg-ml-solution-dermique"
+            }
+        ],
+        "related_presentations": [
+            {
+                "nom": "DENACINE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "conditionnement": "FL/30ML",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1817/denacine-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE EMULGEL",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "conditionnement": "TUBE/30G",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1823/denacine-emulgel-1-10mg-ml-gel-dermique"
+            }
+        ],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1823/denacine-emulgel-1-10mg-ml-gel-dermique",
+        "status": "Enregistré",
+        "DCI (Substance active)": "CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE",
+        "Nom de marque": "DENACINE EMULGEL",
+        "N° d'enregistrement": "406/07 B 159/09/24",
+        "Code produit": "07 B 159",
+        "Code ATC": "D10AF01 – clindamycine",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "GEL DERMIQUE",
+        "Voie d'administration": "Voie cutanée",
+        "Méthode d'administration": "Application",
+        "Dosage": "1% (10MG/ML)",
+        "Conditionnement": "TUBE/30G",
+        "Prescription": "HOP",
+        "Stabilité": "36 MOIS",
+        "Laboratoire": "BEIT JALA PHARMACEUTICALS COMPANY",
+        "Pays d'origine": "🇵🇸 PALESTINE",
+        "Date d'enregistrement": "2009-03-04",
+        "Date de fin de validité": "2024-09-04",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "DENACINE EMULGEL 1% (10MG/ML) est un médicament sous forme de gel dermique dont la substance active est CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, produit par le laboratoire BEIT JALA PHARMACEUTICALS COMPANY (PALESTINE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et importé. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "1 autre présentation enregistrée en Algérie a la même substance active (CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE), le même dosage et la même forme que DENACINE EMULGEL 1% (10MG/ML), issue de 1 laboratoire dont 1 fabriquée localement. 4 autres produits contiennent aussi CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, à d'autres dosages ou formes.\nLe laboratoire BEIT JALA PHARMACEUTICALS COMPANY compte 14 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 4 mars 2009 (il y a environ 17 ans). La validité indiquée a pris fin le 4 septembre 2024 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [
+            {
+                "nom": "ACNESTOP",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 EL KENDI INDUSTRIE DU MEDICAMENT ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1821/acnestop-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1816/clean-acne-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "GEL POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1822/clean-acne-1-10mg-ml-gel-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1817/denacine-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "DERMA-T",
+                "forme": "SOLUTION DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 TABUK ALGERIE ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1818/derma-t-1-10mg-ml-solution-dermique"
+            }
+        ],
+        "related_presentations": [
+            {
+                "nom": "DENACINE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "conditionnement": "FL/30ML",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1817/denacine-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE EMULGEL",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "conditionnement": "TUBE/30G",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1823/denacine-emulgel-1-10mg-ml-gel-dermique"
+            }
+        ],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1818/derma-t-1-10mg-ml-solution-dermique",
+        "status": "Enregistré",
+        "DCI (Substance active)": "CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE",
+        "Nom de marque": "DERMA-T",
+        "N° d'enregistrement": "173/07 B 147/06/22",
+        "Code produit": "07 B 147",
+        "Code ATC": "D10AF01 – clindamycine",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "🇩🇿 Fabriqué en Algérie",
+        "Forme pharmaceutique": "SOLUTION DERMIQUE",
+        "Voie d'administration": "Voie cutanée",
+        "Méthode d'administration": "Application",
+        "Dosage": "1% (10MG/ML)",
+        "Conditionnement": "FL/30ML",
+        "Prescription": "HOP",
+        "Stabilité": "24 MOIS",
+        "Laboratoire": "TABUK ALGERIE",
+        "Pays d'origine": "🇩🇿 ALGERIE",
+        "Date d'enregistrement": "2006-12-02",
+        "Date de fin de validité": "2022-12-22",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "DERMA-T 1% (10MG/ML) est un médicament sous forme de solution dermique dont la substance active est CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, produit par le laboratoire TABUK ALGERIE (ALGERIE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et fabriqué en Algérie. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "Aucune autre présentation de même substance active, dosage et forme que DERMA-T 1% (10MG/ML) n'est enregistrée dans la nomenclature actuelle. 5 autres produits contiennent aussi CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE, à d'autres dosages ou formes.\nLe laboratoire TABUK ALGERIE compte 65 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 2 décembre 2006 (il y a environ 19 ans). La validité indiquée a pris fin le 22 décembre 2022 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [
+            {
+                "nom": "ACNESTOP",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 EL KENDI INDUSTRIE DU MEDICAMENT ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1821/acnestop-1-10mg-ml-gel-dermique"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1816/clean-acne-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "CLEAN-ACNE",
+                "forme": "GEL POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 LABORATOIRES PHARMAGHREB ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1822/clean-acne-1-10mg-ml-gel-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE",
+                "forme": "SOLUTION POUR APPLICATION LOCALE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1817/denacine-1-10mg-ml-solution-pour-application-locale"
+            },
+            {
+                "nom": "DENACINE EMULGEL",
+                "forme": "GEL DERMIQUE",
+                "dosage": "1% (10MG/ML)",
+                "laboratoire": "🏭 BEIT JALA PHARMACEUTICALS COMPANY ( 🇵🇸 PALESTINE )",
+                "type": "📦",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1823/denacine-emulgel-1-10mg-ml-gel-dermique"
+            }
+        ],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/retrait/1547/clindamyl-150mg-gles",
+        "status": "Retiré",
+        "DCI (Substance active)": "CLINDAMYCINE",
+        "Nom de marque": "CLINDAMYL",
+        "N° d'enregistrement": "118/13 D 025/98",
+        "Code produit": "13 D 025",
+        "Code ATC": null,
+        "Type de produit": "Générique",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "GLES.",
+        "Voie d'administration": "Voie orale",
+        "Méthode d'administration": "Avaler",
+        "Dosage": "150MG",
+        "Conditionnement": "B/16",
+        "Prescription": "HOP",
+        "Stabilité": null,
+        "Laboratoire": "ARAB PHARMACEUTICAL MANUFACTURING",
+        "Pays d'origine": "🇯🇴 JORDANIE",
+        "Date d'enregistrement": "1998-12-01",
+        "Date de fin de validité": null,
+        "Année de nomenclature": null,
+        "Version source": null,
+        "description": "CLINDAMYL 150MG est un médicament sous forme de gles. dont la substance active est CLINDAMYCINE, produit par le laboratoire ARAB PHARMACEUTICAL MANUFACTURING (JORDANIE). Il a été retiré de la nomenclature nationale des produits pharmaceutiques le 2024-05-17, pour le motif suivant : ANNULATION DE LA DE. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": null,
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "Date de retrait": "2024-05-17",
+        "Motif de retrait": "ANNULATION DE LA DE",
+        "interactions": null
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/retrait/1546/dalacine-600mg-4ml-sol-inj",
+        "status": "Retiré",
+        "DCI (Substance active)": "CLINDAMYCINE",
+        "Nom de marque": "DALACINE",
+        "N° d'enregistrement": "076/13 D 024/99",
+        "Code produit": "13 D 024",
+        "Code ATC": null,
+        "Type de produit": "Référence étrangère",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "SOL.INJ.",
+        "Voie d'administration": null,
+        "Méthode d'administration": "Injection",
+        "Dosage": "600MG/4ML",
+        "Conditionnement": "B/1+1",
+        "Prescription": "HOP",
+        "Stabilité": null,
+        "Laboratoire": "PHARMACIA UPJOHN",
+        "Pays d'origine": "🇫🇷 FRANCE",
+        "Date d'enregistrement": "1999-01-26",
+        "Date de fin de validité": null,
+        "Année de nomenclature": null,
+        "Version source": null,
+        "description": "DALACINE 600MG/4ML est un médicament sous forme de sol.inj. dont la substance active est CLINDAMYCINE, produit par le laboratoire PHARMACIA UPJOHN (FRANCE). Il a été retiré de la nomenclature nationale des produits pharmaceutiques le 2008-05-14, pour le motif suivant : RETRAIT PAR LE DETENTEUR POUR MOTIF COMMERCIAL. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": null,
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [],
+        "related_presentations": [],
+        "Liste": "Liste I",
+        "Date de retrait": "2008-05-14",
+        "Motif de retrait": "RETRAIT PAR LE DETENTEUR POUR MOTIF COMMERCIAL",
+        "interactions": null
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/non_renouvele/943/clindacin-150mg-gles",
+        "status": "Non renouvelé",
+        "DCI (Substance active)": "CLINDAMYCINE",
+        "Nom de marque": "CLINDACIN",
+        "N° d'enregistrement": "174/13 D 025/98",
+        "Code produit": "13 D 025",
+        "Code ATC": null,
+        "Type de produit": "Générique",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "GLES.",
+        "Voie d'administration": "Voie orale",
+        "Méthode d'administration": "Avaler",
+        "Dosage": "150MG",
+        "Conditionnement": "B/16",
+        "Prescription": "HOP",
+        "Stabilité": null,
+        "Laboratoire": "UNITED PHARMACEUTICAL MANUFACTURING (UPM)",
+        "Pays d'origine": "🇯🇴 JORDANIE",
+        "Date d'enregistrement": "1998-10-07",
+        "Date de fin de validité": "1998-10-07",
+        "Année de nomenclature": null,
+        "Version source": null,
+        "description": "CLINDACIN 150MG est un médicament sous forme de gles. dont la substance active est CLINDAMYCINE, produit par le laboratoire UNITED PHARMACEUTICAL MANUFACTURING (UPM) (JORDANIE). Son autorisation de mise sur le marché (AMM) n'a pas été renouvelée : il ne figure plus dans la nomenclature en vigueur. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": null,
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/non_renouvele/944/clinimycin-150mg-gles",
+        "status": "Non renouvelé",
+        "DCI (Substance active)": "CLINDAMYCINE",
+        "Nom de marque": "CLINIMYCIN",
+        "N° d'enregistrement": "098/13 D 025/98",
+        "Code produit": "13 D 025",
+        "Code ATC": null,
+        "Type de produit": "Générique",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "GLES.",
+        "Voie d'administration": "Voie orale",
+        "Méthode d'administration": "Avaler",
+        "Dosage": "150MG",
+        "Conditionnement": "B/16",
+        "Prescription": "HOP",
+        "Stabilité": null,
+        "Laboratoire": "HAYAT PHARMACEUTICAL INDUSTRIES Co LTD",
+        "Pays d'origine": "🇯🇴 JORDANIE",
+        "Date d'enregistrement": "1998-04-29",
+        "Date de fin de validité": "1998-04-29",
+        "Année de nomenclature": null,
+        "Version source": null,
+        "description": "CLINIMYCIN 150MG est un médicament sous forme de gles. dont la substance active est CLINDAMYCINE, produit par le laboratoire HAYAT PHARMACEUTICAL INDUSTRIES Co LTD (JORDANIE). Son autorisation de mise sur le marché (AMM) n'a pas été renouvelée : il ne figure plus dans la nomenclature en vigueur. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": null,
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/non_renouvele/942/lisaclin-600mg-sol-inj",
+        "status": "Non renouvelé",
+        "DCI (Substance active)": "CLINDAMYCINE",
+        "Nom de marque": "LISACLIN",
+        "N° d'enregistrement": "011/13 D 024/96",
+        "Code produit": "13 D 024",
+        "Code ATC": null,
+        "Type de produit": "Générique",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "SOL.INJ.",
+        "Voie d'administration": null,
+        "Méthode d'administration": "Injection",
+        "Dosage": "600MG",
+        "Conditionnement": "B/1",
+        "Prescription": "HOP",
+        "Stabilité": null,
+        "Laboratoire": "LISA PHARMA",
+        "Pays d'origine": "🇮🇹 ITALIE",
+        "Date d'enregistrement": "1996-10-13",
+        "Date de fin de validité": "1996-10-13",
+        "Année de nomenclature": null,
+        "Version source": null,
+        "description": "LISACLIN 600MG est un médicament sous forme de sol.inj. dont la substance active est CLINDAMYCINE, produit par le laboratoire LISA PHARMA (ITALIE). Son autorisation de mise sur le marché (AMM) n'a pas été renouvelée : il ne figure plus dans la nomenclature en vigueur. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": null,
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution de l'absorption de ces substances.",
+                "conduite_a_tenir": "Association déconseillée:\n- avec les inhibiteurs d'intégrase (raltégravir, bictégravir, dolutégravir, cabotégravir)\nPrécaution d'emploi:\n- avec les autres substances. Par mesure de précaution, il convient de prendre ces topiques ou antiacides à distance de tout autre médicament (plus de 2 heures, si possible).",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe SUBSTANCES À ABSORPTION RÉDUITE PAR LES TOPIQUES GASTRO-INTESTINAUX, ANTIACIDES ET ADSORBANTS"
+            },
+            {
+                "substance": "ANTIVITAMINES K",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation de l’effet de l’antivitamine K et du risque hémorragique.",
+                "conduite_a_tenir": "Contrôle plus fréquent de l’INR. Adaptation éventuelle de la posologie de l’antivitamine K pendant le traitement par clindamycine et après son arrêt.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM"
+            },
+            {
+                "substance": "CICLOSPORINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de ciclosporine et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "TACROLIMUS",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Diminution des concentrations sanguines de l'immunosuppresseur, avec risque de perte de l'activité immunosuppressive.",
+                "conduite_a_tenir": "Contrôle renforcé des dosages sanguins de tacrolimus et augmentation éventuelle de sa posologie.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "CURARES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Potentialisation des curares lorque l'antibiotique est administré par voie parentérale et/ou péritonéale avant, pendant ou après l'agent curarisant.",
+                "conduite_a_tenir": "Surveiller le degré de curarisation en fin d'anesthésie.",
+                "disponibilite": null,
+                "source": "ANSM via la classe LINCOSANIDES"
+            }
+        ]
+    }
+]

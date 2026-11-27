@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Paralgan",
+  "dosage": "300MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n046",
+    "description": "Produits partageant le code DCI 03 B 046 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "300MG",
+        "id": "ece69ee9-5c60-4bff-b8d1-303fe6a32d7c",
+        "laboratoire": "Propharmal",
+        "local": true,
+        "nom": "Doliprane",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG",
+        "id": "b9bc76b0-d350-4a8f-a961-ad24352f3608",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Sapramol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG",
+        "id": "6e43326a-f8d6-4900-abf6-ce369d930ddf",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Paracetamol Biocare",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300 MG",
+        "id": "1530fe5d-a8a5-4d42-83c7-24620def79e3",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Expandol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300 MG",
+        "id": "26ce3b2b-c4d8-4d55-a76c-3b712614defa",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Planadix",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

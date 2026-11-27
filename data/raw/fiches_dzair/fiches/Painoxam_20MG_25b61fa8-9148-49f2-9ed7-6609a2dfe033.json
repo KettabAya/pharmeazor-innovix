@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Painoxam",
+  "dosage": "20MG",
+  "dci": "PIROXICAM EXPRIMÉ EN PIROXICAM",
+  "Interactions de Piroxicam": "Interactions de Piroxicam Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n023",
+    "description": "Produits partageant le code DCI 04 B 023 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "20MG",
+        "id": "f4319794-4901-4fbd-98d6-1b150097d5f6",
+        "laboratoire": "Kpma Biotic",
+        "local": true,
+        "nom": "Piromex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

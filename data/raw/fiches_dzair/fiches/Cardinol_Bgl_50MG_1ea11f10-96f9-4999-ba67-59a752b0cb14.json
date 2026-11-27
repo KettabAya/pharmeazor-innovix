@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Cardinol Bgl",
+  "dosage": "50MG",
+  "dci": "ATENOLOL EXPRIMÉ EN ATENOLOL",
+  "Interactions de Atenolol": "Interactions de Atenolol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nF\n149",
+    "description": "Produits partageant le code DCI 06 F 149 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "50MG",
+        "id": "d22ad08e-d49f-4fbf-8538-392801da8633",
+        "laboratoire": "Tassili Arab Pharmaceutical Co",
+        "local": true,
+        "nom": "Daghtan 50",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

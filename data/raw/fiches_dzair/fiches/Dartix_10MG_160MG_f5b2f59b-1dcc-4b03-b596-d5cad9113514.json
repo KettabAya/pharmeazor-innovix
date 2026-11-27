@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Dartix",
+  "dosage": "10MG/160MG",
+  "dci": "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN EXPRIMÉ EN AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN",
+  "Interactions de Amlodipine Besilate Exprime En Amlodipine/Valsartan": "Interactions de Amlodipine Besilate Exprime En Amlodipine/Valsartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n259",
+    "description": "Produits partageant le code DCI 06 E 259 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "10MG/160MG",
+        "id": "7c379394-3e6b-4f38-9f26-6cb9c247758d",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Amplid",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "59c0a559-0e8b-4070-816e-827da59c3c6d",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Angiosar",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "3f045424-8906-4e79-948e-2bd6bba48437",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Bioforge",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "e611dc04-d1ba-43e8-ad64-9a01bf165d7f",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Exbitan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "da5b9f72-cf43-478c-8677-1a3d96099fc2",
+        "laboratoire": "Novartis Pharma Schweiz Ag",
+        "local": true,
+        "nom": "Exforge",
+        "pays": "Suisse",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "e7acf8be-8933-4952-afba-d59243569485",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Exformedic",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "102081f9-7ca6-4714-b00b-7360fc8b1236",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Exsart",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "200a49ef-bf24-47a3-aa48-e818fb9bf7e0",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Exval",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "d1d4f54d-3ea5-4cad-9ad8-44344b2702fc",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Lotevan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "346e4223-b2ef-4860-965d-bc217ca99741",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Mibraval",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/160MG",
+        "id": "fed93d8b-d59a-4e7e-98d1-5b816faacd11",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Vestamol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

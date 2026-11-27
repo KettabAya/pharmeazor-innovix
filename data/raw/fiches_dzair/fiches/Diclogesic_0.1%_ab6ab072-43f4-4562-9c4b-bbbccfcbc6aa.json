@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Diclogesic",
+  "dosage": "0.1%",
+  "dci": "DICLOFENAC SODIQUE EXPRIMÉ EN DICLOFENAC SODIQUE",
+  "Interactions de Diclofenac Sodique": "Interactions de Diclofenac Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "17\nJ\n118",
+    "description": "Produits partageant le code DCI 17 J 118 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "0,001",
+        "id": "e626fef9-ca5a-4e0d-8297-416ee784dd48",
+        "laboratoire": "Generic Lab",
+        "local": true,
+        "nom": "Xinac",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1MG/ML",
+        "id": "fbab1e67-c8f4-4bf1-8eab-a9d1daf5f193",
+        "laboratoire": "Thea",
+        "local": false,
+        "nom": "Dicloced",
+        "pays": "France",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "0,001",
+        "id": "0df73376-3557-48dc-b1b4-6e468021ad03",
+        "laboratoire": "Novartis Ophtalmics",
+        "local": false,
+        "nom": "Voltarene",
+        "pays": "France",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

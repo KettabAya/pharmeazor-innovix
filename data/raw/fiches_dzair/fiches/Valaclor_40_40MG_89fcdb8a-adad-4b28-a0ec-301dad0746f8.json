@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Valaclor 40",
+  "dosage": "40MG",
+  "dci": "VALSARTAN EXPRIMÉ EN VALSARTAN",
+  "Interactions de Valsartan": "Interactions de Valsartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n146",
+    "description": "Produits partageant le code DCI 06 E 146 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

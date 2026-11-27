@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Daghtan 50",
+  "dosage": "50MG",
+  "dci": "ATENOLOL EXPRIMÉ EN ATENOLOL",
+  "Interactions de Atenolol": "Interactions de Atenolol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nF\n149",
+    "description": "Produits partageant le code DCI 06 F 149 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "50MG",
+        "id": "1ea11f10-96f9-4999-ba67-59a752b0cb14",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Cardinol Bgl",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

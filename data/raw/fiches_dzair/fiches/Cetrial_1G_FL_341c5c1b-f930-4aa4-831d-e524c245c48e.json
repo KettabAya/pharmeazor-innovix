@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Cetrial",
+  "dosage": "1G/FL",
+  "dci": "CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE EXPRIMÉ EN CEFTRIAXONE SODIQUE EXPRIME EN CEFTRIAXONE",
+  "Interactions de Ceftriaxone Sodique Exprime En Ceftriaxone": "Interactions de Ceftriaxone Sodique Exprime En Ceftriaxone Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nB\n019",
+    "description": "Produits partageant le code DCI 13 B 019 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "1G/FL. DE PDRE.",
+        "id": "2687a265-74b1-4df4-8e38-37c1b124b5f5",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Cetriaxone Hup",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1G/FL. DE PDRE.",
+        "id": "de54b910-2a35-4a7f-a8c6-f03d0e813fd4",
+        "laboratoire": "Imgsa Groupe Industrie Pharmaceutique",
+        "local": true,
+        "nom": "Zafotriaxone",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

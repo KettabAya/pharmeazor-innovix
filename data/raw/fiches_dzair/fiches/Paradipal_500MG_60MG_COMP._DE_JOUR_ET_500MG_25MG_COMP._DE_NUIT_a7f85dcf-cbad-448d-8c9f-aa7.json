@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Paradipal",
+  "dosage": "500MG/60MG COMP. DE JOUR ET 500MG/25MG COMP. DE NUIT",
+  "dci": "PARACETAMOL/PSEUDOEPHEDRINE CHLORHYDRATE COMP. DE JOUR ET PARACETAMOL/DIPHENHYDRAMINE CHLORHYDRATE COMP. DE NUIT EXPRIMÉ EN PARACETAMOL/PSEUDOEPHEDRINE CHLORHYDRATE COMP. DE JOUR ET PARACETAMOL/DIPHENHYDRAMINE CHLORHYDRATE COMP. DE NUIT",
+  "Interactions de Paracetamol/Pseudoephedrine Chlorhydrate Comp. De Jour Et Paracetamol/Diphenhydramine Chlorhydrate Comp. De Nuit": "Interactions de Paracetamol/Pseudoephedrine Chlorhydrate Comp. De Jour Et Paracetamol/Diphenhydramine Chlorhydrate Comp. De Nuit Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "22\nA\n041",
+    "description": "Produits partageant le code DCI 22 A 041 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

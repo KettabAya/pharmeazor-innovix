@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Amoxypen",
+  "dosage": "1G/FL. DE PDRE.",
+  "dci": "AMOXICILLINE SODIQUE EXPRIMÉ EN AMOXICILLINE SODIQUE",
+  "Interactions de Amoxicilline Sodique": "Interactions de Amoxicilline Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n043",
+    "description": "Produits partageant le code DCI 13 G 043 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "1G/FL",
+        "id": "84c70513-2b3e-495b-a595-d37212bbb8b7",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Biopamox",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

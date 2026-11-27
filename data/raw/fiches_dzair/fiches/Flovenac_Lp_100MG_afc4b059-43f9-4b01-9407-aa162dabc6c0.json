@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Flovenac Lp",
+  "dosage": "100MG",
+  "dci": "DICLOFENAC SODIQUE EXPRIMÉ EN DICLOFENAC SODIQUE",
+  "Interactions de Diclofenac Sodique": "Interactions de Diclofenac Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n007",
+    "description": "Produits partageant le code DCI 04 B 007 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "5fefc60f-0267-4a98-849e-9988d8e22f71",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Clofenal Lp",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "100MG",
+        "id": "aa82e610-1979-4874-9cdd-c90c87b698ff",
+        "laboratoire": "Spimaco Addwaeih",
+        "local": true,
+        "nom": "Rofenac Lp",
+        "pays": "Arabie Saoudite",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "100MG",
+        "id": "76823382-bebf-49e4-a1fe-5991c71e8d80",
+        "laboratoire": "Dar Al Dawa",
+        "local": false,
+        "nom": "Diclogesic Retard",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Lotevan Plus",
+  "dosage": "160MG/10MG/12,5MG",
+  "dci": "VALSARTAN/AMLODIPINE/HYDROCHLOROTHIAZIDE EXPRIMÉ EN VALSARTAN/AMLODIPINE/HYDROCHLOROTHIAZIDE",
+  "Interactions de Valsartan/Amlodipine/Hydrochlorothiazide": "Interactions de Valsartan/Amlodipine/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n342",
+    "description": "Produits partageant le code DCI 06 E 342 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "160MG/10MG/12,5MG",
+        "id": "14c1d53f-4829-47a0-95a2-2bfe1423d758",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Co Exval",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

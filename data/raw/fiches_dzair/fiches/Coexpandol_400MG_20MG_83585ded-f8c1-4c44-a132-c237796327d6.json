@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Coexpandol",
+  "dosage": "400MG/20MG",
+  "dci": "PARACETAMOL/CODEINE PHOSPHATE HEMIHYDRATE EXPRIMÉ EN PARACETAMOL/CODEINE PHOSPHATE HEMIHYDRATE",
+  "Interactions de Paracetamol/Codeine Phosphate Hemihydrate": "Interactions de Paracetamol/Codeine Phosphate Hemihydrate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n026",
+    "description": "Produits partageant le code DCI 03 B 026 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "400MG/20MG",
+        "id": "4675a9a7-8d54-489d-995d-571d8b386c85",
+        "laboratoire": "Biohder Group",
+        "local": true,
+        "nom": "Codol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG/20MG",
+        "id": "c6e2eaf0-5339-43c9-8f7c-8484f0c38afe",
+        "laboratoire": "Laboratoire Algerien Du Medicament (Lam)",
+        "local": true,
+        "nom": "Parac-Co",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG/20MG",
+        "id": "d3778e0d-ecfd-43cf-8f12-c4bee21c41a5",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Paracetamol Codeine Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG/20MG",
+        "id": "899fe499-cf0c-46eb-968e-112be5f2bed7",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Coparalgan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

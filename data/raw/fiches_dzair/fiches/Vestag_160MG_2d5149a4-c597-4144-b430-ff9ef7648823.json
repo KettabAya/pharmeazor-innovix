@@ -1,0 +1,132 @@
+{
+  "nom_commercial": "Vestag",
+  "dosage": "160MG",
+  "dci": "VALSARTAN EXPRIMÉ EN VALSARTAN",
+  "Interactions de Valsartan": "Interactions de Valsartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n166",
+    "description": "Produits partageant le code DCI 06 E 166 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 13,
+    "produits": [
+      {
+        "dosage": "160MG",
+        "id": "46c3b408-7719-4c77-8062-4ab6b2af23b6",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Arbitan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "d9d5573b-969d-4565-abb2-00cabc4a078f",
+        "laboratoire": "Tassili Arab Pharmaceutical Co",
+        "local": true,
+        "nom": "Divalan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "da754d26-0017-4a60-9437-78385b32a42b",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Hureg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "e2604af1-ee9c-4b6c-bc1d-dfd6d2c77f31",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Reta 160",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "7c2e6c34-73fb-49d5-8497-1006bf4fd9a8",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Sarteg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "b02282ca-336d-4a46-8f21-3b61544d4648",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Tabuvan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "e5fe2dc4-4dab-4d26-a9f4-35a4d0f7b5c4",
+        "laboratoire": "Novartis Pharma Schweiz Ag",
+        "local": true,
+        "nom": "Tareg",
+        "pays": "Suisse",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "0cd31572-e77e-4238-9a7a-19afd3769c3b",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Valaclor 160",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "5ba05c13-d10a-470e-b649-56874b27d225",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Valastan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "bae69c0b-6917-4995-9cb9-46d430efaa58",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Valex 160",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "3f813ceb-84c8-4892-a56d-e19877815405",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Viasart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG",
+        "id": "18ae314a-c011-4aa6-acd9-6942aae578f3",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Valsis",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "160MG",
+        "id": "6542d7e6-f90f-40fe-98c9-261351a7c135",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Vareg",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

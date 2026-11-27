@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Amoclan Bid",
+  "dosage": "875MG/125MG",
+  "dci": "AMOXICILLINE TRIHYDRAT2E/ACIDE CLAVULANIQUE POTASSIQUE EXPRIMÉ EN AMOXICILLINE TRIHYDRAT2E/ACIDE CLAVULANIQUE POTASSIQUE",
+  "Interactions de Amoxicilline Trihydrat2e/Acide Clavulanique Potassique": "Interactions de Amoxicilline Trihydrat2e/Acide Clavulanique Potassique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n267",
+    "description": "Produits partageant le code DCI 13 G 267 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "875MG/125MG",
+        "id": "30ab58d2-0d55-4417-9e06-16f4f95bc602",
+        "laboratoire": "Continental Pharm",
+        "local": true,
+        "nom": "Clavodex Duo",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "875MG*/125MG*",
+        "id": "659dc9b6-2412-4237-a433-6f6e60458fe6",
+        "laboratoire": "Dar Al Dawa",
+        "local": false,
+        "nom": "Clavodar 1g",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

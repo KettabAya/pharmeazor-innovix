@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Aprovasc",
+  "dosage": "5MG/300MG",
+  "dci": "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/IRBESARTAN EXPRIMÉ EN AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/IRBESARTAN",
+  "Interactions de Amlodipine Besilate Exprime En Amlodipine/Irbesartan": "Interactions de Amlodipine Besilate Exprime En Amlodipine/Irbesartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n311",
+    "description": "Produits partageant le code DCI 06 E 311 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "5MG/300MG",
+        "id": "69a37102-feca-496b-a107-c7b0172a80a4",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Aprodex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/300MG",
+        "id": "d0b42258-fd7a-4ac6-8c06-f39de168d056",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Aprovasc",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/300MG",
+        "id": "cc0c6be2-4a67-469e-a711-739af7086cdd",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Exirb",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/300MG",
+        "id": "e56cd06a-4ff3-4aa6-a037-6d1d1bf1f354",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Gizlan Duo",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/300MG",
+        "id": "2c007ef5-5c59-48ed-81be-c06087d8ef7c",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Vascovel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

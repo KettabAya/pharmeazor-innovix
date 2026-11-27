@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Betamethasone-Acide Salicylique Novagenerics",
+  "dosage": "0,05G%/3G%",
+  "dci": "BETHAMETHASONE/ACIDE SALICYLIQUE EXPRIMÉ EN BETHAMETHASONE/ACIDE SALICYLIQUE",
+  "Interactions de Bethamethasone/Acide Salicylique": "Interactions de Bethamethasone/Acide Salicylique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "07\nH\n041",
+    "description": "Produits partageant le code DCI 07 H 041 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "0,05G%/3G%",
+        "id": "de7bab42-d151-4119-a898-8c522a5c3f2e",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Betacyl",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,05G%/3G%",
+        "id": "0a0fe483-61c2-4ba3-ac87-dedae355333b",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Daprosal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

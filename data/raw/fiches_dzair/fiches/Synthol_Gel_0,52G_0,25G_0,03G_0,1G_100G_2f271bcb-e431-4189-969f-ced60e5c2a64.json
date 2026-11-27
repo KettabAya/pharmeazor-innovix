@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Synthol Gel",
+  "dosage": "0,52G/0,25G/0,03G/0,1G/100G",
+  "dci": "LEVOMENTHOL/VERATROLE/RESORCINOL/ACIDE SALICYLIQUE EXPRIMÉ EN LEVOMENTHOL/VERATROLE/RESORCINOL/ACIDE SALICYLIQUE",
+  "Interactions de Levomenthol/Veratrole/Resorcinol/Acide Salicylique": "Interactions de Levomenthol/Veratrole/Resorcinol/Acide Salicylique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "21\nF\n048",
+    "description": "Produits partageant le code DCI 21 F 048 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "260MG/125MG/15MG/50MG/50G",
+        "id": "cbad926c-d96c-40a2-a066-700e9fffc6c7",
+        "laboratoire": "Laboratoires Pharmaghreb",
+        "local": true,
+        "nom": "Septhol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

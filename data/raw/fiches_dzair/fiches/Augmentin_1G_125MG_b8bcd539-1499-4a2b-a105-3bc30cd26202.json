@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Augmentin",
+  "dosage": "1G/125MG",
+  "dci": "AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE EXPRIMÉ EN AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE",
+  "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique": "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n269",
+    "description": "Produits partageant le code DCI 13 G 269 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "1G/125MG",
+        "id": "2c5eaf21-fe21-4725-8192-6aa3d0dee7dc",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Amoclan 8:1",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1G/125MG",
+        "id": "9058a08f-c5fd-4a70-a509-c66419689e9f",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Bioclav 8:1",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1G/125MG",
+        "id": "41e52fb4-5c57-4140-9e4a-4a6ae1e1a4ea",
+        "laboratoire": "Eurl Genis Pharmaceutique Et Parapharmaceutique",
+        "local": true,
+        "nom": "Clamoclav",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1G/125MG",
+        "id": "34b6b59b-d769-458a-ab4f-bce72fa73f6f",
+        "laboratoire": "Continental Pharm",
+        "local": true,
+        "nom": "Clavodex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1G/125MG",
+        "id": "ec509ecf-3c0f-411d-b024-8b191d9d6861",
+        "laboratoire": "Al Dar Al Arabia Spa",
+        "local": true,
+        "nom": "Ecoclav",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "nom_commercial": "Exval",
+  "dosage": "5MG/160MG",
+  "dci": "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN EXPRIMÉ EN AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN",
+  "Interactions de Amlodipine Besilate Exprime En Amlodipine/Valsartan": "Interactions de Amlodipine Besilate Exprime En Amlodipine/Valsartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n258",
+    "description": "Produits partageant le code DCI 06 E 258 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 12,
+    "produits": [
+      {
+        "dosage": "5MG/160MG",
+        "id": "38db1728-fa08-4a4a-8a02-493a5203bd9b",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Amlodipine+valsartan Ldm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "0aa0f004-c3db-48b5-b352-65225fa3951f",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Amplid",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "3313e4b8-1401-4e2e-8da7-12e664f3d003",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Angiosar",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "6f22b463-8eaa-4155-a890-7734f2c9c5f7",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Bioforge",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "94bc516d-fa26-4d8c-b167-e37520dcea70",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Dartix",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "a50e3be3-72b1-4abf-b999-e3a8dd0ae72a",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Exbitan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "4b8d29ce-7eba-480e-a29a-e24b3193a561",
+        "laboratoire": "Novartis Pharma Schweiz Ag",
+        "local": true,
+        "nom": "Exforge",
+        "pays": "Suisse",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "fff23841-a2dd-4f58-8b65-9061ab1b4128",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Exformedic",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "47afe86b-c741-458b-8dfc-7a96daadf2d5",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Exsart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "cc3cfd30-ebb8-4071-9813-a3f4e0bf43af",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Lotevan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "3a0f29d2-57d7-46b3-b25c-a2287e5fba61",
+        "laboratoire": "Alembic Mami Spa",
+        "local": true,
+        "nom": "Valamlo Alembic Mami",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/160MG",
+        "id": "df8bc43e-d254-4568-ba32-061452fcd607",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Vestamol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

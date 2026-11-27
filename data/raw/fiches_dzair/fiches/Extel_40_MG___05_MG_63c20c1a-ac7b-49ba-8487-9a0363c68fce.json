@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Extel",
+  "dosage": "40 MG / 05 MG",
+  "dci": "TELMISARTAN/ AMLODIPINE EXPRIMÉ EN TELMISARTAN/ AMLODIPINE",
+  "Interactions de Telmisartan/ Amlodipine": "Interactions de Telmisartan/ Amlodipine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n339",
+    "description": "Produits partageant le code DCI 06 E 339 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "40 MG / 5 MG",
+        "id": "237f0d9a-ce3f-4c1e-9ace-564f92b8567a",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Temisal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

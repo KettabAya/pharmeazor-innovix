@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Erythrodar",
+  "dosage": "200MG/5ML",
+  "dci": "ERYTHROMYCINE EXPRIMÉ EN ERYTHROMYCINE",
+  "Interactions de Erythromycine": "Interactions de Erythromycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n028",
+    "description": "Produits partageant le code DCI 13 E 028 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "200MG/5ML",
+        "id": "b3a95ba3-a6fb-4220-af28-8e98e020f669",
+        "laboratoire": "Sandoz",
+        "local": true,
+        "nom": "Erybesan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

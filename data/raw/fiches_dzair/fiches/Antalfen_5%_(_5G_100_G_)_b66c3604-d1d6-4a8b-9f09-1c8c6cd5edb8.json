@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Antalfen",
+  "dosage": "5% ( 5G/100 G )",
+  "dci": "IBUPROFENE EXPRIMÉ EN IBUPROFENE",
+  "Interactions de Ibuprofene": "Interactions de Ibuprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "21\nA\n057",
+    "description": "Produits partageant le code DCI 21 A 057 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "5% ( 5G/100 G )",
+        "id": "bd20250a-28dc-409a-bd95-598be8c23610",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Gelfen 5%",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

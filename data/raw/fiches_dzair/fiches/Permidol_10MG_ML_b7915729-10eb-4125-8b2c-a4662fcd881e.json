@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Permidol",
+  "dosage": "10MG/ML",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n067",
+    "description": "Produits partageant le code DCI 03 B 067 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "10MG/ML (1000MG/100ML)",
+        "id": "9a79a929-b6cc-419a-b3f9-1a8d5c539b56",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Paracetal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/ML (500MG/50ML) (1000MG/100ML)",
+        "id": "4d58bed4-b50d-4712-a3c5-0638285aec6e",
+        "laboratoire": "Laboratoires Pharmaghreb",
+        "local": true,
+        "nom": "Paracetamol Pharmaghreb",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/ML (500MG/50ML) (1000MG/100ML)",
+        "id": "24507fce-6b3a-439b-9326-6c16bd15d963",
+        "laboratoire": "Les Laboratoires Frater Razes",
+        "local": true,
+        "nom": "Sapramol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

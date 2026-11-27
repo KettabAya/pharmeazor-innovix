@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Doliprane",
+  "dosage": "150MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n041",
+    "description": "Produits partageant le code DCI 03 B 041 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "150MG",
+        "id": "54639c39-2bbc-4b4e-a5ad-9103ed844905",
+        "laboratoire": "D-B-F",
+        "local": true,
+        "nom": "Paracetamol Dbf",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "2f53464a-aa57-49d4-9df4-e8cfbc425c4d",
+        "laboratoire": "4a Sante Industrie",
+        "local": true,
+        "nom": "Suppfadol 150",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "N",
+        "id": "4b96720d-67ba-4fc6-a161-cd0bb9567205",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Parol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

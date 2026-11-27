@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Sapofen 600",
+  "dosage": "600MG",
+  "dci": "IBUPROFENE EXPRIMÉ EN IBUPROFENE",
+  "Interactions de Ibuprofene": "Interactions de Ibuprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n044",
+    "description": "Produits partageant le code DCI 04 B 044 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "600MG",
+        "id": "15dc147d-195d-4ed7-b98e-c8fbd150f647",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Butafen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "71240876-da07-49e9-8932-ea8373055490",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Hubifen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "732d508e-f86d-495b-822d-2ba0e9e84b2d",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Ibuprane",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "439a2c19-cc88-4839-aebc-f0485091992c",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Ibuprofal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "d1c00294-a49f-4ba5-a5f2-1a8c0ec95203",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Ibuprofene Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "1d6e9383-c447-463e-be7f-cf910e866a8f",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Narufene",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "2b7848ed-6e46-41a5-8bca-5f90ba0f93e5",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Neofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "659af193-9406-4a39-8049-a99ddf4cbe21",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Neupren",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "55839bf9-a82a-475c-b703-af0bf4950421",
+        "laboratoire": "Kpma Biotic",
+        "local": true,
+        "nom": "Sapomex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "64966ce1-0161-4c5f-954d-872c435b3068",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Ubactive 600mg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "600MG",
+        "id": "4fc8becc-2da8-4bf8-a328-426e10cc9af2",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Xydol 600",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

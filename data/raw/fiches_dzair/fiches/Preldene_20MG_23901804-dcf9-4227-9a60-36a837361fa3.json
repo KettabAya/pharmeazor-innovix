@@ -1,0 +1,87 @@
+{
+  "nom_commercial": "Preldene",
+  "dosage": "20MG",
+  "dci": "PIROXICAM SOUS FORME DE COMPLEXE PIROXICAM - BETA - CYCLODEXTRINE (PIROXICAM) EXPRIMÉ EN PIROXICAM SOUS FORME DE COMPLEXE PIROXICAM - BETA - CYCLODEXTRINE (PIROXICAM)",
+  "Interactions de Piroxicam Sous Forme De Complexe Piroxicam - Beta - Cyclodextrine (Piroxicam)": "Interactions de Piroxicam Sous Forme De Complexe Piroxicam - Beta - Cyclodextrine (Piroxicam) Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n022",
+    "description": "Produits partageant le code DCI 04 B 022 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 8,
+    "produits": [
+      {
+        "dosage": "20MG",
+        "id": "380ee27b-04f7-42ce-ac45-2ab4ef7665a2",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Fradene",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG",
+        "id": "a43ddc54-afd9-4b0e-99e6-5abd78eb9035",
+        "laboratoire": "Novapharm Trading",
+        "local": true,
+        "nom": "Piroxicam Novagenerics",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG",
+        "id": "a2bc767f-2844-496b-a614-75dd8e50b7a4",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Piroxicam Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG",
+        "id": "bb394ca9-131c-4028-b020-04fc0aff8450",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Roxicam",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG",
+        "id": "bb432471-30de-4e97-9681-39ae65e712da",
+        "laboratoire": "Pharmethic",
+        "local": true,
+        "nom": "Cycladol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "20MG",
+        "id": "d328bf53-bf7c-4516-ae8d-a2e6cef2c38d",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Felcam Fast",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "20MG",
+        "id": "2b8ef42c-f3ec-41ce-9738-fdc8b0c2609c",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Fenoxam",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "20MG",
+        "id": "79383a8c-760e-4f93-b44a-2204e896818a",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Orthocam",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

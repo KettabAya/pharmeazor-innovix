@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Aprodex",
+  "dosage": "150MG/10MG",
+  "dci": "IRBESARTAN/AMLODIPINE EXPRIMÉ EN IRBESARTAN/AMLODIPINE",
+  "Interactions de Irbesartan/Amlodipine": "Interactions de Irbesartan/Amlodipine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n318",
+    "description": "Produits partageant le code DCI 06 E 318 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "150MG/10MG",
+        "id": "47b7b930-85a6-4072-b695-ef7c0175aa37",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Aprovasc",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/10MG",
+        "id": "3d3de3b1-e640-4a6e-b159-902a29c4be95",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Gizlan Duo",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

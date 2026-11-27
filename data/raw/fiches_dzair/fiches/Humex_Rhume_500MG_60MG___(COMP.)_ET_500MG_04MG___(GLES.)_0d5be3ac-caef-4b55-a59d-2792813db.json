@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Humex Rhume",
+  "dosage": "500MG/60MG** (COMP.) ET 500MG/04MG** (GLES.)",
+  "dci": "PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE)** ET PARACETAMOL/CHLORPHENIRAMINE(SOUS FORME DE MALEATE)** EXPRIMÉ EN PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE)** ET PARACETAMOL/CHLORPHENIRAMINE(SOUS FORME DE MALEATE)**",
+  "Interactions de Paracetamol/Pseudoephedrine (Sous Forme De Chlorhydrate)** Et Paracetamol/Chlorpheniramine(Sous Forme De Maleate)**": "Interactions de Paracetamol/Pseudoephedrine (Sous Forme De Chlorhydrate)** Et Paracetamol/Chlorpheniramine(Sous Forme De Maleate)** Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "22\nA\n029",
+    "description": "Produits partageant le code DCI 22 A 029 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

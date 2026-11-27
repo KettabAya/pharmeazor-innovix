@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Matador 750",
+  "dosage": "750MG",
+  "dci": "LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE EXPRIMÉ EN LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE",
+  "Interactions de Levofloxacine Hemihydrate Exprime En Levofloxacine": "Interactions de Levofloxacine Hemihydrate Exprime En Levofloxacine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nK\n468",
+    "description": "Produits partageant le code DCI 13 K 468 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "750MG",
+        "id": "c6611337-a7ab-40c1-ba0d-1df780fbfd09",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Loxamox",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

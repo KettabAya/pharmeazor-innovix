@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Winex",
+  "dosage": "400MG",
+  "dci": "CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE EXPRIMÉ EN CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE",
+  "Interactions de Cefixime Trihydrate Exprime En Cefixime Anhydre": "Interactions de Cefixime Trihydrate Exprime En Cefixime Anhydre Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nB\n294",
+    "description": "Produits partageant le code DCI 13 B 294 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "400MG",
+        "id": "517cff6b-9aab-48a3-af30-f88077b2739e",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Orokal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "a554d401-bb5e-49d7-8712-9a9be45675ac",
+        "laboratoire": "Middle East Pharmaceutical And Chemical Industries,medical Appliances Co",
+        "local": false,
+        "nom": "Betixim",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

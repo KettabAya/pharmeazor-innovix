@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Clofenal",
+  "dosage": "100MG",
+  "dci": "DICLOFENAC SODIQUE EXPRIMÉ EN DICLOFENAC SODIQUE",
+  "Interactions de Diclofenac Sodique": "Interactions de Diclofenac Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n009",
+    "description": "Produits partageant le code DCI 04 B 009 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "739b82cf-7da5-4bd1-9a69-4c342d2624f4",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Biofenac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "e237cb11-3bfa-45dd-857a-8368984fb037",
+        "laboratoire": "Groupement Pharmaceutique Algerien (Gpa)",
+        "local": true,
+        "nom": "Diclofenac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "8396d6e1-19b5-4439-bcd1-e834716fb992",
+        "laboratoire": "D-B-F",
+        "local": true,
+        "nom": "Diclofenac Dbf",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "ef822e1d-ae16-49d7-94a8-cb2c3a677316",
+        "laboratoire": "Kpma Biotic",
+        "local": true,
+        "nom": "Voltamex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

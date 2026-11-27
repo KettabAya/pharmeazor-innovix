@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Biovex",
+  "dosage": "280 MG/100MG/10 MG",
+  "dci": "PARACETAMOL/ACIDE ASCORBIQUE/PHENIRAMINE MALEATE EXPRIMÉ EN PARACETAMOL/ACIDE ASCORBIQUE/PHENIRAMINE MALEATE",
+  "Interactions de Paracetamol/Acide Ascorbique/Pheniramine Maleate": "Interactions de Paracetamol/Acide Ascorbique/Pheniramine Maleate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "22\nA\n032",
+    "description": "Produits partageant le code DCI 22 A 032 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

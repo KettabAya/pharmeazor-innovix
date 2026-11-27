@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Sarteg",
+  "dosage": "320MG",
+  "dci": "VALSARTAN EXPRIMÉ EN VALSARTAN",
+  "Interactions de Valsartan": "Interactions de Valsartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n308",
+    "description": "Produits partageant le code DCI 06 E 308 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "320MG",
+        "id": "89adfd00-8ea3-4242-9070-96f909864cf7",
+        "laboratoire": "Alembic Mami Spa",
+        "local": true,
+        "nom": "Valcard Alembic Mami",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

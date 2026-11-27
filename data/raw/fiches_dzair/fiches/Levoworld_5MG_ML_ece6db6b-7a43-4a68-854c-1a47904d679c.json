@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Levoworld",
+  "dosage": "5MG/ML",
+  "dci": "LEVOFLOXACINE HEMIHYDRATE EXPRIMÉ EN LEVOFLOXACINE HEMIHYDRATE",
+  "Interactions de Levofloxacine Hemihydrate": "Interactions de Levofloxacine Hemihydrate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "17\nD\n188",
+    "description": "Produits partageant le code DCI 17 D 188 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "5MG/ML",
+        "id": "6a26b9cf-94d1-49e3-ba1d-965f95afa852",
+        "laboratoire": "Beit Jala Pharmaceuticals Company",
+        "local": false,
+        "nom": "Vivaxin",
+        "pays": "Palestine",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

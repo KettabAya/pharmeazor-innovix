@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Nhupain",
+  "dosage": "275MG",
+  "dci": "NAPROXENE SODIQUE EXPRIMÉ EN NAPROXENE SODIQUE",
+  "Interactions de Naproxene Sodique": "Interactions de Naproxene Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n019",
+    "description": "Produits partageant le code DCI 04 B 019 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "275MG",
+        "id": "a19edb01-3861-4700-bb34-d0e449887d14",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Naprolgic",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "275MG",
+        "id": "0cdc4f16-17b7-441e-8e2c-76b9356bea22",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Naprox",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "275MG",
+        "id": "57153f2b-6219-4700-9bdb-0ade2980502f",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Naproxene Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "275MG",
+        "id": "9c8ad69b-30b4-4921-bf3a-7a0e0275e273",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Nexopain",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "275MG",
+        "id": "736aa9cb-9aa3-4a8c-baaa-acf4ac8b2e61",
+        "laboratoire": "Ram Pharmaceutical Industries",
+        "local": false,
+        "nom": "Nexorpan",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

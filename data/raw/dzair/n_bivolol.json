@@ -1,0 +1,1192 @@
+[
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1565/nebcar-2-5-mg-comprime-secable",
+        "status": "Enregistré",
+        "DCI (Substance active)": "NEBIVOLOL CHLORHYDRATE (NEBIVOLOL)",
+        "Nom de marque": "NEBCAR",
+        "N° d'enregistrement": "352/06 F 323/18",
+        "Code produit": "06 F 323",
+        "Code ATC": "C07AB12 – nébivolol",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "🇩🇿 Fabriqué en Algérie",
+        "Forme pharmaceutique": "COMPRIME SECABLE",
+        "Voie d'administration": "Voie orale",
+        "Méthode d'administration": "Avaler",
+        "Dosage": "2,5 MG",
+        "Conditionnement": "B/30",
+        "Prescription": "HOP",
+        "Stabilité": "36 MOIS",
+        "Laboratoire": "EL KENDI INDUSTRIE DU MEDICAMENT",
+        "Pays d'origine": "🇩🇿 ALGERIE",
+        "Date d'enregistrement": "2018-11-11",
+        "Date de fin de validité": "2022-06-16",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "NEBCAR 2,5 MG est un médicament sous forme de comprime secable dont la substance active est NEBIVOLOL CHLORHYDRATE (NEBIVOLOL), produit par le laboratoire EL KENDI INDUSTRIE DU MEDICAMENT (ALGERIE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et fabriqué en Algérie. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "Aucune autre présentation de même substance active, dosage et forme que NEBCAR 2,5 MG n'est enregistrée dans la nomenclature actuelle. 1 autre produit contient aussi NEBIVOLOL CHLORHYDRATE (NEBIVOLOL), à d'autres dosages ou formes.\nLe laboratoire EL KENDI INDUSTRIE DU MEDICAMENT compte 283 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 11 novembre 2018 (il y a environ 8 ans). La validité indiquée a pris fin le 16 juin 2022 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [
+            {
+                "nom": "NEBCAR",
+                "forme": "COMPRIME QUADRI-SECABLE",
+                "dosage": "5MG",
+                "laboratoire": "🏭 EL KENDI INDUSTRIE DU MEDICAMENT ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1557/nebcar-5mg-comprime-quadri-secable"
+            }
+        ],
+        "related_presentations": [
+            {
+                "nom": "NEBCAR",
+                "forme": "COMPRIME SECABLE",
+                "dosage": "2,5 MG",
+                "conditionnement": "B/30",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1565/nebcar-2-5-mg-comprime-secable"
+            },
+            {
+                "nom": "NEBCAR",
+                "forme": "COMPRIME QUADRI-SECABLE",
+                "dosage": "5MG",
+                "conditionnement": "B/30",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1557/nebcar-5mg-comprime-quadri-secable"
+            }
+        ],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "MEXILETINE",
+                "type": "Substance",
+                "gravite": "Contre-indication",
+                "risques": "Effet inotrope négatif avec risque de décompensation cardiaque.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTIHYPERTENSEURS CENTRAUX",
+                "type": "Classe",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution centrale du tonus sympathique et effet vasodilatateur des antihypertenseurs centraux, préjudiciables en cas d'insuffisance cardiaque traitée par bêta-bloquant et vasodilatateur.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "DILTIAZEM",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Troubles de l'automatisme (bradycardie excessive, arrêt sinusal), troubles de la conduction sino-auriculaire et auriculo-ventriculaire et défaillance cardiaque.",
+                "conduite_a_tenir": "Une telle association ne doit se faire que sous surveillance clinique et ECG étroite, en particulier chez le sujet âgé ou en début de traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "DILTIAZEM",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Effet inotrope négatif avec risque de décompensation de l’insuffisance cardiaque, troubles de l'automatisme (bradycardie, arrêt sinusal) et troubles de la conduction sino-auriculaire et auriculo-ventriculaire.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "FINGOLIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG continu pendant les 6 heures suivant la première dose voire 2 heures de plus, jusqu'au lendemain si nécessaire.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "OZANIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG pendant au moins 6 heures.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "PONÉSIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG continu pendant les 4 heures suivant la première dose, jusqu'au lendemain si nécessaire.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "VERAPAMIL",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Troubles de l'automatisme (bradycardie excessive, arrêt sinusal), trouble de la conduction sino-auriculaire et auriculo-ventriculaire et défaillance cardiaque.",
+                "conduite_a_tenir": "Une telle association ne doit se faire que sous surveillance clinique et ECG étroite, en particulier chez le sujet âgé ou en début de traitement.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "VERAPAMIL",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Effet inotrope négatif avec risque de décompensation de l’insuffisance cardiaque, troubles de l'automatisme (bradycardie, arrêt sinusal) et troubles de la conduction sino-auriculaire et auriculo-ventriculaire.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "FLUOXETINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de majoration des effets indésirables du nébivolol avec notamment bradycardie excessive, par inhibition de son métabolisme par l’antidépresseur.",
+                "conduite_a_tenir": "Surveillance clinique accrue ; si besoin, adaptation de la posologie du nébivolol pendant la durée du traitement par l’antidépresseur et après son arrêt.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "PAROXETINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de majoration des effets indésirables du nébivolol avec notamment bradycardie excessive, par inhibition de son métabolisme par l’antidépresseur.",
+                "conduite_a_tenir": "Surveillance clinique accrue ; si besoin, adaptation de la posologie du nébivolol pendant la durée du traitement par l’antidépresseur et après son arrêt.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "AMIODARONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de l'automatisme et de la conduction (suppression des mécanismes sympathiques compensateurs).",
+                "conduite_a_tenir": "Surveillance clinique et ECG.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL ET SOTALOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "AMIODARONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de l'automatisme et de la conduction cardiaque avec risque de bradycardie excessive.",
+                "conduite_a_tenir": "Surveillance clinique et ECG régulière.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANESTHÉSIQUES VOLATILS HALOGÉNÉS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Réduction des réactions cardiovasculaires de compensation par les bêta-bloquants. L'inhibition bêta-adrénergique peut être levée durant l'intervention par les bêta-mimétiques.",
+                "conduite_a_tenir": "En règle générale, ne pas arrêter le traitement bêta-bloquant et, de toute façon, éviter l'arrêt brutal. Informer l'anesthésiste de ce traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "ANESTHÉSIQUES VOLATILS HALOGÉNÉS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Réduction des réactions cardiovasculaires de compensation par les bêta-bloquants. L'inhibition bêta-adrénergique peut être levée durant l'intervention par les bêta-stimulants.",
+                "conduite_a_tenir": "En règle générale, ne pas arrêter le traitement bêta-bloquant et, de toute façon, éviter l'arrêt brutal. Informer l'anesthésiste de ce traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTICHOLINESTÉRASIQUES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de bradycardie excessive (addition des effets bradycardisants).",
+                "conduite_a_tenir": "Surveillance clinique régulière, notamment en début d'association.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTIHYPERTENSEURS CENTRAUX",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation importante de la pression artérielle en cas d'arrêt brutal du traitement par l'antihypertenseur central.",
+                "conduite_a_tenir": "Eviter l'arrêt brutal du traitement par l'antihypertenseur central. Surveillance clinique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "GLINIDES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "GLINIDES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "GLIPTINES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "INSULINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "INSULINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "LIDOCAINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Avec la lidocaïne utilisée par voie IV : augmentation des concentrations plasmatiques de lidocaïne avec possibilité d'effets indésirables neurologiques et cardiaques (diminution de la clairance hépatique de la lidocaïne).",
+                "conduite_a_tenir": "Surveillance clinique, ECG et éventuellement contrôle des concentrations plasmatiques de lidocaïne pendant l'association et après l'arrêt du bêta-bloquant. Adaptation si besoin de la posologie de la lidocaïne.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "PROPAFENONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de la contractilité, de l'automatisme et de la conduction (suppression des mécanismes sympathiques compensateurs).",
+                "conduite_a_tenir": "Surveillance clinique et ECG.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "SUBSTANCES SUSCEPTIBLES DE DONNER DES TORSADES DE POINTES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes.",
+                "conduite_a_tenir": "Surveillance clinique et électrocardiographique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "SUBSTANCES SUSCEPTIBLES DE DONNER DES TORSADES DE POINTES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes.",
+                "conduite_a_tenir": "Surveillance clinique et électrocardiographique pendant l'association.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "SULFAMIDES HYPOGLYCÉMIANTS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "SULFAMIDES HYPOGLYCÉMIANTS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le malade et renforcer, surtout au début du traitement, l'autosurveillance sanguine.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1557/nebcar-5mg-comprime-quadri-secable",
+        "status": "Enregistré",
+        "DCI (Substance active)": "NEBIVOLOL CHLORHYDRATE (NEBIVOLOL)",
+        "Nom de marque": "NEBCAR",
+        "N° d'enregistrement": "352/06 F 273/18/23",
+        "Code produit": "06 F 273",
+        "Code ATC": "C07AB12 – nébivolol",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "🇩🇿 Fabriqué en Algérie",
+        "Forme pharmaceutique": "COMPRIME QUADRI-SECABLE",
+        "Voie d'administration": "Voie orale",
+        "Méthode d'administration": "Avaler",
+        "Dosage": "5MG",
+        "Conditionnement": "B/30",
+        "Prescription": "HOP",
+        "Stabilité": "36 MOIS",
+        "Laboratoire": "EL KENDI INDUSTRIE DU MEDICAMENT",
+        "Pays d'origine": "🇩🇿 ALGERIE",
+        "Date d'enregistrement": "2018-10-09",
+        "Date de fin de validité": "2023-07-10",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "NEBCAR 5MG est un médicament sous forme de comprime quadri-secable dont la substance active est NEBIVOLOL CHLORHYDRATE (NEBIVOLOL), produit par le laboratoire EL KENDI INDUSTRIE DU MEDICAMENT (ALGERIE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et fabriqué en Algérie. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "Aucune autre présentation de même substance active, dosage et forme que NEBCAR 5MG n'est enregistrée dans la nomenclature actuelle. 1 autre produit contient aussi NEBIVOLOL CHLORHYDRATE (NEBIVOLOL), à d'autres dosages ou formes.\nLe laboratoire EL KENDI INDUSTRIE DU MEDICAMENT compte 283 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 9 octobre 2018 (il y a environ 8 ans). La validité indiquée a pris fin le 10 juillet 2023 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [
+            {
+                "nom": "NEBCAR",
+                "forme": "COMPRIME SECABLE",
+                "dosage": "2,5 MG",
+                "laboratoire": "🏭 EL KENDI INDUSTRIE DU MEDICAMENT ( 🇩🇿 ALGERIE )",
+                "type": "Générique",
+                "annee": "2026",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1565/nebcar-2-5-mg-comprime-secable"
+            }
+        ],
+        "related_presentations": [
+            {
+                "nom": "NEBCAR",
+                "forme": "COMPRIME SECABLE",
+                "dosage": "2,5 MG",
+                "conditionnement": "B/30",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1565/nebcar-2-5-mg-comprime-secable"
+            },
+            {
+                "nom": "NEBCAR",
+                "forme": "COMPRIME QUADRI-SECABLE",
+                "dosage": "5MG",
+                "conditionnement": "B/30",
+                "url": "https://www.dzair-pharma.net/medicament/enregistrement/1557/nebcar-5mg-comprime-quadri-secable"
+            }
+        ],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "MEXILETINE",
+                "type": "Substance",
+                "gravite": "Contre-indication",
+                "risques": "Effet inotrope négatif avec risque de décompensation cardiaque.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTIHYPERTENSEURS CENTRAUX",
+                "type": "Classe",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution centrale du tonus sympathique et effet vasodilatateur des antihypertenseurs centraux, préjudiciables en cas d'insuffisance cardiaque traitée par bêta-bloquant et vasodilatateur.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "DILTIAZEM",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Troubles de l'automatisme (bradycardie excessive, arrêt sinusal), troubles de la conduction sino-auriculaire et auriculo-ventriculaire et défaillance cardiaque.",
+                "conduite_a_tenir": "Une telle association ne doit se faire que sous surveillance clinique et ECG étroite, en particulier chez le sujet âgé ou en début de traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "DILTIAZEM",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Effet inotrope négatif avec risque de décompensation de l’insuffisance cardiaque, troubles de l'automatisme (bradycardie, arrêt sinusal) et troubles de la conduction sino-auriculaire et auriculo-ventriculaire.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "FINGOLIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG continu pendant les 6 heures suivant la première dose voire 2 heures de plus, jusqu'au lendemain si nécessaire.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "OZANIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG pendant au moins 6 heures.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "PONÉSIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG continu pendant les 4 heures suivant la première dose, jusqu'au lendemain si nécessaire.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "VERAPAMIL",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Troubles de l'automatisme (bradycardie excessive, arrêt sinusal), trouble de la conduction sino-auriculaire et auriculo-ventriculaire et défaillance cardiaque.",
+                "conduite_a_tenir": "Une telle association ne doit se faire que sous surveillance clinique et ECG étroite, en particulier chez le sujet âgé ou en début de traitement.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "VERAPAMIL",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Effet inotrope négatif avec risque de décompensation de l’insuffisance cardiaque, troubles de l'automatisme (bradycardie, arrêt sinusal) et troubles de la conduction sino-auriculaire et auriculo-ventriculaire.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "FLUOXETINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de majoration des effets indésirables du nébivolol avec notamment bradycardie excessive, par inhibition de son métabolisme par l’antidépresseur.",
+                "conduite_a_tenir": "Surveillance clinique accrue ; si besoin, adaptation de la posologie du nébivolol pendant la durée du traitement par l’antidépresseur et après son arrêt.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "PAROXETINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de majoration des effets indésirables du nébivolol avec notamment bradycardie excessive, par inhibition de son métabolisme par l’antidépresseur.",
+                "conduite_a_tenir": "Surveillance clinique accrue ; si besoin, adaptation de la posologie du nébivolol pendant la durée du traitement par l’antidépresseur et après son arrêt.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "AMIODARONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de l'automatisme et de la conduction (suppression des mécanismes sympathiques compensateurs).",
+                "conduite_a_tenir": "Surveillance clinique et ECG.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL ET SOTALOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "AMIODARONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de l'automatisme et de la conduction cardiaque avec risque de bradycardie excessive.",
+                "conduite_a_tenir": "Surveillance clinique et ECG régulière.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANESTHÉSIQUES VOLATILS HALOGÉNÉS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Réduction des réactions cardiovasculaires de compensation par les bêta-bloquants. L'inhibition bêta-adrénergique peut être levée durant l'intervention par les bêta-mimétiques.",
+                "conduite_a_tenir": "En règle générale, ne pas arrêter le traitement bêta-bloquant et, de toute façon, éviter l'arrêt brutal. Informer l'anesthésiste de ce traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "ANESTHÉSIQUES VOLATILS HALOGÉNÉS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Réduction des réactions cardiovasculaires de compensation par les bêta-bloquants. L'inhibition bêta-adrénergique peut être levée durant l'intervention par les bêta-stimulants.",
+                "conduite_a_tenir": "En règle générale, ne pas arrêter le traitement bêta-bloquant et, de toute façon, éviter l'arrêt brutal. Informer l'anesthésiste de ce traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTICHOLINESTÉRASIQUES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de bradycardie excessive (addition des effets bradycardisants).",
+                "conduite_a_tenir": "Surveillance clinique régulière, notamment en début d'association.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTIHYPERTENSEURS CENTRAUX",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation importante de la pression artérielle en cas d'arrêt brutal du traitement par l'antihypertenseur central.",
+                "conduite_a_tenir": "Eviter l'arrêt brutal du traitement par l'antihypertenseur central. Surveillance clinique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "GLINIDES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "GLINIDES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "GLIPTINES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "INSULINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "INSULINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "LIDOCAINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Avec la lidocaïne utilisée par voie IV : augmentation des concentrations plasmatiques de lidocaïne avec possibilité d'effets indésirables neurologiques et cardiaques (diminution de la clairance hépatique de la lidocaïne).",
+                "conduite_a_tenir": "Surveillance clinique, ECG et éventuellement contrôle des concentrations plasmatiques de lidocaïne pendant l'association et après l'arrêt du bêta-bloquant. Adaptation si besoin de la posologie de la lidocaïne.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "PROPAFENONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de la contractilité, de l'automatisme et de la conduction (suppression des mécanismes sympathiques compensateurs).",
+                "conduite_a_tenir": "Surveillance clinique et ECG.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "SUBSTANCES SUSCEPTIBLES DE DONNER DES TORSADES DE POINTES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes.",
+                "conduite_a_tenir": "Surveillance clinique et électrocardiographique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "SUBSTANCES SUSCEPTIBLES DE DONNER DES TORSADES DE POINTES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes.",
+                "conduite_a_tenir": "Surveillance clinique et électrocardiographique pendant l'association.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "SULFAMIDES HYPOGLYCÉMIANTS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "SULFAMIDES HYPOGLYCÉMIANTS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le malade et renforcer, surtout au début du traitement, l'autosurveillance sanguine.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1558/temerit-5mg-comprime-quadri-secable",
+        "status": "Enregistré",
+        "DCI (Substance active)": "NEBIVOLOL CHLORHYDRATE EXPRIME EN NEBIVOLOL",
+        "Nom de marque": "TEMERIT",
+        "N° d'enregistrement": "203/06 F 273/09/17",
+        "Code produit": "06 F 273",
+        "Code ATC": "C07AB12 – nébivolol",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "📦 Importé",
+        "Forme pharmaceutique": "COMPRIME QUADRI-SECABLE",
+        "Voie d'administration": "Voie orale",
+        "Méthode d'administration": "Avaler",
+        "Dosage": "5MG",
+        "Conditionnement": "B/30",
+        "Prescription": "HOP",
+        "Stabilité": "24 MOIS",
+        "Laboratoire": "MENARINI INTERNATIONAL OPERATIONS LUXEMBOURG SA",
+        "Pays d'origine": "🇱🇺 LUXEMBOURG",
+        "Date d'enregistrement": "2009-02-28",
+        "Date de fin de validité": "2017-06-29",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "TEMERIT 5MG est un médicament sous forme de comprime quadri-secable dont la substance active est NEBIVOLOL CHLORHYDRATE EXPRIME EN NEBIVOLOL, produit par le laboratoire MENARINI INTERNATIONAL OPERATIONS LUXEMBOURG SA (LUXEMBOURG). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et importé. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "Aucune autre présentation de même substance active, dosage et forme que TEMERIT 5MG n'est enregistrée dans la nomenclature actuelle.\nEnregistré depuis le 28 février 2009 (il y a environ 17 ans). La validité indiquée a pris fin le 29 juin 2017 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "MEXILETINE",
+                "type": "Substance",
+                "gravite": "Contre-indication",
+                "risques": "Effet inotrope négatif avec risque de décompensation cardiaque.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTIHYPERTENSEURS CENTRAUX",
+                "type": "Classe",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution centrale du tonus sympathique et effet vasodilatateur des antihypertenseurs centraux, préjudiciables en cas d'insuffisance cardiaque traitée par bêta-bloquant et vasodilatateur.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "DILTIAZEM",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Troubles de l'automatisme (bradycardie excessive, arrêt sinusal), troubles de la conduction sino-auriculaire et auriculo-ventriculaire et défaillance cardiaque.",
+                "conduite_a_tenir": "Une telle association ne doit se faire que sous surveillance clinique et ECG étroite, en particulier chez le sujet âgé ou en début de traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "DILTIAZEM",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Effet inotrope négatif avec risque de décompensation de l’insuffisance cardiaque, troubles de l'automatisme (bradycardie, arrêt sinusal) et troubles de la conduction sino-auriculaire et auriculo-ventriculaire.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "FINGOLIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG continu pendant les 6 heures suivant la première dose voire 2 heures de plus, jusqu'au lendemain si nécessaire.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "OZANIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG pendant au moins 6 heures.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "PONÉSIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG continu pendant les 4 heures suivant la première dose, jusqu'au lendemain si nécessaire.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "VERAPAMIL",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Troubles de l'automatisme (bradycardie excessive, arrêt sinusal), trouble de la conduction sino-auriculaire et auriculo-ventriculaire et défaillance cardiaque.",
+                "conduite_a_tenir": "Une telle association ne doit se faire que sous surveillance clinique et ECG étroite, en particulier chez le sujet âgé ou en début de traitement.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "VERAPAMIL",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Effet inotrope négatif avec risque de décompensation de l’insuffisance cardiaque, troubles de l'automatisme (bradycardie, arrêt sinusal) et troubles de la conduction sino-auriculaire et auriculo-ventriculaire.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "FLUOXETINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de majoration des effets indésirables du nébivolol avec notamment bradycardie excessive, par inhibition de son métabolisme par l’antidépresseur.",
+                "conduite_a_tenir": "Surveillance clinique accrue ; si besoin, adaptation de la posologie du nébivolol pendant la durée du traitement par l’antidépresseur et après son arrêt.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "PAROXETINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de majoration des effets indésirables du nébivolol avec notamment bradycardie excessive, par inhibition de son métabolisme par l’antidépresseur.",
+                "conduite_a_tenir": "Surveillance clinique accrue ; si besoin, adaptation de la posologie du nébivolol pendant la durée du traitement par l’antidépresseur et après son arrêt.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "AMIODARONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de l'automatisme et de la conduction (suppression des mécanismes sympathiques compensateurs).",
+                "conduite_a_tenir": "Surveillance clinique et ECG.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL ET SOTALOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "AMIODARONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de l'automatisme et de la conduction cardiaque avec risque de bradycardie excessive.",
+                "conduite_a_tenir": "Surveillance clinique et ECG régulière.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANESTHÉSIQUES VOLATILS HALOGÉNÉS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Réduction des réactions cardiovasculaires de compensation par les bêta-bloquants. L'inhibition bêta-adrénergique peut être levée durant l'intervention par les bêta-mimétiques.",
+                "conduite_a_tenir": "En règle générale, ne pas arrêter le traitement bêta-bloquant et, de toute façon, éviter l'arrêt brutal. Informer l'anesthésiste de ce traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "ANESTHÉSIQUES VOLATILS HALOGÉNÉS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Réduction des réactions cardiovasculaires de compensation par les bêta-bloquants. L'inhibition bêta-adrénergique peut être levée durant l'intervention par les bêta-stimulants.",
+                "conduite_a_tenir": "En règle générale, ne pas arrêter le traitement bêta-bloquant et, de toute façon, éviter l'arrêt brutal. Informer l'anesthésiste de ce traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTICHOLINESTÉRASIQUES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de bradycardie excessive (addition des effets bradycardisants).",
+                "conduite_a_tenir": "Surveillance clinique régulière, notamment en début d'association.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTIHYPERTENSEURS CENTRAUX",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation importante de la pression artérielle en cas d'arrêt brutal du traitement par l'antihypertenseur central.",
+                "conduite_a_tenir": "Eviter l'arrêt brutal du traitement par l'antihypertenseur central. Surveillance clinique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "GLINIDES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "GLINIDES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "GLIPTINES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "INSULINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "INSULINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "LIDOCAINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Avec la lidocaïne utilisée par voie IV : augmentation des concentrations plasmatiques de lidocaïne avec possibilité d'effets indésirables neurologiques et cardiaques (diminution de la clairance hépatique de la lidocaïne).",
+                "conduite_a_tenir": "Surveillance clinique, ECG et éventuellement contrôle des concentrations plasmatiques de lidocaïne pendant l'association et après l'arrêt du bêta-bloquant. Adaptation si besoin de la posologie de la lidocaïne.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "PROPAFENONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de la contractilité, de l'automatisme et de la conduction (suppression des mécanismes sympathiques compensateurs).",
+                "conduite_a_tenir": "Surveillance clinique et ECG.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "SUBSTANCES SUSCEPTIBLES DE DONNER DES TORSADES DE POINTES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes.",
+                "conduite_a_tenir": "Surveillance clinique et électrocardiographique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "SUBSTANCES SUSCEPTIBLES DE DONNER DES TORSADES DE POINTES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes.",
+                "conduite_a_tenir": "Surveillance clinique et électrocardiographique pendant l'association.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "SULFAMIDES HYPOGLYCÉMIANTS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "SULFAMIDES HYPOGLYCÉMIANTS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le malade et renforcer, surtout au début du traitement, l'autosurveillance sanguine.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            }
+        ]
+    },
+    {
+        "url": "https://www.dzair-pharma.net/medicament/enregistrement/1559/temerivol-5mg-comprime-quadri-secable",
+        "status": "Enregistré",
+        "DCI (Substance active)": "NEBIVOLOL",
+        "Nom de marque": "TEMERIVOL",
+        "N° d'enregistrement": "380/06 F 273/18",
+        "Code produit": "06 F 273",
+        "Code ATC": "C07AB12 – nébivolol",
+        "Type de produit": "Générique",
+        "Origine de fabrication": "🇩🇿 Fabriqué en Algérie",
+        "Forme pharmaceutique": "COMPRIME QUADRI-SECABLE",
+        "Voie d'administration": "Voie orale",
+        "Méthode d'administration": "Avaler",
+        "Dosage": "5MG",
+        "Conditionnement": "B/30",
+        "Prescription": "HOP",
+        "Stabilité": "24 MOIS",
+        "Laboratoire": "HUPP PHARMA",
+        "Pays d'origine": "🇩🇿 ALGERIE",
+        "Date d'enregistrement": "2019-06-18",
+        "Date de fin de validité": "2019-06-18",
+        "Année de nomenclature": "2026",
+        "Version source": "Aout 2026",
+        "description": "TEMERIVOL 5MG est un médicament sous forme de comprime quadri-secable dont la substance active est NEBIVOLOL, produit par le laboratoire HUPP PHARMA (ALGERIE). Il est enregistré auprès du Ministère de l'Industrie Pharmaceutique et fabriqué en Algérie. Prescription : HOP. Les génériques enregistrés avec la même substance active sont listés plus bas.",
+        "medicament_en_algerie": "Aucune autre présentation de même substance active, dosage et forme que TEMERIVOL 5MG n'est enregistrée dans la nomenclature actuelle.\nLe laboratoire HUPP PHARMA compte 131 autres produits enregistrés en Algérie. Voir le laboratoire →\nEnregistré depuis le 18 juin 2019 (il y a environ 7 ans). La validité indiquée a pris fin le 18 juin 2019 : vérifiez le renouvellement dans la nomenclature en vigueur.\nSelon la nomenclature (LISTE I / HOP), ce médicament est inscrit sur la liste I, délivré sur ordonnance et réservé à l'usage hospitalier. Seul un professionnel de santé peut conseiller dans votre situation.",
+        "PPA": null,
+        "RCP PDF": null,
+        "generiques": [],
+        "related_presentations": [],
+        "Liste": "LISTE I",
+        "interactions": [
+            {
+                "substance": "MEXILETINE",
+                "type": "Substance",
+                "gravite": "Contre-indication",
+                "risques": "Effet inotrope négatif avec risque de décompensation cardiaque.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTIHYPERTENSEURS CENTRAUX",
+                "type": "Classe",
+                "gravite": "Association déconseillée",
+                "risques": "Diminution centrale du tonus sympathique et effet vasodilatateur des antihypertenseurs centraux, préjudiciables en cas d'insuffisance cardiaque traitée par bêta-bloquant et vasodilatateur.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "DILTIAZEM",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Troubles de l'automatisme (bradycardie excessive, arrêt sinusal), troubles de la conduction sino-auriculaire et auriculo-ventriculaire et défaillance cardiaque.",
+                "conduite_a_tenir": "Une telle association ne doit se faire que sous surveillance clinique et ECG étroite, en particulier chez le sujet âgé ou en début de traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "DILTIAZEM",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Effet inotrope négatif avec risque de décompensation de l’insuffisance cardiaque, troubles de l'automatisme (bradycardie, arrêt sinusal) et troubles de la conduction sino-auriculaire et auriculo-ventriculaire.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "FINGOLIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG continu pendant les 6 heures suivant la première dose voire 2 heures de plus, jusqu'au lendemain si nécessaire.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "OZANIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG pendant au moins 6 heures.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "PONÉSIMOD",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Potentialisation des effets bradycardisants pouvant avoir des conséquences fatales. Les bêta-bloquants sont d’autant plus à risque qu’ils empêchent les mécanismes de compensation adrénergique.",
+                "conduite_a_tenir": "Surveillance clinique et ECG continu pendant les 4 heures suivant la première dose, jusqu'au lendemain si nécessaire.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "VERAPAMIL",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Troubles de l'automatisme (bradycardie excessive, arrêt sinusal), trouble de la conduction sino-auriculaire et auriculo-ventriculaire et défaillance cardiaque.",
+                "conduite_a_tenir": "Une telle association ne doit se faire que sous surveillance clinique et ECG étroite, en particulier chez le sujet âgé ou en début de traitement.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "VERAPAMIL",
+                "type": "Substance",
+                "gravite": "Association déconseillée",
+                "risques": "Effet inotrope négatif avec risque de décompensation de l’insuffisance cardiaque, troubles de l'automatisme (bradycardie, arrêt sinusal) et troubles de la conduction sino-auriculaire et auriculo-ventriculaire.",
+                "conduite_a_tenir": "Aucune conduite spécifique indiquée par la source.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "FLUOXETINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de majoration des effets indésirables du nébivolol avec notamment bradycardie excessive, par inhibition de son métabolisme par l’antidépresseur.",
+                "conduite_a_tenir": "Surveillance clinique accrue ; si besoin, adaptation de la posologie du nébivolol pendant la durée du traitement par l’antidépresseur et après son arrêt.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "PAROXETINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de majoration des effets indésirables du nébivolol avec notamment bradycardie excessive, par inhibition de son métabolisme par l’antidépresseur.",
+                "conduite_a_tenir": "Surveillance clinique accrue ; si besoin, adaptation de la posologie du nébivolol pendant la durée du traitement par l’antidépresseur et après son arrêt.",
+                "disponibilite": null,
+                "source": "ANSM"
+            },
+            {
+                "substance": "AMIODARONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de l'automatisme et de la conduction (suppression des mécanismes sympathiques compensateurs).",
+                "conduite_a_tenir": "Surveillance clinique et ECG.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL ET SOTALOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "AMIODARONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de l'automatisme et de la conduction cardiaque avec risque de bradycardie excessive.",
+                "conduite_a_tenir": "Surveillance clinique et ECG régulière.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANESTHÉSIQUES VOLATILS HALOGÉNÉS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Réduction des réactions cardiovasculaires de compensation par les bêta-bloquants. L'inhibition bêta-adrénergique peut être levée durant l'intervention par les bêta-mimétiques.",
+                "conduite_a_tenir": "En règle générale, ne pas arrêter le traitement bêta-bloquant et, de toute façon, éviter l'arrêt brutal. Informer l'anesthésiste de ce traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "ANESTHÉSIQUES VOLATILS HALOGÉNÉS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Réduction des réactions cardiovasculaires de compensation par les bêta-bloquants. L'inhibition bêta-adrénergique peut être levée durant l'intervention par les bêta-stimulants.",
+                "conduite_a_tenir": "En règle générale, ne pas arrêter le traitement bêta-bloquant et, de toute façon, éviter l'arrêt brutal. Informer l'anesthésiste de ce traitement.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTICHOLINESTÉRASIQUES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque de bradycardie excessive (addition des effets bradycardisants).",
+                "conduite_a_tenir": "Surveillance clinique régulière, notamment en début d'association.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "ANTIHYPERTENSEURS CENTRAUX",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Augmentation importante de la pression artérielle en cas d'arrêt brutal du traitement par l'antihypertenseur central.",
+                "conduite_a_tenir": "Eviter l'arrêt brutal du traitement par l'antihypertenseur central. Surveillance clinique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "GLINIDES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "GLINIDES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "GLIPTINES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "INSULINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "INSULINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêtabloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "LIDOCAINE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Avec la lidocaïne utilisée par voie IV : augmentation des concentrations plasmatiques de lidocaïne avec possibilité d'effets indésirables neurologiques et cardiaques (diminution de la clairance hépatique de la lidocaïne).",
+                "conduite_a_tenir": "Surveillance clinique, ECG et éventuellement contrôle des concentrations plasmatiques de lidocaïne pendant l'association et après l'arrêt du bêta-bloquant. Adaptation si besoin de la posologie de la lidocaïne.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "PROPAFENONE",
+                "type": "Substance",
+                "gravite": "Précaution d'emploi",
+                "risques": "Troubles de la contractilité, de l'automatisme et de la conduction (suppression des mécanismes sympathiques compensateurs).",
+                "conduite_a_tenir": "Surveillance clinique et ECG.",
+                "disponibilite": "Aucun médicament à cette substance dans la nomenclature",
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "SUBSTANCES SUSCEPTIBLES DE DONNER DES TORSADES DE POINTES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes.",
+                "conduite_a_tenir": "Surveillance clinique et électrocardiographique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            },
+            {
+                "substance": "SUBSTANCES SUSCEPTIBLES DE DONNER DES TORSADES DE POINTES",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes.",
+                "conduite_a_tenir": "Surveillance clinique et électrocardiographique pendant l'association.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BRADYCARDISANTS"
+            },
+            {
+                "substance": "SULFAMIDES HYPOGLYCÉMIANTS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le patient et renforcer, surtout en début de traitement, l'autosurveillance glycémique.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS (SAUF ESMOLOL) (Y COMPRIS COLLYRES)"
+            },
+            {
+                "substance": "SULFAMIDES HYPOGLYCÉMIANTS",
+                "type": "Classe",
+                "gravite": "Précaution d'emploi",
+                "risques": "Tous les bêta-bloquants peuvent masquer certains symptômes de l'hypoglycémie : palpitations et tachycardie.",
+                "conduite_a_tenir": "Prévenir le malade et renforcer, surtout au début du traitement, l'autosurveillance sanguine.",
+                "disponibilite": null,
+                "source": "ANSM via la classe BÊTA-BLOQUANTS DANS L'INSUFFISANCE CARDIAQUE"
+            }
+        ]
+    }
+]

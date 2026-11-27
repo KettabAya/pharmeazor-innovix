@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Ciprodar",
+  "dosage": "0.3%",
+  "dci": "CIPROFLOXACINE SOUS FORME D' HDROCHLORIDE MONOHYDRATE EXPRIMÉ EN CIPROFLOXACINE SOUS FORME D' HDROCHLORIDE MONOHYDRATE",
+  "Interactions de Ciprofloxacine Sous Forme D' Hdrochloride Monohydrate": "Interactions de Ciprofloxacine Sous Forme D' Hdrochloride Monohydrate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "17\nD\n131",
+    "description": "Produits partageant le code DCI 17 D 131 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "0.3%",
+        "id": "3907dfd2-c1be-4e36-a089-5afc28a3fd63",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Cipro",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0.3%",
+        "id": "51015385-4851-4a9a-b93b-20b9215111c6",
+        "laboratoire": "Biothera",
+        "local": true,
+        "nom": "Ciprotek",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

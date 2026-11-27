@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Coveram",
+  "dosage": "10MG/5MG",
+  "dci": "PERINDOPRIL ARGININE (PERINDOPRIL)/AMLODIPINE BESILATE (AMLODIPINE) EXPRIMÉ EN PERINDOPRIL ARGININE (PERINDOPRIL)/AMLODIPINE BESILATE (AMLODIPINE)",
+  "Interactions de Perindopril Arginine (Perindopril)/Amlodipine Besilate (Amlodipine)": "Interactions de Perindopril Arginine (Perindopril)/Amlodipine Besilate (Amlodipine) Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n320",
+    "description": "Produits partageant le code DCI 06 E 320 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "10MG/5MG",
+        "id": "6e3cdc5b-1a81-410b-a964-b52aafa096f1",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Pratima Am",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

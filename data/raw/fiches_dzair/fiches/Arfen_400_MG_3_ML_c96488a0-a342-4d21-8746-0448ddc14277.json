@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Arfen",
+  "dosage": "400 MG/3 ML",
+  "dci": "IBUPROFENE LYSINE EXPRIMÉ EN IBUPROFENE LYSINE",
+  "Interactions de Ibuprofene Lysine": "Interactions de Ibuprofene Lysine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n077",
+    "description": "Produits partageant le code DCI 04 B 077 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

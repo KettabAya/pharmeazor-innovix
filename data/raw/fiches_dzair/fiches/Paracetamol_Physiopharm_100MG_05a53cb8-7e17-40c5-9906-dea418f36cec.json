@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Paracetamol Physiopharm",
+  "dosage": "100MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n006",
+    "description": "Produits partageant le code DCI 03 B 006 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "7d58878f-a1fb-4d06-8d05-fe4bec9f6d16",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Expandol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "b6dc5017-b8cb-411f-9367-e9728a0f02fb",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Paralgan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "bcd8aa66-e065-47fa-9dca-58a9eff20469",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Sapramol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/5ML",
+        "id": "dae4a522-994a-44c0-8264-806341faee34",
+        "laboratoire": "Isopharm",
+        "local": true,
+        "nom": "Isomol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "120MG/5ML (2,4G/100ML)",
+        "id": "f24d44bf-5f09-44c0-93b5-9fc72acd6b15",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Paralgan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

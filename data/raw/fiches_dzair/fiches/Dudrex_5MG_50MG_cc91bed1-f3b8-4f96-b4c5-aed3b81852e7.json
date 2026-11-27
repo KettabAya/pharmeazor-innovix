@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Dudrex",
+  "dosage": "5MG/50MG",
+  "dci": "AMILORIDE CHLORHYDRATE/HYDROCHLOROTHIAZIDE EXPRIMÉ EN AMILORIDE CHLORHYDRATE/HYDROCHLOROTHIAZIDE",
+  "Interactions de Amiloride Chlorhydrate/Hydrochlorothiazide": "Interactions de Amiloride Chlorhydrate/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nH\n094",
+    "description": "Produits partageant le code DCI 06 H 094 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "5MG/50MG",
+        "id": "aa83b5c9-a7c0-4fab-8cfa-e767d8ff0ca1",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Amuretic",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

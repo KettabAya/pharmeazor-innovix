@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Dolan Lp 75",
+  "dosage": "75MG",
+  "dci": "DICLOFENAC SODIQUE EXPRIMÉ EN DICLOFENAC SODIQUE",
+  "Interactions de Diclofenac Sodique": "Interactions de Diclofenac Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n037",
+    "description": "Produits partageant le code DCI 04 B 037 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "75MG",
+        "id": "7872863d-16d7-4150-b98a-202aa6c1e077",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Clofenal Lp",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "75MG",
+        "id": "4f0a5ea5-b761-47d6-a18b-46b47a611846",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Biofenac Lp",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "75MG",
+        "id": "71976534-ade7-4d45-90e2-823abbe1a6b7",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Diclofal Lp",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "75MG",
+        "id": "7bf3febf-f255-4a63-a528-399552316e4c",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Dicloflex Lp 75 Mg",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "75MG",
+        "id": "5a0fb1e4-586f-4dd2-b1fb-a25c45e445f1",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Diclorene Lp 75",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

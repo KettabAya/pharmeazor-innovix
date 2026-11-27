@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Pratima Am",
+  "dosage": "5MG/5MG",
+  "dci": "AMLODIPINE BESILATE (AMLODIPINE)/PERINDOPRIL ARGININE (PERINDOPRIL) EXPRIMÉ EN AMLODIPINE BESILATE (AMLODIPINE)/PERINDOPRIL ARGININE (PERINDOPRIL)",
+  "Interactions de Amlodipine Besilate (Amlodipine)/Perindopril Arginine (Perindopril)": "Interactions de Amlodipine Besilate (Amlodipine)/Perindopril Arginine (Perindopril) Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n319",
+    "description": "Produits partageant le code DCI 06 E 319 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "5MG/5MG",
+        "id": "03da9c82-14a9-41c8-b4cd-2bc2642064fc",
+        "laboratoire": "Les Laboratoires Servier",
+        "local": true,
+        "nom": "Coveram",
+        "pays": "France",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

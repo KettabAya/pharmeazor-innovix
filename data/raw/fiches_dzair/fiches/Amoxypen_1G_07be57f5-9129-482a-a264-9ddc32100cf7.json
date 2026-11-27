@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Amoxypen",
+  "dosage": "1G",
+  "dci": "AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE EXPRIMÉ EN AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE",
+  "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline": "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n230",
+    "description": "Produits partageant le code DCI 13 G 230 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "1G",
+        "id": "7bc48516-7fca-4152-9879-8e4c38782be6",
+        "laboratoire": "Continental Pharm",
+        "local": true,
+        "nom": "Amodex-Gé",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1G",
+        "id": "6d89ddfe-be22-44dd-ad48-b03e02d6fad0",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Amoxicilline Eg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1G",
+        "id": "7b929707-4eef-498e-bb2a-461ccc15ca3a",
+        "laboratoire": "Glaxosmithkline Algerie Spa",
+        "local": true,
+        "nom": "Clamoxyl",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1G",
+        "id": "c7dd7928-9ebb-4c81-9008-4c48ee594cd0",
+        "laboratoire": "Laboratoire Arab Pharm",
+        "local": true,
+        "nom": "Lamoxyl",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1G",
+        "id": "4f00dd13-59ed-4dc3-8309-cb80b2a7e09b",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Penamox D",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

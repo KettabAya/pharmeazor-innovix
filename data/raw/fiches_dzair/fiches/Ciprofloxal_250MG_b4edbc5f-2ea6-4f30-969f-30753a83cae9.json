@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Ciprofloxal",
+  "dosage": "250MG",
+  "dci": "CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE EXPRIMÉ EN CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE",
+  "Interactions de Ciprofloxacine Chlorhydrate Exprime En Ciprofloxacine": "Interactions de Ciprofloxacine Chlorhydrate Exprime En Ciprofloxacine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nK\n252",
+    "description": "Produits partageant le code DCI 13 K 252 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "250MG",
+        "id": "06d27839-806e-44f0-8d99-c88e50da6831",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Ciprotek",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG",
+        "id": "2a4d7b9d-a84e-44bb-8e4b-471ffab49201",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Flocine250",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG",
+        "id": "8bd9820c-111b-4eb8-9f01-1d196a6112b5",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Loxanad",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

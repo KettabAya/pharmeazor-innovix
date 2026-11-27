@@ -1,0 +1,87 @@
+{
+  "nom_commercial": "Fludis",
+  "dosage": "100MG",
+  "dci": "FLURBIPROFENE EXPRIMÉ EN FLURBIPROFENE",
+  "Interactions de Flurbiprofene": "Interactions de Flurbiprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n033",
+    "description": "Produits partageant le code DCI 04 B 033 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 8,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "4cc71f94-56ca-4201-90b6-d03cc2ef6a4c",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Antalfen Gyn",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "ef9d3893-847d-4906-bf1e-20dd619a7703",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Flubifene",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "17851b59-458c-46e2-87d3-f21a4317c293",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Flurbinad",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "dc816337-3362-4353-a6c3-7baebe3df3b7",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Flurbiprofal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "e13476d1-43fd-4b5e-9ada-9a4cfd70270d",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Huptadys",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "1a4eeb67-e044-4f9b-bf14-7772bf65d79f",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Menodis",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "20c7e685-34c1-4385-b3e6-189c1ac55ed7",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Xydol Gyn",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "ec013723-1a56-478f-9927-9afab05fa1d4",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Antadine",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

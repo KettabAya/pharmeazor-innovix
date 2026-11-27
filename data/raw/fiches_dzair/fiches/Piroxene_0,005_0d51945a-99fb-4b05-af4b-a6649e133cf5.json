@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Piroxene",
+  "dosage": "0,005",
+  "dci": "PIROXICAM EXPRIMÉ EN PIROXICAM",
+  "Interactions de Piroxicam": "Interactions de Piroxicam Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "21\nA\n005",
+    "description": "Produits partageant le code DCI 21 A 005 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "0,005",
+        "id": "16b1c4e4-ad5f-449d-8f72-09406d51bec3",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Orthocam",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,005",
+        "id": "6e6afec3-69b3-4835-87c6-cb871986e9e8",
+        "laboratoire": "Novapharm Trading",
+        "local": true,
+        "nom": "Piroxicam Novagenerics",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,005",
+        "id": "b6424e23-9b9b-41d0-b0a4-76d3bac0b134",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Prixam",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,005",
+        "id": "def46d2f-9831-48a0-8aa5-ea32e1e65432",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Felcam",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "0,005",
+        "id": "bdc6eaf1-baf7-4718-912b-c8e6a4c8c455",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Fenoxam",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

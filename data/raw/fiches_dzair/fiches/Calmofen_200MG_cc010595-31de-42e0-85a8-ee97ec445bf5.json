@@ -1,0 +1,123 @@
+{
+  "nom_commercial": "Calmofen",
+  "dosage": "200MG",
+  "dci": "IBUPROFENE EXPRIMÉ EN IBUPROFENE",
+  "Interactions de Ibuprofene": "Interactions de Ibuprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n040",
+    "description": "Produits partageant le code DCI 04 B 040 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 12,
+    "produits": [
+      {
+        "dosage": "200MG",
+        "id": "65b7aea5-c96f-4f38-93f1-1e07176bb39b",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Adfen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "194ca16a-7b91-42ae-aaf9-a8222b496cba",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Hubifen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "90e20f20-4449-4090-aa3c-ec50fefcb504",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Ibuprofal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "0612b862-066b-49b5-9c37-9881f9e72248",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Ibuprofene Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "30c03ba9-d150-418d-a031-565d81ce8d9a",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Ibuprofne Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "d2ee46e1-3d66-4b8c-bf35-2de87655686f",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Neupren",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "4784c4fc-3dea-4bd9-9780-e3dcdfeba13f",
+        "laboratoire": "Kpma Biotic",
+        "local": true,
+        "nom": "Sapomex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "12868000-720a-43dc-8cae-04c0e903cbc6",
+        "laboratoire": "Propharmal",
+        "local": true,
+        "nom": "Upfen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "30b9185f-c6d3-4194-ab1f-047d36f6485e",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Xydol 200",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "e64ab4d9-4f89-4844-9add-cac758a9156c",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Butafen",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "a1be3c5a-5013-46cb-9c93-0b800c31dcd7",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Ibumal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "2bdf65e9-750f-4a35-a98f-a827038e17da",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Ubactive 200mg",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

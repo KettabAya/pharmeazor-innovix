@@ -1,0 +1,123 @@
+{
+  "nom_commercial": "Promivol",
+  "dosage": "10MG",
+  "dci": "BISOPROLOL FUMARATE EXPRIMÉ EN BISOPROLOL FUMARATE",
+  "Interactions de Bisoprolol Fumarate": "Interactions de Bisoprolol Fumarate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nF\n162",
+    "description": "Produits partageant le code DCI 06 F 162 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 12,
+    "produits": [
+      {
+        "dosage": "10MG",
+        "id": "76796504-df70-40bd-8014-b957c845b66d",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Biprotens",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "863f07ce-9bb0-46eb-8dd0-63a04f78015a",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Bisoprolol Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "9285510a-3329-4a73-b5ec-aca37a9c757e",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Bisoprolol Mm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "38550b2f-932e-409f-b72f-dbfcea16e06c",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Bisosel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "aa100008-a5c6-41c6-ac2a-0003962cdd02",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Bisotab",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "e1bf1af1-03a2-4665-adfa-2708fe5d0b21",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Bonacor",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "8ffcb090-43dd-4e65-b935-1d088efd4724",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Byzolex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "7bb869dc-2081-4f79-b68e-57935c884b42",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Cirbesa",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "8ac98957-c3a3-4c75-8afb-c157f60f1713",
+        "laboratoire": "Abdi Ibrahim Remede Pharma",
+        "local": true,
+        "nom": "Detenpress",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "3f8e8029-f928-4420-9267-6f671cabd91f",
+        "laboratoire": "Merck Sante S.a.s",
+        "local": true,
+        "nom": "Detensiel",
+        "pays": "France",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "d3c88010-074c-4aa6-a843-459591065563",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Prodol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "3ba9b103-1a9d-4ed7-a54d-8fdec2ecde7b",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Rizoprol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Blopress 8 Plus",
+  "dosage": "8MG/12,5MG",
+  "dci": "CANDESARTAN CILEXETIL/HYDROCHLOROTHIAZIDE EXPRIMÉ EN CANDESARTAN CILEXETIL/HYDROCHLOROTHIAZIDE",
+  "Interactions de Candesartan Cilexetil/Hydrochlorothiazide": "Interactions de Candesartan Cilexetil/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n230",
+    "description": "Produits partageant le code DCI 06 E 230 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "8MG/12,5MG",
+        "id": "30549950-854d-48b4-ad12-0d80999ec6cd",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Canderax Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "8MG/12,5MG",
+        "id": "94f2c92b-5159-452d-bc45-97b524c28f1c",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Cardaxel Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "8MG/12,5MG",
+        "id": "4b89234e-f06f-4624-85d2-0203e216f5b0",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Co Sarcand",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "8MG/12,5MG",
+        "id": "8faa5909-cb92-4bf4-9eac-75d1e1de9e7d",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co-Atabek",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "8MG/12,5MG",
+        "id": "dc49a5ea-b309-4132-b6dd-cc25e91e7893",
+        "laboratoire": "Astra Zeneca Ag",
+        "local": true,
+        "nom": "Hytacand",
+        "pays": "Suisse",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "8MG/12,5MG",
+        "id": "2207278c-32ba-4e29-8c57-2b4000eabb71",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Sartacand Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

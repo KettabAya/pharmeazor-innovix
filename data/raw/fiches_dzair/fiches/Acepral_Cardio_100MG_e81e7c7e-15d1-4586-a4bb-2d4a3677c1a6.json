@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Acepral Cardio",
+  "dosage": "100MG",
+  "dci": "ACIDE ACETYLSALICYLIQUE EXPRIMÉ EN ACIDE ACETYLSALICYLIQUE",
+  "Interactions de Acide Acetylsalicylique": "Interactions de Acide Acetylsalicylique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "12\nA\n131",
+    "description": "Produits partageant le code DCI 12 A 131 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "0628640d-b83c-4403-a964-ba5cf8cd9978",
+        "laboratoire": "Novapharm Trading",
+        "local": true,
+        "nom": "Aspinova",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "48402fc6-778a-4289-9d40-1953bd11f48e",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Aspec",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "100MG",
+        "id": "7d149134-c68b-44a9-b776-69296f845f0c",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Aspicard",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "100MG",
+        "id": "bb143bca-cc1c-4619-b566-3d4d3dc70904",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Aspirine Cardio",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

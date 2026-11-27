@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Triatec",
+  "dosage": "1,25MG",
+  "dci": "RAMIPRIL EXPRIMÉ EN RAMIPRIL",
+  "Interactions de Ramipril": "Interactions de Ramipril Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n139",
+    "description": "Produits partageant le code DCI 06 E 139 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "1,25MG",
+        "id": "5e116ea6-7912-4dba-b52e-034b694d3ad5",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Tanatril",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

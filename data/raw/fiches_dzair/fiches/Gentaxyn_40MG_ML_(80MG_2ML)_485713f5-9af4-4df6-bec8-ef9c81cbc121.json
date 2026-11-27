@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Gentaxyn",
+  "dosage": "40MG/ML (80MG/2ML)",
+  "dci": "GENTAMICINE SULFATE EXPRIMEE EN GENTAMICINE EXPRIMÉ EN GENTAMICINE SULFATE EXPRIMEE EN GENTAMICINE",
+  "Interactions de Gentamicine Sulfate Exprimee En Gentamicine": "Interactions de Gentamicine Sulfate Exprimee En Gentamicine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nA\n005",
+    "description": "Produits partageant le code DCI 13 A 005 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "40MG/ML (80MG/2ML)",
+        "id": "bf580e8e-80a5-4863-8beb-670fecc7521f",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Genta 80",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/ML (80MG/2ML)",
+        "id": "5412635f-1380-47d5-84b4-13d9caafe481",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Gentacine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/ML (80MG/2ML)",
+        "id": "71223bad-5bca-43d0-891c-072e6dcbad52",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Gentamycine Geo",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/ML (80MG/2ML)",
+        "id": "6c647877-e70f-4c87-a156-e6cf15da94e3",
+        "laboratoire": "Biothera",
+        "local": true,
+        "nom": "Gentheraxine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG/ML (80MG/2ML)",
+        "id": "bff10471-ba24-4dd2-ba3f-8e1cfd072c7a",
+        "laboratoire": "Eipico",
+        "local": false,
+        "nom": "Epigent",
+        "pays": "Egypte",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Diclothera",
+  "dosage": "25MG/ML (75MG/3ML)",
+  "dci": "DICLOFENAC SODIQUE EXPRIMÉ EN DICLOFENAC SODIQUE",
+  "Interactions de Diclofenac Sodique": "Interactions de Diclofenac Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n004",
+    "description": "Produits partageant le code DCI 04 B 004 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "25MG/ML (75MG/3ML)",
+        "id": "795b137f-11cb-4dd6-b4d7-05c0f3b76060",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Clofenal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "25MG/ML (75MG/3ML)",
+        "id": "1001afc1-0c71-4479-b5d1-4e4a66a3c79e",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Voltafene",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "25MG/ML (75MG/3ML)",
+        "id": "d56d6c86-f3d6-4ce1-b37c-830c24136e03",
+        "laboratoire": "Les Laboratoires Frater Razes",
+        "local": true,
+        "nom": "Diclamid",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "25MG/ML (75MG/3ML)",
+        "id": "09026128-ecbf-4b91-970e-20df05d562bb",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Geofenac",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

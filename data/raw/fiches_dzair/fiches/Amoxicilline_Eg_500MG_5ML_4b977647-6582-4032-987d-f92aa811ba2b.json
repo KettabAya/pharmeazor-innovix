@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Amoxicilline Eg",
+  "dosage": "500MG/5ML",
+  "dci": "AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE EXPRIMÉ EN AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE",
+  "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline": "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n220",
+    "description": "Produits partageant le code DCI 13 G 220 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "500MG/5ML",
+        "id": "ffa5b32c-8506-4e49-a84d-599c086e557e",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Biopamox",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/5ML",
+        "id": "cb14aaee-c231-47bc-8413-132ab63c522e",
+        "laboratoire": "Glaxosmithkline Algerie Spa",
+        "local": true,
+        "nom": "Clamoxyl",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/5ML",
+        "id": "05f75b47-6ef8-492b-b6c6-2bd83f9b8d0a",
+        "laboratoire": "Laboratoire Arab Pharm",
+        "local": true,
+        "nom": "Lamoxyl",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/5ML",
+        "id": "2fe54b96-b557-43dc-84fe-58faad1a1dec",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Penamox",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

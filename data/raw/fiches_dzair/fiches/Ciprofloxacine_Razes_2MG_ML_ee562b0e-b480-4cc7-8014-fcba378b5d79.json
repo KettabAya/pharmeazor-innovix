@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Ciprofloxacine Razes",
+  "dosage": "2MG/ML",
+  "dci": "CIOROFLOXACINE SOUS FORME HYDROCHLORIDE EXPRIMÉ EN CIOROFLOXACINE SOUS FORME HYDROCHLORIDE",
+  "Interactions de Ciorofloxacine Sous Forme Hydrochloride": "Interactions de Ciorofloxacine Sous Forme Hydrochloride Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nK\n251",
+    "description": "Produits partageant le code DCI 13 K 251 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "2MG/ML",
+        "id": "366f22a4-cb07-4d43-91ec-0d84ecf3f994",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Cifloxacine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "2MG/ML",
+        "id": "1ed07a07-078b-4cc4-842a-295d7d7523ec",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Ciprofloxal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "2MG/ML",
+        "id": "f1fd4f3d-951e-4859-8062-e87930a0267f",
+        "laboratoire": "Chimie Pharmacie Commerce Multiple Sarl (Cpcm)",
+        "local": false,
+        "nom": "Indpro",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

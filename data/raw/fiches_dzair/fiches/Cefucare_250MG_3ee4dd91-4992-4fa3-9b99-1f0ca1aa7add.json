@@ -1,0 +1,78 @@
+{
+  "nom_commercial": "Cefucare",
+  "dosage": "250MG",
+  "dci": "CEFUROXIME AXETIL EXPRIME EN CEFUROXIME EXPRIMÉ EN CEFUROXIME AXETIL EXPRIME EN CEFUROXIME",
+  "Interactions de Cefuroxime Axetil Exprime En Cefuroxime": "Interactions de Cefuroxime Axetil Exprime En Cefuroxime Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nB\n208",
+    "description": "Produits partageant le code DCI 13 B 208 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 7,
+    "produits": [
+      {
+        "dosage": "250MG",
+        "id": "6702a7e7-34ed-4e49-b82b-49922ff0817d",
+        "laboratoire": "Dar Al Dawa",
+        "local": false,
+        "nom": "Daroxime",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG",
+        "id": "a0708125-40a9-44c3-b22d-c2901ab6d589",
+        "laboratoire": "Glaxo Wellcome Uk Limited",
+        "local": false,
+        "nom": "Zinnat",
+        "pays": "Royaume-Uni",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG",
+        "id": "c5745937-5267-4b69-b372-f46018a0d6e3",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "U-Cef",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "250MG",
+        "id": "06e81dcb-0813-4a00-9a31-07d7ecbe6f0c",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Zinetal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "250MG",
+        "id": "bb40a0fc-6c15-4039-8d29-f0c2318cc739",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Zynax",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "250MG",
+        "id": "209a0b3b-3565-4792-8b7f-3d4fb4d7d9f5",
+        "laboratoire": "Jerusalem Pharmaceuticals Co Ltd",
+        "local": false,
+        "nom": "Cefrozine",
+        "pays": "Palestine",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "250MG",
+        "id": "cef8eec9-1c1b-4f0a-a436-e6b577b6bb0e",
+        "laboratoire": "Tabuk Algerie",
+        "local": false,
+        "nom": "Zinoximor",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

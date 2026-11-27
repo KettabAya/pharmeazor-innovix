@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Temisal",
+  "dosage": "80MG / 10 MG",
+  "dci": "TELMISARTAN/ AMLODIPINE EXPRIMÉ EN TELMISARTAN/ AMLODIPINE",
+  "Interactions de Telmisartan/ Amlodipine": "Interactions de Telmisartan/ Amlodipine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n338",
+    "description": "Produits partageant le code DCI 06 E 338 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "80 MG / 10 MG",
+        "id": "31086e53-1f53-4be8-a501-8262b91787de",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Extel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

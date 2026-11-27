@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Diclofast",
+  "dosage": "50MG",
+  "dci": "DICLOFENAC POTASSIQUE EXPRIMÉ EN DICLOFENAC POTASSIQUE",
+  "Interactions de Diclofenac Potassique": "Interactions de Diclofenac Potassique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n063",
+    "description": "Produits partageant le code DCI 04 B 063 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "50MG",
+        "id": "8eff5c6a-a437-4ba3-87b8-f5f2124f0419",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Biofenac Fast",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "cc514d21-1cd0-49a3-ac72-43d5d0773f60",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Catafenac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "d87144d1-1f01-45ab-9514-de9f465ed8ff",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Efirap",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "1468c549-b3aa-423b-aa3f-2aaf981a3511",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Rapidus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "25af54f6-1fcf-475a-a7b6-40a43df501f6",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Votrex Rapid",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

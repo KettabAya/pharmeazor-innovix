@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Zinoximor 500",
+  "dosage": "500MG",
+  "dci": "CEFUROXIME AXETIL EXPRIME EN CEFUROXIME EXPRIMÉ EN CEFUROXIME AXETIL EXPRIME EN CEFUROXIME",
+  "Interactions de Cefuroxime Axetil Exprime En Cefuroxime": "Interactions de Cefuroxime Axetil Exprime En Cefuroxime Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nB\n296",
+    "description": "Produits partageant le code DCI 13 B 296 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "da6ce84d-bd62-46cc-ba19-afdf34f869bb",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "U-Cef",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "cdba5888-08d5-49c2-ac19-11e4f83238f3",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Zinetal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "a277847a-0cdd-418c-bd8e-382353abd40a",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Zynax",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "6b7e4655-e414-4301-bbbc-e4128ddb7ad4",
+        "laboratoire": "Jerusalem Pharmaceuticals Co Ltd",
+        "local": false,
+        "nom": "Cefrozine",
+        "pays": "Palestine",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

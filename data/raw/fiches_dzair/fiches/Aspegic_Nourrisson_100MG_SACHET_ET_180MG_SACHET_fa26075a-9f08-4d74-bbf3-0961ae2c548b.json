@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Aspegic Nourrisson",
+  "dosage": "100MG/SACHET ET 180MG/SACHET",
+  "dci": "ACIDE ACETYLSALICYTIQUE/SOUS FORME DE ACETYLSALICYLATE DE DL-LYSINE EXPRIMÉ EN ACIDE ACETYLSALICYTIQUE/SOUS FORME DE ACETYLSALICYLATE DE DL-LYSINE",
+  "Interactions de Acide Acetylsalicytique/Sous Forme De Acetylsalicylate De Dl-Lysine": "Interactions de Acide Acetylsalicytique/Sous Forme De Acetylsalicylate De Dl-Lysine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nA\n104",
+    "description": "Produits partageant le code DCI 03 A 104 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Capocard Plus",
+  "dosage": "50MG/25MG",
+  "dci": "CAPTOPRIL/HYDROCHLOROTHIAZIDE EXPRIMÉ EN CAPTOPRIL/HYDROCHLOROTHIAZIDE",
+  "Interactions de Captopril/Hydrochlorothiazide": "Interactions de Captopril/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n137",
+    "description": "Produits partageant le code DCI 06 E 137 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "50MG/25MG",
+        "id": "bd82dc04-6221-465d-9314-edf2cd600cdd",
+        "laboratoire": "Spa Union Pharmaceuitique Constantinoise Production",
+        "local": true,
+        "nom": "Ecazide",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG/25MG",
+        "id": "93ab723f-51b7-48eb-9525-8d2362f88928",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Co-Tensoprel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

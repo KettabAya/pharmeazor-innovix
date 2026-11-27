@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Cardinol Bgl",
+  "dosage": "100MG",
+  "dci": "ATENOLOL EXPRIMÉ EN ATENOLOL",
+  "Interactions de Atenolol": "Interactions de Atenolol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nF\n069",
+    "description": "Produits partageant le code DCI 06 F 069 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "15313ca3-c585-4b71-bec4-51bdb732b010",
+        "laboratoire": "Tassili Arab Pharmaceutical Co",
+        "local": true,
+        "nom": "Daghtan 100",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "3c9ed37e-e164-4b7a-93e0-029f66bdc9a9",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Tenormed",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

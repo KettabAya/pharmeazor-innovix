@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Doliprane",
+  "dosage": "200MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n042",
+    "description": "Produits partageant le code DCI 03 B 042 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "200MG",
+        "id": "296924c2-44d6-4737-af07-f454b0c40438",
+        "laboratoire": "Kpma Biotic",
+        "local": true,
+        "nom": "Dolymex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "6b08ff82-d73c-4bd7-a2b9-262035974199",
+        "laboratoire": "D-B-F",
+        "local": true,
+        "nom": "Paracetamol Dbf",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "73a80346-343d-41ec-856b-249c9e6c5234",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Parol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "5a4f5a67-fa02-4ed4-9068-3501871b7d2e",
+        "laboratoire": "4a Sante Industrie",
+        "local": true,
+        "nom": "Suppfadol 200",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

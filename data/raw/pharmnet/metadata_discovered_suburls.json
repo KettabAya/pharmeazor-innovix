@@ -1,0 +1,52 @@
+[
+    {
+        "website_name": "Ministère_industrie_Pharmaceutique",
+        "website_url": "https://www.miph.gov.dz/fr/",
+        "sub_urls": []
+    },
+    {
+        "website_name": "PharmNet",
+        "website_url": "https://pharmnet-dz.com/",
+        "sub_urls": []
+    },
+    {
+        "website_name": "MEDAlgérie",
+        "website_url": "https://www.medal-dz.com/",
+        "sub_urls": []
+    },
+    {
+        "website_name": "dzair-pharma.net",
+        "website_url": "https://www.dzair-pharma.net/",
+        "sub_urls": []
+    },
+    {
+        "website_name": "ANPP",
+        "website_url": "https://rcp.anpp.dz/",
+        "sub_urls": []
+    },
+    {
+        "website_name": "DailyMed",
+        "website_url": "https://dailymed.nlm.nih.gov/dailymed/",
+        "sub_urls": []
+    },
+    {
+        "website_name": "EMA",
+        "website_url": "https://www.ema.europa.eu/en",
+        "sub_urls": []
+    },
+    {
+        "website_name": "ANSM",
+        "website_url": "https://ansm.sante.fr/",
+        "sub_urls": []
+    },
+    {
+        "website_name": "TGA",
+        "website_url": "https://www.tga.gov.au/",
+        "sub_urls": []
+    },
+    {
+        "website_name": "MHRA",
+        "website_url": "https://products.mhra.gov.uk/",
+        "sub_urls": []
+    }
+]

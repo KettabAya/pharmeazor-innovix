@@ -1,0 +1,132 @@
+{
+  "nom_commercial": "Valaclor Plus",
+  "dosage": "80MG/12,5MG",
+  "dci": "VALSARTAN/HYDROCHLOROTHIAZIDE EXPRIMÉ EN VALSARTAN/HYDROCHLOROTHIAZIDE",
+  "Interactions de Valsartan/Hydrochlorothiazide": "Interactions de Valsartan/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n158",
+    "description": "Produits partageant le code DCI 06 E 158 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 13,
+    "produits": [
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "5ab79924-0723-46ef-9daf-6218cbf63616",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Co Taroval",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "432f3826-8307-4252-bb1c-949f1cf33ed8",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co Valastan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "18824822-de86-416b-8c48-c42b9dd65598",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Co Vareg",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "833a5fa8-4eb0-403d-9d66-a07f7ede3ee8",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Co-Arbitan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "d4a128fb-4b95-428f-860f-db74bb7943d1",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Co-Lipirinad",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "8bd0e617-f958-4e58-a506-cafa9806eb3c",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Co-Reta",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "38f1c6aa-3e06-47a1-ab48-38b00d86df55",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Co-Tabuvan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "54fae1d5-556e-4388-9e43-f2e2d1e805be",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Co-Valex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "f50e8154-42ae-49a6-9e12-61d1d14bcad0",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Cosarteg",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "bcd0e6f8-33d9-46ef-84e1-54849db597a5",
+        "laboratoire": "Novartis Pharma Schweiz Ag",
+        "local": true,
+        "nom": "Cotareg",
+        "pays": "Suisse",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "8b181d71-2756-4e8e-8e60-d56dfc56db7a",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Covestag",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "c0a7327c-a2d7-4b1e-aa35-b6b05a9154d4",
+        "laboratoire": "Novapharm Trading",
+        "local": true,
+        "nom": "Novavalz Plus",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "1b28ba2e-fb27-43f2-8c83-d0b5198a90bd",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Valsis Plus",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

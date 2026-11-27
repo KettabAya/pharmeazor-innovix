@@ -1,0 +1,96 @@
+{
+  "nom_commercial": "Migramol",
+  "dosage": "500MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n005",
+    "description": "Produits partageant le code DCI 03 B 005 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 9,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "aff8a76a-1098-4746-bdcb-0712a76a92a8",
+        "laboratoire": "Propharmal",
+        "local": true,
+        "nom": "Efferalgan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "b136cf5d-1f40-4499-ba6b-4456da8d09f6",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Expandol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "4126b0f4-7488-4b47-9adc-29c95eec4991",
+        "laboratoire": "Sarl Alphacare",
+        "local": true,
+        "nom": "Antalgan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "51441860-ddbc-4572-beb2-590bae84ddab",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Doli-Bien",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "077b9a17-97ec-482b-a141-27fdc29558fa",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Dolyc",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "c91e813d-2ec1-4a97-918d-189d6cee2180",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Paracetal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "e6c1936d-276a-4db2-a29d-0b9d9d0ec090",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Paracetamol Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "e00c4128-1432-4ba1-829f-4c0ecbe1a2c9",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Paralgan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "21618013-ff50-42ed-ad04-2a46ac15ab3a",
+        "laboratoire": "Rosaspharma",
+        "local": true,
+        "nom": "Rosadol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

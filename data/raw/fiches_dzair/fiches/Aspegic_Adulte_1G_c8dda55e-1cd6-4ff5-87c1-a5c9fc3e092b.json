@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Aspegic Adulte",
+  "dosage": "1G",
+  "dci": "ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE EXPRIMÉ EN ACETYLSALICYLATE DE DL LYSINE EXPRIME EN ACIDE ACETYLSALICYLIQUE",
+  "Interactions de Acetylsalicylate De Dl Lysine Exprime En Acide Acetylsalicylique": "Interactions de Acetylsalicylate De Dl Lysine Exprime En Acide Acetylsalicylique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nA\n069",
+    "description": "Produits partageant le code DCI 03 A 069 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

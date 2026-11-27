@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Ketoneed",
+  "dosage": "100MG/2ML",
+  "dci": "KETOPROFENE EXPRIMÉ EN KETOPROFENE",
+  "Interactions de Ketoprofene": "Interactions de Ketoprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n018",
+    "description": "Produits partageant le code DCI 04 B 018 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "100MG/2ML",
+        "id": "471c1286-bd7f-480e-a669-efe3ab3ebfe2",
+        "laboratoire": "Biothera",
+        "local": true,
+        "nom": "Bioprofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/2ML",
+        "id": "fb66c291-ec92-4a0a-854a-ded9172dc541",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Ketoflex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/2ML",
+        "id": "3e631192-8c94-4a5c-82f4-8e263f124bea",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Prohefen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/2ML",
+        "id": "1d8baa42-9a6f-4ae6-8313-747e6a140ada",
+        "laboratoire": "Lek",
+        "local": false,
+        "nom": "Ketonal",
+        "pays": "Slovenie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/2ML",
+        "id": "5d27f00b-1513-478e-9174-1ebc50af386b",
+        "laboratoire": "Sanofi Aventis France",
+        "local": false,
+        "nom": "Profenid",
+        "pays": "France",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

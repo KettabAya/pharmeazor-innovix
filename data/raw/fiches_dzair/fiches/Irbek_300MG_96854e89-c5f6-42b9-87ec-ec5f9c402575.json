@@ -1,0 +1,150 @@
+{
+  "nom_commercial": "Irbek",
+  "dosage": "300MG",
+  "dci": "IRBESARTAN EXPRIMÉ EN IRBESARTAN",
+  "Interactions de Irbesartan": "Interactions de Irbesartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n157",
+    "description": "Produits partageant le code DCI 06 E 157 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 15,
+    "produits": [
+      {
+        "dosage": "300MG",
+        "id": "260b9d67-7ab4-4ab1-8023-0c01e763874a",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Aprosart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG",
+        "id": "ba47b78d-cd4f-4034-9d0a-55b636260f56",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Aradex 300",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG",
+        "id": "8efc6bc1-f9a5-45de-8888-aca2acc9fdb0",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Aprovel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "0c756a9a-641e-452a-9684-65ef6b256052",
+        "laboratoire": "Abdi Ibrahim Remede Pharma",
+        "local": true,
+        "nom": "Aravel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "8a10ac23-11c9-44a7-847d-e708de2e807c",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Aroval",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "bf200d6f-bcf5-4f02-8713-65537e2b6163",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Cardiotens 300",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "28f1aa6c-0f26-43f2-8b77-9f590c9a0ab7",
+        "laboratoire": "Dar Al Dawa Developement And Investment Co.ltd",
+        "local": true,
+        "nom": "Gizlan 300",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "d43a89e3-82b6-4064-9670-2484d0a457b2",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Huprovel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "74882136-9c39-4815-ae85-d5f509582925",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Ipisart",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "624e9bd5-19ce-4184-8df3-c6c3f158f69f",
+        "laboratoire": "Bac Pharma Spa",
+        "local": true,
+        "nom": "Irbac",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "bccbbd50-0910-4018-897b-2ce5899e5979",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Irbevel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "1f7bd32a-d35d-4d8b-878a-36c25f06beb4",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Irbezart",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "5fc6b572-3a3c-4175-a0c0-008f603b4dbe",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Irovel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "38949135-e4dc-44f7-869c-e029845e64b9",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Rotazar",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "300MG",
+        "id": "a86f65b7-2699-4568-a60a-8480b1005375",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Zibrat",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

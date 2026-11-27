@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Clarithro",
+  "dosage": "25MG/ML",
+  "dci": "CLARITHROMYCINE EXPRIMÉ EN CLARITHROMYCINE",
+  "Interactions de Clarithromycine": "Interactions de Clarithromycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n323",
+    "description": "Produits partageant le code DCI 13 E 323 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "125MG/5ML",
+        "id": "ce72e67b-0644-499b-bdbd-5f3cfd47a5bb",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Huclar",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "125MG/5ML",
+        "id": "91123f10-f18e-4c4d-be24-4861d303c2d0",
+        "laboratoire": "Dar Al Dawa",
+        "local": false,
+        "nom": "Claridar 125",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "125MG/5ML",
+        "id": "1ce662f6-9bfa-4c12-a9cd-0df925ae66c8",
+        "laboratoire": "Abbott Products Sas",
+        "local": false,
+        "nom": "Zeclar 25",
+        "pays": "France",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Harufen",
+  "dosage": "30MG",
+  "dci": "KETOPROFENE EXPRIMÉ EN KETOPROFENE",
+  "Interactions de Ketoprofene": "Interactions de Ketoprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n049",
+    "description": "Produits partageant le code DCI 04 B 049 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "30MG",
+        "id": "27ce4b46-5726-479d-b79b-9a0bd771257e",
+        "laboratoire": "At Pharma",
+        "local": false,
+        "nom": "Ketotop",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

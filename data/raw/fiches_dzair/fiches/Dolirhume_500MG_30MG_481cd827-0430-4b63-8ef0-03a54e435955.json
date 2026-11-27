@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Dolirhume",
+  "dosage": "500MG/30MG",
+  "dci": "PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE) EXPRIMÉ EN PARACETAMOL/PSEUDOEPHEDRINE (SOUS FORME DE CHLORHYDRATE)",
+  "Interactions de Paracetamol/Pseudoephedrine (Sous Forme De Chlorhydrate)": "Interactions de Paracetamol/Pseudoephedrine (Sous Forme De Chlorhydrate) Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n057",
+    "description": "Produits partageant le code DCI 03 B 057 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "500MG/30MG",
+        "id": "0790e6a8-2c1c-44f6-8d95-c1217998c819",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Planadix Rhume",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

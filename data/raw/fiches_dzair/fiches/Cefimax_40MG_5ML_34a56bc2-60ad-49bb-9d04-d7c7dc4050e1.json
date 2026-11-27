@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Cefimax",
+  "dosage": "40MG/5ML",
+  "dci": "CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE EXPRIMÉ EN CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE",
+  "Interactions de Cefixime Trihydrate Exprime En Cefixime Anhydre": "Interactions de Cefixime Trihydrate Exprime En Cefixime Anhydre Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nB\n197",
+    "description": "Produits partageant le code DCI 13 B 197 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "40MG/5ML",
+        "id": "2d69dcbd-9658-48ca-863f-5395dc17c0d7",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Orokal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

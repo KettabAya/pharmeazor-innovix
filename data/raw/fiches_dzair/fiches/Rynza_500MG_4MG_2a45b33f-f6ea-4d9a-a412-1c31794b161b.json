@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Rynza",
+  "dosage": "500MG/4MG",
+  "dci": "PARACETAMOL/CHLORPHENAMINE MALEATE EXPRIMÉ EN PARACETAMOL/CHLORPHENAMINE MALEATE",
+  "Interactions de Paracetamol/Chlorphenamine Maleate": "Interactions de Paracetamol/Chlorphenamine Maleate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "22\nA\n049",
+    "description": "Produits partageant le code DCI 22 A 049 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

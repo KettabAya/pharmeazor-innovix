@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Aspirine Upsa Vitamine C Tamponnee Effervescente",
+  "dosage": "330MG/200MG",
+  "dci": "ACIDE ACETYLSALICYLIQUE/ACIDE ASCORBIQUE EXPRIMÉ EN ACIDE ACETYLSALICYLIQUE/ACIDE ASCORBIQUE",
+  "Interactions de Acide Acetylsalicylique/Acide Ascorbique": "Interactions de Acide Acetylsalicylique/Acide Ascorbique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nA\n033",
+    "description": "Produits partageant le code DCI 03 A 033 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

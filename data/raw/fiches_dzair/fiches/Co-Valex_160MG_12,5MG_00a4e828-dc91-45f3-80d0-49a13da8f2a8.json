@@ -1,0 +1,123 @@
+{
+  "nom_commercial": "Co-Valex",
+  "dosage": "160MG/12,5MG",
+  "dci": "VALSARTAN/HYDROCHLOROTHIAZIDE EXPRIMÉ EN VALSARTAN/HYDROCHLOROTHIAZIDE",
+  "Interactions de Valsartan/Hydrochlorothiazide": "Interactions de Valsartan/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n237",
+    "description": "Produits partageant le code DCI 06 E 237 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 12,
+    "produits": [
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "c75818b5-ae52-4ea3-8ffe-bf4ae3a53a18",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Co Sarteg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "71b40e32-3906-4ac4-a188-583e49c8df5f",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co Valastan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "81f54315-42b2-44e9-bb00-04762886c2d7",
+        "laboratoire": "Pharma Ival Spa",
+        "local": true,
+        "nom": "Co Valsartan Ival",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "7871b873-9e01-44c5-8183-7288a756609c",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Co Vareg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "bd4b8efb-118b-441f-b6cc-93a06feee556",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Co-Arbitan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "3ae50ebd-45a6-434b-98fb-a33086e0157e",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Co-Tabuvan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "bc1c6941-58a8-4757-9f5a-af2a7d998c79",
+        "laboratoire": "Novartis Pharma Schweiz Ag",
+        "local": true,
+        "nom": "Cotareg",
+        "pays": "Suisse",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "d20cff2d-7261-4705-9180-e433bab3932e",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Covestag",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "9c24b526-4778-4c7d-b513-707356369acb",
+        "laboratoire": "Tassili Arab Pharmaceutical Co",
+        "local": true,
+        "nom": "Divalan Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "2eb5700a-97a9-45e2-aaa4-da81f47ba88c",
+        "laboratoire": "Novapharm Trading",
+        "local": true,
+        "nom": "Novavalz Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "c884d87c-877d-45d2-83de-83a144324a12",
+        "laboratoire": "Algerian Generics Development Pharma (Agd Pharma)",
+        "local": true,
+        "nom": "Thia-Valsan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "160MG/12,5MG",
+        "id": "ac50203b-e4cc-498a-b67b-47b88cd34a14",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Valaclor Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}
