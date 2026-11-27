@@ -5,24 +5,24 @@
       "molecule": "DOLIPRANE 2.4%",
       "question": "What are the therapeutic indications of DOLIPRANE 2.4%?",
       "expected_section": "indications",
-      "bm25_rank": 3,
+      "bm25_rank": null,
       "emb_rank": null,
       "bm25_top1_section": "posologie",
-      "emb_top1_section": "interactions",
-      "bm25_score": 9.177,
-      "emb_score": 0.611
+      "emb_top1_section": "produit",
+      "bm25_score": 14.205,
+      "emb_score": 0.843
     },
     {
       "id": 2,
       "molecule": "DOLIPRANE 2.4%",
       "question": "What are the contraindications of DOLIPRANE 2.4%?",
       "expected_section": "contre_indications",
-      "bm25_rank": 1,
+      "bm25_rank": null,
       "emb_rank": null,
-      "bm25_top1_section": "contre_indications",
-      "emb_top1_section": "effets_indesirables",
-      "bm25_score": 5.958,
-      "emb_score": 0.526
+      "bm25_top1_section": "effets_indesirables",
+      "emb_top1_section": "interactions",
+      "bm25_score": 11.937,
+      "emb_score": 0.855
     },
     {
       "id": 3,
@@ -30,11 +30,11 @@
       "question": "What dosage and administration instructions are specified for DOLIPRANE 2.4%?",
       "expected_section": "posologie",
       "bm25_rank": 1,
-      "emb_rank": 1,
+      "emb_rank": null,
       "bm25_top1_section": "posologie",
-      "emb_top1_section": "posologie",
-      "bm25_score": 7.629,
-      "emb_score": 0.722
+      "emb_top1_section": "produit",
+      "bm25_score": 12.181,
+      "emb_score": 0.858
     },
     {
       "id": 4,
@@ -42,11 +42,11 @@
       "question": "Which drug interactions are mentioned for DOLIPRANE 2.4%?",
       "expected_section": "interactions",
       "bm25_rank": 1,
-      "emb_rank": 1,
+      "emb_rank": null,
       "bm25_top1_section": "interactions",
       "emb_top1_section": "interactions",
-      "bm25_score": 9.846,
-      "emb_score": 0.686
+      "bm25_score": 14.926,
+      "emb_score": 0.848
     },
     {
       "id": 5,
@@ -54,47 +54,47 @@
       "question": "What adverse effects are reported for DOLIPRANE 2.4%?",
       "expected_section": "effets_indesirables",
       "bm25_rank": 1,
-      "emb_rank": null,
+      "emb_rank": 1,
       "bm25_top1_section": "effets_indesirables",
-      "emb_top1_section": "interactions",
-      "bm25_score": 7.547,
-      "emb_score": 0.672
+      "emb_top1_section": "effets_indesirables",
+      "bm25_score": 11.937,
+      "emb_score": 0.868
     },
     {
       "id": 6,
       "molecule": "BIOPAMOX 1 g",
       "question": "What are the therapeutic indications of BIOPAMOX 1 g?",
       "expected_section": "indications",
-      "bm25_rank": 3,
+      "bm25_rank": null,
       "emb_rank": null,
       "bm25_top1_section": "posologie",
-      "emb_top1_section": "interactions",
-      "bm25_score": 9.177,
-      "emb_score": 0.547
+      "emb_top1_section": "produit",
+      "bm25_score": 14.205,
+      "emb_score": 0.846
     },
     {
       "id": 7,
       "molecule": "BIOPAMOX 1 g",
       "question": "What are the contraindications of BIOPAMOX 1 g?",
       "expected_section": "contre_indications",
-      "bm25_rank": 1,
+      "bm25_rank": null,
       "emb_rank": null,
-      "bm25_top1_section": "contre_indications",
-      "emb_top1_section": "indications",
-      "bm25_score": 5.958,
-      "emb_score": 0.572
+      "bm25_top1_section": "effets_indesirables",
+      "emb_top1_section": "interactions",
+      "bm25_score": 11.937,
+      "emb_score": 0.856
     },
     {
       "id": 8,
       "molecule": "BIOPAMOX 1 g",
       "question": "What dosage and administration instructions are specified for BIOPAMOX 1 g?",
       "expected_section": "posologie",
-      "bm25_rank": 2,
+      "bm25_rank": null,
       "emb_rank": 1,
-      "bm25_top1_section": "contre_indications",
+      "bm25_top1_section": "effets_indesirables",
       "emb_top1_section": "posologie",
-      "bm25_score": 6.608,
-      "emb_score": 0.652
+      "bm25_score": 11.937,
+      "emb_score": 0.871
     },
     {
       "id": 9,
@@ -104,9 +104,9 @@
       "bm25_rank": 1,
       "emb_rank": 2,
       "bm25_top1_section": "interactions",
-      "emb_top1_section": "indications",
-      "bm25_score": 9.846,
-      "emb_score": 0.612
+      "emb_top1_section": "interactions",
+      "bm25_score": 14.926,
+      "emb_score": 0.841
     },
     {
       "id": 10,
@@ -114,11 +114,11 @@
       "question": "What adverse effects are reported for BIOPAMOX 1 g?",
       "expected_section": "effets_indesirables",
       "bm25_rank": 1,
-      "emb_rank": null,
+      "emb_rank": 1,
       "bm25_top1_section": "effets_indesirables",
-      "emb_top1_section": "interactions",
-      "bm25_score": 7.547,
-      "emb_score": 0.613
+      "emb_top1_section": "effets_indesirables",
+      "bm25_score": 11.937,
+      "emb_score": 0.881
     },
     {
       "id": 11,
@@ -127,22 +127,22 @@
       "expected_section": "indications",
       "bm25_rank": null,
       "emb_rank": null,
-      "bm25_top1_section": "posologie",
+      "bm25_top1_section": "effets_indesirables",
       "emb_top1_section": "posologie",
-      "bm25_score": 9.672,
-      "emb_score": 0.656
+      "bm25_score": 14.561,
+      "emb_score": 0.854
     },
     {
       "id": 12,
       "molecule": "MIBRAL 5 mg",
       "question": "What are the contraindications of MIBRAL 5 mg?",
       "expected_section": "contre_indications",
-      "bm25_rank": 3,
+      "bm25_rank": null,
       "emb_rank": null,
       "bm25_top1_section": "posologie",
-      "emb_top1_section": "posologie",
-      "bm25_score": 9.672,
-      "emb_score": 0.652
+      "emb_top1_section": "interactions",
+      "bm25_score": 13.355,
+      "emb_score": 0.85
     },
     {
       "id": 13,
@@ -153,8 +153,8 @@
       "emb_rank": 1,
       "bm25_top1_section": "posologie",
       "emb_top1_section": "posologie",
-      "bm25_score": 12.643,
-      "emb_score": 0.779
+      "bm25_score": 17.495,
+      "emb_score": 0.878
     },
     {
       "id": 14,
@@ -162,11 +162,11 @@
       "question": "Which drug interactions are mentioned for MIBRAL 5 mg?",
       "expected_section": "interactions",
       "bm25_rank": 1,
-      "emb_rank": 2,
+      "emb_rank": null,
       "bm25_top1_section": "interactions",
-      "emb_top1_section": "posologie",
-      "bm25_score": 9.846,
-      "emb_score": 0.609
+      "emb_top1_section": "interactions",
+      "bm25_score": 14.926,
+      "emb_score": 0.851
     },
     {
       "id": 15,
@@ -174,11 +174,11 @@
       "question": "What adverse effects are reported for MIBRAL 5 mg?",
       "expected_section": "effets_indesirables",
       "bm25_rank": 2,
-      "emb_rank": null,
+      "emb_rank": 1,
       "bm25_top1_section": "posologie",
-      "emb_top1_section": "interactions",
-      "bm25_score": 9.672,
-      "emb_score": 0.624
+      "emb_top1_section": "effets_indesirables",
+      "bm25_score": 13.355,
+      "emb_score": 0.875
     }
   ],
   "unanswerable": [
@@ -186,29 +186,29 @@
       "id": 16,
       "question": "What is the current retail price of DOLIPRANE 2.4% in Algeria?",
       "reason": "price",
-      "bm25_top1_score": 8.984,
-      "emb_top1_score": 0.33
+      "bm25_top1_score": 10.559,
+      "emb_top1_score": 0.867
     },
     {
       "id": 17,
       "question": "Is DOLIPRANE 2.4% currently available in pharmacies near me?",
       "reason": "availability",
-      "bm25_top1_score": 8.984,
-      "emb_top1_score": 0.547
+      "bm25_top1_score": 10.559,
+      "emb_top1_score": 0.855
     },
     {
       "id": 18,
       "question": "Which antibiotic should a particular patient take instead of amoxicillin?",
       "reason": "individualized",
-      "bm25_top1_score": 3.819,
-      "emb_top1_score": 0.65
+      "bm25_top1_score": 6.478,
+      "emb_top1_score": 0.842
     },
     {
       "id": 19,
       "question": "Which antihypertensive is best for a specific patient?",
       "reason": "individualized",
-      "bm25_top1_score": 8.984,
-      "emb_top1_score": 0.626
+      "bm25_top1_score": 15.407,
+      "emb_top1_score": 0.843
     }
   ]
 }

@@ -8,7 +8,7 @@ from pathlib import Path
 
 from rank_bm25 import BM25Okapi
 
-PASSAGES_FILE = Path("data/processed/passages.jsonl")
+PASSAGES_FILE = Path("data/processed/passages_all.jsonl")
 
 # French stopwords (enough for the test and the queries we have).
 STOPWORDS = {
@@ -158,31 +158,10 @@ class BM25Index:
 
 
 def load_passages_index(passages_file: Path = PASSAGES_FILE) -> BM25Index:
-    idx = load_passages_index()
+    idx = BM25Index()
     with Path(passages_file).open(encoding="utf-8") as fh:
         for line in fh:
             p = json.loads(line)
             idx.add(p["passage_id"], p["text"])
     idx.finalize()
     return idx
-
-
-if __name__ == "__main__":
-    idx = load_passages_index()
-    print(f"Indexed {len(idx)} passages.")
-    for query in [
-        "amlodipine contre-indications",
-        "amlodipine posologie",
-        "amoxicilline posologie enfant",
-        "amoxicilline effets indésirables",
-        "paracetamol posologie enfant",
-        "paracetamol contre-indications",
-    ]:
-        print(f"\n=== {query}")
-        results = idx.search(query, top_k=3)
-        if not results:
-            print("  (no result)")
-            continue
-        for r in results:
-            print(f"  [{r.score:.2f}] {r.passage_id}")
-            print(f"    {r.text[:120].strip()}...")
