@@ -166,7 +166,6 @@ class TestSplitting:
             "Ne prenez jamais ce médicament\n"
             "En cas d'allergie.\n"
         )
-        
 
         split = split_sections(text)
 
@@ -174,21 +173,21 @@ class TestSplitting:
         assert "En cas d'allergie." in split.sections[Section.CONTRAINDICATIONS]
 
     def test_rcp_navigation_notice_does_not_stop_extraction(self):
-      text = (
+        text = (
             "4.2. Posologie et mode d'administration\n"
             "Dose professionnelle.\n"
             "Fiche info\n"
             "Résumé des caractéristiques du produit\n"
-           "Notice\n"
-          "Bon usage\n"
-         "Suite du RCP.\n"
-         "4.3. Contre-indications\n"
-         "Contenu des contre-indications.\n"
-       )
+            "Notice\n"
+            "Bon usage\n"
+            "Suite du RCP.\n"
+            "4.3. Contre-indications\n"
+            "Contenu des contre-indications.\n"
+        )
 
-      split = split_sections(text)
+        split = split_sections(text)
 
-      assert "Contenu des contre-indications." in split.sections[Section.CONTRAINDICATIONS]
+        assert "Contenu des contre-indications." in split.sections[Section.CONTRAINDICATIONS]
 
     def test_annexe_i_is_not_a_document_boundary(self):
         text = (
@@ -218,6 +217,7 @@ class TestSplitting:
         assert "VERSION : 01" in split.sections[Section.POSOLOGY]
         assert "Page: 29/32" in split.sections[Section.POSOLOGY]
         assert "Suite du contenu." in split.sections[Section.POSOLOGY]
+
     def test_numbered_instructions_stay_inside_posology(self):
         text = (
             "6.6- Mode d'emploi\n"
@@ -262,15 +262,15 @@ class TestSplitting:
         assert "4. Bien refermer" in posology
         assert not split.unmapped
 
-    def test_real_notice_indications_heading_split_across_lines(self): 
-     text = (
-        "1. QU’EST-CE QUE TRAMADOL EG L.P. 200 mg, comprimé à libération\n"
-        "prolongée ET DANS QUELS CAS EST-IL UTILISE ?\n"
-        "TRAMADOL EG L.P. est utilisé pour le traitement des douleurs modérées à intenses.\n"
-     )
+    def test_real_notice_indications_heading_split_across_lines(self):
+        text = (
+            "1. QU’EST-CE QUE TRAMADOL EG L.P. 200 mg, comprimé à libération\n"
+            "prolongée ET DANS QUELS CAS EST-IL UTILISE ?\n"
+            "TRAMADOL EG L.P. est utilisé pour le traitement des douleurs modérées à intenses.\n"
+        )
 
-     split = split_sections(text)
+        split = split_sections(text)
 
-     assert "traitement des douleurs modérées à intenses" in (
-        split.sections[Section.INDICATIONS]
-     )
+        assert (
+            "traitement des douleurs modérées à intenses" in (split.sections[Section.INDICATIONS])
+        )

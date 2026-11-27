@@ -83,6 +83,7 @@ def match_drug(doc_name: str, rules: list[dict], drugs: list[dict]) -> tuple[dic
         for token in d["inn_norm"].split():
             if len(token) >= 5 and token in doc_lower.replace("-", " "):
                 return d, rule
+    return None, rule       
 
 
 def main() -> int:
@@ -100,7 +101,7 @@ def main() -> int:
 
     for sf in section_files:
         data = json.loads(sf.read_text(encoding="utf-8"))
-        doc = data["document"]
+        doc = data.get("document") or sf.stem.removesuffix("_sections")
         drug, rule = match_drug(doc, rules, drugs)
 
         if rule is None:

@@ -67,7 +67,7 @@ def build_passages():
         for file in sorted(SECTIONS_DIR.glob("*_sections.json")):
             data = json.loads(file.read_text(encoding="utf-8"))
 
-            doc_name = data["document"]
+            doc_name = data.get("document") or file.stem.removesuffix("_sections")
             meta = index.get(doc_name)
 
             if not meta:
