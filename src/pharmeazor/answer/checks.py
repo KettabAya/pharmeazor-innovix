@@ -87,13 +87,28 @@ def check_sources_present(
 # But BM25 still gives 8.98 to a price question, because the drug name is
 # in the corpus. So search does not stop it. We stop it here.
 HORS_PERIMETRE: dict[str, tuple[str, ...]] = {
-    "le prix": ("prix", "tarif", "cout", "coute", "combien coute",
-                "remboursement", "rembourse"),
-    "la disponibilité en pharmacie": ("en stock", "disponible en pharmacie",
-                                      "ou acheter", "ou trouver",
-                                      "rupture de stock"),
-    "les conditions de délivrance": ("ordonnance obligatoire",
-                                     "sans ordonnance"),
+    "le prix": (
+        "prix", "tarif", "cout", "coute", "combien coute",
+        "remboursement", "rembourse",
+        "price", "retail", "cost", "how much", "pay",   
+    ),
+    "la disponibilité en pharmacie": (
+        "en stock", "disponible en pharmacie", "ou acheter", "ou trouver",
+        "rupture de stock",
+        "available", "in stock", "near me", "pharmacy near",  
+    ),
+    "les conditions de délivrance": (
+        "ordonnance obligatoire", "sans ordonnance",
+        "prescription required", "over the counter",  
+        "je dois prendre", "dois-je prendre", "quel médicament prendre",
+        "que prendre", "conseillez-moi", "conseil personnalisé",
+        "which should i take", "which one should i take",
+        "which antibiotic should a patient", "which antihypertensive",
+        "best for a specific patient", "best for a particular patient",
+        "which is best for", "what should a patient take",
+        "which antibiotic should a particular patient",   
+        "which antibiotic should a specific patient", 
+    ),
 }
 
 

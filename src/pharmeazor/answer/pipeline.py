@@ -3,22 +3,18 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from pharmeazor.answer.checks import (
-    check_budget,
-    check_numbers,
-    check_out_of_scope,
-    check_patient_context,
-    check_sources_present,
-)
-from pharmeazor.answer.llm_client import ask_llm, get_call_count
+from pharmeazor.answer.checks import run_all, Verdict
+from pharmeazor.answer.llm_client import ask_llm
 from pharmeazor.registry import interactions_of, resolve_drug
 from pharmeazor.retrieve.bm25 import load_passages_index
 
 PASSAGES_ALL = Path("data/processed/passages_all.jsonl")
 
+REFUSAL = "Information non trouvée dans les sources consultées."
+
 
 def load_passages_by_id() -> dict[str, dict]:
-    by_id = {}
+    by_id: dict[str, dict] = {}
     with PASSAGES_ALL.open(encoding="utf-8") as fh:
         for line in fh:
             p = json.loads(line)
@@ -42,7 +38,7 @@ def retrieve(question: str, drug_ids: list[str], top_k: int = 5) -> list[dict]:
     idx = load_passages_index()
     by_id = load_passages_by_id()
     results = idx.search(question, top_k=top_k * 3)
-    out = []
+    out: list[dict] = []
     for r in results:
         p = by_id.get(str(r.passage_id))
         if not p:
@@ -57,9 +53,12 @@ def retrieve(question: str, drug_ids: list[str], top_k: int = 5) -> list[dict]:
 
 def generate_answer(question: str, passages: list[dict], interactions: list[dict]) -> str:
     pt = "\n\n".join(f"[{i + 1}] {p['text'][:400]}" for i, p in enumerate(passages))
-    it = "\n".join(f"- {r['inn']} + {r['substance_cible']}: {r['niveau']}" for r in interactions)
+    it = "\n".join(
+        f"- {r['inn']} + {r['substance_cible']}: {r['niveau']}"
+        for r in interactions
+    )
     prompt = f"""Answer ONLY from the passages below. If not in passages, say
-"Information non trouvée dans les sources consultées". Cite [n] for each fact.
+"{REFUSAL}". Cite [n] for each fact.
 
 QUESTION: {question}
 PASSAGES:
@@ -70,27 +69,43 @@ INTERACTIONS:
     return ask_llm(prompt)
 
 
-def run_checks(question, answer, passages):
-    return {
-        "numbers": check_numbers(answer, passages),
-        "sources": check_sources_present(answer, passages),
-        "scope": check_out_of_scope(question),
-        "patient": check_patient_context(answer, passages),
-        "budget": check_budget(get_call_count()),
-    }
+def _make_citations(passages: list[dict]):
+
+    from pharmeazor.schemas import Citation
+
+    citations = []
+    for p in passages:
+        try:
+            citations.append(Citation(passage=p, quote=p["text"]))
+        except TypeError:
+            # fallback: the Citation may accept a dict directly
+            citations.append(Citation(p))
+    return citations
 
 
-def format_answer(question, answer, passages, checks):
-    blocked = any(c["status"] == "block" for c in checks.values())
-    status = (
-        "refused"
-        if blocked
-        else ("flagged" if any(c["status"] == "flag" for c in checks.values()) else "answered")
-    )
+def format_answer(question: str, answer_text: str, passages: list[dict], results) -> dict:
+    """Format the final answer from the chain.
+
+    `results` is the list returned by `checks.run_all`.
+    """
+    verdicts = [r.verdict for r in results]
+    blocked = Verdict.BLOCK in verdicts
+    flagged = Verdict.FLAG in verdicts
+
+    if blocked:
+        status = "refused"
+        final = REFUSAL
+    elif flagged:
+        status = "flagged"
+        final = answer_text
+    else:
+        status = "answered"
+        final = answer_text
+
     return {
         "status": status,
         "question": question,
-        "answer": answer if not blocked else "Information non trouvée dans les sources consultées.",
+        "answer": final,
         "citations": [
             {
                 "passage_id": p["passage_id"],
@@ -100,20 +115,42 @@ def format_answer(question, answer, passages, checks):
             }
             for p in passages
         ],
-        "checks": checks,
+        "checks": [
+            {"verdict": r.verdict.value, "reason": r.reason}
+            for r in results
+        ],
     }
 
 
 def answer(question: str) -> dict:
-    scope = check_out_of_scope(question)
-    if scope["status"] == "block":
-        return format_answer(question, "", [], {"scope": scope})
     extracted = extract_question(question)
-    drug_ids = resolve_drugs(extracted.get("drugs", []))
+    drug_names = extracted.get("drugs", []) or []
+
+    drug_ids = resolve_drugs(drug_names)
+
+    print("EXTRACTED DRUGS:", drug_names)
+    print("RESOLVED DRUG IDS:", drug_ids)
+
     passages = retrieve(question, drug_ids)
-    interactions = []
+
+    print("RETRIEVED PASSAGES:", len(passages))
+
+    for p in passages:
+        print(
+            "PASSAGE:",
+            p.get("passage_id"),
+            "| DRUG:",
+            p.get("drug_id"),
+            "| SECTION:",
+            p.get("section"),
+        )
+
+    interactions: list[dict] = []
     for d in drug_ids:
         interactions.extend(interactions_of(d))
     answer_text = generate_answer(question, passages, interactions)
-    checks = run_checks(question, answer_text, passages)
-    return format_answer(question, answer_text, passages, checks)
+
+    citations = _make_citations(passages)
+    results = run_all(question, answer_text, citations, est_un_refus=False)
+
+    return format_answer(question, answer_text, passages, results)
