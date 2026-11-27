@@ -107,19 +107,53 @@ _NUMBER_WORDS: dict[str, str] = {
 # blocked a correct answer. "deux" was a word, not a dose. So we only read a
 # spelled-out number when a measuring unit comes right after it.
 _UNITES_MESUREES = (
-    "g", "gramme", "grammes", "mg", "milligramme", "milligrammes",
-    "mcg", "ug", "microgramme", "microgrammes", "ml", "millilitre",
-    "millilitres", "l", "litre", "litres", "kg", "kilogramme", "kilogrammes",
-    "h", "heure", "heures", "min", "minute", "minutes", "j", "jour", "jours",
-    "sem", "semaine", "semaines", "mois", "an", "ans", "annee", "annees",
-    "%", "pour cent", "pourcent", "ui", "mmhg",
+    "g",
+    "gramme",
+    "grammes",
+    "mg",
+    "milligramme",
+    "milligrammes",
+    "mcg",
+    "ug",
+    "microgramme",
+    "microgrammes",
+    "ml",
+    "millilitre",
+    "millilitres",
+    "l",
+    "litre",
+    "litres",
+    "kg",
+    "kilogramme",
+    "kilogrammes",
+    "h",
+    "heure",
+    "heures",
+    "min",
+    "minute",
+    "minutes",
+    "j",
+    "jour",
+    "jours",
+    "sem",
+    "semaine",
+    "semaines",
+    "mois",
+    "an",
+    "ans",
+    "annee",
+    "annees",
+    "%",
+    "pour cent",
+    "pourcent",
+    "ui",
+    "mmhg",
 )
 
 _NUMBER_WORDS_RE = re.compile(
     r"\b(" + "|".join(sorted(_NUMBER_WORDS, key=len, reverse=True)) + r")\b"
     r"(?=\s*(?:"
-    + "|".join(sorted((re.escape(u) for u in _UNITES_MESUREES),
-                      key=len, reverse=True))
+    + "|".join(sorted((re.escape(u) for u in _UNITES_MESUREES), key=len, reverse=True))
     + r")\b)"
 )
 

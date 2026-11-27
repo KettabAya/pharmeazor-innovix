@@ -93,7 +93,7 @@ def ask_llm(prompt: str, use_cache: bool = True, temperature: float = 0.0) -> st
         return answer
 
     except Exception as exc:
-        return f"ERROR: {exc}"
+        raise RuntimeError(f"LLM API call failed: {exc}") from exc
 
 
 def get_call_count() -> int:
