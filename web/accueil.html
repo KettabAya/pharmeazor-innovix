@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pharmeazor — Better Health. Brighter Tomorrow.</title>
+<meta name="description" content="Pharmeazor — base de connaissances médicamenteuse et assistant à preuves pour le pharmacien d'officine. Groupe INNOVIX.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap">
+<style>
+/* ------------------------------------------------------------------
+   Couleurs relevees directement sur la maquette, pas approximees :
+   le navy du wordmark, le teal de « azor », les deux bouts du degrade
+   du bouton et le fond en diagonale.
+------------------------------------------------------------------- */
+:root{
+  --navy:#022947;
+  --navy-deep:#011d33;
+  --navy-btn:#024067;
+  --teal:#0a9db0;
+  --teal-btn:#078c96;
+  --teal-light:#22bcd0;
+  --gray:#78828f;
+  --gray-dim:#888f9c;
+  --gray-deep:#5a6777;
+  --bg-a:#f2f7fd;
+  --bg-b:#dde8f5;
+  --bg-c:#e7eff8;
+  --blanc:#ffffff;
+  --gouttiere:clamp(20px,5vw,72px);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--navy);
+  background:var(--bg-a);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ------------------------------------------------------------------ scene */
+.scene{
+  position:relative;
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  background:
+    radial-gradient(130% 95% at 8% 92%, var(--bg-b) 0%, rgba(221,232,245,0) 58%),
+    radial-gradient(95% 80% at 30% 18%, #fbfdff 0%, rgba(251,253,255,0) 60%),
+    linear-gradient(135deg,var(--bg-c) 0%,var(--bg-a) 42%,var(--bg-b) 100%);
+  isolation:isolate;
+}
+
+/* Les decors : derriere tout, et ignores par le pointeur. */
+.decor{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.decor>*{position:absolute}
+
+/* Le grand disque bleu-gris du coin haut-droit. Il a un bord net, comme
+   sur la maquette, et reste assez clair pour que la navigation se lise. */
+.orbe{
+  top:-24%;right:-15%;
+  width:min(66vw,880px);aspect-ratio:1;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 42% 44%, #cfdfec 0%, #c2d6e6 58%, #b7cfe2 82%,
+                    rgba(183,207,226,.35) 94%, rgba(183,207,226,0) 100%);
+}
+/* L'arc sombre qui mord le bord droit, derriere le disque. */
+.croissant{
+  top:-34%;right:-36%;
+  width:min(62vw,820px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 28% 52%, rgba(6,44,72,0) 60%,
+                             rgba(6,44,72,.34) 74%, rgba(6,44,72,.82) 90%);
+}
+/* Un halo turquoise tres doux au centre du visuel. */
+.halo{
+  top:16%;right:4%;
+  width:min(32vw,400px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(90,210,235,.26) 0%,rgba(90,210,235,0) 68%);
+}
+
+/* La trame moleculaire, en bas a gauche et en haut au centre. */
+.trame{inset:0;width:100%;height:100%;opacity:.5}
+.trame line{stroke:#9cc3dd;stroke-width:1}
+.trame circle{fill:#8fbcd8}
+
+/* Les vagues du coin bas-droit. */
+.vagues{right:0;bottom:0;width:min(62vw,860px);height:auto;display:block}
+
+/* ------------------------------------------------------------------ nav */
+.nav{
+  position:relative;z-index:3;
+  display:flex;align-items:center;gap:clamp(14px,3vw,38px);
+  padding:26px var(--gouttiere) 0;
+}
+.logo{display:flex;align-items:center;gap:0;flex:0 0 auto}
+.logo img{display:block;height:58px;width:auto}
+.nav-sep{width:1px;height:34px;background:#c3d2e0;flex:0 0 auto}
+
+.liens{display:flex;align-items:center;gap:clamp(6px,2.4vw,30px);margin-inline:auto}
+.liens a{
+  font-size:15px;font-weight:500;color:#20394d;text-decoration:none;
+  padding:11px 22px;border-radius:999px;white-space:nowrap;
+  transition:color .18s ease,background .18s ease;
+}
+.liens a:hover{color:var(--teal)}
+.liens a.actif{
+  background:linear-gradient(100deg,#0f94ac 0%,#0a5f84 42%,var(--navy) 100%);
+  color:#fff;box-shadow:0 6px 18px rgba(2,41,71,.26);
+}
+.liens a.actif:hover{color:#fff}
+
+.actions{display:flex;align-items:center;gap:16px;flex:0 0 auto}
+.icone{
+  display:grid;place-items:center;width:40px;height:40px;
+  border:0;background:none;color:#20394d;cursor:pointer;border-radius:50%;
+  transition:color .18s ease;
+}
+.icone:hover{color:var(--teal)}
+.icone.cercle{border:1.5px solid #9fb4c6;width:46px;height:46px}
+.icone.cercle:hover{border-color:var(--teal)}
+
+/* ------------------------------------------------------------------ hero */
+.hero{
+  position:relative;z-index:2;flex:1;
+  display:grid;align-items:center;gap:30px;
+  grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);
+  padding:clamp(18px,4vh,54px) var(--gouttiere) clamp(60px,10vh,96px);
+}
+.copie{min-width:0;max-width:640px}
+
+.surtitre{display:flex;align-items:center;gap:14px;margin:0 0 6px}
+.surtitre .trait{width:72px;height:1.5px;background:#a9b3bf;flex:0 0 auto}
+.surtitre span{
+  font-size:clamp(10px,1.05vw,12px);font-weight:500;letter-spacing:.34em;
+  text-transform:uppercase;color:var(--gray-dim);
+}
+
+/* Le wordmark : le texte est du vrai texte, le trait et l'etoile sont
+   dessines par-dessus, pour rester nets a toutes les tailles. */
+.marque{position:relative;margin:0;line-height:.98;white-space:nowrap}
+.marque .mot{
+  font-size:clamp(44px,8.2vw,104px);font-weight:700;font-style:italic;
+  letter-spacing:-.022em;
+}
+.marque .sombre{color:var(--navy)}
+.marque .clair{color:var(--teal)}
+.marque .swoosh{
+  position:absolute;left:-4.5%;top:-26%;width:111%;height:auto;
+  z-index:0;pointer-events:none;
+}
+/* Le texte passe DEVANT le ruban. */
+.marque .mot{position:relative;z-index:1}
+.marque .etoile{
+  position:absolute;z-index:2;left:53.2%;top:-16%;width:min(10%,88px);height:auto;
+  pointer-events:none;
+  filter:drop-shadow(0 0 10px rgba(34,188,208,.55));
+}
+
+.slogan{
+  /* Decale a droite, comme sur la maquette : le slogan commence sous le
+     « harme » du wordmark, pas sous le P. */
+  margin:26px 0 0 9%;font-size:clamp(17px,2.5vw,30px);font-style:italic;
+  font-weight:400;color:var(--gray-deep);letter-spacing:-.01em;
+}
+.slogan b{font-weight:700;font-style:italic}
+.slogan .sombre{color:var(--navy)}
+.slogan .clair{color:var(--teal)}
+
+.chapeau{
+  margin:20px 0 0;max-width:34ch;
+  font-size:clamp(14px,1.45vw,17px);font-weight:300;line-height:1.62;color:var(--gray);
+}
+
+.cta{
+  display:inline-flex;align-items:center;gap:16px;margin-top:26px;
+  padding:15px 18px 15px 28px;border:0;border-radius:999px;cursor:pointer;
+  font-family:inherit;font-size:clamp(14px,1.4vw,16px);font-weight:600;color:#fff;
+  background:linear-gradient(100deg,var(--navy-btn) 0%,#045c7e 48%,var(--teal-btn) 100%);
+  box-shadow:0 14px 30px rgba(4,110,130,.34),0 2px 0 rgba(255,255,255,.18) inset;
+  text-decoration:none;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.cta:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(4,110,130,.42)}
+.cta:active{transform:translateY(0)}
+.cta .fleche{
+  display:grid;place-items:center;width:26px;height:26px;border-radius:50%;
+  background:rgba(255,255,255,.16);
+}
+
+/* Les trois promesses, separees par des filets fins. */
+.atouts{
+  display:flex;align-items:center;flex-wrap:wrap;gap:clamp(14px,2.4vw,30px);
+  margin-top:clamp(28px,5vh,52px);
+}
+.atout{display:flex;align-items:center;gap:12px;min-width:0}
+.atout svg{flex:0 0 auto;color:var(--teal)}
+.atout .titre{font-size:14px;font-weight:600;color:var(--navy);line-height:1.25}
+.atout .sous{font-size:12.5px;font-weight:300;color:var(--gray);line-height:1.25}
+.filet{width:1px;height:42px;background:#c3d2e0;flex:0 0 auto}
+
+/* ------------------------------------------------------------------ visuel */
+.visuel{position:relative;min-width:0;display:grid;place-items:center;min-height:clamp(240px,42vh,520px)}
+.visuel img{position:relative;z-index:1}
+.visuel img{
+  width:min(86%,452px);height:auto;display:block;margin-left:5%;
+  /* Le fond sombre de l'illustration a ete retire : elle se pose donc
+     directement sur le fond clair, sans mode de fusion ni masque. */
+  filter:drop-shadow(0 18px 40px rgba(12,74,110,.18));
+  animation:flotte 7s ease-in-out infinite;
+}
+@keyframes flotte{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@media (prefers-reduced-motion:reduce){.visuel img{animation:none}}
+
+/* ------------------------------------------------------------------ souris */
+.souris{
+  position:absolute;left:50%;bottom:clamp(16px,3.4vh,30px);transform:translateX(-50%);
+  z-index:3;color:#7d8b98;
+}
+.souris svg{display:block}
+@media (prefers-reduced-motion:no-preference){
+  .souris .roue{animation:roule 1.9s ease-in-out infinite}
+  @keyframes roule{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(5px);opacity:.35}}
+}
+
+/* ------------------------------------------------------------------ petits ecrans */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;padding-bottom:clamp(76px,14vh,110px)}
+  .visuel{order:-1;min-height:clamp(200px,32vh,320px)}
+  .copie{max-width:none}
+  .orbe{top:-14%;right:-34%;width:min(130vw,820px)}
+  .halo{top:-10%;right:-28%;width:min(100vw,620px)}
+  .marque .mot{font-size:clamp(40px,11vw,76px)}
+}
+@media (max-width:720px){
+  .nav{flex-wrap:wrap;gap:12px;padding-top:18px}
+  .nav-sep{display:none}
+  .liens{order:3;width:100%;margin-inline:0;justify-content:flex-start;overflow-x:auto}
+  .liens a{padding:9px 16px;font-size:14px}
+  .actions{margin-left:auto}
+  .filet{display:none}
+  .atouts{gap:16px}
+  .atout{flex:1 1 44%}
+  .vagues{width:140vw}
+}
+</style>
+</head>
+<body>
+
+<div class="scene">
+
+  <!-- ============================ decors ============================ -->
+  <div class="decor" aria-hidden="true">
+    <div class="orbe"></div>
+    <div class="croissant"></div>
+    <div class="coeur"></div>
+    <div class="halo"></div>
+
+    <svg class="trame" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+      <g opacity=".55">
+        <!-- amas bas-gauche -->
+        <line x1="18" y1="612" x2="96" y2="566"/><line x1="96" y1="566" x2="168" y2="618"/>
+        <line x1="168" y1="618" x2="246" y2="580"/><line x1="246" y1="580" x2="300" y2="648"/>
+        <line x1="96" y1="566" x2="150" y2="498"/><line x1="150" y1="498" x2="246" y2="580"/>
+        <line x1="18" y1="612" x2="64" y2="688"/><line x1="64" y1="688" x2="168" y2="618"/>
+        <line x1="300" y1="648" x2="372" y2="606"/><line x1="372" y1="606" x2="430" y2="662"/>
+        <line x1="150" y1="498" x2="236" y2="470"/><line x1="236" y1="470" x2="300" y2="534"/>
+        <line x1="300" y1="534" x2="246" y2="580"/><line x1="300" y1="534" x2="372" y2="606"/>
+        <circle cx="18" cy="612" r="4.5"/><circle cx="96" cy="566" r="6"/>
+        <circle cx="168" cy="618" r="4.5"/><circle cx="246" cy="580" r="7"/>
+        <circle cx="300" cy="648" r="4.5"/><circle cx="150" cy="498" r="5.5"/>
+        <circle cx="64" cy="688" r="5"/><circle cx="372" cy="606" r="5.5"/>
+        <circle cx="430" cy="662" r="4"/><circle cx="236" cy="470" r="4.5"/>
+        <circle cx="300" cy="534" r="6"/>
+      </g>
+      <g opacity=".4">
+        <!-- amas haut-centre, plus leger -->
+        <line x1="690" y1="118" x2="762" y2="78"/><line x1="762" y1="78" x2="836" y2="126"/>
+        <line x1="690" y1="118" x2="716" y2="196"/><line x1="716" y1="196" x2="800" y2="214"/>
+        <line x1="800" y1="214" x2="836" y2="126"/><line x1="762" y1="78" x2="724" y2="22"/>
+        <circle cx="690" cy="118" r="5"/><circle cx="762" cy="78" r="6"/>
+        <circle cx="836" cy="126" r="4.5"/><circle cx="716" cy="196" r="5"/>
+        <circle cx="800" cy="214" r="4"/><circle cx="724" cy="22" r="4.5"/>
+      </g>
+    </svg>
+
+    <svg class="vagues" viewBox="0 0 860 300" preserveAspectRatio="none">
+      <path d="M860 92 C 700 118 560 186 452 300 L860 300 Z" fill="#0a8fa8" opacity=".92"/>
+      <path d="M860 150 C 724 170 606 226 530 300 L860 300 Z" fill="#17b3c6" opacity=".82"/>
+      <path d="M860 196 C 752 212 660 252 604 300 L860 300 Z" fill="#02243f"/>
+    </svg>
+  </div>
+
+  <!-- ============================= nav ============================= -->
+  <nav class="nav">
+    <a class="logo" href="#" aria-label="Pharmeazor, accueil">
+      <img src="assets/logo.svg" alt="" width="322" height="300">
+    </a>
+    <span class="nav-sep"></span>
+
+    <div class="liens">
+      <a class="actif" href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="actions">
+      <button class="icone" type="button" aria-label="Rechercher">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="7"/><path d="M20 20 L16.2 16.2"/>
+        </svg>
+      </button>
+      <span class="nav-sep"></span>
+      <button class="icone cercle" type="button" aria-label="Panier">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 7h13l-1.4 8.4a2 2 0 0 1-2 1.6H9.4a2 2 0 0 1-2-1.6L5.6 4.8A1 1 0 0 0 4.6 4H3"/>
+          <circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================= hero ============================= -->
+  <main class="hero">
+
+    <div class="copie">
+      <p class="surtitre"><span class="trait" aria-hidden="true"></span><span>Pharmaceutical Solutions</span></p>
+
+      <h1 class="marque">
+        <img class="swoosh" src="assets/swoosh.svg" alt="">
+        <span class="mot sombre">Pharme</span><span class="mot clair">azor</span>
+        <svg class="etoile" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M50 2 C 55 34 66 45 98 50 C 66 55 55 66 50 98 C 45 66 34 55 2 50
+                   C 34 45 45 34 50 2 Z" fill="#22bcd0"/>
+        </svg>
+      </h1>
+
+      <p class="slogan">
+        Better <b class="sombre">Health.</b> Brighter <b class="clair">Tomorrow.</b>
+      </p>
+
+      <p class="chapeau">
+        Innovative pharmaceutical solutions<br>for a healthier, happier life.
+      </p>
+
+      <a class="cta" href="index.html">
+        Explore Our Products
+        <span class="fleche" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12h15M13 6l6 6-6 6"/>
+          </svg>
+        </span>
+      </a>
+
+      <div class="atouts">
+        <div class="atout">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linejoin="round">
+            <path d="M12 2.6 20 5.4v6c0 4.6-3.2 8.4-8 10.2-4.8-1.8-8-5.6-8-10.2v-6Z"/>
+            <path d="M12 8.6v6.4M8.8 11.8h6.4" stroke-linecap="round"/>
+          </svg>
+          <span><span class="titre">Quality</span><br><span class="sous">You Can Trust</span></span>
+        </div>
+
+        <span class="filet" aria-hidden="true"></span>
+
+        <div class="atout">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M9.4 2.6h5.2M10.4 2.6v6L5 18.4A2 2 0 0 0 6.8 21.4h10.4A2 2 0 0 0 19 18.4
+                     L13.6 8.6v-6"/>
+            <path d="M7.4 14.6h9.2"/>
+          </svg>
+          <span><span class="titre">Innovation</span><br><span class="sous">For a Better Life</span></span>
+        </div>
+
+        <span class="filet" aria-hidden="true"></span>
+
+        <div class="atout">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M20.4 7.3a4.6 4.6 0 0 0-8.4-2.5 4.6 4.6 0 0 0-8.4 2.5c0 5 8.4 10.6 8.4 10.6
+                     s8.4-5.6 8.4-10.6Z"/>
+            <path d="M3.8 12.4h3.6l1.6-2.8 2 5 1.7-3.2h3.4"/>
+          </svg>
+          <span><span class="titre">Your Health</span><br><span class="sous">Our Priority</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="visuel">
+      <img src="assets/heros.svg"
+           alt="Deux gélules de verre libérant une hélice d'ADN lumineuse, entourée de molécules">
+    </div>
+  </main>
+
+  <div class="souris" aria-hidden="true">
+    <svg width="26" height="40" viewBox="0 0 26 40" fill="none" stroke="currentColor"
+         stroke-width="1.6">
+      <rect x="1.4" y="1.4" width="23.2" height="37.2" rx="11.6"/>
+      <line class="roue" x1="13" y1="10" x2="13" y2="17" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+</div>
+
+</body>
+</html>

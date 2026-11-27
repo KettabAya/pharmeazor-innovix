@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 6 322 300" fill="none">
+  <defs>
+    <linearGradient id="lP" x1=".12" y1="0" x2=".88" y2="1">
+      <stop offset="0" stop-color="#11456a"/>
+      <stop offset=".52" stop-color="#0a2c49"/>
+      <stop offset="1" stop-color="#0f3a5b"/>
+    </linearGradient>
+    <linearGradient id="lFeuille" x1=".1" y1="1" x2=".9" y2="0">
+      <stop offset="0" stop-color="#0c6b88"/>
+      <stop offset=".48" stop-color="#1a9cb8"/>
+      <stop offset="1" stop-color="#52d0e4"/>
+    </linearGradient>
+    <linearGradient id="lCroissant" x1="0" y1="1" x2="1" y2=".2">
+      <stop offset="0" stop-color="#0f4f68"/>
+      <stop offset=".55" stop-color="#1888a4"/>
+      <stop offset="1" stop-color="#2cadc6"/>
+    </linearGradient>
+    <linearGradient id="lCroix" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d7791"/>
+      <stop offset="1" stop-color="#31bad1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Le croissant : un liseré qui enveloppe le flanc bas-gauche de la
+       lettre, plus fin et plus proche qu'un simple arc detache. -->
+  <path d="M112 120
+           C 62 150 44 214 72 258
+           C 86 280 108 294 132 298
+           C 104 280 88 252 88 220
+           C 88 184 106 150 140 128 Z"
+        fill="url(#lCroissant)"/>
+
+  <!-- Le P. Une seule forme pleine : fût, panse, et le pied qui part a
+       gauche. Le contre-poincon est evide par la regle pair-impair. -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M112 24 H206
+           C 258 24 294 60 294 106
+           C 294 152 258 188 206 188
+           H170 V262
+           C 170 282 157 294 139 294
+           C 121 294 108 282 108 262
+           V 40
+           C 108 30 110 24 112 24 Z
+           M170 70 V142 H198
+           C 218 142 232 128 232 106
+           C 232 84 218 70 198 70 Z"
+        fill="url(#lP)"/>
+
+  <!-- La feuille : pointue en haut a droite, logee dans le contre-poincon,
+       elle file vers le bas en s'affinant. -->
+  <path d="M222 88
+           C 192 112 160 148 142 188
+           C 124 228 120 264 130 292
+           C 134 262 146 230 168 198
+           C 188 168 210 142 230 126
+           C 225 115 222 102 222 88 Z"
+        fill="url(#lFeuille)"/>
+
+  <!-- La croix medicale : plus petite et plus proche, posee sur l'epaule
+       droite de la panse. -->
+  <path d="M300 14 h26 a7 7 0 0 1 7 7 v17 h17 a7 7 0 0 1 7 7 v26
+           a7 7 0 0 1 -7 7 h-17 v17 a7 7 0 0 1 -7 7 h-26 a7 7 0 0 1 -7 -7
+           v-17 h-17 a7 7 0 0 1 -7 -7 v-26 a7 7 0 0 1 7 -7 h17 v-17
+           a7 7 0 0 1 7 -7 Z"
+        fill="url(#lCroix)"/>
+</svg>
