@@ -25,7 +25,10 @@ class EmbIndex:
             print(f"Encoding {len(self.passages)} passages...")
             texts = [f"passage: {p['text']}" for p in self.passages]
             self.emb = self.model.encode(
-                texts, batch_size=32, show_progress_bar=True, normalize_embeddings=True,
+                texts,
+                batch_size=32,
+                show_progress_bar=True,
+                normalize_embeddings=True,
             )
             np.save(EMB_FILE, self.emb)
             self.ids = [p["passage_id"] for p in self.passages]
