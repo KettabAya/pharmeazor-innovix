@@ -7,6 +7,8 @@ credentials*.json
 data/raw/*
 data/interim/*
 data/processed/*
+# La note qui dit ce que data/raw/ devrait contenir, elle, se partage.
+!data/raw/README.md
 !data/processed/cache.json
 !data/processed/call_counter.json
 !data/processed/documents_index.json
