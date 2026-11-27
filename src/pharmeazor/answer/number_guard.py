@@ -71,6 +71,58 @@ _UNIT_ALIASES: dict[str, str] = {
 
 _UNIT_PATTERN = "|".join(sorted((re.escape(u) for u in _UNIT_ALIASES), key=len, reverse=True))
 
+# Numbers a leaflet may spell out. The guard reads digits, so without this map
+# "quatre grammes" carries no number at all: nothing is extracted, nothing is
+# compared, and an invented dose written in words is displayed unchecked.
+# Measured on 26/11/2026 before the fix: verify() passed "quatre grammes"
+# against a passage saying "3 g".
+#
+# Two words are left out on purpose:
+#   "un"/"une" are articles far more often than quantities, and turning every
+#     "un patient" into "1 patient" would block answers that say nothing wrong;
+#   "cent" would break "pour cent", which the unit table reads as "%".
+_NUMBER_WORDS: dict[str, str] = {
+    "deux": "2",
+    "trois": "3",
+    "quatre": "4",
+    "cinq": "5",
+    "six": "6",
+    "sept": "7",
+    "huit": "8",
+    "neuf": "9",
+    "dix": "10",
+    "onze": "11",
+    "douze": "12",
+    "quinze": "15",
+    "vingt": "20",
+    "trente": "30",
+    "demi": "0.5",
+    "demie": "0.5",
+}
+
+# Units that measure a quantity. "prise", "fois" and "comprime" are not here:
+# they count events.
+#
+# Measured 27/11/2026: "entre deux prises" became "2 prise" and the guard
+# blocked a correct answer. "deux" was a word, not a dose. So we only read a
+# spelled-out number when a measuring unit comes right after it.
+_UNITES_MESUREES = (
+    "g", "gramme", "grammes", "mg", "milligramme", "milligrammes",
+    "mcg", "ug", "microgramme", "microgrammes", "ml", "millilitre",
+    "millilitres", "l", "litre", "litres", "kg", "kilogramme", "kilogrammes",
+    "h", "heure", "heures", "min", "minute", "minutes", "j", "jour", "jours",
+    "sem", "semaine", "semaines", "mois", "an", "ans", "annee", "annees",
+    "%", "pour cent", "pourcent", "ui", "mmhg",
+)
+
+_NUMBER_WORDS_RE = re.compile(
+    r"\b(" + "|".join(sorted(_NUMBER_WORDS, key=len, reverse=True)) + r")\b"
+    r"(?=\s*(?:"
+    + "|".join(sorted((re.escape(u) for u in _UNITES_MESUREES),
+                      key=len, reverse=True))
+    + r")\b)"
+)
+
 # A number, optionally followed by a unit, optionally followed by "/ unit"
 # (as in "4 g/24 h" or "500 mg / prise").
 _NUMBER_RE = re.compile(
@@ -87,10 +139,16 @@ def _strip_accents(text: str) -> str:
 
 
 def _canon_text(text: str) -> str:
-    """Lowercase, de-accent, and flatten every kind of space and dash."""
+    """Lowercase, de-accent, flatten spaces and dashes, and read out
+    numbers written in words.
+
+    Both the answer and the passages pass through here, so a number
+    spelled out on one side meets the same number in digits on the other.
+    """
     text = _strip_accents(text.lower())
     text = text.replace(" ", " ").replace(" ", " ")
     text = re.sub(r"[‐-―]", "-", text)
+    text = _NUMBER_WORDS_RE.sub(lambda m: _NUMBER_WORDS[m.group(1)], text)
     return re.sub(r"\s+", " ", text).strip()
 
 

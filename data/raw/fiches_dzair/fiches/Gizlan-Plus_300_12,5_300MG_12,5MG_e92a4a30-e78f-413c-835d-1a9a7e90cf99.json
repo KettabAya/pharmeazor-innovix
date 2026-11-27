@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Gizlan-Plus 300/12,5",
+  "dosage": "300MG/12,5MG",
+  "dci": "IRBESARTAN/HYDROCHLOROTHIAZIDE EXPRIMÉ EN IRBESARTAN/HYDROCHLOROTHIAZIDE",
+  "Interactions de Irbesartan/Hydrochlorothiazide": "Interactions de Irbesartan/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n220",
+    "description": "Produits partageant le code DCI 06 E 220 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "e0592772-81f6-45da-9588-fcc7a95334ee",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Co Aprosart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "cece716d-f10a-4bcb-bac8-c5e69aa7010d",
+        "laboratoire": "Alembic Mami Spa",
+        "local": true,
+        "nom": "Co Avasart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "784f0ec3-3931-4616-99e1-c53dc50ffc5f",
+        "laboratoire": "Soprodim",
+        "local": true,
+        "nom": "Co-Irbedim",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "79459bb4-64ba-4ecf-a210-2c78c3a82156",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co-Irbek",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "79dac2b9-bf1b-4625-8133-303479e3fb85",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Co-Irbezart 300mg+12.5mg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "3d4e913b-98f7-4e0b-91cd-7ae5917ab953",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Coaprovel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "862a5501-0e42-48da-8749-da78fd3155c9",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Cozibrat",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "f102c0f6-c53c-4333-b9ec-acc53ead7401",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Ipisart Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "cd16fc90-282d-4800-85c6-fb5d188c27c5",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Irbisart +",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "ecf0b603-862d-4965-9dab-675303cc9f4f",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Rotazar Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "300MG/12,5MG",
+        "id": "e75974ed-dc45-47e2-9338-ee5d831945d8",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Co-Aradex 300/12.5",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

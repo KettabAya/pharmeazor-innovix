@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Co-Hysartan",
+  "dosage": "50MG/12,5MG",
+  "dci": "LOSARTAN POTASSIQUE/HYDROCHLOROTHIAZIDE EXPRIMÉ EN LOSARTAN POTASSIQUE/HYDROCHLOROTHIAZIDE",
+  "Interactions de Losartan Potassique/Hydrochlorothiazide": "Interactions de Losartan Potassique/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n167",
+    "description": "Produits partageant le code DCI 06 E 167 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "50MG/12,5MG",
+        "id": "79b4414e-49d7-4ef5-acf2-1f99058d3a1f",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Co-Norta",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG/12,5MG",
+        "id": "6e922ab4-ed80-450d-a41b-4167d078707b",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Cobektal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG/12,5MG",
+        "id": "34d155ec-45d0-49f2-ae3f-ec0837cf44a6",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Thiazartan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG/12.5MG",
+        "id": "074f55c5-f6a2-46ba-aecb-e6589679d8a1",
+        "laboratoire": "Organon N.v.",
+        "local": true,
+        "nom": "Hyzaar",
+        "pays": "Pays Bas",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

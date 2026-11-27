@@ -1,4 +1,3 @@
-
 """Splitting a leaflet or RCP into the rubriques the project needs."""
 
 from __future__ import annotations
@@ -47,7 +46,8 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     (
         Section.INDICATIONS,
         re.compile(
-            r"^\s*" + _NUMBER
+            r"^\s*"
+            + _NUMBER
             + r"(?:indications?(?: therapeutiques?)?(?=\s*$)"
             + r"|dans quels? cas"
             + r"|qu.est[- ]ce que .* et dans quels? cas)",
@@ -66,9 +66,7 @@ HEADING_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
 ]
 
 _HEADING_SHAPE = re.compile(r"^\s*(?:\d[\d.]*\s*[-–.)]?\s*)?[^\n]{3,180}$")
-_NUMBERED_HEADING = re.compile(
-    r"^\s*\d+(?:\.\d+)*(?:[.)]?\s*[-–]?\s*|\s+)[A-ZÀ-ÖØ-Þ]"
-)
+_NUMBERED_HEADING = re.compile(r"^\s*\d+(?:\.\d+)*(?:[.)]?\s*[-–]?\s*|\s+)[A-ZÀ-ÖØ-Þ]")
 
 
 def _strip_accents(text: str) -> str:
@@ -109,6 +107,7 @@ def classify_heading(line: str) -> str | None:
             return section
     return None
 
+
 def _is_document_boundary(lines: list[str], index: int) -> bool:
     """Detect a confirmed transition from an RCP to an annex or leaflet."""
     line = " ".join(_strip_accents(lines[index]).upper().split())
@@ -120,10 +119,9 @@ def _is_document_boundary(lines: list[str], index: int) -> bool:
 
     # Ignore the ANSM navigation menu entry.
     if line == "NOTICE":
-        previous_lines = lines[max(0, index - 3):index]
+        previous_lines = lines[max(0, index - 3) : index]
         previous_text = " ".join(
-            " ".join(_strip_accents(item).upper().split())
-            for item in previous_lines
+            " ".join(_strip_accents(item).upper().split()) for item in previous_lines
         )
         return not (
             "FICHE INFO" in previous_text
@@ -133,7 +131,7 @@ def _is_document_boundary(lines: list[str], index: int) -> bool:
     if expected_heading is None:
         return False
 
-    for next_line in lines[index + 1:]:
+    for next_line in lines[index + 1 :]:
         normalized = " ".join(_strip_accents(next_line).upper().split())
         if normalized:
             return normalized == expected_heading
@@ -190,26 +188,17 @@ def split_sections(text: str) -> SectionSplit:
     while i < len(raw_lines):
         line = raw_lines[i]
 
-        if (
-            re.match(r"^\s*1\.\s*QU[’']EST-CE QUE", line, re.I)
-            and i + 1 < len(raw_lines)
-        ):
+        if re.match(r"^\s*1\.\s*QU[’']EST-CE QUE", line, re.I) and i + 1 < len(raw_lines):
             line = line + " " + raw_lines[i + 1].strip()
             i += 1
-            normalized_heading = " ".join(
-                _strip_accents(line).upper().split()
-            )
-            if (
-                "ET DANS QUELS CAS EST-IL UTILISE" not in normalized_heading
-                and i + 1 < len(raw_lines)
+            normalized_heading = " ".join(_strip_accents(line).upper().split())
+            if "ET DANS QUELS CAS EST-IL UTILISE" not in normalized_heading and i + 1 < len(
+                raw_lines
             ):
                 line = line + " " + raw_lines[i + 1].strip()
                 i += 1
 
-        if (
-            re.match(r"^\s*3\.\s*COMMENT PRENDRE", line, re.I)
-            and i + 1 < len(raw_lines)
-        ):
+        if re.match(r"^\s*3\.\s*COMMENT PRENDRE", line, re.I) and i + 1 < len(raw_lines):
             line = line + " " + raw_lines[i + 1].strip()
             i += 1
 
@@ -219,7 +208,7 @@ def split_sections(text: str) -> SectionSplit:
     for index, line in enumerate(lines):
         # Stop at a confirmed document boundary, but only after
         # at least one section has been identified.
-                # Ignore ANSM navigation menu entries.
+        # Ignore ANSM navigation menu entries.
         normalized = " ".join(_strip_accents(line).upper().split())
         if normalized in {
             "FICHE INFO",
@@ -232,14 +221,11 @@ def split_sections(text: str) -> SectionSplit:
             flush()
             break
 
-        if (
-            current_key is not None
-            and re.match(
-                r"^\s*[256]\.\s*(?:QUELLES SONT LES INFORMATIONS"
-                r"|COMMENT CONSERVER|CONTENU DE L['’]EMBALLAGE)",
-                line,
-                re.I,
-            )
+        if current_key is not None and re.match(
+            r"^\s*[256]\.\s*(?:QUELLES SONT LES INFORMATIONS"
+            r"|COMMENT CONSERVER|CONTENU DE L['’]EMBALLAGE)",
+            line,
+            re.I,
         ):
             flush()
             current_key, current_bucket, buffer = line.strip(), split.unmapped, []
@@ -247,8 +233,7 @@ def split_sections(text: str) -> SectionSplit:
 
         if (
             current_key == Section.CONTRAINDICATIONS
-            and " ".join(_strip_accents(line).upper().split())
-            == "AVERTISSEMENTS ET PRECAUTIONS"
+            and " ".join(_strip_accents(line).upper().split()) == "AVERTISSEMENTS ET PRECAUTIONS"
         ):
             flush()
             current_key, current_bucket, buffer = line.strip(), split.unmapped, []

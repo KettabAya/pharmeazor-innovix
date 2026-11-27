@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Efferalgan Vitamine C",
+  "dosage": "500MG/200MG",
+  "dci": "PARACETAMOL / ACIDE ASCORBIQUE EXPRIMÉ EN PARACETAMOL / ACIDE ASCORBIQUE",
+  "Interactions de Paracetamol / Acide Ascorbique": "Interactions de Paracetamol / Acide Ascorbique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n118",
+    "description": "Produits partageant le code DCI 03 B 118 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "500MG / 200MG",
+        "id": "5da5eb1b-4a3d-42ff-b222-439f6a0a1ccf",
+        "laboratoire": "Laboratoire Moben",
+        "local": true,
+        "nom": "Dolidol Flash Vitamine C",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

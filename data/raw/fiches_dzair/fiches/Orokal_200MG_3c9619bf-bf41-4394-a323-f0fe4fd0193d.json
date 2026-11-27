@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Orokal",
+  "dosage": "200MG",
+  "dci": "CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE EXPRIMÉ EN CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE",
+  "Interactions de Cefixime Trihydrate Exprime En Cefixime Anhydre": "Interactions de Cefixime Trihydrate Exprime En Cefixime Anhydre Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nB\n201",
+    "description": "Produits partageant le code DCI 13 B 201 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "200MG",
+        "id": "37883b71-c1c9-499d-995f-043ed3b46929",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Cefiken",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "d44a4629-c4a5-47f9-a32c-04d573af68d1",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Cefimax",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "9d98f22b-19f9-4030-8f40-925711c49fb4",
+        "laboratoire": "Sanofi Aventis France",
+        "local": false,
+        "nom": "Oroken",
+        "pays": "France",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG",
+        "id": "faac5fce-95a8-4ff2-8d95-9d4eafbf01b1",
+        "laboratoire": "Tabuk Algerie",
+        "local": false,
+        "nom": "Winex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

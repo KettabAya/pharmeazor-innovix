@@ -1,0 +1,105 @@
+{
+  "nom_commercial": "Ciprofloxal",
+  "dosage": "500MG",
+  "dci": "CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE EXPRIMÉ EN CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE",
+  "Interactions de Ciprofloxacine Chlorhydrate Exprime En Ciprofloxacine": "Interactions de Ciprofloxacine Chlorhydrate Exprime En Ciprofloxacine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nK\n253",
+    "description": "Produits partageant le code DCI 13 K 253 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 10,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "df8133cf-f3aa-4282-a548-d0611511041d",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Cifloxacine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "a7811e3d-837c-453d-9c35-36a81ed0de77",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Ciprofloxacine Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "a9be303c-b132-449a-b2a9-9c0146398b08",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Flocine500",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "ed4bf5d4-f759-4579-986a-55ad25edb437",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Cipro 500",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "d3882ac8-19b2-4107-82b8-6e975ad8aad1",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Ciprodar",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "7c3651d8-a075-422b-9938-fc5c46136b27",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Ciprotek",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "69c82730-47a7-4195-9d3e-7bcde86d769c",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Loxanad",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "cdf794f4-22ad-48fc-afc9-442bed13adfa",
+        "laboratoire": "Somedial",
+        "local": true,
+        "nom": "Meflox",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "c8db3e64-c1c9-4a27-bce9-f96d696b5a39",
+        "laboratoire": "Spa Jamjoom Algeria Lil Dawa",
+        "local": true,
+        "nom": "Ozaflox",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "3488a681-4519-493e-ac15-21445e1324d4",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Quinox",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

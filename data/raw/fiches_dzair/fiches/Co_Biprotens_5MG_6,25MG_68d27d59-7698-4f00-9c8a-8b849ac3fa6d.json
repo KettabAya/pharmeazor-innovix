@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Co Biprotens",
+  "dosage": "5MG/6,25MG",
+  "dci": "BISOPROLOL FUMARATE/HYDROCHLOROTHIAZIDE EXPRIMÉ EN BISOPROLOL FUMARATE/HYDROCHLOROTHIAZIDE",
+  "Interactions de Bisoprolol Fumarate/Hydrochlorothiazide": "Interactions de Bisoprolol Fumarate/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nF\n299",
+    "description": "Produits partageant le code DCI 06 F 299 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "5MG/6,25MG",
+        "id": "6152b987-33d9-4796-9f36-13a5118b814d",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co-Bisoprolol Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

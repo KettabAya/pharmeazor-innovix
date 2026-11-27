@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Zinnat",
+  "dosage": "125MG/5ML",
+  "dci": "CEFUROXIME AXETIL EXPRIME EN CEFUROXIME EXPRIMÉ EN CEFUROXIME AXETIL EXPRIME EN CEFUROXIME",
+  "Interactions de Cefuroxime Axetil Exprime En Cefuroxime": "Interactions de Cefuroxime Axetil Exprime En Cefuroxime Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nB\n224",
+    "description": "Produits partageant le code DCI 13 B 224 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "125MG/5ML",
+        "id": "bc38d7af-65ff-4608-b559-d95361bed204",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Zynax",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

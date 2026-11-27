@@ -1,0 +1,87 @@
+{
+  "nom_commercial": "Voltenac",
+  "dosage": "0,01",
+  "dci": "DICLOFENAC DIETHYLAMINE EXPRIME EN DICLOFENAC SODIQUE EXPRIMÉ EN DICLOFENAC DIETHYLAMINE EXPRIME EN DICLOFENAC SODIQUE",
+  "Interactions de Diclofenac Diethylamine Exprime En Diclofenac Sodique": "Interactions de Diclofenac Diethylamine Exprime En Diclofenac Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "21\nA\n004",
+    "description": "Produits partageant le code DCI 21 A 004 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 8,
+    "produits": [
+      {
+        "dosage": "0,01",
+        "id": "17dbec9e-7a28-4874-971e-04f5bde476bb",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Biofenac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,01",
+        "id": "de227526-78ef-4446-81a8-18eed9688ae1",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Clogel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,01",
+        "id": "b07a2576-9a29-47bb-9068-f65247564778",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Deflamac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,01",
+        "id": "0fb74e0b-a10d-405a-9c97-3e24817b00ba",
+        "laboratoire": "Onyx Industrie Pharmaceutique",
+        "local": true,
+        "nom": "Oxyfenac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,01",
+        "id": "1f6dc78f-e5f6-460f-960d-ef598b6184f4",
+        "laboratoire": "Laboratoire Arab Pharm",
+        "local": true,
+        "nom": "Phlogoren",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,01",
+        "id": "a6683443-4ef3-4186-a423-05fb0a08da1d",
+        "laboratoire": "K.p.m.a Biotic",
+        "local": true,
+        "nom": "Voltamex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,01",
+        "id": "3afc59c2-c377-4e53-a0c9-7491a6b552bd",
+        "laboratoire": "Glaxosmithkline",
+        "local": true,
+        "nom": "Voltarene Emulgel",
+        "pays": "France",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,01",
+        "id": "289f4720-191d-4003-819d-3242fd667376",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Tabiflex Cool",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

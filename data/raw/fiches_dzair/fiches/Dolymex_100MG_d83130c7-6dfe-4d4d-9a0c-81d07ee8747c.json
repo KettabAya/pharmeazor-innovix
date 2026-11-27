@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Dolymex",
+  "dosage": "100MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n007",
+    "description": "Produits partageant le code DCI 03 B 007 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "20a80bc7-ed95-4c68-a581-80b7ff04fb43",
+        "laboratoire": "Propharmal",
+        "local": true,
+        "nom": "Doliprane",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "96a2d3ce-c942-4e12-a923-afd4cb6b5398",
+        "laboratoire": "D-B-F",
+        "local": true,
+        "nom": "Paracetamol Dbf",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "a94ca0b8-cb56-4c29-b5a7-749d49fe92ea",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Parol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "ef4281a3-bc30-49ce-9c59-f9407be227f5",
+        "laboratoire": "4a Sante Industrie",
+        "local": true,
+        "nom": "Suppfadol 100",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

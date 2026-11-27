@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Cozzar",
+  "dosage": "100MG",
+  "dci": "LOSARTAN POTASSIQUE EXPRIMÉ EN LOSARTAN POTASSIQUE",
+  "Interactions de Losartan Potassique": "Interactions de Losartan Potassique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n240",
+    "description": "Produits partageant le code DCI 06 E 240 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "d20b52c6-8d64-4f04-aef3-86de61195368",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Bektal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "77ec676a-22d8-45e9-9da1-b03568c3bd8b",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Lazartan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "2aae014c-d903-4769-99aa-a0d55d9a368a",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Hysartan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "100MG",
+        "id": "ffacf179-c82e-4103-8625-6cdadd7ab623",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Norta Fort",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

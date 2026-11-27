@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Co Tensotel",
+  "dosage": "80MG/25 MG",
+  "dci": "TELMISARTAN/HYDROCHLOROTHIAZIDE EXPRIMÉ EN TELMISARTAN/HYDROCHLOROTHIAZIDE",
+  "Interactions de Telmisartan/Hydrochlorothiazide": "Interactions de Telmisartan/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n316",
+    "description": "Produits partageant le code DCI 06 E 316 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "80MG/25 MG",
+        "id": "5073f04d-466d-4de8-9dbb-ce1ff7adcb69",
+        "laboratoire": "Spa Union Pharmaceuitique Constantinoise Production",
+        "local": true,
+        "nom": "Cardomyl Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG/25 MG",
+        "id": "45ddb056-aeae-413b-91e1-d58cf0f11a31",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co Bekerdis",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG/25 MG",
+        "id": "5d057b79-233c-4d9e-a7ae-8f4f165099e5",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Telmisarte +",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

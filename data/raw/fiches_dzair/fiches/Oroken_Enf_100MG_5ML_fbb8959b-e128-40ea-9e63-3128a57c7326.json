@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Oroken Enf",
+  "dosage": "100MG/5ML",
+  "dci": "CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE EXPRIMÉ EN CEFIXIME TRIHYDRATE EXPRIME EN CEFIXIME ANHYDRE",
+  "Interactions de Cefixime Trihydrate Exprime En Cefixime Anhydre": "Interactions de Cefixime Trihydrate Exprime En Cefixime Anhydre Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nB\n198",
+    "description": "Produits partageant le code DCI 13 B 198 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "100MG/5ML",
+        "id": "d621255f-f6c2-4994-b32e-2e33ec84b4dc",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Cefimax",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/5ML",
+        "id": "75e2c0c5-de01-4440-8d42-ca2f7f723123",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Orokal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

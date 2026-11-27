@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Xyline",
+  "dosage": "100 MG",
+  "dci": "DOXYCYCLINE EXPRIMÉ EN DOXYCYCLINE",
+  "Interactions de Doxycycline": "Interactions de Doxycycline Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nC\n020",
+    "description": "Produits partageant le code DCI 13 C 020 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "100 MG",
+        "id": "9fc37253-f54e-4ab5-ae38-88cb4dc0a1cb",
+        "laboratoire": "Spa Jamjoom Algeria Lil Dawa",
+        "local": true,
+        "nom": "Dotur",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

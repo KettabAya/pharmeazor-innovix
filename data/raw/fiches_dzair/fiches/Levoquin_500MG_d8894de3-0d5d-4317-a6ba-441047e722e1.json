@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Levoquin",
+  "dosage": "500MG",
+  "dci": "LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE EXPRIMÉ EN LEVOFLOXACINE HEMIHYDRATE EXPRIME EN LEVOFLOXACINE",
+  "Interactions de Levofloxacine Hemihydrate Exprime En Levofloxacine": "Interactions de Levofloxacine Hemihydrate Exprime En Levofloxacine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nK\n228",
+    "description": "Produits partageant le code DCI 13 K 228 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "0fa1d010-a490-4107-ab37-5864910307a2",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Levoflox",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "493bae95-7352-4898-8e7a-9f03f703c6fa",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Loxamox",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "babc18fd-f852-4322-a2db-9dc038d9014a",
+        "laboratoire": "Dar Al Dawa",
+        "local": false,
+        "nom": "Matador 500",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

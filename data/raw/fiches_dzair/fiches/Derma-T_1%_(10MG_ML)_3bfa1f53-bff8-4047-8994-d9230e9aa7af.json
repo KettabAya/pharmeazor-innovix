@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Derma-T",
+  "dosage": "1% (10MG/ML)",
+  "dci": "CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE EXPRIMÉ EN CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE",
+  "Interactions de Clindamycine Phosphate Exprime En Clindamycine": "Interactions de Clindamycine Phosphate Exprime En Clindamycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "07\nB\n147",
+    "description": "Produits partageant le code DCI 07 B 147 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "1% (10MG/ML)",
+        "id": "97c51697-9707-4b16-835c-4165825a017e",
+        "laboratoire": "Laboratoires Pharmaghreb",
+        "local": true,
+        "nom": "Clean-Acne",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1% (10MG/ML)",
+        "id": "047e6029-fced-416b-81f3-990158c18ec7",
+        "laboratoire": "Beit Jala Pharmaceuticals Company",
+        "local": false,
+        "nom": "Denacine",
+        "pays": "Palestine",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

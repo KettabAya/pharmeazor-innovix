@@ -181,9 +181,9 @@ def lire_nom_de_fichier(chemin: Path) -> DocumentBDM | None:
     )
 
 
-def parcourir(racine: str | Path,
-              molecules: tuple[str, ...] = (),
-              types: tuple[str, ...] = ()) -> Iterator[DocumentBDM]:
+def parcourir(
+    racine: str | Path, molecules: tuple[str, ...] = (), types: tuple[str, ...] = ()
+) -> Iterator[DocumentBDM]:
     """Parcourir l'arborescence et rendre les documents retenus.
 
     Args:
@@ -200,8 +200,7 @@ def parcourir(racine: str | Path,
         if types and document.type_document not in types:
             continue
         if molecules and not any(
-            document.molecule_normalisee.startswith(m) or
-            m.startswith(document.molecule_normalisee)
+            document.molecule_normalisee.startswith(m) or m.startswith(document.molecule_normalisee)
             for m in molecules
         ):
             continue

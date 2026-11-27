@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Humexlib",
+  "dosage": "500MG/4MG",
+  "dci": "PARACETAMOL/MALEATE DE CHLORPHENIRAMINE EXPRIMÉ EN PARACETAMOL/MALEATE DE CHLORPHENIRAMINE",
+  "Interactions de Paracetamol/Maleate De Chlorpheniramine": "Interactions de Paracetamol/Maleate De Chlorpheniramine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "22\nA\n046",
+    "description": "Produits partageant le code DCI 22 A 046 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

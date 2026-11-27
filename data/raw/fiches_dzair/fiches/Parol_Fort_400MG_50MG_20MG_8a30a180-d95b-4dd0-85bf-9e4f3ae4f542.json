@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Parol Fort",
+  "dosage": "400MG/50MG/20MG",
+  "dci": "PARACETAMOL/CAFEINE ANHYDRE/CODEINE HEMIHYDRATE EXPRIMÉ EN PARACETAMOL/CAFEINE ANHYDRE/CODEINE HEMIHYDRATE",
+  "Interactions de Paracetamol/Cafeine Anhydre/Codeine Hemihydrate": "Interactions de Paracetamol/Cafeine Anhydre/Codeine Hemihydrate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nF\n133",
+    "description": "Produits partageant le code DCI 03 F 133 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

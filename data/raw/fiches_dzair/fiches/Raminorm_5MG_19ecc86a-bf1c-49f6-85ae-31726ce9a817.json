@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Raminorm",
+  "dosage": "5MG",
+  "dci": "RAMIPRIL EXPRIMÉ EN RAMIPRIL",
+  "Interactions de Ramipril": "Interactions de Ramipril Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n128",
+    "description": "Produits partageant le code DCI 06 E 128 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "5MG",
+        "id": "db3a9f5c-abe9-40f3-811f-828ce270201b",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Ramipril Beker",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "c76a5cd1-d301-4700-8150-74fec76435db",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Ramipril Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "bd9d2aa3-65b3-4af2-ae3c-9b66a7c64b06",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Ramitrim",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "04765125-8da7-4caa-8fe2-66ff2735bf2c",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Tanatril",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "fae2f53f-6c35-4a58-8bdd-bd08d5d546ad",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Triampex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "9c264145-49c3-4983-a262-ad99189a7a3b",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Triatec",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

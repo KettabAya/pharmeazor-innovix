@@ -39,8 +39,7 @@ import unicodedata
 from dataclasses import dataclass, field
 from functools import lru_cache
 
-__all__ = ["Substance", "parse_inn", "normaliser_substance", "concerne_molecule",
-           "corriger_fautes"]
+__all__ = ["Substance", "parse_inn", "normaliser_substance", "concerne_molecule", "corriger_fautes"]
 
 # "X <sel> EXPRIME EN Y" / "EXPRIMEE EN" / "EXPRIMES EN" : Y est la base.
 _EXPRIME_EN = re.compile(r"\bEXPRIM\w*\s+EN\s+(?P<base>.+)$", re.I)

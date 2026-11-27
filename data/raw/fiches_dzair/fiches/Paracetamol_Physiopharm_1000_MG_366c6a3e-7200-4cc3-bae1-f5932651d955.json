@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Paracetamol Physiopharm",
+  "dosage": "1000 MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n123",
+    "description": "Produits partageant le code DCI 03 B 123 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "1000 MG",
+        "id": "b505a568-991f-4afe-bed8-90673324de5c",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Paracetamol Biocare",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1000 MG",
+        "id": "c708ed8b-8e0a-4e66-aed7-8667a0b367ea",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Paralgan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

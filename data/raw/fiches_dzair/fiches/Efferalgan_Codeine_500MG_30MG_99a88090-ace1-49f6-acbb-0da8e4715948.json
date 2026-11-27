@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Efferalgan Codeine",
+  "dosage": "500MG/30MG",
+  "dci": "PARACETAMOL/CODEINE PHOSPHATE HEMIHYDRATE EXPRIMÉ EN PARACETAMOL/CODEINE PHOSPHATE HEMIHYDRATE",
+  "Interactions de Paracetamol/Codeine Phosphate Hemihydrate": "Interactions de Paracetamol/Codeine Phosphate Hemihydrate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n028",
+    "description": "Produits partageant le code DCI 03 B 028 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "500MG/30MG",
+        "id": "24d0ca38-96d9-40eb-86c0-aedd3234ecf9",
+        "laboratoire": "Bristol Myers Squibb Pharma Eeig",
+        "local": false,
+        "nom": "Dafalgan Codeine",
+        "pays": "France",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG/30MG",
+        "id": "b2812910-5151-4b96-b889-f30103a5f85a",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Co-Dolyc",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/30MG",
+        "id": "be3061e3-03f6-4427-bfa2-a578a482dca7",
+        "laboratoire": "Laboratoires Salem",
+        "local": true,
+        "nom": "Coparamol Fort",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/30MG",
+        "id": "95bc3a6a-143f-46e4-9632-3b17314f167e",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Paracetamol Codeine Physioipharm",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/30MG",
+        "id": "bbf9067d-b5d8-4576-beae-f1604c893c22",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Planadix Confort +",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

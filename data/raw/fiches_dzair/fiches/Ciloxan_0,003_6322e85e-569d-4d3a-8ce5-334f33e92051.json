@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Ciloxan",
+  "dosage": "0,003",
+  "dci": "CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE EXPRIMÉ EN CIPROFLOXACINE CHLORHYDRATE EXPRIME EN CIPROFLOXACINE",
+  "Interactions de Ciprofloxacine Chlorhydrate Exprime En Ciprofloxacine": "Interactions de Ciprofloxacine Chlorhydrate Exprime En Ciprofloxacine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "17\nD\n151",
+    "description": "Produits partageant le code DCI 17 D 151 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

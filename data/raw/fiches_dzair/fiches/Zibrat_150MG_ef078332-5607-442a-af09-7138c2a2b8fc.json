@@ -1,0 +1,168 @@
+{
+  "nom_commercial": "Zibrat",
+  "dosage": "150MG",
+  "dci": "IRBESARTAN EXPRIMÉ EN IRBESARTAN",
+  "Interactions de Irbesartan": "Interactions de Irbesartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n156",
+    "description": "Produits partageant le code DCI 06 E 156 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 17,
+    "produits": [
+      {
+        "dosage": "150MG",
+        "id": "3dd2dd2c-8056-41d3-8f84-572208b198b9",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Aprovel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "3f4a5c10-3597-4f02-ae9a-daa13924a6a1",
+        "laboratoire": "Abdi Ibrahim Remede Pharma",
+        "local": true,
+        "nom": "Aravel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "2369f29b-33f5-498d-8a02-3828c108342c",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Aroval",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "28f1f46c-c366-46ef-bfdb-760f5dd3f358",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Cardiotens",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "d3ce871d-f420-478c-aa8e-63d4e7a8c4a2",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Gizlan 150",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "c19fe233-c6cd-4adf-b756-be5ddb12acb8",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Huprovel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "378b4c3f-a015-430c-a07d-75cac349ae7f",
+        "laboratoire": "Bac Pharma Spa",
+        "local": true,
+        "nom": "Irbac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "6d43d3d2-8d73-4fcc-b90e-732d0fda6a19",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Irbevel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "188a4f3d-4d7c-4cb3-9b63-6f9e4e19879e",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Irbezart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "411f5b01-1a8e-4565-b419-e82a9447e932",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Irbisart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "c94d04a3-99a9-41a0-9fcb-a24ccdad64c7",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Irovel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "27bcf259-dd23-4eef-8857-41a1c5c95b76",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Rotazar",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "e6f85e0c-d286-4b8e-9518-5ff23cd450be",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Aprosart",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "150MG",
+        "id": "66878f03-5ff2-4a0b-9a76-51d3f7a50f6b",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Aradex 150",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "150MG",
+        "id": "d20736d4-1bd2-465d-b481-82eb8773df48",
+        "laboratoire": "Tassili Arab Pharmaceutical Co",
+        "local": true,
+        "nom": "Irbe 150",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "150MG",
+        "id": "0b0c0dc5-aaf6-4bab-a9cd-41ec57408dca",
+        "laboratoire": "Soprodim",
+        "local": true,
+        "nom": "Irbedim",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "150MG",
+        "id": "dd1ead7b-54e5-4c9e-874e-b4c631988d4f",
+        "laboratoire": "Laboratoire Beker",
+        "local": true,
+        "nom": "Irbek",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

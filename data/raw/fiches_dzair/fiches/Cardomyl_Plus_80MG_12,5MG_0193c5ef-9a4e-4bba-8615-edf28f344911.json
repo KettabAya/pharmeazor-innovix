@@ -1,0 +1,78 @@
+{
+  "nom_commercial": "Cardomyl Plus",
+  "dosage": "80MG/12,5MG",
+  "dci": "TELMISARTAN/HYDROCHLOROTHIAZIDE EXPRIMÉ EN TELMISARTAN/HYDROCHLOROTHIAZIDE",
+  "Interactions de Telmisartan/Hydrochlorothiazide": "Interactions de Telmisartan/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n266",
+    "description": "Produits partageant le code DCI 06 E 266 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 7,
+    "produits": [
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "447168fa-dd9d-4919-b233-22f9ea451ca1",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co Bekerdis",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "c22ce3ef-875a-41e7-8bd8-556f180ef8d1",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Co Tensotel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "caf709e5-a5a4-4511-8a21-bc70265d556a",
+        "laboratoire": "Boehringer Ingelheim International Gmbh",
+        "local": true,
+        "nom": "Micardis Plus",
+        "pays": "Allemagne",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "7f89847e-48df-43f9-b720-3475a051a281",
+        "laboratoire": "Biologie Et Vitamine D'Algerie Biovital",
+        "local": true,
+        "nom": "Mizart Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "1a8c664a-6a32-48ea-9660-78a378336bf2",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Telmed Plus 80/12.5",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "70a75a33-2c68-4b2e-b4bf-6120f7bac0a3",
+        "laboratoire": "Les Laboratoires Frater Razes",
+        "local": true,
+        "nom": "Telmidis Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG/12,5MG",
+        "id": "fb277288-651b-48c2-8855-21b06fd8d6e4",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Telmisarte+",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

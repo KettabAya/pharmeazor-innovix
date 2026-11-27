@@ -1,0 +1,105 @@
+{
+  "nom_commercial": "Narufene",
+  "dosage": "400MG",
+  "dci": "IBUPROFENE EXPRIMÉ EN IBUPROFENE",
+  "Interactions de Ibuprofene": "Interactions de Ibuprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n010",
+    "description": "Produits partageant le code DCI 04 B 010 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 10,
+    "produits": [
+      {
+        "dosage": "400MG",
+        "id": "35c2ebc1-0ca1-4c5f-974f-52cc72d5d51c",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Adfen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "9ed8b711-b996-4a0f-ade1-8d04476486b0",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Calmofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "fa25e43e-4e05-4ee3-877e-8151c8189980",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Hubifen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "16c6612a-4dfc-41dd-ba87-aebaeef5352f",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Ibuprofal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "b9474f0a-2415-4473-b68d-dcbacef94c7b",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Ibuprofene Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "cada72ec-98b2-4a90-89fc-370ec7bb466d",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Neofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "48b96bf0-6a08-4119-a39b-353dc6d399b2",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Ubactive 400mg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "06f081d5-a5c2-4af9-9b4f-15016b3f970b",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Xydol 400",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG",
+        "id": "04d2dd58-95b3-4928-8a1c-86b4af1472c3",
+        "laboratoire": "Spimaco Addwaeih",
+        "local": true,
+        "nom": "Sapofen",
+        "pays": "Arabie Saoudite",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "400 MG",
+        "id": "908c8ee4-5a1d-41da-bbc2-8902507f36f7",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Prof",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

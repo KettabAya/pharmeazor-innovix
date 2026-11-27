@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Denacine Emulgel",
+  "dosage": "1% (10MG/ML)",
+  "dci": "CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE EXPRIMÉ EN CLINDAMYCINE PHOSPHATE EXPRIME EN CLINDAMYCINE",
+  "Interactions de Clindamycine Phosphate Exprime En Clindamycine": "Interactions de Clindamycine Phosphate Exprime En Clindamycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "07\nB\n159",
+    "description": "Produits partageant le code DCI 07 B 159 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "1% (10MG/ML)",
+        "id": "fe78edb1-e5ae-4801-97c1-644f5db693e3",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Acnestop",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1% (10MG/ML)",
+        "id": "a7666f9d-2cd4-40d5-9315-5ede5e099fae",
+        "laboratoire": "Laboratoires Pharmaghreb",
+        "local": true,
+        "nom": "Clean-Acne",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

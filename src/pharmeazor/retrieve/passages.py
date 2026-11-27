@@ -128,9 +128,11 @@ def _enrichissement(suffixe: str = "") -> dict[str, dict[str, str]]:
     return {x["registration_no"]: x for x in lignes if x.get("registration_no")}
 
 
-def passages_produits(lignes: list[dict[str, str]] | None = None,
-                      suffixe: str = "",
-                      enrichi: dict[str, dict[str, str]] | None = None) -> Iterator[Passage]:
+def passages_produits(
+    lignes: list[dict[str, str]] | None = None,
+    suffixe: str = "",
+    enrichi: dict[str, dict[str, str]] | None = None,
+) -> Iterator[Passage]:
     """Un passage par produit enregistré.
 
     Répond aux questions de niveau 1 : dosage, forme, conditionnement,
@@ -206,12 +208,8 @@ def passages_produits(lignes: list[dict[str, str]] | None = None,
                 "le RCP avant toute décision."
             )
         if extra.get("rcp_officiel_url"):
-            corps.append(
-                f"Le RCP officiel de l'ANPP est disponible : {extra['rcp_officiel_url']}"
-            )
-        corps.append(
-            f"Source : nomenclature nationale, version {ligne['source_version']}."
-        )
+            corps.append(f"Le RCP officiel de l'ANPP est disponible : {extra['rcp_officiel_url']}")
+        corps.append(f"Source : nomenclature nationale, version {ligne['source_version']}.")
 
         yield Passage(
             passage_id=f"nom-produit-{ligne['drug_id']}",
@@ -222,8 +220,9 @@ def passages_produits(lignes: list[dict[str, str]] | None = None,
         )
 
 
-def passages_retraits(lignes: list[dict[str, str]] | None = None,
-                      suffixe: str = "") -> Iterator[Passage]:
+def passages_retraits(
+    lignes: list[dict[str, str]] | None = None, suffixe: str = ""
+) -> Iterator[Passage]:
     """Un passage par produit sorti du marche.
 
     Pourquoi ils sont dans le corpus alors qu'ils ne sont pas dans le catalogue
@@ -250,10 +249,12 @@ def passages_retraits(lignes: list[dict[str, str]] | None = None,
         marque = ligne["brand_name"]
         retire = ligne["source_sheet"] == "retraits"
 
-        tete = (f"{marque} N'EST PLUS un médicament enregistré en Algérie."
-                if retire else
-                f"{marque} n'est plus enregistré en Algérie : son "
-                "enregistrement n'a pas été renouvelé.")
+        tete = (
+            f"{marque} N'EST PLUS un médicament enregistré en Algérie."
+            if retire
+            else f"{marque} n'est plus enregistré en Algérie : son "
+            "enregistrement n'a pas été renouvelé."
+        )
         corps = [tete]
         if ligne["withdrawal_date"]:
             corps.append(f"Il a été retiré le {ligne['withdrawal_date']}.")
@@ -269,10 +270,7 @@ def passages_retraits(lignes: list[dict[str, str]] | None = None,
             corps.append(f"Il était produit par {ligne['lab_name']}.")
         if ligne["registration_no"]:
             corps.append(f"Son numéro d'enregistrement était {ligne['registration_no']}.")
-        corps.append(
-            "Ce produit ne doit pas être délivré et ne peut pas servir "
-            "d'équivalent."
-        )
+        corps.append("Ce produit ne doit pas être délivré et ne peut pas servir d'équivalent.")
         corps.append(
             f"Source : nomenclature nationale, version {ligne['source_version']}, "
             f"feuille {ligne['source_sheet']}."
@@ -312,8 +310,7 @@ def passages_equivalents(
             continue
 
         corps = [
-            f"{len(noms)} médicaments enregistrés en Algérie sont équivalents : "
-            f"{', '.join(noms)}.",
+            f"{len(noms)} médicaments enregistrés en Algérie sont équivalents : {', '.join(noms)}.",
             f"Ils partagent la même substance active, {tete['inn']}.",
         ]
         if tete["strength"]:
@@ -391,9 +388,7 @@ def passages_interactions(
             "marque."
         )
         if ligne["brand_name"]:
-            corps.append(
-                f"Fiche d'où l'information a été lue : {ligne['brand_name']}."
-            )
+            corps.append(f"Fiche d'où l'information a été lue : {ligne['brand_name']}.")
 
         origine = ligne["source_origine"] or "inconnue"
         relais = ligne["source_relais"] or "inconnu"

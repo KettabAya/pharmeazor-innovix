@@ -1,0 +1,78 @@
+{
+  "nom_commercial": "Ketomex",
+  "dosage": "0,025",
+  "dci": "KETOPROFENE EXPRIMÉ EN KETOPROFENE",
+  "Interactions de Ketoprofene": "Interactions de Ketoprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "21\nA\n032",
+    "description": "Produits partageant le code DCI 21 A 032 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 7,
+    "produits": [
+      {
+        "dosage": "0,025",
+        "id": "b0b1cf7e-567b-48e8-97f9-9552167853de",
+        "laboratoire": "Laboratoire Arab Pharm",
+        "local": true,
+        "nom": "Geprofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,025",
+        "id": "7eefe302-1cd4-4103-ad23-1116c5487786",
+        "laboratoire": "Sarl Laboratoire Groupement Pharmaceutique Algerien",
+        "local": true,
+        "nom": "K-Profen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,025",
+        "id": "cd4eddca-11e6-470b-b1a3-51b88673db46",
+        "laboratoire": "4a Sante Industrie",
+        "local": true,
+        "nom": "Ketofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,025",
+        "id": "d54b74b9-5630-4ece-8cc0-581cf6c88d02",
+        "laboratoire": "Onyx Industrie Pharmaceutique",
+        "local": true,
+        "nom": "Ketonyx",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,025",
+        "id": "ae0400aa-2e13-43c8-be22-39c81b1cc74d",
+        "laboratoire": "Menarini France",
+        "local": true,
+        "nom": "Ketum",
+        "pays": "France",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,025",
+        "id": "278f740c-304d-4db8-831e-6420018287b3",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Koprofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,025",
+        "id": "9eb7e416-45bd-4825-a383-0840594ff200",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Profen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

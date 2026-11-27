@@ -1,0 +1,141 @@
+{
+  "nom_commercial": "Celebrex",
+  "dosage": "100MG",
+  "dci": "CELECOXIB EXPRIMÉ EN CELECOXIB",
+  "Interactions de Celecoxib": "Interactions de Celecoxib Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n035",
+    "description": "Produits partageant le code DCI 04 B 035 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 14,
+    "produits": [
+      {
+        "dosage": "100MG",
+        "id": "db00717b-4572-4333-88e0-ce205d603468",
+        "laboratoire": "Alembic Mami Spa",
+        "local": true,
+        "nom": "Arbrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "6c04f350-4e7b-4291-90d1-0120972a5f09",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Cebrex 100",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "8696c833-8c08-4daa-a260-ed7680feeb3f",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Celecobrex Hup",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "cc6e5909-ce8a-4e5f-bc7e-50babe1d9cf7",
+        "laboratoire": "Kpma Biotic",
+        "local": true,
+        "nom": "Celecomex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "6070f658-1572-4c5c-9765-29b080612451",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Celecox",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "0134952a-0163-40fc-87e4-d35488fe7faa",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Celecoxib Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "c0b1a833-a993-4901-90da-5e467491863b",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Celvex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "bd325bfc-8369-47c5-9751-d8fec97a65a1",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Cirexa",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "26cd26fc-c7a1-4454-9cde-b9989d56156e",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Coxibrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "d50ddeae-f65d-463a-850a-30ddba788bbe",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Coxitab",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "b7d2222d-7efb-46ed-85c3-4076b1f9859e",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Inicox 100",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "012a77ca-09b1-4df9-b342-e86ad65b0fc2",
+        "laboratoire": "Janis Med Sarl",
+        "local": true,
+        "nom": "Medibrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "9a7cc1da-4f0a-4abf-bd07-19877c910d88",
+        "laboratoire": "Novapharm Trading",
+        "local": true,
+        "nom": "Novabrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG",
+        "id": "f135ed54-a3b0-4509-97c0-a581a3e5d5fd",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Rumabrex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

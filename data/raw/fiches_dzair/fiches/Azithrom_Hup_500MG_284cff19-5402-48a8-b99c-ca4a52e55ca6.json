@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Azithrom Hup",
+  "dosage": "500MG",
+  "dci": "AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE EXPRIMÉ EN AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE",
+  "Interactions de Azithromycine Dihydratee Exprimee En Azithromycine": "Interactions de Azithromycine Dihydratee Exprimee En Azithromycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n299",
+    "description": "Produits partageant le code DCI 13 E 299 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "baad6c33-474b-4756-a865-ed27e923ba10",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Azimac",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "e31f7e46-40be-4b5c-bb74-e457c9230587",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Azithral",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "e60be720-de80-4d87-9b32-99661005d4f2",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Azithromycine Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "55c7fa75-8baa-496e-a005-ad3213d4b090",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Azithromycine Ns",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "c152d00e-b21f-4122-a9d6-3e29200d5d49",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Mycinad",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "0fa5bf85-973c-45f9-97c4-0e0408bdf737",
+        "laboratoire": "Upjohn Saidal Pharma",
+        "local": true,
+        "nom": "Zithromax",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "3a01074f-069b-4303-9bee-39525d2274a1",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Zithromycine Bgl",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "0818f94b-b106-458b-83cc-d562849aba60",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Zotrix",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "1c2fb74b-cec3-4549-abac-e7a468520f9f",
+        "laboratoire": "Spa Jamjoom Algeria Lil Dawa",
+        "local": true,
+        "nom": "Binozyt",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "2d50017b-c14e-4189-80d3-55678bbbf82b",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Zetron",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "fa0760a4-7328-43e3-90fc-4e8154fb62cd",
+        "laboratoire": "Tabet Pharm",
+        "local": true,
+        "nom": "Zitromicine",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

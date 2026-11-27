@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Fradene",
+  "dosage": "20MG/ML",
+  "dci": "PIROXICAM EXPRIMÉ EN PIROXICAM",
+  "Interactions de Piroxicam": "Interactions de Piroxicam Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n024",
+    "description": "Produits partageant le code DCI 04 B 024 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "20MG/ML",
+        "id": "ad095041-d313-431b-ba5e-30ab305cde9b",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Piroxen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "857a4289-f7c1-4f30-aedf-58c6536d0e6b",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Piroxiden",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "bcd73786-f2a5-4952-a0d0-56f90433c1a1",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Preldene",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

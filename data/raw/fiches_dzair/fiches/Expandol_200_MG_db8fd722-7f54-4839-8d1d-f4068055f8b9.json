@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Expandol",
+  "dosage": "200 MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n045",
+    "description": "Produits partageant le code DCI 03 B 045 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "200MG",
+        "id": "95794e76-f6b6-4681-8f04-995620cb763d",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Paracetamol Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "2a707470-8e1f-499d-90b2-f6795b39c8c6",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Paralgan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "c86cb39a-8ed5-4730-9079-99a2df8db4f7",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Sapramol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

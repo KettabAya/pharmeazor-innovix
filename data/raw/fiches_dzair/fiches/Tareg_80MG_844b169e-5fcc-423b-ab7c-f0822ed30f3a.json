@@ -1,0 +1,150 @@
+{
+  "nom_commercial": "Tareg",
+  "dosage": "80MG",
+  "dci": "VALSARTAN EXPRIMÉ EN VALSARTAN",
+  "Interactions de Valsartan": "Interactions de Valsartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n147",
+    "description": "Produits partageant le code DCI 06 E 147 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 15,
+    "produits": [
+      {
+        "dosage": "80MG",
+        "id": "5363f446-afe2-41ca-b5aa-8c6fae490193",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Arbitan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "758961f4-6da2-4428-b1cb-6b8f98cdf359",
+        "laboratoire": "Tassili Arab Pharmaceutical Co",
+        "local": true,
+        "nom": "Divalan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "543b1789-e368-4192-a351-1a23875257bc",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Hureg Hup",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "7327e725-bec1-49b1-a7f6-7c30aec6b8b4",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Sarteg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "5b014a82-79e7-4c69-961b-a4ac058a43a8",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Tabuvan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "9bdd0fc0-54e6-448a-a0a1-95308b6fb7e6",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Taroval",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "907504b4-0948-4781-8a89-9e3f78b1b180",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Valaclor",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "54a60c62-9d71-4790-b7a3-20ad7782f48b",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Valastan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "109c2d5f-fb84-47b6-98ea-0ec490ab2db2",
+        "laboratoire": "Algerian Generics Development Pharma (Agd Pharma)",
+        "local": true,
+        "nom": "Valsan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "54c54bfc-978e-46e8-8f10-5f1ebb2bd88d",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Vestag",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "052281ef-84fd-4792-a0ff-5501711946cd",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Viasart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "710d7430-863e-4543-ae36-571e18fbc520",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Reta",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG",
+        "id": "26a35875-9b86-486d-a27b-9f6e5dcfd2d1",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Valex 80",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG",
+        "id": "3aa98a36-daa9-4ad3-ac9d-ba7bfd08fbda",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Valsis",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "80MG",
+        "id": "2a280510-e255-4016-8a1d-21258a7b1c10",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Vareg",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -36,15 +36,46 @@ DATA = ROOT / "data"
 # execution : une faute de frappe suffisait a perdre une molecule sans que
 # rien ne le signale.
 MOLECULES_PROJET: tuple[str, ...] = (
-    "PARACETAMOL", "AMOXICILLINE", "AMLODIPINE", "IBUPROFENE", "DICLOFENAC",
-    "KETOPROFENE", "NAPROXENE", "PIROXICAM", "MELOXICAM", "CELECOXIB",
-    "ACIDE ACETYLSALICYLIQUE", "AZITHROMYCINE", "CLARITHROMYCINE",
-    "CIPROFLOXACINE", "LEVOFLOXACINE", "DOXYCYCLINE", "GENTAMICINE",
-    "CLINDAMYCINE", "CEFTRIAXONE", "CEFIXIME", "CEFUROXIME", "METRONIDAZOLE",
-    "SULFAMETHOXAZOLE", "TRIMETHOPRIME", "HYDROCHLOROTHIAZIDE", "INDAPAMIDE",
-    "SPIRONOLACTONE", "VALSARTAN", "LOSARTAN", "RAMIPRIL", "PERINDOPRIL",
-    "ENALAPRIL", "ATENOLOL", "BISOPROLOL", "NEBIVOLOL", "TRAMADOL",
-    "NEFOPAM", "CODEINE", "NIFEDIPINE", "METHYLDOPA",
+    "PARACETAMOL",
+    "AMOXICILLINE",
+    "AMLODIPINE",
+    "IBUPROFENE",
+    "DICLOFENAC",
+    "KETOPROFENE",
+    "NAPROXENE",
+    "PIROXICAM",
+    "MELOXICAM",
+    "CELECOXIB",
+    "ACIDE ACETYLSALICYLIQUE",
+    "AZITHROMYCINE",
+    "CLARITHROMYCINE",
+    "CIPROFLOXACINE",
+    "LEVOFLOXACINE",
+    "DOXYCYCLINE",
+    "GENTAMICINE",
+    "CLINDAMYCINE",
+    "CEFTRIAXONE",
+    "CEFIXIME",
+    "CEFUROXIME",
+    "METRONIDAZOLE",
+    "SULFAMETHOXAZOLE",
+    "TRIMETHOPRIME",
+    "HYDROCHLOROTHIAZIDE",
+    "INDAPAMIDE",
+    "SPIRONOLACTONE",
+    "VALSARTAN",
+    "LOSARTAN",
+    "RAMIPRIL",
+    "PERINDOPRIL",
+    "ENALAPRIL",
+    "ATENOLOL",
+    "BISOPROLOL",
+    "NEBIVOLOL",
+    "TRAMADOL",
+    "NEFOPAM",
+    "CODEINE",
+    "NIFEDIPINE",
+    "METHYLDOPA",
 )
 
 
@@ -68,7 +99,9 @@ class Settings:
     """All tunables in one place, so experiments stay reproducible."""
 
     # --- model (imposed by the module; same for every team) -----------------
-    model_name: str = field(default_factory=lambda: os.getenv("PHARMEAZOR_MODEL", "openai/gpt-oss-120b"))
+    model_name: str = field(
+        default_factory=lambda: os.getenv("PHARMEAZOR_MODEL", "openai/gpt-oss-120b")
+    )
     api_key: str = field(default_factory=lambda: os.getenv("GROQ_API_KEY", ""))
 
     # --- paths --------------------------------------------------------------
@@ -99,8 +132,11 @@ class Settings:
 
     def ensure_dirs(self) -> None:
         for directory in (
-            self.raw_dir, self.interim_dir, self.processed_dir,
-            self.reference_dir, self.cache_dir,
+            self.raw_dir,
+            self.interim_dir,
+            self.processed_dir,
+            self.reference_dir,
+            self.cache_dir,
         ):
             directory.mkdir(parents=True, exist_ok=True)
 

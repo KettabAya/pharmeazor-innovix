@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Loresta",
+  "dosage": "200MG",
+  "dci": "SUCCINATE DE METOPROLOL EXPRIMÉ EN SUCCINATE DE METOPROLOL",
+  "Interactions de Succinate De Metoprolol": "Interactions de Succinate De Metoprolol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nF\n071",
+    "description": "Produits partageant le code DCI 06 F 071 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "200MG",
+        "id": "ba797d59-2df7-4a01-aecf-098651194c29",
+        "laboratoire": "Laboratori Farmaceutico Sit S.r.l",
+        "local": true,
+        "nom": "Lopressor Lp",
+        "pays": "Italie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "aec6a430-197c-4229-8da3-f8d32b79dab3",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Loprox",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "044e7e00-a007-43d7-8ddb-6da80d5ad273",
+        "laboratoire": "Les Laboratoires Frater Razes",
+        "local": true,
+        "nom": "Metopress Lp",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "10a1faf7-0437-4e29-b722-86c3bf1d8f3d",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Metopress Lp",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "5db88039-bfe1-43de-aaae-2d3ba37842f7",
+        "laboratoire": "Sarl Medec",
+        "local": true,
+        "nom": "Sopressor",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "200MG",
+        "id": "7d8d3ce3-b018-4251-af97-23f40756587d",
+        "laboratoire": "Farmaceutici Crovis Ph.i.l.com",
+        "local": false,
+        "nom": "Metocrovis",
+        "pays": "Italie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

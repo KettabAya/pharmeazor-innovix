@@ -1,0 +1,96 @@
+{
+  "nom_commercial": "Vestamol",
+  "dosage": "5MG/80MG",
+  "dci": "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN EXPRIMÉ EN AMLODIPINE BESILATE EXPRIME EN AMLODIPINE/VALSARTAN",
+  "Interactions de Amlodipine Besilate Exprime En Amlodipine/Valsartan": "Interactions de Amlodipine Besilate Exprime En Amlodipine/Valsartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n257",
+    "description": "Produits partageant le code DCI 06 E 257 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 9,
+    "produits": [
+      {
+        "dosage": "5MG/80MG",
+        "id": "21bd22f4-439b-46b3-b643-6b2dbe22559f",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Amlodipine+valsartan Ldm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/80MG",
+        "id": "622ef565-8b39-4133-b6bf-dc69cf175d75",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Bioforge",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/80MG",
+        "id": "bc85775b-58e5-4be1-8cdc-b9415c0d77ec",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Dartix",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/80MG",
+        "id": "ddcaaacb-4aea-4b1b-bc12-aaff54ddf09e",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Exbitan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/80MG",
+        "id": "202e8a98-11d3-4bd3-94c3-0355e4a170a1",
+        "laboratoire": "Novartis Pharma Schweiz Ag",
+        "local": true,
+        "nom": "Exforge",
+        "pays": "Suisse",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/80MG",
+        "id": "35a34bc8-26fb-4f41-a1dd-04bdcce4ee1d",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Exformedic",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/80MG",
+        "id": "01af078b-d8a3-47c6-bcb5-e7466486e367",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Exsart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/80MG",
+        "id": "1cb86cf9-1bf5-4522-bf28-efd508ea42f8",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Exval",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG/80MG",
+        "id": "678072e9-2a57-40e3-80e1-9a6452a09e66",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Lotevan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

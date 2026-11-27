@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Dolymex",
+  "dosage": "120MG/5ML (2,4G/100ML)",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n117",
+    "description": "Produits partageant le code DCI 03 B 117 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "120MG/5ML (2,4G/100ML)",
+        "id": "4bd8fe75-27c3-4daf-9647-d0c349bc44aa",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Dolibon",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "120MG/5ML (2,4G/100ML)",
+        "id": "eed0622e-7749-46c4-9b40-50f687dba730",
+        "laboratoire": "Propharmal",
+        "local": true,
+        "nom": "Doliprane 2,4%",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "120MG/5ML (2,4G/100ML)",
+        "id": "f072a69b-eac8-4cb4-9eb4-2c1024eb7d06",
+        "laboratoire": "Lad Pharma",
+        "local": true,
+        "nom": "Migramol Pediatrique",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

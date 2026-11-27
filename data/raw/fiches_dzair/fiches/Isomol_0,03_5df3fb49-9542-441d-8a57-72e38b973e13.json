@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Isomol",
+  "dosage": "0,03",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n061",
+    "description": "Produits partageant le code DCI 03 B 061 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "0,03",
+        "id": "4aa1aad6-8ccc-4ade-bbba-12c078ad2e5c",
+        "laboratoire": "Afropharm Spa",
+        "local": true,
+        "nom": "Acetadol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,03",
+        "id": "ad0bb170-4c07-4671-9102-c649f573768e",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Doli-Bien",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,03",
+        "id": "9114422b-176b-41b6-8621-6738ed8ed2bf",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Dolpriv",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,03",
+        "id": "3947dfa0-c86b-4605-9e8a-fdcab26bfd47",
+        "laboratoire": "Propharmal",
+        "local": true,
+        "nom": "Efferalgan Pediatrique",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "0,03",
+        "id": "82da5a34-9d70-4d57-9b26-a0542f2f1059",
+        "laboratoire": "Laboratoire Algerien Du Medicament (Lam)",
+        "local": true,
+        "nom": "Pediamol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

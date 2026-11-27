@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Expandol",
+  "dosage": "150MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n044",
+    "description": "Produits partageant le code DCI 03 B 044 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "150MG",
+        "id": "e7f2e6d1-bfad-4c10-a4ae-cdf33788247b",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Paracetamol Biocare",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "7d739927-fa0c-4540-9037-fa2650473f6b",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Paracetamol Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "d74157c8-00ed-4084-bc98-e9176df9e2fc",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Sapramol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

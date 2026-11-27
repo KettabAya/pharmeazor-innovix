@@ -41,14 +41,15 @@ class TestLireLeNomDeFichier:
     def test_le_type_a_deux_mots_est_lu_entier(self):
         """`fiche_info` et `bon_usage` contiennent un souligné : un découpage
         naïf sur « _ » les couperait en deux et perdrait le type."""
-        for nom, attendu in (("codéine_fiche_info_123.pdf", "fiche_info"),
-                             ("codéine_bon_usage_123.pdf", "bon_usage")):
+        for nom, attendu in (
+            ("codéine_fiche_info_123.pdf", "fiche_info"),
+            ("codéine_bon_usage_123.pdf", "bon_usage"),
+        ):
             d = lire_nom_de_fichier(Path("x/codéine") / nom)
             assert d is not None and d.type_document == attendu
 
     def test_une_molecule_a_plusieurs_mots_reste_entiere(self):
-        d = lire_nom_de_fichier(
-            Path("x/acide clavulanique/acide clavulanique_notice_99.pdf"))
+        d = lire_nom_de_fichier(Path("x/acide clavulanique/acide clavulanique_notice_99.pdf"))
         assert d is not None and d.molecule == "acide clavulanique"
 
     def test_un_nom_hors_motif_n_est_pas_devine(self):
@@ -107,13 +108,11 @@ class TestLIntituleNommeLeMedicament:
     )
 
     def test_la_ligne_de_titre_est_retenue(self):
-        d = DocumentBDM(Path("x.pdf"), "acide acétylsalicylique", "rcp", "1",
-                        texte=self.TEXTE)
+        d = DocumentBDM(Path("x.pdf"), "acide acétylsalicylique", "rcp", "1", texte=self.TEXTE)
         assert d.intitule.startswith("ACIDE ACETYLSALICYLIQUE BIOGARAN 75 mg")
 
     def test_la_date_de_mise_a_jour_n_est_pas_prise_pour_un_titre(self):
-        d = DocumentBDM(Path("x.pdf"), "paracétamol", "rcp", "1",
-                        texte=self.TEXTE)
+        d = DocumentBDM(Path("x.pdf"), "paracétamol", "rcp", "1", texte=self.TEXTE)
         assert "mise à jour" not in d.intitule
 
     def test_sans_texte_on_retombe_sur_le_nom_de_dossier(self):
@@ -201,15 +200,12 @@ class TestLAvertissementEstPorteParLePassage:
 
 
 @pytest.mark.skipif(
-    not (Path(__file__).resolve().parents[1]
-         / "data/raw/bdm/row-data/pdf/bdm_pdf").exists(),
+    not (Path(__file__).resolve().parents[1] / "data/raw/bdm/row-data/pdf/bdm_pdf").exists(),
     reason="les PDF collectés ne sont pas dans le dépôt",
 )
 def test_sur_les_vrais_fichiers_si_ils_sont_la():
     """Un garde-fou qui ne tourne que sur la machine qui a les PDF."""
-    racine = (Path(__file__).resolve().parents[1]
-              / "data/raw/bdm/row-data/pdf/bdm_pdf")
+    racine = Path(__file__).resolve().parents[1] / "data/raw/bdm/row-data/pdf/bdm_pdf"
     documents = list(parcourir(racine))
     assert len(documents) > 3000
-    assert {d.type_document for d in documents} == {
-        "rcp", "notice", "fiche_info", "bon_usage"}
+    assert {d.type_document for d in documents} == {"rcp", "notice", "fiche_info", "bon_usage"}

@@ -1,0 +1,132 @@
+{
+  "nom_commercial": "Coaravel",
+  "dosage": "150MG/12,5MG",
+  "dci": "IRBESARTAN + HYDROCHLOROTHIAZIDE EXPRIMÉ EN IRBESARTAN + HYDROCHLOROTHIAZIDE",
+  "Interactions de Irbesartan + Hydrochlorothiazide": "Interactions de Irbesartan + Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n219",
+    "description": "Produits partageant le code DCI 06 E 219 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 13,
+    "produits": [
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "87b21b76-771f-4b5a-a0e1-05a00902e192",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Co Aprosart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "744cbea5-1852-4007-8dc0-1d5c1ffee6f8",
+        "laboratoire": "Alembic Mami Spa",
+        "local": true,
+        "nom": "Co Avsart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "069984dc-6130-414a-a5dc-cdf2860fe4d0",
+        "laboratoire": "Soprodim",
+        "local": true,
+        "nom": "Co-Irbedim",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "19f9ec44-5010-4a19-938d-9bdd26861781",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co-Irbek",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "15ed1b80-41e9-4dda-84a1-0df7c80b8b37",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Co-Irbezart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "b3fc2cee-5a7f-4491-a451-f2fc39dbaf9e",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Coaprovel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "80444289-8190-4e87-9376-2aee54bef2cd",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Cozibrat",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "95090b74-a19d-4374-b07d-e22027bf18fb",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Gizlan-Plus 150/12,5",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "28db595b-b37f-4f72-9754-4410eb389851",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Ipisart Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "44cbfb00-a912-42a7-922a-656c098459c6",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Irbisart +",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "62873d1f-18fe-4537-8c2d-099ff1391c74",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Rotazar Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "0c3b4f5d-8f66-4a27-9b7b-3426afe41687",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Co-Aradex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "150MG/12,5MG",
+        "id": "9adc0d67-46d2-4803-9487-c63056982f37",
+        "laboratoire": "Tassili Arab Pharmaceutical Co",
+        "local": true,
+        "nom": "Irbe Plus 150/12,5",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

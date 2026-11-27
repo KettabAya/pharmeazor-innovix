@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Perindosyl",
+  "dosage": "4MG",
+  "dci": "PERINDOPRIL ERBUMINE EXPRIMÉ EN PERINDOPRIL ERBUMINE",
+  "Interactions de Perindopril Erbumine": "Interactions de Perindopril Erbumine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n165",
+    "description": "Produits partageant le code DCI 06 E 165 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "4MG",
+        "id": "cd668ed5-ab02-458a-a812-bf769314e15a",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Perindopril Beker",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

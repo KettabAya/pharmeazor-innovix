@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Telmed 80",
+  "dosage": "80MG",
+  "dci": "TELMISARTAN EXPRIMÉ EN TELMISARTAN",
+  "Interactions de Telmisartan": "Interactions de Telmisartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n264",
+    "description": "Produits partageant le code DCI 06 E 264 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "80MG",
+        "id": "ee7b2fa3-cbd0-4273-8ca7-6de5b316271a",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Bekerdis",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "5bc21b6b-8cd6-4adf-b450-2acc3fc33386",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Cardimed",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "f411af48-810a-4bf7-908c-b3e92c7837cc",
+        "laboratoire": "Boehringer Ingelheim International Gmbh",
+        "local": true,
+        "nom": "Micardis",
+        "pays": "Allemagne",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "6f4173ee-6abf-46bf-9b36-99f1e2f351fd",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Micasartan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "656ac6d1-611b-4783-8c30-a9048bf4822f",
+        "laboratoire": "Sarl Pur Lab",
+        "local": true,
+        "nom": "Teldis",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "fa0a0b48-a0fb-4e55-b5c0-6a80f31f533e",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Telmidis",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "ce926528-2c19-4b59-9daf-0562e11491cd",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Telmisa",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "34ec4daf-8462-4e10-be68-cdb5e043ba4d",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Telmisarte",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "f7587181-3463-4b6f-9157-d205bff1e4ed",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Telstal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "c475e17b-b73f-4967-b62a-055ac28d0817",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Tensotel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "80MG",
+        "id": "4e079290-6269-4c7e-8e84-ce8a78a3ced8",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Telzart 80 Mg",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

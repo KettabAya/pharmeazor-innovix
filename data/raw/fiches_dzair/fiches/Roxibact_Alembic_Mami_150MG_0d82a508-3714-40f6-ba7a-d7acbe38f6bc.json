@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Roxibact Alembic Mami",
+  "dosage": "150MG",
+  "dci": "ROXITHROMYCINE EXPRIMÉ EN ROXITHROMYCINE",
+  "Interactions de Roxithromycine": "Interactions de Roxithromycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n185",
+    "description": "Produits partageant le code DCI 13 E 185 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "150MG",
+        "id": "f4d74c70-e6c2-4b35-acce-818e28430a29",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Roxithromycine Hup",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "150MG",
+        "id": "bbc71200-13ef-4a72-acdf-518a77700ec1",
+        "laboratoire": "Dar Al Dawa",
+        "local": false,
+        "nom": "Roxamed",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

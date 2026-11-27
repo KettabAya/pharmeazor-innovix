@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Xinac-50",
+  "dosage": "50MG",
+  "dci": "DICLOFENAC SODIQUE EXPRIMÉ EN DICLOFENAC SODIQUE",
+  "Interactions de Diclofenac Sodique": "Interactions de Diclofenac Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n006",
+    "description": "Produits partageant le code DCI 04 B 006 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "50MG",
+        "id": "735d5ead-ca18-4e53-9619-17c04364556d",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Biofenac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "ee34a0a3-891f-40f3-8dec-9bd238446492",
+        "laboratoire": "Biohder Group",
+        "local": true,
+        "nom": "Clofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "753b4192-f79f-46f2-9d3f-9ca580717de8",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Diclofal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "635dc720-6389-4fd3-b6f8-9f04fdd1f908",
+        "laboratoire": "Geopharm",
+        "local": true,
+        "nom": "Geofenac",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "e4fd10a7-1df6-4b3a-b22a-a296119ae20a",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Clofenal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "50MG",
+        "id": "d5097eeb-0a07-4804-8562-3ca8a460383a",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Voltum",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

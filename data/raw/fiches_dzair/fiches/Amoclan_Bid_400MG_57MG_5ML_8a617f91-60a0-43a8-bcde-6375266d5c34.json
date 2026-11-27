@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Amoclan Bid",
+  "dosage": "400MG/57MG/5ML",
+  "dci": "AMOXICILLINE TRIHYDRATEE EXPRIMEE EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE EXPRIMÉ EN AMOXICILLINE TRIHYDRATEE EXPRIMEE EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE",
+  "Interactions de Amoxicilline Trihydratee Exprimee En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique": "Interactions de Amoxicilline Trihydratee Exprimee En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n266",
+    "description": "Produits partageant le code DCI 13 G 266 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "400MG/57MG/5ML",
+        "id": "c755acdb-7086-4e3d-8f0e-c7c05e8b89ba",
+        "laboratoire": "Continental Pharm",
+        "local": true,
+        "nom": "Clavodex Duo",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "400MG/57MG/5ML",
+        "id": "4deaf856-465c-48e0-b86b-4cef0820516d",
+        "laboratoire": "Dar Al Dawa",
+        "local": false,
+        "nom": "Clavodar Forte 400/57",
+        "pays": "Jordanie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Temisal",
+  "dosage": "40 MG / 5 MG",
+  "dci": "TELMISARTAN/ AMLODIPINE EXPRIMÉ EN TELMISARTAN/ AMLODIPINE",
+  "Interactions de Telmisartan/ Amlodipine": "Interactions de Telmisartan/ Amlodipine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n339",
+    "description": "Produits partageant le code DCI 06 E 339 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "40 MG / 05 MG",
+        "id": "63c20c1a-ac7b-49ba-8487-9a0363c68fce",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Extel",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

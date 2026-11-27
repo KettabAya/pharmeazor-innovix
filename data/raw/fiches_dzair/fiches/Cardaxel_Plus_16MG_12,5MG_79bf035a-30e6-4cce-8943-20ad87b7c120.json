@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Cardaxel Plus",
+  "dosage": "16MG/12,5MG",
+  "dci": "CANDESARTAN CILEXETIL/HYDROCHLOROTHIAZIDE EXPRIMÉ EN CANDESARTAN CILEXETIL/HYDROCHLOROTHIAZIDE",
+  "Interactions de Candesartan Cilexetil/Hydrochlorothiazide": "Interactions de Candesartan Cilexetil/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n231",
+    "description": "Produits partageant le code DCI 06 E 231 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "16MG/12,5MG",
+        "id": "16c901ac-2c3a-4a14-b844-f1dc510b4243",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Blopress 16 Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "16MG/12,5MG",
+        "id": "d0303a00-f3a1-46ca-90fe-49b1d34ae8eb",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Canderax Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "16MG/12,5MG",
+        "id": "4fd7707c-ef1c-4f9f-ba78-51f5810cc11b",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Co Sarcand",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "16MG/12,5MG",
+        "id": "777a3649-8855-4d84-b544-3b1a859fc5b3",
+        "laboratoire": "Astra Zeneca Ag",
+        "local": true,
+        "nom": "Hytacand",
+        "pays": "Suisse",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "16MG/12,5MG",
+        "id": "23c5352b-875e-40d5-9a65-87ea236197e0",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Sartacand Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "16MG/12,5MG",
+        "id": "fad90965-20c5-4d3c-8037-13b4b7030b5a",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Co-Atabek",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

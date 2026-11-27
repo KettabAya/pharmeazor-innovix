@@ -1,0 +1,141 @@
+{
+  "nom_commercial": "Tensodipine",
+  "dosage": "5MG",
+  "dci": "AMLODIPINE BESILATE EXPRIME EN AMLODIPINE EXPRIMÉ EN AMLODIPINE BESILATE EXPRIME EN AMLODIPINE",
+  "Interactions de Amlodipine Besilate Exprime En Amlodipine": "Interactions de Amlodipine Besilate Exprime En Amlodipine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nB\n123",
+    "description": "Produits partageant le code DCI 06 B 123 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 14,
+    "produits": [
+      {
+        "dosage": "5MG",
+        "id": "6f1ca0cc-0701-4791-a440-1afcd2d0259a",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Amlodipal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "680cc370-10dd-472f-9043-bef47fa25cd4",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Amlodipine Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "dcf3da71-03fc-4a59-8b2b-5f45fffa6185",
+        "laboratoire": "Genericlab Sarl",
+        "local": true,
+        "nom": "Amlopine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "3be59270-e795-4f99-a033-888a65cc0eab",
+        "laboratoire": "Upjohn Saidal Pharma",
+        "local": true,
+        "nom": "Amlor",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "e5a7100f-c2c3-46f0-85a2-a551d2dcb070",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Dimlor",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "795e3303-5aa0-45bc-bfe8-3d91949fb2e3",
+        "laboratoire": "At Pharma",
+        "local": true,
+        "nom": "Dipicard",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "d7a65198-fc7c-41db-9718-16802c1e1948",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Humlor",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "54d29aaa-b54f-4a81-9736-cace33b8b560",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Lotense",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "31a21d47-e11f-4085-aa39-29453ff1f619",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Lowvasc",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "e4fb9e49-7e0c-4dae-8a40-9d9bc213c97e",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Mibral",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "ad83e1d3-0aea-4938-a21c-04584f33a591",
+        "laboratoire": "Spa Jamjoom Algeria Lil Dawa",
+        "local": true,
+        "nom": "Amlibon",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "ac3b4c20-44d6-4ef0-bf74-68fc2a800855",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Amlodal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "04826104-8b4b-4def-b67c-afb2bdbce36a",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Amlodipine Mm",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "5f38a58e-eeff-4657-bf66-8f8029434d0d",
+        "laboratoire": "Abdi Ibrahim Remede Pharma",
+        "local": true,
+        "nom": "Amlomed",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,10 +1,3 @@
-"""Run BM25 and embeddings on the 19-question subset.
-
-Writes:
-  eval/results/retrieval_eval.md
-  eval/results/retrieval_eval.json
-"""
-
 from __future__ import annotations
 
 import json
@@ -16,9 +9,10 @@ from pharmeazor.retrieve.bm25 import load_passages_index
 from pharmeazor.retrieve.search_emb import EmbIndex
 
 QUESTIONS = Path("eval/questions_subset.yaml")
-PASSAGES = Path("data/processed/passages.jsonl")
+PASSAGES = Path("data/processed/passages_all.jsonl")   
 RESULTS_MD = Path("eval/results/retrieval_eval.md")
 RESULTS_JSON = Path("eval/results/retrieval_eval.json")
+
 SECTION_KEYWORD_FR = {
     "indications": "indications",
     "contre_indications": "contre-indications",
@@ -26,6 +20,13 @@ SECTION_KEYWORD_FR = {
     "interactions": "interactions",
     "effets_indesirables": "effets indésirables",
 }
+
+
+def section_of(passage: dict | None) -> str:              
+    if not passage:
+        return "?"
+    return passage.get("section_type") or passage.get("section") or "?"
+
 
 def load_passages_by_id() -> dict[str, dict]:
     by_id: dict[str, dict] = {}
@@ -37,16 +38,18 @@ def load_passages_by_id() -> dict[str, dict]:
 
 
 def bm25_pairs(results) -> list[tuple[str, float]]:
-    """BM25Result -> (passage_id, score)."""
     return [(str(r.passage_id), r.score) for r in results]
 
 
 def emb_pairs(results) -> list[tuple[str, float]]:
-    """EmbIndex dict -> (passage_id, score)."""
     out = []
     for r in results:
-        p = r["passage"]
-        out.append((str(p["passage_id"]), r["score"]))
+        if hasattr(r, "passage_id"):                  
+            out.append((str(r.passage_id), float(r.score)))
+        else:                                         
+            p = r.get("passage", {})
+            pid = p.get("passage_id", r.get("passage_id"))
+            out.append((str(pid), float(r.get("score", 0.0))))
     return out
 
 
@@ -80,7 +83,7 @@ def main() -> int:
         query = q["question"]
         fr = SECTION_KEYWORD_FR.get(q["expected_section"])
         if fr:
-             query = f"{query} {fr}"
+            query = f"{query} {fr}"
 
         b = bm25_pairs(bm25.search(query, top_k=3))
         e = emb_pairs(emb.search(query, k=3))
@@ -100,8 +103,8 @@ def main() -> int:
             "expected_section": q["expected_section"],
             "bm25_rank": b_rank,
             "emb_rank": e_rank,
-            "bm25_top1_section": b0.get("section_type") if b0 else None,
-            "emb_top1_section": e0.get("section_type") if e0 else None,
+            "bm25_top1_section": section_of(b0),
+            "emb_top1_section": section_of(e0),
             "bm25_score": round(b[0][1], 3) if b else 0,
             "emb_score": round(e[0][1], 3) if e else 0,
         })
@@ -122,7 +125,8 @@ def main() -> int:
     md = f"""# Retrieval evaluation — real question set (19 questions)
 
 Subset of `PharmEazor_Annotated_Questions_10_Medicaments.pdf`.
-15 answerable + 4 unanswerable. 51 skipped (molecules not in corpus yet).
+15 answerable + 4 unanswerable.
+Corpus: `data/processed/passages_all.jsonl`.
 
 ## Answerable — BM25 {bm25_hits}/{n}, embeddings {emb_hits}/{n}
 

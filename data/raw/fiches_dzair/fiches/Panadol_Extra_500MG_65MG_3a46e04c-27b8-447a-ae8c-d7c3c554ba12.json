@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Panadol Extra",
+  "dosage": "500MG/65MG",
+  "dci": "PARACETAMOL/CAFEINE EXPRIMÉ EN PARACETAMOL/CAFEINE",
+  "Interactions de Paracetamol/Cafeine": "Interactions de Paracetamol/Cafeine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n088",
+    "description": "Produits partageant le code DCI 03 B 088 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "500MG/65MG",
+        "id": "a4755594-8593-47e9-b27e-d6d080837848",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Apap Cafeine Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG/65MG",
+        "id": "c707a703-b4f9-41ea-b31f-2a1ca3347409",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Cetadol Extra",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/65MG",
+        "id": "9151a59d-5c07-4990-95b4-7dc11f07f1f3",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Expandol Plus",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/65MG",
+        "id": "876e2a8e-137f-4f05-8d95-58e54eda3cef",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Extradol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/65MG",
+        "id": "7c01a34d-1309-40fa-ae81-436abfce786c",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Pacet Extra",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/65MG",
+        "id": "ed629a19-ff28-4e34-8a64-40bb95550dd7",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Planadix Extra",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

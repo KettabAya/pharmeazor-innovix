@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Bioclav",
+  "dosage": "500MG/62,5MG",
+  "dci": "AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE EXPRIMÉ EN AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE",
+  "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique": "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n245",
+    "description": "Produits partageant le code DCI 13 G 245 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "500MG/62,5MG",
+        "id": "2a18e0ac-1597-404a-b4e1-384eeb1629ec",
+        "laboratoire": "Continental Pharm",
+        "local": true,
+        "nom": "Clavodex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

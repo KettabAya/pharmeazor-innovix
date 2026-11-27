@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Bioclav 8:1",
+  "dosage": "500MG/62,5MG",
+  "dci": "AMOXICILLINE TRIHYDRATEE EXPRIMEE EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE EXPRIMÉ EN AMOXICILLINE TRIHYDRATEE EXPRIMEE EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE",
+  "Interactions de Amoxicilline Trihydratee Exprimee En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique": "Interactions de Amoxicilline Trihydratee Exprimee En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n204",
+    "description": "Produits partageant le code DCI 13 G 204 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "500MG/62,5MG",
+        "id": "51a5eb1c-9194-4c44-9d50-969258eea36a",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Amoclan 8:1",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG/62,5MG",
+        "id": "27717425-251a-4957-9475-627f78fd2d21",
+        "laboratoire": "Continental Pharm",
+        "local": true,
+        "nom": "Clavodex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG/62,5MG",
+        "id": "a3719b17-6fbe-4b5c-bd22-4760add71b4b",
+        "laboratoire": "Al Dar Al Arabia Spa",
+        "local": true,
+        "nom": "Ecoclav",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG/62.5MG",
+        "id": "eac6b5db-c13b-41c2-9a4a-51f4b1928831",
+        "laboratoire": "Glaxosmithkline Algerie Spa",
+        "local": true,
+        "nom": "Augmentin Enfant",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

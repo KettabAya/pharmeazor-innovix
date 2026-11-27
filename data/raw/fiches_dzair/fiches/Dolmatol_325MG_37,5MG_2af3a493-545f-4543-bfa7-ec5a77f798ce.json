@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Dolmatol",
+  "dosage": "325MG/37,5MG",
+  "dci": "PARACETAMOL/TRAMADOL CHLORHYDRATE EXPRIMÉ EN PARACETAMOL/TRAMADOL CHLORHYDRATE",
+  "Interactions de Paracetamol/Tramadol Chlorhydrate": "Interactions de Paracetamol/Tramadol Chlorhydrate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nF\n115",
+    "description": "Produits partageant le code DCI 03 F 115 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "134be0aa-42c9-439e-9d0c-f2bb539b6187",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Apap Tramadol Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "47bc431d-2839-4094-84d5-50074c1947e9",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Di-Dolex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "923a8545-e412-4fb8-b7ce-335bfddbe909",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Doltram Plus",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "1d4e6efa-af2f-4d69-b185-1f90d4bcd910",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Planadix Advance",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "617f7f06-ab7e-4143-b938-e0f81de78685",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Pradole",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "e588bb9d-96a7-40ab-a4b3-a3276d139fd9",
+        "laboratoire": "Biopharm",
+        "local": true,
+        "nom": "Xamadol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "9813129d-c7ee-495c-83b3-62de73af0265",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Cetadol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "f0e52fec-aa6f-45e8-accc-cfbe0bd14ef8",
+        "laboratoire": "Bac Pharma Spa",
+        "local": true,
+        "nom": "Dolokil",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "bbaca946-c23e-48c5-9729-f0bb17deb67b",
+        "laboratoire": "Laboratoires Salem",
+        "local": true,
+        "nom": "Paramol Plus",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "01ec5b3c-3453-4b07-ac26-4132c1283fea",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Supradolex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "325MG/37,5MG",
+        "id": "2e0d074d-c3f7-4421-8438-325f68ecc811",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Xaldol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

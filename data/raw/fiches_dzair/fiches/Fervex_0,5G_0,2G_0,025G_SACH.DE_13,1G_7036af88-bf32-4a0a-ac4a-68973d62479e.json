@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Fervex",
+  "dosage": "0,5G/0,2G/0,025G/SACH.DE 13,1G",
+  "dci": "PARACETAMOL/ACIDE ASCORBIQUE/MALEATE DE PHENIRAMINE EXPRIMÉ EN PARACETAMOL/ACIDE ASCORBIQUE/MALEATE DE PHENIRAMINE",
+  "Interactions de Paracetamol/Acide Ascorbique/Maleate De Pheniramine": "Interactions de Paracetamol/Acide Ascorbique/Maleate De Pheniramine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "22\nA\n033",
+    "description": "Produits partageant le code DCI 22 A 033 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "500MG/200MG/25MG",
+        "id": "791f9a04-6bc7-4a38-bf84-77bcfca961b2",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Rhynex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/200MG/25MG**/SACH.",
+        "id": "e2f6aeb5-6a02-4fb5-8798-c66b74821dbe",
+        "laboratoire": "Bristol Myers Squibb Pharma Eeig",
+        "local": false,
+        "nom": "Fervex Adulte Sans Sucre",
+        "pays": "France",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/200MG/25MG",
+        "id": "956820cf-2f7e-41a3-b766-a33295218781",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Biovex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG/200MG/25MG",
+        "id": "8a977f47-45ab-412c-a3b4-66b26e7c4252",
+        "laboratoire": "Onyx Industrie Pharmaceutique",
+        "local": true,
+        "nom": "Paravex Adulte",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

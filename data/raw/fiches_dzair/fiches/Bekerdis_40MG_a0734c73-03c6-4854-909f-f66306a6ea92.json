@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Bekerdis",
+  "dosage": "40MG",
+  "dci": "TELMISARTAN EXPRIMÉ EN TELMISARTAN",
+  "Interactions de Telmisartan": "Interactions de Telmisartan Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n263",
+    "description": "Produits partageant le code DCI 06 E 263 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "40MG",
+        "id": "2ff6c1c3-d2a1-46d5-958c-90b1c29f7e08",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Cardimed",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "7edba892-b69a-45d8-a0aa-8d1870da4ea9",
+        "laboratoire": "Spa Union Pharmaceuitique Constantinoise Production",
+        "local": true,
+        "nom": "Cardomyl",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "ad5729ae-b63b-4e13-9a33-6b7e0f439b93",
+        "laboratoire": "Boehringer Ingelheim International Gmbh",
+        "local": true,
+        "nom": "Micardis",
+        "pays": "Allemagne",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "a66c37e5-3959-4d23-b85e-d808db682f37",
+        "laboratoire": "Biologie Et Vitamine D'Algerie Biovital",
+        "local": true,
+        "nom": "Mizart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "6b5742a9-6dd6-4641-9205-c545a13115a3",
+        "laboratoire": "Sarl Pur Lab",
+        "local": true,
+        "nom": "Teldis",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "c9977cc7-2b15-49de-8fa4-50990ac59a65",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Telmed 40",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "00a440e5-1bfe-4eb8-b622-4ebb6d36544f",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Telmidis",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "e11b6469-3bf7-4fb7-94f8-56f818e64a45",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Telmisa",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "3892de37-c4c2-47c9-882e-ada3ab156507",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Telmisarte",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "3028c626-f449-4a6f-9641-4b89c27fd5fa",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Telstal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "40MG",
+        "id": "b46d9b0b-5078-4bdf-866a-426c948b3c44",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Tensotel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

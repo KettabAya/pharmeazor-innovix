@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Triatec",
+  "dosage": "10MG",
+  "dci": "RAMIPRIL EXPRIMÉ EN RAMIPRIL",
+  "Interactions de Ramipril": "Interactions de Ramipril Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n201",
+    "description": "Produits partageant le code DCI 06 E 201 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "10MG",
+        "id": "d98ee6f7-848d-4b27-87e8-048749cbcf24",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Ramipril Beker",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "c2c1145a-2baa-4427-b51e-3d2fbd083b09",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Ramitrim",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "cb70109b-714d-4672-ba9b-b59c1002ab04",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Tanatril",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "10MG",
+        "id": "ec23b744-e713-4fbf-a09c-bec103335f77",
+        "laboratoire": "Sandoz",
+        "local": true,
+        "nom": "Raminorm",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10 MG",
+        "id": "1f56a4e6-12ef-49d0-a526-5557582b7ca1",
+        "laboratoire": "Frater-Razes Forme Seche",
+        "local": true,
+        "nom": "Triampex",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

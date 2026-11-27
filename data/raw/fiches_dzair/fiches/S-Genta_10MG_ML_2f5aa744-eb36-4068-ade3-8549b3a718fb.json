@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "S-Genta",
+  "dosage": "10MG/ML",
+  "dci": "GENTAMICINE SULFATE EXPRIMÉ EN GENTAMICINE SULFATE",
+  "Interactions de Gentamicine Sulfate": "Interactions de Gentamicine Sulfate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nA\n003",
+    "description": "Produits partageant le code DCI 13 A 003 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "10MG/ML",
+        "id": "9526cb29-767c-47af-aa32-dc64880b5727",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Genta 10",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

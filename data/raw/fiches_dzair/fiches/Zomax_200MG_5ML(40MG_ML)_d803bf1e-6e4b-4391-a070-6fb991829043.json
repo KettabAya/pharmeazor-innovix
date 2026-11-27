@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Zomax",
+  "dosage": "200MG/5ML(40MG/ML)",
+  "dci": "AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE EXPRIMÉ EN AZITHROMYCINE DIHYDRATEE EXPRIMEE EN AZITHROMYCINE",
+  "Interactions de Azithromycine Dihydratee Exprimee En Azithromycine": "Interactions de Azithromycine Dihydratee Exprimee En Azithromycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n177",
+    "description": "Produits partageant le code DCI 13 E 177 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "200MG/5ML(40MG/ML)",
+        "id": "a9a142ef-b888-449b-9af3-cd0f8f4faae1",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Zotrix",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

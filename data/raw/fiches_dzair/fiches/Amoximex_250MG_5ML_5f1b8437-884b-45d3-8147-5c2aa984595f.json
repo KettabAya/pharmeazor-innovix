@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Amoximex",
+  "dosage": "250MG/5ML",
+  "dci": "AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE EXPRIMÉ EN AMOXICILLINE TRIHYDRATE EXPRIME EN AMOXICILLINE",
+  "Interactions de Amoxicilline Trihydrate Exprime En Amoxicilline": "Interactions de Amoxicilline Trihydrate Exprime En Amoxicilline Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n047",
+    "description": "Produits partageant le code DCI 13 G 047 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "250MG/5ML",
+        "id": "d83947a5-08b7-439d-85b8-6493f5da461d",
+        "laboratoire": "Continental Pharm",
+        "local": true,
+        "nom": "Amodex-Gé",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG/5ML",
+        "id": "691a77ac-f89c-4b46-b39a-b2540e838042",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Amoxicilline Eg",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG/5ML",
+        "id": "da8ad12c-8362-43a9-bd0e-e0a627cfe96e",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Amoxypen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG/5ML",
+        "id": "b52a7206-2d29-4d9e-a4e0-3b7a1155c938",
+        "laboratoire": "Biocare",
+        "local": true,
+        "nom": "Biopamox",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG/5ML",
+        "id": "a544e9f7-c9bb-4408-a8ab-3845af23e2b1",
+        "laboratoire": "Glaxosmithkline Algerie Spa",
+        "local": true,
+        "nom": "Clamoxyl",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "250MG/5ML",
+        "id": "43dd3ffc-b2f6-4334-a7b3-ddc681c50b40",
+        "laboratoire": "Eurl Genis Pharmaceutique Et Parapharmaceutique",
+        "local": true,
+        "nom": "Himoxyl",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

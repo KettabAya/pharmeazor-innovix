@@ -1,0 +1,33 @@
+{
+  "nom_commercial": "Ramitrim Plus",
+  "dosage": "10MG/12.5MG",
+  "dci": "RAMIPRIL/HYDROCHLOROTHIAZIDE EXPRIMÉ EN RAMIPRIL/HYDROCHLOROTHIAZIDE",
+  "Interactions de Ramipril/Hydrochlorothiazide": "Interactions de Ramipril/Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n289",
+    "description": "Produits partageant le code DCI 06 E 289 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 2,
+    "produits": [
+      {
+        "dosage": "10MG/12,5MG",
+        "id": "a99e069f-7065-4fef-8e1e-7403484fe98c",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Tanatril +",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "10MG/12,5MG",
+        "id": "af4ee46e-0a43-410d-91a7-d32296f00f79",
+        "laboratoire": "Sanofi Aventis Algerie",
+        "local": true,
+        "nom": "Tritazide",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

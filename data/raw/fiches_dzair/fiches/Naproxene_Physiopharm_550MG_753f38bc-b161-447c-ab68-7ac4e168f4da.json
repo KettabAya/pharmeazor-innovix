@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Naproxene Physiopharm",
+  "dosage": "550MG",
+  "dci": "NAPROXENE SODIQUE EXPRIMÉ EN NAPROXENE SODIQUE",
+  "Interactions de Naproxene Sodique": "Interactions de Naproxene Sodique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n020",
+    "description": "Produits partageant le code DCI 04 B 020 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "550MG",
+        "id": "9fe6aa34-f3ca-4334-8680-41eaadd5056c",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Naprox",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "550MG",
+        "id": "51b1603f-22b5-4a9a-b404-6845288ba1da",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Naprolgic",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "550MG",
+        "id": "400d7ad5-4bd9-4b03-a866-af56f4a63dd8",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Nexopain",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "550MG",
+        "id": "adb9d4da-c11f-4664-b5d5-7ba764ec13c7",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Nhupain",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

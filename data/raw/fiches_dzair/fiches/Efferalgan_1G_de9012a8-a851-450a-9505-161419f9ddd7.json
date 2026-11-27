@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Efferalgan",
+  "dosage": "1G",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n080",
+    "description": "Produits partageant le code DCI 03 B 080 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "1G",
+        "id": "da1db1c8-41e5-42ea-82f3-01d3031fd675",
+        "laboratoire": "Laboratoire Moben",
+        "local": true,
+        "nom": "Dolidol Flash",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

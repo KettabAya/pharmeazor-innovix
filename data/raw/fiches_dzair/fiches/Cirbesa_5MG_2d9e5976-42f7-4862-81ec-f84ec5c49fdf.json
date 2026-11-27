@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Cirbesa",
+  "dosage": "5MG",
+  "dci": "BISOPROLOL FUMARATE EXPRIMÉ EN BISOPROLOL FUMARATE",
+  "Interactions de Bisoprolol Fumarate": "Interactions de Bisoprolol Fumarate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nF\n267",
+    "description": "Produits partageant le code DCI 06 F 267 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "5MG",
+        "id": "5d6dd7ff-423b-4989-b783-1e27f82ef87d",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Biprotens",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "1952874a-21ad-4ea7-b769-dd8dca776d72",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Bisosel",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "834c8039-317e-46e6-a401-a74a31cf8243",
+        "laboratoire": "Tabuk Algerie",
+        "local": true,
+        "nom": "Bisotab",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "0d1181f0-e8b8-4f8d-8689-4aa0fb176c46",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Bonacor",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "592dae16-ac95-498b-aa87-cfca622dc9d9",
+        "laboratoire": "Sanamed",
+        "local": true,
+        "nom": "Diprolol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "98964901-ff06-49b3-8a32-0becf629d9e6",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Prodol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "7951f15a-11a3-45f4-9674-5307fcc53140",
+        "laboratoire": "World Medecine Limited",
+        "local": true,
+        "nom": "Rizoprol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "5MG",
+        "id": "d10b8d67-6b07-4c3d-a4f0-bcd6764ca3e3",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Bisoprolol Beker",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "e0202ab7-185d-40e0-981a-e8b88c4cee69",
+        "laboratoire": "Hupp Pharma",
+        "local": true,
+        "nom": "Bisoprolol Hup",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "79a3faab-f9e5-491f-9e78-cc8353101ebb",
+        "laboratoire": "Laboratoires Mm",
+        "local": true,
+        "nom": "Bisoprolol Mm",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "5MG",
+        "id": "f5aca038-32cc-4c58-8826-adc706d5d5f7",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Byzolex 5",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

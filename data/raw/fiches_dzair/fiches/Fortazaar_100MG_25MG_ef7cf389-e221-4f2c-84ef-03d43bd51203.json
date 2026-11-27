@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Fortazaar",
+  "dosage": "100MG/25MG",
+  "dci": "LOSARTAN POTASSIQUE / HYDROCHLOROTHIAZIDE EXPRIMÉ EN LOSARTAN POTASSIQUE / HYDROCHLOROTHIAZIDE",
+  "Interactions de Losartan Potassique / Hydrochlorothiazide": "Interactions de Losartan Potassique / Hydrochlorothiazide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n239",
+    "description": "Produits partageant le code DCI 06 E 239 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "100MG/25MG",
+        "id": "6e8d0fe3-3ad0-4897-be31-d45f9c10f5d2",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Cobektal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/25MG",
+        "id": "8331b4fb-21f8-4b04-bcdf-4cad9f79d758",
+        "laboratoire": "Janis Med Sarl",
+        "local": true,
+        "nom": "Forlysart",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/25MG",
+        "id": "d63cd925-ff02-471e-bfa3-ffb9555de1e2",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Co-Norta Fort",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

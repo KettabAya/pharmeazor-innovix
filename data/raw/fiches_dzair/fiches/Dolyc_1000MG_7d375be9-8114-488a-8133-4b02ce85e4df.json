@@ -1,0 +1,114 @@
+{
+  "nom_commercial": "Dolyc",
+  "dosage": "1000MG",
+  "dci": "PARACETAMOL EXPRIMÉ EN PARACETAMOL",
+  "Interactions de Paracetamol": "Interactions de Paracetamol Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nB\n081",
+    "description": "Produits partageant le code DCI 03 B 081 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 11,
+    "produits": [
+      {
+        "dosage": "1000MG",
+        "id": "e13df44c-8bfe-4dcf-a411-49843102c8d8",
+        "laboratoire": "Sarl Alphacare",
+        "local": true,
+        "nom": "Antalgan",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1000MG",
+        "id": "3083bb01-cef3-4c42-aa22-95b20c714e21",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Doli-Bien",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1000MG",
+        "id": "f7956abc-3564-4bc6-aa02-4c85a9649220",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Expandol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1000MG",
+        "id": "cc60d7e1-bb30-4208-8550-4b0f0aee4705",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Paracetamol Physiopharm",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1000MG",
+        "id": "a158d87b-ae4c-4c37-bb1b-67ee8fa2af7c",
+        "laboratoire": "Rosaspharma",
+        "local": true,
+        "nom": "Rosadol",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1000MG",
+        "id": "fc05d976-7d83-43bf-acce-8505ff917f59",
+        "laboratoire": "Propharmal",
+        "local": true,
+        "nom": "Doliprane",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1000MG",
+        "id": "ae1633cd-6ac6-4a5a-80b8-adabeb93305b",
+        "laboratoire": "Lad Pharma",
+        "local": true,
+        "nom": "Migramol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1000MG",
+        "id": "3e8a8029-6a5e-4f2b-9b18-7ad85a009c9a",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Panadol 1g",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1000MG",
+        "id": "36f1310e-fb53-489d-8dbe-bfc6881fbb97",
+        "laboratoire": "Optipharm",
+        "local": true,
+        "nom": "Paracetol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1000MG",
+        "id": "4908f2bc-dafb-439b-86db-f2a132b82d3b",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Paralgan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "1000MG",
+        "id": "5122ef45-dadc-4977-8019-711048d90045",
+        "laboratoire": "Laboratoires Salem",
+        "local": true,
+        "nom": "Paramol",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

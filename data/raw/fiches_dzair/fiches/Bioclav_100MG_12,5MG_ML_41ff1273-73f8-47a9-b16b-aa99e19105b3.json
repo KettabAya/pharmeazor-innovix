@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Bioclav",
+  "dosage": "100MG/12,5MG/ML",
+  "dci": "AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE EXPRIMÉ EN AMOXICILLINE TRIHYDRATEE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE",
+  "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique": "Interactions de Amoxicilline Trihydratee Exprime En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n181",
+    "description": "Produits partageant le code DCI 13 G 181 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "100MG/12,5MG/ML",
+        "id": "224e2fb2-93c8-470f-bb67-cad28c4b263e",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Amoclan 8:1",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/12,5MG/ML",
+        "id": "bb350939-c8ab-40c3-8d58-53256fed3141",
+        "laboratoire": "Glaxosmithkline Algerie Spa",
+        "local": true,
+        "nom": "Augmentin Enfant Et Augmentin Nourrisson",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/12,5MG/ML",
+        "id": "e870ec3a-e572-4d32-b230-7bb01443a9a6",
+        "laboratoire": "Eurl Genis Pharmaceutique Et Parapharmaceutique",
+        "local": true,
+        "nom": "Clamoclav Enfant Et Nourrisson",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/12,5MG/ML",
+        "id": "61461f57-4698-47ea-8259-fb580d1550d1",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Clamoxypen Enfants",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/12,5MG/ML",
+        "id": "1ad5ccdc-5d10-4daa-b2fd-586113ebda05",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Clamoxypen Nourissons",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "100MG/12,5MG/ML",
+        "id": "db556e2f-feb0-49a0-8af7-4a2acebc1941",
+        "laboratoire": "Continental Pharm",
+        "local": true,
+        "nom": "Clavodex",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

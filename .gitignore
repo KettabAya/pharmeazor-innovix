@@ -3,17 +3,17 @@
 *.key
 credentials*.json
 
-# --- collected corpus (large, re-downloadable, licence-bound) ---
-data/raw/*
-data/interim/*
-data/processed/*
-!data/processed/cache.json
-!data/processed/call_counter.json
-!data/processed/documents_index.json
-!data/processed/embedding_ids.json
-!data/processed/passages.jsonl
-!data/processed/embeddings.npy
-!data/**/.gitkeep
+# --- corpus collecte ---
+# Decision d'equipe du 27/11/2026 : les donnees brutes sont versionnees avec
+# le code. Chacun retrouve le corpus par un clone, sans archive a s'echanger.
+#
+# Ce que cela coute : environ 1,3 Go, et un clone aussi lourd pour tout le
+# monde. Ce que cela evite : des dossiers vides apres un pull, et des chemins
+# qui ne correspondent a rien.
+#
+# Pour la base francaise, `data/reference/source_registry.yaml` note que la
+# licence des donnees brutes ne couvre pas les notices et RCP complets. A
+# verifier avant toute diffusion hors de l'equipe.
 .cache/
 
 # --- python ---

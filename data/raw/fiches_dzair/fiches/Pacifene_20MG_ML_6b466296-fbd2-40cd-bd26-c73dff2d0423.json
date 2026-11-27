@@ -1,0 +1,123 @@
+{
+  "nom_commercial": "Pacifene",
+  "dosage": "20MG/ML",
+  "dci": "IBUPROFENE EXPRIMÉ EN IBUPROFENE",
+  "Interactions de Ibuprofene": "Interactions de Ibuprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n042",
+    "description": "Produits partageant le code DCI 04 B 042 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 12,
+    "produits": [
+      {
+        "dosage": "20MG/ML",
+        "id": "5873c0d5-bc82-4513-8592-9d1c51215caa",
+        "laboratoire": "Laboratoires Pharmaghreb",
+        "local": true,
+        "nom": "Advifen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "1b6c7cee-91cc-4f23-8cec-9195f60aa277",
+        "laboratoire": "Generic Lab",
+        "local": true,
+        "nom": "Algifen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "ee74d4fe-0f6c-44e5-aebd-a1edb40bb014",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Antalfen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "58f4e36c-000c-4b30-aa40-4858db3cab15",
+        "laboratoire": "Physiopharm Laboratoires",
+        "local": true,
+        "nom": "Ardil",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "00c07487-745c-4c14-9b20-a56dc78d2ae5",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Calmofen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "0fce018f-016f-4fcc-9ac2-2d40f1f497ba",
+        "laboratoire": "Lad Pharma",
+        "local": true,
+        "nom": "Ibufen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "26f6deb6-1a81-429f-b8c2-44b7eb763aed",
+        "laboratoire": "Laboratoire Algerien Du Medicament (Lam)",
+        "local": true,
+        "nom": "Lamifene",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "52285338-8c88-48ae-8dd9-a807490a53de",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Narufene 2%",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "7c86a30b-d07e-4e7a-ad44-aae0354345cf",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Neupren",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "b342fba6-97ab-4e96-a72d-08afb6d0da29",
+        "laboratoire": "Afropharm Spa",
+        "local": true,
+        "nom": "Polyphene",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "e77ae8a0-c152-4198-b23c-3136425fb851",
+        "laboratoire": "Sarl Laboratoire Groupement Pharmaceutique Algerien",
+        "local": true,
+        "nom": "Rumifen",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "20MG/ML",
+        "id": "5c4dfcf2-f078-4c1c-bceb-5a8711f67ea5",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Xydol Enfants Et Nourrissons",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Profenid Lp",
+  "dosage": "200MG",
+  "dci": "KETOPROFENE EXPRIMÉ EN KETOPROFENE",
+  "Interactions de Ketoprofene": "Interactions de Ketoprofene Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n032",
+    "description": "Produits partageant le code DCI 04 B 032 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

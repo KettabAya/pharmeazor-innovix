@@ -1,0 +1,51 @@
+{
+  "nom_commercial": "Gripex Plus",
+  "dosage": "200MG/30MG",
+  "dci": "IBUPROFENE/PSEUDOEPHEDRINE CHLORHYDRATE EXPRIMÉ EN IBUPROFENE/PSEUDOEPHEDRINE CHLORHYDRATE",
+  "Interactions de Ibuprofene/Pseudoephedrine Chlorhydrate": "Interactions de Ibuprofene/Pseudoephedrine Chlorhydrate Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "22\nA\n043",
+    "description": "Produits partageant le code DCI 22 A 043 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 4,
+    "produits": [
+      {
+        "dosage": "200MG/30MG",
+        "id": "116b7948-4703-4b9e-8ecb-c3a6a612ff68",
+        "laboratoire": "Tassili Arab Pharmaceutical Co",
+        "local": true,
+        "nom": "Ibupso 200/30",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG/30MG",
+        "id": "30cf28bd-2d07-405a-a850-38a1455fcfed",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Rhinedal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG/30MG",
+        "id": "e8919d28-620f-4644-923d-73d071b0cb18",
+        "laboratoire": "Laboratoire Algerien Du Medicament (Lam)",
+        "local": true,
+        "nom": "Rhumolam",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "200MG/30MG",
+        "id": "e8540f8f-ed28-4565-96f0-e8fc6afdcf42",
+        "laboratoire": "Laboratoires Merinal",
+        "local": true,
+        "nom": "Xydol Rhume",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

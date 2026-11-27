@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Bioclav",
+  "dosage": "1G/200MG",
+  "dci": "AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE EXPRIMÉ EN AMOXICILLINE SODIQUE EXPRIME EN AMOXICILLINE/ACIDE CLAVULANIQUE POTASSIQUE EXPRIME EN ACIDE CLAVULANIQUE",
+  "Interactions de Amoxicilline Sodique Exprime En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique": "Interactions de Amoxicilline Sodique Exprime En Amoxicilline/Acide Clavulanique Potassique Exprime En Acide Clavulanique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nG\n182",
+    "description": "Produits partageant le code DCI 13 G 182 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "1G/200MG",
+        "id": "3ff2660b-8e7e-4f2e-9120-db933e73ebd8",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Clamoxypen",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

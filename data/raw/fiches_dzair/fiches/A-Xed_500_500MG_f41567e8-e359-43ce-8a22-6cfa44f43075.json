@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "A-Xed 500",
+  "dosage": "500MG",
+  "dci": "PEMETREXED DISODIQUE HEMIPENTAHYDRATE EXPRIME EN PEMETREXED EXPRIMÉ EN PEMETREXED DISODIQUE HEMIPENTAHYDRATE EXPRIME EN PEMETREXED",
+  "Interactions de Pemetrexed Disodique Hemipentahydrate Exprime En Pemetrexed": "Interactions de Pemetrexed Disodique Hemipentahydrate Exprime En Pemetrexed Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "05\nG\n102",
+    "description": "Produits partageant le code DCI 05 G 102 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "18cd6fcf-9b8e-44ba-a2b8-70eee7ffcc46",
+        "laboratoire": "Alfacare",
+        "local": true,
+        "nom": "Pemetrexed Alfacare",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "b86ab595-e57e-4022-9a67-3e730227e58b",
+        "laboratoire": "Groupe Saidal",
+        "local": true,
+        "nom": "Pemetrexed-Saidal",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "92ad54ea-fa59-4c35-8a5c-c9f917ee35c2",
+        "laboratoire": "Bdr Pharmaceuticals International Pvt Ltd",
+        "local": false,
+        "nom": "Bdpem",
+        "pays": "Inde",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "2ecef5a1-5329-4f59-9c48-733876e7e31b",
+        "laboratoire": "Intas Pharmaceuticals Limited",
+        "local": false,
+        "nom": "Pemetrexed Intas",
+        "pays": "Inde",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "0a0fa03a-ee7c-4792-b54f-9ba3706684b1",
+        "laboratoire": "Dr.reddy'S Laboratories Limited",
+        "local": false,
+        "nom": "Podoxred",
+        "pays": "Inde",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "993a9646-4105-4705-9c79-26bad141d7f9",
+        "laboratoire": "Mustafa Nevzat Ilaç Sanayii A.ş",
+        "local": false,
+        "nom": "Prexet",
+        "pays": "Turquie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

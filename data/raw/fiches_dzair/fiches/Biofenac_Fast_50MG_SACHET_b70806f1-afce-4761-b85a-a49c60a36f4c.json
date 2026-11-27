@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Biofenac Fast",
+  "dosage": "50MG/SACHET",
+  "dci": "DICLOFENAC POTASSIUM EXPRIMÉ EN DICLOFENAC POTASSIUM",
+  "Interactions de Diclofenac Potassium": "Interactions de Diclofenac Potassium Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "04\nB\n073",
+    "description": "Produits partageant le code DCI 04 B 073 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "50MG/SACHET",
+        "id": "e0a8d70a-085b-4728-a2a0-a9d4f785936a",
+        "laboratoire": "Hikma Pharma Algeria",
+        "local": true,
+        "nom": "Votrex Rapid",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

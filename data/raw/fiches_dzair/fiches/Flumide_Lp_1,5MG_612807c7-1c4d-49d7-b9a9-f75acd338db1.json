@@ -1,0 +1,42 @@
+{
+  "nom_commercial": "Flumide Lp",
+  "dosage": "1,5MG",
+  "dci": "INDAPAMIDE EXPRIMÉ EN INDAPAMIDE",
+  "Interactions de Indapamide": "Interactions de Indapamide Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nH\n163",
+    "description": "Produits partageant le code DCI 06 H 163 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 3,
+    "produits": [
+      {
+        "dosage": "1,5MG",
+        "id": "5ffd5530-c2ce-47bf-84ae-6214f0655da4",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Adex Lp",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1,5MG",
+        "id": "61483f13-108f-4625-848b-4fa1fe4abec0",
+        "laboratoire": "Les Laboratoires Servier",
+        "local": true,
+        "nom": "Fludex Lp",
+        "pays": "France",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "1,5MG",
+        "id": "eb6b62c9-71c6-473b-83e9-7626ecdf2c7f",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Indapamide Beker Lp",
+        "pays": "Algérie",
+        "substituable_indique": true
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

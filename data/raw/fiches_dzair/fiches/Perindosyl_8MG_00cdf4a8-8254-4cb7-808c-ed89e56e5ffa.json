@@ -1,0 +1,24 @@
+{
+  "nom_commercial": "Perindosyl",
+  "dosage": "8MG",
+  "dci": "PERINDOPRIL TER-BUTYLAMINE EXPRIMÉ EN PERINDOPRIL TER-BUTYLAMINE",
+  "Interactions de Perindopril Ter-Butylamine": "Interactions de Perindopril Ter-Butylamine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n246",
+    "description": "Produits partageant le code DCI 06 E 246 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 1,
+    "produits": [
+      {
+        "dosage": "8MG",
+        "id": "5a8d5f41-ed92-4b39-9df3-34725be7aedb",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Perindopril Beker",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

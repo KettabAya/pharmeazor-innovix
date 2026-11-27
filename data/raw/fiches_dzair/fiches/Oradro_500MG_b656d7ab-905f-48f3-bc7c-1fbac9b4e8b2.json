@@ -1,0 +1,87 @@
+{
+  "nom_commercial": "Oradro",
+  "dosage": "500MG",
+  "dci": "CLARITHROMYCINE EXPRIMÉ EN CLARITHROMYCINE",
+  "Interactions de Clarithromycine": "Interactions de Clarithromycine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "13\nE\n215",
+    "description": "Produits partageant le code DCI 13 E 215 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 8,
+    "produits": [
+      {
+        "dosage": "500MG",
+        "id": "8d5cbfca-8dc0-458c-b528-5f560932c38a",
+        "laboratoire": "El Kendi Industrie Du Medicament",
+        "local": true,
+        "nom": "Ariclare",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "b111c334-6fc1-44ed-ace7-bbc570228e60",
+        "laboratoire": "Dar Al Dawa",
+        "local": true,
+        "nom": "Claridar 500",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "61968563-ccf8-44c6-8cdd-13f03c55ede2",
+        "laboratoire": "Societe Pharmaceutique Algerienne Sophal",
+        "local": true,
+        "nom": "Clarital",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "8e1082bc-d832-4eba-a20b-896b856f8fd8",
+        "laboratoire": "Biogalenic",
+        "local": true,
+        "nom": "Clarithro",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "badf2d26-b80b-4fc7-9bba-60d312847dac",
+        "laboratoire": "Pharmidal Ns",
+        "local": true,
+        "nom": "Clarithromycine Ns",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "a8536437-5040-4f8b-9e71-036bf8ffc470",
+        "laboratoire": "Pharmalliance",
+        "local": true,
+        "nom": "Ritocine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "500MG",
+        "id": "c727e779-bf3c-4cd2-af56-950d7efcf5d9",
+        "laboratoire": "Janis Med Sarl",
+        "local": true,
+        "nom": "Medoclar",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "500MG",
+        "id": "56fdd5b4-0218-485d-a277-ab820d4d1e09",
+        "laboratoire": "Abbott Products Sas",
+        "local": false,
+        "nom": "Zeclar",
+        "pays": "France",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

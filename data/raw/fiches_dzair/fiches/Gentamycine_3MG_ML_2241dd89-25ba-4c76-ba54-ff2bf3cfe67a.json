@@ -1,0 +1,60 @@
+{
+  "nom_commercial": "Gentamycine",
+  "dosage": "3MG/ML",
+  "dci": "GENTAMICINE** (SOUS FORME DE SULFATE) EXPRIMÉ EN GENTAMICINE** (SOUS FORME DE SULFATE)",
+  "Interactions de Gentamicine** (Sous Forme De Sulfate)": "Interactions de Gentamicine** (Sous Forme De Sulfate) Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "17\nD\n020",
+    "description": "Produits partageant le code DCI 17 D 020 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 5,
+    "produits": [
+      {
+        "dosage": "3MG/ML",
+        "id": "647b2933-c042-4ce9-9395-26de1505d71f",
+        "laboratoire": "Biothera",
+        "local": true,
+        "nom": "Gentheraxine",
+        "pays": "Algérie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "3MG/ML",
+        "id": "d1c7cf53-f913-4744-a1d7-1d710884f2b1",
+        "laboratoire": "Amman Pharmaceutical Industrie",
+        "local": false,
+        "nom": "Apigen",
+        "pays": "Jordanie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "3MG/ML",
+        "id": "0c7a16d9-ae6c-49e7-bbde-4ee660358497",
+        "laboratoire": "Lek",
+        "local": false,
+        "nom": "Gentalex",
+        "pays": "Slovenie",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "3MG/ML**",
+        "id": "28d9be55-2e2f-4522-8db0-02e6af84ffcc",
+        "laboratoire": "Joras Pharmaceutical S.p.a.",
+        "local": true,
+        "nom": "Gentadar",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "3MG/ML (0,3%)",
+        "id": "012295c6-5152-48f3-b96e-e82783f048e9",
+        "laboratoire": "Groupement Pharmaceutique Algerien (Gpa)",
+        "local": false,
+        "nom": "Gentocil",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

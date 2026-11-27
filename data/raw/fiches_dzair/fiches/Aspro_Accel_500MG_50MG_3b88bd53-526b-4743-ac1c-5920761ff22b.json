@@ -1,0 +1,14 @@
+{
+  "nom_commercial": "Aspro Accel",
+  "dosage": "500MG/50MG",
+  "dci": "ACIDE ACETYLSALICYLIQUE/CAFEINE EXPRIMÉ EN ACIDE ACETYLSALICYLIQUE/CAFEINE",
+  "Interactions de Acide Acetylsalicylique/Cafeine": "Interactions de Acide Acetylsalicylique/Cafeine Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "03\nA\n102",
+    "description": "Produits partageant le code DCI 03 A 102 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 0,
+    "produits": [],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}

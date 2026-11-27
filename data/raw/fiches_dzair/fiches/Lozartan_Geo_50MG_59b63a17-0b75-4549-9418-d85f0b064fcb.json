@@ -1,0 +1,69 @@
+{
+  "nom_commercial": "Lozartan Geo",
+  "dosage": "50MG",
+  "dci": "LOSARTAN POTASSIQUE EXPRIMÉ EN LOSARTAN POTASSIQUE",
+  "Interactions de Losartan Potassique": "Interactions de Losartan Potassique Réservé aux professionnels de santé Le détail des interactions est accessible aux médecins et pharmaciens inscrits, après vérification du numéro d'inscription à l'Ordre.",
+  "Équivalents thérapeutiques": {
+    "code_dci": "06\nE\n126",
+    "description": "Produits partageant le code DCI 06 E 126 . La barre verte signale un dosage et une forme identiques. La substitution reste soumise à l'appréciation du pharmacien.",
+    "nombre_produits": 6,
+    "produits": [
+      {
+        "dosage": "50MG",
+        "id": "05d8da8e-e033-43ac-8938-d68b601dafef",
+        "laboratoire": "Organon N.v.",
+        "local": true,
+        "nom": "Cozzar",
+        "pays": "Pays Bas",
+        "substituable_indique": true
+      },
+      {
+        "dosage": "50MG",
+        "id": "27ec15ec-e618-49a5-8766-39d9f17f33ab",
+        "laboratoire": "Neomedic",
+        "local": true,
+        "nom": "Angizar",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "50MG",
+        "id": "20e86aa4-5031-4f38-8399-11a49b73b9ec",
+        "laboratoire": "Laboratoires Beker",
+        "local": true,
+        "nom": "Bektal",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "50MG",
+        "id": "778b638e-2efe-404a-ac1e-d04c4af2d1f2",
+        "laboratoire": "Nadpharmadic-Production",
+        "local": true,
+        "nom": "Hysartan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "50MG",
+        "id": "992969ce-cc50-46ee-ae41-30c245151b26",
+        "laboratoire": "Laboratoires De Diagnostic Maghrebins-Ldm",
+        "local": true,
+        "nom": "Lazartan",
+        "pays": "Algérie",
+        "substituable_indique": false
+      },
+      {
+        "dosage": "50MG",
+        "id": "f78fe76a-9411-4121-9da8-8ba256a04e45",
+        "laboratoire": "Inpha-Medis",
+        "local": true,
+        "nom": "Norta",
+        "pays": "Algérie",
+        "substituable_indique": false
+      }
+    ],
+    "titre": "Équivalents thérapeutiques",
+    "section_trouvee": true
+  }
+}
