@@ -1,0 +1,12 @@
+{
+  "source_id": "ansm_bdpm",
+  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69875082/extrait",
+  "authority": "INSTITUTIONAL",
+  "collected_at": "2026-11-26",
+  "language": "fr",
+  "country": "FR",
+  "product": "CLARITHROMYCINE ARROW 25 mg/mL, granulés pour suspension buvable",
+  "dci": "clarithromycine",
+  "cis_code": "69875082",
+  "document_type": "notice"
+}
