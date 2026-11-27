@@ -70,7 +70,6 @@ pip install -r requirements.lock.txt
 pip install -e . --no-deps
 ```
 
-> Première fois avec git ? [Le guide en quatre commandes](docs/GIT-POUR-DEBUTER.md).
 
 
 > **Toute l'équipe installe depuis `requirements.lock.txt`**, qui fige les
@@ -142,7 +141,7 @@ Du plus fiable au moins fiable. En cas de contradiction, le rang supérieur l'em
 | 1 | Pharm'Net, MEDAlgérie, dzair-pharma | manuel | non officielles, toujours signalées comme telles |
 | 0 | Forums, blogs, réseaux sociaux | interdit | écartés du corpus |
 
-Le registre vit dans [`data/reference/source_registry.yaml`](data/reference/source_registry.yaml) et il est **appliqué par le code** : `assert_collectable()` refuse toute collecte automatique sur une source dont le `robots.txt` et les CGU n'ont pas été consignés dans [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md).
+Le registre vit dans [`data/reference/source_registry.yaml`](data/reference/source_registry.yaml) et il est **appliqué par le code** : `assert_collectable()` refuse toute collecte automatique sur une source dont le `robots.txt` et les CGU n'ont pas été consignés. Les relevés bruts de `robots.txt` et des conditions d'utilisation, datés, sont dans [`docs/conformite/`](docs/conformite/).
 
 ---
 
@@ -189,7 +188,7 @@ pharmeazor/
 
 ## Évaluation
 
-Le projet est noté sur des **chiffres**, pas sur des impressions. Chaque comparaison garde sa trace dans [`docs/EVALUATION.md`](docs/EVALUATION.md) : tableau avant/après, méthode, échantillon.
+Le projet est noté sur des **chiffres**, pas sur des impressions. Chaque comparaison garde sa trace dans [`eval/`](eval/) : tableau avant/après, méthode, échantillon.
 
 Mesures suivies :
 
@@ -215,13 +214,12 @@ Le système aide à **retrouver et contrôler** l'information. La décision rest
 
 ## Documentation
 
-- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — les choix techniques et pourquoi
-- [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) — registre des sources, `robots.txt` et CGU consignés
-- [`docs/RAPPORT-SEMAINE-1.md`](docs/RAPPORT-SEMAINE-1.md) — **le rapport complet** : ce qui a été trouvé, comment c'est traité, les chiffres
-- [`docs/MISSION.md`](docs/MISSION.md) — la mission, la question-test et le protocole du test du modèle seul
-- [`docs/JOURNAL-TRAITEMENT.md`](docs/JOURNAL-TRAITEMENT.md) — ce que l'examen des sources a révélé, avec la mesure et la décision
-- [`docs/EVALUATION.md`](docs/EVALUATION.md) — protocole et résultats chiffrés
-- [`docs/SEMAINE-2.md`](docs/SEMAINE-2.md) — le plan de la semaine 2 : recherche par le sens
+- [`DOSSIER-DE-PREUVES.md`](DOSSIER-DE-PREUVES.md) — contribution par personne et volumes produits, relevés à l'exécution
+- [`data/reference/source_registry.yaml`](data/reference/source_registry.yaml) — le registre des sources, appliqué par le code
+- [`docs/conformite/`](docs/conformite/) — les relevés de `robots.txt` et des conditions d'utilisation, datés
+- [`eval/`](eval/) — le jeu de questions annotées et les résultats chiffrés
+- [`explorations/`](explorations/) — les carnets qui montrent le traitement étape par étape
+- [`journal_traitement.ipynb`](journal_traitement.ipynb) — le journal du traitement, exécutable
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — conventions de branche, de commit et de revue
 
 ---
