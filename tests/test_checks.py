@@ -58,15 +58,13 @@ class TestNumbers:
         assert "900" in result.reason
 
     def test_spelled_out_dose_is_checked_too(self):
-        """"quatre grammes" must not slip through just because it has no digit."""
+        """ "quatre grammes" must not slip through just because it has no digit."""
         result = check_numbers("Ne pas dépasser quatre grammes par jour.", [_citation()])
         assert result.verdict is Verdict.BLOCK
 
     def test_counting_words_are_not_doses(self):
         """Blocked a correct answer on 27/11/2026: "entre deux prises" -> "2 prise"."""
-        result = check_numbers(
-            "Attendre au moins 4 heures entre deux prises.", [_citation()]
-        )
+        result = check_numbers("Attendre au moins 4 heures entre deux prises.", [_citation()])
         assert result.verdict is Verdict.PASS
 
 

@@ -29,7 +29,6 @@ __all__ = [
 
 
 class Verdict(Enum):
-
     PASS = "pass"
     FLAG = "flag"
     BLOCK = "block"
@@ -37,7 +36,6 @@ class Verdict(Enum):
 
 @dataclass(frozen=True)
 class CheckResult:
-
     verdict: Verdict
     reason: str
 
@@ -77,9 +75,7 @@ def check_sources_present(
             "sans le passage qui la porte.",
         )
 
-    return CheckResult(
-        Verdict.PASS, f"Sources citées : {len(citations)} passage(s)."
-    )
+    return CheckResult(Verdict.PASS, f"Sources citées : {len(citations)} passage(s).")
 
 
 # We have 5 sections only. Price is not one of them.
@@ -88,26 +84,51 @@ def check_sources_present(
 # in the corpus. So search does not stop it. We stop it here.
 HORS_PERIMETRE: dict[str, tuple[str, ...]] = {
     "le prix": (
-        "prix", "tarif", "cout", "coute", "combien coute",
-        "remboursement", "rembourse",
-        "price", "retail", "cost", "how much", "pay",   
+        "prix",
+        "tarif",
+        "cout",
+        "coute",
+        "combien coute",
+        "remboursement",
+        "rembourse",
+        "price",
+        "retail",
+        "cost",
+        "how much",
+        "pay",
     ),
     "la disponibilité en pharmacie": (
-        "en stock", "disponible en pharmacie", "ou acheter", "ou trouver",
+        "en stock",
+        "disponible en pharmacie",
+        "ou acheter",
+        "ou trouver",
         "rupture de stock",
-        "available", "in stock", "near me", "pharmacy near",  
+        "available",
+        "in stock",
+        "near me",
+        "pharmacy near",
     ),
     "les conditions de délivrance": (
-        "ordonnance obligatoire", "sans ordonnance",
-        "prescription required", "over the counter",  
-        "je dois prendre", "dois-je prendre", "quel médicament prendre",
-        "que prendre", "conseillez-moi", "conseil personnalisé",
-        "which should i take", "which one should i take",
-        "which antibiotic should a patient", "which antihypertensive",
-        "best for a specific patient", "best for a particular patient",
-        "which is best for", "what should a patient take",
-        "which antibiotic should a particular patient",   
-        "which antibiotic should a specific patient", 
+        "ordonnance obligatoire",
+        "sans ordonnance",
+        "prescription required",
+        "over the counter",
+        "je dois prendre",
+        "dois-je prendre",
+        "quel médicament prendre",
+        "que prendre",
+        "conseillez-moi",
+        "conseil personnalisé",
+        "which should i take",
+        "which one should i take",
+        "which antibiotic should a patient",
+        "which antihypertensive",
+        "best for a specific patient",
+        "best for a particular patient",
+        "which is best for",
+        "what should a patient take",
+        "which antibiotic should a particular patient",
+        "which antibiotic should a specific patient",
     ),
 }
 
@@ -195,9 +216,7 @@ def check_budget() -> CheckResult:
             f"Budget d'appels presque atteint : {appels}/{MAX_LLM_CALLS}.",
         )
 
-    return CheckResult(
-        Verdict.PASS, f"Appels au modèle : {appels}/{MAX_LLM_CALLS}."
-    )
+    return CheckResult(Verdict.PASS, f"Appels au modèle : {appels}/{MAX_LLM_CALLS}.")
 
 
 def run_all(

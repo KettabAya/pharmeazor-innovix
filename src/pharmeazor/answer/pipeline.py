@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from pharmeazor.answer.checks import run_all, Verdict
+from pharmeazor.answer.checks import Verdict, run_all
 from pharmeazor.answer.llm_client import ask_llm
 from pharmeazor.registry import interactions_of, resolve_drug
 from pharmeazor.retrieve.bm25 import load_passages_index
@@ -53,10 +53,7 @@ def retrieve(question: str, drug_ids: list[str], top_k: int = 5) -> list[dict]:
 
 def generate_answer(question: str, passages: list[dict], interactions: list[dict]) -> str:
     pt = "\n\n".join(f"[{i + 1}] {p['text'][:400]}" for i, p in enumerate(passages))
-    it = "\n".join(
-        f"- {r['inn']} + {r['substance_cible']}: {r['niveau']}"
-        for r in interactions
-    )
+    it = "\n".join(f"- {r['inn']} + {r['substance_cible']}: {r['niveau']}" for r in interactions)
     prompt = f"""Answer ONLY from the passages below. If not in passages, say
 "{REFUSAL}". Cite [n] for each fact.
 
@@ -115,10 +112,7 @@ def format_answer(question: str, answer_text: str, passages: list[dict], results
             }
             for p in passages
         ],
-        "checks": [
-            {"verdict": r.verdict.value, "reason": r.reason}
-            for r in results
-        ],
+        "checks": [{"verdict": r.verdict.value, "reason": r.reason} for r in results],
     }
 
 
