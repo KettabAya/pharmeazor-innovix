@@ -1,4 +1,4 @@
-.PHONY: help install dev test lint fmt cov serve collect index eval clean
+.PHONY: help install dev test lint fmt cov serve collect index eval tout clean
 
 help:
 	@echo "install  - install runtime dependencies"
@@ -11,6 +11,7 @@ help:
 	@echo "collect  - fetch the corpus (respects the source registry)"
 	@echo "index    - build the retrieval index"
 	@echo "eval     - replay the evaluation set and print the figures"
+	@echo "tout     - replay the WHOLE chain: tables, passages, index, measures"
 
 install:
 	pip install -r requirements.txt
@@ -41,6 +42,12 @@ index:
 
 eval:
 	python scripts/run_eval.py
+
+# Toute la chaine, des sources brutes aux mesures, dans l'ordre ou les etapes
+# se nourrissent. La premiere qui echoue arrete tout. Voir les etapes sans
+# rien executer :  python scripts/rejouer_tout.py --lister
+tout:
+	python scripts/rejouer_tout.py
 
 clean:
 	rm -rf .pytest_cache .ruff_cache .coverage htmlcov build dist

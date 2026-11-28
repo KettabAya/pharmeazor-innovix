@@ -168,6 +168,7 @@ def main() -> int:
 
     index: dict[str, dict] = {}
     skipped: list[str] = []
+    hors_perimetre: list[str] = []
     ambigus: list[str] = []
 
     for sf in section_files:
@@ -179,7 +180,9 @@ def main() -> int:
             skipped.append(f"{doc}: no rule matched (add a rule in {RULES_FILE})")
             continue
         if drug is None:
-            skipped.append(f"{doc}: no drug matched in {DRUGS_CSV}")
+            # Pas une erreur : le document parle d'une molécule que le
+            # catalogue ne couvre pas. Le signaler, sans arrêter la chaîne.
+            hors_perimetre.append(doc)
             continue
 
         extra = next(
@@ -218,6 +221,12 @@ def main() -> int:
         print("\nPlusieurs produits portaient le meme nom (le choix est partiel) :")
         for line in ambigus:
             print("  -", line)
+
+    if hors_perimetre:
+        print(f"\nHors du perimetre des {len({d['dci'] for d in index.values()})} molecules "
+              f"du catalogue, donc non indexes :")
+        for doc in hors_perimetre:
+            print("  -", doc)
 
     if skipped:
         print("\nNOT indexed (fix these):")
