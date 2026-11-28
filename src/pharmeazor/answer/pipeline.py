@@ -5,7 +5,7 @@ from pathlib import Path
 
 from pharmeazor.answer.checks import Verdict, run_all
 from pharmeazor.answer.llm_client import ask_llm
-from pharmeazor.registry import interactions_of, resolve_drug
+from pharmeazor.registry import interactions_of, resolve_dci, resolve_drug_ids
 from pharmeazor.retrieve.bm25 import load_passages_index
 
 PASSAGES_ALL = Path("data/processed/passages_all.jsonl")
@@ -31,19 +31,56 @@ If no drug, use empty list. If personal recommendation, use "other"."""
 
 
 def resolve_drugs(drug_names: list[str]) -> list[str]:
-    return [d for d in (resolve_drug(n) for n in drug_names) if d]
+    """Tous les identifiants que portent ces noms, pas seulement le premier.
+
+    DOLIPRANE désigne sept produits ; n'en garder qu'un fait disparaître du
+    filtre les passages des six autres.
+    """
+    ids: list[str] = []
+    for nom in drug_names:
+        for drug_id in resolve_drug_ids(nom):
+            if drug_id not in ids:
+                ids.append(drug_id)
+    return ids
 
 
-def retrieve(question: str, drug_ids: list[str], top_k: int = 5) -> list[dict]:
+def resolve_substances(drug_names: list[str]) -> list[str]:
+    """Les substances derrière ces noms, en minuscules."""
+    return [dci.lower() for dci in (resolve_dci(n) for n in drug_names) if dci]
+
+
+def _concerne(p: dict, drug_ids: list[str], substances: list[str]) -> bool:
+    """Ce passage parle-t-il bien du médicament demandé ?
+
+    Seuls les passages tirés des RCP portent un ``drug_id`` : ceux de la base
+    française et du registre, qui font 88 % du corpus, n'en ont pas et ne
+    peuvent en avoir, puisqu'ils décrivent une substance et non une ligne
+    précise du catalogue. Filtrer sur le seul identifiant les écarte tous.
+    """
+    if p.get("drug_id"):
+        return p["drug_id"] in drug_ids
+    if not substances:
+        return False
+    dci = (p.get("dci") or p.get("molecule") or "").lower()
+    return any(s in dci or dci in s for s in substances if dci)
+
+
+def retrieve(
+    question: str,
+    drug_ids: list[str],
+    top_k: int = 5,
+    substances: list[str] | None = None,
+) -> list[dict]:
     idx = load_passages_index()
     by_id = load_passages_by_id()
     results = idx.search(question, top_k=top_k * 3)
+    substances = substances or []
     out: list[dict] = []
     for r in results:
         p = by_id.get(str(r.passage_id))
         if not p:
             continue
-        if drug_ids and p.get("drug_id") not in drug_ids:
+        if drug_ids and not _concerne(p, drug_ids, substances):
             continue
         out.append({**p, "score": r.score})
         if len(out) >= top_k:
@@ -121,11 +158,13 @@ def answer(question: str) -> dict:
     drug_names = extracted.get("drugs", []) or []
 
     drug_ids = resolve_drugs(drug_names)
+    substances = resolve_substances(drug_names)
 
     print("EXTRACTED DRUGS:", drug_names)
     print("RESOLVED DRUG IDS:", drug_ids)
+    print("RESOLVED SUBSTANCES:", substances)
 
-    passages = retrieve(question, drug_ids)
+    passages = retrieve(question, drug_ids, substances=substances)
 
     print("RETRIEVED PASSAGES:", len(passages))
 

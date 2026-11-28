@@ -16,6 +16,8 @@ from pathlib import Path
 
 __all__ = [
     "resolve_drug",
+    "resolve_drug_ids",
+    "resolve_dci",
     "get_drug",
     "interactions_of",
     "equivalents_of",
@@ -34,18 +36,75 @@ def _table(nom: str) -> tuple[dict[str, str], ...]:
         return tuple(csv.DictReader(fichier))
 
 
-def resolve_drug(name: str) -> str | None:
-    """Brand name or DCI -> drug_id.
+#: Les alias qui nomment vraiment un produit, du plus précis au moins précis.
+#: Un code de registre n'en est pas un : il désigne une forme, pas un produit.
+_ORDRE_DES_ALIAS = ("brand", "inn", "registration", "code")
 
-    The name index holds every way a product is written: brand, DCI, and the
-    spellings the registry itself uses.
-    """
+
+#: Un alias plus court ne distingue rien : il vient d'un code de registre dont
+#: la normalisation n'a laissé qu'une lettre, et il désignerait des centaines
+#: de produits. Le catalogue ne les écrit plus, mais une table déjà produite
+#: peut encore en contenir, alors on les ignore aussi à la lecture.
+LONGUEUR_ALIAS_MINIMALE = 3
+
+
+def _lignes_pour(name: str) -> list[dict[str, str]]:
+    """Les lignes du name_index qui portent ce nom, les plus précises d'abord."""
     cherche = (name or "").strip().lower()
-    if not cherche:
-        return None
-    for ligne in _table("name_index"):
-        if ligne["alias_normalized"].lower() == cherche:
-            return ligne["drug_id"]
+    if len(cherche) < LONGUEUR_ALIAS_MINIMALE:
+        return []
+    trouvees = [
+        ligne
+        for ligne in _table("name_index")
+        if ligne["alias_normalized"].lower() == cherche
+        and len(ligne["alias_normalized"].strip()) >= LONGUEUR_ALIAS_MINIMALE
+    ]
+
+    def rang(ligne: dict[str, str]) -> int:
+        kind = (ligne.get("kind") or "").lower()
+        return _ORDRE_DES_ALIAS.index(kind) if kind in _ORDRE_DES_ALIAS else len(_ORDRE_DES_ALIAS)
+
+    return sorted(trouvees, key=rang)
+
+
+def resolve_drug_ids(name: str) -> list[str]:
+    """Brand name or DCI -> every drug_id written that way.
+
+    Un nom commercial désigne souvent plusieurs produits : DOLIPRANE est un
+    comprimé, une suspension buvable, un suppositoire, chacun avec son
+    identifiant. Rendre le premier venu revient à en choisir un au hasard, et
+    tout ce qui filtre là-dessus écarte alors les bons passages. Les voici donc
+    tous, sans ordre de préférence autre que la précision de l'alias.
+    """
+    vus: list[str] = []
+    for ligne in _lignes_pour(name):
+        if ligne["drug_id"] not in vus:
+            vus.append(ligne["drug_id"])
+    return vus
+
+
+def resolve_drug(name: str) -> str | None:
+    """Brand name or DCI -> one drug_id, the most precisely named.
+
+    Gardée pour le code qui n'attend qu'un identifiant. Quand le nom en désigne
+    plusieurs, c'est :func:`resolve_drug_ids` qu'il faut appeler : ici, le choix
+    ne peut être que partiellement fondé.
+    """
+    ids = resolve_drug_ids(name)
+    return ids[0] if ids else None
+
+
+def resolve_dci(name: str) -> str | None:
+    """Brand name or DCI -> the substance, which a brand never ambiguates.
+
+    Un nom commercial peut couvrir dix présentations ; toutes partagent leur
+    substance. C'est la seule identité qu'on puisse tirer d'un nom sans
+    risquer de se tromper de produit — et la seule que portent les passages
+    venus de la base française ou du registre.
+    """
+    for ligne in _lignes_pour(name):
+        if ligne.get("inn"):
+            return ligne["inn"]
     return None
 
 

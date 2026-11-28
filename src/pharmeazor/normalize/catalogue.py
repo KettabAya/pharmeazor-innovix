@@ -325,8 +325,21 @@ class Catalogue:
 
     # ---------------------------------------------------------------- indexes
 
+    #: Un alias plus court que cela ne distingue rien.
+    #:
+    #: Les codes du registre s'écrivent ``03 B 005`` : la normalisation retire
+    #: les chiffres et il ne reste que ``b``, qui désignerait alors 718
+    #: produits. Une recherche sur une telle clé ne peut que se tromper, et le
+    #: premier résultat venu passerait pour le bon.
+    LONGUEUR_ALIAS_MINIMALE = 3
+
     def aliases(self) -> list[NameAlias]:
-        """Every written form that should resolve to a product."""
+        """Every written form that should resolve to a product.
+
+        Une forme qui, une fois normalisée, tient en une ou deux lettres est
+        écartée : elle ne vient jamais d'un nom de médicament, seulement d'un
+        code dont la normalisation n'a rien laissé.
+        """
         out: list[NameAlias] = []
         seen: set[tuple[str, str]] = set()
         for product in self.products:
@@ -342,11 +355,14 @@ class Catalogue:
                 key = (raw.upper(), product.drug_id)
                 if key in seen:
                     continue
+                normalise = normalize(raw) or raw.upper()
+                if len(normalise) < self.LONGUEUR_ALIAS_MINIMALE:
+                    continue
                 seen.add(key)
                 out.append(
                     NameAlias(
                         alias=raw,
-                        alias_normalized=normalize(raw) or raw.upper(),
+                        alias_normalized=normalise,
                         kind=kind,
                         drug_id=product.drug_id,
                     )

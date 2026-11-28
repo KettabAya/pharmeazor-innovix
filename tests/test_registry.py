@@ -7,7 +7,9 @@ from pharmeazor.registry import (
     equivalents_of,
     get_drug,
     interactions_of,
+    resolve_dci,
     resolve_drug,
+    resolve_drug_ids,
 )
 
 # MIBRAL is amlodipine. Chosen because it has aliases, interactions and an
@@ -31,6 +33,43 @@ class TestResolveDrug:
     def test_empty_name_gives_none(self):
         assert resolve_drug("") is None
         assert resolve_drug(None) is None
+
+    def test_a_one_letter_name_resolves_to_nothing(self):
+        # Les codes du registre s'écrivent « 03 B 005 » ; normalisés, il n'en
+        # reste que « b », qui désignait 718 produits. Une telle clé ne peut
+        # que se tromper, alors elle ne résout plus rien.
+        for lettre in ("b", "e", "f", "k"):
+            assert resolve_drug(lettre) is None
+            assert resolve_drug_ids(lettre) == []
+
+
+class TestResolveDrugIds:
+    def test_a_name_gives_every_product_that_bears_it(self):
+        # DOLIPRANE est un comprimé, une suspension, un suppositoire : sept
+        # produits. N'en rendre qu'un ferait disparaître les six autres de
+        # tout filtre bâti là-dessus.
+        ids = resolve_drug_ids("DOLIPRANE")
+        assert len(ids) > 1
+        assert len(ids) == len(set(ids))
+
+    def test_the_first_is_the_one_resolve_drug_gives(self):
+        assert resolve_drug("MIBRAL") == resolve_drug_ids("MIBRAL")[0]
+
+    def test_unknown_name_gives_an_empty_list(self):
+        assert resolve_drug_ids("ZZZ-PAS-UN-MEDICAMENT") == []
+
+
+class TestResolveDci:
+    def test_a_brand_gives_its_substance(self):
+        assert resolve_dci("DOLIPRANE") == "PARACETAMOL"
+
+    def test_the_substance_is_the_same_for_every_presentation(self):
+        # Ce que le nom commercial ne tranche pas, la substance le tranche :
+        # c'est la seule identité qu'un nom donne sans risque d'erreur.
+        assert resolve_dci("doliprane") == resolve_dci("DOLIPRANE")
+
+    def test_unknown_name_gives_none(self):
+        assert resolve_dci("ZZZ-PAS-UN-MEDICAMENT") is None
 
 
 class TestGetDrug:
