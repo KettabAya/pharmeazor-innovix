@@ -13,11 +13,38 @@ MODEL_NAME = "intfloat/multilingual-e5-base"
 
 
 class EmbIndex:
+    def _cache_utilisable(self) -> bool:
+        """Le cache a-t-il été calculé sur ce corpus-ci ?
+
+        ``search`` lit ``self.passages[i]`` avec un indice venu de la matrice :
+        si les deux ne décrivent pas la même liste, chaque recherche rend des
+        passages sans rapport avec la question, et rien ne le signale. C'est
+        arrivé : le corpus est passé de 11 791 à 69 102 passages et le cache,
+        versionné, est resté celui d'avant.
+        """
+        if not (EMB_FILE.exists() and IDS_FILE.exists()):
+            return False
+        try:
+            ids = json.loads(IDS_FILE.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            return False
+        if len(ids) != len(self.passages):
+            print(
+                f"Cached embeddings ignored: {len(ids)} vectors for "
+                f"{len(self.passages)} passages. Re-encoding."
+            )
+            return False
+        attendus = [p["passage_id"] for p in self.passages]
+        if ids != attendus:
+            print("Cached embeddings ignored: passage ids differ. Re-encoding.")
+            return False
+        return True
+
     def __init__(self, passages_file: Path = PASSAGES_FILE):
         self.passages = [json.loads(line) for line in passages_file.open(encoding="utf-8")]
         self.model = SentenceTransformer(MODEL_NAME)
 
-        if EMB_FILE.exists() and IDS_FILE.exists():
+        if self._cache_utilisable():
             self.emb = np.load(EMB_FILE)
             self.ids = json.loads(IDS_FILE.read_text(encoding="utf-8"))
             print(f"Loaded cached embeddings: {self.emb.shape}")
