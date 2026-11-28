@@ -182,7 +182,6 @@ def main() -> int:
             skipped.append(f"{doc}: no drug matched in {DRUGS_CSV}")
             continue
 
-        brand = doc.split("_")[1] if "_" in doc else ""
         extra = next(
             (c for c in collect
              if c["molecule"] == drug["inn_norm"] and c["marque_norm"] and c["marque_norm"] in doc.lower()),

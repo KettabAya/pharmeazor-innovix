@@ -5,6 +5,7 @@ from pathlib import Path
 
 from pharmeazor.answer.checks import Verdict, run_all
 from pharmeazor.answer.llm_client import ask_llm
+from pharmeazor.normalize.substance import parse_inn
 from pharmeazor.registry import interactions_of, resolve_dci, resolve_drug_ids
 from pharmeazor.retrieve.bm25 import load_passages_index
 
@@ -44,9 +45,22 @@ def resolve_drugs(drug_names: list[str]) -> list[str]:
     return ids
 
 
+def _base_de(nom: str | None) -> str:
+    """La substance débarrassée de son sel : AMOXICILLINE SODIQUE -> AMOXICILLINE.
+
+    Le catalogue écrit le sel que contient le produit, les notices écrivent
+    souvent la base, et la base française une troisième forme encore. Comparer
+    les écritures telles quelles ne rapproche rien ; comparer les bases, si.
+    """
+    if not nom:
+        return ""
+    return (parse_inn(nom).base or nom).strip().upper()
+
+
 def resolve_substances(drug_names: list[str]) -> list[str]:
-    """Les substances derrière ces noms, en minuscules."""
-    return [dci.lower() for dci in (resolve_dci(n) for n in drug_names) if dci]
+    """Les substances derrière ces noms, réduites à leur base."""
+    bases = [_base_de(resolve_dci(n)) for n in drug_names]
+    return [b for b in bases if b]
 
 
 def _concerne(p: dict, drug_ids: list[str], substances: list[str]) -> bool:
@@ -61,8 +75,19 @@ def _concerne(p: dict, drug_ids: list[str], substances: list[str]) -> bool:
         return p["drug_id"] in drug_ids
     if not substances:
         return False
-    dci = (p.get("dci") or p.get("molecule") or "").lower()
-    return any(s in dci or dci in s for s in substances if dci)
+    base = _base_de(p.get("dci") or p.get("molecule"))
+    return bool(base) and base in substances
+
+
+#: Combien de résultats demander à la recherche quand un médicament est filtré.
+#:
+#: Le filtre écarte presque tout : 83 % du corpus vient de la base française et
+#: concerne d'autres produits. En n'examinant que quinze résultats, on n'en
+#: gardait que deux ou trois, et le bon passage restait derrière. Quarante fois
+#: le nombre voulu suffit pour que ce qui concerne le médicament remonte —
+#: mesuré sur le jeu de questions : 2/15 à quinze résultats, 11/15 à deux cents.
+PROFONDEUR_AVEC_FILTRE = 40
+PROFONDEUR_SANS_FILTRE = 3
 
 
 def retrieve(
@@ -73,7 +98,8 @@ def retrieve(
 ) -> list[dict]:
     idx = load_passages_index()
     by_id = load_passages_by_id()
-    results = idx.search(question, top_k=top_k * 3)
+    profondeur = PROFONDEUR_AVEC_FILTRE if drug_ids else PROFONDEUR_SANS_FILTRE
+    results = idx.search(question, top_k=top_k * profondeur)
     substances = substances or []
     out: list[dict] = []
     for r in results:
